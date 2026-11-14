@@ -1,0 +1,2791 @@
+{
+  "aircraft": "a359",
+  "label": "Airbus A350-900",
+  "livery": {
+    "id": "starlux",
+    "name": "STARLUX Airlines",
+    "authoredPaint": {
+      "bodyPartPattern": "^Fuselage(?:\\.\\d+)?$|^doors$|^belly|^fuse\\.cargo",
+      "finPartPattern": "^rudderfront$|^rudder$",
+      "bodyColorSRGB": [
+        235,
+        232,
+        224
+      ],
+      "resolution": 2048,
+      "references": [
+        "reference/Airbus-A350-AC-2026-07.pdf",
+        "https://www.airbus.com/en/newsroom/press-releases/2022-10-starlux-takes-delivery-of-first-a350"
+      ],
+      "finColorSRGB": [
+        235,
+        232,
+        224
+      ],
+      "bodyPolygons": [
+        {
+          "colorSRGB": [
+            161,
+            135,
+            87
+          ],
+          "points": [
+            [
+              0,
+              -3.5
+            ],
+            [
+              1,
+              -3.5
+            ],
+            [
+              1,
+              0.55
+            ],
+            [
+              0.87,
+              -0.72
+            ],
+            [
+              0.7,
+              -1.52
+            ],
+            [
+              0.35,
+              -1.58
+            ],
+            [
+              0.12,
+              -1.26
+            ],
+            [
+              0,
+              -0.13
+            ]
+          ]
+        },
+        {
+          "colorSRGB": [
+            30,
+            34,
+            46
+          ],
+          "points": [
+            [
+              0,
+              -3.6
+            ],
+            [
+              1,
+              -3.6
+            ],
+            [
+              1,
+              -0.56
+            ],
+            [
+              0.86,
+              -1.14
+            ],
+            [
+              0.7,
+              -1.9
+            ],
+            [
+              0.3,
+              -2.01
+            ],
+            [
+              0.13,
+              -1.74
+            ],
+            [
+              0,
+              -0.7
+            ]
+          ]
+        }
+      ],
+      "bodyGraphics": [
+        {
+          "image": "preparation/brand-art/starlux-title.png",
+          "box": [
+            0.15,
+            0.23,
+            0.45,
+            2.32
+          ]
+        }
+      ],
+      "finGraphics": [
+        {
+          "image": "preparation/brand-art/starlux-fin-stripes.png",
+          "box": [
+            0.32,
+            0.25,
+            0.86,
+            0.9
+          ],
+          "sameStationOnBothSides": true
+        }
+      ]
+    },
+    "operatorFinishes": [
+      {
+        "name": "Starlux nacelle",
+        "partPattern": "^Nacelle$|^eng\\.reverser$",
+        "colorSRGB": [
+          39,
+          45,
+          63
+        ]
+      },
+      {
+        "name": "Starlux wingtip",
+        "partPattern": "^winglet\\.",
+        "colorSRGB": [
+          168,
+          135,
+          82
+        ]
+      }
+    ]
+  },
+  "referenceDimensions": {
+    "length": 66.8,
+    "span": 64.75
+  },
+  "axes": "X aft; Y up; Z port",
+  "bounds": {
+    "min": [
+      0.09097195443172501,
+      -4.897170066833496,
+      -32.375
+    ],
+    "max": [
+      66.89097195443172,
+      13.216899871826172,
+      32.375
+    ]
+  },
+  "motions": [
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "engines/engine[0]/reverser-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "eng.reverser"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "eng.reverser"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#27"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[0]/n1",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "fan_eng1",
+        "cone_eng1"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        22.48619453776084,
+        -1.436900019645691,
+        10.372284582235965
+      ],
+      "factor": 20.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "fan_eng1",
+        "cone_eng1"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#3",
+        "0:Models/A350XWB-900.xml#33"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[0]/n1",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "fan2_eng1"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        22.48619453776084,
+        -1.436900019645691,
+        10.372284582235965
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "fan2_eng1"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#31"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[1]/n1",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "fan_eng2",
+        "cone_eng2"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        22.48619453776084,
+        -1.436900019645691,
+        -10.372284582235965
+      ],
+      "factor": 20.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "fan_eng2",
+        "cone_eng2"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#34",
+        "0:Models/A350XWB-900.xml#4"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[1]/n1",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "fan2_eng2"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        22.48619453776084,
+        -1.436900019645691,
+        -10.372284582235965
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "fan2_eng2"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#32"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[3]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "sb1",
+        "sb2",
+        "sb3",
+        "sb4",
+        "sb5"
+      ],
+      "axis": [
+        0.39883431792259216,
+        0.11750608682632446,
+        0.9094632267951965
+      ],
+      "center": [
+        34.40294830799991,
+        0.9125000238418579,
+        10.804400916674846
+      ],
+      "factor": 59.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "sb1",
+        "sb2",
+        "sb3",
+        "sb4",
+        "sb5"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#103",
+        "0:Models/A350XWB-900.xml#104",
+        "0:Models/A350XWB-900.xml#105",
+        "0:Models/A350XWB-900.xml#106",
+        "0:Models/A350XWB-900.xml#97"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[3]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "sb6",
+        "sb7"
+      ],
+      "axis": [
+        -0.002143754390999675,
+        0.13908332586288452,
+        0.9902783036231995
+      ],
+      "center": [
+        34.32989194140836,
+        0.24979999661445618,
+        5.887618674997174
+      ],
+      "factor": 59.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "sb6",
+        "sb7"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#107",
+        "0:Models/A350XWB-900.xml#108"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[3]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "sb10",
+        "sb11",
+        "sb12",
+        "sb13",
+        "sb14"
+      ],
+      "axis": [
+        0.39883431792259216,
+        0.11750608682632446,
+        -0.9094632267951965
+      ],
+      "center": [
+        34.40294830799991,
+        0.9125000238418579,
+        -10.804400916674846
+      ],
+      "factor": -59.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "sb10",
+        "sb11",
+        "sb12",
+        "sb13",
+        "sb14"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#100",
+        "0:Models/A350XWB-900.xml#101",
+        "0:Models/A350XWB-900.xml#102",
+        "0:Models/A350XWB-900.xml#98",
+        "0:Models/A350XWB-900.xml#99"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[3]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "sb8",
+        "sb9"
+      ],
+      "axis": [
+        -0.002143754390999675,
+        0.13908332586288452,
+        -0.9902783036231995
+      ],
+      "center": [
+        34.32989194140836,
+        0.24979999661445618,
+        -5.887618674997174
+      ],
+      "factor": -59.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "sb8",
+        "sb9"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#109",
+        "0:Models/A350XWB-900.xml#110"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap8"
+      ],
+      "axis": [
+        0.0,
+        -0.09691188484430313,
+        0.9952930212020874
+      ],
+      "center": [
+        34.87079420784149,
+        -0.13950000703334808,
+        -8.182603319239737
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          -30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap8"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#43"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap3"
+      ],
+      "axis": [
+        0.0014693952398374677,
+        0.11329081654548645,
+        -0.993560791015625
+      ],
+      "center": [
+        35.11856992235642,
+        -0.21250000596046448,
+        -3.454328240128228
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap3"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#38"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap3"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.4
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap3"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#38"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap9"
+      ],
+      "axis": [
+        0.0,
+        -0.12023542076349258,
+        0.9927453994750977
+      ],
+      "center": [
+        35.89000181020746,
+        0.46160000562667847,
+        -13.08158599966512
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          -30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap9"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#44"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap10"
+      ],
+      "axis": [
+        0.0,
+        -0.0972404032945633,
+        0.9952608942985535
+      ],
+      "center": [
+        37.771244121963704,
+        1.2480000257492065,
+        -17.672855194490793
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          -30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap10"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#36"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap4"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.3
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap4"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#39"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap4"
+      ],
+      "axis": [
+        -0.38553595542907715,
+        -0.13343000411987305,
+        0.9129942059516907
+      ],
+      "center": [
+        38.84587038680369,
+        1.9735000133514404,
+        -20.202450044169648
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          -30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap4"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#39"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap7"
+      ],
+      "axis": [
+        0.0,
+        -0.09691188484430313,
+        -0.9952930212020874
+      ],
+      "center": [
+        34.87079420784149,
+        -0.13950000703334808,
+        8.182603319239737
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap7"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#42"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap2"
+      ],
+      "axis": [
+        0.0014693952398374677,
+        0.11329081654548645,
+        0.993560791015625
+      ],
+      "center": [
+        35.11856992235642,
+        -0.21250000596046448,
+        3.454328240128228
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          -30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap2"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#37"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap2"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.4
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap2"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#37"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap6"
+      ],
+      "axis": [
+        0.0,
+        -0.12023542076349258,
+        -0.9927453994750977
+      ],
+      "center": [
+        35.89000181020746,
+        0.46160000562667847,
+        13.08158599966512
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap6"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#41"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap5"
+      ],
+      "axis": [
+        0.0,
+        -0.0972404032945633,
+        -0.9952608942985535
+      ],
+      "center": [
+        37.771244121963704,
+        1.2480000257492065,
+        17.672855194490793
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap5"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#40"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap1"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.3
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap1"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#35"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap1"
+      ],
+      "axis": [
+        -0.38553595542907715,
+        -0.13343000411987305,
+        -0.9129942059516907
+      ],
+      "center": [
+        38.84587038680369,
+        1.9735000133514404,
+        20.202450044169648
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap1"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#35"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "slat2"
+      ],
+      "axis": [
+        0.5772431492805481,
+        0.13428592681884766,
+        0.8054549098014832
+      ],
+      "center": [
+        23.622912060618344,
+        -0.1776999980211258,
+        4.658273024511473
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.29,
+          20.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "slat2"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#116"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "slat2"
+      ],
+      "axis": [
+        -0.705931544303894,
+        -0.7082800269126892,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.29,
+          0.4
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "slat2"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#116"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "slat1",
+        "slat1.part2"
+      ],
+      "axis": [
+        0.5651596188545227,
+        0.08437682688236237,
+        0.8206552863121033
+      ],
+      "center": [
+        29.1088615771613,
+        1.3229000568389893,
+        10.989807807387342
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.29,
+          15.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "slat1",
+        "slat1.part2"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#114",
+        "0:Models/A350XWB-900.xml#115"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "slat1",
+        "slat1.part2"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.29,
+          0.4
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "slat1",
+        "slat1.part2"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#114",
+        "0:Models/A350XWB-900.xml#115"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "slat3"
+      ],
+      "axis": [
+        0.5772431492805481,
+        0.13428592681884766,
+        -0.8054549098014832
+      ],
+      "center": [
+        23.622912060618344,
+        -0.1776999980211258,
+        -4.658273024511473
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.29,
+          -20.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "slat3"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#117"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "slat3"
+      ],
+      "axis": [
+        -0.705931544303894,
+        -0.7082800269126892,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.29,
+          0.4
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "slat3"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#117"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "slat4",
+        "slat4.part2"
+      ],
+      "axis": [
+        0.5651614665985107,
+        0.0843740925192833,
+        -0.8206543326377869
+      ],
+      "center": [
+        35.517344002688844,
+        2.2797000408172607,
+        -20.29545390808589
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.29,
+          -15.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "slat4",
+        "slat4.part2"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#118",
+        "0:Models/A350XWB-900.xml#119"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "slat4",
+        "slat4.part2"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.29,
+          0.4
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "slat4",
+        "slat4.part2"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#118",
+        "0:Models/A350XWB-900.xml#119"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lgdoor.left.front"
+      ],
+      "axis": [
+        0.970629870891571,
+        -0.19833962619304657,
+        0.1361585557460785
+      ],
+      "center": [
+        0.9595079518216539,
+        -0.5145999789237976,
+        0.5742212873189189
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3,
+          -68.0
+        ],
+        [
+          0.7,
+          -68.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lgdoor.left.front"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#71"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lgdoor.right.front"
+      ],
+      "axis": [
+        0.970629870891571,
+        -0.19833962619304657,
+        -0.1361585557460785
+      ],
+      "center": [
+        0.9595079518216539,
+        -0.5145999789237976,
+        -0.5742212873189189
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3,
+          68.0
+        ],
+        [
+          0.7,
+          68.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lgdoor.right.front"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#73"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lgdoor.left.front.2"
+      ],
+      "axis": [
+        0.9950770735740662,
+        -0.08376282453536987,
+        0.052966199815273285
+      ],
+      "center": [
+        3.8595601954081813,
+        -1.3451999425888062,
+        0.5211193264969015
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.3,
+          -70.0
+        ],
+        [
+          0.1,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lgdoor.left.front.2"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#72"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lgdoor.right.front.2"
+      ],
+      "axis": [
+        0.9950770735740662,
+        -0.08376282453536987,
+        -0.052966199815273285
+      ],
+      "center": [
+        3.8595601954081813,
+        -1.3451999425888062,
+        -0.5211193264969015
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.3,
+          70.0
+        ],
+        [
+          0.1,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lgdoor.right.front.2"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#74"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "tyres",
+        "front.strut.low",
+        "front.strut.high",
+        "lamps",
+        "lamp_chrome",
+        "nose.scissor.down",
+        "nose.scissor.up",
+        "nose.arm1",
+        "front.strut.high.2"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        4.6575054325385965,
+        -0.7444999814033508,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.3,
+          100.0
+        ],
+        [
+          0.8,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "tyres",
+        "front.strut.low",
+        "front.strut.high",
+        "lamps",
+        "lamp_chrome",
+        "nose.scissor.down",
+        "nose.scissor.up",
+        "nose.arm1",
+        "front.strut.high.2"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#120",
+        "0:Models/A350XWB-900.xml#45",
+        "0:Models/A350XWB-900.xml#46",
+        "0:Models/A350XWB-900.xml#47",
+        "0:Models/A350XWB-900.xml#54",
+        "0:Models/A350XWB-900.xml#55",
+        "0:Models/A350XWB-900.xml#76",
+        "0:Models/A350XWB-900.xml#77",
+        "0:Models/A350XWB-900.xml#78"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "nose.arm1"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "center": [
+        4.364380781644765,
+        -2.0813000202178955,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.3,
+          150.0
+        ],
+        [
+          0.8,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "nose.arm1"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#76"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "right.main.door",
+        "right.strut.up",
+        "tyres.right.back",
+        "tyres.right.front",
+        "right.strut.low",
+        "right.strut.low.2",
+        "right.scissor.up",
+        "right.scissor.down",
+        "right.arm1",
+        "right.arm2",
+        "right.arm3",
+        "right.arm4",
+        "right.arm5",
+        "right.arm6"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        32.942805706793386,
+        -0.17589999735355377,
+        -5.3737994599013
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.3,
+          81.8
+        ],
+        [
+          0.8,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "right.main.door",
+        "right.strut.up",
+        "tyres.right.back",
+        "tyres.right.front",
+        "right.strut.low",
+        "right.strut.low.2",
+        "right.scissor.up",
+        "right.scissor.down",
+        "right.arm1",
+        "right.arm2",
+        "right.arm3",
+        "right.arm4",
+        "right.arm5",
+        "right.arm6"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#123",
+        "0:Models/A350XWB-900.xml#124",
+        "0:Models/A350XWB-900.xml#79",
+        "0:Models/A350XWB-900.xml#80",
+        "0:Models/A350XWB-900.xml#81",
+        "0:Models/A350XWB-900.xml#82",
+        "0:Models/A350XWB-900.xml#83",
+        "0:Models/A350XWB-900.xml#84",
+        "0:Models/A350XWB-900.xml#85",
+        "0:Models/A350XWB-900.xml#90",
+        "0:Models/A350XWB-900.xml#91",
+        "0:Models/A350XWB-900.xml#92",
+        "0:Models/A350XWB-900.xml#93",
+        "0:Models/A350XWB-900.xml#94"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "right.main.door.3"
+      ],
+      "axis": [
+        -0.9997556209564209,
+        -0.022091127932071686,
+        0.0008374725002795458
+      ],
+      "center": [
+        35.10501561858859,
+        -2.1480000019073486,
+        -0.8577318258241495
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.15,
+          90.0
+        ],
+        [
+          0.85,
+          90.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "right.main.door.3"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#89"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "right.main.door.2"
+      ],
+      "axis": [
+        -0.9937557578086853,
+        -0.11157774925231934,
+        0.0
+      ],
+      "center": [
+        33.229255861119356,
+        -0.4318999946117401,
+        -5.7921151379198275
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.3,
+          0.0
+        ],
+        [
+          0.7,
+          -100.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "right.main.door.2"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#88"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "right.arm1",
+        "right.arm2",
+        "right.arm5"
+      ],
+      "axis": [
+        -0.9422005414962769,
+        -0.08156082779169083,
+        -0.32497096061706543
+      ],
+      "center": [
+        33.07277494101485,
+        -2.040800094604492,
+        -5.123690041043542
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.3,
+          60.0
+        ],
+        [
+          0.7,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "right.arm1",
+        "right.arm2",
+        "right.arm5"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#79",
+        "0:Models/A350XWB-900.xml#80",
+        "0:Models/A350XWB-900.xml#83"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "right.arm2"
+      ],
+      "axis": [
+        -0.9428648352622986,
+        -0.05222920700907707,
+        -0.3290562033653259
+      ],
+      "center": [
+        32.71795634619712,
+        -1.3538000583648682,
+        -4.267458519813654
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.35,
+          -180.0
+        ],
+        [
+          0.8,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "right.arm2"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#80"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "right.arm5"
+      ],
+      "axis": [
+        -0.9494617581367493,
+        0.1279773861169815,
+        -0.28660792112350464
+      ],
+      "center": [
+        32.65924891156063,
+        -1.34089994430542,
+        -4.186455185232078
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.3,
+          60.0
+        ],
+        [
+          0.7,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "right.arm5"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#83"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "right.arm3",
+        "right.arm4",
+        "right.arm6"
+      ],
+      "axis": [
+        -0.9422722458839417,
+        0.08151166141033173,
+        0.3247750401496887
+      ],
+      "center": [
+        33.342477070629094,
+        -2.053499937057495,
+        -5.174291971063313
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.3,
+          60.0
+        ],
+        [
+          0.7,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "right.arm3",
+        "right.arm4",
+        "right.arm6"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#81",
+        "0:Models/A350XWB-900.xml#82",
+        "0:Models/A350XWB-900.xml#84"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "right.arm4"
+      ],
+      "axis": [
+        -0.9457775950431824,
+        0.04894724860787392,
+        0.32110586762428284
+      ],
+      "center": [
+        33.69530339190563,
+        -1.3585000038146973,
+        -4.318860135428841
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.35,
+          -180.0
+        ],
+        [
+          0.8,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "right.arm4"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#82"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "right.arm6"
+      ],
+      "axis": [
+        -0.9008822441101074,
+        -0.19375279545783997,
+        0.3884211480617523
+      ],
+      "center": [
+        33.718826667476904,
+        -1.3187999725341797,
+        -4.253557723873302
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.3,
+          60.0
+        ],
+        [
+          0.7,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "right.arm6"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#84"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "left.main.door",
+        "left.strut.up",
+        "tyres.left.back",
+        "tyres.left.front",
+        "left.strut.low",
+        "left.strut.low.2",
+        "left.scissor.up",
+        "left.scissor.down",
+        "left.arm1",
+        "left.arm2",
+        "left.arm3",
+        "left.arm4",
+        "left.arm5",
+        "left.arm6"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        32.942805706793386,
+        -0.17589999735355377,
+        5.3737994599013
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.3,
+          81.8
+        ],
+        [
+          0.8,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "left.main.door",
+        "left.strut.up",
+        "tyres.left.back",
+        "tyres.left.front",
+        "left.strut.low",
+        "left.strut.low.2",
+        "left.scissor.up",
+        "left.scissor.down",
+        "left.arm1",
+        "left.arm2",
+        "left.arm3",
+        "left.arm4",
+        "left.arm5",
+        "left.arm6"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#121",
+        "0:Models/A350XWB-900.xml#122",
+        "0:Models/A350XWB-900.xml#56",
+        "0:Models/A350XWB-900.xml#57",
+        "0:Models/A350XWB-900.xml#58",
+        "0:Models/A350XWB-900.xml#59",
+        "0:Models/A350XWB-900.xml#60",
+        "0:Models/A350XWB-900.xml#61",
+        "0:Models/A350XWB-900.xml#62",
+        "0:Models/A350XWB-900.xml#65",
+        "0:Models/A350XWB-900.xml#66",
+        "0:Models/A350XWB-900.xml#67",
+        "0:Models/A350XWB-900.xml#68",
+        "0:Models/A350XWB-900.xml#69"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "left.main.door.3"
+      ],
+      "axis": [
+        -0.9997556209564209,
+        -0.022091127932071686,
+        -0.0008374725002795458
+      ],
+      "center": [
+        35.10501561858859,
+        -2.1480000019073486,
+        0.8577318258241495
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.15,
+          -90.0
+        ],
+        [
+          0.85,
+          -90.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "left.main.door.3"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#64"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "left.main.door.2"
+      ],
+      "axis": [
+        -0.9937557578086853,
+        -0.11157774925231934,
+        0.0
+      ],
+      "center": [
+        33.229255861119356,
+        -0.4318999946117401,
+        5.7921151379198275
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.3,
+          0.0
+        ],
+        [
+          0.7,
+          100.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "left.main.door.2"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#63"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "left.arm1",
+        "left.arm2",
+        "left.arm5"
+      ],
+      "axis": [
+        -0.9422005414962769,
+        -0.08156082779169083,
+        0.32497096061706543
+      ],
+      "center": [
+        33.07277494101485,
+        -2.040800094604492,
+        5.123690041043542
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.3,
+          -60.0
+        ],
+        [
+          0.7,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "left.arm1",
+        "left.arm2",
+        "left.arm5"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#56",
+        "0:Models/A350XWB-900.xml#57",
+        "0:Models/A350XWB-900.xml#60"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "left.arm2"
+      ],
+      "axis": [
+        -0.9428648352622986,
+        -0.05222920700907707,
+        0.3290562033653259
+      ],
+      "center": [
+        32.71795634619712,
+        -1.3538000583648682,
+        4.267458519813654
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.35,
+          180.0
+        ],
+        [
+          0.8,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "left.arm2"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#57"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "left.arm5"
+      ],
+      "axis": [
+        -0.9494617581367493,
+        0.1279773861169815,
+        0.28660792112350464
+      ],
+      "center": [
+        32.65924891156063,
+        -1.34089994430542,
+        4.186455185232078
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.3,
+          -60.0
+        ],
+        [
+          0.7,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "left.arm5"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#60"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "left.arm3",
+        "left.arm4",
+        "left.arm6"
+      ],
+      "axis": [
+        -0.9422722458839417,
+        0.08151166141033173,
+        -0.3247750401496887
+      ],
+      "center": [
+        33.342477070629094,
+        -2.053499937057495,
+        5.174291971063313
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.3,
+          -60.0
+        ],
+        [
+          0.7,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "left.arm3",
+        "left.arm4",
+        "left.arm6"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#58",
+        "0:Models/A350XWB-900.xml#59",
+        "0:Models/A350XWB-900.xml#61"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "left.arm4"
+      ],
+      "axis": [
+        -0.9457775950431824,
+        0.04894724860787392,
+        -0.32110586762428284
+      ],
+      "center": [
+        33.69530339190563,
+        -1.3585000038146973,
+        4.318860135428841
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.35,
+          180.0
+        ],
+        [
+          0.8,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "left.arm4"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#59"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "left.arm6"
+      ],
+      "axis": [
+        -0.9008822441101074,
+        -0.19375279545783997,
+        -0.3884211480617523
+      ],
+      "center": [
+        33.718826667476904,
+        -1.3187999725341797,
+        4.253557723873302
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.3,
+          -60.0
+        ],
+        [
+          0.7,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "left.arm6"
+      ],
+      "model": "Models/A350XWB-900.xml",
+      "scope": "0:Models/A350XWB-900.xml",
+      "targetPartIds": [
+        "0:Models/A350XWB-900.xml#61"
+      ]
+    }
+  ],
+  "gearInternalParts": [
+    "front.strut.high",
+    "front.strut.high.2",
+    "front.strut.low",
+    "lamp_chrome",
+    "lamps",
+    "left.arm1",
+    "left.arm2",
+    "left.arm3",
+    "left.arm4",
+    "left.arm5",
+    "left.arm6",
+    "left.scissor.down",
+    "left.scissor.up",
+    "left.strut.low",
+    "left.strut.low.2",
+    "left.strut.up",
+    "nose.arm1",
+    "nose.scissor.down",
+    "nose.scissor.up",
+    "right.arm1",
+    "right.arm2",
+    "right.arm3",
+    "right.arm4",
+    "right.arm5",
+    "right.arm6",
+    "right.scissor.down",
+    "right.scissor.up",
+    "right.strut.low",
+    "right.strut.low.2",
+    "right.strut.up",
+    "tyres",
+    "tyres.left.back",
+    "tyres.left.front",
+    "tyres.right.back",
+    "tyres.right.front"
+  ],
+  "gearInternalPartIds": [
+    "0:Models/A350XWB-900.xml#45",
+    "0:Models/A350XWB-900.xml#46",
+    "0:Models/A350XWB-900.xml#47",
+    "0:Models/A350XWB-900.xml#54",
+    "0:Models/A350XWB-900.xml#55",
+    "0:Models/A350XWB-900.xml#56",
+    "0:Models/A350XWB-900.xml#57",
+    "0:Models/A350XWB-900.xml#58",
+    "0:Models/A350XWB-900.xml#59",
+    "0:Models/A350XWB-900.xml#60",
+    "0:Models/A350XWB-900.xml#61",
+    "0:Models/A350XWB-900.xml#65",
+    "0:Models/A350XWB-900.xml#66",
+    "0:Models/A350XWB-900.xml#67",
+    "0:Models/A350XWB-900.xml#68",
+    "0:Models/A350XWB-900.xml#69",
+    "0:Models/A350XWB-900.xml#76",
+    "0:Models/A350XWB-900.xml#77",
+    "0:Models/A350XWB-900.xml#78",
+    "0:Models/A350XWB-900.xml#79",
+    "0:Models/A350XWB-900.xml#80",
+    "0:Models/A350XWB-900.xml#81",
+    "0:Models/A350XWB-900.xml#82",
+    "0:Models/A350XWB-900.xml#83",
+    "0:Models/A350XWB-900.xml#84",
+    "0:Models/A350XWB-900.xml#90",
+    "0:Models/A350XWB-900.xml#91",
+    "0:Models/A350XWB-900.xml#92",
+    "0:Models/A350XWB-900.xml#93",
+    "0:Models/A350XWB-900.xml#94",
+    "0:Models/A350XWB-900.xml#120",
+    "0:Models/A350XWB-900.xml#121",
+    "0:Models/A350XWB-900.xml#122",
+    "0:Models/A350XWB-900.xml#123",
+    "0:Models/A350XWB-900.xml#124"
+  ],
+  "missingTextures": [],
+  "sourceAC": [
+    "Models/A350XWB-900.ac"
+  ],
+  "discardedUnreferencedVertices": 2,
+  "provenance": "preparation/A350XWB",
+  "variantConstruction": {
+    "reverserCascades": {
+      "addedParts": [
+        "FittedReverserCascade-1",
+        "FittedReverserCascade1"
+      ],
+      "basis": "Original illustrative turning vanes fitted inside source translating-sleeve geometry; not engine engineering CAD."
+    }
+  },
+  "capabilities": [
+    "fans",
+    "flaps",
+    "gear",
+    "reversers",
+    "spoilers"
+  ],
+  "reviewPoints": {
+    "cockpit": [
+      2.8513662815093994,
+      2.2663838863372803,
+      -6.358863657851543e-08
+    ],
+    "engine": [
+      26.77487564086914,
+      -1.480131983757019,
+      10.372285842895508
+    ],
+    "gear": [
+      4.641658782958984,
+      -3.870093822479248,
+      0.002011924982070923
+    ],
+    "wing": [
+      35.373069763183594,
+      0.001651376485824585,
+      6.939607620239258
+    ]
+  },
+  "fidelityNotes": [
+    "Historical A350 exterior by Sbyx, Jormappapa and contributors, explicitly released GPL-2.0-or-later in its root README/COPYING. Main exterior XML contains its own four-wheel main bogies; unused A320 gear files in the repository are not part of this assembly. Cockpit/instrument sources are excluded. Manufacturer dimensions: Airbus July 2026, section 2-2-0."
+  ],
+  "reviewStatus": "build-awaiting-validation",
+  "addedDoorWindowPanes": 0,
+  "fittedCockpitOpenings": 0,
+  "fittedCabinOpenings": 0,
+  "envelopeCalibration": {
+    "rawDimensions": {
+      "length": 67.02222790569067,
+      "span": 64.74759674072266
+    },
+    "axisScale": [
+      0.9966842656140381,
+      1,
+      1.0000371173510418
+    ]
+  },
+  "skippedSourceModels": [
+    "A350XWB-900-flightdeck.xml",
+    "Aircraft/A350XWB/Models/Effects/contrail-eng1.xml",
+    "Aircraft/A350XWB/Models/Effects/contrail-eng2.xml",
+    "Aircraft/A350XWB/Models/Lights/cockpit-light.xml",
+    "Aircraft/A350XWB/Models/Lights/cockpit-light.xml",
+    "Aircraft/A350XWB/Models/Lights/cockpit-light.xml",
+    "Aircraft/A350XWB/Models/Lights/cockpit-light.xml",
+    "Models/Airport/Pushback/Goldhofert.xml",
+    "Aircraft/A350XWB/Models/Ground/Services/Fuel-Truck/Fuel_Truck_Short_VolvoFM.ac",
+    "Aircraft/A350XWB/Models/Ground/Services/De-Icing/volvo_deicing_truck.xml",
+    "Aircraft/A350XWB/Models/Ground/Services/Catering/Catering_Loader_Truck_VolvoFM.xml",
+    "Aircraft/A350XWB/Models/Ground/Services/Baggage/cargo_ramp.ac",
+    "Aircraft/A350XWB/Models/Ground/Services/External-Power/ext-pwr-box.ac",
+    "Aircraft/A350XWB/Models/Ground/Services/Chokes/choke_nose.ac",
+    "Aircraft/A350XWB/Models/Ground/Services/Chokes/choke_left.ac",
+    "Aircraft/A350XWB/Models/Ground/Services/Chokes/choke_right.ac",
+    "Aircraft/A350XWB/Models/Effects/tyresmoke-nose.xml",
+    "Aircraft/A350XWB/Models/Effects/tyresmoke-left.xml",
+    "Aircraft/A350XWB/Models/Effects/tyresmoke-right.xml",
+    "Aircraft/A350XWB/Models/Effects/wet-runway-nose.xml",
+    "Aircraft/A350XWB/Models/Effects/wet-runway-left.xml",
+    "Aircraft/A350XWB/Models/Effects/wet-runway-right.xml"
+  ],
+  "unresolvedMotions": [],
+  "cargo": false,
+  "paintProjection": {
+    "operatorFinishParts": [
+      "eng.reverser",
+      "Nacelle",
+      "winglet.left",
+      "winglet.right"
+    ],
+    "reviewStatus": "requires-visual-review"
+  },
+  "authoredPaint": {
+    "method": "Original airline paint layout projected in physical exterior coordinates; independent destination texture atlases retained.",
+    "maps": [
+      "a359/generated/starlux/authored-color-0.png"
+    ],
+    "references": [
+      "reference/Airbus-A350-AC-2026-07.pdf",
+      "https://www.airbus.com/en/newsroom/press-releases/2022-10-starlux-takes-delivery-of-first-a350"
+    ],
+    "artworkMetadata": [],
+    "reviewStatus": "requires-visual-review"
+  }
+}

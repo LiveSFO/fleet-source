@@ -1,0 +1,9 @@
+# Captured SFO aircraft library
+
+142 captured November 11, 2026 aircraft/operator/paint combinations map to 138 selected exports across 62 airframe entries. Five additional legacy exports support the original viewer defaults. All selected exports have automated checks and eight-view review evidence; several private-aircraft shapes, source-era liveries and helicopter variants remain representative studies. This is not a claim to include every actual SFO movement or factory-exact geometry.
+
+Run `npm install`, then `npm start`; open http://127.0.0.1:8080/viewer/airliners.html. To reuse one aircraft, copy its GLB, matching .rig.json and lights.json with the same folder layout, and viewer/airliner-runtime.js plus viewer/fleet-catalog.js. GLBs pack their textures and native geometry-animation clips. The runtime supplies light fixtures, flash timing and switchable cabin illumination. Units: metres; Y up, X aft, Z port.
+
+See assets/airliners/README.md for the integration example and modelling notes. asset-handoff-manifest.json maps every captured export to its source and license records. GPL and other upstream notices accompany the selected corresponding source, build scripts, generated maps and editable scenes. This library has mixed source terms; King Air B200/C90 sources are noncommercial share-alike. Retain each applicable notice and source; the bundle provides no blanket commercial clearance.
+
+The contact sheets are included. Individual high-resolution review PNGs remain in the original workspace and are not included to limit bundle size. Their hashes and paths are retained in the review evidence. Manufacturer brochures/planning PDFs and unused candidate models are excluded. The pinned source packages and build input files are retained; regeneration may additionally require Blender, Python dependencies and the referenced source/reference downloads.

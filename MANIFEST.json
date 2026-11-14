@@ -1,0 +1,2416 @@
+{
+ "files": 484,
+ "bytes": 123487381,
+ "entries": [
+  {
+   "path": "COPYING",
+   "bytes": 18092,
+   "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+  },
+  {
+   "path": "COPYING.GPL-3.0",
+   "bytes": 35149,
+   "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+  },
+  {
+   "path": "README.md",
+   "bytes": 6300,
+   "sha256": "9a6268cc23a0b5f9821b0a037e468ea1ae16448e7fc5b3d49d1de76ea564450a"
+  },
+  {
+   "path": "SERVED.json",
+   "bytes": 78295,
+   "sha256": "29bf62d85e611f94d107b4e2063d70678aa8b0ac8406705feddf629796d799df"
+  },
+  {
+   "path": "UPSTREAM-LINKS.json",
+   "bytes": 1325704,
+   "sha256": "9b64955d5282c60fcd571fcad3cf315a66fa45fc7c23f84a4dcfbcb3e9ca9216"
+  },
+  {
+   "path": "converter/LICENSE",
+   "bytes": 746,
+   "sha256": "cf277717780b3d7d370e9f2b721f46a1eb832af4732b0a8c80f22910ee2deea3"
+  },
+  {
+   "path": "converter/package.json",
+   "bytes": 208,
+   "sha256": "c3cd9ee71e1af6e8b697d69db3fe6421a1308174d199ffec05485de6943388bb"
+  },
+  {
+   "path": "converter/tools/fleet-convert.mjs",
+   "bytes": 37751,
+   "sha256": "4b04e5bae492124254e0cb8650e2047da9b16e3696cdbd1e0def98e4222532ed"
+  },
+  {
+   "path": "converter/tools/fleet-sync.mjs",
+   "bytes": 8762,
+   "sha256": "1b3d49282c55bc0dce2c32194925a6253c519e89787efd0d319225fbcd63836e"
+  },
+  {
+   "path": "converter/tools/fleet/config.mjs",
+   "bytes": 6902,
+   "sha256": "636ad1c921d1690ea721ef413a7e36cb9bfec9b0685c60fa88a38f4afc9aee03"
+  },
+  {
+   "path": "converter/tools/fleet/gc.mjs",
+   "bytes": 1745,
+   "sha256": "9b5f88e76ba8d4a993fdc743cb42b565261468f0562b233e5ed8e86014adafcd"
+  },
+  {
+   "path": "converter/tools/fleet/geometry.mjs",
+   "bytes": 11373,
+   "sha256": "39b179fd566a5a3b4394aacbdf5e8fbb31e788faa2befe98fad9094e2c4c4554"
+  },
+  {
+   "path": "converter/tools/fleet/gltf.mjs",
+   "bytes": 5218,
+   "sha256": "78ff9f9c3b8e26d200a2fd4db57efbf9f8049491d6c389dd60902ca5d4bf8599"
+  },
+  {
+   "path": "converter/tools/fleet/image.mjs",
+   "bytes": 9560,
+   "sha256": "f91220fa5d8bc2bdb6a8bf1eeb4d9b445e8aabbbb05a497ae2df16f5bc632ae6"
+  },
+  {
+   "path": "converter/tools/fleet/rig.mjs",
+   "bytes": 2791,
+   "sha256": "18322cec85def936b2cc5c110b5bde293ff791a68c4452aa71d8cd74e997737c"
+  },
+  {
+   "path": "library/sfo-aircraft-library/README.md",
+   "bytes": 1878,
+   "sha256": "b3a61095206d2a36d9a325fa1f8d2cb8a2b0db4b4e9fd7598787e63a7dfb1ef1"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/README.md",
+   "bytes": 29093,
+   "sha256": "1ea56697892b59f4fc2f8b585f52288242d987c6567c79c5473e5e8120794967"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a20n/exports/avianca.rig.json",
+   "bytes": 48283,
+   "sha256": "24c980e6070c797a2416705ef4549c5b72a2801ab088eab4996de27eca0a8746"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a20n/exports/avianca.validation.json",
+   "bytes": 10166,
+   "sha256": "9e46334547e1af03561fee82a22c0ee205a9f93c5b9334db81d0d051e1be122e"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a20n/exports/frontier-adams.rig.json",
+   "bytes": 51596,
+   "sha256": "c6beea2674eaaf3e0894488c1c5168699b190af7f7e4284f09ef1dd519570ad2"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a20n/exports/frontier-adams.validation.json",
+   "bytes": 9840,
+   "sha256": "aa4d87800c686db7d22409d885f97345ebe4896d4caa8376ad0ec5295106c0a8"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a20n/exports/frontier-marshall.rig.json",
+   "bytes": 51937,
+   "sha256": "2726536283317a03a1cfe38ca3726b197f0bb483526ea9ab0a88a99baa126cd7"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a20n/exports/frontier-marshall.validation.json",
+   "bytes": 10297,
+   "sha256": "f20c66ad0ea551f23e3f917f90b0c8be4654c797c7df248b3c608c191cf7f36d"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a20n/exports/frontier.rig.json",
+   "bytes": 51919,
+   "sha256": "56eebdee0f906d5fe2649a30f0f47004dcd2e0c3e0855ffa15b47711bc11db31"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a20n/exports/frontier.validation.json",
+   "bytes": 10288,
+   "sha256": "062a2d5bb356ef4a1ce85cb80e728ad06c4a79384eaeaf30ccd10d15a36bf085"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a20n/lights.json",
+   "bytes": 2532,
+   "sha256": "079cec6a80ae23c629d787c60a02dcfec32b1c965cab123d334923c20cd8876f"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a21n/exports/american.rig.json",
+   "bytes": 48830,
+   "sha256": "76084bed77154134e8ea7a20a15fecbb20be3f5e4c3b755fa5aeaa318451c4cb"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a21n/exports/american.validation.json",
+   "bytes": 9983,
+   "sha256": "9e14d785a1911b8646b32c0361d1ec9d45e6edac3bea4b72b28ceddc8d32c6ec"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a21n/exports/delta.rig.json",
+   "bytes": 48906,
+   "sha256": "80decb1ad29cd7fba07f109bb2130395163d3b1fb94c75068410dfd9ed6eb275"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a21n/exports/delta.validation.json",
+   "bytes": 9526,
+   "sha256": "366d42697bcf5c54698fa731b96756a19336d97bc811340641124caed2412b7d"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a21n/exports/frontier-chopper.rig.json",
+   "bytes": 53117,
+   "sha256": "12e4b5c9340a00adfc0d40be829ab2e9a1a433776f05bc8412f0fca0ceb3c55c"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a21n/exports/frontier-chopper.validation.json",
+   "bytes": 14415,
+   "sha256": "a3219806979bfa22cdfbfb8ad1ca6bfc0c55465c930c15883d0893a001327698"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a21n/exports/hawaiian.rig.json",
+   "bytes": 50166,
+   "sha256": "4e44524285c48a737b6823492faae617358d79015148102c933f42d9613b0f1d"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a21n/exports/hawaiian.validation.json",
+   "bytes": 9833,
+   "sha256": "77b5c41715a8ce4d6c25d3c1888737d0f8588e9c04f8568f542125153947ea99"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a21n/exports/jetblue.rig.json",
+   "bytes": 48872,
+   "sha256": "9fa49be24cb2a0f505959a9902914a9ff0b6abe43c2263cc20fc246f002207ce"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a21n/exports/jetblue.validation.json",
+   "bytes": 9528,
+   "sha256": "061f1d25150070d8dcdabe9a6c7c5fe09cc31b5fb9a88c18142e1405f84033ed"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a21n/exports/united.rig.json",
+   "bytes": 50049,
+   "sha256": "504ca2354e6f3d8ca64c44f67cd6c5486875148362b17aefa123fb3ee24d2ad6"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a21n/exports/united.validation.json",
+   "bytes": 9831,
+   "sha256": "b52eed04e3ab885a8b67bee689160a816924a7390fd5769afd55737f6809e453"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a21n/generated/delta/delta-nacelle-blue-color.png",
+   "bytes": 49084,
+   "sha256": "96d223287a0b7176a9aa29b62c081cdd1fa5a2968e64934c4a203c26491f63de"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a21n/generated/hawaiian/body-color.png",
+   "bytes": 4628032,
+   "sha256": "ec528bdbd89b4279dd89f57d27ffdcbf7332794a63bd092863471c30d62f45e3"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a21n/generated/hawaiian/hawaiian-nacelles-color.png",
+   "bytes": 63813,
+   "sha256": "4e855127656c919e04f4f17018c3fd4333070fa777f3e6fb3090452845051a2e"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a21n/generated/hawaiian/hawaiian-wingtips-color.png",
+   "bytes": 305073,
+   "sha256": "7c1448df80c1a8c7aa1f41ad45a6d28cb2bb61e93ca2ee2e07f615db0c503645"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a21n/generated/jetblue/jetblue-nacelles-color.png",
+   "bytes": 52202,
+   "sha256": "71df5d6d0db1345697397028bedd1edb6867ea01e83c4883e1a688bdfc61e5f7"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a21n/generated/united/body-color.png",
+   "bytes": 4480525,
+   "sha256": "cd47af9eb76468111d3f90385a30f9561889dbe6903b6c6739d5dd97b3a63eb2"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a21n/generated/united/united-nacelles-color.png",
+   "bytes": 65924,
+   "sha256": "47c027a89e0f0db7d9eeae1c6876372c0e598c71fce24d47f181d9df0ee5fb71"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a21n/generated/united/united-wingtips-color.png",
+   "bytes": 313285,
+   "sha256": "f21f5107117564a4597d8f03759f1e12e7b32235dff52815ae6b6885b2e34237"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a21n/lights.json",
+   "bytes": 2539,
+   "sha256": "acf10f8d006241c9e527d9292629abf3e2b18c660f81dd669aaf3418eb6e2991"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a320/exports/american.rig.json",
+   "bytes": 48129,
+   "sha256": "8b454eb058b38d748bb1837624d7bf08c2803e9379807c7e1afa5bcb053ed1b4"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a320/exports/american.validation.json",
+   "bytes": 15362,
+   "sha256": "55164ad4404d322dbfbb27d7d0732fa534444fdb3a8526ec22395a75cbffb182"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a320/exports/frontier.rig.json",
+   "bytes": 51844,
+   "sha256": "267f2e69041148dd5f8fe8ab68075f449131fc990768c3c533c35bf7fc6b61b2"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a320/exports/frontier.validation.json",
+   "bytes": 14151,
+   "sha256": "3c8b3401a3988839ffefbe749ff7587051e85ce41ae10e62c04212eaed2ffe00"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a320/exports/united-friend-ship.rig.json",
+   "bytes": 48186,
+   "sha256": "8283bada8897b6c37d2686345498a0e098c0bf6f8d31e967d9736bdb9015e81d"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a320/exports/united-friend-ship.validation.json",
+   "bytes": 15372,
+   "sha256": "4e92ca2d11d7e16b24481244768d418c7c3951558cbea21d360c9d430acd7f21"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a320/exports/united.rig.json",
+   "bytes": 48167,
+   "sha256": "5927545bec9c322a9a18b35d2be6f125ceb3bd56e095cf4b8c2937368e29c616"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a320/exports/united.validation.json",
+   "bytes": 15360,
+   "sha256": "037c0bbfb518639647cb20272dd98fd098ff845e8fce32decbfb5bd03e80f0ac"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a320/lights.json",
+   "bytes": 2538,
+   "sha256": "2189818ba30587e94a59a3456d62189caf33ac59d5ff9f8664e5e283b230b048"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a321/exports/air-canada.rig.json",
+   "bytes": 48767,
+   "sha256": "724daf6154f419c24879294693a0f0e51ef34753459046660bd8d66fd0dd5729"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a321/exports/air-canada.validation.json",
+   "bytes": 14604,
+   "sha256": "d201e6761b154528100ce4f4b3fea7b0272e8197ce394641e83bd6f35fb52412"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a321/exports/american.rig.json",
+   "bytes": 48768,
+   "sha256": "597dce7a0307df0c259a4c09c6cf4aa91f4f3f20a3a21fd1dad83f06c6f9b1a5"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a321/exports/american.validation.json",
+   "bytes": 14602,
+   "sha256": "ce42f82b60d3d7f8a2ddb96e3d7e4ad1173f7eef11b912c7cc2c4a1f4898bbca"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a321/exports/delta.rig.json",
+   "bytes": 48781,
+   "sha256": "a17eaac5b807bdcd3d9c2de75105d36a8a57a4c9686a3a5c807649064f546025"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a321/exports/delta.validation.json",
+   "bytes": 13842,
+   "sha256": "60f00cfbc3282f6189522fd9c3de8e38a1b84cc9a12e76f6cd4eec2c0623701f"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a321/exports/frontier.rig.json",
+   "bytes": 52546,
+   "sha256": "706b65e8024d04700163bb807ee8d4630874d58e1992a75974064bc10918785c"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a321/exports/frontier.validation.json",
+   "bytes": 14150,
+   "sha256": "6c2607b6efb8446423d3c3a346a1ef3a0dee69d42f70a666d0011823a86bdb11"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a321/exports/jetblue.rig.json",
+   "bytes": 50530,
+   "sha256": "ca7d9df7353eb15e61a798e8016176c1284de0a07870013592a84b831e2979c3"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a321/exports/jetblue.validation.json",
+   "bytes": 15593,
+   "sha256": "ea125e20db37b628e6fbb79c86bcb53123c68d2028e381c175c04602e1a5c59f"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a321/generated/jetblue/JetBlue IAE cowls-color.png",
+   "bytes": 212712,
+   "sha256": "4eaab87aca6c092acef13161665e46afa122a877559259804604740055576222"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a321/generated/jetblue/body-color.png",
+   "bytes": 4245134,
+   "sha256": "c72f4dfda7245a47fcb9c780848099b9872b52cbe739014457c0abfad3d4f370"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a321/lights.json",
+   "bytes": 2539,
+   "sha256": "acf10f8d006241c9e527d9292629abf3e2b18c660f81dd669aaf3418eb6e2991"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a359/exports/asiana.rig.json",
+   "bytes": 59716,
+   "sha256": "004aaa31f9af1a4bcbccff7cda1192f09f7fd9c8e422c70f8c52a26063bfa253"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a359/exports/asiana.validation.json",
+   "bytes": 3772,
+   "sha256": "f935bb15da07a3042af0a47a6666bb6b9af284809ee003cd1e15d0c4cdc20c4d"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a359/exports/french-bee.rig.json",
+   "bytes": 59289,
+   "sha256": "eea22a277a15a7b820d92270cbf23a1f1541c3e98d7d9ca33faf7c126c2d1695"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a359/exports/french-bee.validation.json",
+   "bytes": 4386,
+   "sha256": "e86828800ffa4e23b8dccc91b1d926631607cbcdc3121bc881267c404dc0fc84"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a359/exports/lufthansa.rig.json",
+   "bytes": 55685,
+   "sha256": "a2a85421ed9f316b4176ea1c1fb0e6498d76deb22ef75d61d319c2ed5016827a"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a359/exports/lufthansa.validation.json",
+   "bytes": 3776,
+   "sha256": "2bdcf35f122380c3af69850096f2126fdddb1d5fd420811df291630022ecbf1c"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a359/exports/singapore-airlines.rig.json",
+   "bytes": 55673,
+   "sha256": "962b85d34f5792ffccea6731734247b78da61daa90055022526c3081025e742b"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a359/exports/singapore-airlines.validation.json",
+   "bytes": 3785,
+   "sha256": "931026841df671972365438924ce65de97352de4a49757c4b82b08e9c6a4cdfe"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a359/exports/starlux.rig.json",
+   "bytes": 59044,
+   "sha256": "863159426f776ca29c3df25bd45c3b6549e965a654ca74f1a8f93ea1945fc3b9"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a359/exports/starlux.validation.json",
+   "bytes": 4383,
+   "sha256": "9522262a78a29e2c6a9493bf95d1cbbcfb63a49be77fd9c1a4a01e5cac22c0d1"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a359/exports/turkish-airlines.rig.json",
+   "bytes": 55687,
+   "sha256": "151a20d96c03f289103aff2b4fc31a10fe93fc9cc786a951cee6afff276ef6ee"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a359/exports/turkish-airlines.validation.json",
+   "bytes": 3783,
+   "sha256": "eabc11f4d5b972f215438b079edd8f635e23191c55a2e209e3970571130140d4"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a359/exports/vietnam-airlines.rig.json",
+   "bytes": 55660,
+   "sha256": "bf665e61f056157159861527bbbdc4e9a5feaa3da09bf2d80cd87393fddcf943"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a359/exports/vietnam-airlines.validation.json",
+   "bytes": 3783,
+   "sha256": "39b23f00073e7a5e600aa177aa0a598f10028c1d7d92b8fac4b70f829c1b570d"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a359/generated/asiana/authored-color-0.png",
+   "bytes": 149606,
+   "sha256": "378ca39cf5ebc2dfec15ce108b7e2b87ff65a8f2b7bf7b9b57740780023d0e20"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a359/generated/french-bee/French bee nacelle-color.png",
+   "bytes": 251145,
+   "sha256": "a7c70004f0d1b25079d61ea18b2be5db279b2685b50742797daa180c1b69dbc6"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a359/generated/french-bee/French bee wingtip-color.png",
+   "bytes": 251174,
+   "sha256": "47b4ec53783641a1fc9e23a9a11578e3a49aca73c3932ed56ffbd754fb502934"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a359/generated/french-bee/authored-color-0.png",
+   "bytes": 167794,
+   "sha256": "ac993d2c6cd64105c60100cebe96bcfa5d7ea7f470eff71b99c5d95387446762"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a359/generated/starlux/Starlux nacelle-color.png",
+   "bytes": 212062,
+   "sha256": "4e7cd6fa47e7bcc0c119390f05fdf0d7045609f031ef24a3f49bf91622f0a76a"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a359/generated/starlux/Starlux wingtip-color.png",
+   "bytes": 243664,
+   "sha256": "3d9887d4c4f3f5c981454d002153ba5ad8a9b538ef6381a87247186c02ffdbe6"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a359/generated/starlux/authored-color-0.png",
+   "bytes": 178831,
+   "sha256": "a261b747426f8bcb80e7678662a6c2a50d5647fb3f97741694d2594c23da41c1"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a359/lights.json",
+   "bytes": 2545,
+   "sha256": "03e0892e0d63b5b06529f8a9b5c65d35141b0980a4193199ac2793977bda85be"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a35k/exports/philippine-airlines-85-years.rig.json",
+   "bytes": 59120,
+   "sha256": "15b5a793ada3391bd6eb5a646bc737f58e4edc4e44bee49da8dab53e415f9f3c"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a35k/exports/philippine-airlines-85-years.validation.json",
+   "bytes": 3796,
+   "sha256": "7c1feeef05b7a7966924c2f7db12bd056e9b2dce82ccbc65a1eda433b444ebaf"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a35k/exports/philippine-airlines.rig.json",
+   "bytes": 58708,
+   "sha256": "cbea558b17f1ee9276f02878337407f6600e099a77d65dca52101334202983d0"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a35k/exports/philippine-airlines.validation.json",
+   "bytes": 3787,
+   "sha256": "ff159b2505cbecb0426724f0b343ac69026c56ff536ff86d8eeff00475d029d5"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a35k/generated/philippine-airlines-85-years/authored-color-0.png",
+   "bytes": 217829,
+   "sha256": "87bdb314b4dc73832ee276cbd95c853841d0824b825377aa1829607835d964a1"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a35k/generated/philippine-airlines/authored-color-0.png",
+   "bytes": 203207,
+   "sha256": "a59664c4edb4587299ea0ed23f70aabe246d91a2e8bb39aa0c91bad616202333"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/a35k/lights.json",
+   "bytes": 2543,
+   "sha256": "17ceed75028570fbbb53df15e8fc9b37ee7d11254034b5449755d566a928b1f8"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/asset-handoff-manifest.json",
+   "bytes": 176961,
+   "sha256": "5fdcd15823e39c2e8f90ffec17197f2d87f36d84071b5cdeb90eb85a44f919cd"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/exports/aeromexico.rig.json",
+   "bytes": 99446,
+   "sha256": "28adaf978f3f7952a5040fbfbdae1fb0b4ef2f86814d31c56bebbc454354d39a"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/exports/aeromexico.validation.json",
+   "bytes": 14416,
+   "sha256": "02b9d3f4771b4ae15175f3c76e80da23978ffd6fdbad08f95331adfc25b01a96"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/exports/alaska.rig.json",
+   "bytes": 97123,
+   "sha256": "82aed92fa3af53d6978d741317045171dd94e4363d17eb68d864416a1f81b20f"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/exports/alaska.validation.json",
+   "bytes": 14412,
+   "sha256": "77e4171f09be6cf732de3eb1325890bf8f725c4f937db4dc9758a499d0703e61"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/exports/american.rig.json",
+   "bytes": 97145,
+   "sha256": "837e49f425ef71a65d4d2251ddd7c4bd56fd824dd9e678a917a5aaa0beea964c"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/exports/american.validation.json",
+   "bytes": 14414,
+   "sha256": "318924d0091497710348882a23c9ddef5080bed7723f4f57a027b97470bfb729"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/exports/flair.rig.json",
+   "bytes": 97638,
+   "sha256": "e2091a2370de1a051a74a1292da45b49a752ee69e69e00cc526b4f10d20cf58d"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/exports/flair.validation.json",
+   "bytes": 14411,
+   "sha256": "bd10b4e457531b52565613a31da535e8f978985171bdf1e3276067200778cd53"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/exports/southwest.rig.json",
+   "bytes": 97152,
+   "sha256": "731470c489ba428e5fef864c25538a48d797dbe89582f24ff37661dfacacf35b"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/exports/southwest.validation.json",
+   "bytes": 14415,
+   "sha256": "762b97082eb506352ad1035d411abc7304dd3788159498af75a2a05d0e87fded"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/exports/united.rig.json",
+   "bytes": 97140,
+   "sha256": "25ef39827f1b41d8ccdb0afdcca559115fc06ca071ac1134846a493bcb969bec"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/exports/united.validation.json",
+   "bytes": 14412,
+   "sha256": "37eb4ab665068cb380e2b1c3b9606ee7b1650b4620e2359652ae9d631658a26d"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/generated/aeromexico/aeromexico-nacelles-color.png",
+   "bytes": 276144,
+   "sha256": "a21a4c496edf6f340f8afeedcbc3685c7bfb30abfed072c67024f0780be89f27"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/generated/aeromexico/aeromexico-wingtips-color.png",
+   "bytes": 461424,
+   "sha256": "ab4d9d5ee6389c3421337072979fd242e41ad6772a1e0d9cfc281607dff4186e"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/generated/aeromexico/authored-color-0.png",
+   "bytes": 584797,
+   "sha256": "a7b243fea59b9543d1a8fbf70d470c39c72e342782deb4835dfacc11d6277b5d"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/generated/aeromexico/body-color.png",
+   "bytes": 597654,
+   "sha256": "0acd899841ea517367e7fbf2e4552e31dabf377a7ac4f89e0e4572b5ae494168"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/generated/alaska/alaska-nacelles-color.png",
+   "bytes": 283952,
+   "sha256": "e6d9d942408e215bc9a283b9ccff8748bc7f7b80d7047798add656584925d1b4"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/generated/alaska/alaska-wingtips-color.png",
+   "bytes": 1267370,
+   "sha256": "36cec3baa3f4cc1f32484e0fa273088f28e13631100896cc16b651815526dfeb"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/generated/alaska/body-cabin-mask.png",
+   "bytes": 69623,
+   "sha256": "79b6446d3d12f005a49e53d1dc2d2b7850d6ae8c8760c399d6fe0918f947a0d4"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/generated/alaska/body-color.png",
+   "bytes": 2138619,
+   "sha256": "365b15b795eeb3441cca560cec60a4bfb57260ed99df466b8463e39265767ba8"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/generated/american/american-nacelles-color.png",
+   "bytes": 303647,
+   "sha256": "8700f86bb5df8a83c5b109966fa1496855f5e348781db4de3f8dcaec8f5a3451"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/generated/american/american-wingtips-color.png",
+   "bytes": 1126702,
+   "sha256": "66601d4d84a0be1e7c0cec3ccdfdc3726a09fa9772a0e040ee8645cc12536077"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/generated/american/body-cabin-mask.png",
+   "bytes": 69623,
+   "sha256": "79b6446d3d12f005a49e53d1dc2d2b7850d6ae8c8760c399d6fe0918f947a0d4"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/generated/american/body-color.png",
+   "bytes": 1302581,
+   "sha256": "5db458655929dcdbe13f3cb3c221e2666f8fc544f2a714140db4728906c7e1eb"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/generated/flair/authored-color-0.png",
+   "bytes": 465679,
+   "sha256": "66c58837050baf0acad94028b32504180cc99c927168216e840bfcc0d792c3d3"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/generated/flair/flair-nacelles-color.png",
+   "bytes": 303800,
+   "sha256": "45b3a100ea249c493d4f8997affeff92cfb8822c9d6db033eeec600975ea87a0"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/generated/flair/flair-wingtips-color.png",
+   "bytes": 538997,
+   "sha256": "0f3536c6f1dfff8b83a87debf1b8494cf115f23cf8ab273c08552d3d57d2cbca"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/generated/registration/N77259.json",
+   "bytes": 412,
+   "sha256": "5b35799bfc426be1860c279f5f2d129f0becb956c49e2515ddcec53e519960a2"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/generated/registration/N77259.png",
+   "bytes": 493822,
+   "sha256": "1588642351dfc3780fcb9aba817f53c1b134aef0a0e6ca1c644e317757d719ee"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/generated/southwest/body-cabin-mask.png",
+   "bytes": 69623,
+   "sha256": "79b6446d3d12f005a49e53d1dc2d2b7850d6ae8c8760c399d6fe0918f947a0d4"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/generated/southwest/body-color.png",
+   "bytes": 1003127,
+   "sha256": "150505e343f444909d6921f7999f220c5f7e7fcb3a051f079ae48e86a6389d2e"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/generated/southwest/southwest-nacelles-color.png",
+   "bytes": 291421,
+   "sha256": "45c7cccf5da1ce65531a5a617de09a0da4f66ecfecb2b1158c8312388af84fa4"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/generated/southwest/southwest-wingtips-color.png",
+   "bytes": 879682,
+   "sha256": "ca391f80466b5a14d7d5c0ed0050408a9c2ffc15945b33170f9e2a342b9f28db"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/generated/united/body-cabin-mask.png",
+   "bytes": 69592,
+   "sha256": "3cd3e5d76323732e4034c20cd9626913e50b7288593ebaa8d95f057991f21892"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/generated/united/body-color.png",
+   "bytes": 1379395,
+   "sha256": "a0777237bfd57484cf9598ba970df0841c53390bd53eba731365b788c65002ee"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/generated/united/united-nacelles-color.png",
+   "bytes": 286625,
+   "sha256": "040057516f4612e985b7fd8271a14c954793142ace813b804284fa90f2fe91a2"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/generated/united/united-wingtips-color.png",
+   "bytes": 1028410,
+   "sha256": "c9efca07a89fc847ba87820de91040ae3e541222d58c3c444d664791e9a9a0bd"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b38m/lights.json",
+   "bytes": 3395,
+   "sha256": "c723d7148bfc440c401251364db52889a9f3451748d8458dc59326a9058c1e6c"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b39m/exports/aeromexico.rig.json",
+   "bytes": 95342,
+   "sha256": "8c8584688360fbf9240ca2dd8f4ef74b88f56808a3e5962f88c191a79d7e2287"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b39m/exports/aeromexico.validation.json",
+   "bytes": 14416,
+   "sha256": "d6583d747026d413c5012ae1759263f35e3880375831a25741c983ba9d802f1d"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b39m/exports/alaska.rig.json",
+   "bytes": 93442,
+   "sha256": "8fb950446e481994f48a5a913713fc6610185b6e1dcf8ac306e01e58480007c4"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b39m/exports/alaska.validation.json",
+   "bytes": 12668,
+   "sha256": "783291824d233b4d26290b5ea1f77e3d817e5cc4ce27a616c565e5a7318e2d59"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b39m/exports/copa.rig.json",
+   "bytes": 93456,
+   "sha256": "a5f62594ca9f3191508dd73a5f5f68be61deb697520e315db5b7f61d12be22c3"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b39m/exports/copa.validation.json",
+   "bytes": 12666,
+   "sha256": "418df421709570bb974fdb9721dfd5f2d0e1682e2e88a380415259a44d861dc7"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b39m/exports/united.rig.json",
+   "bytes": 93454,
+   "sha256": "8455b4de221b3bed971531c55d9fe7bed0beaed0231c03cbd5a39ed81983663a"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b39m/exports/united.validation.json",
+   "bytes": 12669,
+   "sha256": "4fa38803cd5c17637e40e039ac2055e5c0a0e622a7b0a3c4cfe8e9986b799f03"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b39m/generated/aeromexico/aeromexico-nacelles-color.png",
+   "bytes": 276144,
+   "sha256": "a21a4c496edf6f340f8afeedcbc3685c7bfb30abfed072c67024f0780be89f27"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b39m/generated/aeromexico/aeromexico-wingtips-color.png",
+   "bytes": 611044,
+   "sha256": "d372feab6216ee37c7c1ecbace888202e947d9667dffb612836fbce4433d0ed0"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b39m/generated/aeromexico/body-color.png",
+   "bytes": 982495,
+   "sha256": "779d2ce4de6f85c33bfa32ea727545381e131ee82af7f2a5bf0edcb1008abc9d"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b39m/lights.json",
+   "bytes": 3395,
+   "sha256": "2e91a56ec29a589584f099094ff6c98666ebca82bc9575e525883ec0f5b645cb"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b738-current/exports/american-aircal.rig.json",
+   "bytes": 54713,
+   "sha256": "9beec3a53fe3ff78e72fa4e5435f5ea46e09450fe833b94526156d06274982aa"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b738-current/exports/american-aircal.validation.json",
+   "bytes": 17300,
+   "sha256": "6b52552b46f3934ecfa84626a8f06238cf524f33a091e28452b8ef3293844d7f"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b738-current/exports/flair.rig.json",
+   "bytes": 57088,
+   "sha256": "e5e8304f3a1b657d1583410ebd5eaa914d81f95a69e1bc4ddf98c6f8ea78a542"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b738-current/exports/flair.validation.json",
+   "bytes": 18204,
+   "sha256": "c2f6a894047858ea0d6d9ece66f6735f5477d456c5d126ca6b7ab888161348d3"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b738-current/exports/united-star-alliance.rig.json",
+   "bytes": 54677,
+   "sha256": "490e985f2c37932d519cd51999ee8e05bbba16b423afd9a8fde3bfffda5ad8fe"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b738-current/exports/united-star-alliance.validation.json",
+   "bytes": 17305,
+   "sha256": "378869bd519cd0170ee6147e7509e18fd7d3c2183af85d34daa2a7752315de78"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b738-current/exports/united.rig.json",
+   "bytes": 54658,
+   "sha256": "0d6ffec0338204e9bf561395538746d0d40bfba80ce46230b0c925d004a8b5bb"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b738-current/exports/united.validation.json",
+   "bytes": 17291,
+   "sha256": "c5f4a9c82378a9cdcc8822b2cd3672dc785114a3ae1c3a19d4babfea4c3254f1"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b738-current/generated/flair/authored-color-0.png",
+   "bytes": 1043706,
+   "sha256": "6768b06bed7ad7b6217c06beb1190321ca7c9197704cc8d137604bdd72cbd7f9"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b738-current/generated/flair/flair-nacelles-color.png",
+   "bytes": 474265,
+   "sha256": "c48953369d2dccb224e8462e98182a392d325e2c28b72d34effe8ad413f888ac"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b738-current/generated/flair/flair-wingtips-color.png",
+   "bytes": 474265,
+   "sha256": "c48953369d2dccb224e8462e98182a392d325e2c28b72d34effe8ad413f888ac"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b738-current/lights.json",
+   "bytes": 2725,
+   "sha256": "df391e4e5450657b23fc0d446dc9f36288272b08328498c440881a4f09724e91"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b738/exports/alaska.rig.json",
+   "bytes": 31103,
+   "sha256": "20404ca2099ba700fb8246919f271eaf324175d061e2f7247a423d8627b609a5"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b738/exports/alaska.validation.json",
+   "bytes": 16338,
+   "sha256": "0311dbc6dd5fd14c2051e312586fd99b43f1e5a461a3040d22db48227de05da5"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b738/exports/american.rig.json",
+   "bytes": 31106,
+   "sha256": "171e03b8f5b7d35292a9d5938d4f9f9ec355d7fb1b792d467f8a14e90ddcda89"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b738/exports/american.validation.json",
+   "bytes": 16340,
+   "sha256": "4ded8cdfc215170e597734284cb1d0cfdf31b72621e390c145efd1ee95441fd7"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b738/exports/delta.rig.json",
+   "bytes": 31101,
+   "sha256": "0cc82508eded34e522c341d17be2464be597760684998b0130e113f1f5cf344e"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b738/exports/delta.validation.json",
+   "bytes": 16337,
+   "sha256": "3fd15d3b225b85fe7fb389af3a9861dbb263dea89692950a1dbb3b8cc2082247"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b738/exports/ryanair.rig.json",
+   "bytes": 31095,
+   "sha256": "3e4e36fb2ae05bfff0fde72b29e36fbfb50286ed440c6344ae5b95781b3a2743"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b738/exports/ryanair.validation.json",
+   "bytes": 16339,
+   "sha256": "fa5f44c55fe1a7e87cb682581fb1f4b96c61a877581e6b9551e4c51892a9b7b8"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b738/exports/southwest.rig.json",
+   "bytes": 31103,
+   "sha256": "1d3130c94268c3f9943f2ba0e4e0665ed3291b454466a162ef06bdd0f4b2e1d6"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b738/exports/southwest.validation.json",
+   "bytes": 16341,
+   "sha256": "3e920e3ce68f870c0a055dcb70ba02256c4ba6a49c913dbc34a10365950ade6b"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b738/exports/united.rig.json",
+   "bytes": 31131,
+   "sha256": "79cd71af97ce796e3b3c5c75431a732b0b05da032253930a63f209369b9c7f01"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b738/exports/united.validation.json",
+   "bytes": 16337,
+   "sha256": "1aac8391b4778dd6f6779ce61759be3b7cf048241966a757e3364682884dbcd3"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b738/lights.json",
+   "bytes": 3386,
+   "sha256": "f2ead17e5aa5c497648a028973da6c3b1d0718a73c389c1f77ec8cc3c3b34ee7"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b738/upstream/LICENSE",
+   "bytes": 18047,
+   "sha256": "c03cea027b4b40e4402fabd08557736727ec3d5bc54ad64ab6472de432198cad"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b738/upstream/README.md",
+   "bytes": 283,
+   "sha256": "6813d328fc1f7d9bb1f4fbf284933bdc97c12d1d7c8f81c2ce27a16f3b9dcaa5"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b738/upstream/THANKS",
+   "bytes": 644,
+   "sha256": "d9af93ebb3094c25a506fc93a07efd6f92ff49429a5a982ee58ca72b4e72c818"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b738/upstream/download-manifest.json",
+   "bytes": 16505,
+   "sha256": "cf533136fc9b2513ccae751ff7c37f471d0a3777b5b68466abcde41b479a0b4b"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b738/upstream/repository-tree.json",
+   "bytes": 217727,
+   "sha256": "894e0fb37dbf87ae88fe84e052f14568cc6e0ba9066d31d50e30f5f0ab7f20e9"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b738/upstream/upstream-revision.json",
+   "bytes": 125,
+   "sha256": "7e0ea4c962c64a9fb4319a442af8d49a8ff9260584e88f54266d5cbc62f2e6e3"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/exports/air-china.rig.json",
+   "bytes": 130843,
+   "sha256": "d18255004d1157cae52aa215618a0e30c1ad6b4bf2e843bd87c55f34fb082aa3"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/exports/air-china.validation.json",
+   "bytes": 13233,
+   "sha256": "1d34109656590714ee3841f18bc8b5ce02385321ad97def52f876b86e5374b86"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/exports/air-france.rig.json",
+   "bytes": 128389,
+   "sha256": "2e0ea7fc3934cb4a27bb1f3494a67771d019aec895262ca5672d1c0abaf82c8d"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/exports/air-france.validation.json",
+   "bytes": 12933,
+   "sha256": "785115351045a2bbcd7852d00cae105c05d2c248ce86fd5e5b2af36411e2e1ee"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/exports/air-india.rig.json",
+   "bytes": 128416,
+   "sha256": "1616b0e21aebbcdd8ad0616b0f1528d8a77b3fe7ae69863b3eb0ea239e82abb6"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/exports/air-india.validation.json",
+   "bytes": 13238,
+   "sha256": "a3a2827b4bf51889d1de981cf2258577f87aace112eca9a0d714bc10780cc2cb"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/exports/ana.rig.json",
+   "bytes": 132165,
+   "sha256": "0991fe55fea72b2e1ace676eab2ac16ccc2d09a015f9b146572dd96639b54c4c"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/exports/ana.validation.json",
+   "bytes": 13227,
+   "sha256": "fab9b92e0531393cba639ab5827f7fa1a3aa801aa765d554bd172a3d37977805"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/exports/british-airways.rig.json",
+   "bytes": 128429,
+   "sha256": "b71af47c97f0be71fec8c3e9926933c21654ddda1dbc17d539806c93eaf6bd23"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/exports/british-airways.validation.json",
+   "bytes": 13244,
+   "sha256": "8706e6dd0d62c5cfa98965d6375b1418531f99fd2d8a9731bc5aa290a45a32cc"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/exports/cathay-pacific.rig.json",
+   "bytes": 128403,
+   "sha256": "9cfeab2d2dabc848e77dcbfed8174662a95ce95f8ee26265040dac2a5eed8cc1"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/exports/cathay-pacific.validation.json",
+   "bytes": 13243,
+   "sha256": "9df8e94bf37b7a1ee7f985dba8b681f2c90475af87726be138e7d7577dcd1890"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/exports/china-airlines.rig.json",
+   "bytes": 131082,
+   "sha256": "4e3928e618a6fd8dde15b4ffa2cad41694696ffc6867cd9e204adceea72a64c6"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/exports/china-airlines.validation.json",
+   "bytes": 13238,
+   "sha256": "6ef22e294a6cfa8763cb6059e2a69a98340e932219391aed3e303db56e92b87e"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/exports/eva-air.rig.json",
+   "bytes": 131425,
+   "sha256": "133d31921cd50b4a092132a61bd2f6cbe4b7792f8d457b2ca10336fc102e02eb"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/exports/eva-air.validation.json",
+   "bytes": 13231,
+   "sha256": "0e0883318d0b720f25cb48e996c9fab3efe32402c4f56272e3e13ee9806857d7"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/exports/japan-airlines.rig.json",
+   "bytes": 129969,
+   "sha256": "af9cc1f4167006e28cae575de2c903c8293571d23888d32fcd5a7e394a61d4aa"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/exports/japan-airlines.validation.json",
+   "bytes": 13238,
+   "sha256": "f9ff2b110c6b954a40037e90eea4a71f90541e18c937f8e8162394d4d7f515c5"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/exports/swiss.rig.json",
+   "bytes": 129961,
+   "sha256": "b0aea955df4af03c7c683f97885821c118fccbdc9e209c7cd03c70938eb4971d"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/exports/swiss.validation.json",
+   "bytes": 13229,
+   "sha256": "329f161be0cc2845bcc7d61d0a81ba9f27033832b06a5417a013fb7bc3417567"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/exports/united.rig.json",
+   "bytes": 131287,
+   "sha256": "21c0abe43a1d4124f6494875318b4b323486b5e6e9e7c0becc02a72d712d6866"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/exports/united.validation.json",
+   "bytes": 13230,
+   "sha256": "10bacbbd4c4ade6bfe265093a60c2eb1d10aa69a5eb0f89b1e68a0332c05470f"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/air-china/authored-color-0.png",
+   "bytes": 162031,
+   "sha256": "c32e125c0c4c2ad7a8584cfae20de3f15b2ccc20bd204a7336ea73b7df322e2a"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/air-china/authored-color-1.png",
+   "bytes": 73169,
+   "sha256": "9e34fc833293a9f1f0faf65e5d53d7db97746768cf4f54de9c8c41ffcbb0a96d"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/air-china/authored-color-2.png",
+   "bytes": 509699,
+   "sha256": "728a19b44fd0375e76054414a2367f569a5d4183bd530d7a13b326dab71b03ae"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/air-china/authored-color-3.png",
+   "bytes": 380746,
+   "sha256": "0bd4895d46c0b5120e19504e445504de21aa4fa218d925ba8e5bab6f21921dac"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/air-china/authored-color-4.png",
+   "bytes": 1471270,
+   "sha256": "ad7bc6b769db8327f3c76f409775fded9e1b3baaa7a54e9c6bba65dd25175215"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/air-china/body-color-0.png",
+   "bytes": 391646,
+   "sha256": "c3a481c4b51f918d3fac1dd3b43b12c317fdccad6926c7d355dec07f13183349"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/air-china/body-color-1.png",
+   "bytes": 262710,
+   "sha256": "2a82ea2da7993305a4b17bc050188e7ce2299636056115ca8d142da66089da6c"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/air-china/body-color-2.png",
+   "bytes": 715222,
+   "sha256": "a6a3380d6521cc97436de3457debcaf125941ba390efcffb2ed141ab9058dde6"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/air-china/body-color-3.png",
+   "bytes": 1717318,
+   "sha256": "4db7ceb45b52358bcefeeffac4b92dbb1ead4367b9464e17efd4f91167a02b2e"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/ana/authored-color-0.png",
+   "bytes": 364334,
+   "sha256": "f1336327cf11401001ab01eff8a0d40552697098bfd08bb1186efe5f3367dd19"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/ana/authored-color-1.png",
+   "bytes": 72660,
+   "sha256": "44077196c310f76601e693a630e4c5f924a742a483a951af86dc5103c18853bd"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/ana/authored-color-2.png",
+   "bytes": 512434,
+   "sha256": "4a57ae756e06219e44b4e377b6b1f8aecb9291c0929b906248609615e820bac4"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/ana/authored-color-3.png",
+   "bytes": 411384,
+   "sha256": "58c3f970612e8c8ec3466fdf5c47d3e6aa66b12886b775bacf0e00e1ef8ca701"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/ana/authored-color-4.png",
+   "bytes": 1465260,
+   "sha256": "ebe1e26b87c85448f1f6b3ebddaafdb5f0686ee6674bce00765180f5bf42ee32"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/ana/body-color-0.png",
+   "bytes": 391647,
+   "sha256": "9e146aa9dd1db403947aef4f4e79e6d24ab37d802ac8f43d03c3a4299ff54389"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/ana/body-color-1.png",
+   "bytes": 196871,
+   "sha256": "a62ce6811e1a5f65c64dab75c3eab2cf557b0cb2c62f63b1fe924e7644670838"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/ana/body-color-2.png",
+   "bytes": 607148,
+   "sha256": "a55d6dd362ccc0d047266cbc6aa939a32a89fca12e836955d6d3020a2d31b3c7"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/ana/body-color-3.png",
+   "bytes": 1949849,
+   "sha256": "84bfd47a6087247bd1704bcfea8ea1f032ff1d7178788af19959963a806ceead"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/china-airlines/authored-color-0.png",
+   "bytes": 685690,
+   "sha256": "50666696f241f2c4e2907b17203924cd3bebd9816ac25607aa7141a403f57ef4"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/china-airlines/authored-color-1.png",
+   "bytes": 234860,
+   "sha256": "2caa7d8b2c06e601de9efe67a27b97a75f2ee4304685417a82f9c8eb02f62f65"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/china-airlines/authored-color-2.png",
+   "bytes": 1446166,
+   "sha256": "9a15d570d2c6fac3bc315b76b056c277761e651354227c476c2957b76ab63ebf"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/china-airlines/authored-color-3.png",
+   "bytes": 967474,
+   "sha256": "00fdd6d32e090ef405d5c4e5a35927e480c94a8a49bde3e9967a99831d0f7cd0"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/china-airlines/authored-color-4.png",
+   "bytes": 5099447,
+   "sha256": "6ca2bbb85da53153817bd02554858a504bb659a18f70d68adb281f5e26218591"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/china-airlines/body-color.png",
+   "bytes": 2001195,
+   "sha256": "9aed38247eb2ce9df0656cd2264675a3843f85a732c735b426f6ed9b2507182e"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/eva-air/authored-color-0.png",
+   "bytes": 199959,
+   "sha256": "3259363fe51c8a6c61d9222489f8dcb0a31b94bf98ad1a1a7a20ccecfb77778f"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/eva-air/authored-color-1.png",
+   "bytes": 72074,
+   "sha256": "83fc9f56ee0c6918bc39a28c4fa1bf31fa8e840ec1f691984bfd9b4c2ec18a7b"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/eva-air/authored-color-2.png",
+   "bytes": 511998,
+   "sha256": "cd875a6b76769f63fc946b3212778b41c57564060d70a82d8c78bab9f3b86951"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/eva-air/authored-color-3.png",
+   "bytes": 339257,
+   "sha256": "50dc9a407b2f7f2ee419a5661dd54fbde34b1223bf971026bd8cf260489bb4dc"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/eva-air/authored-color-4.png",
+   "bytes": 1508411,
+   "sha256": "e1c4640a455760110e90a96d777232e099636ec63dead0913b8a4f358484a3bc"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/japan-airlines/authored-color-0.png",
+   "bytes": 248941,
+   "sha256": "9ac6f1904dca75035d2fb5d0d6afa5008df5be6fd806a257d820ec7e9ec1ce0e"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/japan-airlines/authored-color-1.png",
+   "bytes": 72385,
+   "sha256": "2159a599a009f5a10b301a113a1c25f65fc194bea54352c9cf6e3a8dccfaa135"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/japan-airlines/authored-color-2.png",
+   "bytes": 508783,
+   "sha256": "0cc2634eff2e4d13bd4d0e687b546dc21524ba16bdbef8572b6805113265e25a"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/japan-airlines/authored-color-3.png",
+   "bytes": 364938,
+   "sha256": "42c44a9f713068a0a56e5b20e7f5fa77046949a8498fee61e56419b4f0d7ca6f"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/japan-airlines/authored-color-4.png",
+   "bytes": 1496097,
+   "sha256": "5202666d017cee56bccf5ab16a8c3f2f0d773264d5e9d6daf1a2bcc2337c45ee"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/japan-airlines/body-color-0.png",
+   "bytes": 391646,
+   "sha256": "075d3916a3a3413791e776a1e771aadf8e0cc9a93412e5854ea5a26217993f19"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/japan-airlines/body-color-1.png",
+   "bytes": 159089,
+   "sha256": "20f7f2eb149fa27bf566e0508cbe3a07acb12c5a5475a9767d38be3aae1c2666"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/japan-airlines/body-color-2.png",
+   "bytes": 612391,
+   "sha256": "2a3c3b42c435ca6fa1039672f9ae4b7a4e6d265d09c6a46a92cce876d8925235"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/japan-airlines/body-color-3.png",
+   "bytes": 1845260,
+   "sha256": "cb140c6678bc8e0e639560175f86db959037d4d051a97fd4ed9f73e059bb24ac"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/swiss/authored-color-0.png",
+   "bytes": 201739,
+   "sha256": "be4f32545ecc2d1c86ca71473a946411202d2a3f1749b2f0025df6abc1079e94"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/swiss/authored-color-1.png",
+   "bytes": 71653,
+   "sha256": "99a9ad2a581954d0f1b5d732db8696fcb2fd0ef8b72e0f36ec4d83ce19757e5f"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/swiss/authored-color-2.png",
+   "bytes": 508783,
+   "sha256": "0cc2634eff2e4d13bd4d0e687b546dc21524ba16bdbef8572b6805113265e25a"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/swiss/authored-color-3.png",
+   "bytes": 347128,
+   "sha256": "be5e306fb038c4d0a54e2af49edae97d2acb2a212437b361e0a88692cc7e1339"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/swiss/authored-color-4.png",
+   "bytes": 1356333,
+   "sha256": "04ae6c5e0621afd96cae03f8fec017c78ac7bc841f5e6eadde104be749cfad34"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/united/authored-color-0.png",
+   "bytes": 465722,
+   "sha256": "de25451360ce052bdca039a68a8d2f2b8282c28b99671e2bdbcd8ce9e3bbed32"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/united/authored-color-1.png",
+   "bytes": 234799,
+   "sha256": "e2e308a4e24498f897af71e1a8afb199870e0a8a7a16233ce332cfcb63572ee0"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/united/authored-color-2.png",
+   "bytes": 1444813,
+   "sha256": "bcba40a7bb373813cd49ab3a96005d1a225517f11d130d3a13dfa25e087a6547"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/united/authored-color-3.png",
+   "bytes": 925758,
+   "sha256": "cd7c2bc5a6fb0653ae3bd4b16abdd6d0708ce2ef306cb1ee0dee060fb1d5cf90"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/united/authored-color-4.png",
+   "bytes": 7303857,
+   "sha256": "15993cac38654a2ceaabce930975fb4d758866df99440bbc1b7d8f36bd5e0cf6"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/generated/united/body-color.png",
+   "bytes": 2733985,
+   "sha256": "da85e78f96089f8afbe2685db8ac95c1e9c566d34d30c6f71ccc30ce8f8ad298"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b77w/lights.json",
+   "bytes": 2031,
+   "sha256": "a6fd6b44b7dc1bed36b23b71d409a84569a80081022762f4bf093b0d281a6bed"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b789-current/exports/air-new-zealand.rig.json",
+   "bytes": 61894,
+   "sha256": "8cfa90268b8235e95fdc42e6e615fc705ff1c0bd8a2a45568abb1ca51546fd35"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b789-current/exports/air-new-zealand.validation.json",
+   "bytes": 10115,
+   "sha256": "1ea67515681fc90bccfceb9231f03fa2d51932e6519a2dfa739952ab1754aa82"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b789-current/exports/air-premia.rig.json",
+   "bytes": 60850,
+   "sha256": "3866e7cdce201056c2f40fee12520fbb0a425e3e206198098627fc2e1a477ab3"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b789-current/exports/air-premia.validation.json",
+   "bytes": 10110,
+   "sha256": "3b633d20aeecf8d487514454cf82f2de4c6c2145e4c4d389c985458664c112fa"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b789-current/exports/eva-air.rig.json",
+   "bytes": 60146,
+   "sha256": "be1734d76d89701e19e8086161b87cd5773942a403bf65c402367167369699f0"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b789-current/exports/eva-air.validation.json",
+   "bytes": 9802,
+   "sha256": "8023c5058d1b4a9b0a42f218a5ea050fc2e076dcc623505d9cc0bf25ba3fe215"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b789-current/exports/japan-airlines.rig.json",
+   "bytes": 60695,
+   "sha256": "c0ce9c82ef3cded0ebe02bbb73375157fe99d15ac9af43bb783b5f7b0cc3fe62"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b789-current/exports/japan-airlines.validation.json",
+   "bytes": 10419,
+   "sha256": "91518776e66d9cf2ce07af82cda53d99d0337c1ae12c98985f215674126832df"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b789-current/exports/qantas.rig.json",
+   "bytes": 61681,
+   "sha256": "0113802af311bfb29cb2958cdf841222e9df08ceac39a6c51dd1224796c4e320"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b789-current/exports/qantas.validation.json",
+   "bytes": 9801,
+   "sha256": "86542c1b03736616cc1c5b41c2c626751512ed956d0ffabce1945ff065ff7328"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b789-current/exports/united.rig.json",
+   "bytes": 59303,
+   "sha256": "498c200781d437a58cd95b42a2461e2859ae5ccb324f0dfe22f8fff91618661a"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b789-current/exports/united.validation.json",
+   "bytes": 9192,
+   "sha256": "8eae001beb791898b3ce68e1ded3bf4e316d4170c9fe85c66bfe9572fe406fd4"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b789-current/exports/virgin-atlantic.rig.json",
+   "bytes": 60552,
+   "sha256": "f60fecf8c3c155a1b4db27f0b0b886c06a44861dd8fd77baf02889c994ca2d00"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b789-current/exports/virgin-atlantic.validation.json",
+   "bytes": 9506,
+   "sha256": "931e3e092a3f513cf49101b0f3f6a847fe358a51284a50f960356e867dc20133"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b789-current/generated/air-new-zealand/anz-nacelle-color.png",
+   "bytes": 489630,
+   "sha256": "c9d1b332a08264477ca5d187cdca5e313322e52a625c3dfb90a43e337b816613"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b789-current/generated/air-new-zealand/body-color.png",
+   "bytes": 2379931,
+   "sha256": "4f6f4acd2949ca1f4183bfa455e6003cb04477f5ab16822d0b385455a01cd612"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b789-current/generated/air-premia/air-premia-engines-color.png",
+   "bytes": 1886872,
+   "sha256": "22e2da8aa09802f51ae782caf3b4723644b522c3683ee036dc0f1a4a0f24ce28"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b789-current/generated/air-premia/authored-color-0.png",
+   "bytes": 594462,
+   "sha256": "9a6cae59c09f0f682d0537447634f8a877594768481ce225d11fc96d05210c00"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b789-current/generated/eva-air/body-color.png",
+   "bytes": 1269761,
+   "sha256": "c9226973e5835c874a29d9dbb809d1f9d0873f897e0cc5dd36a5ac1aba08c07e"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b789-current/generated/japan-airlines/body-color.png",
+   "bytes": 2751994,
+   "sha256": "82ff1beee16e27a137889600072fa6b51ec9e9820b7733319432fc4b0ffd2ab8"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b789-current/generated/japan-airlines/jal-nacelle-color.png",
+   "bytes": 2697762,
+   "sha256": "b320328215c57cb1097b6295a8b6818cb5eea39c806dc0fe0ee162adc5e5f53d"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b789-current/generated/qantas/authored-color-0.png",
+   "bytes": 750624,
+   "sha256": "73919ca98112f8a26e441796f89192d3d82a94332f6a0739baca12d4750c334d"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/b789-current/lights.json",
+   "bytes": 2950,
+   "sha256": "53190d700cf461f448ac63bb0155611f870868dcf950090645236e40ab506078"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/e75l/exports/alaska.rig.json",
+   "bytes": 24239,
+   "sha256": "e567bcef530eea0f57fb1ff70dc1d8805edf806c137e3267c70499e8d67e6c35"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/e75l/exports/alaska.validation.json",
+   "bytes": 4680,
+   "sha256": "a80cd82d1f45a113b897c509add91c2a9ea31fb28ea2eaa04604590c8b30ef69"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/e75l/exports/american.rig.json",
+   "bytes": 23877,
+   "sha256": "0f76ea32e0a03a428b9be44e6b56af492ed8364cff3bbe12b4dfb8b8f8a63293"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/e75l/exports/american.validation.json",
+   "bytes": 4682,
+   "sha256": "f9d13f84dd1e2bfae520f2a71f818efac2f84c9b3d945bff1d6f5c4f59ad5a2e"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/e75l/exports/delta.rig.json",
+   "bytes": 21279,
+   "sha256": "d82e5d96b710747931ada6df58dd5f714b367e7dd3a8c446c510d1144c3c31fd"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/e75l/exports/delta.validation.json",
+   "bytes": 3766,
+   "sha256": "0f4567d5b6f355f2970316fb39f1324205845fb283805e9a0f32b27ba7904cae"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/e75l/exports/united.rig.json",
+   "bytes": 24076,
+   "sha256": "4f4e62a05e851340170dc9ba1ea2613814c4dc304bc40a7ca14ac5ecf0a9b763"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/e75l/exports/united.validation.json",
+   "bytes": 4680,
+   "sha256": "aa7e4865831f03520a0fdd7ee10f1d4205bcf5a3dfafee7ae808df5fa6646cb6"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/e75l/generated/alaska/alaska-nacelles-color.png",
+   "bytes": 962863,
+   "sha256": "336201aa14a3a3f3216441fb4f7221acd434e356c4c3062b196438fb13c661ac"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/e75l/generated/alaska/alaska-wingtips-color.png",
+   "bytes": 813717,
+   "sha256": "906ea55897d7245f6a8e33394bf79dbc90f1de6413e3e955fb9d26ef216509ed"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/e75l/generated/alaska/authored-color-0.png",
+   "bytes": 3541472,
+   "sha256": "5626110d7050952f39e42d2e14e12e1aea45bb5eadc654a2e51abee0b195f736"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/e75l/generated/alaska/body-color.png",
+   "bytes": 1372747,
+   "sha256": "ffadd17146dc73c9a417b45fbea802a1f94f26f93bbf4580656d42eec893e544"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/e75l/generated/american/american-nacelles-color.png",
+   "bytes": 745695,
+   "sha256": "ace408601e9cf51ec415f9d3e180358e07f70fbf4ecd84a7d8dc70863b9f695e"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/e75l/generated/american/american-wingtips-color.png",
+   "bytes": 745695,
+   "sha256": "ace408601e9cf51ec415f9d3e180358e07f70fbf4ecd84a7d8dc70863b9f695e"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/e75l/generated/american/authored-color-0.png",
+   "bytes": 1928508,
+   "sha256": "6f885fe8a59db1584381b3b7d059c18ebc2b9b6e3deb9559a2616da66f4de90e"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/e75l/generated/american/body-color.png",
+   "bytes": 932262,
+   "sha256": "5de0ac5b9ca75d9f94a62f8cfb116f09dab8b7d5f46888902b56955f75df50cb"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/e75l/generated/united/authored-color-0.png",
+   "bytes": 2397400,
+   "sha256": "9c070657059e4182653cc902e07a5feaa8b008f4084bf23b666feeb41b13362c"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/e75l/generated/united/body-color.png",
+   "bytes": 1069076,
+   "sha256": "746f154e396c65e5df7ec1befc474759aa64d0ef908873f9eba4bda1e8eda3ee"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/e75l/generated/united/united-nacelles-color.png",
+   "bytes": 751303,
+   "sha256": "f5a98d544100f3b468bbe67c334aa1977e33e4c51d21e4498b7883d089651f02"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/e75l/generated/united/united-wingtips-color.png",
+   "bytes": 751303,
+   "sha256": "f5a98d544100f3b468bbe67c334aa1977e33e4c51d21e4498b7883d089651f02"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/e75l/lights.json",
+   "bytes": 2026,
+   "sha256": "8ca168e596feb2a80d4123fb41135d9a970b4c84cd51b152d0ce67f718750c77"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/fleet-build-config.json",
+   "bytes": 257458,
+   "sha256": "449beeb0529a7b69bfb452c91b6b3b3b428efeda90d4e00d44c0ed472e44efa3"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/fleet-catalog.json",
+   "bytes": 26269,
+   "sha256": "cc3ad2ab32f955730362c0dabfd88aab6d8cf9c6d1b33f08b421239746308523"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/fleet-validation-summary.json",
+   "bytes": 110245,
+   "sha256": "f6e92cac88b91668f45313b01f0963b7c512d9794db4d4b0662ff046acae9d31"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/737-MAX/download-manifest.json",
+   "bytes": 19888,
+   "sha256": "3981beac016c9aa791a3f3920c1157d1a51da771cff6f6ac29e41268a7c57b2a"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/737-MAX/repository-tree.json",
+   "bytes": 143629,
+   "sha256": "8da0735e29858df65d1b6427f1ea82870d4fbec20a0977bc1205ff332ee5c3b4"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/737-MAX/upstream/LICENSE",
+   "bytes": 18092,
+   "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/737-MAX/upstream/README.md",
+   "bytes": 1303,
+   "sha256": "9ae90849602a81ba80388f18d1dfeb4a8ba039a7b7f906d9c55022c8c9215c72"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/737-Next-Generation/download-manifest.json",
+   "bytes": 112650,
+   "sha256": "4d81db5a90911e6495e1a409848ba409e972bb22c0898f93f96758bfb26e23c1"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/737-Next-Generation/repository-tree.json",
+   "bytes": 357110,
+   "sha256": "4d3c77e204d5ac108acd6f269a60853358306bccbfcede014a4d12698a83360d"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/737-Next-Generation/upstream/LICENSE",
+   "bytes": 18047,
+   "sha256": "c03cea027b4b40e4402fabd08557736727ec3d5bc54ad64ab6472de432198cad"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/737-Next-Generation/upstream/README.md",
+   "bytes": 778,
+   "sha256": "5f012abb9ee9aed78accf40bca48cf5f624d44f1fdd182605a16873dc02b2e82"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/737-Next-Generation/upstream/THANKS",
+   "bytes": 527,
+   "sha256": "e01e64e05868abde7939983de5a9e17c0a27876aa71a0c117278076269e8d3a0"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/787-9/download-manifest.json",
+   "bytes": 13672,
+   "sha256": "915f82beac515113d898605f7fae263e3af448ca131c42651eba0ec94ecc684f"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/787-9/repository-tree.json",
+   "bytes": 129092,
+   "sha256": "68fb13e9d7df7bab3aa9c88039d2fbf46636c18c35c3b21cd2d635500cd79452"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/787-9/upstream/Authors-of-the-787-8.txt",
+   "bytes": 962,
+   "sha256": "dd4da34b0351fd4f9ee94ed908d102ca18a85e1f03add41c8158e4eeac4c8d80"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/787-9/upstream/COPYING",
+   "bytes": 18347,
+   "sha256": "b15f41248f0957edfd2d91202ee810a6ef2d92c0256d330585d806677306a706"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/787-9/upstream/LICENSE",
+   "bytes": 18046,
+   "sha256": "db296f2f7f35bca3a174efb0eb392b3b17bd94b341851429a3dff411b1c2fc73"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/787-9/upstream/README",
+   "bytes": 117,
+   "sha256": "9503b6182834be5262b6d5118b21c128d62114c084b163152f31484949e74098"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/787-9/upstream/README-wingflexer",
+   "bytes": 147,
+   "sha256": "996dbaf232d56bfcd8712133b0094ef684135af7934424e9212070d7268f72bc"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/787-family/download-manifest.json",
+   "bytes": 25111,
+   "sha256": "26278f30a8c3f616d5bfcfb2cc4406ab28d7bd1f942fa2ae102bd0252bf0ba3f"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/787-family/repository-tree.json",
+   "bytes": 189660,
+   "sha256": "30ca448648e4aaa75f05ff01a27af29f2b4af97c02df3d6791191b7d5a1e334b"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/787-family/upstream/Authors.md",
+   "bytes": 1229,
+   "sha256": "e2896ac05bf1d658359a4dcfbc6fb4740cd9e6d2a4d31264c7c5384ff8225c72"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/787-family/upstream/LICENSE",
+   "bytes": 18092,
+   "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/787-family/upstream/README",
+   "bytes": 622,
+   "sha256": "9d31eb71c170b199458299d3608cb921b9c86cacdec4dbaa6c95051b55f3cfe5"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/787-family/upstream/README.md",
+   "bytes": 4455,
+   "sha256": "10db5d53bd4862a1ce5919a8be99c3cea08cdaf7fae5eeca0dad2879d7b0fa47"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/A320Family-modern/download-manifest.json",
+   "bytes": 121664,
+   "sha256": "107d2e9ef7c2a24d776402f38199245be9091da55dd0c7b730a48c4a46565e5a"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/A320Family-modern/repository-tree.json",
+   "bytes": 471156,
+   "sha256": "7c7bda7e01cb107c5c249e07781b7faf35d9f4017eba196a486667ad65526154"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/A320Family-modern/upstream/LICENSE",
+   "bytes": 18046,
+   "sha256": "db296f2f7f35bca3a174efb0eb392b3b17bd94b341851429a3dff411b1c2fc73"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/A320Family-modern/upstream/README.md",
+   "bytes": 596,
+   "sha256": "8cb120bd96f3de5b449dfd4c8ac332e7fdb9ac8caf618d5409664157058a73e5"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/A350XWB/download-manifest.json",
+   "bytes": 12652,
+   "sha256": "fb0d7cf5ef9c29bebf9b0cd3b96e9a7f443723c07846d316b26765e78af76286"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/A350XWB/repository-tree.json",
+   "bytes": 88213,
+   "sha256": "1c990171158b674c4efa91adbe30fe610b33e58dd10b388840efa07588aa4b17"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/A350XWB/upstream/COPYING",
+   "bytes": 18007,
+   "sha256": "dcc100d4161cc0b7177545ab6e47216f84857cda3843847c792a25289852dcaa"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/A350XWB/upstream/README.md",
+   "bytes": 335,
+   "sha256": "8ceec317f8a9a12259b0e70048a6ad6063935e8ea2b735142f275381ab481bcd"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/Boeing-777-Flightgear/download-manifest.json",
+   "bytes": 98316,
+   "sha256": "75897e7b7e2acf117c10f8d1e063a014237facd7b130dbf8a6ed3899bec41f34"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/Boeing-777-Flightgear/repository-tree.json",
+   "bytes": 908825,
+   "sha256": "b62ae3149c7580e8c11ef68da5fecb81b26a94c694c3e809b4a6558f3d5f2ef6"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/Boeing-777-Flightgear/upstream/LICENSE",
+   "bytes": 18092,
+   "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/Boeing-777-Flightgear/upstream/README.md",
+   "bytes": 4833,
+   "sha256": "7de28742cd7e9e73f533ff308a688804ab0f9c7341c2e182611a3a28b59bbcc8"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/E-jet-family/download-manifest.json",
+   "bytes": 3493,
+   "sha256": "904e96bc963d40f92cad457116b443f30b4046620d7dfc3a398635a3dbf32312"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/E-jet-family/intake-report.json",
+   "bytes": 3689,
+   "sha256": "6cce1eda5d48d0c6a8d6183df24236c39312dd592ac972203afaa084e8ad471f"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/E-jet-family/repository-tree.json",
+   "bytes": 124797,
+   "sha256": "b0272f81ead82a57e553adca854efe865355ed0a3a89709d390a25888a66aa27"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/E-jet-family/upstream/License.txt",
+   "bytes": 18332,
+   "sha256": "da0eca0fb517ac939d167924c9d4b3f8750a6b7191932ef2cb145acfa624ac7e"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/E-jet-family/upstream/README.txt",
+   "bytes": 10,
+   "sha256": "a817263f709c0d769b6dc138e624c236ff11a25ac7fe21b3db50fcac0a0ae104"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/E-jet-family/upstream/Thanks.txt",
+   "bytes": 727,
+   "sha256": "a55148c250fa947a00a47f46dd75a1fb09147c49f4f01a5fd54350496403c5a1"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/IDG-A33X/download-manifest.json",
+   "bytes": 58395,
+   "sha256": "95e9b541bd8eb75329c2a53c7a228368c98e376c3eadfafaea21d53584407d05"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/IDG-A33X/repository-tree.json",
+   "bytes": 263772,
+   "sha256": "cbe97d87e4af4db868d82689ffebca0b70131a26c1163b1a5617e4caf2cc844f"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/IDG-A33X/upstream/LICENSE",
+   "bytes": 18046,
+   "sha256": "db296f2f7f35bca3a174efb0eb392b3b17bd94b341851429a3dff411b1c2fc73"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/IDG-A33X/upstream/README.md",
+   "bytes": 601,
+   "sha256": "b0ac042dc6cb5e667cf54588024799deb5935e9d18f013093ee1c80a1faa97e3"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/IDG-A33X/upstream/THANKS.md",
+   "bytes": 167,
+   "sha256": "255737e7108f8af5bacd7950d88c4da310b9cad7d04d28a29b91c3f3ab1a1518"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/Pilot2938-FG-liveries/download-manifest.json",
+   "bytes": 6728,
+   "sha256": "d1e0d4b05633fdeb36ecf1d0af9033f257114a842f18911d2b7b5f7d37f78f36"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/Pilot2938-FG-liveries/repository-tree.json",
+   "bytes": 143221,
+   "sha256": "1c2b6c9bfdc73def4a98314ebc1b3832bb1b072f80610173a8e1de630cc5553d"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/Pilot2938-FG-liveries/upstream/LICENSE",
+   "bytes": 18092,
+   "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/Pilot2938-FG-liveries/upstream/README.md",
+   "bytes": 2577,
+   "sha256": "bd74987f662b17147ea262e15633699664c74303e959c6820c6bcdd45684355e"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Abx Air logo.asset.json",
+   "bytes": 526,
+   "sha256": "3e62443b479b1e8f6aa4d4fab761f7aba77e5d3fe38c7f9bace2fd46ac76cd0a"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Abx Air logo.json",
+   "bytes": 1894,
+   "sha256": "023495e18f5a73760928b192f5375aa4057926a3a71863b7f54827e331a93499"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Abx Air logo.svg",
+   "bytes": 9852,
+   "sha256": "365a4ec0fc651b24120babb4c4072f0b193b502c9632857ce62e6d180633de7a"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Aer Lingus 2022 logo.asset.json",
+   "bytes": 512,
+   "sha256": "e10aeb0d94530f739908b3c76ac3289d3d495d5f6d4ed907a102885d85580ef5"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Aer Lingus 2022 logo.json",
+   "bytes": 1974,
+   "sha256": "e8118a3129a0cf3335e44a91e9dc9d2c88b840d3d418a7b8bcf773f90746d4ad"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Aer Lingus 2022 logo.svg",
+   "bytes": 6422,
+   "sha256": "6ef4e7c4f18edff7edf42739172de14ec1a541fc519f99289e1c43dbacd67e80"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Aerom??xico wordmark 2024.asset.json",
+   "bytes": 504,
+   "sha256": "760cc8aeaf3b0795baada6bf521a6ac135ac51b8d5fdfe6d084c28463194e9d8"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Aerom??xico wordmark 2024.json",
+   "bytes": 2001,
+   "sha256": "88edd9bb8c315b0363caf271b0f417c953afa01b7d71df9ab246af691144b0ff"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Aerom??xico wordmark 2024.svg",
+   "bytes": 4093,
+   "sha256": "14a6dad8e7e3eece4ed3a340b9cb387e0cafef8c94f8ba5c7b6421d259b006c8"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Air Premia logo.json",
+   "bytes": 3405,
+   "sha256": "cd64ec4d08c37709146198d53df401b0ecb731657bfca6797b085801dab0de77"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Air Premia logo.svg",
+   "bytes": 2118,
+   "sha256": "930c9f35fb118ec3c8e5fec15699d808736e0e99f75d32f993c47ecc84ba0f14"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/AirZeta logo 2025.asset.json",
+   "bytes": 604,
+   "sha256": "0d65f5671bfc46a84aaa5e2b286b20a8842bbd2a454d16cf01be51052ddb4f8d"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/AirZeta logo 2025.json",
+   "bytes": 1934,
+   "sha256": "4883b2bf15eb444439c5c0f450f369600a2d484da6fc53c7582ab06119860f63"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/AirZeta logo 2025.svg",
+   "bytes": 3934,
+   "sha256": "228a4443c824b7ddbcce5fedd1c145f686c33f0fb5bfa1a2a9e767c3456669c1"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Alaska Airlines logo.asset.json",
+   "bytes": 459,
+   "sha256": "542cf4cc35c32d9dbbd0dbc856114c7ff1f7c795348b684dd783213512e14397"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Alaska Airlines logo.json",
+   "bytes": 2128,
+   "sha256": "0d861d72b702d7751695af35cd695a219fd4ea216da273236d280c5f53687743"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Alaska Airlines logo.svg",
+   "bytes": 5794,
+   "sha256": "bec09149b9183f9f9cdca320ac03813b2aff0fcc677d1f7eecc84b77ff66214e"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/American Airlines American Eagle Logo.asset.json",
+   "bytes": 549,
+   "sha256": "8d62dcf2527bc995bc51422d0c0b6da8618da7ffc9c073917475c7fdefabb3ec"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/American Airlines American Eagle Logo.json",
+   "bytes": 1920,
+   "sha256": "099c2cb9f9ddf3e026b7457516cc0d054ba5357662716f7574a309a77c29cd27"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/American Airlines American Eagle Logo.svg",
+   "bytes": 17897,
+   "sha256": "3fcfead03a3855bee8aaafc3321c20eeefdd24fb60d5db38638c07377e152fa4"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Asiana Airlines.asset.json",
+   "bytes": 447,
+   "sha256": "a610aa4fecd4883b49967226bbecaf85cf40bd64d31ae861121bcd315ca10666"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Asiana Airlines.json",
+   "bytes": 2234,
+   "sha256": "946a3062695c448b1791544ac77a5f61f617ef7da97e73a55c96501aac65afcf"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Asiana Airlines.svg",
+   "bytes": 1892,
+   "sha256": "64fac17da5f9e2c3d45c7441c1b9bcfa8ac33547326530d888d89bcbdc20d2d2"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Breeze Airways logo.json",
+   "bytes": 205,
+   "sha256": "c1e557cd718abafd11d22e2b28c0304697fa07cb651cfff01c0d2fa8249c9b44"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Breeze Airways.json",
+   "bytes": 2188,
+   "sha256": "6ee044bfd810147a21bd6425c8a7cb6f10f201e309f9d4b8e7e04f96b522a9c9"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Breeze Airways.svg",
+   "bytes": 4167,
+   "sha256": "a9e459dffc8f5a317b86db3481400728fecdfc2432f1903280edc89fc725cc5c"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/China Airlines Logo.json",
+   "bytes": 127,
+   "sha256": "c90a5799c4906c60422b1440c7c073fbf5aabbb93fb4588b0f062a43941395ef"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/China Airlines wordmark.asset.json",
+   "bytes": 464,
+   "sha256": "ed3a0cd2073940e37a044d761e1e0e71aae76f2782aabbe03c6184badd5b78ba"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/China Airlines wordmark.json",
+   "bytes": 1933,
+   "sha256": "01466eac7e30b136d14bd5ee7f85645ee79d6c36c9d6434a96032eedaf68cc95"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/China Airlines wordmark.svg",
+   "bytes": 7414,
+   "sha256": "70a67bcf7ed14be9c693f4786e4a478ff1a205b351e5c461ab790d3c028731e2"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Flair Airlines logo (2019).json",
+   "bytes": 3474,
+   "sha256": "1637534df812523ea8ae879b62a63d71044c1ea37fef65bdfbba6c8bf46bb77f"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Flair Airlines logo (2019).svg",
+   "bytes": 10019,
+   "sha256": "c73b396b68629ef4f5fa92cd09bee68a7c6745b50744a652cab848d4a2ec5d22"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/French Bee Logo.asset.json",
+   "bytes": 444,
+   "sha256": "b104b390245061c82b03d0519f91dcaaf8668af223f3ce88ecfe4dc5d3a224ba"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/French Bee Logo.json",
+   "bytes": 1796,
+   "sha256": "253b8066981e1be19a2cd612b32ca350c388310461dc52ff2f6de3bdb4db8158"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/French Bee Logo.svg",
+   "bytes": 4791,
+   "sha256": "29ed3b77a1b8330ad35978b65d43289a7fd03db156a1b6e0ebc248ead7e25411"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Korean Air 2025 (Alt).asset.json",
+   "bytes": 587,
+   "sha256": "caf60b408f34bd2c372a62142122f5c3c249628c88a17046ee140dc2e3363d73"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Korean Air 2025 (Alt).json",
+   "bytes": 3383,
+   "sha256": "177371c1063845cb7c9a671a31daa3a36b9c36743b13200caa8d79d6950e3445"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Korean Air 2025 (Alt).svg",
+   "bytes": 4580,
+   "sha256": "f3c1166666dd470da361e93b5ce692325470011f4f036b6622ced6c14698b58f"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Korean Air 2025 (Taegeuk).asset.json",
+   "bytes": 595,
+   "sha256": "d75013a44911dae298f28579fa7529a4f6ffac10798c4ed8e4e624a32b2c8c26"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Korean Air 2025 (Taegeuk).json",
+   "bytes": 3446,
+   "sha256": "8aa9006fc783fd11d19391c34a9f079123ece8dc297734a50f80d72b6f3e1cc5"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Korean Air 2025 (Taegeuk).svg",
+   "bytes": 1052,
+   "sha256": "db0cf1ca939c0b43d7b05ce3795f768712df54007a460fda6df5db7ef6a5b3c0"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Logo American Eagle (airline brand).asset.json",
+   "bytes": 518,
+   "sha256": "5b9b5c2628fedb3923f6b0c5c830fb2ca0efbd3751a41741c5c9d1f6416a63fe"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Logo American Eagle (airline brand).json",
+   "bytes": 1993,
+   "sha256": "dcfc620b675dd82cfb8cc97ca1e2e15773372e41c4c8d13f379a5e798b36cc33"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Logo EVA Air 02.asset.json",
+   "bytes": 443,
+   "sha256": "3539c9ce3ad4148f26cb0348facc8218e9f332ee5ca140215179ed4828e40a8a"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Logo EVA Air 02.json",
+   "bytes": 3440,
+   "sha256": "84bd8b29e41b80d5b5eda8d4217e37e9540c5a3384cfa06d11b8778a824d8da1"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Logo EVA Air 02.svg",
+   "bytes": 6836,
+   "sha256": "b1a422cb210ea333ddcf69dd9a344d5ae39c9d0d6f472d3992d15b153c01098b"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Philippine Airlines logo.asset.json",
+   "bytes": 477,
+   "sha256": "f13afacdf057160d38924c151bfb5a9015b57bf97d7ab06af451bb1b8f6b63e5"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Philippine Airlines logo.json",
+   "bytes": 2028,
+   "sha256": "39ccd56afbcc74896ea9ae321888e1861a8918c3f255f25417cc5b95da183021"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Philippine Airlines logo.svg",
+   "bytes": 5638,
+   "sha256": "779e6cffc74b81470f514042c47a9778f62f3d299d5656f1f8ef33b5466b1605"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Porter Airlines Logo.asset.json",
+   "bytes": 510,
+   "sha256": "ba457425c820212d98c061279c76e68c1ea6cfe8093587266fe591eb2060d5f9"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Porter Airlines Logo.json",
+   "bytes": 1991,
+   "sha256": "03d9c04a4bea3879384f7a0174fb2d19b54b3da40088dbd317d91914b5002260"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Porter Airlines Logo.svg",
+   "bytes": 3266,
+   "sha256": "f2487139935a5616c81f7b69cf18d9fce8d4bad55775fd321eafaed47bb73a95"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Star Alliance logo.json",
+   "bytes": 126,
+   "sha256": "509064b48f07c488c8dcc67fe5f319f011e3f86ebfa208eaa0ed0e255bc47e82"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Starlux Airlines logo.json",
+   "bytes": 129,
+   "sha256": "e0301382287504337211cef22188f8f9f84d642742932363fb988e3a33772a32"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Starlux wordmark.json",
+   "bytes": 1982,
+   "sha256": "412250b48a543f01ad76540f1f380ad7d603f9308d7f0f76fa6f46587cddc9f5"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Swiss International Air Lines Logo 2011.asset.json",
+   "bytes": 517,
+   "sha256": "e1a6418d6e9e733e87def98829642c95d37b77b722e30e4df6236f245012b8ed"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Swiss International Air Lines Logo 2011.json",
+   "bytes": 1958,
+   "sha256": "dfc55314225f9a769b1040f829537b42d8499f4965a2ffe4032eb439c730b94f"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/Swiss International Air Lines Logo 2011.svg",
+   "bytes": 4626,
+   "sha256": "eba2df4e442ad7484f6299cc900e1ade21a3d9c73e9d476f496ff730efdaf9d4"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/United Airlines logo.json",
+   "bytes": 206,
+   "sha256": "17a52a48a04b1908ca1497e10328b18b1bb519da58b50fcb28c7c96d0dc32063"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/United Airlines wordmark.json",
+   "bytes": 3190,
+   "sha256": "1781fde4125bc3e117805f92fb0d26e5fc327fab69d8c677763ac29ed34ffcf7"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/United Airlines wordmark.svg",
+   "bytes": 4869,
+   "sha256": "6ddbd5630c092acd5252c9b8416984aa140f3dc20b5575f515fb9a56b98ab75e"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/ZIPAIR logo.json",
+   "bytes": 3691,
+   "sha256": "3601e6ca1ff868d33ed940c908a3b0cf9aa8c6a57f5c997a05f3480da25bee3c"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/ZIPAIR logo.svg",
+   "bytes": 2796,
+   "sha256": "0fb12f851b6b905b23e669020e23abeca7c265f75a484bb9b83b82097d133019"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/airzeta-tail.svg",
+   "bytes": 3916,
+   "sha256": "9af29e57a9272e7e6da309421bde081ae02a30c3bd18e8dac7fba5f5aa5fa1bf"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/airzeta-title.svg",
+   "bytes": 3911,
+   "sha256": "4d03fea497615087361f90bac568fe6b61448888e31872c2b13b98f701fd2e56"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/american-eagle-current.asset.json",
+   "bytes": 299,
+   "sha256": "921effdda1c1c911f5932d9c797b9b1cfcfc02838a4dd8c8c7f6b7f5514a9d9b"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/cargo-title.svg",
+   "bytes": 214,
+   "sha256": "252a990aa0820cf75cf70636f95af48e295fa25fdc2d2668abdef51fab73d7e2"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/china-airlines-wordmark.asset.json",
+   "bytes": 211,
+   "sha256": "eb74fbad58fefdf6d6d1a39abd260caa9e24e4096ab3fb2e3e8dd8bba7025533"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/brand-art/korean-787-title.svg",
+   "bytes": 4656,
+   "sha256": "dd55aecce069318c88cb78c09bfb4d64406381ccd1fc3ae7ecc3122a9c3d24a9"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/naviat-liveries/download-manifest.json",
+   "bytes": 8975,
+   "sha256": "9859a743152c9c87ac37d64b0d6af27c6ecb7a4fd7c51c92056c3512a60115d1"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/naviat-liveries/repository-tree.json",
+   "bytes": 105319,
+   "sha256": "19753eff2774abd4551558858108fe24dd28ebf9a58686e4b85a73b47f2d15a8"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/naviat-liveries/upstream/LICENSE",
+   "bytes": 18092,
+   "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/preparation/naviat-liveries/upstream/README.md",
+   "bytes": 815,
+   "sha256": "433642c91ac1246510b0e17b965ce6270fedcab919f3579f71d6fde61de3326a"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/reference-jet-profiles.json",
+   "bytes": 237242,
+   "sha256": "8a58af674750ddd5c0c3a0774d5a050fd704a573a4eed7762144b5dfd58e3950"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/sfo-build-coverage.json",
+   "bytes": 78255,
+   "sha256": "e1ed944a0bd67544990faddbd54dda9d30db3180cf9c3bc02458978811b5aef4"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/validation-summary.json",
+   "bytes": 5194,
+   "sha256": "ce52a2f45858ce0930ffb9c607017603e599d5c45ec2856b0473edbb4526234c"
+  },
+  {
+   "path": "library/sfo-aircraft-library/assets/airliners/visual-reviews.json",
+   "bytes": 651381,
+   "sha256": "06989ba0bedc8e25f70357e7e12b689044703741655845c9f79cda6bbf78620f"
+  },
+  {
+   "path": "library/sfo-aircraft-library/package.json",
+   "bytes": 222,
+   "sha256": "4601d101310290e9234dbe66067044547bbec5d675ab1d7c2fe7435d52ac79b3"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/ac3d_data.py",
+   "bytes": 2930,
+   "sha256": "798ec8d3beadd55c5c14f4c4cf13003d01186bcb9a1433abed8b7501651c61b7"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/aircraft_assembly.py",
+   "bytes": 8888,
+   "sha256": "4261b1878785f4b1410df62c920581c7c104e2ca0e7849a857913adb504883cd"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/audit_fleet_handoff.py",
+   "bytes": 5376,
+   "sha256": "1a290f928f6b47f790edac29bfa186404d4b455d04690ca93bc5cdce84818449"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/bake_airliner_animations.mjs",
+   "bytes": 6302,
+   "sha256": "2dcbd164b022a8824f534b8ee6b79c021854d5f4b03e3b6f94b042fb0c163648"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/build_fleet_aircraft.py",
+   "bytes": 25642,
+   "sha256": "292fc2d9e06727e120848db77bf9c56909c5e12da1bb456a8bfde498f246a024"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/build_fleet_paint_donor.py",
+   "bytes": 3201,
+   "sha256": "4729ee2a4c63ffd901412bc4ea2e030651a1d5871b9bf64846b068e97cf7b758"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/build_reference_jets.py",
+   "bytes": 37726,
+   "sha256": "96426704861867eb049d46bd43df33c95c6d10378c614ed15e1105006ef8b4bc"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/build_xplane_fleet.py",
+   "bytes": 9335,
+   "sha256": "9c57c8479c60b3fb8dc0e5314bed4367f1f27bad6e2c01808dd772bbf9003385"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/create_airliner_window_mask.py",
+   "bytes": 1531,
+   "sha256": "0ece8776fca353cea4bf2a6f7c6cb259a5f21388b1cdf55a0d0254a9d0854976"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/extend_reference_fleet.py",
+   "bytes": 10364,
+   "sha256": "3a61e57df0c5e753a41865d6c918d231ba24ea80325b9d4a0a6c557c3f4ff27d"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/fetch_aircraft_sources.py",
+   "bytes": 2576,
+   "sha256": "251a1c05a68215c84f5175c1c49d9daf87c6a2db838bd2f68f185cf7f5a8030a"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/fetch_fleet_brand_art.py",
+   "bytes": 2175,
+   "sha256": "3c406f70e1e72c36fd0b0758c7cbeb6e509d1616a07e548640468f78518231ff"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/fetch_fleet_liveries.py",
+   "bytes": 3188,
+   "sha256": "679fab2f09f9cf9a8c8cc55a3fbf14268c5241cb623ab21f3263193734b5f0db"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/fetch_fleet_models.py",
+   "bytes": 5065,
+   "sha256": "c7397023697d61907c786a1d27a6bcb435a348483bfb0c741fd9c61f77af7f9c"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/fix_gltf_tangents.py",
+   "bytes": 1444,
+   "sha256": "8d10b0f2d1b03d0b51852fd8e841723140c0dd6b70c8f262e6f52a1de1d4e853"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/fleet_authored_paint.py",
+   "bytes": 5780,
+   "sha256": "fa1a092b29185d9ece060c6f051a1b1e0951d8e0aa23d181c2bc031df92dc2db"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/fleet_cargo_geometry.py",
+   "bytes": 4673,
+   "sha256": "080da8d0111ae5b9ff0bfbcea521041632d89eddbe2b24545d6a4741b45970d5"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/fleet_component_transplants.py",
+   "bytes": 3153,
+   "sha256": "a89e9e168c048637491a8ae0fc85cca4a054f4be9326a8c462c147c7bffe1e90"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/fleet_geometry_details.py",
+   "bytes": 10139,
+   "sha256": "376905f629a48eeb56b1940a38359336b9af337aa0706ff16949e6f9c088e9c5"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/fleet_lighting.py",
+   "bytes": 2398,
+   "sha256": "a8d428fc70ecbc3c177d3d6a89ec33f75aa7a5b22ab9fd029c8ebd539fccbc2a"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/fleet_paint_projection.py",
+   "bytes": 15969,
+   "sha256": "7404fba5eb7e3e98ffe53796f96c7e959d57fb2b32e233b40ea669f13e3f5494"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/fleet_trent7000.py",
+   "bytes": 9087,
+   "sha256": "e1092a70fc0ca455e4a27df6bd8f43ab210ca7bab08c13863b720db27934792f"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/fleet_variant_geometry.py",
+   "bytes": 10497,
+   "sha256": "21bbcf0993ab67533f2ef8512827f9d8dd5df3d7dff787c11ade54dcba1582cf"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/fleet_xplane_variants.py",
+   "bytes": 5837,
+   "sha256": "a38091b125393095e30dfd97af65a69f9c1c72690c048de89acc8f66410f60b2"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/freeze_sfo_inventory.py",
+   "bytes": 5677,
+   "sha256": "488385ca04263953ce7c3c8152a43c1698edcf21cf0ea1ea191bcc0ae3ed2a8f"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/generate_fleet_cabin_masks.py",
+   "bytes": 4614,
+   "sha256": "b7b9f055180fe9546b633283f9060bba6762c22824c4ecdd37a486b56e4f6db5"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/make_fleet_detail_sheets.py",
+   "bytes": 2059,
+   "sha256": "f447b70779ebc025936c2b6439c68be1eb96c2318100635da528df4904746fa1"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/make_fleet_review_sheets.py",
+   "bytes": 2097,
+   "sha256": "93e72114e596374fe973d6b262ffacec280541c426a294919145aa1e45a6c6b0"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/normalize_airliner_pngs.py",
+   "bytes": 1209,
+   "sha256": "d50eaa4463da34844f3e99d5a581a78b4cd0786e1abe2241f54964d271ed1997"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/package_airliners.py",
+   "bytes": 4398,
+   "sha256": "9f9b55769a653539cb2ff97e6ba83e0a5033ae2dda54506e8b3ecdbc5eb804d8"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/package_sfo_fleet.py",
+   "bytes": 7171,
+   "sha256": "ece96da5bc4be4593c1c399d224d51737d15cec41093df039f30625ee183c53f"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/patch_aircraft_registration.py",
+   "bytes": 1617,
+   "sha256": "b6ed9606f142418086a58af1ecbfb5173f16c9616553f54919921c4496273b70"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/prepare_airliners.py",
+   "bytes": 15970,
+   "sha256": "02943ebd459a0a2bd36c55e5391406a756aa5d434a1a8b1da854962ef04c68a3"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/prepare_citation_x.py",
+   "bytes": 1179,
+   "sha256": "96f13336d8e2e123fad26aa6f1f3db6b368d307ace7105dc06c5bfc7411d537d"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/prepare_emirates_a380.py",
+   "bytes": 3676,
+   "sha256": "717cf7252afa008927c2b5d8d8b9d98ad26d4bcd4af959d8c6648d543c4c8eb2"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/prepare_evening_livery_art.py",
+   "bytes": 7512,
+   "sha256": "935c442f001ee4410da718d11cd995c401d4ebe1f68cf55aa7147fa0ca8c2188"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/prepare_fleet_sources.py",
+   "bytes": 6459,
+   "sha256": "31dc337fbbf9d8023df339e2bf2366b54fae6ed8962fc7bd629183a6c16ac05f"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/prepare_global6000.py",
+   "bytes": 5144,
+   "sha256": "f7c56539b7e078681b275060b8c5ba9844650c81ba84ecb9eb2ba4db2011fc8d"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/rasterize_fleet_brand_art.mjs",
+   "bytes": 472,
+   "sha256": "68be9b5fc133dc7af7bea17dec2e956c729c851012fd562abb4bf393c6366ba6"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/reconcile_sfo_log.py",
+   "bytes": 9111,
+   "sha256": "07dff96cce154261d6466742ef7c50a6fd7a0df501d346d5f2709edb582713a3"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/record_fleet_detail_reviews.py",
+   "bytes": 5093,
+   "sha256": "7c61d42273e69d75ec14c42231edb9e44ac560d47981f72ce32655484d23837e"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/refine_767_livery.py",
+   "bytes": 1437,
+   "sha256": "3524f3a7447a2121c57164998179e65c532b3d122ea3c96abf90ca3d30edfb6a"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/refine_private_jet_sections.py",
+   "bytes": 3748,
+   "sha256": "20c9ab515122b55dba66ed6f9b90c7f58a57b14970486425b86f4fc362693921"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/refine_southwest_palette.py",
+   "bytes": 1524,
+   "sha256": "b3502c352bbc040efbb36d2f285ca141616e546af85af8b0283fd2c428d6d6c1"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/render_fleet_detail_pass.py",
+   "bytes": 3259,
+   "sha256": "13ff63fef21f9dafa066bacf620dc42db06e4cecf0f7c125de4ee9971f2c1c5f"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/render_fleet_review.py",
+   "bytes": 8030,
+   "sha256": "afb57f420bc55084bdc79d139e440d6142bdaa301f4122386a9a80afa2b21edb"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/run_fleet_builds.py",
+   "bytes": 1288,
+   "sha256": "ee42e2241e5a88b8dc05ff1ab793fe571906460f57bc3b3eafe7329e39fb69c5"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/serve.mjs",
+   "bytes": 1187,
+   "sha256": "05dfccd21f76c2c734a538507c2c8ce515fda740de18918f70acb01e583494b1"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/stage_fleet_repaints.py",
+   "bytes": 1959,
+   "sha256": "10ad349e5673bbee0901813e7a81fa75e17df00e459248696ba9fba7e2a04f83"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/strip_painted_cabin_windows.py",
+   "bytes": 1838,
+   "sha256": "c664f27888525e8d6c7b93f7a9f6c8a712a23bc8f387481ae1e7662467c3826d"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/update_fleet_catalog.py",
+   "bytes": 1830,
+   "sha256": "6acbcc80a1417ce764b8abbe9416082ebb13e9abeca27d4ef3bae592c78ef102"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/update_fleet_coverage.py",
+   "bytes": 7220,
+   "sha256": "1af0f296f7108a5cbff958f304fdef1dda21e837da45ebf53fe54a7e8a97deac"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/validate_airliners.mjs",
+   "bytes": 8229,
+   "sha256": "d1d8b88f288fe3b6f7c833d5b580a151ea3402dfbe146c2530b638f64a374a44"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/validate_fleet.mjs",
+   "bytes": 15217,
+   "sha256": "cc820616c98fe1ee1568f1ce343c946dbee9605287b3458a3144163bac680396"
+  },
+  {
+   "path": "library/sfo-aircraft-library/scripts/xplane_obj8_data.py",
+   "bytes": 5163,
+   "sha256": "1cb2548d377b11d5534d0dcddfaa528ccbfb6d6817688611d0fa33aa9784be12"
+  },
+  {
+   "path": "library/sfo-aircraft-library/viewer/airliner-runtime.js",
+   "bytes": 8489,
+   "sha256": "a536300a8228a311258d802e4225d45b06bc932ebbdcea3c514a75b26ca9ded2"
+  }
+ ]
+}

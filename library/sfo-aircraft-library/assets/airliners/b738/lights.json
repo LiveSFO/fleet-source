@@ -1,0 +1,219 @@
+[
+  {
+    "name": "Greenlight",
+    "kind": "nav",
+    "position": [
+      3.6,
+      1.06,
+      -17.03
+    ],
+    "color": "green"
+  },
+  {
+    "name": "Redlight",
+    "kind": "nav",
+    "position": [
+      3.6,
+      1.06,
+      17.03
+    ],
+    "color": "red"
+  },
+  {
+    "name": "strobe.right",
+    "kind": "strobe",
+    "position": [
+      3.64,
+      1.06,
+      -17.01
+    ],
+    "color": "white"
+  },
+  {
+    "name": "strobe.left",
+    "kind": "strobe",
+    "position": [
+      3.64,
+      1.06,
+      17.01
+    ],
+    "color": "white"
+  },
+  {
+    "name": "strobe.rear",
+    "kind": "strobe",
+    "position": [
+      18.63,
+      2.06,
+      0
+    ],
+    "color": "white"
+  },
+  {
+    "name": "landing.LW",
+    "kind": "landing",
+    "position": [
+      -4.9,
+      -0.51,
+      2.14
+    ],
+    "color": "white"
+  },
+  {
+    "name": "landing.RW",
+    "kind": "landing",
+    "position": [
+      -4.98,
+      -0.51,
+      -2.14
+    ],
+    "color": "white"
+  },
+  {
+    "name": "TaxiLight",
+    "kind": "taxi",
+    "position": [
+      -15.78,
+      -1.6,
+      0
+    ],
+    "color": "white"
+  },
+  {
+    "name": "LeftRBlight",
+    "kind": "landing",
+    "position": [
+      -7.1,
+      -1.3,
+      1
+    ],
+    "color": "white"
+  },
+  {
+    "name": "RightWRBlight",
+    "kind": "landing",
+    "position": [
+      -7.1,
+      -1.3,
+      -1
+    ],
+    "color": "white"
+  },
+  {
+    "name": "beacon.top",
+    "kind": "beacon",
+    "position": [
+      0,
+      2.57,
+      0
+    ],
+    "color": "red"
+  },
+  {
+    "name": "beacon.bottom",
+    "kind": "beacon",
+    "position": [
+      0,
+      -1.42,
+      0
+    ],
+    "color": "red"
+  },
+  {
+    "name": "Tail logo -1",
+    "kind": "logo",
+    "position": [
+      16.5,
+      2.2,
+      -2.8
+    ],
+    "target": [
+      17.1,
+      6.8,
+      0
+    ],
+    "color": "white",
+    "basis": "Approximate fixture placement checked against exterior layout; not a measured mounting coordinate"
+  },
+  {
+    "name": "Tail logo 1",
+    "kind": "logo",
+    "position": [
+      16.5,
+      2.2,
+      2.8
+    ],
+    "target": [
+      17.1,
+      6.8,
+      0
+    ],
+    "color": "white",
+    "basis": "Approximate fixture placement checked against exterior layout; not a measured mounting coordinate"
+  },
+  {
+    "name": "Tail navigation light",
+    "kind": "nav",
+    "position": [
+      19.35,
+      1.5,
+      0
+    ],
+    "color": "white",
+    "basis": "Approximate tail mounting location"
+  },
+  {
+    "name": "Wing inspection -1",
+    "kind": "winglight",
+    "position": [
+      -9,
+      0.5,
+      -1.85
+    ],
+    "target": [
+      -2,
+      -0.2,
+      -6.5
+    ],
+    "color": "white",
+    "basis": "Approximate fixture mounting location"
+  },
+  {
+    "name": "Runway turnoff -1",
+    "kind": "turnoff",
+    "position": [
+      -4.9,
+      -0.51,
+      -2.16
+    ],
+    "color": "white",
+    "basis": "Approximate mounting alongside landing-light group"
+  },
+  {
+    "name": "Wing inspection 1",
+    "kind": "winglight",
+    "position": [
+      -9,
+      0.5,
+      1.85
+    ],
+    "target": [
+      -2,
+      -0.2,
+      6.5
+    ],
+    "color": "white",
+    "basis": "Approximate fixture mounting location"
+  },
+  {
+    "name": "Runway turnoff 1",
+    "kind": "turnoff",
+    "position": [
+      -4.9,
+      -0.51,
+      2.16
+    ],
+    "color": "white",
+    "basis": "Approximate mounting alongside landing-light group"
+  }
+]

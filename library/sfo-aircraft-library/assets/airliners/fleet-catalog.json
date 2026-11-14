@@ -1,0 +1,834 @@
+{
+  "schemaVersion": 1,
+  "researched": "2026-11-11",
+  "scope": "SFO-focused production backlog plus explicitly labeled Bay Area general aviation. Not a complete current flight schedule or evidence of aircraft frequency.",
+  "sources": {
+    "sfoAirlines": "https://www.flysfo.com/passengers/flight-info/airlines-sfo",
+    "sfoCargo": "https://www.flysfo.com/passengers/flight-info/cargo",
+    "sfoPrivate": "https://www.flysfo.com/passengers/flight-info/private-aircraft",
+    "sfoHelicopters": "https://www.flysfo.com/about/community-noise/noise-faqs",
+    "unitedFleet": "https://www.sec.gov/Archives/edgar/data/319687/000010051726000023/ual-20251231.htm",
+    "alaskaFleet": "https://www.alaskaair.com/content/travel-info/our-aircraft",
+    "deltaFleet": "https://www.delta.com/us/en/aircraft/overview",
+    "fedexFleet": "https://www.sec.gov/Archives/edgar/data/1048911/000104891126000105/fdx-20260531.htm",
+    "coastGuard": "https://www.pacificarea.uscg.mil/Our-Organization/Southwest-District/District-Units/Air-Station-San-Francisco/Public-Affairs/",
+    "boeingDrawings": "https://www.boeing.com/commercial/airports/plan-manuals",
+    "airbusDrawings": "https://www.aircraft.airbus.com/en/customer-care/fleet-wide-care/airport-operations-and-aircraft-characteristics/aircraft-characteristics",
+    "g650erDrawing": "https://assets.gulfstream.aero/downloads/22_464552_G650ER_Product_Sheet_PROD_DAM.pdf",
+    "pc12Drawing": "https://www.pilatus-aircraft.com/assets/files/PC-12-PRO-Just-The-Facts-2025-web.pdf"
+  },
+  "statusMeaning": {
+    "available": "Converted assets and runtime tested. Livery era is recorded; available demonstration paints are not all SFO services.",
+    "source-staged": "Pinned geometry, selected texture/hinge data and provenance inventory downloaded; not yet converted, visually approved or scene-ready.",
+    "planned": "Research/backlog only; no released model."
+  },
+  "available": [
+    {
+      "aircraft": "a320neo",
+      "livery": "british-airways",
+      "glb": "a320neo/exports/british-airways.glb",
+      "sceneReady": true
+    },
+    {
+      "aircraft": "a320neo",
+      "livery": "lufthansa",
+      "glb": "a320neo/exports/lufthansa.glb",
+      "sceneReady": true
+    },
+    {
+      "aircraft": "a320neo",
+      "livery": "sas",
+      "glb": "a320neo/exports/sas.glb",
+      "sceneReady": true
+    },
+    {
+      "aircraft": "b738",
+      "livery": "alaska",
+      "glb": "b738/exports/alaska.glb",
+      "sceneReady": true
+    },
+    {
+      "aircraft": "b738",
+      "livery": "american",
+      "glb": "b738/exports/american.glb",
+      "sceneReady": true
+    },
+    {
+      "aircraft": "b738",
+      "livery": "delta",
+      "glb": "b738/exports/delta.glb",
+      "sceneReady": true
+    },
+    {
+      "aircraft": "b738",
+      "livery": "ryanair",
+      "glb": "b738/exports/ryanair.glb",
+      "sceneReady": true
+    },
+    {
+      "aircraft": "b738",
+      "livery": "southwest",
+      "glb": "b738/exports/southwest.glb",
+      "sceneReady": true
+    },
+    {
+      "aircraft": "b738",
+      "livery": "united",
+      "glb": "b738/exports/united.glb",
+      "sceneReady": true
+    }
+  ],
+  "plannedAircraft": [
+    {
+      "icao": "E75L",
+      "name": "Embraer E175",
+      "category": "regional",
+      "priority": 1,
+      "status": "source-staged",
+      "sceneReady": false,
+      "sourceIntake": "preparation/E-jet-family/intake-report.json",
+      "targetLiveries": [
+        "United Express",
+        "Alaska / SkyWest or Horizon",
+        "Delta Connection",
+        "Air Canada Express"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "Legacy source winglets require comparison with current enhanced-winglet E175s. No E175-E2 substitution.",
+      "referenceKeys": [
+        "sfoAirlines",
+        "unitedFleet",
+        "alaskaFleet",
+        "deltaFleet"
+      ]
+    },
+    {
+      "icao": "B788",
+      "name": "Boeing 787-8",
+      "category": "passenger-widebody",
+      "priority": 1,
+      "status": "source-staged",
+      "sceneReady": false,
+      "sourceIntake": "preparation/787/intake-report.json",
+      "targetLiveries": [
+        "United",
+        "ANA",
+        "Japan Airlines"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "Three matching source paint maps staged; historical paint era must be updated if depicting current service.",
+      "referenceKeys": [
+        "sfoAirlines",
+        "unitedFleet",
+        "boeingDrawings"
+      ]
+    },
+    {
+      "icao": "B789",
+      "name": "Boeing 787-9",
+      "category": "passenger-widebody",
+      "priority": 1,
+      "status": "planned",
+      "sceneReady": false,
+      "sourceIntake": null,
+      "targetLiveries": [
+        "United",
+        "Air Canada",
+        "Air New Zealand",
+        "ANA",
+        "Qantas",
+        "ZIPAIR",
+        "Vietnam Airlines"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "787-8 source is a reference, not valid -9 geometry. Build the correct fuselage, doors, wing and gear variant.",
+      "referenceKeys": [
+        "sfoAirlines",
+        "boeingDrawings"
+      ]
+    },
+    {
+      "icao": "B78X",
+      "name": "Boeing 787-10",
+      "category": "passenger-widebody",
+      "priority": 2,
+      "status": "planned",
+      "sceneReady": false,
+      "sourceIntake": null,
+      "targetLiveries": [
+        "United"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "",
+      "referenceKeys": [
+        "sfoAirlines",
+        "boeingDrawings"
+      ]
+    },
+    {
+      "icao": "B77W",
+      "name": "Boeing 777-300ER",
+      "category": "passenger-widebody",
+      "priority": 1,
+      "status": "source-staged",
+      "sceneReady": false,
+      "sourceIntake": "preparation/777/intake-report.json",
+      "targetLiveries": [
+        "United",
+        "ANA",
+        "Japan Airlines",
+        "EVA Air",
+        "Cathay Pacific",
+        "Singapore Airlines",
+        "SWISS",
+        "Emirates",
+        "Turkish Airlines"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "Source publication on hold: the selected repository has no clear root exterior license. Confirm exact variant and livery geometry.",
+      "referenceKeys": [
+        "sfoAirlines",
+        "boeingDrawings"
+      ]
+    },
+    {
+      "icao": "B772",
+      "name": "Boeing 777-200/200ER",
+      "category": "passenger-widebody",
+      "priority": 2,
+      "status": "planned",
+      "sceneReady": false,
+      "sourceIntake": null,
+      "targetLiveries": [
+        "United"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "",
+      "referenceKeys": [
+        "sfoAirlines",
+        "boeingDrawings"
+      ]
+    },
+    {
+      "icao": "A319",
+      "name": "Airbus A319ceo",
+      "category": "passenger-narrowbody",
+      "priority": 1,
+      "status": "planned",
+      "sceneReady": false,
+      "sourceIntake": null,
+      "targetLiveries": [
+        "United",
+        "American",
+        "Delta"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "",
+      "referenceKeys": [
+        "sfoAirlines",
+        "airbusDrawings"
+      ]
+    },
+    {
+      "icao": "A320",
+      "name": "Airbus A320ceo",
+      "category": "passenger-narrowbody",
+      "priority": 1,
+      "status": "planned",
+      "sceneReady": false,
+      "sourceIntake": null,
+      "targetLiveries": [
+        "United",
+        "Air Canada",
+        "Delta",
+        "JetBlue"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "Use CFM56/V2500 engines and correct wing tips; do not relabel the existing neo.",
+      "referenceKeys": [
+        "sfoAirlines",
+        "airbusDrawings"
+      ]
+    },
+    {
+      "icao": "A321",
+      "name": "Airbus A321ceo",
+      "category": "passenger-narrowbody",
+      "priority": 1,
+      "status": "planned",
+      "sceneReady": false,
+      "sourceIntake": null,
+      "targetLiveries": [
+        "American",
+        "Delta",
+        "JetBlue"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "",
+      "referenceKeys": [
+        "sfoAirlines",
+        "airbusDrawings"
+      ]
+    },
+    {
+      "icao": "A21N",
+      "name": "Airbus A321neo",
+      "category": "passenger-narrowbody",
+      "priority": 1,
+      "status": "planned",
+      "sceneReady": false,
+      "sourceIntake": null,
+      "targetLiveries": [
+        "United",
+        "Delta",
+        "American",
+        "Hawaiian"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "Check cabin door/exit configuration and CFM/PW engine match per registration.",
+      "referenceKeys": [
+        "sfoAirlines",
+        "airbusDrawings"
+      ]
+    },
+    {
+      "icao": "B737",
+      "name": "Boeing 737-700",
+      "category": "passenger-narrowbody",
+      "priority": 2,
+      "status": "planned",
+      "sceneReady": false,
+      "sourceIntake": null,
+      "targetLiveries": [
+        "Southwest",
+        "United",
+        "Alaska"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "",
+      "referenceKeys": [
+        "sfoAirlines",
+        "boeingDrawings"
+      ]
+    },
+    {
+      "icao": "B739",
+      "name": "Boeing 737-900ER",
+      "category": "passenger-narrowbody",
+      "priority": 1,
+      "status": "planned",
+      "sceneReady": false,
+      "sourceIntake": null,
+      "targetLiveries": [
+        "United",
+        "Alaska",
+        "Delta"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "",
+      "referenceKeys": [
+        "sfoAirlines",
+        "boeingDrawings"
+      ]
+    },
+    {
+      "icao": "B38M",
+      "name": "Boeing 737 MAX 8",
+      "category": "passenger-narrowbody",
+      "priority": 1,
+      "status": "planned",
+      "sceneReady": false,
+      "sourceIntake": null,
+      "targetLiveries": [
+        "United",
+        "Southwest",
+        "Air Canada",
+        "Alaska"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "",
+      "referenceKeys": [
+        "sfoAirlines",
+        "boeingDrawings"
+      ]
+    },
+    {
+      "icao": "B39M",
+      "name": "Boeing 737 MAX 9",
+      "category": "passenger-narrowbody",
+      "priority": 1,
+      "status": "planned",
+      "sceneReady": false,
+      "sourceIntake": null,
+      "targetLiveries": [
+        "United",
+        "Alaska",
+        "Aeromexico",
+        "Copa"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "",
+      "referenceKeys": [
+        "sfoAirlines",
+        "boeingDrawings"
+      ]
+    },
+    {
+      "icao": "B752",
+      "name": "Boeing 757-200",
+      "category": "passenger-narrowbody",
+      "priority": 2,
+      "status": "planned",
+      "sceneReady": false,
+      "sourceIntake": null,
+      "targetLiveries": [
+        "United",
+        "Delta"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "",
+      "referenceKeys": [
+        "sfoAirlines",
+        "boeingDrawings"
+      ]
+    },
+    {
+      "icao": "B763",
+      "name": "Boeing 767-300ER",
+      "category": "passenger-widebody",
+      "priority": 2,
+      "status": "source-staged",
+      "sceneReady": false,
+      "sourceIntake": "preparation/767-300/intake-report.json",
+      "targetLiveries": [
+        "United"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "GPL-3.0 text located in LICENCE; engine/winglet configuration and model dimensions still need review.",
+      "referenceKeys": [
+        "sfoAirlines",
+        "boeingDrawings"
+      ]
+    },
+    {
+      "icao": "A332",
+      "name": "Airbus A330-200",
+      "category": "passenger-widebody",
+      "priority": 2,
+      "status": "planned",
+      "sceneReady": false,
+      "sourceIntake": null,
+      "targetLiveries": [
+        "Hawaiian",
+        "Iberia"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "",
+      "referenceKeys": [
+        "sfoAirlines",
+        "airbusDrawings"
+      ]
+    },
+    {
+      "icao": "A333",
+      "name": "Airbus A330-300",
+      "category": "passenger-widebody",
+      "priority": 2,
+      "status": "planned",
+      "sceneReady": false,
+      "sourceIntake": null,
+      "targetLiveries": [
+        "Aer Lingus",
+        "Cathay Pacific",
+        "SAS"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "",
+      "referenceKeys": [
+        "sfoAirlines",
+        "airbusDrawings"
+      ]
+    },
+    {
+      "icao": "A339",
+      "name": "Airbus A330-900neo",
+      "category": "passenger-widebody",
+      "priority": 2,
+      "status": "planned",
+      "sceneReady": false,
+      "sourceIntake": null,
+      "targetLiveries": [
+        "Virgin Atlantic",
+        "Condor",
+        "ITA Airways"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "",
+      "referenceKeys": [
+        "sfoAirlines",
+        "airbusDrawings"
+      ]
+    },
+    {
+      "icao": "A359",
+      "name": "Airbus A350-900",
+      "category": "passenger-widebody",
+      "priority": 1,
+      "status": "planned",
+      "sceneReady": false,
+      "sourceIntake": null,
+      "targetLiveries": [
+        "Singapore Airlines",
+        "Lufthansa",
+        "Air France",
+        "China Airlines",
+        "Philippine Airlines"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "",
+      "referenceKeys": [
+        "sfoAirlines",
+        "airbusDrawings"
+      ]
+    },
+    {
+      "icao": "A35K",
+      "name": "Airbus A350-1000",
+      "category": "passenger-widebody",
+      "priority": 1,
+      "status": "planned",
+      "sceneReady": false,
+      "sourceIntake": null,
+      "targetLiveries": [
+        "Virgin Atlantic",
+        "Qatar Airways",
+        "Cathay Pacific",
+        "British Airways"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "",
+      "referenceKeys": [
+        "sfoAirlines",
+        "airbusDrawings"
+      ]
+    },
+    {
+      "icao": "A388",
+      "name": "Airbus A380-800",
+      "category": "passenger-widebody",
+      "priority": 2,
+      "status": "planned",
+      "sceneReady": false,
+      "sourceIntake": null,
+      "targetLiveries": [
+        "Emirates",
+        "British Airways",
+        "Lufthansa"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "",
+      "referenceKeys": [
+        "sfoAirlines",
+        "airbusDrawings"
+      ]
+    },
+    {
+      "icao": "B77L",
+      "name": "Boeing 777F",
+      "category": "cargo",
+      "priority": 1,
+      "status": "source-staged",
+      "sceneReady": false,
+      "sourceIntake": "preparation/777/intake-report.json",
+      "targetLiveries": [
+        "FedEx"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "FlightGear freighter XML and FedEx paint are staged, but reference geometry is the -200LR. Validate cargo door, window deletion and freighter configuration before conversion.",
+      "referenceKeys": [
+        "sfoCargo",
+        "fedexFleet",
+        "boeingDrawings"
+      ]
+    },
+    {
+      "icao": "B763",
+      "name": "Boeing 767-300F/BCF",
+      "category": "cargo",
+      "priority": 1,
+      "status": "planned",
+      "sceneReady": false,
+      "sourceIntake": null,
+      "targetLiveries": [
+        "FedEx",
+        "ABX Air",
+        "Air Transport International"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "Passenger 767 source is staged separately. True F/BCF variant work is required; never just paint over passenger windows.",
+      "referenceKeys": [
+        "sfoCargo",
+        "fedexFleet",
+        "boeingDrawings"
+      ]
+    },
+    {
+      "icao": "B744",
+      "name": "Boeing 747-400F",
+      "category": "cargo",
+      "priority": 2,
+      "status": "planned",
+      "sceneReady": false,
+      "sourceIntake": null,
+      "targetLiveries": [
+        "Atlas Air",
+        "Kalitta Air",
+        "Air Zeta"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "",
+      "referenceKeys": [
+        "sfoCargo",
+        "boeingDrawings"
+      ]
+    },
+    {
+      "icao": "B748",
+      "name": "Boeing 747-8F",
+      "category": "cargo",
+      "priority": 2,
+      "status": "planned",
+      "sceneReady": false,
+      "sourceIntake": null,
+      "targetLiveries": [
+        "Cathay Cargo",
+        "Korean Air Cargo"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "",
+      "referenceKeys": [
+        "sfoCargo",
+        "boeingDrawings"
+      ]
+    },
+    {
+      "icao": "MD11",
+      "name": "McDonnell Douglas MD-11F",
+      "category": "cargo",
+      "priority": 3,
+      "status": "planned",
+      "sceneReady": false,
+      "sourceIntake": null,
+      "targetLiveries": [
+        "FedEx"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "Optional historical/remaining-fleet aircraft; verify date and service rather than assume current frequency.",
+      "referenceKeys": [
+        "sfoCargo",
+        "fedexFleet",
+        "boeingDrawings"
+      ]
+    },
+    {
+      "icao": "C750",
+      "name": "Cessna Citation X",
+      "category": "private-jet",
+      "priority": 1,
+      "status": "source-staged",
+      "sceneReady": false,
+      "sourceIntake": "preparation/CitationX/intake-report.json",
+      "targetLiveries": [
+        "Source neutral business scheme"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "Geometry and source hinges staged; inspect before conversion. Do not claim a specific operator or local frequency.",
+      "referenceKeys": [
+        "sfoPrivate"
+      ]
+    },
+    {
+      "icao": "GLF6",
+      "name": "Gulfstream G650/G650ER",
+      "category": "private-jet",
+      "priority": 1,
+      "status": "planned",
+      "sceneReady": false,
+      "sourceIntake": null,
+      "targetLiveries": [
+        "Neutral owner scheme"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "Manufacturer product sheet located. Specific operator paint/tail numbers are not yet selected.",
+      "referenceKeys": [
+        "sfoPrivate",
+        "g650erDrawing"
+      ]
+    },
+    {
+      "icao": "CL60",
+      "name": "Bombardier Challenger 600-series",
+      "category": "private-jet",
+      "priority": 2,
+      "status": "planned",
+      "sceneReady": false,
+      "sourceIntake": null,
+      "targetLiveries": [
+        "Neutral owner scheme"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "",
+      "referenceKeys": [
+        "sfoPrivate"
+      ]
+    },
+    {
+      "icao": "GL7T",
+      "name": "Bombardier Global 7500",
+      "category": "private-jet",
+      "priority": 2,
+      "status": "planned",
+      "sceneReady": false,
+      "sourceIntake": null,
+      "targetLiveries": [
+        "Neutral owner scheme"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "",
+      "referenceKeys": [
+        "sfoPrivate"
+      ]
+    },
+    {
+      "icao": "PC12",
+      "name": "Pilatus PC-12",
+      "category": "general-aviation",
+      "priority": 2,
+      "status": "planned",
+      "sceneReady": false,
+      "sourceIntake": null,
+      "targetLiveries": [
+        "Neutral owner scheme"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "Bay Area/private traffic candidate, not a claim of regular SFO service. Correct generation and propeller must match.",
+      "referenceKeys": [
+        "sfoPrivate",
+        "pc12Drawing"
+      ]
+    },
+    {
+      "icao": "BE30",
+      "name": "Beechcraft King Air 350",
+      "category": "general-aviation",
+      "priority": 2,
+      "status": "planned",
+      "sceneReady": false,
+      "sourceIntake": null,
+      "targetLiveries": [
+        "Neutral owner scheme"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "",
+      "referenceKeys": [
+        "sfoPrivate"
+      ]
+    },
+    {
+      "icao": "C172",
+      "name": "Cessna 172P",
+      "category": "general-aviation",
+      "priority": 2,
+      "status": "source-staged",
+      "sceneReady": false,
+      "sourceIntake": "preparation/c172p/intake-report.json",
+      "targetLiveries": [
+        "Source default scheme"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "Bay Area general aviation, usually other regional airports; not scheduled SFO traffic. Source has conditional equipment that needs filtering.",
+      "referenceKeys": [
+        "sfoPrivate"
+      ]
+    },
+    {
+      "icao": "AS65",
+      "name": "MH-65E Dolphin",
+      "category": "helicopter",
+      "priority": 1,
+      "status": "planned",
+      "sceneReady": false,
+      "sourceIntake": null,
+      "targetLiveries": [
+        "US Coast Guard Air Station San Francisco"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "A genuine SFO-based helicopter priority. Do not repaint the EC135 source as an MH-65; different aircraft geometry and rotor systems.",
+      "referenceKeys": [
+        "coastGuard"
+      ]
+    },
+    {
+      "icao": "EC35",
+      "name": "Eurocopter EC135 P2",
+      "category": "helicopter",
+      "priority": 3,
+      "status": "source-staged",
+      "sceneReady": false,
+      "sourceIntake": "preparation/ec135/intake-report.json",
+      "targetLiveries": [
+        "Source white default"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "Source evaluation only. Not established as a common SFO visitor; a local operator/variant match is required.",
+      "referenceKeys": [
+        "sfoHelicopters"
+      ]
+    },
+    {
+      "icao": "AS50",
+      "name": "Airbus H125 / AS350",
+      "category": "helicopter",
+      "priority": 2,
+      "status": "planned",
+      "sceneReady": false,
+      "sourceIntake": null,
+      "targetLiveries": [
+        "Bay Area utility/operator scheme TBD"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "Regional-airspace candidate. Operator, airframe generation and local activity still need verification.",
+      "referenceKeys": [
+        "sfoHelicopters"
+      ]
+    },
+    {
+      "icao": "B407",
+      "name": "Bell 407",
+      "category": "helicopter",
+      "priority": 2,
+      "status": "planned",
+      "sceneReady": false,
+      "sourceIntake": null,
+      "targetLiveries": [
+        "Bay Area operator scheme TBD"
+      ],
+      "pairingStatus": "proposed; exact airframe, registration, livery era and SFO operation need verification before release",
+      "notes": "Regional-airspace candidate, not claimed scheduled SFO traffic.",
+      "referenceKeys": [
+        "sfoHelicopters"
+      ]
+    }
+  ],
+  "releaseGate": [
+    "Exact manufacturer subtype / engines / wing tips / door arrangement and dimensions",
+    "Source license, author credit, asset provenance and livery era recorded",
+    "Cockpit smoke tint; all passenger/door windows included in switchable illumination",
+    "Static and moving-part clearance: stowed / 25 / 50 / 75 / 100 percent",
+    "12 repeated gear cycles and interrupted reversals at variable frame rates; deterministic endpoint",
+    "Reversers recessed inside correct nacelle; source hierarchy and constraints resolved",
+    "Lights positioned per subtype; day/dusk/night review on both sides",
+    "Self-contained GLB validation and independent geometry/animation import",
+    "Production LOD/texture memory review before dense airport scenes"
+  ]
+}

@@ -1,0 +1,3506 @@
+{
+  "updatedAtUTC": "2026-11-12T08:13:44.627666+00:00",
+  "scope": "Current selected SFO exports only. License evidence inventory, not a legal clearance certificate.",
+  "runtimeFiles": [
+    "viewer/airliner-runtime.js",
+    "viewer/fleet-catalog.js"
+  ],
+  "buildSource": [
+    "scripts/",
+    "assets/airliners/fleet-build-config.json",
+    "assets/airliners/reference-jet-profiles.json"
+  ],
+  "excludedCandidate": "Headwind A330neo exterior was not converted: its model-specific exception requires creator permission. Do not include the unused preparation/aircraft candidate in a portable handoff.",
+  "mixedLicenseNote": "Some assemblies combine separately licensed geometry and paint. Retain all notices and verify the exact file-level grants and their compatibility before redistribution; a GPL version number in a license copy is not a substitute for that review.",
+  "artworkMetadata": [
+    "preparation/brand-art/Abx Air logo.asset.json",
+    "preparation/brand-art/Aer Lingus 2022 logo.asset.json",
+    "preparation/brand-art/Aerom\u00e9xico wordmark 2024.asset.json",
+    "preparation/brand-art/AirZeta logo 2025.asset.json",
+    "preparation/brand-art/Alaska Airlines logo.asset.json",
+    "preparation/brand-art/American Airlines American Eagle Logo.asset.json",
+    "preparation/brand-art/Asiana Airlines.asset.json",
+    "preparation/brand-art/China Airlines wordmark.asset.json",
+    "preparation/brand-art/French Bee Logo.asset.json",
+    "preparation/brand-art/Korean Air 2025 (Alt).asset.json",
+    "preparation/brand-art/Korean Air 2025 (Taegeuk).asset.json",
+    "preparation/brand-art/Logo American Eagle (airline brand).asset.json",
+    "preparation/brand-art/Logo EVA Air 02.asset.json",
+    "preparation/brand-art/Philippine Airlines logo.asset.json",
+    "preparation/brand-art/Porter Airlines Logo.asset.json",
+    "preparation/brand-art/Swiss International Air Lines Logo 2011.asset.json",
+    "preparation/brand-art/american-eagle-current.asset.json",
+    "preparation/brand-art/china-airlines-wordmark.asset.json",
+    "preparation/brand-art/frontier-adams-cutout-v2.asset.json",
+    "preparation/brand-art/frontier-adams-original.asset.json",
+    "preparation/brand-art/frontier-chopper-shark-original.asset.json",
+    "preparation/brand-art/frontier-marshall-original.asset.json",
+    "preparation/brand-art/frontier-marty-original.asset.json",
+    "preparation/brand-art/frontier-wolves-original.asset.json",
+    "preparation/brand-art/vistajet-wordmark-reconstruction.asset.json"
+  ],
+  "counts": {
+    "combinations": 142,
+    "exports": 138,
+    "airframes": 62
+  },
+  "sourcePackages": {
+    "preparation/A320Family-modern": {
+      "repository": {
+        "full_name": "Bombbird2001/A320Family",
+        "html_url": "https://github.com/Bombbird2001/A320Family",
+        "revision": "f30d0f9c5d35072f1ffa0a45cd0dadcc3fe4a9e3"
+      },
+      "licenseEvidence": "GPL version 2 text / version 2 or later grants; inspect exact notices",
+      "noncommercialRestriction": false,
+      "notices": [
+        "preparation/A320Family-modern/upstream/LICENSE",
+        "preparation/A320Family-modern/upstream/README.md"
+      ],
+      "correspondingSource": "preparation/A320Family-modern/upstream",
+      "downloadManifest": "preparation/A320Family-modern/download-manifest.json"
+    },
+    "preparation/naviat-liveries": {
+      "repository": {
+        "full_name": "naviat-dev/FG-Liveries",
+        "html_url": "https://github.com/naviat-dev/FG-Liveries",
+        "revision": "eae9eaf1d079afd4a558ad115209d25cf9346205"
+      },
+      "licenseEvidence": "GPL version 2 text / version 2 or later grants; inspect exact notices",
+      "noncommercialRestriction": false,
+      "notices": [
+        "preparation/naviat-liveries/upstream/LICENSE",
+        "preparation/naviat-liveries/upstream/README.md"
+      ],
+      "correspondingSource": "preparation/naviat-liveries/upstream",
+      "downloadManifest": "preparation/naviat-liveries/download-manifest.json"
+    },
+    "preparation/IDG-A33X": {
+      "repository": {
+        "full_name": "FGDATA/IDG-A33X",
+        "html_url": "https://github.com/FGDATA/IDG-A33X",
+        "revision": "1956d9b49272e510295949c8bf63b3f4bcd1c572"
+      },
+      "licenseEvidence": "GPL version 2 text / version 2 or later grants; inspect exact notices",
+      "noncommercialRestriction": false,
+      "notices": [
+        "preparation/IDG-A33X/upstream/LICENSE",
+        "preparation/IDG-A33X/upstream/README.md",
+        "preparation/IDG-A33X/upstream/THANKS.md"
+      ],
+      "correspondingSource": "preparation/IDG-A33X/upstream",
+      "downloadManifest": "preparation/IDG-A33X/download-manifest.json"
+    },
+    "preparation/CSeries-modern": {
+      "repository": {
+        "full_name": "GodBoyBr/CSeries",
+        "html_url": "https://github.com/GodBoyBr/CSeries",
+        "revision": "867b3cc7bb062e1f2634aeb3abb3aea99374f641"
+      },
+      "licenseEvidence": "GPL version 2 text / version 2 or later grants; inspect exact notices",
+      "noncommercialRestriction": false,
+      "notices": [
+        "preparation/CSeries-modern/upstream/COPYING",
+        "preparation/CSeries-modern/upstream/README.md"
+      ],
+      "correspondingSource": "preparation/CSeries-modern/upstream",
+      "downloadManifest": "preparation/CSeries-modern/download-manifest.json"
+    },
+    "preparation/A350XWB": {
+      "repository": {
+        "full_name": "FGMEMBERS/A350XWB",
+        "html_url": "https://github.com/FGMEMBERS/A350XWB",
+        "revision": "04da937ab1ba0b07dabfd71d91aa33eb38316b90"
+      },
+      "licenseEvidence": "GPL version 2 text / version 2 or later grants; inspect exact notices",
+      "noncommercialRestriction": false,
+      "notices": [
+        "preparation/A350XWB/upstream/COPYING",
+        "preparation/A350XWB/upstream/README.md"
+      ],
+      "correspondingSource": "preparation/A350XWB/upstream",
+      "downloadManifest": "preparation/A350XWB/download-manifest.json"
+    },
+    "preparation/Pilot2938-FG-liveries": {
+      "repository": {
+        "full_name": "Pilot2938/Pilot2938-FG-liveries",
+        "html_url": "https://github.com/Pilot2938/Pilot2938-FG-liveries",
+        "revision": "2edd25282b93a3a2d2d155864aecc2b781e75ad3"
+      },
+      "licenseEvidence": "GPL version 2 text / version 2 or later grants; inspect exact notices",
+      "noncommercialRestriction": false,
+      "notices": [
+        "preparation/Pilot2938-FG-liveries/upstream/LICENSE",
+        "preparation/Pilot2938-FG-liveries/upstream/README.md"
+      ],
+      "correspondingSource": "preparation/Pilot2938-FG-liveries/upstream",
+      "downloadManifest": "preparation/Pilot2938-FG-liveries/download-manifest.json"
+    },
+    "preparation/A380-omega": {
+      "repository": {
+        "full_name": "FGMEMBERS/A380-omega",
+        "html_url": "https://github.com/FGMEMBERS/A380-omega",
+        "revision": "0d1e6ad7e33853a9eb94e2f590cdb86411fb5c2b"
+      },
+      "licenseEvidence": "GPL version 2 text / version 2 or later grants; inspect exact notices",
+      "noncommercialRestriction": false,
+      "notices": [
+        "preparation/A380-omega/upstream/COPYING",
+        "preparation/A380-omega/upstream/README.md"
+      ],
+      "correspondingSource": "preparation/A380-omega/upstream",
+      "downloadManifest": "preparation/A380-omega/download-manifest.json"
+    },
+    "preparation/KingAir-350": {
+      "repository": {
+        "id": 66369089,
+        "node_id": "MDEwOlJlcG9zaXRvcnk2NjM2OTA4OQ==",
+        "name": "KingAir-350",
+        "full_name": "FGMEMBERS/KingAir-350",
+        "private": false,
+        "owner": {
+          "login": "FGMEMBERS",
+          "id": 10859464,
+          "node_id": "MDEyOk9yZ2FuaXphdGlvbjEwODU5NDY0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/10859464?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/FGMEMBERS",
+          "html_url": "https://github.com/FGMEMBERS",
+          "followers_url": "https://api.github.com/users/FGMEMBERS/followers",
+          "following_url": "https://api.github.com/users/FGMEMBERS/following{/other_user}",
+          "gists_url": "https://api.github.com/users/FGMEMBERS/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/FGMEMBERS/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/FGMEMBERS/subscriptions",
+          "organizations_url": "https://api.github.com/users/FGMEMBERS/orgs",
+          "repos_url": "https://api.github.com/users/FGMEMBERS/repos",
+          "events_url": "https://api.github.com/users/FGMEMBERS/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/FGMEMBERS/received_events",
+          "type": "Organization",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "html_url": "https://github.com/FGMEMBERS/KingAir-350",
+        "description": "FG Aircraft | Beechcraft Super KingAir 350 by it0uchpods, SHM, D-ECHO, JWocky and IAHM-COL",
+        "fork": true,
+        "url": "https://api.github.com/repos/FGMEMBERS/KingAir-350",
+        "forks_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/forks",
+        "keys_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/teams",
+        "hooks_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/hooks",
+        "issue_events_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/events",
+        "assignees_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/tags",
+        "blobs_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/languages",
+        "stargazers_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/stargazers",
+        "contributors_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/contributors",
+        "subscribers_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/subscribers",
+        "subscription_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/subscription",
+        "commits_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/merges",
+        "archive_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/downloads",
+        "issues_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/labels{/name}",
+        "releases_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/FGMEMBERS/KingAir-350/deployments",
+        "created_at": "2016-08-23T13:25:15Z",
+        "updated_at": "2026-08-26T14:00:04Z",
+        "pushed_at": "2023-10-29T16:12:25Z",
+        "git_url": "git://github.com/FGMEMBERS/KingAir-350.git",
+        "ssh_url": "git@github.com:FGMEMBERS/KingAir-350.git",
+        "clone_url": "https://github.com/FGMEMBERS/KingAir-350.git",
+        "svn_url": "https://github.com/FGMEMBERS/KingAir-350",
+        "homepage": "",
+        "size": 82204,
+        "stargazers_count": 0,
+        "watchers_count": 0,
+        "language": "Nasal",
+        "has_issues": true,
+        "has_projects": true,
+        "has_downloads": false,
+        "has_wiki": true,
+        "has_pages": false,
+        "has_discussions": false,
+        "forks_count": 1,
+        "mirror_url": null,
+        "archived": false,
+        "disabled": false,
+        "open_issues_count": 0,
+        "license": {
+          "key": "gpl-2.0",
+          "name": "GNU General Public License v2.0",
+          "spdx_id": "GPL-2.0",
+          "url": "https://api.github.com/licenses/gpl-2.0",
+          "node_id": "MDc6TGljZW5zZTg="
+        },
+        "allow_forking": true,
+        "is_template": false,
+        "web_commit_signoff_required": false,
+        "has_pull_requests": true,
+        "pull_request_creation_policy": "all",
+        "topics": [],
+        "visibility": "public",
+        "forks": 1,
+        "open_issues": 0,
+        "watchers": 0,
+        "default_branch": "master",
+        "temp_clone_token": null,
+        "custom_properties": {},
+        "organization": {
+          "login": "FGMEMBERS",
+          "id": 10859464,
+          "node_id": "MDEyOk9yZ2FuaXphdGlvbjEwODU5NDY0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/10859464?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/FGMEMBERS",
+          "html_url": "https://github.com/FGMEMBERS",
+          "followers_url": "https://api.github.com/users/FGMEMBERS/followers",
+          "following_url": "https://api.github.com/users/FGMEMBERS/following{/other_user}",
+          "gists_url": "https://api.github.com/users/FGMEMBERS/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/FGMEMBERS/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/FGMEMBERS/subscriptions",
+          "organizations_url": "https://api.github.com/users/FGMEMBERS/orgs",
+          "repos_url": "https://api.github.com/users/FGMEMBERS/repos",
+          "events_url": "https://api.github.com/users/FGMEMBERS/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/FGMEMBERS/received_events",
+          "type": "Organization",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "parent": {
+          "id": 66283170,
+          "node_id": "MDEwOlJlcG9zaXRvcnk2NjI4MzE3MA==",
+          "name": "KingAir-350",
+          "full_name": "IAHM-COL/KingAir-350",
+          "private": false,
+          "owner": {
+            "login": "IAHM-COL",
+            "id": 9952283,
+            "node_id": "MDQ6VXNlcjk5NTIyODM=",
+            "avatar_url": "https://avatars.githubusercontent.com/u/9952283?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/IAHM-COL",
+            "html_url": "https://github.com/IAHM-COL",
+            "followers_url": "https://api.github.com/users/IAHM-COL/followers",
+            "following_url": "https://api.github.com/users/IAHM-COL/following{/other_user}",
+            "gists_url": "https://api.github.com/users/IAHM-COL/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/IAHM-COL/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/IAHM-COL/subscriptions",
+            "organizations_url": "https://api.github.com/users/IAHM-COL/orgs",
+            "repos_url": "https://api.github.com/users/IAHM-COL/repos",
+            "events_url": "https://api.github.com/users/IAHM-COL/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/IAHM-COL/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "html_url": "https://github.com/IAHM-COL/KingAir-350",
+          "description": "FG Aircraft | Beechcraft Super KingAir 350 by it0uchpods, D-ECHO, SHM, GabrielYV, Bomber, Lesbof, JWocky, and IAHM-COL",
+          "fork": false,
+          "url": "https://api.github.com/repos/IAHM-COL/KingAir-350",
+          "forks_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/forks",
+          "keys_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/keys{/key_id}",
+          "collaborators_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/collaborators{/collaborator}",
+          "teams_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/teams",
+          "hooks_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/hooks",
+          "issue_events_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/issues/events{/number}",
+          "events_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/events",
+          "assignees_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/assignees{/user}",
+          "branches_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/branches{/branch}",
+          "tags_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/tags",
+          "blobs_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/git/blobs{/sha}",
+          "git_tags_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/git/tags{/sha}",
+          "git_refs_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/git/refs{/sha}",
+          "trees_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/git/trees{/sha}",
+          "statuses_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/statuses/{sha}",
+          "languages_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/languages",
+          "stargazers_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/stargazers",
+          "contributors_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/contributors",
+          "subscribers_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/subscribers",
+          "subscription_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/subscription",
+          "commits_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/commits{/sha}",
+          "git_commits_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/git/commits{/sha}",
+          "comments_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/comments{/number}",
+          "issue_comment_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/issues/comments{/number}",
+          "contents_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/contents/{+path}",
+          "compare_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/compare/{base}...{head}",
+          "merges_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/merges",
+          "archive_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/{archive_format}{/ref}",
+          "downloads_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/downloads",
+          "issues_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/issues{/number}",
+          "pulls_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/pulls{/number}",
+          "milestones_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/milestones{/number}",
+          "notifications_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/notifications{?since,all,participating}",
+          "labels_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/labels{/name}",
+          "releases_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/releases{/id}",
+          "deployments_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/deployments",
+          "created_at": "2016-08-22T15:11:56Z",
+          "updated_at": "2023-10-29T03:20:12Z",
+          "pushed_at": "2023-10-29T16:09:12Z",
+          "git_url": "git://github.com/IAHM-COL/KingAir-350.git",
+          "ssh_url": "git@github.com:IAHM-COL/KingAir-350.git",
+          "clone_url": "https://github.com/IAHM-COL/KingAir-350.git",
+          "svn_url": "https://github.com/IAHM-COL/KingAir-350",
+          "homepage": "",
+          "size": 82204,
+          "stargazers_count": 0,
+          "watchers_count": 0,
+          "language": "Nasal",
+          "has_issues": true,
+          "has_projects": true,
+          "has_downloads": false,
+          "has_wiki": true,
+          "has_pages": false,
+          "has_discussions": false,
+          "forks_count": 3,
+          "mirror_url": null,
+          "archived": false,
+          "disabled": false,
+          "open_issues_count": 1,
+          "license": {
+            "key": "gpl-2.0",
+            "name": "GNU General Public License v2.0",
+            "spdx_id": "GPL-2.0",
+            "url": "https://api.github.com/licenses/gpl-2.0",
+            "node_id": "MDc6TGljZW5zZTg="
+          },
+          "allow_forking": true,
+          "is_template": false,
+          "web_commit_signoff_required": false,
+          "has_pull_requests": true,
+          "pull_request_creation_policy": "all",
+          "topics": [],
+          "visibility": "public",
+          "forks": 3,
+          "open_issues": 1,
+          "watchers": 0,
+          "default_branch": "master"
+        },
+        "source": {
+          "id": 66283170,
+          "node_id": "MDEwOlJlcG9zaXRvcnk2NjI4MzE3MA==",
+          "name": "KingAir-350",
+          "full_name": "IAHM-COL/KingAir-350",
+          "private": false,
+          "owner": {
+            "login": "IAHM-COL",
+            "id": 9952283,
+            "node_id": "MDQ6VXNlcjk5NTIyODM=",
+            "avatar_url": "https://avatars.githubusercontent.com/u/9952283?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/IAHM-COL",
+            "html_url": "https://github.com/IAHM-COL",
+            "followers_url": "https://api.github.com/users/IAHM-COL/followers",
+            "following_url": "https://api.github.com/users/IAHM-COL/following{/other_user}",
+            "gists_url": "https://api.github.com/users/IAHM-COL/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/IAHM-COL/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/IAHM-COL/subscriptions",
+            "organizations_url": "https://api.github.com/users/IAHM-COL/orgs",
+            "repos_url": "https://api.github.com/users/IAHM-COL/repos",
+            "events_url": "https://api.github.com/users/IAHM-COL/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/IAHM-COL/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "html_url": "https://github.com/IAHM-COL/KingAir-350",
+          "description": "FG Aircraft | Beechcraft Super KingAir 350 by it0uchpods, D-ECHO, SHM, GabrielYV, Bomber, Lesbof, JWocky, and IAHM-COL",
+          "fork": false,
+          "url": "https://api.github.com/repos/IAHM-COL/KingAir-350",
+          "forks_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/forks",
+          "keys_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/keys{/key_id}",
+          "collaborators_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/collaborators{/collaborator}",
+          "teams_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/teams",
+          "hooks_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/hooks",
+          "issue_events_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/issues/events{/number}",
+          "events_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/events",
+          "assignees_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/assignees{/user}",
+          "branches_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/branches{/branch}",
+          "tags_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/tags",
+          "blobs_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/git/blobs{/sha}",
+          "git_tags_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/git/tags{/sha}",
+          "git_refs_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/git/refs{/sha}",
+          "trees_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/git/trees{/sha}",
+          "statuses_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/statuses/{sha}",
+          "languages_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/languages",
+          "stargazers_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/stargazers",
+          "contributors_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/contributors",
+          "subscribers_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/subscribers",
+          "subscription_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/subscription",
+          "commits_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/commits{/sha}",
+          "git_commits_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/git/commits{/sha}",
+          "comments_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/comments{/number}",
+          "issue_comment_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/issues/comments{/number}",
+          "contents_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/contents/{+path}",
+          "compare_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/compare/{base}...{head}",
+          "merges_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/merges",
+          "archive_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/{archive_format}{/ref}",
+          "downloads_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/downloads",
+          "issues_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/issues{/number}",
+          "pulls_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/pulls{/number}",
+          "milestones_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/milestones{/number}",
+          "notifications_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/notifications{?since,all,participating}",
+          "labels_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/labels{/name}",
+          "releases_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/releases{/id}",
+          "deployments_url": "https://api.github.com/repos/IAHM-COL/KingAir-350/deployments",
+          "created_at": "2016-08-22T15:11:56Z",
+          "updated_at": "2023-10-29T03:20:12Z",
+          "pushed_at": "2023-10-29T16:09:12Z",
+          "git_url": "git://github.com/IAHM-COL/KingAir-350.git",
+          "ssh_url": "git@github.com:IAHM-COL/KingAir-350.git",
+          "clone_url": "https://github.com/IAHM-COL/KingAir-350.git",
+          "svn_url": "https://github.com/IAHM-COL/KingAir-350",
+          "homepage": "",
+          "size": 82204,
+          "stargazers_count": 0,
+          "watchers_count": 0,
+          "language": "Nasal",
+          "has_issues": true,
+          "has_projects": true,
+          "has_downloads": false,
+          "has_wiki": true,
+          "has_pages": false,
+          "has_discussions": false,
+          "forks_count": 3,
+          "mirror_url": null,
+          "archived": false,
+          "disabled": false,
+          "open_issues_count": 1,
+          "license": {
+            "key": "gpl-2.0",
+            "name": "GNU General Public License v2.0",
+            "spdx_id": "GPL-2.0",
+            "url": "https://api.github.com/licenses/gpl-2.0",
+            "node_id": "MDc6TGljZW5zZTg="
+          },
+          "allow_forking": true,
+          "is_template": false,
+          "web_commit_signoff_required": false,
+          "has_pull_requests": true,
+          "pull_request_creation_policy": "all",
+          "topics": [],
+          "visibility": "public",
+          "forks": 3,
+          "open_issues": 1,
+          "watchers": 0,
+          "default_branch": "master"
+        },
+        "network_count": 3,
+        "subscribers_count": 43
+      },
+      "licenseEvidence": "GPL version 2 text / version 2 or later grants; inspect exact notices",
+      "noncommercialRestriction": false,
+      "notices": [
+        "preparation/KingAir-350/upstream/COPYING",
+        "preparation/KingAir-350/upstream/README.md"
+      ],
+      "correspondingSource": "preparation/KingAir-350/upstream",
+      "downloadManifest": "preparation/KingAir-350/download-manifest.json"
+    },
+    "preparation/737-MAX": {
+      "repository": {
+        "full_name": "REXO-77/737-MAX",
+        "html_url": "https://github.com/REXO-77/737-MAX",
+        "revision": "fc4316a01c1ec488789725bb54ed2f454f931ac6"
+      },
+      "licenseEvidence": "GPL version 2 text / version 2 or later grants; inspect exact notices",
+      "noncommercialRestriction": false,
+      "notices": [
+        "preparation/737-MAX/upstream/LICENSE",
+        "preparation/737-MAX/upstream/README.md"
+      ],
+      "correspondingSource": "preparation/737-MAX/upstream",
+      "downloadManifest": "preparation/737-MAX/download-manifest.json"
+    },
+    "preparation/737-Next-Generation": {
+      "repository": {
+        "full_name": "omega13a/737-Next-Generation",
+        "html_url": "https://github.com/omega13a/737-Next-Generation",
+        "revision": "f0cbdc58213a4a29e3a7b48d87dc8bdabab96458"
+      },
+      "licenseEvidence": "GPL version 2 text / version 2 or later grants; inspect exact notices",
+      "noncommercialRestriction": false,
+      "notices": [
+        "preparation/737-Next-Generation/upstream/LICENSE",
+        "preparation/737-Next-Generation/upstream/README.md",
+        "preparation/737-Next-Generation/upstream/THANKS"
+      ],
+      "correspondingSource": "preparation/737-Next-Generation/upstream",
+      "downloadManifest": "preparation/737-Next-Generation/download-manifest.json"
+    },
+    "b738": {
+      "repository": null,
+      "licenseEvidence": "GPL version 2 text / version 2 or later grants; inspect exact notices",
+      "noncommercialRestriction": false,
+      "notices": [
+        "b738/upstream/LICENSE",
+        "b738/upstream/README.md",
+        "b738/upstream/THANKS"
+      ],
+      "correspondingSource": "b738/upstream",
+      "downloadManifest": null
+    },
+    "preparation/747-400": {
+      "repository": {
+        "full_name": "FGMEMBERS/747-400",
+        "html_url": "https://github.com/FGMEMBERS/747-400",
+        "revision": "887ff4746c373e7167e664457200165fb6dfaa22"
+      },
+      "licenseEvidence": "GPL version 2 text / version 2 or later grants; inspect exact notices",
+      "noncommercialRestriction": false,
+      "notices": [
+        "preparation/747-400/upstream/AUTHORS",
+        "preparation/747-400/upstream/COPYING"
+      ],
+      "correspondingSource": "preparation/747-400/upstream",
+      "downloadManifest": "preparation/747-400/download-manifest.json"
+    },
+    "preparation/747-8i": {
+      "repository": {
+        "full_name": "LincolnWorks-FlightGear/747-8i",
+        "html_url": "https://github.com/LincolnWorks-FlightGear/747-8i",
+        "revision": "322e77bb5a454e04faea5cae6df2dd1daa9187f5"
+      },
+      "licenseEvidence": "GPL version 2 text / version 2 or later grants; inspect exact notices",
+      "noncommercialRestriction": false,
+      "notices": [
+        "preparation/747-8i/upstream/LICENSE",
+        "preparation/747-8i/upstream/README"
+      ],
+      "correspondingSource": "preparation/747-8i/upstream",
+      "downloadManifest": "preparation/747-8i/download-manifest.json"
+    },
+    "preparation/757-200": {
+      "repository": {
+        "full_name": "FGMEMBERS/757-200",
+        "html_url": "https://github.com/FGMEMBERS/757-200",
+        "revision": "873a9a12ec1a2451ece37dff3bc1fbc888615042"
+      },
+      "licenseEvidence": "GPL version 2 text / version 2 or later grants; inspect exact notices",
+      "noncommercialRestriction": false,
+      "notices": [
+        "preparation/757-200/upstream/AUTHORS",
+        "preparation/757-200/upstream/LICENSE",
+        "preparation/757-200/upstream/README",
+        "preparation/757-200/upstream/README.md"
+      ],
+      "correspondingSource": "preparation/757-200/upstream",
+      "downloadManifest": "preparation/757-200/download-manifest.json"
+    },
+    "preparation/767-300-modern": {
+      "repository": {
+        "full_name": "dogsaysmoo/767-300",
+        "html_url": "https://github.com/dogsaysmoo/767-300",
+        "revision": "bc582834f42d8853e1dc1fc1ad12c147bf611e6f"
+      },
+      "licenseEvidence": "GPL version 3 text; see file-specific grants",
+      "noncommercialRestriction": false,
+      "notices": [
+        "preparation/767-300-modern/upstream/LICENCE",
+        "preparation/767-300-modern/upstream/README",
+        "preparation/767-300-modern/upstream/Thanks.txt"
+      ],
+      "correspondingSource": "preparation/767-300-modern/upstream",
+      "downloadManifest": "preparation/767-300-modern/download-manifest.json"
+    },
+    "preparation/Boeing-777-Flightgear": {
+      "repository": {
+        "full_name": "franck-vmd/Boeing-777-Flightgear",
+        "html_url": "https://github.com/franck-vmd/Boeing-777-Flightgear",
+        "revision": "cfa61378d1210a33e0520d4459d0baf1cf1511f5"
+      },
+      "licenseEvidence": "GPL version 2 text / version 2 or later grants; inspect exact notices",
+      "noncommercialRestriction": false,
+      "notices": [
+        "preparation/Boeing-777-Flightgear/upstream/LICENSE",
+        "preparation/Boeing-777-Flightgear/upstream/README.md"
+      ],
+      "correspondingSource": "preparation/Boeing-777-Flightgear/upstream",
+      "downloadManifest": "preparation/Boeing-777-Flightgear/download-manifest.json"
+    },
+    "preparation/787-family": {
+      "repository": {
+        "full_name": "IskenderWang/787-family",
+        "html_url": "https://github.com/IskenderWang/787-family",
+        "revision": "02626b5b659d89b9399943ee167bbb0b46f0c871"
+      },
+      "licenseEvidence": "GPL version 2 text / version 2 or later grants; inspect exact notices",
+      "noncommercialRestriction": false,
+      "notices": [
+        "preparation/787-family/upstream/Authors.md",
+        "preparation/787-family/upstream/LICENSE",
+        "preparation/787-family/upstream/README",
+        "preparation/787-family/upstream/README.md"
+      ],
+      "correspondingSource": "preparation/787-family/upstream",
+      "downloadManifest": "preparation/787-family/download-manifest.json"
+    },
+    "preparation/787-9": {
+      "repository": {
+        "full_name": "FGMEMBERS/787-9",
+        "html_url": "https://github.com/FGMEMBERS/787-9",
+        "revision": "f58fce9fa08517f2fb1c19fc39bbb11773d4473c"
+      },
+      "licenseEvidence": "GPL version 2 text / version 2 or later grants; inspect exact notices",
+      "noncommercialRestriction": false,
+      "notices": [
+        "preparation/787-9/upstream/787-9-authors.md",
+        "preparation/787-9/upstream/Authors-of-the-787-8.txt",
+        "preparation/787-9/upstream/COPYING",
+        "preparation/787-9/upstream/LICENSE",
+        "preparation/787-9/upstream/README",
+        "preparation/787-9/upstream/README-wingflexer"
+      ],
+      "correspondingSource": "preparation/787-9/upstream",
+      "downloadManifest": "preparation/787-9/download-manifest.json"
+    },
+    "preparation/king-air": {
+      "repository": {
+        "id": 320350472,
+        "node_id": "MDEwOlJlcG9zaXRvcnkzMjAzNTA0NzI=",
+        "name": "king-air",
+        "full_name": "MV-DP/king-air",
+        "private": false,
+        "owner": {
+          "login": "MV-DP",
+          "id": 17099209,
+          "node_id": "MDQ6VXNlcjE3MDk5MjA5",
+          "avatar_url": "https://avatars.githubusercontent.com/u/17099209?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/MV-DP",
+          "html_url": "https://github.com/MV-DP",
+          "followers_url": "https://api.github.com/users/MV-DP/followers",
+          "following_url": "https://api.github.com/users/MV-DP/following{/other_user}",
+          "gists_url": "https://api.github.com/users/MV-DP/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/MV-DP/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/MV-DP/subscriptions",
+          "organizations_url": "https://api.github.com/users/MV-DP/orgs",
+          "repos_url": "https://api.github.com/users/MV-DP/repos",
+          "events_url": "https://api.github.com/users/MV-DP/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/MV-DP/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "html_url": "https://github.com/MV-DP/king-air",
+        "description": "Beechcraft King Air B200 and C90A made by Syd Adams.",
+        "fork": false,
+        "url": "https://api.github.com/repos/MV-DP/king-air",
+        "forks_url": "https://api.github.com/repos/MV-DP/king-air/forks",
+        "keys_url": "https://api.github.com/repos/MV-DP/king-air/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/MV-DP/king-air/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/MV-DP/king-air/teams",
+        "hooks_url": "https://api.github.com/repos/MV-DP/king-air/hooks",
+        "issue_events_url": "https://api.github.com/repos/MV-DP/king-air/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/MV-DP/king-air/events",
+        "assignees_url": "https://api.github.com/repos/MV-DP/king-air/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/MV-DP/king-air/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/MV-DP/king-air/tags",
+        "blobs_url": "https://api.github.com/repos/MV-DP/king-air/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/MV-DP/king-air/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/MV-DP/king-air/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/MV-DP/king-air/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/MV-DP/king-air/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/MV-DP/king-air/languages",
+        "stargazers_url": "https://api.github.com/repos/MV-DP/king-air/stargazers",
+        "contributors_url": "https://api.github.com/repos/MV-DP/king-air/contributors",
+        "subscribers_url": "https://api.github.com/repos/MV-DP/king-air/subscribers",
+        "subscription_url": "https://api.github.com/repos/MV-DP/king-air/subscription",
+        "commits_url": "https://api.github.com/repos/MV-DP/king-air/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/MV-DP/king-air/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/MV-DP/king-air/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/MV-DP/king-air/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/MV-DP/king-air/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/MV-DP/king-air/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/MV-DP/king-air/merges",
+        "archive_url": "https://api.github.com/repos/MV-DP/king-air/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/MV-DP/king-air/downloads",
+        "issues_url": "https://api.github.com/repos/MV-DP/king-air/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/MV-DP/king-air/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/MV-DP/king-air/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/MV-DP/king-air/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/MV-DP/king-air/labels{/name}",
+        "releases_url": "https://api.github.com/repos/MV-DP/king-air/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/MV-DP/king-air/deployments",
+        "created_at": "2020-12-10T18:00:45Z",
+        "updated_at": "2023-09-12T19:48:54Z",
+        "pushed_at": "2020-12-10T18:30:59Z",
+        "git_url": "git://github.com/MV-DP/king-air.git",
+        "ssh_url": "git@github.com:MV-DP/king-air.git",
+        "clone_url": "https://github.com/MV-DP/king-air.git",
+        "svn_url": "https://github.com/MV-DP/king-air",
+        "homepage": null,
+        "size": 5512,
+        "stargazers_count": 3,
+        "watchers_count": 3,
+        "language": null,
+        "has_issues": true,
+        "has_projects": true,
+        "has_downloads": false,
+        "has_wiki": true,
+        "has_pages": false,
+        "has_discussions": false,
+        "forks_count": 1,
+        "mirror_url": null,
+        "archived": false,
+        "disabled": false,
+        "open_issues_count": 0,
+        "license": {
+          "key": "other",
+          "name": "Other",
+          "spdx_id": "NOASSERTION",
+          "url": null,
+          "node_id": "MDc6TGljZW5zZTA="
+        },
+        "allow_forking": true,
+        "is_template": false,
+        "web_commit_signoff_required": false,
+        "has_pull_requests": true,
+        "pull_request_creation_policy": "all",
+        "topics": [],
+        "visibility": "public",
+        "forks": 1,
+        "open_issues": 0,
+        "watchers": 3,
+        "default_branch": "main",
+        "temp_clone_token": null,
+        "network_count": 1,
+        "subscribers_count": 2
+      },
+      "licenseEvidence": "CC BY-NC-SA 3.0",
+      "noncommercialRestriction": true,
+      "notices": [
+        "preparation/king-air/upstream/README.md",
+        "preparation/king-air/upstream/licence.txt"
+      ],
+      "correspondingSource": "preparation/king-air/upstream",
+      "downloadManifest": "preparation/king-air/download-manifest.json"
+    },
+    "preparation/CitationX": {
+      "repository": {
+        "id": 31021753,
+        "node_id": "MDEwOlJlcG9zaXRvcnkzMTAyMTc1Mw==",
+        "name": "CitationX",
+        "full_name": "FGMEMBERS/CitationX",
+        "private": false,
+        "owner": {
+          "login": "FGMEMBERS",
+          "id": 10859464,
+          "node_id": "MDEyOk9yZ2FuaXphdGlvbjEwODU5NDY0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/10859464?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/FGMEMBERS",
+          "html_url": "https://github.com/FGMEMBERS",
+          "followers_url": "https://api.github.com/users/FGMEMBERS/followers",
+          "following_url": "https://api.github.com/users/FGMEMBERS/following{/other_user}",
+          "gists_url": "https://api.github.com/users/FGMEMBERS/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/FGMEMBERS/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/FGMEMBERS/subscriptions",
+          "organizations_url": "https://api.github.com/users/FGMEMBERS/orgs",
+          "repos_url": "https://api.github.com/users/FGMEMBERS/repos",
+          "events_url": "https://api.github.com/users/FGMEMBERS/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/FGMEMBERS/received_events",
+          "type": "Organization",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "html_url": "https://github.com/FGMEMBERS/CitationX",
+        "description": "FG Aircraft | BASE | CitationX",
+        "fork": false,
+        "url": "https://api.github.com/repos/FGMEMBERS/CitationX",
+        "forks_url": "https://api.github.com/repos/FGMEMBERS/CitationX/forks",
+        "keys_url": "https://api.github.com/repos/FGMEMBERS/CitationX/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/FGMEMBERS/CitationX/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/FGMEMBERS/CitationX/teams",
+        "hooks_url": "https://api.github.com/repos/FGMEMBERS/CitationX/hooks",
+        "issue_events_url": "https://api.github.com/repos/FGMEMBERS/CitationX/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/FGMEMBERS/CitationX/events",
+        "assignees_url": "https://api.github.com/repos/FGMEMBERS/CitationX/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/FGMEMBERS/CitationX/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/FGMEMBERS/CitationX/tags",
+        "blobs_url": "https://api.github.com/repos/FGMEMBERS/CitationX/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/FGMEMBERS/CitationX/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/FGMEMBERS/CitationX/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/FGMEMBERS/CitationX/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/FGMEMBERS/CitationX/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/FGMEMBERS/CitationX/languages",
+        "stargazers_url": "https://api.github.com/repos/FGMEMBERS/CitationX/stargazers",
+        "contributors_url": "https://api.github.com/repos/FGMEMBERS/CitationX/contributors",
+        "subscribers_url": "https://api.github.com/repos/FGMEMBERS/CitationX/subscribers",
+        "subscription_url": "https://api.github.com/repos/FGMEMBERS/CitationX/subscription",
+        "commits_url": "https://api.github.com/repos/FGMEMBERS/CitationX/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/FGMEMBERS/CitationX/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/FGMEMBERS/CitationX/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/FGMEMBERS/CitationX/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/FGMEMBERS/CitationX/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/FGMEMBERS/CitationX/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/FGMEMBERS/CitationX/merges",
+        "archive_url": "https://api.github.com/repos/FGMEMBERS/CitationX/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/FGMEMBERS/CitationX/downloads",
+        "issues_url": "https://api.github.com/repos/FGMEMBERS/CitationX/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/FGMEMBERS/CitationX/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/FGMEMBERS/CitationX/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/FGMEMBERS/CitationX/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/FGMEMBERS/CitationX/labels{/name}",
+        "releases_url": "https://api.github.com/repos/FGMEMBERS/CitationX/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/FGMEMBERS/CitationX/deployments",
+        "created_at": "2015-02-19T15:32:00Z",
+        "updated_at": "2026-08-26T13:59:20Z",
+        "pushed_at": "2019-09-23T17:21:14Z",
+        "git_url": "git://github.com/FGMEMBERS/CitationX.git",
+        "ssh_url": "git@github.com:FGMEMBERS/CitationX.git",
+        "clone_url": "https://github.com/FGMEMBERS/CitationX.git",
+        "svn_url": "https://github.com/FGMEMBERS/CitationX",
+        "homepage": null,
+        "size": 430851,
+        "stargazers_count": 1,
+        "watchers_count": 1,
+        "language": null,
+        "has_issues": true,
+        "has_projects": true,
+        "has_downloads": false,
+        "has_wiki": true,
+        "has_pages": false,
+        "has_discussions": false,
+        "forks_count": 0,
+        "mirror_url": null,
+        "archived": false,
+        "disabled": false,
+        "open_issues_count": 2,
+        "license": {
+          "key": "gpl-2.0",
+          "name": "GNU General Public License v2.0",
+          "spdx_id": "GPL-2.0",
+          "url": "https://api.github.com/licenses/gpl-2.0",
+          "node_id": "MDc6TGljZW5zZTg="
+        },
+        "allow_forking": true,
+        "is_template": false,
+        "web_commit_signoff_required": false,
+        "has_pull_requests": true,
+        "pull_request_creation_policy": "all",
+        "topics": [],
+        "visibility": "public",
+        "forks": 0,
+        "open_issues": 2,
+        "watchers": 1,
+        "default_branch": "master",
+        "temp_clone_token": null,
+        "custom_properties": {},
+        "organization": {
+          "login": "FGMEMBERS",
+          "id": 10859464,
+          "node_id": "MDEyOk9yZ2FuaXphdGlvbjEwODU5NDY0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/10859464?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/FGMEMBERS",
+          "html_url": "https://github.com/FGMEMBERS",
+          "followers_url": "https://api.github.com/users/FGMEMBERS/followers",
+          "following_url": "https://api.github.com/users/FGMEMBERS/following{/other_user}",
+          "gists_url": "https://api.github.com/users/FGMEMBERS/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/FGMEMBERS/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/FGMEMBERS/subscriptions",
+          "organizations_url": "https://api.github.com/users/FGMEMBERS/orgs",
+          "repos_url": "https://api.github.com/users/FGMEMBERS/repos",
+          "events_url": "https://api.github.com/users/FGMEMBERS/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/FGMEMBERS/received_events",
+          "type": "Organization",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "network_count": 0,
+        "subscribers_count": 44
+      },
+      "licenseEvidence": "GPL version 2 text / version 2 or later grants; inspect exact notices",
+      "noncommercialRestriction": false,
+      "notices": [
+        "preparation/CitationX/upstream/COPYING"
+      ],
+      "correspondingSource": "preparation/CitationX/upstream",
+      "downloadManifest": "preparation/CitationX/download-manifest.json"
+    },
+    "preparation/CRJ200": {
+      "repository": {
+        "full_name": "FGMEMBERS/CRJ200",
+        "html_url": "https://github.com/FGMEMBERS/CRJ200",
+        "revision": "4ae57306711bb54757b7c0767b53edc2b5e6bc46"
+      },
+      "licenseEvidence": "GPL version 2 text / version 2 or later grants; inspect exact notices",
+      "noncommercialRestriction": false,
+      "notices": [
+        "preparation/CRJ200/upstream/LICENSE",
+        "preparation/CRJ200/upstream/README.md"
+      ],
+      "correspondingSource": "preparation/CRJ200/upstream",
+      "downloadManifest": "preparation/CRJ200/download-manifest.json"
+    },
+    "preparation/CRJ700-family": {
+      "repository": {
+        "full_name": "FGMEMBERS/CRJ700-family",
+        "html_url": "https://github.com/FGMEMBERS/CRJ700-family",
+        "revision": "4862db2fe6e4ebab817ccf387c63f847bcf49c5a"
+      },
+      "licenseEvidence": "Inspect preserved upstream notices",
+      "noncommercialRestriction": false,
+      "notices": [
+        "preparation/CRJ700-family/upstream/LICENSE",
+        "preparation/CRJ700-family/upstream/README.md"
+      ],
+      "correspondingSource": "preparation/CRJ700-family/upstream",
+      "downloadManifest": "preparation/CRJ700-family/download-manifest.json"
+    },
+    "preparation/E-jet-family": {
+      "repository": {
+        "id": 36661304,
+        "node_id": "MDEwOlJlcG9zaXRvcnkzNjY2MTMwNA==",
+        "name": "E-jet-family",
+        "full_name": "FGMEMBERS/E-jet-family",
+        "private": false,
+        "owner": {
+          "login": "FGMEMBERS",
+          "id": 10859464,
+          "node_id": "MDEyOk9yZ2FuaXphdGlvbjEwODU5NDY0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/10859464?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/FGMEMBERS",
+          "html_url": "https://github.com/FGMEMBERS",
+          "followers_url": "https://api.github.com/users/FGMEMBERS/followers",
+          "following_url": "https://api.github.com/users/FGMEMBERS/following{/other_user}",
+          "gists_url": "https://api.github.com/users/FGMEMBERS/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/FGMEMBERS/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/FGMEMBERS/subscriptions",
+          "organizations_url": "https://api.github.com/users/FGMEMBERS/orgs",
+          "repos_url": "https://api.github.com/users/FGMEMBERS/repos",
+          "events_url": "https://api.github.com/users/FGMEMBERS/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/FGMEMBERS/received_events",
+          "type": "Organization",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "html_url": "https://github.com/FGMEMBERS/E-jet-family",
+        "description": "FG Aircraft | Embraer E-jets Family by Omega Hangar [Now GPL!]",
+        "fork": true,
+        "url": "https://api.github.com/repos/FGMEMBERS/E-jet-family",
+        "forks_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/forks",
+        "keys_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/teams",
+        "hooks_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/hooks",
+        "issue_events_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/events",
+        "assignees_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/tags",
+        "blobs_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/languages",
+        "stargazers_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/stargazers",
+        "contributors_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/contributors",
+        "subscribers_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/subscribers",
+        "subscription_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/subscription",
+        "commits_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/merges",
+        "archive_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/downloads",
+        "issues_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/labels{/name}",
+        "releases_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/FGMEMBERS/E-jet-family/deployments",
+        "created_at": "2015-06-01T13:07:29Z",
+        "updated_at": "2026-08-26T13:59:44Z",
+        "pushed_at": "2025-06-07T19:03:07Z",
+        "git_url": "git://github.com/FGMEMBERS/E-jet-family.git",
+        "ssh_url": "git@github.com:FGMEMBERS/E-jet-family.git",
+        "clone_url": "https://github.com/FGMEMBERS/E-jet-family.git",
+        "svn_url": "https://github.com/FGMEMBERS/E-jet-family",
+        "homepage": "",
+        "size": 68399,
+        "stargazers_count": 4,
+        "watchers_count": 4,
+        "language": "Nasal",
+        "has_issues": true,
+        "has_projects": true,
+        "has_downloads": false,
+        "has_wiki": true,
+        "has_pages": false,
+        "has_discussions": false,
+        "forks_count": 5,
+        "mirror_url": null,
+        "archived": false,
+        "disabled": false,
+        "open_issues_count": 2,
+        "license": {
+          "key": "gpl-2.0",
+          "name": "GNU General Public License v2.0",
+          "spdx_id": "GPL-2.0",
+          "url": "https://api.github.com/licenses/gpl-2.0",
+          "node_id": "MDc6TGljZW5zZTg="
+        },
+        "allow_forking": true,
+        "is_template": false,
+        "web_commit_signoff_required": false,
+        "has_pull_requests": true,
+        "pull_request_creation_policy": "all",
+        "topics": [],
+        "visibility": "public",
+        "forks": 5,
+        "open_issues": 2,
+        "watchers": 4,
+        "default_branch": "master",
+        "temp_clone_token": null,
+        "custom_properties": {},
+        "organization": {
+          "login": "FGMEMBERS",
+          "id": 10859464,
+          "node_id": "MDEyOk9yZ2FuaXphdGlvbjEwODU5NDY0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/10859464?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/FGMEMBERS",
+          "html_url": "https://github.com/FGMEMBERS",
+          "followers_url": "https://api.github.com/users/FGMEMBERS/followers",
+          "following_url": "https://api.github.com/users/FGMEMBERS/following{/other_user}",
+          "gists_url": "https://api.github.com/users/FGMEMBERS/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/FGMEMBERS/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/FGMEMBERS/subscriptions",
+          "organizations_url": "https://api.github.com/users/FGMEMBERS/orgs",
+          "repos_url": "https://api.github.com/users/FGMEMBERS/repos",
+          "events_url": "https://api.github.com/users/FGMEMBERS/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/FGMEMBERS/received_events",
+          "type": "Organization",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "parent": {
+          "id": 34609583,
+          "node_id": "MDEwOlJlcG9zaXRvcnkzNDYwOTU4Mw==",
+          "name": "fg-ejet-family",
+          "full_name": "omega95-aircraft/fg-ejet-family",
+          "private": false,
+          "owner": {
+            "login": "omega95-aircraft",
+            "id": 12009394,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjEyMDA5Mzk0",
+            "avatar_url": "https://avatars.githubusercontent.com/u/12009394?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/omega95-aircraft",
+            "html_url": "https://github.com/omega95-aircraft",
+            "followers_url": "https://api.github.com/users/omega95-aircraft/followers",
+            "following_url": "https://api.github.com/users/omega95-aircraft/following{/other_user}",
+            "gists_url": "https://api.github.com/users/omega95-aircraft/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/omega95-aircraft/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/omega95-aircraft/subscriptions",
+            "organizations_url": "https://api.github.com/users/omega95-aircraft/orgs",
+            "repos_url": "https://api.github.com/users/omega95-aircraft/repos",
+            "events_url": "https://api.github.com/users/omega95-aircraft/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/omega95-aircraft/received_events",
+            "type": "Organization",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "html_url": "https://github.com/omega95-aircraft/fg-ejet-family",
+          "description": "Embraer E-jets Family",
+          "fork": false,
+          "url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family",
+          "forks_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/forks",
+          "keys_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/keys{/key_id}",
+          "collaborators_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/collaborators{/collaborator}",
+          "teams_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/teams",
+          "hooks_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/hooks",
+          "issue_events_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/issues/events{/number}",
+          "events_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/events",
+          "assignees_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/assignees{/user}",
+          "branches_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/branches{/branch}",
+          "tags_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/tags",
+          "blobs_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/git/blobs{/sha}",
+          "git_tags_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/git/tags{/sha}",
+          "git_refs_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/git/refs{/sha}",
+          "trees_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/git/trees{/sha}",
+          "statuses_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/statuses/{sha}",
+          "languages_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/languages",
+          "stargazers_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/stargazers",
+          "contributors_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/contributors",
+          "subscribers_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/subscribers",
+          "subscription_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/subscription",
+          "commits_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/commits{/sha}",
+          "git_commits_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/git/commits{/sha}",
+          "comments_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/comments{/number}",
+          "issue_comment_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/issues/comments{/number}",
+          "contents_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/contents/{+path}",
+          "compare_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/compare/{base}...{head}",
+          "merges_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/merges",
+          "archive_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/{archive_format}{/ref}",
+          "downloads_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/downloads",
+          "issues_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/issues{/number}",
+          "pulls_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/pulls{/number}",
+          "milestones_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/milestones{/number}",
+          "notifications_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/notifications{?since,all,participating}",
+          "labels_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/labels{/name}",
+          "releases_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/releases{/id}",
+          "deployments_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/deployments",
+          "created_at": "2015-04-26T11:56:28Z",
+          "updated_at": "2025-04-14T16:05:19Z",
+          "pushed_at": "2016-11-16T06:30:14Z",
+          "git_url": "git://github.com/omega95-aircraft/fg-ejet-family.git",
+          "ssh_url": "git@github.com:omega95-aircraft/fg-ejet-family.git",
+          "clone_url": "https://github.com/omega95-aircraft/fg-ejet-family.git",
+          "svn_url": "https://github.com/omega95-aircraft/fg-ejet-family",
+          "homepage": null,
+          "size": 47432,
+          "stargazers_count": 2,
+          "watchers_count": 2,
+          "language": "Shell",
+          "has_issues": true,
+          "has_projects": true,
+          "has_downloads": false,
+          "has_wiki": true,
+          "has_pages": false,
+          "has_discussions": false,
+          "forks_count": 7,
+          "mirror_url": null,
+          "archived": false,
+          "disabled": false,
+          "open_issues_count": 0,
+          "license": {
+            "key": "gpl-2.0",
+            "name": "GNU General Public License v2.0",
+            "spdx_id": "GPL-2.0",
+            "url": "https://api.github.com/licenses/gpl-2.0",
+            "node_id": "MDc6TGljZW5zZTg="
+          },
+          "allow_forking": true,
+          "is_template": false,
+          "web_commit_signoff_required": false,
+          "has_pull_requests": true,
+          "pull_request_creation_policy": "all",
+          "topics": [],
+          "visibility": "public",
+          "forks": 7,
+          "open_issues": 0,
+          "watchers": 2,
+          "default_branch": "master"
+        },
+        "source": {
+          "id": 34609583,
+          "node_id": "MDEwOlJlcG9zaXRvcnkzNDYwOTU4Mw==",
+          "name": "fg-ejet-family",
+          "full_name": "omega95-aircraft/fg-ejet-family",
+          "private": false,
+          "owner": {
+            "login": "omega95-aircraft",
+            "id": 12009394,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjEyMDA5Mzk0",
+            "avatar_url": "https://avatars.githubusercontent.com/u/12009394?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/omega95-aircraft",
+            "html_url": "https://github.com/omega95-aircraft",
+            "followers_url": "https://api.github.com/users/omega95-aircraft/followers",
+            "following_url": "https://api.github.com/users/omega95-aircraft/following{/other_user}",
+            "gists_url": "https://api.github.com/users/omega95-aircraft/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/omega95-aircraft/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/omega95-aircraft/subscriptions",
+            "organizations_url": "https://api.github.com/users/omega95-aircraft/orgs",
+            "repos_url": "https://api.github.com/users/omega95-aircraft/repos",
+            "events_url": "https://api.github.com/users/omega95-aircraft/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/omega95-aircraft/received_events",
+            "type": "Organization",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "html_url": "https://github.com/omega95-aircraft/fg-ejet-family",
+          "description": "Embraer E-jets Family",
+          "fork": false,
+          "url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family",
+          "forks_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/forks",
+          "keys_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/keys{/key_id}",
+          "collaborators_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/collaborators{/collaborator}",
+          "teams_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/teams",
+          "hooks_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/hooks",
+          "issue_events_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/issues/events{/number}",
+          "events_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/events",
+          "assignees_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/assignees{/user}",
+          "branches_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/branches{/branch}",
+          "tags_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/tags",
+          "blobs_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/git/blobs{/sha}",
+          "git_tags_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/git/tags{/sha}",
+          "git_refs_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/git/refs{/sha}",
+          "trees_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/git/trees{/sha}",
+          "statuses_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/statuses/{sha}",
+          "languages_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/languages",
+          "stargazers_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/stargazers",
+          "contributors_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/contributors",
+          "subscribers_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/subscribers",
+          "subscription_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/subscription",
+          "commits_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/commits{/sha}",
+          "git_commits_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/git/commits{/sha}",
+          "comments_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/comments{/number}",
+          "issue_comment_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/issues/comments{/number}",
+          "contents_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/contents/{+path}",
+          "compare_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/compare/{base}...{head}",
+          "merges_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/merges",
+          "archive_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/{archive_format}{/ref}",
+          "downloads_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/downloads",
+          "issues_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/issues{/number}",
+          "pulls_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/pulls{/number}",
+          "milestones_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/milestones{/number}",
+          "notifications_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/notifications{?since,all,participating}",
+          "labels_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/labels{/name}",
+          "releases_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/releases{/id}",
+          "deployments_url": "https://api.github.com/repos/omega95-aircraft/fg-ejet-family/deployments",
+          "created_at": "2015-04-26T11:56:28Z",
+          "updated_at": "2025-04-14T16:05:19Z",
+          "pushed_at": "2016-11-16T06:30:14Z",
+          "git_url": "git://github.com/omega95-aircraft/fg-ejet-family.git",
+          "ssh_url": "git@github.com:omega95-aircraft/fg-ejet-family.git",
+          "clone_url": "https://github.com/omega95-aircraft/fg-ejet-family.git",
+          "svn_url": "https://github.com/omega95-aircraft/fg-ejet-family",
+          "homepage": null,
+          "size": 47432,
+          "stargazers_count": 2,
+          "watchers_count": 2,
+          "language": "Shell",
+          "has_issues": true,
+          "has_projects": true,
+          "has_downloads": false,
+          "has_wiki": true,
+          "has_pages": false,
+          "has_discussions": false,
+          "forks_count": 7,
+          "mirror_url": null,
+          "archived": false,
+          "disabled": false,
+          "open_issues_count": 0,
+          "license": {
+            "key": "gpl-2.0",
+            "name": "GNU General Public License v2.0",
+            "spdx_id": "GPL-2.0",
+            "url": "https://api.github.com/licenses/gpl-2.0",
+            "node_id": "MDc6TGljZW5zZTg="
+          },
+          "allow_forking": true,
+          "is_template": false,
+          "web_commit_signoff_required": false,
+          "has_pull_requests": true,
+          "pull_request_creation_policy": "all",
+          "topics": [],
+          "visibility": "public",
+          "forks": 7,
+          "open_issues": 0,
+          "watchers": 2,
+          "default_branch": "master"
+        },
+        "network_count": 7,
+        "subscribers_count": 44
+      },
+      "licenseEvidence": "GPL version 2 text / version 2 or later grants; inspect exact notices",
+      "noncommercialRestriction": false,
+      "notices": [
+        "preparation/E-jet-family/upstream/License.txt",
+        "preparation/E-jet-family/upstream/README.txt",
+        "preparation/E-jet-family/upstream/Thanks.txt"
+      ],
+      "correspondingSource": "preparation/E-jet-family/upstream",
+      "downloadManifest": "preparation/E-jet-family/download-manifest.json"
+    },
+    "preparation/ec135": {
+      "repository": {
+        "id": 36463251,
+        "node_id": "MDEwOlJlcG9zaXRvcnkzNjQ2MzI1MQ==",
+        "name": "ec135",
+        "full_name": "HHS81/ec135",
+        "private": false,
+        "owner": {
+          "login": "HHS81",
+          "id": 12649375,
+          "node_id": "MDQ6VXNlcjEyNjQ5Mzc1",
+          "avatar_url": "https://avatars.githubusercontent.com/u/12649375?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/HHS81",
+          "html_url": "https://github.com/HHS81",
+          "followers_url": "https://api.github.com/users/HHS81/followers",
+          "following_url": "https://api.github.com/users/HHS81/following{/other_user}",
+          "gists_url": "https://api.github.com/users/HHS81/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/HHS81/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/HHS81/subscriptions",
+          "organizations_url": "https://api.github.com/users/HHS81/orgs",
+          "repos_url": "https://api.github.com/users/HHS81/repos",
+          "events_url": "https://api.github.com/users/HHS81/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/HHS81/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "html_url": "https://github.com/HHS81/ec135",
+        "description": "EC135 P2 for FlightGear",
+        "fork": false,
+        "url": "https://api.github.com/repos/HHS81/ec135",
+        "forks_url": "https://api.github.com/repos/HHS81/ec135/forks",
+        "keys_url": "https://api.github.com/repos/HHS81/ec135/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/HHS81/ec135/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/HHS81/ec135/teams",
+        "hooks_url": "https://api.github.com/repos/HHS81/ec135/hooks",
+        "issue_events_url": "https://api.github.com/repos/HHS81/ec135/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/HHS81/ec135/events",
+        "assignees_url": "https://api.github.com/repos/HHS81/ec135/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/HHS81/ec135/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/HHS81/ec135/tags",
+        "blobs_url": "https://api.github.com/repos/HHS81/ec135/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/HHS81/ec135/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/HHS81/ec135/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/HHS81/ec135/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/HHS81/ec135/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/HHS81/ec135/languages",
+        "stargazers_url": "https://api.github.com/repos/HHS81/ec135/stargazers",
+        "contributors_url": "https://api.github.com/repos/HHS81/ec135/contributors",
+        "subscribers_url": "https://api.github.com/repos/HHS81/ec135/subscribers",
+        "subscription_url": "https://api.github.com/repos/HHS81/ec135/subscription",
+        "commits_url": "https://api.github.com/repos/HHS81/ec135/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/HHS81/ec135/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/HHS81/ec135/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/HHS81/ec135/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/HHS81/ec135/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/HHS81/ec135/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/HHS81/ec135/merges",
+        "archive_url": "https://api.github.com/repos/HHS81/ec135/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/HHS81/ec135/downloads",
+        "issues_url": "https://api.github.com/repos/HHS81/ec135/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/HHS81/ec135/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/HHS81/ec135/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/HHS81/ec135/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/HHS81/ec135/labels{/name}",
+        "releases_url": "https://api.github.com/repos/HHS81/ec135/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/HHS81/ec135/deployments",
+        "created_at": "2015-05-28T20:07:36Z",
+        "updated_at": "2026-08-29T23:50:24Z",
+        "pushed_at": "2020-04-26T17:30:33Z",
+        "git_url": "git://github.com/HHS81/ec135.git",
+        "ssh_url": "git@github.com:HHS81/ec135.git",
+        "clone_url": "https://github.com/HHS81/ec135.git",
+        "svn_url": "https://github.com/HHS81/ec135",
+        "homepage": null,
+        "size": 141109,
+        "stargazers_count": 3,
+        "watchers_count": 3,
+        "language": null,
+        "has_issues": true,
+        "has_projects": true,
+        "has_downloads": false,
+        "has_wiki": true,
+        "has_pages": false,
+        "has_discussions": false,
+        "forks_count": 6,
+        "mirror_url": null,
+        "archived": false,
+        "disabled": false,
+        "open_issues_count": 5,
+        "license": {
+          "key": "gpl-2.0",
+          "name": "GNU General Public License v2.0",
+          "spdx_id": "GPL-2.0",
+          "url": "https://api.github.com/licenses/gpl-2.0",
+          "node_id": "MDc6TGljZW5zZTg="
+        },
+        "allow_forking": true,
+        "is_template": false,
+        "web_commit_signoff_required": false,
+        "has_pull_requests": true,
+        "pull_request_creation_policy": "all",
+        "topics": [],
+        "visibility": "public",
+        "forks": 6,
+        "open_issues": 5,
+        "watchers": 3,
+        "default_branch": "master",
+        "temp_clone_token": null,
+        "network_count": 6,
+        "subscribers_count": 2
+      },
+      "licenseEvidence": "GPL version 2 text / version 2 or later grants; inspect exact notices",
+      "noncommercialRestriction": false,
+      "notices": [
+        "preparation/ec135/upstream/LICENSE",
+        "preparation/ec135/upstream/README.md",
+        "preparation/ec135/upstream/ReadMeFirst"
+      ],
+      "correspondingSource": "preparation/ec135/upstream",
+      "downloadManifest": "preparation/ec135/download-manifest.json"
+    },
+    "preparation/Global5000-xplane": {
+      "repository": {
+        "id": 527180958,
+        "node_id": "R_kgDOH2wkng",
+        "name": "X-Plane-Bombardier-Global-5000",
+        "full_name": "NNowakowski/X-Plane-Bombardier-Global-5000",
+        "private": false,
+        "owner": {
+          "login": "NNowakowski",
+          "id": 16933892,
+          "node_id": "MDQ6VXNlcjE2OTMzODky",
+          "avatar_url": "https://avatars.githubusercontent.com/u/16933892?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/NNowakowski",
+          "html_url": "https://github.com/NNowakowski",
+          "followers_url": "https://api.github.com/users/NNowakowski/followers",
+          "following_url": "https://api.github.com/users/NNowakowski/following{/other_user}",
+          "gists_url": "https://api.github.com/users/NNowakowski/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/NNowakowski/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/NNowakowski/subscriptions",
+          "organizations_url": "https://api.github.com/users/NNowakowski/orgs",
+          "repos_url": "https://api.github.com/users/NNowakowski/repos",
+          "events_url": "https://api.github.com/users/NNowakowski/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/NNowakowski/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "html_url": "https://github.com/NNowakowski/X-Plane-Bombardier-Global-5000",
+        "description": "Bombardier Global 5000 freeware for the X-Plane flight simulator platform.",
+        "fork": false,
+        "url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000",
+        "forks_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/forks",
+        "keys_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/teams",
+        "hooks_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/hooks",
+        "issue_events_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/events",
+        "assignees_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/tags",
+        "blobs_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/languages",
+        "stargazers_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/stargazers",
+        "contributors_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/contributors",
+        "subscribers_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/subscribers",
+        "subscription_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/subscription",
+        "commits_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/merges",
+        "archive_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/downloads",
+        "issues_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/labels{/name}",
+        "releases_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/NNowakowski/X-Plane-Bombardier-Global-5000/deployments",
+        "created_at": "2022-08-21T11:04:30Z",
+        "updated_at": "2026-05-21T10:46:47Z",
+        "pushed_at": "2022-12-21T22:00:12Z",
+        "git_url": "git://github.com/NNowakowski/X-Plane-Bombardier-Global-5000.git",
+        "ssh_url": "git@github.com:NNowakowski/X-Plane-Bombardier-Global-5000.git",
+        "clone_url": "https://github.com/NNowakowski/X-Plane-Bombardier-Global-5000.git",
+        "svn_url": "https://github.com/NNowakowski/X-Plane-Bombardier-Global-5000",
+        "homepage": "",
+        "size": 72707,
+        "stargazers_count": 5,
+        "watchers_count": 5,
+        "language": "Lua",
+        "has_issues": true,
+        "has_projects": true,
+        "has_downloads": false,
+        "has_wiki": true,
+        "has_pages": false,
+        "has_discussions": false,
+        "forks_count": 0,
+        "mirror_url": null,
+        "archived": false,
+        "disabled": false,
+        "open_issues_count": 2,
+        "license": {
+          "key": "gpl-3.0",
+          "name": "GNU General Public License v3.0",
+          "spdx_id": "GPL-3.0",
+          "url": "https://api.github.com/licenses/gpl-3.0",
+          "node_id": "MDc6TGljZW5zZTk="
+        },
+        "allow_forking": true,
+        "is_template": false,
+        "web_commit_signoff_required": false,
+        "has_pull_requests": true,
+        "pull_request_creation_policy": "all",
+        "topics": [],
+        "visibility": "public",
+        "forks": 0,
+        "open_issues": 2,
+        "watchers": 5,
+        "default_branch": "main",
+        "temp_clone_token": null,
+        "network_count": 0,
+        "subscribers_count": 4
+      },
+      "licenseEvidence": "GPL version 3 text; see file-specific grants",
+      "noncommercialRestriction": false,
+      "notices": [
+        "preparation/Global5000-xplane/upstream/LICENSE",
+        "preparation/Global5000-xplane/upstream/README.md"
+      ],
+      "correspondingSource": "preparation/Global5000-xplane/upstream",
+      "downloadManifest": "preparation/Global5000-xplane/download-manifest.json"
+    },
+    "preparation/PC-12": {
+      "repository": {
+        "id": 30387785,
+        "node_id": "MDEwOlJlcG9zaXRvcnkzMDM4Nzc4NQ==",
+        "name": "PC-12",
+        "full_name": "FGMEMBERS/PC-12",
+        "private": false,
+        "owner": {
+          "login": "FGMEMBERS",
+          "id": 10859464,
+          "node_id": "MDEyOk9yZ2FuaXphdGlvbjEwODU5NDY0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/10859464?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/FGMEMBERS",
+          "html_url": "https://github.com/FGMEMBERS",
+          "followers_url": "https://api.github.com/users/FGMEMBERS/followers",
+          "following_url": "https://api.github.com/users/FGMEMBERS/following{/other_user}",
+          "gists_url": "https://api.github.com/users/FGMEMBERS/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/FGMEMBERS/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/FGMEMBERS/subscriptions",
+          "organizations_url": "https://api.github.com/users/FGMEMBERS/orgs",
+          "repos_url": "https://api.github.com/users/FGMEMBERS/repos",
+          "events_url": "https://api.github.com/users/FGMEMBERS/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/FGMEMBERS/received_events",
+          "type": "Organization",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "html_url": "https://github.com/FGMEMBERS/PC-12",
+        "description": "FG Aircraft  | PC-12 by Helijah",
+        "fork": false,
+        "url": "https://api.github.com/repos/FGMEMBERS/PC-12",
+        "forks_url": "https://api.github.com/repos/FGMEMBERS/PC-12/forks",
+        "keys_url": "https://api.github.com/repos/FGMEMBERS/PC-12/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/FGMEMBERS/PC-12/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/FGMEMBERS/PC-12/teams",
+        "hooks_url": "https://api.github.com/repos/FGMEMBERS/PC-12/hooks",
+        "issue_events_url": "https://api.github.com/repos/FGMEMBERS/PC-12/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/FGMEMBERS/PC-12/events",
+        "assignees_url": "https://api.github.com/repos/FGMEMBERS/PC-12/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/FGMEMBERS/PC-12/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/FGMEMBERS/PC-12/tags",
+        "blobs_url": "https://api.github.com/repos/FGMEMBERS/PC-12/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/FGMEMBERS/PC-12/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/FGMEMBERS/PC-12/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/FGMEMBERS/PC-12/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/FGMEMBERS/PC-12/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/FGMEMBERS/PC-12/languages",
+        "stargazers_url": "https://api.github.com/repos/FGMEMBERS/PC-12/stargazers",
+        "contributors_url": "https://api.github.com/repos/FGMEMBERS/PC-12/contributors",
+        "subscribers_url": "https://api.github.com/repos/FGMEMBERS/PC-12/subscribers",
+        "subscription_url": "https://api.github.com/repos/FGMEMBERS/PC-12/subscription",
+        "commits_url": "https://api.github.com/repos/FGMEMBERS/PC-12/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/FGMEMBERS/PC-12/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/FGMEMBERS/PC-12/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/FGMEMBERS/PC-12/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/FGMEMBERS/PC-12/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/FGMEMBERS/PC-12/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/FGMEMBERS/PC-12/merges",
+        "archive_url": "https://api.github.com/repos/FGMEMBERS/PC-12/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/FGMEMBERS/PC-12/downloads",
+        "issues_url": "https://api.github.com/repos/FGMEMBERS/PC-12/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/FGMEMBERS/PC-12/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/FGMEMBERS/PC-12/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/FGMEMBERS/PC-12/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/FGMEMBERS/PC-12/labels{/name}",
+        "releases_url": "https://api.github.com/repos/FGMEMBERS/PC-12/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/FGMEMBERS/PC-12/deployments",
+        "created_at": "2015-02-06T01:10:40Z",
+        "updated_at": "2026-08-26T13:59:00Z",
+        "pushed_at": "2019-09-24T04:36:25Z",
+        "git_url": "git://github.com/FGMEMBERS/PC-12.git",
+        "ssh_url": "git@github.com:FGMEMBERS/PC-12.git",
+        "clone_url": "https://github.com/FGMEMBERS/PC-12.git",
+        "svn_url": "https://github.com/FGMEMBERS/PC-12",
+        "homepage": "http://helijah.free.fr/flightgear/hangaren.htm",
+        "size": 35716,
+        "stargazers_count": 0,
+        "watchers_count": 0,
+        "language": null,
+        "has_issues": true,
+        "has_projects": true,
+        "has_downloads": false,
+        "has_wiki": true,
+        "has_pages": false,
+        "has_discussions": false,
+        "forks_count": 1,
+        "mirror_url": null,
+        "archived": false,
+        "disabled": false,
+        "open_issues_count": 0,
+        "license": {
+          "key": "gpl-2.0",
+          "name": "GNU General Public License v2.0",
+          "spdx_id": "GPL-2.0",
+          "url": "https://api.github.com/licenses/gpl-2.0",
+          "node_id": "MDc6TGljZW5zZTg="
+        },
+        "allow_forking": true,
+        "is_template": false,
+        "web_commit_signoff_required": false,
+        "has_pull_requests": true,
+        "pull_request_creation_policy": "all",
+        "topics": [],
+        "visibility": "public",
+        "forks": 1,
+        "open_issues": 0,
+        "watchers": 0,
+        "default_branch": "master",
+        "temp_clone_token": null,
+        "custom_properties": {},
+        "organization": {
+          "login": "FGMEMBERS",
+          "id": 10859464,
+          "node_id": "MDEyOk9yZ2FuaXphdGlvbjEwODU5NDY0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/10859464?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/FGMEMBERS",
+          "html_url": "https://github.com/FGMEMBERS",
+          "followers_url": "https://api.github.com/users/FGMEMBERS/followers",
+          "following_url": "https://api.github.com/users/FGMEMBERS/following{/other_user}",
+          "gists_url": "https://api.github.com/users/FGMEMBERS/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/FGMEMBERS/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/FGMEMBERS/subscriptions",
+          "organizations_url": "https://api.github.com/users/FGMEMBERS/orgs",
+          "repos_url": "https://api.github.com/users/FGMEMBERS/repos",
+          "events_url": "https://api.github.com/users/FGMEMBERS/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/FGMEMBERS/received_events",
+          "type": "Organization",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "network_count": 1,
+        "subscribers_count": 45
+      },
+      "licenseEvidence": "GPL version 2 text / version 2 or later grants; inspect exact notices",
+      "noncommercialRestriction": false,
+      "notices": [
+        "preparation/PC-12/upstream/COPYING",
+        "preparation/PC-12/upstream/README.txt"
+      ],
+      "correspondingSource": "preparation/PC-12/upstream",
+      "downloadManifest": "preparation/PC-12/download-manifest.json"
+    }
+  },
+  "assets": [
+    {
+      "selector": "a20n/avianca",
+      "glb": "a20n/exports/avianca.glb",
+      "sha256": "871fcd51cd408c84c9e035536c886cf64bc80f8be4664243488979327614e48e",
+      "rig": "a20n/exports/avianca.rig.json",
+      "lights": "a20n/lights.json",
+      "editableScene": "a20n/avianca.blend",
+      "sourcePackages": [
+        "preparation/A320Family-modern"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a20n/frontier",
+      "glb": "a20n/exports/frontier.glb",
+      "sha256": "4f06fddd482a507aa86c08f2fd7a8b47160f1032c2fca8f4e45446b982c900f5",
+      "rig": "a20n/exports/frontier.rig.json",
+      "lights": "a20n/lights.json",
+      "editableScene": "a20n/frontier.blend",
+      "sourcePackages": [
+        "preparation/A320Family-modern"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a20n/frontier-adams",
+      "glb": "a20n/exports/frontier-adams.glb",
+      "sha256": "df0248c9006a764a0c892ad5c652c83a36716d39af66484aed5cae20357dca41",
+      "rig": "a20n/exports/frontier-adams.rig.json",
+      "lights": "a20n/lights.json",
+      "editableScene": "a20n/frontier-adams.blend",
+      "sourcePackages": [
+        "preparation/A320Family-modern"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a20n/frontier-marshall",
+      "glb": "a20n/exports/frontier-marshall.glb",
+      "sha256": "4f06fddd482a507aa86c08f2fd7a8b47160f1032c2fca8f4e45446b982c900f5",
+      "rig": "a20n/exports/frontier-marshall.rig.json",
+      "lights": "a20n/lights.json",
+      "editableScene": "a20n/frontier-marshall.blend",
+      "sourcePackages": [
+        "preparation/A320Family-modern"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a21n/american",
+      "glb": "a21n/exports/american.glb",
+      "sha256": "d9cf8b85eabb68d18772a61feb210537b92d15dc96d7aedbf0319439bdd90a0a",
+      "rig": "a21n/exports/american.rig.json",
+      "lights": "a21n/lights.json",
+      "editableScene": "a21n/american.blend",
+      "sourcePackages": [
+        "preparation/A320Family-modern",
+        "preparation/naviat-liveries"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a21n/delta",
+      "glb": "a21n/exports/delta.glb",
+      "sha256": "68e4ca735b629491365cfc6f9dff4e8cfab902b7b00c817b8cf29a38b422d361",
+      "rig": "a21n/exports/delta.rig.json",
+      "lights": "a21n/lights.json",
+      "editableScene": "a21n/delta.blend",
+      "sourcePackages": [
+        "preparation/A320Family-modern",
+        "preparation/naviat-liveries"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a21n/frontier-chopper",
+      "glb": "a21n/exports/frontier-chopper.glb",
+      "sha256": "9629ba06ce0c3bae90a810a9be17549c48d3bd19f96b25106f10e70c111f4b9f",
+      "rig": "a21n/exports/frontier-chopper.rig.json",
+      "lights": "a21n/lights.json",
+      "editableScene": "a21n/frontier-chopper.blend",
+      "sourcePackages": [
+        "preparation/A320Family-modern"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a21n/hawaiian",
+      "glb": "a21n/exports/hawaiian.glb",
+      "sha256": "e265ebed210a73619861548c32f03712bb51b8e90daddf160c3036d503f8bbbe",
+      "rig": "a21n/exports/hawaiian.rig.json",
+      "lights": "a21n/lights.json",
+      "editableScene": "a21n/hawaiian.blend",
+      "sourcePackages": [
+        "preparation/A320Family-modern",
+        "preparation/IDG-A33X"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a21n/jetblue",
+      "glb": "a21n/exports/jetblue.glb",
+      "sha256": "29a9dca9731d6252c437db6368b5d55fd14c9d8875eb6c4c93161570c94bb8ae",
+      "rig": "a21n/exports/jetblue.rig.json",
+      "lights": "a21n/lights.json",
+      "editableScene": "a21n/jetblue.blend",
+      "sourcePackages": [
+        "preparation/A320Family-modern"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a21n/united",
+      "glb": "a21n/exports/united.glb",
+      "sha256": "9322f09ad9e49344b7b2ed365a9955f80a8c6c5fc1e12dd97a0ce1b0b6ff245a",
+      "rig": "a21n/exports/united.rig.json",
+      "lights": "a21n/lights.json",
+      "editableScene": "a21n/united.blend",
+      "sourcePackages": [
+        "preparation/A320Family-modern",
+        "preparation/naviat-liveries"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a221/delta",
+      "glb": "a221/exports/delta.glb",
+      "sha256": "4abdfbd3cb0ff5f6a987519bfb0ea7799ee8da68dbb2678ddaf53127d8d812e9",
+      "rig": "a221/exports/delta.rig.json",
+      "lights": "a221/lights.json",
+      "editableScene": "a221/delta.blend",
+      "sourcePackages": [
+        "preparation/CSeries-modern"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a223/air-canada",
+      "glb": "a223/exports/air-canada.glb",
+      "sha256": "cb1405252a027a7ff0e561a10e2dc73b534227067b9c2d4a1252b01507eec1b2",
+      "rig": "a223/exports/air-canada.rig.json",
+      "lights": "a223/lights.json",
+      "editableScene": "a223/air-canada.blend",
+      "sourcePackages": [
+        "preparation/A320Family-modern",
+        "preparation/CSeries-modern"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a223/breeze",
+      "glb": "a223/exports/breeze.glb",
+      "sha256": "b5938efe14ac00cb124e54fb8bbabfb9f83a0dea29f04cc574bf71cb54f33920",
+      "rig": "a223/exports/breeze.rig.json",
+      "lights": "a223/lights.json",
+      "editableScene": "a223/breeze.blend",
+      "sourcePackages": [
+        "preparation/CSeries-modern"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a223/delta",
+      "glb": "a223/exports/delta.glb",
+      "sha256": "a05f73707672581f3fc83c57f06687d24e7f48945e956641a8bb35f50f322159",
+      "rig": "a223/exports/delta.rig.json",
+      "lights": "a223/lights.json",
+      "editableScene": "a223/delta.blend",
+      "sourcePackages": [
+        "preparation/CSeries-modern"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a319/delta",
+      "glb": "a319/exports/delta.glb",
+      "sha256": "b066c7b6462dfd6a52ce43bae3f2cf435fa27ed521a6ee75bb3125cf31debc5a",
+      "rig": "a319/exports/delta.rig.json",
+      "lights": "a319/lights.json",
+      "editableScene": "a319/delta.blend",
+      "sourcePackages": [
+        "preparation/A320Family-modern"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a319/united",
+      "glb": "a319/exports/united.glb",
+      "sha256": "32ab269521de65886c7568f4e8996f0a46abc53061b2a57637ab5369091c8ad4",
+      "rig": "a319/exports/united.rig.json",
+      "lights": "a319/lights.json",
+      "editableScene": "a319/united.blend",
+      "sourcePackages": [
+        "preparation/A320Family-modern",
+        "preparation/naviat-liveries"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a320/american",
+      "glb": "a320/exports/american.glb",
+      "sha256": "4a8614c6f07c61860356e619189f5a6bf5df1faca09c2a0a0572ed2f90a89963",
+      "rig": "a320/exports/american.rig.json",
+      "lights": "a320/lights.json",
+      "editableScene": "a320/american.blend",
+      "sourcePackages": [
+        "preparation/A320Family-modern"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a320/frontier",
+      "glb": "a320/exports/frontier.glb",
+      "sha256": "2a6b661ca58092e74a03d425a180fea69ddd8b60bb866464b9c50f4d530a7a99",
+      "rig": "a320/exports/frontier.rig.json",
+      "lights": "a320/lights.json",
+      "editableScene": "a320/frontier.blend",
+      "sourcePackages": [
+        "preparation/A320Family-modern"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a320/united",
+      "glb": "a320/exports/united.glb",
+      "sha256": "a1cf83e38e27bdfdeceefecc53d40b0d512b23cb007f3d4ebc942aca8c19725e",
+      "rig": "a320/exports/united.rig.json",
+      "lights": "a320/lights.json",
+      "editableScene": "a320/united.blend",
+      "sourcePackages": [
+        "preparation/A320Family-modern",
+        "preparation/naviat-liveries"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a320/united-friend-ship",
+      "glb": "a320/exports/united-friend-ship.glb",
+      "sha256": "03ac9034199acac444575ec5341e333e27a85f35e634a401f059ec3dc85091e5",
+      "rig": "a320/exports/united-friend-ship.rig.json",
+      "lights": "a320/lights.json",
+      "editableScene": "a320/united-friend-ship.blend",
+      "sourcePackages": [
+        "preparation/A320Family-modern"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a321/air-canada",
+      "glb": "a321/exports/air-canada.glb",
+      "sha256": "cbafb308ed45a1ee218323133f6c817bfaf7fba4917a6b1fc2990b966fd99922",
+      "rig": "a321/exports/air-canada.rig.json",
+      "lights": "a321/lights.json",
+      "editableScene": "a321/air-canada.blend",
+      "sourcePackages": [
+        "preparation/A320Family-modern"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a321/american",
+      "glb": "a321/exports/american.glb",
+      "sha256": "2c7edbbddacf718d6c76a21b8997467c3459d4d5fb7bea0ca7cacdd42599563a",
+      "rig": "a321/exports/american.rig.json",
+      "lights": "a321/lights.json",
+      "editableScene": "a321/american.blend",
+      "sourcePackages": [
+        "preparation/A320Family-modern"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a321/delta",
+      "glb": "a321/exports/delta.glb",
+      "sha256": "20420697167ab4e0f84d300f1b4752b7e3389bd948f7b9d352e7caeae07dcdd2",
+      "rig": "a321/exports/delta.rig.json",
+      "lights": "a321/lights.json",
+      "editableScene": "a321/delta.blend",
+      "sourcePackages": [
+        "preparation/A320Family-modern",
+        "preparation/naviat-liveries"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a321/frontier",
+      "glb": "a321/exports/frontier.glb",
+      "sha256": "15b6b2eb6500cff096f016ac5157cda224e9039491546977ca65a3adc8f80b39",
+      "rig": "a321/exports/frontier.rig.json",
+      "lights": "a321/lights.json",
+      "editableScene": "a321/frontier.blend",
+      "sourcePackages": [
+        "preparation/A320Family-modern"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a321/jetblue",
+      "glb": "a321/exports/jetblue.glb",
+      "sha256": "8035261c2eb490f2fb0c85f391dd78dcb66326084ab221fd2e142d89a7beabcf",
+      "rig": "a321/exports/jetblue.rig.json",
+      "lights": "a321/lights.json",
+      "editableScene": "a321/jetblue.blend",
+      "sourcePackages": [
+        "preparation/A320Family-modern"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a332-ge/aer-lingus",
+      "glb": "a332-ge/exports/aer-lingus.glb",
+      "sha256": "b798147d9fda466ceffe260b3d6f1f615940770f8fd32031dfb14be803e4580b",
+      "rig": "a332-ge/exports/aer-lingus.rig.json",
+      "lights": "a332-ge/lights.json",
+      "editableScene": "a332-ge/aer-lingus.blend",
+      "sourcePackages": [
+        "preparation/IDG-A33X"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a332/hawaiian",
+      "glb": "a332/exports/hawaiian.glb",
+      "sha256": "30cc3473eab403d25659556eb77664daffd3bb725074093e393b64e18c2dd3e0",
+      "rig": "a332/exports/hawaiian.rig.json",
+      "lights": "a332/lights.json",
+      "editableScene": "a332/hawaiian.blend",
+      "sourcePackages": [
+        "preparation/IDG-A33X"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a333/fiji-airways",
+      "glb": "a333/exports/fiji-airways.glb",
+      "sha256": "848c805790565eee80494d445d8b7205666c18ff78885fee950d7ec6365ff51d",
+      "rig": "a333/exports/fiji-airways.rig.json",
+      "lights": "a333/lights.json",
+      "editableScene": "a333/fiji-airways.blend",
+      "sourcePackages": [
+        "preparation/IDG-A33X"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a339/tap-portugal",
+      "glb": "a339/exports/tap-portugal.glb",
+      "sha256": "1efc7ca9c25936cc4bbc74400c9618442f44e06d0a81ed890a4084f83ec893ab",
+      "rig": "a339/exports/tap-portugal.rig.json",
+      "lights": "a339/lights.json",
+      "editableScene": "a339/tap-portugal.blend",
+      "sourcePackages": [
+        "preparation/IDG-A33X"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a359/asiana",
+      "glb": "a359/exports/asiana.glb",
+      "sha256": "5fc6ed1808d5ef41aa51c36cf3a007ac46e5d39f10ad112c43cd7baab8a1f4d5",
+      "rig": "a359/exports/asiana.rig.json",
+      "lights": "a359/lights.json",
+      "editableScene": "a359/asiana.blend",
+      "sourcePackages": [
+        "preparation/A350XWB"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a359/french-bee",
+      "glb": "a359/exports/french-bee.glb",
+      "sha256": "7aada4f57c3544a30f0decb53a1a71b8a53993b2d0807ab198f74833361e663b",
+      "rig": "a359/exports/french-bee.rig.json",
+      "lights": "a359/lights.json",
+      "editableScene": "a359/french-bee.blend",
+      "sourcePackages": [
+        "preparation/A350XWB"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a359/lufthansa",
+      "glb": "a359/exports/lufthansa.glb",
+      "sha256": "d33eee07de42a9b6af114f474eee399c4b963ae59b9a3c4775223c66c6c30e0c",
+      "rig": "a359/exports/lufthansa.rig.json",
+      "lights": "a359/lights.json",
+      "editableScene": "a359/lufthansa.blend",
+      "sourcePackages": [
+        "preparation/A350XWB",
+        "preparation/Pilot2938-FG-liveries"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a359/singapore-airlines",
+      "glb": "a359/exports/singapore-airlines.glb",
+      "sha256": "d8bde6cc551c4a58cf5f9405ce36c3b888f0c2d03b557bb34c50b61d58994cec",
+      "rig": "a359/exports/singapore-airlines.rig.json",
+      "lights": "a359/lights.json",
+      "editableScene": "a359/singapore-airlines.blend",
+      "sourcePackages": [
+        "preparation/A350XWB",
+        "preparation/naviat-liveries"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a359/starlux",
+      "glb": "a359/exports/starlux.glb",
+      "sha256": "2c57575a2061457936b9f791037563cc7cba3a1366403bb30d4fa0d9ace74e3e",
+      "rig": "a359/exports/starlux.rig.json",
+      "lights": "a359/lights.json",
+      "editableScene": "a359/starlux.blend",
+      "sourcePackages": [
+        "preparation/A350XWB"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a359/turkish-airlines",
+      "glb": "a359/exports/turkish-airlines.glb",
+      "sha256": "51ec7b6b9f192cbed76758ffb98e79a658bebdaa0d780e719c08f5792fcee4a9",
+      "rig": "a359/exports/turkish-airlines.rig.json",
+      "lights": "a359/lights.json",
+      "editableScene": "a359/turkish-airlines.blend",
+      "sourcePackages": [
+        "preparation/A350XWB",
+        "preparation/naviat-liveries"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a359/vietnam-airlines",
+      "glb": "a359/exports/vietnam-airlines.glb",
+      "sha256": "c643e35919ee58b8a778480288ac99c4777305a4c14b6e1cc2dbdf58a3153e9c",
+      "rig": "a359/exports/vietnam-airlines.rig.json",
+      "lights": "a359/lights.json",
+      "editableScene": "a359/vietnam-airlines.blend",
+      "sourcePackages": [
+        "preparation/A350XWB"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a35k/philippine-airlines",
+      "glb": "a35k/exports/philippine-airlines.glb",
+      "sha256": "7fc8fac1124dc01519e367e407cc2a1511909238ae879ea5074ef83adc845163",
+      "rig": "a35k/exports/philippine-airlines.rig.json",
+      "lights": "a35k/lights.json",
+      "editableScene": "a35k/philippine-airlines.blend",
+      "sourcePackages": [
+        "preparation/A350XWB"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a35k/philippine-airlines-85-years",
+      "glb": "a35k/exports/philippine-airlines-85-years.glb",
+      "sha256": "66768c89249b4ee55015f5392f486ac39d3c152b2efd683dbca94a8504dc2d9c",
+      "rig": "a35k/exports/philippine-airlines-85-years.rig.json",
+      "lights": "a35k/lights.json",
+      "editableScene": "a35k/philippine-airlines-85-years.blend",
+      "sourcePackages": [
+        "preparation/A350XWB"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a388/british-airways",
+      "glb": "a388/exports/british-airways.glb",
+      "sha256": "d7c57dd90a6baa29751bc94e476ea0ee28c90b2385ac3e708777f3e599e9a00d",
+      "rig": "a388/exports/british-airways.rig.json",
+      "lights": "a388/lights.json",
+      "editableScene": "a388/british-airways.blend",
+      "sourcePackages": [
+        "preparation/A380-omega"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "a388/emirates",
+      "glb": "a388/exports/emirates.glb",
+      "sha256": "4d98bd6eea5657a44a4c8ea9831dcf99a30882b7d8330b5b36403ec00245f569",
+      "rig": "a388/exports/emirates.rig.json",
+      "lights": "a388/lights.json",
+      "editableScene": "a388/emirates.blend",
+      "sourcePackages": [
+        "preparation/A380-omega"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "astr/skycare",
+      "glb": "astr/exports/skycare.glb",
+      "sha256": "47b3646ede89a1acd46e0c6187ac733462bb075763000ade3d80954d6e353663",
+      "rig": "astr/exports/skycare.rig.json",
+      "lights": "astr/lights.json",
+      "editableScene": "astr/skycare.blend",
+      "sourcePackages": [],
+      "authoredGeometry": true,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b350/optimal-aviation",
+      "glb": "b350/exports/optimal-aviation.glb",
+      "sha256": "831b4f19801ae161ac0bbe30defcb5eb8d9352c3f9c0b24192c451377810a44d",
+      "rig": "b350/exports/optimal-aviation.rig.json",
+      "lights": "b350/lights.json",
+      "editableScene": "b350/optimal-aviation.blend",
+      "sourcePackages": [
+        "preparation/KingAir-350"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b38m/aeromexico",
+      "glb": "b38m/exports/aeromexico.glb",
+      "sha256": "a405fc3ab00289cc8b26ef48ce34f0527c69aadcf2e062c5b518a44941490219",
+      "rig": "b38m/exports/aeromexico.rig.json",
+      "lights": "b38m/lights.json",
+      "editableScene": "b38m/aeromexico.blend",
+      "sourcePackages": [
+        "preparation/737-MAX",
+        "preparation/737-Next-Generation"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b38m/alaska",
+      "glb": "b38m/exports/alaska.glb",
+      "sha256": "2668bff95261bab250a30b3c24b1f8ac5c9463d93e8ae438ee3195782d03dc3c",
+      "rig": "b38m/exports/alaska.rig.json",
+      "lights": "b38m/lights.json",
+      "editableScene": "b38m/alaska.blend",
+      "sourcePackages": [
+        "b738",
+        "preparation/737-MAX"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b38m/american",
+      "glb": "b38m/exports/american.glb",
+      "sha256": "4710dd2d407d25bbd86eaa121abee60f87f1a67ab7cc2bdd61e72b26d34606d2",
+      "rig": "b38m/exports/american.rig.json",
+      "lights": "b38m/lights.json",
+      "editableScene": "b38m/american.blend",
+      "sourcePackages": [
+        "b738",
+        "preparation/737-MAX"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b38m/flair",
+      "glb": "b38m/exports/flair.glb",
+      "sha256": "655d58706ec4d77c2588e00985b0997ca97a0f061e3a2a807bb9bf5c25d3baf4",
+      "rig": "b38m/exports/flair.rig.json",
+      "lights": "b38m/lights.json",
+      "editableScene": "b38m/flair.blend",
+      "sourcePackages": [
+        "preparation/737-MAX"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b38m/southwest",
+      "glb": "b38m/exports/southwest.glb",
+      "sha256": "10cf953060905d9706063dbefff1d14b4c3d5edfd3adaf1154115aabd8c817ba",
+      "rig": "b38m/exports/southwest.rig.json",
+      "lights": "b38m/lights.json",
+      "editableScene": "b38m/southwest.blend",
+      "sourcePackages": [
+        "b738",
+        "preparation/737-MAX"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b38m/united",
+      "glb": "b38m/exports/united.glb",
+      "sha256": "cdd2c866c80375088cf7c34494f397c6eede03448412702cc66f27cf7c430ee1",
+      "rig": "b38m/exports/united.rig.json",
+      "lights": "b38m/lights.json",
+      "editableScene": "b38m/united.blend",
+      "sourcePackages": [
+        "preparation/737-MAX",
+        "preparation/737-Next-Generation"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b39m/aeromexico",
+      "glb": "b39m/exports/aeromexico.glb",
+      "sha256": "6b819d1bac85c9ba1260caf150f739e06d76b94375a0dc5a00f479168c36085e",
+      "rig": "b39m/exports/aeromexico.rig.json",
+      "lights": "b39m/lights.json",
+      "editableScene": "b39m/aeromexico.blend",
+      "sourcePackages": [
+        "preparation/737-MAX",
+        "preparation/737-Next-Generation"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b39m/alaska",
+      "glb": "b39m/exports/alaska.glb",
+      "sha256": "557c23920da85555e758cc67df88cbe82dfc8a3e871388a60befa6c387d3b211",
+      "rig": "b39m/exports/alaska.rig.json",
+      "lights": "b39m/lights.json",
+      "editableScene": "b39m/alaska.blend",
+      "sourcePackages": [
+        "preparation/737-MAX"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b39m/copa",
+      "glb": "b39m/exports/copa.glb",
+      "sha256": "8de75e45533c764f980364e7a55bfbbeaf48b13a85b771a1cadd3834a7e42b01",
+      "rig": "b39m/exports/copa.rig.json",
+      "lights": "b39m/lights.json",
+      "editableScene": "b39m/copa.blend",
+      "sourcePackages": [
+        "preparation/737-MAX"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b39m/united",
+      "glb": "b39m/exports/united.glb",
+      "sha256": "6abc5e93eeafe4c98ce12d0f8c7ffcd279a6730886b93e11ed1c8500a9a50c77",
+      "rig": "b39m/exports/united.rig.json",
+      "lights": "b39m/lights.json",
+      "editableScene": "b39m/united.blend",
+      "sourcePackages": [
+        "preparation/737-MAX"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b737/southwest",
+      "glb": "b737/exports/southwest.glb",
+      "sha256": "8e0ef6e88a1419f4e30d5b298e92e759bb09ae7953accba93932bc1c9b9d5236",
+      "rig": "b737/exports/southwest.rig.json",
+      "lights": "b737/lights.json",
+      "editableScene": "b737/southwest.blend",
+      "sourcePackages": [
+        "preparation/737-Next-Generation"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b737/united",
+      "glb": "b737/exports/united.glb",
+      "sha256": "3cbafe29fb77194dc215e2df688f1d09381925552ede9091f234cd0f5c2dd3d8",
+      "rig": "b737/exports/united.rig.json",
+      "lights": "b737/lights.json",
+      "editableScene": "b737/united.blend",
+      "sourcePackages": [
+        "preparation/737-Next-Generation",
+        "preparation/naviat-liveries"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b738-current/american-aircal",
+      "glb": "b738-current/exports/american-aircal.glb",
+      "sha256": "e05ba340db93999680e5c2372ed53aa4fc9e4147a7422e1ed28ef969987f4234",
+      "rig": "b738-current/exports/american-aircal.rig.json",
+      "lights": "b738-current/lights.json",
+      "editableScene": "b738-current/american-aircal.blend",
+      "sourcePackages": [
+        "preparation/737-Next-Generation"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b738-current/flair",
+      "glb": "b738-current/exports/flair.glb",
+      "sha256": "61495c10a68ae42e2494cad6b2042628e46aa589c70e4e291e8791f37ef242e7",
+      "rig": "b738-current/exports/flair.rig.json",
+      "lights": "b738-current/lights.json",
+      "editableScene": "b738-current/flair.blend",
+      "sourcePackages": [
+        "preparation/737-Next-Generation"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b738-current/united",
+      "glb": "b738-current/exports/united.glb",
+      "sha256": "74f04538e674a145b9150f390a3afaf8cf5ff4b14210d00ac7a388fa74f56451",
+      "rig": "b738-current/exports/united.rig.json",
+      "lights": "b738-current/lights.json",
+      "editableScene": "b738-current/united.blend",
+      "sourcePackages": [
+        "preparation/737-Next-Generation"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b738-current/united-star-alliance",
+      "glb": "b738-current/exports/united-star-alliance.glb",
+      "sha256": "7a3c180ed02f14350acaa45f5d8a5907d3925302b8a039b0296e1d0f6f0a088f",
+      "rig": "b738-current/exports/united-star-alliance.rig.json",
+      "lights": "b738-current/lights.json",
+      "editableScene": "b738-current/united-star-alliance.blend",
+      "sourcePackages": [
+        "preparation/737-Next-Generation"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b738/alaska",
+      "glb": "b738/exports/alaska.glb",
+      "sha256": "98709bc3d6775addf2c1a86ef0303e8b82fd09310be28f32d3f786304d14e10f",
+      "rig": "b738/exports/alaska.rig.json",
+      "lights": "b738/lights.json",
+      "editableScene": "b738/alaska.blend",
+      "sourcePackages": [
+        "b738"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b738/american",
+      "glb": "b738/exports/american.glb",
+      "sha256": "d2cecb9935721768a55d6e0aca1097161366ec69a04cf40de2c1015ab24a06c3",
+      "rig": "b738/exports/american.rig.json",
+      "lights": "b738/lights.json",
+      "editableScene": "b738/american.blend",
+      "sourcePackages": [
+        "b738"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b738/delta",
+      "glb": "b738/exports/delta.glb",
+      "sha256": "b2c02e1cd5bae55b0ebe0541d138304fbb3186ecc0004926b2b930890aafc4ab",
+      "rig": "b738/exports/delta.rig.json",
+      "lights": "b738/lights.json",
+      "editableScene": "b738/delta.blend",
+      "sourcePackages": [
+        "b738"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b738/southwest",
+      "glb": "b738/exports/southwest.glb",
+      "sha256": "49571bb517e3db615b578a40f730d5fb9a3c48120a21b7ab6afe199b26aba04d",
+      "rig": "b738/exports/southwest.rig.json",
+      "lights": "b738/lights.json",
+      "editableScene": "b738/southwest.blend",
+      "sourcePackages": [
+        "b738"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b739/alaska",
+      "glb": "b739/exports/alaska.glb",
+      "sha256": "90fa9fd9245a11bced3754c8d18b566d7a0c4c7ace6dd079352e95d63d50fd4b",
+      "rig": "b739/exports/alaska.rig.json",
+      "lights": "b739/lights.json",
+      "editableScene": "b739/alaska.blend",
+      "sourcePackages": [
+        "preparation/737-Next-Generation",
+        "preparation/naviat-liveries"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b739/delta",
+      "glb": "b739/exports/delta.glb",
+      "sha256": "c9aa86f173dd8d9b7adbff67ef5546989b959510c22ce8d4cf3716987cab27fd",
+      "rig": "b739/exports/delta.rig.json",
+      "lights": "b739/lights.json",
+      "editableScene": "b739/delta.blend",
+      "sourcePackages": [
+        "preparation/737-Next-Generation"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b739/united",
+      "glb": "b739/exports/united.glb",
+      "sha256": "a6bab43df31afe631eeb896b0ef190e89498539d31ebed0829241a15ed8c3c17",
+      "rig": "b739/exports/united.rig.json",
+      "lights": "b739/lights.json",
+      "editableScene": "b739/united.blend",
+      "sourcePackages": [
+        "preparation/737-Next-Generation",
+        "preparation/naviat-liveries"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b744f/airzeta",
+      "glb": "b744f/exports/airzeta.glb",
+      "sha256": "0522bf22ae75c49ad89248994812f3ce26a455c16ccdb87d76a0b1a289811d03",
+      "rig": "b744f/exports/airzeta.rig.json",
+      "lights": "b744f/lights.json",
+      "editableScene": "b744f/airzeta.blend",
+      "sourcePackages": [
+        "preparation/747-400",
+        "preparation/747-8i"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b748f/korean-air-cargo",
+      "glb": "b748f/exports/korean-air-cargo.glb",
+      "sha256": "03a432a7fe6f9b890e824373e502077de762742e5aae22e722873800502b12a2",
+      "rig": "b748f/exports/korean-air-cargo.rig.json",
+      "lights": "b748f/lights.json",
+      "editableScene": "b748f/korean-air-cargo.blend",
+      "sourcePackages": [
+        "preparation/747-8i"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b752/delta",
+      "glb": "b752/exports/delta.glb",
+      "sha256": "b3bc92f62cab807583e47ff3b7fd607b9129531c3b9f9bb1e8f6fae91d9a7aa3",
+      "rig": "b752/exports/delta.rig.json",
+      "lights": "b752/lights.json",
+      "editableScene": "b752/delta.blend",
+      "sourcePackages": [
+        "preparation/757-200",
+        "preparation/Pilot2938-FG-liveries"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b752/united",
+      "glb": "b752/exports/united.glb",
+      "sha256": "52fdf87a0d187edb30159383c2401753fa72d2762fcd79d937f5655d0c82cbca",
+      "rig": "b752/exports/united.rig.json",
+      "lights": "b752/lights.json",
+      "editableScene": "b752/united.blend",
+      "sourcePackages": [
+        "preparation/757-200"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b753/united",
+      "glb": "b753/exports/united.glb",
+      "sha256": "56c2f2743a869812fddd1f8a24215a3ac96ccc0ced00c30baa1c8a866780c7bd",
+      "rig": "b753/exports/united.rig.json",
+      "lights": "b753/lights.json",
+      "editableScene": "b753/united.blend",
+      "sourcePackages": [
+        "preparation/757-200"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b762f/abx-air",
+      "glb": "b762f/exports/abx-air.glb",
+      "sha256": "cf7aa8f9711aa6c93a8efc800a013252054443d43f25b803f8f5cbd732dec11c",
+      "rig": "b762f/exports/abx-air.rig.json",
+      "lights": "b762f/lights.json",
+      "editableScene": "b762f/abx-air.blend",
+      "sourcePackages": [
+        "preparation/767-300-modern",
+        "preparation/naviat-liveries"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b763/delta",
+      "glb": "b763/exports/delta.glb",
+      "sha256": "fc0d6edf63c9c951b657096e2c42c0d532e77b63b9d067290c59dea4eb37a7f9",
+      "rig": "b763/exports/delta.rig.json",
+      "lights": "b763/lights.json",
+      "editableScene": "b763/delta.blend",
+      "sourcePackages": [
+        "preparation/767-300-modern"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b763/united",
+      "glb": "b763/exports/united.glb",
+      "sha256": "0a6e33a04fd5fc756c2b37edadcc4280e65643e9cdf0edcb1a26b70829f308ca",
+      "rig": "b763/exports/united.rig.json",
+      "lights": "b763/lights.json",
+      "editableScene": "b763/united.blend",
+      "sourcePackages": [
+        "preparation/767-300-modern",
+        "preparation/naviat-liveries"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b763f/abx-air",
+      "glb": "b763f/exports/abx-air.glb",
+      "sha256": "2ae77f9f7991a07284f3d90583bbffc3a8d2e31c0885c4ba9090c1aa733f2e51",
+      "rig": "b763f/exports/abx-air.rig.json",
+      "lights": "b763f/lights.json",
+      "editableScene": "b763f/abx-air.blend",
+      "sourcePackages": [
+        "preparation/767-300-modern",
+        "preparation/naviat-liveries"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b763f/amazon-air",
+      "glb": "b763f/exports/amazon-air.glb",
+      "sha256": "62c4b1204a63cd575aea35da130524892aa98d55cd4593bba5e1ba1ec96a92c3",
+      "rig": "b763f/exports/amazon-air.rig.json",
+      "lights": "b763f/lights.json",
+      "editableScene": "b763f/amazon-air.blend",
+      "sourcePackages": [
+        "preparation/767-300-modern",
+        "preparation/naviat-liveries"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b763f/fedex",
+      "glb": "b763f/exports/fedex.glb",
+      "sha256": "c4fb9323443f4322267a8494a3592765b39aa7d84c9343d759e4437af229af8e",
+      "rig": "b763f/exports/fedex.rig.json",
+      "lights": "b763f/lights.json",
+      "editableScene": "b763f/fedex.blend",
+      "sourcePackages": [
+        "preparation/767-300-modern",
+        "preparation/naviat-liveries"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b772/united",
+      "glb": "b772/exports/united.glb",
+      "sha256": "b2f89f3c4e127681a25197b86cb66b8f904a800c2d1f0e276695c351e987654f",
+      "rig": "b772/exports/united.rig.json",
+      "lights": "b772/lights.json",
+      "editableScene": "b772/united.blend",
+      "sourcePackages": [
+        "preparation/737-Next-Generation",
+        "preparation/Boeing-777-Flightgear"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b77f/china-airlines-cargo",
+      "glb": "b77f/exports/china-airlines-cargo.glb",
+      "sha256": "43d0773560242cc2bf709df4520457e3f146436354f8f60a377832c96ff63eac",
+      "rig": "b77f/exports/china-airlines-cargo.rig.json",
+      "lights": "b77f/lights.json",
+      "editableScene": "b77f/china-airlines-cargo.blend",
+      "sourcePackages": [
+        "preparation/Boeing-777-Flightgear"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b77w/air-china",
+      "glb": "b77w/exports/air-china.glb",
+      "sha256": "0e83b222e7815122b051b929c030efd0ff4c9f565bd2b8aa71349970c644cceb",
+      "rig": "b77w/exports/air-china.rig.json",
+      "lights": "b77w/lights.json",
+      "editableScene": "b77w/air-china.blend",
+      "sourcePackages": [
+        "preparation/Boeing-777-Flightgear"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b77w/air-france",
+      "glb": "b77w/exports/air-france.glb",
+      "sha256": "cdaab5a88f81a386bfc32b173925296407f53662e2186ae7af3d8710c4d147e2",
+      "rig": "b77w/exports/air-france.rig.json",
+      "lights": "b77w/lights.json",
+      "editableScene": "b77w/air-france.blend",
+      "sourcePackages": [
+        "preparation/Boeing-777-Flightgear"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b77w/air-india",
+      "glb": "b77w/exports/air-india.glb",
+      "sha256": "0068d8afd0f5f33829eb93c1a3476475cd27b09eabd807461fcc8c0cfb752e4d",
+      "rig": "b77w/exports/air-india.rig.json",
+      "lights": "b77w/lights.json",
+      "editableScene": "b77w/air-india.blend",
+      "sourcePackages": [
+        "preparation/Boeing-777-Flightgear"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b77w/ana",
+      "glb": "b77w/exports/ana.glb",
+      "sha256": "a9b5734563bc77b50926e5fbbcb8c88ee7dbf08cdd2715da3fe735cd76316662",
+      "rig": "b77w/exports/ana.rig.json",
+      "lights": "b77w/lights.json",
+      "editableScene": "b77w/ana.blend",
+      "sourcePackages": [
+        "preparation/Boeing-777-Flightgear"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b77w/british-airways",
+      "glb": "b77w/exports/british-airways.glb",
+      "sha256": "07f1a77e75a037427cb821fe6e82cf7ce8aa019da899f0515a4f3e57ee6a278f",
+      "rig": "b77w/exports/british-airways.rig.json",
+      "lights": "b77w/lights.json",
+      "editableScene": "b77w/british-airways.blend",
+      "sourcePackages": [
+        "preparation/Boeing-777-Flightgear"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b77w/cathay-pacific",
+      "glb": "b77w/exports/cathay-pacific.glb",
+      "sha256": "1f6a0985f5115579a409ec6cb972e33cbc2dde046d7a83cb2f477ac5fd05c2cd",
+      "rig": "b77w/exports/cathay-pacific.rig.json",
+      "lights": "b77w/lights.json",
+      "editableScene": "b77w/cathay-pacific.blend",
+      "sourcePackages": [
+        "preparation/Boeing-777-Flightgear"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b77w/china-airlines",
+      "glb": "b77w/exports/china-airlines.glb",
+      "sha256": "e46eca8a64dc3523aa3cbdce9d094fbd3b8a414ca2ee365fe8cbcc956983ce2a",
+      "rig": "b77w/exports/china-airlines.rig.json",
+      "lights": "b77w/lights.json",
+      "editableScene": "b77w/china-airlines.blend",
+      "sourcePackages": [
+        "preparation/Boeing-777-Flightgear"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b77w/eva-air",
+      "glb": "b77w/exports/eva-air.glb",
+      "sha256": "22a0509d3d18a280c6bfccbecd6c31eb58989a8d1b1e414f4efb41d3fa91fc1d",
+      "rig": "b77w/exports/eva-air.rig.json",
+      "lights": "b77w/lights.json",
+      "editableScene": "b77w/eva-air.blend",
+      "sourcePackages": [
+        "preparation/Boeing-777-Flightgear"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b77w/japan-airlines",
+      "glb": "b77w/exports/japan-airlines.glb",
+      "sha256": "cf9b00dacdac462f83a07480b84481597ecc4caa9c91664c7d509c291e11befa",
+      "rig": "b77w/exports/japan-airlines.rig.json",
+      "lights": "b77w/lights.json",
+      "editableScene": "b77w/japan-airlines.blend",
+      "sourcePackages": [
+        "preparation/Boeing-777-Flightgear"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b77w/swiss",
+      "glb": "b77w/exports/swiss.glb",
+      "sha256": "c7b399ca22696bd8c44e14f25fc93525ea16f21b3630baf12d5566b2337fb85d",
+      "rig": "b77w/exports/swiss.rig.json",
+      "lights": "b77w/lights.json",
+      "editableScene": "b77w/swiss.blend",
+      "sourcePackages": [
+        "preparation/Boeing-777-Flightgear"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b77w/united",
+      "glb": "b77w/exports/united.glb",
+      "sha256": "36ee66fb7b46dd3d43dd004320bf7ec9b71d3a79414bf1ecc625fdcec3be7fc5",
+      "rig": "b77w/exports/united.rig.json",
+      "lights": "b77w/lights.json",
+      "editableScene": "b77w/united.blend",
+      "sourcePackages": [
+        "preparation/737-Next-Generation",
+        "preparation/Boeing-777-Flightgear"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b788/zipair",
+      "glb": "b788/exports/zipair.glb",
+      "sha256": "9b0b2f191fac21534066ac810a52e9f28b16ba9f2948be970acde5b77f0b5dca",
+      "rig": "b788/exports/zipair.rig.json",
+      "lights": "b788/lights.json",
+      "editableScene": "b788/zipair.blend",
+      "sourcePackages": [
+        "preparation/787-family"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b789-current/air-new-zealand",
+      "glb": "b789-current/exports/air-new-zealand.glb",
+      "sha256": "4e98ef4b41f9ac8263952d0471516d349e9b29be0b05c6411277988f104d4de4",
+      "rig": "b789-current/exports/air-new-zealand.rig.json",
+      "lights": "b789-current/lights.json",
+      "editableScene": "b789-current/air-new-zealand.blend",
+      "sourcePackages": [
+        "preparation/787-9",
+        "preparation/787-family"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b789-current/air-premia",
+      "glb": "b789-current/exports/air-premia.glb",
+      "sha256": "efb198f7c3babe70140c32b193309990410d14fc870c1979f6bd1f2dcf72b5dc",
+      "rig": "b789-current/exports/air-premia.rig.json",
+      "lights": "b789-current/lights.json",
+      "editableScene": "b789-current/air-premia.blend",
+      "sourcePackages": [
+        "preparation/787-family"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b789-current/eva-air",
+      "glb": "b789-current/exports/eva-air.glb",
+      "sha256": "bae9c04ff95e398ef42f74931d63b5369a6a92b485757a399724121429f75746",
+      "rig": "b789-current/exports/eva-air.rig.json",
+      "lights": "b789-current/lights.json",
+      "editableScene": "b789-current/eva-air.blend",
+      "sourcePackages": [
+        "preparation/787-family"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b789-current/japan-airlines",
+      "glb": "b789-current/exports/japan-airlines.glb",
+      "sha256": "cf4b31296b8536e7849e04c36f92415b3c51901a394829aafb5d58b9e359a0c2",
+      "rig": "b789-current/exports/japan-airlines.rig.json",
+      "lights": "b789-current/lights.json",
+      "editableScene": "b789-current/japan-airlines.blend",
+      "sourcePackages": [
+        "preparation/787-9",
+        "preparation/787-family"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b789-current/qantas",
+      "glb": "b789-current/exports/qantas.glb",
+      "sha256": "f9018164aa59ce683a9cf0e93815feba43a68e77df9554e766809966728d1e9c",
+      "rig": "b789-current/exports/qantas.rig.json",
+      "lights": "b789-current/lights.json",
+      "editableScene": "b789-current/qantas.blend",
+      "sourcePackages": [
+        "preparation/787-family"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b789-current/united",
+      "glb": "b789-current/exports/united.glb",
+      "sha256": "3b3adc7633d4bbb52231516dbf9376147497e2321e8488c38cb1742d980b62aa",
+      "rig": "b789-current/exports/united.rig.json",
+      "lights": "b789-current/lights.json",
+      "editableScene": "b789-current/united.blend",
+      "sourcePackages": [
+        "preparation/787-family",
+        "preparation/naviat-liveries"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b789-current/virgin-atlantic",
+      "glb": "b789-current/exports/virgin-atlantic.glb",
+      "sha256": "2fbb8b6c9cf613a6a0799597f39a454f51b256d7d19ead3dc86ea43320eff5da",
+      "rig": "b789-current/exports/virgin-atlantic.rig.json",
+      "lights": "b789-current/lights.json",
+      "editableScene": "b789-current/virgin-atlantic.blend",
+      "sourcePackages": [
+        "preparation/787-family"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b78x/klm",
+      "glb": "b78x/exports/klm.glb",
+      "sha256": "0485a4b7c743ff8587a147f116647ba6f5a13c3efdd9157b15e43a01646f3849",
+      "rig": "b78x/exports/klm.rig.json",
+      "lights": "b78x/lights.json",
+      "editableScene": "b78x/klm.blend",
+      "sourcePackages": [
+        "preparation/787-family",
+        "preparation/naviat-liveries"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "b78x/korean-air",
+      "glb": "b78x/exports/korean-air.glb",
+      "sha256": "898a4d978ab6d649e813e5f9faaf980e30cc58299af908998e5b23ceec93249f",
+      "rig": "b78x/exports/korean-air.rig.json",
+      "lights": "b78x/lights.json",
+      "editableScene": "b78x/korean-air.blend",
+      "sourcePackages": [
+        "preparation/787-family"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "be20/reach",
+      "glb": "be20/exports/reach.glb",
+      "sha256": "8199fc8ca1065e7b95f96a7c15139d1402ca795e4bf3705b35acff0400775c67",
+      "rig": "be20/exports/reach.rig.json",
+      "lights": "be20/lights.json",
+      "editableScene": "be20/reach.blend",
+      "sourcePackages": [
+        "preparation/king-air"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Noncommercial share-alike source; do not include in a commercial asset handoff without a separate permission basis."
+    },
+    {
+      "selector": "be9l/blue-skies",
+      "glb": "be9l/exports/blue-skies.glb",
+      "sha256": "332848db5f4fd37e7caa762cc9d7f2fef7bf6c4c86866ebb4956071ae9505037",
+      "rig": "be9l/exports/blue-skies.rig.json",
+      "lights": "be9l/lights.json",
+      "editableScene": "be9l/blue-skies.blend",
+      "sourcePackages": [
+        "preparation/king-air"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Noncommercial share-alike source; do not include in a commercial asset handoff without a separate permission basis."
+    },
+    {
+      "selector": "c25b/flyexclusive",
+      "glb": "c25b/exports/flyexclusive.glb",
+      "sha256": "23c189f25eedf816f5d7d205ff6411adf2fcec3854df06792eaea06b0645dc31",
+      "rig": "c25b/exports/flyexclusive.rig.json",
+      "lights": "c25b/lights.json",
+      "editableScene": "c25b/flyexclusive.blend",
+      "sourcePackages": [],
+      "authoredGeometry": true,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "c25b/jet-access",
+      "glb": "c25b/exports/jet-access.glb",
+      "sha256": "ff0a7f31292acc74a0cb5f2a38cfdf1dd1bb1b0e48f475d59e46ce916aeef650",
+      "rig": "c25b/exports/jet-access.rig.json",
+      "lights": "c25b/lights.json",
+      "editableScene": "c25b/jet-access.blend",
+      "sourcePackages": [],
+      "authoredGeometry": true,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "c25b/silver-air",
+      "glb": "c25b/exports/silver-air.glb",
+      "sha256": "b8f093f2ad263880f10074b96928c94de5dc39bbe70fcb290f8eba5cd155a144",
+      "rig": "c25b/exports/silver-air.rig.json",
+      "lights": "c25b/lights.json",
+      "editableScene": "c25b/silver-air.blend",
+      "sourcePackages": [],
+      "authoredGeometry": true,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "c56x/pacific-coast",
+      "glb": "c56x/exports/pacific-coast.glb",
+      "sha256": "3256b4cf937c99b0e1c567f85d2d705d75ed71e2936f9cf90dbe8be585c3419e",
+      "rig": "c56x/exports/pacific-coast.rig.json",
+      "lights": "c56x/lights.json",
+      "editableScene": "c56x/pacific-coast.blend",
+      "sourcePackages": [],
+      "authoredGeometry": true,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "c700/netjets",
+      "glb": "c700/exports/netjets.glb",
+      "sha256": "06e8f03404fb817df9ffd5cf5fde11dabf06c76088d33128baeafc2ec8236414",
+      "rig": "c700/exports/netjets.rig.json",
+      "lights": "c700/lights.json",
+      "editableScene": "c700/netjets.blend",
+      "sourcePackages": [],
+      "authoredGeometry": true,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "c750/baker-aviation",
+      "glb": "c750/exports/baker-aviation.glb",
+      "sha256": "272c5c55a774b7c6db951616cd8e5550ceebf2de87f42bd7638a138b69a22748",
+      "rig": "c750/exports/baker-aviation.rig.json",
+      "lights": "c750/lights.json",
+      "editableScene": "c750/baker-aviation.blend",
+      "sourcePackages": [
+        "preparation/CitationX"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "c750/herajet",
+      "glb": "c750/exports/herajet.glb",
+      "sha256": "4831647eba7f97506a717a3ffdf18c47b426d9a8d7fe4d8a9c9d32236ad348b7",
+      "rig": "c750/exports/herajet.rig.json",
+      "lights": "c750/lights.json",
+      "editableScene": "c750/herajet.blend",
+      "sourcePackages": [
+        "preparation/CitationX"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "cl30/twy-n1013",
+      "glb": "cl30/exports/twy-n1013.glb",
+      "sha256": "7b8a903219fcfbd86b26fee0016fab026c25b9b3ab423476b0d9fe452127fa82",
+      "rig": "cl30/exports/twy-n1013.rig.json",
+      "lights": "cl30/lights.json",
+      "editableScene": "cl30/twy-n1013.blend",
+      "sourcePackages": [],
+      "authoredGeometry": true,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "cl30/vista-america",
+      "glb": "cl30/exports/vista-america.glb",
+      "sha256": "7d90a10b82fd35c2c110f649e0cffe59ef02efbdb920ecd15ad6f2c08b530b1e",
+      "rig": "cl30/exports/vista-america.rig.json",
+      "lights": "cl30/lights.json",
+      "editableScene": "cl30/vista-america.blend",
+      "sourcePackages": [],
+      "authoredGeometry": true,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "cl35/flexjet",
+      "glb": "cl35/exports/flexjet.glb",
+      "sha256": "e6878bba7a8f486b656c7ebdf18c937ee050e444c1248c7629a87ec891146aa2",
+      "rig": "cl35/exports/flexjet.rig.json",
+      "lights": "cl35/lights.json",
+      "editableScene": "cl35/flexjet.blend",
+      "sourcePackages": [],
+      "authoredGeometry": true,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "cl35/netjets",
+      "glb": "cl35/exports/netjets.glb",
+      "sha256": "cf28c99caa89779582d7cd411ea20f99b6571277b31be1b75fd1553d1e39db62",
+      "rig": "cl35/exports/netjets.rig.json",
+      "lights": "cl35/lights.json",
+      "editableScene": "cl35/netjets.blend",
+      "sourcePackages": [],
+      "authoredGeometry": true,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "cl35/vista-america",
+      "glb": "cl35/exports/vista-america.glb",
+      "sha256": "cc03bb47bd85b3d6d1efd9f8b2ddf06a4192332f4faecab407c54c413745f547",
+      "rig": "cl35/exports/vista-america.rig.json",
+      "lights": "cl35/lights.json",
+      "editableScene": "cl35/vista-america.blend",
+      "sourcePackages": [],
+      "authoredGeometry": true,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "cl60/netjets",
+      "glb": "cl60/exports/netjets.glb",
+      "sha256": "0b1e54b36eb8bcdd352fdb0bba4dcf996a8b93b81df795c1727a45eb8579069d",
+      "rig": "cl60/exports/netjets.rig.json",
+      "lights": "cl60/lights.json",
+      "editableScene": "cl60/netjets.blend",
+      "sourcePackages": [],
+      "authoredGeometry": true,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "crj200/united",
+      "glb": "crj200/exports/united.glb",
+      "sha256": "a10682bee99b2503afd78069ef5b200561b09c7441fe233235e396489b85d7d0",
+      "rig": "crj200/exports/united.rig.json",
+      "lights": "crj200/lights.json",
+      "editableScene": "crj200/united.blend",
+      "sourcePackages": [
+        "preparation/737-Next-Generation",
+        "preparation/CRJ200"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "crj900/air-canada-express",
+      "glb": "crj900/exports/air-canada-express.glb",
+      "sha256": "314acc00aea930a44ae5271bcb01ed9f65a029f83169eb5c3b044d3a4943fdf1",
+      "rig": "crj900/exports/air-canada-express.rig.json",
+      "lights": "crj900/lights.json",
+      "editableScene": "crj900/air-canada-express.blend",
+      "sourcePackages": [
+        "preparation/CRJ700-family"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "e295/porter",
+      "glb": "e295/exports/porter.glb",
+      "sha256": "bf0dd716bf1fa609bc366f51ae244263c68d0e26b7a87e31a09a62270c3548e2",
+      "rig": "e295/exports/porter.rig.json",
+      "lights": "e295/lights.json",
+      "editableScene": "e295/porter.blend",
+      "sourcePackages": [],
+      "authoredGeometry": true,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "e545/flexjet",
+      "glb": "e545/exports/flexjet.glb",
+      "sha256": "26492551f50b4c101e9ad708d70bd105bfe43b614698ccc2a4f1d4cd21ad4392",
+      "rig": "e545/exports/flexjet.rig.json",
+      "lights": "e545/lights.json",
+      "editableScene": "e545/flexjet.blend",
+      "sourcePackages": [],
+      "authoredGeometry": true,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "e55p/netjets",
+      "glb": "e55p/exports/netjets.glb",
+      "sha256": "e524c480ef054f9b5ca7217fee8491b5a820698e55ba9f3d13cb16f29a7c144e",
+      "rig": "e55p/exports/netjets.rig.json",
+      "lights": "e55p/lights.json",
+      "editableScene": "e55p/netjets.blend",
+      "sourcePackages": [],
+      "authoredGeometry": true,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "e75l/alaska",
+      "glb": "e75l/exports/alaska.glb",
+      "sha256": "2abd8b90509a451e9ac9455a0cd24cf0e196ceab519fd4cbaa5d53ebfff2ef60",
+      "rig": "e75l/exports/alaska.rig.json",
+      "lights": "e75l/lights.json",
+      "editableScene": "e75l/alaska.blend",
+      "sourcePackages": [
+        "b738",
+        "preparation/E-jet-family"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "e75l/american",
+      "glb": "e75l/exports/american.glb",
+      "sha256": "82a196be43d8f79a289f8e0cabe99be10463a9296f21941ad1d9d609ef1231ea",
+      "rig": "e75l/exports/american.rig.json",
+      "lights": "e75l/lights.json",
+      "editableScene": "e75l/american.blend",
+      "sourcePackages": [
+        "b738",
+        "preparation/E-jet-family"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "e75l/delta",
+      "glb": "e75l/exports/delta.glb",
+      "sha256": "31e37d832c25cc11a2e7f6a089e70d86574eda4bfda80de303588bf8d48766f1",
+      "rig": "e75l/exports/delta.rig.json",
+      "lights": "e75l/lights.json",
+      "editableScene": "e75l/delta.blend",
+      "sourcePackages": [
+        "preparation/E-jet-family"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "e75l/united",
+      "glb": "e75l/exports/united.glb",
+      "sha256": "de86b7d92b44b94fd92eba4edb0eaa5afdeb1fd1195acdfb1cc0fd9b4a582e4c",
+      "rig": "e75l/exports/united.rig.json",
+      "lights": "e75l/lights.json",
+      "editableScene": "e75l/united.blend",
+      "sourcePackages": [
+        "preparation/737-Next-Generation",
+        "preparation/E-jet-family"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "ec35/calstar",
+      "glb": "ec35/exports/calstar.glb",
+      "sha256": "43b252a10be30f29460829258de075cb421c803b3fc2cd3b42fc10aa91659a05",
+      "rig": "ec35/exports/calstar.rig.json",
+      "lights": "ec35/lights.json",
+      "editableScene": "ec35/calstar.blend",
+      "sourcePackages": [
+        "preparation/ec135"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "ec35/reach",
+      "glb": "ec35/exports/reach.glb",
+      "sha256": "3abf1c5f892b089766b6c5609a8dc2741bfec625e6fead91e6ebf572a6746a5a",
+      "rig": "ec35/exports/reach.rig.json",
+      "lights": "ec35/lights.json",
+      "editableScene": "ec35/reach.blend",
+      "sourcePackages": [
+        "preparation/ec135"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "epic/private-n999fn",
+      "glb": "epic/exports/private-n999fn.glb",
+      "sha256": "17171120b945e6b9337f957cfc722efa3ecc51aab380855351c9aa3c3a05b202",
+      "rig": "epic/exports/private-n999fn.rig.json",
+      "lights": "epic/lights.json",
+      "editableScene": "epic/private-n999fn.blend",
+      "sourcePackages": [],
+      "authoredGeometry": true,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "ga5c/conocophillips",
+      "glb": "ga5c/exports/conocophillips.glb",
+      "sha256": "a466b9e4f50e95d6305fb2a58aa6fa12ac8d0bfa5f420a58c18bc52d2811f0cc",
+      "rig": "ga5c/exports/conocophillips.rig.json",
+      "lights": "ga5c/lights.json",
+      "editableScene": "ga5c/conocophillips.blend",
+      "sourcePackages": [],
+      "authoredGeometry": true,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "ga5c/jet-aviation",
+      "glb": "ga5c/exports/jet-aviation.glb",
+      "sha256": "5a75166e9c0ef506839dbb2b3e1ca436d13e0779e135f9bce396d1e68b588b73",
+      "rig": "ga5c/exports/jet-aviation.rig.json",
+      "lights": "ga5c/lights.json",
+      "editableScene": "ga5c/jet-aviation.blend",
+      "sourcePackages": [],
+      "authoredGeometry": true,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "galx/neojets",
+      "glb": "galx/exports/neojets.glb",
+      "sha256": "dbbc9ea8fe34f76f41050942ee33c025d8ac025c1f6ae3d8b636651bd76c601f",
+      "rig": "galx/exports/neojets.rig.json",
+      "lights": "galx/lights.json",
+      "editableScene": "galx/neojets.blend",
+      "sourcePackages": [],
+      "authoredGeometry": true,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "gl5t/netjets",
+      "glb": "gl5t/exports/netjets.glb",
+      "sha256": "a4da5e6744ed405f98efbe2d7fb7f073e521b4ccbc1c763434c9825268e6f753",
+      "rig": "gl5t/exports/netjets.rig.json",
+      "lights": "gl5t/lights.json",
+      "editableScene": "gl5t/netjets.blend",
+      "sourcePackages": [
+        "preparation/Global5000-xplane"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "gl7t/netjets",
+      "glb": "gl7t/exports/netjets.glb",
+      "sha256": "dbb580c755665947d53c68e9ba337a32398ca5f354041378f3a9a93ba8af31bc",
+      "rig": "gl7t/exports/netjets.rig.json",
+      "lights": "gl7t/lights.json",
+      "editableScene": "gl7t/netjets.blend",
+      "sourcePackages": [],
+      "authoredGeometry": true,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "glex/netjets",
+      "glb": "glex/exports/netjets.glb",
+      "sha256": "767240f2fcd758f2cfecb05f39ea361337391a525fcbebc1b3bffc66eef68337",
+      "rig": "glex/exports/netjets.rig.json",
+      "lights": "glex/lights.json",
+      "editableScene": "glex/netjets.blend",
+      "sourcePackages": [
+        "preparation/Global5000-xplane"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "glex/vistajet",
+      "glb": "glex/exports/vistajet.glb",
+      "sha256": "03032799c1cc3d1ea09e9b6c6765d5d31ddb1e57a5c493f73127e9acd7a75331",
+      "rig": "glex/exports/vistajet.rig.json",
+      "lights": "glex/lights.json",
+      "editableScene": "glex/vistajet.blend",
+      "sourcePackages": [
+        "preparation/Global5000-xplane"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "glf4/flexjet",
+      "glb": "glf4/exports/flexjet.glb",
+      "sha256": "17497fae64e6063c59fc021dc0d9bd9a124c668bab97b78720f1ce923697c45e",
+      "rig": "glf4/exports/flexjet.rig.json",
+      "lights": "glf4/lights.json",
+      "editableScene": "glf4/flexjet.blend",
+      "sourcePackages": [],
+      "authoredGeometry": true,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "glf5/silver-air",
+      "glb": "glf5/exports/silver-air.glb",
+      "sha256": "4ff29acf6f086aa394c1da6a20435486e472d961fcb0c705fb366f7d491ead60",
+      "rig": "glf5/exports/silver-air.rig.json",
+      "lights": "glf5/lights.json",
+      "editableScene": "glf5/silver-air.blend",
+      "sourcePackages": [],
+      "authoredGeometry": true,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "glf6/thoma-bravo",
+      "glb": "glf6/exports/thoma-bravo.glb",
+      "sha256": "724f6e683c03c99261230a78882152236245095906a53d5f78e6f72e4faab965",
+      "rig": "glf6/exports/thoma-bravo.rig.json",
+      "lights": "glf6/lights.json",
+      "editableScene": "glf6/thoma-bravo.blend",
+      "sourcePackages": [],
+      "authoredGeometry": true,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "h25c/private-n707hd",
+      "glb": "h25c/exports/private-n707hd.glb",
+      "sha256": "a3c8809a5ad0d8d98a1dc5b6dc1c1366006b533a8ea9dbaf4b4893620810823d",
+      "rig": "h25c/exports/private-n707hd.rig.json",
+      "lights": "h25c/lights.json",
+      "editableScene": "h25c/private-n707hd.blend",
+      "sourcePackages": [],
+      "authoredGeometry": true,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    },
+    {
+      "selector": "pc12/guardian-flight",
+      "glb": "pc12/exports/guardian-flight.glb",
+      "sha256": "b4d925c6ec0d80678c9779f2bc01e0a4681ba70a004d7424ae47f51a7009c083",
+      "rig": "pc12/exports/guardian-flight.rig.json",
+      "lights": "pc12/lights.json",
+      "editableScene": "pc12/guardian-flight.blend",
+      "sourcePackages": [
+        "preparation/PC-12"
+      ],
+      "authoredGeometry": false,
+      "reuseNote": "Preserve the exact source notices and corresponding source. Original additions and airline marks do not create blanket third-party clearance."
+    }
+  ]
+}

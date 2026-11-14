@@ -1,0 +1,1825 @@
+{
+  "aircraft": "b738",
+  "label": "Boeing 737-800",
+  "livery": {
+    "id": "ryanair",
+    "name": "Ryanair",
+    "texture": "RYR.png"
+  },
+  "referenceDimensions": {
+    "length": 39.47,
+    "span": 35.79
+  },
+  "axes": "X aft; Y up; Z port",
+  "bounds": {
+    "min": [
+      -19.809999465942383,
+      -3.06889009475708,
+      -17.853500366210938
+    ],
+    "max": [
+      19.610700607299805,
+      9.918109893798828,
+      18.0132999420166
+    ]
+  },
+  "motions": [
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "targets": [
+        "flapI/B",
+        "aftflapI/B"
+      ],
+      "axis": [
+        0.0,
+        -0.13,
+        -1.0
+      ],
+      "center": [
+        0.68,
+        -0.19,
+        5.62
+      ],
+      "factor": 25.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "model": "Models/LWing.xml"
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "targets": [
+        "flapI/B",
+        "aftflapI/B"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        -0.0
+      ],
+      "center": [
+        0.68,
+        -0.19,
+        5.62
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.3
+        ],
+        [
+          0.75,
+          0.3
+        ],
+        [
+          1.0,
+          0.3
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "model": "Models/LWing.xml"
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "targets": [
+        "aftflapI/B"
+      ],
+      "axis": [
+        0.0,
+        -0.13,
+        -1.0
+      ],
+      "center": [
+        1.15,
+        -0.68,
+        2.13
+      ],
+      "factor": 10.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "model": "Models/LWing.xml"
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "targets": [
+        "aftflapI/B"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        -0.0
+      ],
+      "center": [
+        1.15,
+        -0.68,
+        2.13
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.05
+        ],
+        [
+          0.75,
+          0.05
+        ],
+        [
+          1.0,
+          0.05
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "model": "Models/LWing.xml"
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "targets": [
+        "flapO/B",
+        "aftflapO/B"
+      ],
+      "axis": [
+        -0.33,
+        -0.12,
+        -1.0
+      ],
+      "center": [
+        0.68,
+        -0.19,
+        5.62
+      ],
+      "factor": 25.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "model": "Models/LWing.xml"
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "targets": [
+        "flapO/B",
+        "aftflapO/B"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        -0.0
+      ],
+      "center": [
+        0.68,
+        -0.19,
+        5.62
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.3
+        ],
+        [
+          0.75,
+          0.3
+        ],
+        [
+          1.0,
+          0.3
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "model": "Models/LWing.xml"
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "targets": [
+        "aftflapO/B"
+      ],
+      "axis": [
+        -0.33,
+        -0.12,
+        -1.0
+      ],
+      "center": [
+        1.2,
+        -0.17,
+        5.88
+      ],
+      "factor": 10.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "model": "Models/LWing.xml"
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "targets": [
+        "aftflapO/B"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        -0.0
+      ],
+      "center": [
+        1.2,
+        -0.17,
+        5.88
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.05
+        ],
+        [
+          0.75,
+          0.05
+        ],
+        [
+          1.0,
+          0.05
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "model": "Models/LWing.xml"
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "targets": [
+        "slat4",
+        "slat3",
+        "slat2",
+        "slat1"
+      ],
+      "axis": [
+        -0.52,
+        -0.102,
+        -1.0
+      ],
+      "center": [
+        -1.97,
+        -0.6,
+        5.58
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.125,
+          -12.5
+        ],
+        [
+          0.375,
+          -12.5
+        ],
+        [
+          0.5,
+          -25.0
+        ],
+        [
+          1.0,
+          -25.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "model": "Models/LWing.xml"
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "targets": [
+        "flap1",
+        "flap2"
+      ],
+      "axis": [
+        -0.55,
+        -0.12,
+        -0.7
+      ],
+      "center": [
+        -4.88,
+        -0.76,
+        1.85
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.125,
+          110.0
+        ],
+        [
+          1.0,
+          110.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "model": "Models/LWing.xml"
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "targets": [
+        "fairing1"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        1.6,
+        -0.05,
+        -0.0
+      ],
+      "factor": 28.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "model": "Models/LWing.xml"
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "targets": [
+        "fairing2"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        0.89,
+        -0.23,
+        -0.0
+      ],
+      "factor": 28.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "model": "Models/LWing.xml"
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "targets": [
+        "fairing3"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        0.34,
+        -0.48,
+        -0.0
+      ],
+      "factor": 26.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "model": "Models/LWing.xml"
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "targets": [
+        "mgouterstrut",
+        "lhdragstrut",
+        "sidestrutl",
+        "mglhlinkupper",
+        "mglhlinklower",
+        "mglhlowerstrut",
+        "mglhaxle",
+        "Bearing",
+        "Tires",
+        "lhgdmid",
+        "geardoor"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        -0.0
+      ],
+      "center": [
+        -7.2,
+        -0.6,
+        2.88
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          81.5
+        ],
+        [
+          0.25,
+          55.0
+        ],
+        [
+          0.75,
+          28.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "model": "Models/LWing.xml"
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "targets": [
+        "sidestrutl"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        -0.0
+      ],
+      "center": [
+        -7.06,
+        -1.63,
+        2.89
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          48.0
+        ],
+        [
+          0.25,
+          41.0
+        ],
+        [
+          0.75,
+          31.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "model": "Models/LWing.xml"
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "targets": [
+        "sidestrutu"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        -0.0
+      ],
+      "center": [
+        -7.06,
+        -0.61,
+        1.88
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -44.0
+        ],
+        [
+          0.25,
+          -32.0
+        ],
+        [
+          0.75,
+          -26.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "model": "Models/LWing.xml"
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "targets": [
+        "geardoor"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        -0.0
+      ],
+      "center": [
+        0.49,
+        -1.66,
+        2.99
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.75,
+          0.0
+        ],
+        [
+          1.0,
+          -35.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "model": "Models/LWing.xml"
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "targets": [
+        "lhmgdouter"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        -0.0
+      ],
+      "center": [
+        2.33,
+        -0.67,
+        3.0
+      ],
+      "factor": 110.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "model": "Models/LWing.xml"
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-1",
+      "targets": [
+        "spoiler1"
+      ],
+      "axis": [
+        -0.325,
+        -0.1,
+        -1.0
+      ],
+      "center": [
+        1.26,
+        0.19,
+        7.63
+      ],
+      "factor": -60.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "model": "Models/LWing.xml"
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-2",
+      "targets": [
+        "spoiler2"
+      ],
+      "axis": [
+        -0.325,
+        -0.1,
+        -1.0
+      ],
+      "center": [
+        1.26,
+        0.19,
+        7.63
+      ],
+      "factor": -33.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "model": "Models/LWing.xml"
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-3",
+      "targets": [
+        "spoiler3"
+      ],
+      "axis": [
+        -0.325,
+        -0.1,
+        -1.0
+      ],
+      "center": [
+        1.26,
+        0.19,
+        7.63
+      ],
+      "factor": -33.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "model": "Models/LWing.xml"
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-4",
+      "targets": [
+        "spoiler4"
+      ],
+      "axis": [
+        -0.325,
+        -0.1,
+        -1.0
+      ],
+      "center": [
+        0.61,
+        0.03,
+        5.62
+      ],
+      "factor": -38.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "model": "Models/LWing.xml"
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-5",
+      "targets": [
+        "spoiler5"
+      ],
+      "axis": [
+        -0.325,
+        -0.1,
+        -1.0
+      ],
+      "center": [
+        0.61,
+        0.03,
+        5.62
+      ],
+      "factor": -38.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "model": "Models/LWing.xml"
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-6",
+      "targets": [
+        "spoiler6"
+      ],
+      "axis": [
+        0.0,
+        -0.14,
+        -1.0
+      ],
+      "center": [
+        0.75,
+        -0.53,
+        2.43
+      ],
+      "factor": -52.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "model": "Models/LWing.xml"
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[0]/n1",
+      "targets": [
+        "fan",
+        "fan_1"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        -0.0
+      ],
+      "center": [
+        0.288,
+        -1.22,
+        5.19
+      ],
+      "factor": -5.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "model": "Models/LWing.xml"
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "engines/engine/reverser-pos-norm",
+      "targets": [
+        "No2reverser_1",
+        "lreverserib_1"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        -0.0
+      ],
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.3
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "model": "Models/LWing.xml"
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "targets": [
+        "rhflapI/B",
+        "rhaftflapI/B"
+      ],
+      "axis": [
+        0.0,
+        0.13,
+        -1.0
+      ],
+      "center": [
+        0.68,
+        -0.19,
+        -5.62
+      ],
+      "factor": 25.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "model": "Models/RWing.xml"
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "targets": [
+        "rhflapI/B",
+        "rhaftflapI/B"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        -0.0
+      ],
+      "center": [
+        0.68,
+        -0.19,
+        -5.62
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.3
+        ],
+        [
+          0.75,
+          0.3
+        ],
+        [
+          1.0,
+          0.3
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "model": "Models/RWing.xml"
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "targets": [
+        "rhaftflapI/B"
+      ],
+      "axis": [
+        0.0,
+        0.13,
+        -1.0
+      ],
+      "center": [
+        1.15,
+        -0.68,
+        -2.13
+      ],
+      "factor": 10.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "model": "Models/RWing.xml"
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "targets": [
+        "rhaftflapI/B"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        -0.0
+      ],
+      "center": [
+        1.15,
+        -0.68,
+        -2.13
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.05
+        ],
+        [
+          0.75,
+          0.05
+        ],
+        [
+          1.0,
+          0.05
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "model": "Models/RWing.xml"
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "targets": [
+        "rhflapO/B",
+        "rhaftflapO/B"
+      ],
+      "axis": [
+        0.33,
+        0.12,
+        -1.0
+      ],
+      "center": [
+        0.68,
+        -0.19,
+        -5.62
+      ],
+      "factor": 25.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "model": "Models/RWing.xml"
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "targets": [
+        "rhflapO/B",
+        "rhaftflapO/B"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        -0.0
+      ],
+      "center": [
+        0.68,
+        -0.19,
+        -5.62
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.3
+        ],
+        [
+          0.75,
+          0.3
+        ],
+        [
+          1.0,
+          0.3
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "model": "Models/RWing.xml"
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "targets": [
+        "rhaftflapO/B"
+      ],
+      "axis": [
+        0.33,
+        0.12,
+        -1.0
+      ],
+      "center": [
+        1.2,
+        -0.17,
+        -5.88
+      ],
+      "factor": 10.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "model": "Models/RWing.xml"
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "targets": [
+        "rhaftflapO/B"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        -0.0
+      ],
+      "center": [
+        1.2,
+        -0.17,
+        -5.88
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.05
+        ],
+        [
+          0.75,
+          0.05
+        ],
+        [
+          1.0,
+          0.05
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "model": "Models/RWing.xml"
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "targets": [
+        "slat5",
+        "slat6",
+        "slat7",
+        "slat8"
+      ],
+      "axis": [
+        0.52,
+        0.102,
+        -1.0
+      ],
+      "center": [
+        -1.97,
+        -0.6,
+        -5.58
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.125,
+          -12.5
+        ],
+        [
+          0.375,
+          -12.5
+        ],
+        [
+          0.5,
+          -25.0
+        ],
+        [
+          1.0,
+          -25.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "model": "Models/RWing.xml"
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "targets": [
+        "flap3",
+        "flap4"
+      ],
+      "axis": [
+        0.55,
+        0.12,
+        -0.7
+      ],
+      "center": [
+        -4.88,
+        -0.76,
+        -1.85
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.125,
+          110.0
+        ],
+        [
+          1.0,
+          110.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "model": "Models/RWing.xml"
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "targets": [
+        "fairing6"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        1.6,
+        -0.05,
+        -0.0
+      ],
+      "factor": 26.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "model": "Models/RWing.xml"
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "targets": [
+        "fairing5"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        0.89,
+        -0.23,
+        -0.0
+      ],
+      "factor": 28.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "model": "Models/RWing.xml"
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "targets": [
+        "fairing4"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        0.34,
+        -0.48,
+        -0.0
+      ],
+      "factor": 28.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "model": "Models/RWing.xml"
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "targets": [
+        "mgrhouterstrut",
+        "rhdragstrut",
+        "rhsidestrutl",
+        "mgrhlinkupper",
+        "mgrhlinklower",
+        "mgrhlowerstrut",
+        "mgrhaxle",
+        "Bearing",
+        "Tires",
+        "rhgdmid",
+        "geardoorrh"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        -0.0
+      ],
+      "center": [
+        -7.2,
+        -0.6,
+        -2.88
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -82.9
+        ],
+        [
+          0.25,
+          -55.0
+        ],
+        [
+          0.75,
+          -28.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "model": "Models/RWing.xml"
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "targets": [
+        "rhsidestrutl"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        -0.0
+      ],
+      "center": [
+        -7.06,
+        -1.63,
+        -2.89
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -48.0
+        ],
+        [
+          0.25,
+          -41.0
+        ],
+        [
+          0.75,
+          -31.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "model": "Models/RWing.xml"
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "targets": [
+        "rhsidestrutu"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        -0.0
+      ],
+      "center": [
+        -7.06,
+        -0.61,
+        -1.88
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          44.0
+        ],
+        [
+          0.25,
+          32.0
+        ],
+        [
+          0.75,
+          26.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "model": "Models/RWing.xml"
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "targets": [
+        "geardoorrh"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        -0.0
+      ],
+      "center": [
+        0.49,
+        -1.66,
+        -2.99
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.75,
+          0.0
+        ],
+        [
+          1.0,
+          35.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "model": "Models/RWing.xml"
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "targets": [
+        "rhgdouter"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        -0.0
+      ],
+      "center": [
+        2.33,
+        -0.67,
+        -3.0
+      ],
+      "factor": -110.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "model": "Models/RWing.xml"
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-12",
+      "targets": [
+        "spoiler12"
+      ],
+      "axis": [
+        0.325,
+        0.1,
+        -1.0
+      ],
+      "center": [
+        1.26,
+        0.19,
+        -7.63
+      ],
+      "factor": -60.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "model": "Models/RWing.xml"
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-11",
+      "targets": [
+        "spoiler11"
+      ],
+      "axis": [
+        0.325,
+        0.1,
+        -1.0
+      ],
+      "center": [
+        1.26,
+        0.19,
+        -7.63
+      ],
+      "factor": -33.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "model": "Models/RWing.xml"
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-10",
+      "targets": [
+        "spoiler10"
+      ],
+      "axis": [
+        0.325,
+        0.1,
+        -1.0
+      ],
+      "center": [
+        1.26,
+        0.19,
+        -7.63
+      ],
+      "factor": -33.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "model": "Models/RWing.xml"
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-9",
+      "targets": [
+        "spoiler9"
+      ],
+      "axis": [
+        0.325,
+        0.1,
+        -1.0
+      ],
+      "center": [
+        0.61,
+        0.03,
+        -5.62
+      ],
+      "factor": -38.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "model": "Models/RWing.xml"
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-8",
+      "targets": [
+        "spoiler8"
+      ],
+      "axis": [
+        0.325,
+        0.1,
+        -1.0
+      ],
+      "center": [
+        0.61,
+        0.03,
+        -5.62
+      ],
+      "factor": -38.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "model": "Models/RWing.xml"
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-7",
+      "targets": [
+        "spoiler7"
+      ],
+      "axis": [
+        0.0,
+        0.14,
+        -1.0
+      ],
+      "center": [
+        0.75,
+        -0.53,
+        -2.43
+      ],
+      "factor": -52.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "model": "Models/RWing.xml"
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[1]/n1",
+      "targets": [
+        "fan",
+        "fan_1"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        -0.0
+      ],
+      "center": [
+        0.288,
+        -1.22,
+        -4.9
+      ],
+      "factor": -5.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "model": "Models/RWing.xml"
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "engines/engine[1]/reverser-pos-norm",
+      "targets": [
+        "No2reverser_1",
+        "lreverserib_1"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        -0.0
+      ],
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.3
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "model": "Models/RWing.xml"
+    },
+    {
+      "control": "slats",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[11]",
+      "targets": [
+        "rudder"
+      ],
+      "axis": [
+        0.4,
+        1.0,
+        -0.0
+      ],
+      "center": [
+        16.2,
+        2.2,
+        -0.0
+      ],
+      "factor": -29.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "model": "Models/VertStab.xml"
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "targets": [
+        "nouterstrut",
+        "rhsteercyl",
+        "lhsteercyl",
+        "collar",
+        "nlinkupper",
+        "nlinklower",
+        "nlowerstrut",
+        "noseaxle",
+        "Bearing",
+        "Tires"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        -15.5,
+        -1.22,
+        -0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          120.0
+        ],
+        [
+          0.25,
+          110.0
+        ],
+        [
+          0.75,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "model": "Models/NoseGear.xml"
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "targets": [
+        "rhngdoor"
+      ],
+      "axis": [
+        1.0,
+        -0.1,
+        -0.0
+      ],
+      "center": [
+        -16.55,
+        -1.09,
+        -0.48
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          90.0
+        ],
+        [
+          0.75,
+          90.0
+        ],
+        [
+          1.0,
+          90.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "model": "Models/NoseGear.xml"
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "targets": [
+        "lhngdoor"
+      ],
+      "axis": [
+        1.0,
+        -0.09,
+        -0.0
+      ],
+      "center": [
+        -16.55,
+        -1.09,
+        0.53
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          -90.0
+        ],
+        [
+          0.75,
+          -90.0
+        ],
+        [
+          1.0,
+          -90.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "model": "Models/NoseGear.xml"
+    }
+  ],
+  "gearInternalParts": [],
+  "missingTextures": [],
+  "duplicatesRemoved": 0
+}

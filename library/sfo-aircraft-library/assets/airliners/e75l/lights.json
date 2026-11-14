@@ -1,0 +1,111 @@
+[
+  {
+    "name": "greennav",
+    "kind": "nav",
+    "color": "green",
+    "position": [
+      1.860705339031317,
+      0.7599999904632568,
+      -12.42000024166407
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "rednav",
+    "kind": "nav",
+    "color": "red",
+    "position": [
+      1.860705339031317,
+      0.7599999904632568,
+      12.42000024166407
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "strobe.left",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      1.860705339031317,
+      0.7599999904632568,
+      12.42000024166407
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "strobe.right",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      1.860705339031317,
+      0.7599999904632568,
+      -12.42000024166407
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "beacon",
+    "kind": "beacon",
+    "color": "red",
+    "position": [
+      -8.86148132807768,
+      -1.0097599029541016,
+      -0.0006178617559684202
+    ],
+    "basis": "Source fixture mesh bounds"
+  },
+  {
+    "name": "beacon",
+    "kind": "beacon",
+    "color": "red",
+    "position": [
+      1.2130563812471582,
+      2.380000114440918,
+      0.0
+    ],
+    "basis": "Source fixture mesh bounds"
+  },
+  {
+    "name": "Upper beacon",
+    "kind": "beacon",
+    "position": [
+      -1,
+      1.63,
+      0
+    ],
+    "color": "red",
+    "basis": "Approximate source airframe placement"
+  },
+  {
+    "name": "Lower beacon",
+    "kind": "beacon",
+    "position": [
+      -1,
+      -1.2,
+      0
+    ],
+    "color": "red",
+    "basis": "Approximate source airframe placement"
+  },
+  {
+    "name": "Nose taxi",
+    "kind": "taxi",
+    "position": [
+      -10.8,
+      -1.5,
+      0
+    ],
+    "color": "white",
+    "basis": "Gear-down visual placement"
+  },
+  {
+    "name": "Tail nav",
+    "kind": "nav",
+    "position": [
+      15.7,
+      1.1,
+      0
+    ],
+    "color": "white"
+  }
+]

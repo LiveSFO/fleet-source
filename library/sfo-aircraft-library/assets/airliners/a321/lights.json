@@ -1,0 +1,123 @@
+[
+  {
+    "name": "Left nav light",
+    "kind": "nav",
+    "color": "red",
+    "position": [
+      22.911325015724763,
+      0.25,
+      16.77345956285991
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Right nav light",
+    "kind": "nav",
+    "color": "green",
+    "position": [
+      22.911325015724763,
+      0.25,
+      -16.77345956285991
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Left strobe light",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      22.911325015724763,
+      0.25,
+      16.77345956285991
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Right strobe light",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      22.911325015724763,
+      0.25,
+      -16.77345956285991
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Tail nav light",
+    "kind": "nav",
+    "color": "white",
+    "position": [
+      42.750024102197074,
+      1.2301000356674194,
+      -0.05038889716196417
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Tail strobe light",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      42.750024102197074,
+      1.2301000356674194,
+      0.05038889716196417
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Top beacon light",
+    "kind": "beacon",
+    "color": "red",
+    "position": [
+      16.686399483221646,
+      1.9769999980926514,
+      0.0
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Bottom beacon light",
+    "kind": "beacon",
+    "color": "red",
+    "position": [
+      18.185177811446515,
+      -2.5,
+      0.0
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Port landing light ALS",
+    "kind": "landing",
+    "color": "white",
+    "position": [
+      15.887049898024594,
+      -1.399999976158142,
+      3.2123717368675693
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Nosegear landing light ALS",
+    "kind": "taxi",
+    "color": "white",
+    "position": [
+      3.537116816494792,
+      -2.5,
+      0.0
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Starboard landing light ALS",
+    "kind": "landing",
+    "color": "white",
+    "position": [
+      15.887049898024594,
+      -1.399999976158142,
+      -3.2123717368675693
+    ],
+    "basis": "Source XML light-model instance offset"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "source": "Logo American Eagle (airline brand).asset.json",
+  "method": "Removed neutral white JPEG background; retained current airline wordmark contours.",
+  "sourceSHA256": "ad985dc747cc1da05ba2d2ba05b4ba9e9af0b4a0477dc9fb847c8108e884aeea",
+  "crop": [
+    10,
+    85,
+    1364,
+    282
+  ]
+}

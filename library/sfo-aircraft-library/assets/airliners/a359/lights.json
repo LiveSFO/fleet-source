@@ -1,0 +1,123 @@
+[
+  {
+    "name": "greennav",
+    "kind": "nav",
+    "color": "green",
+    "position": [
+      42.597587608276775,
+      3.301300048828125,
+      -30.707638843637795
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "rednav",
+    "kind": "nav",
+    "color": "red",
+    "position": [
+      42.597587608276775,
+      3.301300048828125,
+      30.707638843637795
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Strobelight.1",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      42.597587608276775,
+      3.301300048828125,
+      -30.707638843637795
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Strobelight.2",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      42.597587608276775,
+      3.301300048828125,
+      30.707638843637795
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Beacon.Lower",
+    "kind": "beacon",
+    "color": "red",
+    "position": [
+      34.243977045968904,
+      -2.1975998878479004,
+      0.0
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Beacon.Upper",
+    "kind": "beacon",
+    "color": "red",
+    "position": [
+      25.42043135803532,
+      4.578000068664551,
+      0.0
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Nose.landing.light",
+    "kind": "landing",
+    "color": "white",
+    "position": [
+      4.267702286214643,
+      -2.3285000324249268,
+      0.0
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "L.landing.light",
+    "kind": "landing",
+    "color": "white",
+    "position": [
+      22.923738109122876,
+      -0.19499999284744263,
+      4.131953536190655
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "R.landing.light",
+    "kind": "landing",
+    "color": "white",
+    "position": [
+      22.923738109122876,
+      -0.19499999284744263,
+      -4.131953536190655
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "light-logo",
+    "kind": "logo",
+    "color": "white",
+    "position": [
+      62.2309719026618,
+      3.3459999561309814,
+      5.49360399735312
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "light-logo2",
+    "kind": "logo",
+    "color": "white",
+    "position": [
+      62.2309719026618,
+      3.3459999561309814,
+      -5.49360399735312
+    ],
+    "basis": "Source XML light-model instance offset"
+  }
+]

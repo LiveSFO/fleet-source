@@ -1,0 +1,4674 @@
+[
+  {
+    "aircraft": "a320neo",
+    "livery": "british-airways",
+    "sha256": "c23137cb47ebccf8386fc97cadc8922ce7c9b51d13c5fd5f3398c32cb93c92e1",
+    "bytes": 9164928,
+    "meshes": 186,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 37.60580062866211,
+      "span": 35.76659965515137,
+      "height": 12.244550228118896
+    },
+    "reference": {
+      "length": 37.57,
+      "span": 35.8
+    },
+    "noseWheelRetractionRise": 2.279054515606706,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 70,
+    "mainCabinSpan": 0,
+    "maskedCabinMaterials": 67,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a320neo",
+    "livery": "lufthansa",
+    "sha256": "3077324bca241bd8c9647e97ec7be844913312c2835bc0632aaa4bc0f2f93f06",
+    "bytes": 8836104,
+    "meshes": 187,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 37.60580062866211,
+      "span": 35.76659965515137,
+      "height": 12.244550228118896
+    },
+    "reference": {
+      "length": 37.57,
+      "span": 35.8
+    },
+    "noseWheelRetractionRise": 2.279054515606706,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 70,
+    "mainCabinSpan": 0,
+    "maskedCabinMaterials": 67,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a320neo",
+    "livery": "sas",
+    "sha256": "b30ba5697a4280e4b132c27269e60b3f08145fc39e65dbc7bf362778d0ba1858",
+    "bytes": 9147984,
+    "meshes": 186,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 37.60580062866211,
+      "span": 35.76659965515137,
+      "height": 12.244550228118896
+    },
+    "reference": {
+      "length": 37.57,
+      "span": 35.8
+    },
+    "noseWheelRetractionRise": 2.279054515606706,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 70,
+    "mainCabinSpan": 0,
+    "maskedCabinMaterials": 67,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b738",
+    "livery": "ryanair",
+    "sha256": "3cf3527d33fbe16f338d147a699df330dd976bee296df4cccc6156686be003e7",
+    "bytes": 3500396,
+    "meshes": 168,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 39.42070007324219,
+      "span": 35.86680030822754,
+      "height": 12.986999988555908
+    },
+    "reference": {
+      "length": 39.47,
+      "span": 35.79
+    },
+    "noseWheelRetractionRise": 1.8775425648910593,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 5,
+    "mainCabinSpan": 22.106189727783203,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b738",
+    "livery": "united",
+    "sha256": "1263b7044d52c14d8aa26bb2f6a5a9ef85d6bbaabd3763273e06992b86fa93ec",
+    "bytes": 4160296,
+    "meshes": 168,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 39.42070007324219,
+      "span": 35.86680030822754,
+      "height": 12.986999988555908
+    },
+    "reference": {
+      "length": 39.47,
+      "span": 35.79
+    },
+    "noseWheelRetractionRise": 1.8775425648910593,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 5,
+    "mainCabinSpan": 22.106189727783203,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b789",
+    "livery": "air-new-zealand",
+    "status": "failed",
+    "error": "Missing dedicated cockpit glazing"
+  },
+  {
+    "aircraft": "b789",
+    "livery": "japan-airlines",
+    "status": "failed",
+    "error": "Missing dedicated cockpit glazing"
+  },
+  {
+    "aircraft": "b789",
+    "livery": "united",
+    "status": "failed",
+    "error": "Missing dedicated cockpit glazing"
+  },
+  {
+    "aircraft": "e175",
+    "livery": "air-canada-express",
+    "sha256": "47aca73fb5411242defe15accfda6421b07d334f0077b25729ae54c84ebd9c14",
+    "bytes": 3280788,
+    "meshes": 81,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 31.679999351501465,
+      "span": 26,
+      "height": 9.946968078613281
+    },
+    "reference": {
+      "length": 31.68,
+      "span": 26
+    },
+    "noseWheelRetractionRise": 1.7271735236178474,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 2,
+    "mainCabinSpan": 14.515392303466797,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "e175",
+    "livery": "delta-connection",
+    "sha256": "eb22d96ade9d399e9810103f1c9366a26fd45af01e23368737fe67a1bfc87c1c",
+    "bytes": 2917568,
+    "meshes": 81,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 31.679999351501465,
+      "span": 26,
+      "height": 9.946968078613281
+    },
+    "reference": {
+      "length": 31.68,
+      "span": 26
+    },
+    "noseWheelRetractionRise": 1.7271735236178474,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 2,
+    "mainCabinSpan": 14.515392303466797,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "e175",
+    "livery": "united-express",
+    "sha256": "41dda2ae4c2a43f76205cdea114b22caee32577e571c68a045a56959145430e3",
+    "bytes": 2980576,
+    "meshes": 81,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 31.679999351501465,
+      "span": 26,
+      "height": 9.946968078613281
+    },
+    "reference": {
+      "length": 31.68,
+      "span": 26
+    },
+    "noseWheelRetractionRise": 1.7271735236178474,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 2,
+    "mainCabinSpan": 14.515392303466797,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a320",
+    "livery": "delta",
+    "sha256": "706288e498692622cfeb20aeb8c12b0bf9148e69def95797f87985a7739ec137",
+    "bytes": 4974276,
+    "meshes": 200,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 37.569998264312744,
+      "span": 34.10000038146973,
+      "height": 12.383441925048828
+    },
+    "reference": {
+      "length": 37.57,
+      "span": 34.1
+    },
+    "noseWheelRetractionRise": 2.3063833356137424,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 21.740293502807617,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a320",
+    "livery": "jetblue",
+    "sha256": "09ebd39a6fcb7c7044cdfb98abf82ca8f30d8a51580c0ad39b13c66c8400e821",
+    "bytes": 4883548,
+    "meshes": 196,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 37.569998264312744,
+      "span": 34.10000038146973,
+      "height": 12.383441925048828
+    },
+    "reference": {
+      "length": 37.57,
+      "span": 34.1
+    },
+    "noseWheelRetractionRise": 2.3063833356137424,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 21.740293502807617,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b38m",
+    "livery": "paintkit",
+    "sha256": "8f7d22aa5c39baa062c5701a994fb9043aa3d4b9a9bb1e3531f886bb3da67005",
+    "bytes": 5766840,
+    "meshes": 182,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 39.46999931335449,
+      "span": 35.91999816894531,
+      "height": 12.866199731826782
+    },
+    "reference": {
+      "length": 39.47,
+      "span": 35.92
+    },
+    "noseWheelRetractionRise": 1.8758754203620098,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 63,
+    "mainCabinSpan": 0,
+    "maskedCabinMaterials": 63,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a20n",
+    "livery": "avianca",
+    "sha256": "871fcd51cd408c84c9e035536c886cf64bc80f8be4664243488979327614e48e",
+    "bytes": 5403644,
+    "meshes": 169,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 37.569998264312744,
+      "span": 35.79999923706055,
+      "height": 12.383441925048828
+    },
+    "reference": {
+      "length": 37.57,
+      "span": 35.8
+    },
+    "noseWheelRetractionRise": 2.3063833356137424,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 21.740293502807617,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a20n",
+    "livery": "frontier-adams",
+    "sha256": "df0248c9006a764a0c892ad5c652c83a36716d39af66484aed5cae20357dca41",
+    "bytes": 10015260,
+    "meshes": 169,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 37.569998264312744,
+      "span": 35.79999923706055,
+      "height": 12.383441925048828
+    },
+    "reference": {
+      "length": 37.57,
+      "span": 35.8
+    },
+    "noseWheelRetractionRise": 2.3063833356137424,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 21.740293502807617,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a20n",
+    "livery": "frontier-marshall",
+    "sha256": "4f06fddd482a507aa86c08f2fd7a8b47160f1032c2fca8f4e45446b982c900f5",
+    "bytes": 10639808,
+    "meshes": 169,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 37.569998264312744,
+      "span": 35.79999923706055,
+      "height": 12.383441925048828
+    },
+    "reference": {
+      "length": 37.57,
+      "span": 35.8
+    },
+    "noseWheelRetractionRise": 2.3063833356137424,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 21.740293502807617,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a20n",
+    "livery": "frontier",
+    "sha256": "4f06fddd482a507aa86c08f2fd7a8b47160f1032c2fca8f4e45446b982c900f5",
+    "bytes": 10639808,
+    "meshes": 169,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 37.569998264312744,
+      "span": 35.79999923706055,
+      "height": 12.383441925048828
+    },
+    "reference": {
+      "length": 37.57,
+      "span": 35.8
+    },
+    "noseWheelRetractionRise": 2.3063833356137424,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 21.740293502807617,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a319",
+    "livery": "delta",
+    "sha256": "b066c7b6462dfd6a52ce43bae3f2cf435fa27ed521a6ee75bb3125cf31debc5a",
+    "bytes": 4883464,
+    "meshes": 265,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 33.84000015258789,
+      "span": 34.10000038146973,
+      "height": 12.383441925048828
+    },
+    "reference": {
+      "length": 33.84,
+      "span": 34.1
+    },
+    "noseWheelRetractionRise": 2.306026230842728,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 72,
+    "mainCabinSpan": 22.12258005142212,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a319",
+    "livery": "united",
+    "sha256": "32ab269521de65886c7568f4e8996f0a46abc53061b2a57637ab5369091c8ad4",
+    "bytes": 5149420,
+    "meshes": 263,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 33.84000015258789,
+      "span": 34.10000038146973,
+      "height": 12.383441925048828
+    },
+    "reference": {
+      "length": 33.84,
+      "span": 34.1
+    },
+    "noseWheelRetractionRise": 2.306026230842728,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 72,
+    "mainCabinSpan": 22.12258005142212,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a320",
+    "livery": "american",
+    "sha256": "4a8614c6f07c61860356e619189f5a6bf5df1faca09c2a0a0572ed2f90a89963",
+    "bytes": 4886156,
+    "meshes": 196,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 37.569998264312744,
+      "span": 34.10000038146973,
+      "height": 12.383441925048828
+    },
+    "reference": {
+      "length": 37.57,
+      "span": 34.1
+    },
+    "noseWheelRetractionRise": 2.3063833356137424,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 21.740293502807617,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a320",
+    "livery": "frontier",
+    "sha256": "2a6b661ca58092e74a03d425a180fea69ddd8b60bb866464b9c50f4d530a7a99",
+    "bytes": 10340016,
+    "meshes": 183,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 37.569998264312744,
+      "span": 35.79999923706055,
+      "height": 12.383441925048828
+    },
+    "reference": {
+      "length": 37.57,
+      "span": 35.8
+    },
+    "noseWheelRetractionRise": 2.3063833356137424,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 21.740293502807617,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a320",
+    "livery": "united-friend-ship",
+    "sha256": "03ac9034199acac444575ec5341e333e27a85f35e634a401f059ec3dc85091e5",
+    "bytes": 4891448,
+    "meshes": 196,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 37.569998264312744,
+      "span": 34.10000038146973,
+      "height": 12.383441925048828
+    },
+    "reference": {
+      "length": 37.57,
+      "span": 34.1
+    },
+    "noseWheelRetractionRise": 2.3063833356137424,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 21.740293502807617,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a320",
+    "livery": "united",
+    "sha256": "a1cf83e38e27bdfdeceefecc53d40b0d512b23cb007f3d4ebc942aca8c19725e",
+    "bytes": 5251464,
+    "meshes": 196,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 37.569998264312744,
+      "span": 34.10000038146973,
+      "height": 12.383441925048828
+    },
+    "reference": {
+      "length": 37.57,
+      "span": 34.1
+    },
+    "noseWheelRetractionRise": 2.3063833356137424,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 21.740293502807617,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a321",
+    "livery": "air-canada",
+    "sha256": "cbafb308ed45a1ee218323133f6c817bfaf7fba4917a6b1fc2990b966fd99922",
+    "bytes": 4995940,
+    "meshes": 197,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 44.50999879837036,
+      "span": 34.10000038146973,
+      "height": 12.383441925048828
+    },
+    "reference": {
+      "length": 44.51,
+      "span": 34.1
+    },
+    "noseWheelRetractionRise": 2.3061051605822955,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 28.698566436767578,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a321",
+    "livery": "american",
+    "sha256": "2c7edbbddacf718d6c76a21b8997467c3459d4d5fb7bea0ca7cacdd42599563a",
+    "bytes": 5012804,
+    "meshes": 197,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 44.50999879837036,
+      "span": 34.10000038146973,
+      "height": 12.383441925048828
+    },
+    "reference": {
+      "length": 44.51,
+      "span": 34.1
+    },
+    "noseWheelRetractionRise": 2.3061051605822955,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 28.698566436767578,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a321",
+    "livery": "delta",
+    "sha256": "20420697167ab4e0f84d300f1b4752b7e3389bd948f7b9d352e7caeae07dcdd2",
+    "bytes": 5019136,
+    "meshes": 180,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 44.50999879837036,
+      "span": 35.79999923706055,
+      "height": 12.383441925048828
+    },
+    "reference": {
+      "length": 44.51,
+      "span": 35.8
+    },
+    "noseWheelRetractionRise": 2.3061051605822955,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 28.698566436767578,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a321",
+    "livery": "frontier",
+    "sha256": "15b6b2eb6500cff096f016ac5157cda224e9039491546977ca65a3adc8f80b39",
+    "bytes": 10490152,
+    "meshes": 180,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 44.50999879837036,
+      "span": 35.79999923706055,
+      "height": 12.383441925048828
+    },
+    "reference": {
+      "length": 44.51,
+      "span": 35.8
+    },
+    "noseWheelRetractionRise": 2.3061051605822955,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 28.698566436767578,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a321",
+    "livery": "jetblue",
+    "sha256": "8035261c2eb490f2fb0c85f391dd78dcb66326084ab221fd2e142d89a7beabcf",
+    "bytes": 9213044,
+    "meshes": 178,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 44.50999879837036,
+      "span": 35.79999923706055,
+      "height": 12.383441925048828
+    },
+    "reference": {
+      "length": 44.51,
+      "span": 35.8
+    },
+    "noseWheelRetractionRise": 2.3061051605822955,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 28.698566436767578,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a332",
+    "livery": "hawaiian",
+    "sha256": "30cc3473eab403d25659556eb77664daffd3bb725074093e393b64e18c2dd3e0",
+    "bytes": 4022812,
+    "meshes": 146,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 58.81999969482422,
+      "span": 60.29999923706055,
+      "height": 17.40612506866455
+    },
+    "reference": {
+      "length": 58.82,
+      "span": 60.3
+    },
+    "noseWheelRetractionRise": 2.7966583898327233,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 14,
+    "mainCabinSpan": 0,
+    "maskedCabinMaterials": 14,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a332-ge",
+    "livery": "aer-lingus",
+    "sha256": "b798147d9fda466ceffe260b3d6f1f615940770f8fd32031dfb14be803e4580b",
+    "bytes": 5147532,
+    "meshes": 136,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 58.81999969482422,
+      "span": 60.29999923706055,
+      "height": 17.40612506866455
+    },
+    "reference": {
+      "length": 58.82,
+      "span": 60.3
+    },
+    "noseWheelRetractionRise": 2.7966583898327233,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 14,
+    "mainCabinSpan": 0,
+    "maskedCabinMaterials": 14,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a333",
+    "livery": "fiji-airways",
+    "sha256": "848c805790565eee80494d445d8b7205666c18ff78885fee950d7ec6365ff51d",
+    "bytes": 6952756,
+    "meshes": 144,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 63.65999984741211,
+      "span": 60.29999923706055,
+      "height": 16.78919506072998
+    },
+    "reference": {
+      "length": 63.66,
+      "span": 60.3
+    },
+    "noseWheelRetractionRise": 2.796808386900622,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 18,
+    "mainCabinSpan": 0,
+    "maskedCabinMaterials": 18,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a359",
+    "livery": "asiana",
+    "sha256": "5fc6ed1808d5ef41aa51c36cf3a007ac46e5d39f10ad112c43cd7baab8a1f4d5",
+    "bytes": 4535644,
+    "meshes": 139,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 66.79999636858702,
+      "span": 64.75,
+      "height": 18.114069938659668
+    },
+    "reference": {
+      "length": 66.8,
+      "span": 64.75
+    },
+    "noseWheelRetractionRise": 3.6839531399089083,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 45.83030128479004,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a359",
+    "livery": "french-bee",
+    "sha256": "7aada4f57c3544a30f0decb53a1a71b8a53993b2d0807ab198f74833361e663b",
+    "bytes": 5057204,
+    "meshes": 139,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 66.79999636858702,
+      "span": 64.75,
+      "height": 18.114069938659668
+    },
+    "reference": {
+      "length": 66.8,
+      "span": 64.75
+    },
+    "noseWheelRetractionRise": 3.6839531399089083,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 45.83030128479004,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a359",
+    "livery": "lufthansa",
+    "sha256": "d33eee07de42a9b6af114f474eee399c4b963ae59b9a3c4775223c66c6c30e0c",
+    "bytes": 5345908,
+    "meshes": 139,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 66.79999636858702,
+      "span": 64.75,
+      "height": 18.114069938659668
+    },
+    "reference": {
+      "length": 66.8,
+      "span": 64.75
+    },
+    "noseWheelRetractionRise": 3.6839531399089083,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 45.83030128479004,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a359",
+    "livery": "singapore-airlines",
+    "sha256": "d8bde6cc551c4a58cf5f9405ce36c3b888f0c2d03b557bb34c50b61d58994cec",
+    "bytes": 5025460,
+    "meshes": 139,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 66.79999636858702,
+      "span": 64.75,
+      "height": 18.114069938659668
+    },
+    "reference": {
+      "length": 66.8,
+      "span": 64.75
+    },
+    "noseWheelRetractionRise": 3.6839531399089083,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 45.83030128479004,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a359",
+    "livery": "starlux",
+    "sha256": "2c57575a2061457936b9f791037563cc7cba3a1366403bb30d4fa0d9ace74e3e",
+    "bytes": 5021648,
+    "meshes": 139,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 66.79999636858702,
+      "span": 64.75,
+      "height": 18.114069938659668
+    },
+    "reference": {
+      "length": 66.8,
+      "span": 64.75
+    },
+    "noseWheelRetractionRise": 3.6839531399089083,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 45.83030128479004,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a359",
+    "livery": "turkish-airlines",
+    "sha256": "51ec7b6b9f192cbed76758ffb98e79a658bebdaa0d780e719c08f5792fcee4a9",
+    "bytes": 5023828,
+    "meshes": 139,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 66.79999636858702,
+      "span": 64.75,
+      "height": 18.114069938659668
+    },
+    "reference": {
+      "length": 66.8,
+      "span": 64.75
+    },
+    "noseWheelRetractionRise": 3.6839531399089083,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 45.83030128479004,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a359",
+    "livery": "vietnam-airlines",
+    "sha256": "c643e35919ee58b8a778480288ac99c4777305a4c14b6e1cc2dbdf58a3153e9c",
+    "bytes": 5183300,
+    "meshes": 139,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 66.79999636858702,
+      "span": 64.75,
+      "height": 18.114069938659668
+    },
+    "reference": {
+      "length": 66.8,
+      "span": 64.75
+    },
+    "noseWheelRetractionRise": 3.6839531399089083,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 45.83030128479004,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a35k",
+    "livery": "philippine-airlines-85-years",
+    "sha256": "66768c89249b4ee55015f5392f486ac39d3c152b2efd683dbca94a8504dc2d9c",
+    "bytes": 4819344,
+    "meshes": 163,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 73.79000379145145,
+      "span": 64.75,
+      "height": 18.114069938659668
+    },
+    "reference": {
+      "length": 73.79,
+      "span": 64.75
+    },
+    "noseWheelRetractionRise": 3.683958130194708,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 23,
+    "mainCabinSpan": 52.81371593475342,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a35k",
+    "livery": "philippine-airlines",
+    "sha256": "7fc8fac1124dc01519e367e407cc2a1511909238ae879ea5074ef83adc845163",
+    "bytes": 4804708,
+    "meshes": 163,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 73.79000379145145,
+      "span": 64.75,
+      "height": 18.114069938659668
+    },
+    "reference": {
+      "length": 73.79,
+      "span": 64.75
+    },
+    "noseWheelRetractionRise": 3.683958130194708,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 23,
+    "mainCabinSpan": 52.81371593475342,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a388",
+    "livery": "british-airways",
+    "sha256": "d7c57dd90a6baa29751bc94e476ea0ee28c90b2385ac3e708777f3e599e9a00d",
+    "bytes": 4823356,
+    "meshes": 261,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 72.71999740600586,
+      "span": 79.75,
+      "height": 24.757449865341187
+    },
+    "reference": {
+      "length": 72.72,
+      "span": 79.75
+    },
+    "noseWheelRetractionRise": 3.651973552659446,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 36,
+    "mainCabinSpan": 8.384103775024414,
+    "maskedCabinMaterials": 32,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a388",
+    "livery": "emirates",
+    "sha256": "4d98bd6eea5657a44a4c8ea9831dcf99a30882b7d8330b5b36403ec00245f569",
+    "bytes": 4676200,
+    "meshes": 261,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 72.71999740600586,
+      "span": 79.75,
+      "height": 24.757449865341187
+    },
+    "reference": {
+      "length": 72.72,
+      "span": 79.75
+    },
+    "noseWheelRetractionRise": 3.651973552659446,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 36,
+    "mainCabinSpan": 8.384103775024414,
+    "maskedCabinMaterials": 32,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "astr",
+    "livery": "skycare",
+    "sha256": "47b3646ede89a1acd46e0c6187ac733462bb075763000ade3d80954d6e353663",
+    "bytes": 2353808,
+    "meshes": 203,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 16.939970016479492,
+      "span": 16.636341094970703,
+      "height": 5.53000020980835
+    },
+    "reference": {
+      "length": 16.94,
+      "span": 16.64,
+      "height": 5.53
+    },
+    "noseWheelRetractionRise": 0.635933238225558,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 15,
+    "mainCabinSpan": 3.763948440551758,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b38m",
+    "livery": "aeromexico",
+    "sha256": "a405fc3ab00289cc8b26ef48ce34f0527c69aadcf2e062c5b518a44941490219",
+    "bytes": 5963716,
+    "meshes": 182,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 39.46999931335449,
+      "span": 35.91999816894531,
+      "height": 12.866199731826782
+    },
+    "reference": {
+      "length": 39.47,
+      "span": 35.92
+    },
+    "noseWheelRetractionRise": 1.8758754203620098,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 63,
+    "mainCabinSpan": 0,
+    "maskedCabinMaterials": 63,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b38m",
+    "livery": "alaska",
+    "sha256": "2668bff95261bab250a30b3c24b1f8ac5c9463d93e8ae438ee3195782d03dc3c",
+    "bytes": 8199140,
+    "meshes": 182,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 39.46999931335449,
+      "span": 35.91999816894531,
+      "height": 12.866199731826782
+    },
+    "reference": {
+      "length": 39.47,
+      "span": 35.92
+    },
+    "noseWheelRetractionRise": 1.8758754203620098,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 63,
+    "mainCabinSpan": 0,
+    "maskedCabinMaterials": 63,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b38m",
+    "livery": "american",
+    "sha256": "4710dd2d407d25bbd86eaa121abee60f87f1a67ab7cc2bdd61e72b26d34606d2",
+    "bytes": 7242156,
+    "meshes": 182,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 39.46999931335449,
+      "span": 35.91999816894531,
+      "height": 12.866199731826782
+    },
+    "reference": {
+      "length": 39.47,
+      "span": 35.92
+    },
+    "noseWheelRetractionRise": 1.8758754203620098,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 63,
+    "mainCabinSpan": 0,
+    "maskedCabinMaterials": 63,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b38m",
+    "livery": "flair",
+    "sha256": "655d58706ec4d77c2588e00985b0997ca97a0f061e3a2a807bb9bf5c25d3baf4",
+    "bytes": 5949776,
+    "meshes": 182,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 39.46999931335449,
+      "span": 35.91999816894531,
+      "height": 12.866199731826782
+    },
+    "reference": {
+      "length": 39.47,
+      "span": 35.92
+    },
+    "noseWheelRetractionRise": 1.8758754203620098,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 63,
+    "mainCabinSpan": 0,
+    "maskedCabinMaterials": 63,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b38m",
+    "livery": "southwest",
+    "sha256": "10cf953060905d9706063dbefff1d14b4c3d5edfd3adaf1154115aabd8c817ba",
+    "bytes": 6683464,
+    "meshes": 182,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 39.46999931335449,
+      "span": 35.91999816894531,
+      "height": 12.866199731826782
+    },
+    "reference": {
+      "length": 39.47,
+      "span": 35.92
+    },
+    "noseWheelRetractionRise": 1.8758754203620098,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 63,
+    "mainCabinSpan": 0,
+    "maskedCabinMaterials": 63,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b38m",
+    "livery": "united",
+    "sha256": "cdd2c866c80375088cf7c34494f397c6eede03448412702cc66f27cf7c430ee1",
+    "bytes": 7203604,
+    "meshes": 182,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 39.46999931335449,
+      "span": 35.91999816894531,
+      "height": 12.866199731826782
+    },
+    "reference": {
+      "length": 39.47,
+      "span": 35.92
+    },
+    "noseWheelRetractionRise": 1.8758754203620098,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 63,
+    "mainCabinSpan": 0,
+    "maskedCabinMaterials": 63,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b39m",
+    "livery": "aeromexico",
+    "sha256": "6b819d1bac85c9ba1260caf150f739e06d76b94375a0dc5a00f479168c36085e",
+    "bytes": 6513488,
+    "meshes": 182,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 42.11000061035156,
+      "span": 35.91999816894531,
+      "height": 12.866199731826782
+    },
+    "reference": {
+      "length": 42.11,
+      "span": 35.92
+    },
+    "noseWheelRetractionRise": 1.8758793886561662,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 63,
+    "mainCabinSpan": 0,
+    "maskedCabinMaterials": 63,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b39m",
+    "livery": "alaska",
+    "sha256": "557c23920da85555e758cc67df88cbe82dfc8a3e871388a60befa6c387d3b211",
+    "bytes": 6413460,
+    "meshes": 182,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 42.11000061035156,
+      "span": 35.91999816894531,
+      "height": 12.866199731826782
+    },
+    "reference": {
+      "length": 42.11,
+      "span": 35.92
+    },
+    "noseWheelRetractionRise": 1.8758793886561662,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 67,
+    "mainCabinSpan": 0,
+    "maskedCabinMaterials": 67,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b39m",
+    "livery": "copa",
+    "sha256": "8de75e45533c764f980364e7a55bfbbeaf48b13a85b771a1cadd3834a7e42b01",
+    "bytes": 6238036,
+    "meshes": 182,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 42.11000061035156,
+      "span": 35.91999816894531,
+      "height": 12.866199731826782
+    },
+    "reference": {
+      "length": 42.11,
+      "span": 35.92
+    },
+    "noseWheelRetractionRise": 1.8758793886561662,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 67,
+    "mainCabinSpan": 0,
+    "maskedCabinMaterials": 67,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b39m",
+    "livery": "united",
+    "sha256": "6abc5e93eeafe4c98ce12d0f8c7ffcd279a6730886b93e11ed1c8500a9a50c77",
+    "bytes": 6822904,
+    "meshes": 182,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 42.11000061035156,
+      "span": 35.91999816894531,
+      "height": 12.866199731826782
+    },
+    "reference": {
+      "length": 42.11,
+      "span": 35.92
+    },
+    "noseWheelRetractionRise": 1.8758793886561662,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 67,
+    "mainCabinSpan": 0,
+    "maskedCabinMaterials": 67,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b737",
+    "livery": "southwest",
+    "sha256": "8e0ef6e88a1419f4e30d5b298e92e759bb09ae7953accba93932bc1c9b9d5236",
+    "bytes": 2173740,
+    "meshes": 168,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 33.6299991607666,
+      "span": 35.790000915527344,
+      "height": 12.986999988555908
+    },
+    "reference": {
+      "length": 33.63,
+      "span": 35.79
+    },
+    "noseWheelRetractionRise": 1.8775769015471822,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 6,
+    "mainCabinSpan": 19.376319885253906,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b737",
+    "livery": "united",
+    "sha256": "3cbafe29fb77194dc215e2df688f1d09381925552ede9091f234cd0f5c2dd3d8",
+    "bytes": 2576552,
+    "meshes": 168,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 33.6299991607666,
+      "span": 35.790000915527344,
+      "height": 12.986999988555908
+    },
+    "reference": {
+      "length": 33.63,
+      "span": 35.79
+    },
+    "noseWheelRetractionRise": 1.8775769015471822,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 6,
+    "mainCabinSpan": 19.376319885253906,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b738",
+    "livery": "alaska",
+    "sha256": "98709bc3d6775addf2c1a86ef0303e8b82fd09310be28f32d3f786304d14e10f",
+    "bytes": 4518100,
+    "meshes": 168,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 39.42070007324219,
+      "span": 35.86680030822754,
+      "height": 12.986999988555908
+    },
+    "reference": {
+      "length": 39.47,
+      "span": 35.79
+    },
+    "noseWheelRetractionRise": 1.8775425648910593,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 5,
+    "mainCabinSpan": 22.106189727783203,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b738",
+    "livery": "american",
+    "sha256": "d2cecb9935721768a55d6e0aca1097161366ec69a04cf40de2c1015ab24a06c3",
+    "bytes": 3770964,
+    "meshes": 168,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 39.42070007324219,
+      "span": 35.86680030822754,
+      "height": 12.986999988555908
+    },
+    "reference": {
+      "length": 39.47,
+      "span": 35.79
+    },
+    "noseWheelRetractionRise": 1.8775425648910593,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 5,
+    "mainCabinSpan": 22.106189727783203,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b738",
+    "livery": "delta",
+    "sha256": "b2c02e1cd5bae55b0ebe0541d138304fbb3186ecc0004926b2b930890aafc4ab",
+    "bytes": 3438020,
+    "meshes": 168,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 39.42070007324219,
+      "span": 35.86680030822754,
+      "height": 12.986999988555908
+    },
+    "reference": {
+      "length": 39.47,
+      "span": 35.79
+    },
+    "noseWheelRetractionRise": 1.8775425648910593,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 5,
+    "mainCabinSpan": 22.106189727783203,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b738",
+    "livery": "southwest",
+    "sha256": "49571bb517e3db615b578a40f730d5fb9a3c48120a21b7ab6afe199b26aba04d",
+    "bytes": 3529104,
+    "meshes": 168,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 39.42070007324219,
+      "span": 35.86680030822754,
+      "height": 12.986999988555908
+    },
+    "reference": {
+      "length": 39.47,
+      "span": 35.79
+    },
+    "noseWheelRetractionRise": 1.8775425648910593,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 5,
+    "mainCabinSpan": 22.106189727783203,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b738-current",
+    "livery": "american-aircal",
+    "sha256": "e05ba340db93999680e5c2372ed53aa4fc9e4147a7422e1ed28ef969987f4234",
+    "bytes": 2247512,
+    "meshes": 172,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 39.46999931335449,
+      "span": 35.790000915527344,
+      "height": 12.986999988555908
+    },
+    "reference": {
+      "length": 39.47,
+      "span": 35.79
+    },
+    "noseWheelRetractionRise": 1.877540389344042,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 7,
+    "mainCabinSpan": 27.50674819946289,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b738-current",
+    "livery": "flair",
+    "sha256": "61495c10a68ae42e2494cad6b2042628e46aa589c70e4e291e8791f37ef242e7",
+    "bytes": 4524860,
+    "meshes": 172,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 39.46999931335449,
+      "span": 35.790000915527344,
+      "height": 12.986999988555908
+    },
+    "reference": {
+      "length": 39.47,
+      "span": 35.79
+    },
+    "noseWheelRetractionRise": 1.877540389344042,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 7,
+    "mainCabinSpan": 27.50674819946289,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b738-current",
+    "livery": "united-star-alliance",
+    "sha256": "7a3c180ed02f14350acaa45f5d8a5907d3925302b8a039b0296e1d0f6f0a088f",
+    "bytes": 2287816,
+    "meshes": 172,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 39.46999931335449,
+      "span": 35.790000915527344,
+      "height": 12.986999988555908
+    },
+    "reference": {
+      "length": 39.47,
+      "span": 35.79
+    },
+    "noseWheelRetractionRise": 1.877540389344042,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 7,
+    "mainCabinSpan": 27.50674819946289,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b738-current",
+    "livery": "united",
+    "sha256": "74f04538e674a145b9150f390a3afaf8cf5ff4b14210d00ac7a388fa74f56451",
+    "bytes": 2531560,
+    "meshes": 172,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 39.46999931335449,
+      "span": 35.790000915527344,
+      "height": 12.986999988555908
+    },
+    "reference": {
+      "length": 39.47,
+      "span": 35.79
+    },
+    "noseWheelRetractionRise": 1.877540389344042,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 7,
+    "mainCabinSpan": 27.50674819946289,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b739",
+    "livery": "alaska",
+    "sha256": "90fa9fd9245a11bced3754c8d18b566d7a0c4c7ace6dd079352e95d63d50fd4b",
+    "bytes": 2453164,
+    "meshes": 171,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 42.10999870300293,
+      "span": 35.790000915527344,
+      "height": 12.986999988555908
+    },
+    "reference": {
+      "length": 42.11,
+      "span": 35.79
+    },
+    "noseWheelRetractionRise": 1.87754813260422,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 6,
+    "mainCabinSpan": 27.30908489227295,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b739",
+    "livery": "delta",
+    "sha256": "c9aa86f173dd8d9b7adbff67ef5546989b959510c22ce8d4cf3716987cab27fd",
+    "bytes": 2112592,
+    "meshes": 171,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 42.10999870300293,
+      "span": 35.790000915527344,
+      "height": 12.986999988555908
+    },
+    "reference": {
+      "length": 42.11,
+      "span": 35.79
+    },
+    "noseWheelRetractionRise": 1.87754813260422,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 6,
+    "mainCabinSpan": 27.30908489227295,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b739",
+    "livery": "united",
+    "sha256": "a6bab43df31afe631eeb896b0ef190e89498539d31ebed0829241a15ed8c3c17",
+    "bytes": 2666916,
+    "meshes": 171,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 42.10999870300293,
+      "span": 35.790000915527344,
+      "height": 12.986999988555908
+    },
+    "reference": {
+      "length": 42.11,
+      "span": 35.79
+    },
+    "noseWheelRetractionRise": 1.87754813260422,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 6,
+    "mainCabinSpan": 27.30908489227295,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b744f",
+    "livery": "airzeta",
+    "sha256": "0522bf22ae75c49ad89248994812f3ce26a455c16ccdb87d76a0b1a289811d03",
+    "bytes": 4586116,
+    "meshes": 264,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 70.66999816894531,
+      "span": 64.44000244140625,
+      "height": 20.01680088043213
+    },
+    "reference": {
+      "length": 70.67,
+      "span": 64.44
+    },
+    "noseWheelRetractionRise": 4.267853756991331,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 1.288644790649414,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b748f",
+    "livery": "korean-air-cargo",
+    "sha256": "03a432a7fe6f9b890e824373e502077de762742e5aae22e722873800502b12a2",
+    "bytes": 2947500,
+    "meshes": 226,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 76.25,
+      "span": 68.39999771118164,
+      "height": 20.01680088043213
+    },
+    "reference": {
+      "length": 76.25,
+      "span": 68.4
+    },
+    "noseWheelRetractionRise": 4.267855469737665,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 1.2886829376220703,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b762f",
+    "livery": "abx-air",
+    "sha256": "cf7aa8f9711aa6c93a8efc800a013252054443d43f25b803f8f5cbd732dec11c",
+    "bytes": 10932048,
+    "meshes": 237,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 48.510000228881836,
+      "span": 47.57000160217285,
+      "height": 15.634001731872559
+    },
+    "reference": {
+      "length": 48.51,
+      "span": 47.57
+    },
+    "noseWheelRetractionRise": 2.748926139764169,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 1.7395248413085938,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b763f",
+    "livery": "abx-air",
+    "sha256": "2ae77f9f7991a07284f3d90583bbffc3a8d2e31c0885c4ba9090c1aa733f2e51",
+    "bytes": 10929244,
+    "meshes": 237,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 54.94000053405762,
+      "span": 47.57000160217285,
+      "height": 15.634001731872559
+    },
+    "reference": {
+      "length": 54.94,
+      "span": 47.57
+    },
+    "noseWheelRetractionRise": 2.748940739090754,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 1.7395095825195312,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b763f",
+    "livery": "amazon-air",
+    "sha256": "62c4b1204a63cd575aea35da130524892aa98d55cd4593bba5e1ba1ec96a92c3",
+    "bytes": 6499332,
+    "meshes": 237,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 54.94000053405762,
+      "span": 47.57000160217285,
+      "height": 15.634001731872559
+    },
+    "reference": {
+      "length": 54.94,
+      "span": 47.57
+    },
+    "noseWheelRetractionRise": 2.748940739090754,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 1.7395095825195312,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b763f",
+    "livery": "fedex",
+    "sha256": "c4fb9323443f4322267a8494a3592765b39aa7d84c9343d759e4437af229af8e",
+    "bytes": 6516720,
+    "meshes": 237,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 54.94000053405762,
+      "span": 47.57000160217285,
+      "height": 15.634001731872559
+    },
+    "reference": {
+      "length": 54.94,
+      "span": 47.57
+    },
+    "noseWheelRetractionRise": 2.748940739090754,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 1.7395095825195312,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b772",
+    "livery": "united",
+    "sha256": "b2f89f3c4e127681a25197b86cb66b8f904a800c2d1f0e276695c351e987654f",
+    "bytes": 47028200,
+    "meshes": 384,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 63.72999954223633,
+      "span": 60.93000030517578,
+      "height": 18.118189811706543
+    },
+    "reference": {
+      "length": 63.73,
+      "span": 60.93
+    },
+    "noseWheelRetractionRise": 3.2090303060235303,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 15,
+    "mainCabinSpan": 47.089481353759766,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b77f",
+    "livery": "china-airlines-cargo",
+    "sha256": "43d0773560242cc2bf709df4520457e3f146436354f8f60a377832c96ff63eac",
+    "bytes": 72006864,
+    "meshes": 343,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 63.72999954223633,
+      "span": 64.80000305175781,
+      "height": 18.098949432373047
+    },
+    "reference": {
+      "length": 63.73,
+      "span": 64.8
+    },
+    "noseWheelRetractionRise": 3.2090303060235303,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 14,
+    "mainCabinSpan": 24.40391993522644,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b77w",
+    "livery": "air-china",
+    "sha256": "0e83b222e7815122b051b929c030efd0ff4c9f565bd2b8aa71349970c644cceb",
+    "bytes": 49448380,
+    "meshes": 413,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 73.85999870300293,
+      "span": 64.80000305175781,
+      "height": 18.098949432373047
+    },
+    "reference": {
+      "length": 73.86,
+      "span": 64.8
+    },
+    "noseWheelRetractionRise": 3.5382417519687284,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 15,
+    "mainCabinSpan": 57.23168754577637,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b77w",
+    "livery": "air-france",
+    "sha256": "cdaab5a88f81a386bfc32b173925296407f53662e2186ae7af3d8710c4d147e2",
+    "bytes": 55086024,
+    "meshes": 413,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 73.85999870300293,
+      "span": 64.80000305175781,
+      "height": 18.098949432373047
+    },
+    "reference": {
+      "length": 73.86,
+      "span": 64.8
+    },
+    "noseWheelRetractionRise": 3.5382417519687284,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 15,
+    "mainCabinSpan": 57.23168754577637,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b77w",
+    "livery": "air-india",
+    "sha256": "0068d8afd0f5f33829eb93c1a3476475cd27b09eabd807461fcc8c0cfb752e4d",
+    "bytes": 60237952,
+    "meshes": 413,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 73.85999870300293,
+      "span": 64.80000305175781,
+      "height": 18.098949432373047
+    },
+    "reference": {
+      "length": 73.86,
+      "span": 64.8
+    },
+    "noseWheelRetractionRise": 3.5382417519687284,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 15,
+    "mainCabinSpan": 57.23168754577637,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b77w",
+    "livery": "ana",
+    "sha256": "a9b5734563bc77b50926e5fbbcb8c88ee7dbf08cdd2715da3fe735cd76316662",
+    "bytes": 49677552,
+    "meshes": 413,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 73.85999870300293,
+      "span": 64.80000305175781,
+      "height": 18.098949432373047
+    },
+    "reference": {
+      "length": 73.86,
+      "span": 64.8
+    },
+    "noseWheelRetractionRise": 3.5382417519687284,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 15,
+    "mainCabinSpan": 57.23168754577637,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b77w",
+    "livery": "british-airways",
+    "sha256": "07f1a77e75a037427cb821fe6e82cf7ce8aa019da899f0515a4f3e57ee6a278f",
+    "bytes": 59282268,
+    "meshes": 413,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 73.85999870300293,
+      "span": 64.80000305175781,
+      "height": 18.098949432373047
+    },
+    "reference": {
+      "length": 73.86,
+      "span": 64.8
+    },
+    "noseWheelRetractionRise": 3.5382417519687284,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 15,
+    "mainCabinSpan": 57.23168754577637,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b77w",
+    "livery": "cathay-pacific",
+    "sha256": "1f6a0985f5115579a409ec6cb972e33cbc2dde046d7a83cb2f477ac5fd05c2cd",
+    "bytes": 59184048,
+    "meshes": 413,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 73.85999870300293,
+      "span": 64.80000305175781,
+      "height": 18.098949432373047
+    },
+    "reference": {
+      "length": 73.86,
+      "span": 64.8
+    },
+    "noseWheelRetractionRise": 3.5382417519687284,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 15,
+    "mainCabinSpan": 57.23168754577637,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b77w",
+    "livery": "china-airlines",
+    "sha256": "e46eca8a64dc3523aa3cbdce9d094fbd3b8a414ca2ee365fe8cbcc956983ce2a",
+    "bytes": 55285112,
+    "meshes": 413,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 73.85999870300293,
+      "span": 64.80000305175781,
+      "height": 18.098949432373047
+    },
+    "reference": {
+      "length": 73.86,
+      "span": 64.8
+    },
+    "noseWheelRetractionRise": 3.5382417519687284,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 15,
+    "mainCabinSpan": 57.23168754577637,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b77w",
+    "livery": "eva-air",
+    "sha256": "22a0509d3d18a280c6bfccbecd6c31eb58989a8d1b1e414f4efb41d3fa91fc1d",
+    "bytes": 49483164,
+    "meshes": 413,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 73.85999870300293,
+      "span": 64.80000305175781,
+      "height": 18.098949432373047
+    },
+    "reference": {
+      "length": 73.86,
+      "span": 64.8
+    },
+    "noseWheelRetractionRise": 3.5382417519687284,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 15,
+    "mainCabinSpan": 57.23168754577637,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b77w",
+    "livery": "japan-airlines",
+    "sha256": "cf9b00dacdac462f83a07480b84481597ecc4caa9c91664c7d509c291e11befa",
+    "bytes": 49542620,
+    "meshes": 413,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 73.85999870300293,
+      "span": 64.80000305175781,
+      "height": 18.098949432373047
+    },
+    "reference": {
+      "length": 73.86,
+      "span": 64.8
+    },
+    "noseWheelRetractionRise": 3.5382417519687284,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 15,
+    "mainCabinSpan": 57.23168754577637,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b77w",
+    "livery": "swiss",
+    "sha256": "c7b399ca22696bd8c44e14f25fc93525ea16f21b3630baf12d5566b2337fb85d",
+    "bytes": 49337096,
+    "meshes": 413,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 73.85999870300293,
+      "span": 64.80000305175781,
+      "height": 18.098949432373047
+    },
+    "reference": {
+      "length": 73.86,
+      "span": 64.8
+    },
+    "noseWheelRetractionRise": 3.5382417519687284,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 15,
+    "mainCabinSpan": 57.23168754577637,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b77w",
+    "livery": "united",
+    "sha256": "36ee66fb7b46dd3d43dd004320bf7ec9b71d3a79414bf1ecc625fdcec3be7fc5",
+    "bytes": 57226428,
+    "meshes": 413,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 73.85999870300293,
+      "span": 64.80000305175781,
+      "height": 18.098949432373047
+    },
+    "reference": {
+      "length": 73.86,
+      "span": 64.8
+    },
+    "noseWheelRetractionRise": 3.5382417519687284,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 15,
+    "mainCabinSpan": 57.23168754577637,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "be20",
+    "livery": "reach",
+    "sha256": "8199fc8ca1065e7b95f96a7c15139d1402ca795e4bf3705b35acff0400775c67",
+    "bytes": 2964772,
+    "meshes": 144,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 13.360000133514404,
+      "span": 16.610000610351562,
+      "height": 4.828512072563171
+    },
+    "reference": {
+      "length": 13.36,
+      "span": 16.61
+    },
+    "noseWheelRetractionRise": 1.2637200452196744,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 2,
+    "mainCabinSpan": 5.027159094810486,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "be9l",
+    "livery": "blue-skies",
+    "sha256": "332848db5f4fd37e7caa762cc9d7f2fef7bf6c4c86866ebb4956071ae9505037",
+    "bytes": 1790696,
+    "meshes": 83,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 10.820000171661377,
+      "span": 15.319999694824219,
+      "height": 4.813814043998718
+    },
+    "reference": {
+      "length": 10.82,
+      "span": 15.32
+    },
+    "noseWheelRetractionRise": 1.265540718093471,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 2,
+    "mainCabinSpan": 3.1459741592407227,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "c25b",
+    "livery": "flyexclusive",
+    "sha256": "23c189f25eedf816f5d7d205ff6411adf2fcec3854df06792eaea06b0645dc31",
+    "bytes": 2017056,
+    "meshes": 194,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 15.593914031982422,
+      "span": 16.260000228881836,
+      "height": 4.634784698486328
+    },
+    "reference": {
+      "length": 15.6,
+      "span": 16.26,
+      "height": 4.62
+    },
+    "noseWheelRetractionRise": 0.6006388498003048,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 13,
+    "mainCabinSpan": 2.9599997997283936,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "c25b",
+    "livery": "jet-access",
+    "sha256": "ff0a7f31292acc74a0cb5f2a38cfdf1dd1bb1b0e48f475d59e46ce916aeef650",
+    "bytes": 2016288,
+    "meshes": 194,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 15.593914031982422,
+      "span": 16.260000228881836,
+      "height": 4.634784698486328
+    },
+    "reference": {
+      "length": 15.6,
+      "span": 16.26,
+      "height": 4.62
+    },
+    "noseWheelRetractionRise": 0.6006388498003048,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 13,
+    "mainCabinSpan": 2.9599997997283936,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "c25b",
+    "livery": "silver-air",
+    "sha256": "b8f093f2ad263880f10074b96928c94de5dc39bbe70fcb290f8eba5cd155a144",
+    "bytes": 2017900,
+    "meshes": 194,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 15.593914031982422,
+      "span": 16.260000228881836,
+      "height": 4.634784698486328
+    },
+    "reference": {
+      "length": 15.6,
+      "span": 16.26,
+      "height": 4.62
+    },
+    "noseWheelRetractionRise": 0.6006388498003048,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 13,
+    "mainCabinSpan": 2.9599997997283936,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "c56x",
+    "livery": "pacific-coast",
+    "sha256": "3256b4cf937c99b0e1c567f85d2d705d75ed71e2936f9cf90dbe8be585c3419e",
+    "bytes": 2082784,
+    "meshes": 200,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 15.993758201599121,
+      "span": 17.170000076293945,
+      "height": 5.242664337158203
+    },
+    "reference": {
+      "length": 16,
+      "span": 17.17,
+      "height": 5.23
+    },
+    "noseWheelRetractionRise": 0.6642583172810559,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 15,
+    "mainCabinSpan": 3.7100000381469727,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "c700",
+    "livery": "netjets",
+    "sha256": "06e8f03404fb817df9ffd5cf5fde11dabf06c76088d33128baeafc2ec8236414",
+    "bytes": 2441080,
+    "meshes": 208,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 22.29129981994629,
+      "span": 21.006000518798828,
+      "height": 5.924715995788574
+    },
+    "reference": {
+      "length": 22.3,
+      "span": 21.01,
+      "height": 5.9
+    },
+    "noseWheelRetractionRise": 0.7341683917357723,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 15,
+    "mainCabinSpan": 4.13200044631958,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "c750",
+    "livery": "baker-aviation",
+    "sha256": "272c5c55a774b7c6db951616cd8e5550ceebf2de87f42bd7638a138b69a22748",
+    "bytes": 1505360,
+    "meshes": 63,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 22.050000190734863,
+      "span": 19.389999389648438,
+      "height": 6.308387994766235
+    },
+    "reference": {
+      "length": 22.05,
+      "span": 19.39
+    },
+    "noseWheelRetractionRise": 1.4761039918592465,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 55,
+    "mainCabinSpan": 0,
+    "maskedCabinMaterials": 52,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "c750",
+    "livery": "herajet",
+    "sha256": "4831647eba7f97506a717a3ffdf18c47b426d9a8d7fe4d8a9c9d32236ad348b7",
+    "bytes": 1504408,
+    "meshes": 63,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 22.050000190734863,
+      "span": 19.389999389648438,
+      "height": 6.308387994766235
+    },
+    "reference": {
+      "length": 22.05,
+      "span": 19.39
+    },
+    "noseWheelRetractionRise": 1.4761039918592465,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 55,
+    "mainCabinSpan": 0,
+    "maskedCabinMaterials": 52,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "cl60",
+    "livery": "netjets",
+    "sha256": "0b1e54b36eb8bcdd352fdb0bba4dcf996a8b93b81df795c1727a45eb8579069d",
+    "bytes": 2496472,
+    "meshes": 208,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 20.8435001373291,
+      "span": 19.608999252319336,
+      "height": 6.300000190734863
+    },
+    "reference": {
+      "length": 20.85,
+      "span": 19.61,
+      "height": 6.3
+    },
+    "noseWheelRetractionRise": 0.7591389966041523,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 15,
+    "mainCabinSpan": 4.9110002517700195,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "crj900",
+    "livery": "air-canada-express",
+    "sha256": "314acc00aea930a44ae5271bcb01ed9f65a029f83169eb5c3b044d3a4943fdf1",
+    "bytes": 12266064,
+    "meshes": 118,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 36.400001525878906,
+      "span": 24.850000381469727,
+      "height": 7.08150315284729
+    },
+    "reference": {
+      "length": 36.4,
+      "span": 24.85
+    },
+    "noseWheelRetractionRise": 1.3752977554993402,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 2,
+    "mainCabinSpan": 23.243074417114258,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "e295",
+    "livery": "porter",
+    "sha256": "bf0dd716bf1fa609bc366f51ae244263c68d0e26b7a87e31a09a62270c3548e2",
+    "bytes": 4055940,
+    "meshes": 347,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 41.599998474121094,
+      "span": 35.119998931884766,
+      "height": 10.550000190734863
+    },
+    "reference": {
+      "length": 41.6,
+      "span": 35.12,
+      "height": 10.55
+    },
+    "noseWheelRetractionRise": 1.8139659673903332,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 70,
+    "mainCabinSpan": 25.998998165130615,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "e545",
+    "livery": "flexjet",
+    "sha256": "26492551f50b4c101e9ad708d70bd105bfe43b614698ccc2a4f1d4cd21ad4392",
+    "bytes": 2480156,
+    "meshes": 204,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 19.677099227905273,
+      "span": 21.497499465942383,
+      "height": 6.429999828338623
+    },
+    "reference": {
+      "length": 19.68,
+      "span": 21.5,
+      "height": 6.43
+    },
+    "noseWheelRetractionRise": 0.8930525529248454,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 14,
+    "mainCabinSpan": 4.564999580383301,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "e55p",
+    "livery": "netjets",
+    "sha256": "e524c480ef054f9b5ca7217fee8491b5a820698e55ba9f3d13cb16f29a7c144e",
+    "bytes": 2162056,
+    "meshes": 198,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 15.6376953125,
+      "span": 15.908548355102539,
+      "height": 5.099999904632568
+    },
+    "reference": {
+      "length": 15.64,
+      "span": 15.91,
+      "height": 5.1
+    },
+    "noseWheelRetractionRise": 0.732889399745033,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 14,
+    "mainCabinSpan": 3.42020320892334,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "ec35",
+    "livery": "calstar",
+    "sha256": "43b252a10be30f29460829258de075cb421c803b3fc2cd3b42fc10aa91659a05",
+    "bytes": 6813516,
+    "meshes": 71,
+    "animations": [
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 12.160000324249268,
+      "span": 10.199999809265137,
+      "height": 3.9808239936828613
+    },
+    "reference": {
+      "length": 12.16,
+      "span": 10.2
+    },
+    "noseWheelRetractionRise": null,
+    "runtimeGearCycles": 0,
+    "cabinMaterials": 6,
+    "mainCabinSpan": 3.6073745489120483,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "ec35",
+    "livery": "reach",
+    "sha256": "3abf1c5f892b089766b6c5609a8dc2741bfec625e6fead91e6ebf572a6746a5a",
+    "bytes": 6808504,
+    "meshes": 71,
+    "animations": [
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 12.160000324249268,
+      "span": 10.199999809265137,
+      "height": 3.9808239936828613
+    },
+    "reference": {
+      "length": 12.16,
+      "span": 10.2
+    },
+    "noseWheelRetractionRise": null,
+    "runtimeGearCycles": 0,
+    "cabinMaterials": 6,
+    "mainCabinSpan": 3.6073745489120483,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "galx",
+    "livery": "neojets",
+    "sha256": "dbbc9ea8fe34f76f41050942ee33c025d8ac025c1f6ae3d8b636651bd76c601f",
+    "bytes": 2491624,
+    "meshes": 203,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 18.969913482666016,
+      "span": 17.69700050354004,
+      "height": 6.53000020980835
+    },
+    "reference": {
+      "length": 18.97,
+      "span": 17.7,
+      "height": 6.53
+    },
+    "noseWheelRetractionRise": 0.7294479675016123,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 15,
+    "mainCabinSpan": 4.214999675750732,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "gl5t",
+    "livery": "netjets",
+    "sha256": "a4da5e6744ed405f98efbe2d7fb7f073e521b4ccbc1c763434c9825268e6f753",
+    "bytes": 7334452,
+    "meshes": 136,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 29.5,
+      "span": 28.649999618530273,
+      "height": 8.13099753856659
+    },
+    "reference": {
+      "length": 29.5,
+      "span": 28.65
+    },
+    "noseWheelRetractionRise": 1.9560535622160788,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 2,
+    "mainCabinSpan": 10.862887978553772,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "glf5",
+    "livery": "silver-air",
+    "sha256": "4ff29acf6f086aa394c1da6a20435486e472d961fcb0c705fb366f7d491ead60",
+    "bytes": 3035428,
+    "meshes": 209,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 29.383100509643555,
+      "span": 28.500499725341797,
+      "height": 7.900000095367432
+    },
+    "reference": {
+      "length": 29.39,
+      "span": 28.5,
+      "height": 7.9
+    },
+    "noseWheelRetractionRise": 1.2699255079499343,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 15,
+    "mainCabinSpan": 7.998000144958496,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "h25c",
+    "livery": "private-n707hd",
+    "sha256": "a3c8809a5ad0d8d98a1dc5b6dc1c1366006b533a8ea9dbaf4b4893620810823d",
+    "bytes": 2292928,
+    "meshes": 203,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 16.38979721069336,
+      "span": 15.656563758850098,
+      "height": 5.210000038146973
+    },
+    "reference": {
+      "length": 16.39,
+      "span": 15.66,
+      "height": 5.21
+    },
+    "noseWheelRetractionRise": 0.6060098304196251,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 15,
+    "mainCabinSpan": 3.64174222946167,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "pc12",
+    "livery": "guardian-flight",
+    "sha256": "b4d925c6ec0d80678c9779f2bc01e0a4681ba70a004d7424ae47f51a7009c083",
+    "bytes": 18052984,
+    "meshes": 31,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 14.400000095367432,
+      "span": 16.230000495910645,
+      "height": 4.187712907791138
+    },
+    "reference": {
+      "length": 14.4,
+      "span": 16.23
+    },
+    "noseWheelRetractionRise": 0.8722042531473346,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 2,
+    "mainCabinSpan": 3.4658429622650146,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a21n",
+    "livery": "american",
+    "sha256": "d9cf8b85eabb68d18772a61feb210537b92d15dc96d7aedbf0319439bdd90a0a",
+    "bytes": 5386356,
+    "meshes": 166,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 44.50999879837036,
+      "span": 35.79999923706055,
+      "height": 12.383441925048828
+    },
+    "reference": {
+      "length": 44.51,
+      "span": 35.8
+    },
+    "noseWheelRetractionRise": 2.3061051605822955,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 28.698566436767578,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a21n",
+    "livery": "delta",
+    "sha256": "68e4ca735b629491365cfc6f9dff4e8cfab902b7b00c817b8cf29a38b422d361",
+    "bytes": 5375732,
+    "meshes": 166,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 44.50999879837036,
+      "span": 35.79999923706055,
+      "height": 12.383441925048828
+    },
+    "reference": {
+      "length": 44.51,
+      "span": 35.8
+    },
+    "noseWheelRetractionRise": 2.3061051605822955,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 28.698566436767578,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a21n",
+    "livery": "frontier-chopper",
+    "sha256": "9629ba06ce0c3bae90a810a9be17549c48d3bd19f96b25106f10e70c111f4b9f",
+    "bytes": 28221796,
+    "meshes": 166,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 44.50999879837036,
+      "span": 35.79999923706055,
+      "height": 12.383441925048828
+    },
+    "reference": {
+      "length": 44.51,
+      "span": 35.8
+    },
+    "noseWheelRetractionRise": 2.3061051605822955,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 28.698566436767578,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a21n",
+    "livery": "hawaiian",
+    "sha256": "e265ebed210a73619861548c32f03712bb51b8e90daddf160c3036d503f8bbbe",
+    "bytes": 9855176,
+    "meshes": 166,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 44.50999879837036,
+      "span": 35.79999923706055,
+      "height": 12.383441925048828
+    },
+    "reference": {
+      "length": 44.51,
+      "span": 35.8
+    },
+    "noseWheelRetractionRise": 2.3061051605822955,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 28.698566436767578,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a21n",
+    "livery": "jetblue",
+    "sha256": "29a9dca9731d6252c437db6368b5d55fd14c9d8875eb6c4c93161570c94bb8ae",
+    "bytes": 5512788,
+    "meshes": 166,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 44.50999879837036,
+      "span": 35.79999923706055,
+      "height": 12.383441925048828
+    },
+    "reference": {
+      "length": 44.51,
+      "span": 35.8
+    },
+    "noseWheelRetractionRise": 2.3061051605822955,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 28.698566436767578,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a21n",
+    "livery": "united",
+    "sha256": "9322f09ad9e49344b7b2ed365a9955f80a8c6c5fc1e12dd97a0ce1b0b6ff245a",
+    "bytes": 9717984,
+    "meshes": 166,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 44.50999879837036,
+      "span": 35.79999923706055,
+      "height": 12.383441925048828
+    },
+    "reference": {
+      "length": 44.51,
+      "span": 35.8
+    },
+    "noseWheelRetractionRise": 2.3061051605822955,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 28.698566436767578,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "epic",
+    "livery": "private-n999fn",
+    "sha256": "17171120b945e6b9337f957cfc722efa3ecc51aab380855351c9aa3c3a05b202",
+    "bytes": 1654000,
+    "meshes": 166,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 10.90999984741211,
+      "span": 13.109999656677246,
+      "height": 3.799999952316284
+    },
+    "reference": {
+      "length": 10.91,
+      "span": 13.11,
+      "height": 3.8
+    },
+    "noseWheelRetractionRise": 1.292753076254596,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 9,
+    "mainCabinSpan": 2.3499999046325684,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b763",
+    "livery": "delta",
+    "sha256": "fc0d6edf63c9c951b657096e2c42c0d532e77b63b9d067290c59dea4eb37a7f9",
+    "bytes": 6431288,
+    "meshes": 230,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 54.94000053405762,
+      "span": 50.900001525878906,
+      "height": 15.634001731872559
+    },
+    "reference": {
+      "length": 54.94,
+      "span": 50.9
+    },
+    "noseWheelRetractionRise": 2.748940739090754,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 37,
+    "mainCabinSpan": 0,
+    "maskedCabinMaterials": 37,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b763",
+    "livery": "united",
+    "sha256": "0a6e33a04fd5fc756c2b37edadcc4280e65643e9cdf0edcb1a26b70829f308ca",
+    "bytes": 7578408,
+    "meshes": 230,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 54.94000053405762,
+      "span": 50.900001525878906,
+      "height": 15.634001731872559
+    },
+    "reference": {
+      "length": 54.94,
+      "span": 50.9
+    },
+    "noseWheelRetractionRise": 2.748940739090754,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 37,
+    "mainCabinSpan": 0,
+    "maskedCabinMaterials": 37,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a339",
+    "livery": "tap-portugal",
+    "sha256": "1efc7ca9c25936cc4bbc74400c9618442f44e06d0a81ed890a4084f83ec893ab",
+    "bytes": 2831120,
+    "meshes": 202,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 63.65999984741211,
+      "span": 64,
+      "height": 16.78919506072998
+    },
+    "reference": {
+      "length": 63.66,
+      "span": 64
+    },
+    "noseWheelRetractionRise": 2.7969992560415333,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 12,
+    "mainCabinSpan": 0,
+    "maskedCabinMaterials": 12,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b350",
+    "livery": "optimal-aviation",
+    "sha256": "831b4f19801ae161ac0bbe30defcb5eb8d9352c3f9c0b24192c451377810a44d",
+    "bytes": 13756224,
+    "meshes": 90,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 14.21999979019165,
+      "span": 17.649999618530273,
+      "height": 4.591831684112549
+    },
+    "reference": {
+      "length": 14.22,
+      "span": 17.65
+    },
+    "noseWheelRetractionRise": 1.3894905479122568,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 5.027698755264282,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "ga5c",
+    "livery": "conocophillips",
+    "sha256": "a466b9e4f50e95d6305fb2a58aa6fa12ac8d0bfa5f420a58c18bc52d2811f0cc",
+    "bytes": 2956688,
+    "meshes": 209,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 27.77347755432129,
+      "span": 26.311227798461914,
+      "height": 7.869999885559082
+    },
+    "reference": {
+      "length": 27.78,
+      "span": 26.31,
+      "height": 7.87
+    },
+    "noseWheelRetractionRise": 1.2655444264807711,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 15,
+    "mainCabinSpan": 10.8400239944458,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "ga5c",
+    "livery": "jet-aviation",
+    "sha256": "5a75166e9c0ef506839dbb2b3e1ca436d13e0779e135f9bce396d1e68b588b73",
+    "bytes": 2957148,
+    "meshes": 209,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 27.77347755432129,
+      "span": 26.311227798461914,
+      "height": 7.869999885559082
+    },
+    "reference": {
+      "length": 27.78,
+      "span": 26.31,
+      "height": 7.87
+    },
+    "noseWheelRetractionRise": 1.2655444264807711,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 15,
+    "mainCabinSpan": 10.8400239944458,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "glf6",
+    "livery": "thoma-bravo",
+    "sha256": "724f6e683c03c99261230a78882152236245095906a53d5f78e6f72e4faab965",
+    "bytes": 3158928,
+    "meshes": 215,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 30.402860641479492,
+      "span": 30.3597412109375,
+      "height": 7.820000171661377
+    },
+    "reference": {
+      "length": 30.41,
+      "span": 30.36,
+      "height": 7.82
+    },
+    "noseWheelRetractionRise": 1.258276308787514,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 18,
+    "mainCabinSpan": 11.869115829467773,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "e75l",
+    "livery": "alaska",
+    "sha256": "2abd8b90509a451e9ac9455a0cd24cf0e196ceab519fd4cbaa5d53ebfff2ef60",
+    "bytes": 9156588,
+    "meshes": 81,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 31.679999351501465,
+      "span": 28.649999618530273,
+      "height": 9.946968078613281
+    },
+    "reference": {
+      "length": 31.68,
+      "span": 28.65
+    },
+    "noseWheelRetractionRise": 1.7271735236178474,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 2,
+    "mainCabinSpan": 14.515392303466797,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "e75l",
+    "livery": "american",
+    "sha256": "82a196be43d8f79a289f8e0cabe99be10463a9296f21941ad1d9d609ef1231ea",
+    "bytes": 6817936,
+    "meshes": 81,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 31.679999351501465,
+      "span": 28.649999618530273,
+      "height": 9.946968078613281
+    },
+    "reference": {
+      "length": 31.68,
+      "span": 28.65
+    },
+    "noseWheelRetractionRise": 1.7271735236178474,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 2,
+    "mainCabinSpan": 14.515392303466797,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "e75l",
+    "livery": "delta",
+    "sha256": "31e37d832c25cc11a2e7f6a089e70d86574eda4bfda80de303588bf8d48766f1",
+    "bytes": 2917928,
+    "meshes": 81,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 31.679999351501465,
+      "span": 28.649999618530273,
+      "height": 9.946968078613281
+    },
+    "reference": {
+      "length": 31.68,
+      "span": 28.65
+    },
+    "noseWheelRetractionRise": 1.7271735236178474,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 2,
+    "mainCabinSpan": 14.515392303466797,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "e75l",
+    "livery": "united",
+    "sha256": "de86b7d92b44b94fd92eba4edb0eaa5afdeb1fd1195acdfb1cc0fd9b4a582e4c",
+    "bytes": 7434856,
+    "meshes": 81,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 31.679999351501465,
+      "span": 28.649999618530273,
+      "height": 9.946968078613281
+    },
+    "reference": {
+      "length": 31.68,
+      "span": 28.65
+    },
+    "noseWheelRetractionRise": 1.7271735236178474,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 2,
+    "mainCabinSpan": 14.515392303466797,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "cl30",
+    "livery": "twy-n1013",
+    "sha256": "7b8a903219fcfbd86b26fee0016fab026c25b9b3ab423476b0d9fe452127fa82",
+    "bytes": 2514736,
+    "meshes": 202,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 20.91691780090332,
+      "span": 19.458181381225586,
+      "height": 6.199999809265137
+    },
+    "reference": {
+      "length": 20.92,
+      "span": 19.46,
+      "height": 6.2
+    },
+    "noseWheelRetractionRise": 0.7343941278635204,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 13,
+    "mainCabinSpan": 5.470000267028809,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "cl30",
+    "livery": "vista-america",
+    "sha256": "7d90a10b82fd35c2c110f649e0cffe59ef02efbdb920ecd15ad6f2c08b530b1e",
+    "bytes": 2516788,
+    "meshes": 202,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 20.91691780090332,
+      "span": 19.458181381225586,
+      "height": 6.199999809265137
+    },
+    "reference": {
+      "length": 20.92,
+      "span": 19.46,
+      "height": 6.2
+    },
+    "noseWheelRetractionRise": 0.7343941278635204,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 13,
+    "mainCabinSpan": 5.470000267028809,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "cl35",
+    "livery": "flexjet",
+    "sha256": "e6878bba7a8f486b656c7ebdf18c937ee050e444c1248c7629a87ec891146aa2",
+    "bytes": 2536388,
+    "meshes": 202,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 20.91691780090332,
+      "span": 20.997371673583984,
+      "height": 6.119999885559082
+    },
+    "reference": {
+      "length": 20.92,
+      "span": 21,
+      "height": 6.12
+    },
+    "noseWheelRetractionRise": 0.7107265474405591,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 13,
+    "mainCabinSpan": 5.470000267028809,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "cl35",
+    "livery": "netjets",
+    "sha256": "cf28c99caa89779582d7cd411ea20f99b6571277b31be1b75fd1553d1e39db62",
+    "bytes": 2536512,
+    "meshes": 202,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 20.91691780090332,
+      "span": 20.997371673583984,
+      "height": 6.119999885559082
+    },
+    "reference": {
+      "length": 20.92,
+      "span": 21,
+      "height": 6.12
+    },
+    "noseWheelRetractionRise": 0.7107265474405591,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 13,
+    "mainCabinSpan": 5.470000267028809,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "cl35",
+    "livery": "vista-america",
+    "sha256": "cc03bb47bd85b3d6d1efd9f8b2ddf06a4192332f4faecab407c54c413745f547",
+    "bytes": 2531128,
+    "meshes": 202,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 20.91691780090332,
+      "span": 20.997371673583984,
+      "height": 6.119999885559082
+    },
+    "reference": {
+      "length": 20.92,
+      "span": 21,
+      "height": 6.12
+    },
+    "noseWheelRetractionRise": 0.7107265474405591,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 13,
+    "mainCabinSpan": 5.470000267028809,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "glf4",
+    "livery": "flexjet",
+    "sha256": "17497fae64e6063c59fc021dc0d9bd9a124c668bab97b78720f1ce923697c45e",
+    "bytes": 2850652,
+    "meshes": 207,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 27.223608016967773,
+      "span": 23.721872329711914,
+      "height": 7.670000076293945
+    },
+    "reference": {
+      "length": 27.23,
+      "span": 23.72,
+      "height": 7.67
+    },
+    "noseWheelRetractionRise": 1.3080198779390135,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 14,
+    "mainCabinSpan": 10.482985973358154,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "gl7t",
+    "livery": "netjets",
+    "sha256": "dbb580c755665947d53c68e9ba337a32398ca5f354041378f3a9a93ba8af31bc",
+    "bytes": 3424008,
+    "meshes": 241,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 33.872047424316406,
+      "span": 31.789743423461914,
+      "height": 8.199999809265137
+    },
+    "reference": {
+      "length": 33.88,
+      "span": 31.79,
+      "height": 8.2
+    },
+    "noseWheelRetractionRise": 1.3136633094273806,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 31,
+    "mainCabinSpan": 13.915000438690186,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "glex",
+    "livery": "netjets",
+    "sha256": "767240f2fcd758f2cfecb05f39ea361337391a525fcbebc1b3bffc66eef68337",
+    "bytes": 7376588,
+    "meshes": 138,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 30.300000190734863,
+      "span": 28.649999618530273,
+      "height": 8.13099753856659
+    },
+    "reference": {
+      "length": 30.3,
+      "span": 28.65
+    },
+    "noseWheelRetractionRise": 1.956141857960355,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 4,
+    "mainCabinSpan": 11.667110323905945,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "glex",
+    "livery": "vistajet",
+    "sha256": "03032799c1cc3d1ea09e9b6c6765d5d31ddb1e57a5c493f73127e9acd7a75331",
+    "bytes": 18023340,
+    "meshes": 142,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 30.300000190734863,
+      "span": 28.649999618530273,
+      "height": 8.13099753856659
+    },
+    "reference": {
+      "length": 30.3,
+      "span": 28.65
+    },
+    "noseWheelRetractionRise": 1.956141857960355,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 4,
+    "mainCabinSpan": 11.667110323905945,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b752",
+    "livery": "delta",
+    "sha256": "b3bc92f62cab807583e47ff3b7fd607b9129531c3b9f9bb1e8f6fae91d9a7aa3",
+    "bytes": 6352896,
+    "meshes": 158,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 47.31999930739403,
+      "span": 41.099998474121094,
+      "height": 13.406039953231812
+    },
+    "reference": {
+      "length": 47.32,
+      "span": 41.1
+    },
+    "noseWheelRetractionRise": 2.4769210028455038,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 5,
+    "mainCabinSpan": 31.04919719696045,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b752",
+    "livery": "united",
+    "sha256": "52fdf87a0d187edb30159383c2401753fa72d2762fcd79d937f5655d0c82cbca",
+    "bytes": 5479848,
+    "meshes": 158,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 47.31999930739403,
+      "span": 41.099998474121094,
+      "height": 13.406039953231812
+    },
+    "reference": {
+      "length": 47.32,
+      "span": 41.1
+    },
+    "noseWheelRetractionRise": 2.4769210028455038,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 5,
+    "mainCabinSpan": 31.04919719696045,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b753",
+    "livery": "united",
+    "sha256": "56c2f2743a869812fddd1f8a24215a3ac96ccc0ced00c30baa1c8a866780c7bd",
+    "bytes": 6369224,
+    "meshes": 182,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 54.47000026702881,
+      "span": 41.099998474121094,
+      "height": 13.406039953231812
+    },
+    "reference": {
+      "length": 54.47,
+      "span": 41.1
+    },
+    "noseWheelRetractionRise": 2.477031777574922,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 6,
+    "mainCabinSpan": 38.23187279701233,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b78x",
+    "livery": "eva-air",
+    "sha256": "6806e636aeea25f460287f1a49cae60eb240dc91cb0851e65c44a038a87929e7",
+    "bytes": 20140620,
+    "meshes": 162,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 68.28000068664551,
+      "span": 60.119998931884766,
+      "height": 17.41519021987915
+    },
+    "reference": {
+      "length": 68.28,
+      "span": 60.12
+    },
+    "noseWheelRetractionRise": 4.158727913928269,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 3,
+    "mainCabinSpan": 49.26880073547363,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b78x",
+    "livery": "klm",
+    "sha256": "0485a4b7c743ff8587a147f116647ba6f5a13c3efdd9157b15e43a01646f3849",
+    "bytes": 16884664,
+    "meshes": 163,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 68.28000068664551,
+      "span": 60.119998931884766,
+      "height": 17.41519021987915
+    },
+    "reference": {
+      "length": 68.28,
+      "span": 60.12
+    },
+    "noseWheelRetractionRise": 4.158727913928269,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 3,
+    "mainCabinSpan": 49.26880073547363,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b78x",
+    "livery": "korean-air",
+    "sha256": "898a4d978ab6d649e813e5f9faaf980e30cc58299af908998e5b23ceec93249f",
+    "bytes": 23361780,
+    "meshes": 162,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 68.28000068664551,
+      "span": 60.119998931884766,
+      "height": 17.41519021987915
+    },
+    "reference": {
+      "length": 68.28,
+      "span": 60.12
+    },
+    "noseWheelRetractionRise": 4.158727913928269,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 3,
+    "mainCabinSpan": 49.26880073547363,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "crj200",
+    "livery": "united",
+    "sha256": "a10682bee99b2503afd78069ef5b200561b09c7441fe233235e396489b85d7d0",
+    "bytes": 9184240,
+    "meshes": 103,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 26.769999504089355,
+      "span": 21.230000495910645,
+      "height": 6.330030560493469
+    },
+    "reference": {
+      "length": 26.77,
+      "span": 21.23
+    },
+    "noseWheelRetractionRise": 1.36519283812236,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 5,
+    "mainCabinSpan": 9.6103355884552,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b788",
+    "livery": "zipair",
+    "sha256": "9b0b2f191fac21534066ac810a52e9f28b16ba9f2948be970acde5b77f0b5dca",
+    "bytes": 20369704,
+    "meshes": 162,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 56.71999931335449,
+      "span": 60.119998931884766,
+      "height": 17.41519021987915
+    },
+    "reference": {
+      "length": 56.72,
+      "span": 60.12
+    },
+    "noseWheelRetractionRise": 2.651949879082946,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 3,
+    "mainCabinSpan": 37.78583908081055,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b789-current",
+    "livery": "air-new-zealand",
+    "sha256": "4e98ef4b41f9ac8263952d0471516d349e9b29be0b05c6411277988f104d4de4",
+    "bytes": 22082200,
+    "meshes": 163,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 62.80999946594238,
+      "span": 60.119998931884766,
+      "height": 17.41519021987915
+    },
+    "reference": {
+      "length": 62.81,
+      "span": 60.12
+    },
+    "noseWheelRetractionRise": 2.9854008638558494,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 3,
+    "mainCabinSpan": 43.7813663482666,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b789-current",
+    "livery": "air-premia",
+    "sha256": "efb198f7c3babe70140c32b193309990410d14fc870c1979f6bd1f2dcf72b5dc",
+    "bytes": 22207784,
+    "meshes": 162,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 62.80999946594238,
+      "span": 60.119998931884766,
+      "height": 17.41519021987915
+    },
+    "reference": {
+      "length": 62.81,
+      "span": 60.12
+    },
+    "noseWheelRetractionRise": 2.9854008638558494,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 3,
+    "mainCabinSpan": 43.7813663482666,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b789-current",
+    "livery": "eva-air",
+    "sha256": "bae9c04ff95e398ef42f74931d63b5369a6a92b485757a399724121429f75746",
+    "bytes": 21395100,
+    "meshes": 162,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 62.80999946594238,
+      "span": 60.119998931884766,
+      "height": 17.41519021987915
+    },
+    "reference": {
+      "length": 62.81,
+      "span": 60.12
+    },
+    "noseWheelRetractionRise": 2.9854008638558494,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 3,
+    "mainCabinSpan": 43.7813663482666,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b789-current",
+    "livery": "japan-airlines",
+    "sha256": "cf4b31296b8536e7849e04c36f92415b3c51901a394829aafb5d58b9e359a0c2",
+    "bytes": 27235200,
+    "meshes": 163,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 62.80999946594238,
+      "span": 60.119998931884766,
+      "height": 17.41519021987915
+    },
+    "reference": {
+      "length": 62.81,
+      "span": 60.12
+    },
+    "noseWheelRetractionRise": 2.9854008638558494,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 3,
+    "mainCabinSpan": 43.7813663482666,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b789-current",
+    "livery": "qantas",
+    "sha256": "f9018164aa59ce683a9cf0e93815feba43a68e77df9554e766809966728d1e9c",
+    "bytes": 20476568,
+    "meshes": 162,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 62.80999946594238,
+      "span": 60.119998931884766,
+      "height": 17.41519021987915
+    },
+    "reference": {
+      "length": 62.81,
+      "span": 60.12
+    },
+    "noseWheelRetractionRise": 2.9854008638558494,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 3,
+    "mainCabinSpan": 43.7813663482666,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b789-current",
+    "livery": "united",
+    "sha256": "3b3adc7633d4bbb52231516dbf9376147497e2321e8488c38cb1742d980b62aa",
+    "bytes": 17128960,
+    "meshes": 163,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 62.80999946594238,
+      "span": 60.119998931884766,
+      "height": 17.41519021987915
+    },
+    "reference": {
+      "length": 62.81,
+      "span": 60.12
+    },
+    "noseWheelRetractionRise": 2.9854008638558494,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 3,
+    "mainCabinSpan": 43.7813663482666,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b789-current",
+    "livery": "virgin-atlantic",
+    "sha256": "2fbb8b6c9cf613a6a0799597f39a454f51b256d7d19ead3dc86ea43320eff5da",
+    "bytes": 19577652,
+    "meshes": 162,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 62.80999946594238,
+      "span": 60.119998931884766,
+      "height": 17.41519021987915
+    },
+    "reference": {
+      "length": 62.81,
+      "span": 60.12
+    },
+    "noseWheelRetractionRise": 2.9854008638558494,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 3,
+    "mainCabinSpan": 43.7813663482666,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a221",
+    "livery": "delta",
+    "sha256": "4abdfbd3cb0ff5f6a987519bfb0ea7799ee8da68dbb2678ddaf53127d8d812e9",
+    "bytes": 3998892,
+    "meshes": 85,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 35,
+      "span": 35.099998474121094,
+      "height": 11.60107946395874
+    },
+    "reference": {
+      "length": 35,
+      "span": 35.1
+    },
+    "noseWheelRetractionRise": 1.9687601684905598,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 3,
+    "mainCabinSpan": 19.03846549987793,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a223",
+    "livery": "air-canada",
+    "sha256": "cb1405252a027a7ff0e561a10e2dc73b534227067b9c2d4a1252b01507eec1b2",
+    "bytes": 7498468,
+    "meshes": 63,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 38.70000076293945,
+      "span": 35.099998474121094,
+      "height": 11.585761070251465
+    },
+    "reference": {
+      "length": 38.7,
+      "span": 35.1
+    },
+    "noseWheelRetractionRise": 1.9717091436175682,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 22.74239444732666,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a223",
+    "livery": "breeze",
+    "sha256": "b5938efe14ac00cb124e54fb8bbabfb9f83a0dea29f04cc574bf71cb54f33920",
+    "bytes": 7058376,
+    "meshes": 61,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 38.70000076293945,
+      "span": 35.099998474121094,
+      "height": 11.585761070251465
+    },
+    "reference": {
+      "length": 38.7,
+      "span": 35.1
+    },
+    "noseWheelRetractionRise": 1.9717091436175682,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 22.74239444732666,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a223",
+    "livery": "delta",
+    "sha256": "a05f73707672581f3fc83c57f06687d24e7f48945e956641a8bb35f50f322159",
+    "bytes": 4539120,
+    "meshes": 61,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 38.70000076293945,
+      "span": 35.099998474121094,
+      "height": 11.585761070251465
+    },
+    "reference": {
+      "length": 38.7,
+      "span": 35.1
+    },
+    "noseWheelRetractionRise": 1.9717091436175682,
+    "runtimeGearCycles": 12,
+    "cabinMaterials": 1,
+    "mainCabinSpan": 22.74239444732666,
+    "maskedCabinMaterials": 0,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  }
+]

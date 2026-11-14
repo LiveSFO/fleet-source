@@ -1,0 +1,2135 @@
+{
+  "aircraft": "a321",
+  "label": "Airbus A321ceo",
+  "livery": {
+    "id": "american",
+    "name": "American Airlines",
+    "xml": "Models/Liveries/A321/CFM/AAL.xml"
+  },
+  "referenceDimensions": {
+    "length": 44.51,
+    "span": 34.1
+  },
+  "axes": "X aft; Y up; Z port",
+  "bounds": {
+    "min": [
+      -1.7599454050797716,
+      -4.538442134857178,
+      -17.065048337716792
+    ],
+    "max": [
+      42.75005459492022,
+      7.84499979019165,
+      17.034951662283206
+    ]
+  },
+  "motions": [
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearLDoor"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -2.382493734359741,
+        0.4660111126305095
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          84.0
+        ],
+        [
+          0.8,
+          84.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearLDoor"
+      ],
+      "model": "Models/Fuselages/A321/fuselage.xml",
+      "scope": "0:Models/A321-200-CFM.xml/0:Fuselage",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/0:Fuselage#26"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearRDoor"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -2.382493734359741,
+        -0.4660111126305095
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          84.0
+        ],
+        [
+          0.8,
+          84.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearRDoor"
+      ],
+      "model": "Models/Fuselages/A321/fuselage.xml",
+      "scope": "0:Models/A321-200-CFM.xml/0:Fuselage",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/0:Fuselage#36"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearNFwdDoorL"
+      ],
+      "axis": [
+        -0.9977802634239197,
+        0.06659296900033951,
+        0.0
+      ],
+      "center": [
+        3.326288699295474,
+        -2.0649564266204834,
+        0.5014403765642261
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          90.0
+        ],
+        [
+          0.8,
+          90.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearNFwdDoorL"
+      ],
+      "model": "Models/Fuselages/A321/fuselage.xml",
+      "scope": "0:Models/A321-200-CFM.xml/0:Fuselage",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/0:Fuselage#32"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearNAftDoorL"
+      ],
+      "axis": [
+        -0.9995635151863098,
+        0.029544226825237274,
+        0.0
+      ],
+      "center": [
+        3.8038993188971197,
+        -2.079073190689087,
+        0.5014403765642261
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.2,
+          0.0
+        ],
+        [
+          0.8,
+          45.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearNAftDoorL"
+      ],
+      "model": "Models/Fuselages/A321/fuselage.xml",
+      "scope": "0:Models/A321-200-CFM.xml/0:Fuselage",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/0:Fuselage#29"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearNFwdDoorR"
+      ],
+      "axis": [
+        0.9977802634239197,
+        -0.06659296900033951,
+        0.0
+      ],
+      "center": [
+        1.1230845139245211,
+        -1.9179121255874634,
+        -0.5014403765642261
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          90.0
+        ],
+        [
+          0.8,
+          90.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearNFwdDoorR"
+      ],
+      "model": "Models/Fuselages/A321/fuselage.xml",
+      "scope": "0:Models/A321-200-CFM.xml/0:Fuselage",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/0:Fuselage#34"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearNAftDoorR"
+      ],
+      "axis": [
+        0.9995635151863098,
+        -0.029544226825237274,
+        0.0
+      ],
+      "center": [
+        3.326288699295474,
+        -2.0649564266204834,
+        -0.5014403765642261
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.2,
+          0.0
+        ],
+        [
+          0.8,
+          45.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearNAftDoorR"
+      ],
+      "model": "Models/Fuselages/A321/fuselage.xml",
+      "scope": "0:Models/A321-200-CFM.xml/0:Fuselage",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/0:Fuselage#30"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearNDoorC"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        3.5571005084798384,
+        -1.8306008577346802,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.2,
+          0.0
+        ],
+        [
+          0.8,
+          -92.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearNDoorC"
+      ],
+      "model": "Models/Fuselages/A321/fuselage.xml",
+      "scope": "0:Models/A321-200-CFM.xml/0:Fuselage",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/0:Fuselage#31"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "D_STRUCT.U"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        2.887646112307588,
+        -2.1406006813049316,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -47.0
+        ],
+        [
+          0.2,
+          -47.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "D_STRUCT.U"
+      ],
+      "model": "Models/LandingGears/a320.nlg.xml",
+      "scope": "0:Models/A321-200-CFM.xml/3:Nose Gear",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/3:Nose Gear#3"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "D_STRUCT.L",
+        "Drag_Structs.Upper"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        3.222373310393713,
+        -2.680600643157959,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          45.0
+        ],
+        [
+          0.2,
+          45.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "D_STRUCT.L",
+        "Drag_Structs.Upper"
+      ],
+      "model": "Models/LandingGears/a320.nlg.xml",
+      "scope": "0:Models/A321-200-CFM.xml/3:Nose Gear",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/3:Nose Gear#2",
+        "0:Models/A321-200-CFM.xml/3:Nose Gear#3"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "ACUTATOR",
+        "AXLE",
+        "Drag_Structs.Lower",
+        "FITTING",
+        "LINK.01",
+        "LINK.02",
+        "LINK.FIT",
+        "OLEO",
+        "Nose Tires"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        3.5571005084798384,
+        -1.9306007623672485,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          92.0
+        ],
+        [
+          0.2,
+          92.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "ACUTATOR",
+        "AXLE",
+        "Drag_Structs.Lower",
+        "FITTING",
+        "LINK.01",
+        "LINK.02",
+        "LINK.FIT",
+        "OLEO",
+        "Nose Tires"
+      ],
+      "model": "Models/LandingGears/a320.nlg.xml",
+      "scope": "0:Models/A321-200-CFM.xml/3:Nose Gear",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/3:Nose Gear#0",
+        "0:Models/A321-200-CFM.xml/3:Nose Gear#1",
+        "0:Models/A321-200-CFM.xml/3:Nose Gear#2",
+        "0:Models/A321-200-CFM.xml/3:Nose Gear#3",
+        "0:Models/A321-200-CFM.xml/3:Nose Gear#4",
+        "0:Models/A321-200-CFM.xml/3:Nose Gear#5",
+        "0:Models/A321-200-CFM.xml/3:Nose Gear#6",
+        "0:Models/A321-200-CFM.xml/3:Nose Gear#7",
+        "0:Models/A321-200-CFM.xml/3:Nose Gear#8",
+        "0:Models/A321-200-CFM.xml/3:Nose Gear/0:Nose Tires#0",
+        "0:Models/A321-200-CFM.xml/3:Nose Gear/0:Nose Tires#1"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "AXLE",
+        "ACTUTATOR",
+        "D_STRUCT.L",
+        "D_STRUCT.U",
+        "FITTING",
+        "OLEO",
+        "LINKS.01",
+        "LINKS.02",
+        "Main Tires"
+      ],
+      "axis": [
+        0.9903444647789001,
+        0.13648974895477295,
+        0.024255847558379173
+      ],
+      "center": [
+        19.19693970610024,
+        -1.2233855724334717,
+        3.7984109959372554
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          80.5
+        ],
+        [
+          0.2,
+          80.5
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "AXLE",
+        "ACTUTATOR",
+        "D_STRUCT.L",
+        "D_STRUCT.U",
+        "FITTING",
+        "OLEO",
+        "LINKS.01",
+        "LINKS.02",
+        "Main Tires"
+      ],
+      "model": "Models/LandingGears/a320.mlg.left.xml",
+      "scope": "0:Models/A321-200-CFM.xml/4:Main Gears.Left",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/4:Main Gears.Left#0",
+        "0:Models/A321-200-CFM.xml/4:Main Gears.Left#1",
+        "0:Models/A321-200-CFM.xml/4:Main Gears.Left#2",
+        "0:Models/A321-200-CFM.xml/4:Main Gears.Left#3",
+        "0:Models/A321-200-CFM.xml/4:Main Gears.Left#4",
+        "0:Models/A321-200-CFM.xml/4:Main Gears.Left#5",
+        "0:Models/A321-200-CFM.xml/4:Main Gears.Left#6",
+        "0:Models/A321-200-CFM.xml/4:Main Gears.Left#7",
+        "0:Models/A321-200-CFM.xml/4:Main Gears.Left/0:Main Tires#0",
+        "0:Models/A321-200-CFM.xml/4:Main Gears.Left/0:Main Tires#1"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "D_STRUCT.L",
+        "D_STRUCT.U"
+      ],
+      "axis": [
+        0.6983447074890137,
+        0.017309226095676422,
+        -0.7155522108078003
+      ],
+      "center": [
+        19.94489952381506,
+        -2.7447237968444824,
+        3.6980051373023164
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          45.0
+        ],
+        [
+          0.2,
+          45.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "D_STRUCT.L",
+        "D_STRUCT.U"
+      ],
+      "model": "Models/LandingGears/a320.mlg.left.xml",
+      "scope": "0:Models/A321-200-CFM.xml/4:Main Gears.Left",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/4:Main Gears.Left#1",
+        "0:Models/A321-200-CFM.xml/4:Main Gears.Left#2"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "D_STRUCT.U"
+      ],
+      "axis": [
+        -0.6981736421585083,
+        -0.014973059296607971,
+        0.7157718539237976
+      ],
+      "center": [
+        19.418248267535667,
+        -1.998942255973816,
+        2.9675242594519977
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          180.0
+        ],
+        [
+          0.2,
+          180.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "D_STRUCT.U"
+      ],
+      "model": "Models/LandingGears/a320.mlg.left.xml",
+      "scope": "0:Models/A321-200-CFM.xml/4:Main Gears.Left",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/4:Main Gears.Left#2"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "AXLE",
+        "ACTUTATOR",
+        "D_STRUCT.L",
+        "D_STRUCT.U",
+        "FITTING",
+        "OLEO",
+        "LINKS.01",
+        "LINKS.02",
+        "Main Tires"
+      ],
+      "axis": [
+        -0.9903444647789001,
+        -0.13648974895477295,
+        0.024255847558379173
+      ],
+      "center": [
+        20.033637159769352,
+        -1.1080715656280518,
+        -3.818903524601576
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          80.5
+        ],
+        [
+          0.2,
+          80.5
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "AXLE",
+        "ACTUTATOR",
+        "D_STRUCT.L",
+        "D_STRUCT.U",
+        "FITTING",
+        "OLEO",
+        "LINKS.01",
+        "LINKS.02",
+        "Main Tires"
+      ],
+      "model": "Models/LandingGears/a320.mlg.right.xml",
+      "scope": "0:Models/A321-200-CFM.xml/5:Main Gears.Right",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/5:Main Gears.Right#0",
+        "0:Models/A321-200-CFM.xml/5:Main Gears.Right#1",
+        "0:Models/A321-200-CFM.xml/5:Main Gears.Right#2",
+        "0:Models/A321-200-CFM.xml/5:Main Gears.Right#3",
+        "0:Models/A321-200-CFM.xml/5:Main Gears.Right#4",
+        "0:Models/A321-200-CFM.xml/5:Main Gears.Right#5",
+        "0:Models/A321-200-CFM.xml/5:Main Gears.Right#6",
+        "0:Models/A321-200-CFM.xml/5:Main Gears.Right#7",
+        "0:Models/A321-200-CFM.xml/5:Main Gears.Right/0:Main Tires#0",
+        "0:Models/A321-200-CFM.xml/5:Main Gears.Right/0:Main Tires#1"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "D_STRUCT.L",
+        "D_STRUCT.U"
+      ],
+      "axis": [
+        -0.6983447074890137,
+        -0.017309226095676422,
+        -0.7155522108078003
+      ],
+      "center": [
+        20.034601492138943,
+        -2.7425003051757812,
+        -3.606091107096446
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          45.0
+        ],
+        [
+          0.2,
+          45.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "D_STRUCT.L",
+        "D_STRUCT.U"
+      ],
+      "model": "Models/LandingGears/a320.mlg.right.xml",
+      "scope": "0:Models/A321-200-CFM.xml/5:Main Gears.Right",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/5:Main Gears.Right#1",
+        "0:Models/A321-200-CFM.xml/5:Main Gears.Right#2"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "D_STRUCT.U"
+      ],
+      "axis": [
+        0.6981736421585083,
+        0.014973059296607971,
+        0.7157718539237976
+      ],
+      "center": [
+        19.27836290008914,
+        -2.0019421577453613,
+        -3.1109360942916156
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          180.0
+        ],
+        [
+          0.2,
+          180.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "D_STRUCT.U"
+      ],
+      "model": "Models/LandingGears/a320.mlg.right.xml",
+      "scope": "0:Models/A321-200-CFM.xml/5:Main Gears.Right",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/5:Main Gears.Right#2"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FlapL1"
+      ],
+      "axis": [
+        0.0,
+        -0.15386845171451569,
+        -0.9880912899971008
+      ],
+      "center": [
+        21.343503539109527,
+        -0.723656952381134,
+        6.255428719215144
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.375,
+          -40.357875
+        ],
+        [
+          1.0,
+          -72.621
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FlapL1"
+      ],
+      "model": "Models/Wings/a320.wings.cfm.xml",
+      "scope": "0:Models/A321-200-CFM.xml/6:a320.wings.cfm",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm#14"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Left inner flap nested"
+      ],
+      "axis": [
+        -0.001442145905457437,
+        -0.14641112089157104,
+        -0.9892227053642273
+      ],
+      "center": [
+        21.320077504550227,
+        -1.1406118869781494,
+        6.320951251330436
+      ],
+      "factor": 107.621,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Left inner flap nested"
+      ],
+      "model": "Models/Wings/a320.wings.cfm.xml",
+      "scope": "0:Models/A321-200-CFM.xml/6:a320.wings.cfm",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm#14"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FlapL2"
+      ],
+      "axis": [
+        -0.28925493359565735,
+        -0.08746533840894699,
+        -0.9532478451728821
+      ],
+      "center": [
+        23.453681930221144,
+        -0.07034456729888916,
+        13.307408399771445
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.375,
+          -42.787875
+        ],
+        [
+          1.0,
+          -79.101
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FlapL2"
+      ],
+      "model": "Models/Wings/a320.wings.cfm.xml",
+      "scope": "0:Models/A321-200-CFM.xml/6:a320.wings.cfm",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm#15"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Left outer flap nested"
+      ],
+      "axis": [
+        -0.29670435190200806,
+        -0.09245473146438599,
+        -0.9504833221435547
+      ],
+      "center": [
+        23.523283476604174,
+        -0.41691136360168457,
+        13.339486780794784
+      ],
+      "factor": 114.101,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Left outer flap nested"
+      ],
+      "model": "Models/Wings/a320.wings.cfm.xml",
+      "scope": "0:Models/A321-200-CFM.xml/6:a320.wings.cfm",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm#15"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FlapR1"
+      ],
+      "axis": [
+        0.0,
+        0.15386845171451569,
+        -0.9880912899971008
+      ],
+      "center": [
+        21.343503539109527,
+        -1.3729647397994995,
+        -2.0857927151917783
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.375,
+          -40.357875
+        ],
+        [
+          1.0,
+          -72.621
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FlapR1"
+      ],
+      "model": "Models/Wings/a320.wings.cfm.xml",
+      "scope": "0:Models/A321-200-CFM.xml/6:a320.wings.cfm",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm#16"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Right inner flap nested"
+      ],
+      "axis": [
+        0.001442145905457437,
+        0.14641112089157104,
+        -0.9892227053642273
+      ],
+      "center": [
+        21.313990394691587,
+        -1.7584753036499023,
+        -2.1463741341299136
+      ],
+      "factor": 107.621,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Right inner flap nested"
+      ],
+      "model": "Models/Wings/a320.wings.cfm.xml",
+      "scope": "0:Models/A321-200-CFM.xml/6:a320.wings.cfm",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm#16"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FlapR2"
+      ],
+      "axis": [
+        0.28925493359565735,
+        0.08746533840894699,
+        -0.9532478451728821
+      ],
+      "center": [
+        21.343503539109527,
+        -0.7084239721298218,
+        -6.3532496093256094
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.375,
+          -42.787875
+        ],
+        [
+          1.0,
+          -74.101
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FlapR2"
+      ],
+      "model": "Models/Wings/a320.wings.cfm.xml",
+      "scope": "0:Models/A321-200-CFM.xml/6:a320.wings.cfm",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm#17"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Right outer flap nested"
+      ],
+      "axis": [
+        0.29670435190200806,
+        0.09245473146438599,
+        -0.9504833221435547
+      ],
+      "center": [
+        21.35356042036314,
+        -1.0930089950561523,
+        -6.38884714368751
+      ],
+      "factor": 114.101,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Right outer flap nested"
+      ],
+      "model": "Models/Wings/a320.wings.cfm.xml",
+      "scope": "0:Models/A321-200-CFM.xml/6:a320.wings.cfm",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm#17"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FairingL1",
+        "staticDisch5"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        19.759490426502115,
+        -1.2461364269256592,
+        4.358924514550117
+      ],
+      "factor": 20.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FairingL1",
+        "staticDisch5"
+      ],
+      "model": "Models/Wings/a320.wings.cfm.xml",
+      "scope": "0:Models/A321-200-CFM.xml/6:a320.wings.cfm",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm#52.0",
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm#52.1"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FairingL2",
+        "staticDisch7"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        20.4690065435067,
+        -0.8473921418190002,
+        7.906905357060517
+      ],
+      "factor": 20.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FairingL2",
+        "staticDisch7"
+      ],
+      "model": "Models/Wings/a320.wings.cfm.xml",
+      "scope": "0:Models/A321-200-CFM.xml/6:a320.wings.cfm",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm#4.0",
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm#4.1"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FairingL3",
+        "staticDisch8"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        21.749407423308856,
+        -0.4298408627510071,
+        11.419021823577964
+      ],
+      "factor": 20.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FairingL3",
+        "staticDisch8"
+      ],
+      "model": "Models/Wings/a320.wings.cfm.xml",
+      "scope": "0:Models/A321-200-CFM.xml/6:a320.wings.cfm",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm#3.0",
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm#3.1"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FairingR1",
+        "staticDisch4"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        19.759490426502115,
+        -1.2461364269256592,
+        -4.358924514550117
+      ],
+      "factor": 20.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FairingR1",
+        "staticDisch4"
+      ],
+      "model": "Models/Wings/a320.wings.cfm.xml",
+      "scope": "0:Models/A321-200-CFM.xml/6:a320.wings.cfm",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm#0.0",
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm#0.1"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FairingR2",
+        "staticDisch2"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        20.4690065435067,
+        -0.8473921418190002,
+        -7.906905357060517
+      ],
+      "factor": 20.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FairingR2",
+        "staticDisch2"
+      ],
+      "model": "Models/Wings/a320.wings.cfm.xml",
+      "scope": "0:Models/A321-200-CFM.xml/6:a320.wings.cfm",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm#1.0",
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm#1.1"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FairingR3",
+        "staticDisch1"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        21.749407423308856,
+        -0.4298408627510071,
+        -11.419021823577964
+      ],
+      "factor": 20.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FairingR3",
+        "staticDisch1"
+      ],
+      "model": "Models/Wings/a320.wings.cfm.xml",
+      "scope": "0:Models/A321-200-CFM.xml/6:a320.wings.cfm",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm#2.0",
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm#2.1"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-l1",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerL1"
+      ],
+      "axis": [
+        0.0,
+        0.15018756687641144,
+        0.988657534122467
+      ],
+      "center": [
+        20.14258194219552,
+        -0.8191899657249451,
+        4.467833678673525
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerL1"
+      ],
+      "model": "Models/Wings/a320.wings.cfm.xml",
+      "scope": "0:Models/A321-200-CFM.xml/6:a320.wings.cfm",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm#29"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-l2",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerL2"
+      ],
+      "axis": [
+        0.3352337181568146,
+        0.0745571106672287,
+        0.9391802549362183
+      ],
+      "center": [
+        20.347414904154444,
+        -0.48618996143341064,
+        6.924891810764718
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerL2"
+      ],
+      "model": "Models/Wings/a320.wings.cfm.xml",
+      "scope": "0:Models/A321-200-CFM.xml/6:a320.wings.cfm",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm#30"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-l3",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerL3"
+      ],
+      "axis": [
+        0.3355857729911804,
+        0.07483496516942978,
+        0.9390324354171753
+      ],
+      "center": [
+        20.947925253286567,
+        -0.35318994522094727,
+        8.605720071604285
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerL3"
+      ],
+      "model": "Models/Wings/a320.wings.cfm.xml",
+      "scope": "0:Models/A321-200-CFM.xml/6:a320.wings.cfm",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm#31"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-l4",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerL4"
+      ],
+      "axis": [
+        0.3355081081390381,
+        0.07418430596590042,
+        0.9391117691993713
+      ],
+      "center": [
+        21.51546153392332,
+        -0.22718995809555054,
+        10.193279531017959
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerL4"
+      ],
+      "model": "Models/Wings/a320.wings.cfm.xml",
+      "scope": "0:Models/A321-200-CFM.xml/6:a320.wings.cfm",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm#32"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-l5",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerL5"
+      ],
+      "axis": [
+        0.33571386337280273,
+        0.07422980666160583,
+        0.9390347599983215
+      ],
+      "center": [
+        22.038036294276722,
+        -0.11118996143341064,
+        11.655479852712192
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerL5"
+      ],
+      "model": "Models/Wings/a320.wings.cfm.xml",
+      "scope": "0:Models/A321-200-CFM.xml/6:a320.wings.cfm",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm#33"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-r1",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerR1"
+      ],
+      "axis": [
+        0.0,
+        -0.15018756687641144,
+        0.988657534122467
+      ],
+      "center": [
+        20.14258194219552,
+        -0.5531899333000183,
+        -6.218863764387975
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerR1"
+      ],
+      "model": "Models/Wings/a320.wings.cfm.xml",
+      "scope": "0:Models/A321-200-CFM.xml/6:a320.wings.cfm",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm#34"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-r2",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerR2"
+      ],
+      "axis": [
+        -0.3352337181568146,
+        -0.0745571106672287,
+        0.9391802549362183
+      ],
+      "center": [
+        20.94093098491424,
+        -0.35418999195098877,
+        -8.587667613589511
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerR2"
+      ],
+      "model": "Models/Wings/a320.wings.cfm.xml",
+      "scope": "0:Models/A321-200-CFM.xml/6:a320.wings.cfm",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm#35"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-r3",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerR3"
+      ],
+      "axis": [
+        -0.3355857729911804,
+        -0.07483496516942978,
+        0.9390324354171753
+      ],
+      "center": [
+        21.508467265550994,
+        -0.22818994522094727,
+        -10.174225699570524
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerR3"
+      ],
+      "model": "Models/Wings/a320.wings.cfm.xml",
+      "scope": "0:Models/A321-200-CFM.xml/6:a320.wings.cfm",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm#36"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-r4",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerR4"
+      ],
+      "axis": [
+        -0.3355081081390381,
+        -0.07418430596590042,
+        0.9391117691993713
+      ],
+      "center": [
+        22.031042025904394,
+        -0.1131899356842041,
+        -11.636425064843142
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerR4"
+      ],
+      "model": "Models/Wings/a320.wings.cfm.xml",
+      "scope": "0:Models/A321-200-CFM.xml/6:a320.wings.cfm",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm#37"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-r5",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerR5"
+      ],
+      "axis": [
+        -0.33571386337280273,
+        -0.07422980666160583,
+        0.9390347599983215
+      ],
+      "center": [
+        22.553614880462597,
+        0.0028100013732910156,
+        -13.097623056683098
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerR5"
+      ],
+      "model": "Models/Wings/a320.wings.cfm.xml",
+      "scope": "0:Models/A321-200-CFM.xml/6:a320.wings.cfm",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm#38"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[3]/n1",
+      "spinDirection": -1,
+      "inputScale": 1,
+      "targets": [
+        "blades",
+        "cone"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        13.63009859562515,
+        -2.0771985054016113,
+        5.771578849024837
+      ],
+      "factor": -67.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "blades",
+        "cone"
+      ],
+      "model": "Models/Engines/XMLs/a320.engine.cfm.left.xml",
+      "scope": "0:Models/A321-200-CFM.xml/6:a320.wings.cfm/0:Engine.CFM.Left",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm/0:Engine.CFM.Left/1:a320.cfm#4",
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm/0:Engine.CFM.Left/1:a320.cfm#6"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[4]/n1",
+      "spinDirection": -1,
+      "inputScale": 1,
+      "targets": [
+        "blades",
+        "cone"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        13.63009859562515,
+        -2.0771985054016113,
+        -5.771578849024837
+      ],
+      "factor": -67.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "blades",
+        "cone"
+      ],
+      "model": "Models/Engines/XMLs/a320.engine.cfm.right.xml",
+      "scope": "0:Models/A321-200-CFM.xml/6:a320.wings.cfm/1:Engine.CFM.Right",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm/1:Engine.CFM.Right/1:a320.cfm#4",
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm/1:Engine.CFM.Right/1:a320.cfm#6"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "original-visual-actuator",
+      "factor": 0.45,
+      "offset": 0,
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0,
+        0.0
+      ],
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "targets": [
+        "Reverser"
+      ],
+      "scope": "original:0:Models/A321-200-CFM.xml/6:a320.wings.cfm/0:Engine.CFM.Left/2:a320.nacelle.cfm#5",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm/0:Engine.CFM.Left/2:a320.nacelle.cfm#5"
+      ],
+      "model": "Models/Engines/XMLs/a320.nacelle.cfm.xml",
+      "basis": "Original visual actuator for separate CFM56 translating sleeve; 0.45 m display stroke, not a maintenance dimension."
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "original-visual-actuator",
+      "factor": 0.45,
+      "offset": 0,
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0,
+        0.0
+      ],
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "targets": [
+        "Reverser"
+      ],
+      "scope": "original:0:Models/A321-200-CFM.xml/6:a320.wings.cfm/1:Engine.CFM.Right/2:a320.nacelle.cfm#5",
+      "targetPartIds": [
+        "0:Models/A321-200-CFM.xml/6:a320.wings.cfm/1:Engine.CFM.Right/2:a320.nacelle.cfm#5"
+      ],
+      "model": "Models/Engines/XMLs/a320.nacelle.cfm.xml",
+      "basis": "Original visual actuator for separate CFM56 translating sleeve; 0.45 m display stroke, not a maintenance dimension."
+    }
+  ],
+  "gearInternalParts": [
+    "ACUTATOR",
+    "AXLE",
+    "D_STRUCT.L",
+    "D_STRUCT.U",
+    "FITTING",
+    "LINK.01",
+    "LINK.02",
+    "LINK.FIT",
+    "OLEO",
+    "Bearing",
+    "Tires",
+    "ACTUTATOR",
+    "D_STRUCT.L",
+    "D_STRUCT.U",
+    "FITTING",
+    "LINKS.01",
+    "LINKS.02",
+    "OLEO",
+    "FITTING",
+    "Bearing",
+    "Tires",
+    "ACTUTATOR",
+    "D_STRUCT.L",
+    "D_STRUCT.U",
+    "FITTING",
+    "LINKS.01",
+    "LINKS.02",
+    "OLEO",
+    "FITTING",
+    "Bearing",
+    "Tires"
+  ],
+  "gearInternalPartIds": [
+    "0:Models/A321-200-CFM.xml/3:Nose Gear#0",
+    "0:Models/A321-200-CFM.xml/3:Nose Gear#1",
+    "0:Models/A321-200-CFM.xml/3:Nose Gear#2",
+    "0:Models/A321-200-CFM.xml/3:Nose Gear#3",
+    "0:Models/A321-200-CFM.xml/3:Nose Gear#4",
+    "0:Models/A321-200-CFM.xml/3:Nose Gear#5",
+    "0:Models/A321-200-CFM.xml/3:Nose Gear#6",
+    "0:Models/A321-200-CFM.xml/3:Nose Gear#7",
+    "0:Models/A321-200-CFM.xml/3:Nose Gear#8",
+    "0:Models/A321-200-CFM.xml/3:Nose Gear/0:Nose Tires#0",
+    "0:Models/A321-200-CFM.xml/3:Nose Gear/0:Nose Tires#1",
+    "0:Models/A321-200-CFM.xml/4:Main Gears.Left#0",
+    "0:Models/A321-200-CFM.xml/4:Main Gears.Left#1",
+    "0:Models/A321-200-CFM.xml/4:Main Gears.Left#2",
+    "0:Models/A321-200-CFM.xml/4:Main Gears.Left#3",
+    "0:Models/A321-200-CFM.xml/4:Main Gears.Left#4",
+    "0:Models/A321-200-CFM.xml/4:Main Gears.Left#5",
+    "0:Models/A321-200-CFM.xml/4:Main Gears.Left#6",
+    "0:Models/A321-200-CFM.xml/4:Main Gears.Left#7",
+    "0:Models/A321-200-CFM.xml/4:Main Gears.Left/0:Main Tires#0",
+    "0:Models/A321-200-CFM.xml/4:Main Gears.Left/0:Main Tires#1",
+    "0:Models/A321-200-CFM.xml/5:Main Gears.Right#0",
+    "0:Models/A321-200-CFM.xml/5:Main Gears.Right#1",
+    "0:Models/A321-200-CFM.xml/5:Main Gears.Right#2",
+    "0:Models/A321-200-CFM.xml/5:Main Gears.Right#3",
+    "0:Models/A321-200-CFM.xml/5:Main Gears.Right#4",
+    "0:Models/A321-200-CFM.xml/5:Main Gears.Right#5",
+    "0:Models/A321-200-CFM.xml/5:Main Gears.Right#6",
+    "0:Models/A321-200-CFM.xml/5:Main Gears.Right#7",
+    "0:Models/A321-200-CFM.xml/5:Main Gears.Right/0:Main Tires#0",
+    "0:Models/A321-200-CFM.xml/5:Main Gears.Right/0:Main Tires#1"
+  ],
+  "missingTextures": [],
+  "sourceAC": [
+    "Models/empty.ac",
+    "Models/Fuselages/A321/res/fuselage.ac",
+    "Models/LandingGears/res/a320.nlg.ac",
+    "Models/LandingGears/res/a320.nlg.tires.ac",
+    "Models/LandingGears/res/a320.mlg.left.ac",
+    "Models/LandingGears/res/a320.mlg.tires.ac",
+    "Models/LandingGears/res/a320.mlg.right.ac",
+    "Models/LandingGears/res/a320.mlg.tires.ac",
+    "Models/Wings/res/a320.wings.ac",
+    "Models/Engines/Models/a320.pylon.cfm.left.ac",
+    "Models/Engines/Models/cfm56.ac",
+    "Models/Engines/Models/a320.nacelle.cfm.ac",
+    "Models/Engines/Models/a320.pylon.cfm.right.ac",
+    "Models/Engines/Models/cfm56.ac",
+    "Models/Engines/Models/a320.nacelle.cfm.ac",
+    "Models/Wings/a320.winglets.ac",
+    "Models/Fuselages/A321/res/hstab.ac",
+    "Models/Fuselages/A321/res/vstab.ac"
+  ],
+  "discardedUnreferencedVertices": 51,
+  "provenance": "preparation/A320Family-modern",
+  "variantConstruction": {},
+  "capabilities": [
+    "fans",
+    "flaps",
+    "gear",
+    "reversers",
+    "spoilers"
+  ],
+  "reviewPoints": {
+    "cockpit": [
+      0.6794595122337341,
+      0.5856000185012817,
+      2.6598572731018066e-06
+    ],
+    "door": [
+      3.331324577331543,
+      0.8022445440292358,
+      1.5600261688232422
+    ],
+    "engine": [
+      16.35637664794922,
+      -2.1503777503967285,
+      5.770576000213623
+    ],
+    "gear": [
+      3.2512030601501465,
+      -3.8635363578796387,
+      -0.0
+    ],
+    "wing": [
+      20.824020385742188,
+      -0.9861809015274048,
+      4.162958145141602
+    ]
+  },
+  "fidelityNotes": [],
+  "reviewStatus": "build-awaiting-validation",
+  "addedDoorWindowPanes": 0,
+  "fittedCockpitOpenings": 0,
+  "fittedCabinOpenings": 0,
+  "envelopeCalibration": {
+    "rawDimensions": {
+      "length": 44.5462806224823,
+      "span": 34.00204849243164
+    },
+    "axisScale": [
+      0.9991855521499141,
+      1,
+      1.0028807531284523
+    ]
+  },
+  "skippedSourceModels": [
+    "Aircraft/IDG-A32X/Models/Effects/enginefire.xml",
+    "Aircraft/IDG-A32X/Models/RAT/RAT.xml",
+    "Aircraft/IDG-A32X/Models/FlightDeck/a320.flightdeck.xml",
+    "Aircraft/IDG-A32X/Models/Interior/a321.interior.xml",
+    "Aircraft/IDG-A32X/Models/Effects/contrail-eng1.xml",
+    "Aircraft/IDG-A32X/Models/Effects/enginefire.xml",
+    "Aircraft/IDG-A32X/Models/Effects/contrail-eng2.xml",
+    "Aircraft/IDG-A32X/Models/Effects/enginefire.xml",
+    "Aircraft/IDG-A32X/Models/Wings/a320.sharklets.xml [source condition false]",
+    "Models/Airport/Pushback/Goldhofert.xml",
+    "Aircraft/IDG-A32X/Models/Services/Fuel-Truck/Fuel_Truck_Short_VolvoFM.ac",
+    "Aircraft/IDG-A32X/Models/Services/De-Icing/volvo_deicing_truck.xml",
+    "Aircraft/IDG-A32X/Models/Services/Catering/L_T_VolvoFM-4_5m-set.xml",
+    "Aircraft/IDG-A32X/Models/Services/Baggage/cargo_ramp.ac",
+    "Aircraft/IDG-A32X/Models/Services/External-Power/ext-pwr-box.ac",
+    "Aircraft/IDG-A32X/Models/Services/Chocks/chock_nose.ac",
+    "Aircraft/IDG-A32X/Models/Services/Chocks/chock_left.ac",
+    "Aircraft/IDG-A32X/Models/Services/Chocks/chock_right.ac",
+    "Aircraft/IDG-A32X/Models/Services/Stairs/stairs.xml",
+    "Aircraft/IDG-A32X/Models/Services/Stairs/stairs.xml"
+  ],
+  "unresolvedMotions": [],
+  "cargo": false
+}

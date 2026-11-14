@@ -1,0 +1,95 @@
+{
+  "continue": {
+    "iistart": "2022-06-21T01:37:32Z",
+    "continue": "||"
+  },
+  "query": {
+    "pages": {
+      "119537840": {
+        "pageid": 119537840,
+        "ns": 6,
+        "title": "File:ZIPAIR logo.svg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/ZIPAIR_logo.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:ZIPAIR_logo.svg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=119537840",
+            "sha1": "3c85d30c9ac2f9f448f5b2f26cea08a436540962",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2025-03-07 13:45:29",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "ZIPAIR logo",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "ZIPAIR Tokyo|With trademark|PD textlogo|SVG simple text logos|Black and teal logos|All-caps logos|6 letter alphabet logos of Japan|SVG logos of airlines of Japan|Black alphabet logos of Japan|Japan Airlines logos|TOO-Japan|Valid SVG created with Text Editor:Text logos|Text logos with underlines|Times New Roman Logos|2019 SVG logos",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Logo of <a href=\"https://en.wikipedia.org/wiki/ZIPAIR_Tokyo\" class=\"extiw\" title=\"w:ZIPAIR Tokyo\">ZIPAIR Tokyo</a>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2018-07-31",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "Own work using: <a rel=\"nofollow\" class=\"external free\" href=\"https://www.zipair.net/en/\">https://www.zipair.net/en/</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"https://en.wikipedia.org/wiki/ZIPAIR_Tokyo\" class=\"extiw\" title=\"w:ZIPAIR Tokyo\">ZIPAIR</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "trademarked",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

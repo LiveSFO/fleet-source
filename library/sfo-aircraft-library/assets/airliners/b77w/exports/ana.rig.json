@@ -1,0 +1,6014 @@
+{
+  "aircraft": "b77w",
+  "label": "Boeing 777-300ER",
+  "livery": {
+    "id": "ana",
+    "name": "ANA \u00b7 Inspiration of JAPAN",
+    "xml": "777-VMD/Models/Liveries-300ER/AFR2blanc.xml",
+    "authoredPaint": {
+      "bodyPartPattern": "^Fuselage|^porte automatique|^entry|^LFdoor|^LRdoor|^RFdoor|^RRdoor|^queu pointe$",
+      "finPartPattern": "^Tail$|^Rudder$|^LRudder$",
+      "bodyColorSRGB": [
+        247,
+        248,
+        249
+      ],
+      "resolution": 2048,
+      "finColorSRGB": [
+        19,
+        48,
+        110
+      ],
+      "references": [
+        "https://www.ana.co.jp/group/777_30th/gallery/"
+      ],
+      "bodyBands": [
+        {
+          "range": [
+            -4,
+            -1.21
+          ],
+          "colorSRGB": [
+            190,
+            195,
+            198
+          ]
+        }
+      ],
+      "bodyPolygons": [
+        {
+          "points": [
+            [
+              0.055,
+              -1.18
+            ],
+            [
+              0.2,
+              -1.06
+            ],
+            [
+              0.79,
+              -0.27
+            ],
+            [
+              0.958,
+              0.1
+            ],
+            [
+              1,
+              0.57
+            ],
+            [
+              0.865,
+              0.4
+            ],
+            [
+              0.242,
+              -0.74
+            ]
+          ],
+          "colorSRGB": [
+            40,
+            156,
+            219
+          ]
+        },
+        {
+          "points": [
+            [
+              0.055,
+              -1.18
+            ],
+            [
+              0.2,
+              -0.99
+            ],
+            [
+              0.84,
+              -0.03
+            ],
+            [
+              0.95,
+              0.44
+            ],
+            [
+              0.971,
+              0.95
+            ],
+            [
+              0.822,
+              0.53
+            ],
+            [
+              0.2,
+              -0.58
+            ]
+          ],
+          "colorSRGB": [
+            19,
+            48,
+            110
+          ]
+        }
+      ],
+      "bodyGraphics": [
+        {
+          "image": "preparation/brand-art/ana-forward-title.png",
+          "box": [
+            0.138,
+            0.67,
+            0.256,
+            2.1
+          ]
+        },
+        {
+          "image": "preparation/brand-art/ana-inspiration.png",
+          "box": [
+            0.146,
+            1.61,
+            0.251,
+            1.95
+          ]
+        }
+      ],
+      "finPolygons": [
+        {
+          "points": [
+            [
+              0.52,
+              -0.04
+            ],
+            [
+              0.74,
+              -0.04
+            ],
+            [
+              1,
+              0.99
+            ],
+            [
+              1,
+              1.1
+            ],
+            [
+              0.94,
+              1.1
+            ]
+          ],
+          "colorSRGB": [
+            40,
+            156,
+            219
+          ]
+        }
+      ],
+      "finGraphics": [
+        {
+          "image": "preparation/brand-art/ana-tail-type.png",
+          "box": [
+            0.44,
+            0.27,
+            0.845,
+            0.88
+          ],
+          "oppositeSideImage": "preparation/brand-art/ana-tail-type-opposite.png"
+        }
+      ],
+      "bodyCenterZ": -0.001585
+    }
+  },
+  "referenceDimensions": {
+    "length": 73.86,
+    "span": 64.8
+  },
+  "axes": "X aft; Y up; Z port",
+  "bounds": {
+    "min": [
+      -30.357534535933553,
+      -5.741049766540527,
+      -32.4
+    ],
+    "max": [
+      43.50246546406645,
+      12.35789966583252,
+      32.4
+    ]
+  },
+  "motions": [
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Frontgear"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        -24.355770295215073,
+        -2.3469998836517334,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          110.0
+        ],
+        [
+          0.2,
+          110.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Frontgear"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#68",
+        "0:777-VMD/Models/777-300ER-v2.xml#68.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#68.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#68.0.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#68.1",
+        "0:777-VMD/Models/777-300ER-v2.xml#68.1.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#68.1.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#68.2",
+        "0:777-VMD/Models/777-300ER-v2.xml#68.2.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#72",
+        "0:777-VMD/Models/777-300ER-v2.xml#73",
+        "0:777-VMD/Models/777-300ER-v2.xml#74"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FrtGear.008"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        -24.466035402886416,
+        -2.622999906539917,
+        -0.6367650118696944
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -110.0
+        ],
+        [
+          0.2,
+          -110.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FrtGear.008"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#68.2",
+        "0:777-VMD/Models/777-300ER-v2.xml#68.2.0"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "translate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FrtGear.010"
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "center": [
+        -24.466035402886416,
+        -2.622999906539917,
+        -0.6367650118696944
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -0.158
+        ],
+        [
+          0.2,
+          -0.158
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FrtGear.010"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#68.2.0"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "LFdoor"
+      ],
+      "axis": [
+        -0.9724882245063782,
+        0.23295223712921143,
+        0.0
+      ],
+      "center": [
+        -25.82428006069142,
+        -2.552079916000366,
+        0.7204658347303855
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          90.0
+        ],
+        [
+          0.8,
+          90.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "LFdoor"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#106"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "RFdoor"
+      ],
+      "axis": [
+        -0.9724882245063782,
+        0.23295223712921143,
+        0.0
+      ],
+      "center": [
+        -25.82428006069142,
+        -2.552079916000366,
+        -0.7204658347303855
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          -90.0
+        ],
+        [
+          0.8,
+          -90.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "RFdoor"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#190"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "LRdoor"
+      ],
+      "axis": [
+        -0.9915614724159241,
+        0.12963762879371643,
+        0.0
+      ],
+      "center": [
+        -23.99760986771649,
+        -2.816610097885132,
+        0.7204658347303855
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          90.0
+        ],
+        [
+          1.0,
+          90.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "LRdoor"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#134"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "RRdoor"
+      ],
+      "axis": [
+        -0.9915614724159241,
+        0.12963762879371643,
+        0.0
+      ],
+      "center": [
+        -23.99760986771649,
+        -2.816610097885132,
+        -0.7204658347303855
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          -90.0
+        ],
+        [
+          1.0,
+          -90.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "RRdoor"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#217"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "translate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FrtGear.009"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          0.0
+        ],
+        [
+          0.2,
+          0.0
+        ],
+        [
+          0.3,
+          0.05
+        ],
+        [
+          0.4,
+          0.03
+        ],
+        [
+          0.5,
+          0.03
+        ],
+        [
+          0.6,
+          0.03
+        ],
+        [
+          0.7,
+          0.05
+        ],
+        [
+          0.8,
+          0.05
+        ],
+        [
+          0.9,
+          0.05
+        ],
+        [
+          0.95,
+          0.05
+        ],
+        [
+          0.97,
+          0.05
+        ],
+        [
+          0.98,
+          0.05
+        ],
+        [
+          0.99,
+          0.05
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FrtGear.009"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#70.0.0.0.0"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Lstrut"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        6.912718247093953,
+        -5.100069999694824,
+        5.6196510346349235
+      ],
+      "factor": 1.0,
+      "offset": -12.5,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Lstrut"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#145",
+        "0:777-VMD/Models/777-300ER-v2.xml#145.0"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Lgear"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        6.912718247093953,
+        -5.100069999694824,
+        5.6196510346349235
+      ],
+      "factor": 1.0,
+      "offset": -10.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Lgear"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#117",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.0.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.0.0.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.1",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.1.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.1.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.1.0.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.2",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.2.0"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Lmain.geardoor",
+        "Lmain.geardoor.001"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        6.267049904474059,
+        -3.4362399578094482,
+        1.1219582738121798
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3,
+          90.0
+        ],
+        [
+          0.7,
+          90.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Lmain.geardoor",
+        "Lmain.geardoor.001"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#130",
+        "0:777-VMD/Models/777-300ER-v2.xml#131"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "LHaxle"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        6.912718247093953,
+        -5.100069999694824,
+        5.6196510346349235
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.95,
+          -18.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "LHaxle"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#125",
+        "0:777-VMD/Models/777-300ER-v2.xml#126",
+        "0:777-VMD/Models/777-300ER-v2.xml#127",
+        "0:777-VMD/Models/777-300ER-v2.xml#98",
+        "0:777-VMD/Models/777-300ER-v2.xml#98.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#98.1",
+        "0:777-VMD/Models/777-300ER-v2.xml#99"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Laxle.002"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        5.442983072954905,
+        -5.1000800132751465,
+        5.6196510346349235
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.95,
+          0.0
+        ],
+        [
+          1.0,
+          -6.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Laxle.002"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#98.0"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Laxle.003"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        8.388500372477047,
+        -5.1000800132751465,
+        5.6196510346349235
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.95,
+          0.0
+        ],
+        [
+          1.0,
+          -18.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Laxle.003"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#98.1"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "LHgear"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        6.330313687878956,
+        -1.2619999647140503,
+        5.615991315219594
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.2,
+          80.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "LHgear"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#117",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.0.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.0.0.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.1",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.1.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.1.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.1.0.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.2",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.2.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#125",
+        "0:777-VMD/Models/777-300ER-v2.xml#126",
+        "0:777-VMD/Models/777-300ER-v2.xml#127",
+        "0:777-VMD/Models/777-300ER-v2.xml#145",
+        "0:777-VMD/Models/777-300ER-v2.xml#145.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#98",
+        "0:777-VMD/Models/777-300ER-v2.xml#98.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#98.1",
+        "0:777-VMD/Models/777-300ER-v2.xml#99"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Fuselage.008"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        33.54592067122974,
+        -1.327929973602295,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          0.0
+        ],
+        [
+          0.8,
+          52.2
+        ],
+        [
+          1.0,
+          52.2
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Fuselage.008"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#83"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "translate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "queu pointe"
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "center": [
+        34.02076676359124,
+        -0.9300860166549683,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.52
+        ],
+        [
+          0.2,
+          0.52
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "queu pointe"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#162"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Lgear1"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        6.330313687878956,
+        -1.2619999647140503,
+        5.615991315219594
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          82.0
+        ],
+        [
+          0.2,
+          82.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Lgear1"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#118"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Lgear1"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        6.330313687878956,
+        -1.2619999647140503,
+        5.615991315219594
+      ],
+      "factor": 1.0,
+      "offset": -82.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Lgear1"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#118"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "LHgear"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        6.330313687878956,
+        -1.2619999647140503,
+        5.615991315219594
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          10.0
+        ],
+        [
+          0.4,
+          10.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "LHgear"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#117",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.0.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.0.0.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.1",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.1.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.1.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.1.0.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.2",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.2.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#125",
+        "0:777-VMD/Models/777-300ER-v2.xml#126",
+        "0:777-VMD/Models/777-300ER-v2.xml#127",
+        "0:777-VMD/Models/777-300ER-v2.xml#145",
+        "0:777-VMD/Models/777-300ER-v2.xml#145.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#98",
+        "0:777-VMD/Models/777-300ER-v2.xml#98.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#98.1",
+        "0:777-VMD/Models/777-300ER-v2.xml#99"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Llockbrace"
+      ],
+      "axis": [
+        -0.9596197605133057,
+        0.10596515238285065,
+        -0.26057878136634827
+      ],
+      "center": [
+        7.174170798631256,
+        -3.2621700763702393,
+        5.3654915082500345
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -60.0
+        ],
+        [
+          0.3,
+          -60.0
+        ],
+        [
+          0.6,
+          -23.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Llockbrace"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#117.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.0.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.0.0.0.0"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Llockbrace1"
+      ],
+      "axis": [
+        -0.9708694815635681,
+        0.07393570244312286,
+        -0.22791647911071777
+      ],
+      "center": [
+        7.477891704259884,
+        -2.662169933319092,
+        4.347873027059936
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          175.0
+        ],
+        [
+          0.3,
+          175.0
+        ],
+        [
+          0.6,
+          100.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Llockbrace1"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#117.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.0.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.0.0.0.0"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Llockbrace.001"
+      ],
+      "axis": [
+        -0.9596197605133057,
+        -0.10596515238285065,
+        0.26057878136634827
+      ],
+      "center": [
+        6.874392778469043,
+        -3.243220090866089,
+        5.318891716810037
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -60.0
+        ],
+        [
+          0.3,
+          -60.0
+        ],
+        [
+          0.6,
+          -23.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Llockbrace.001"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#117.1",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.1.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.1.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.1.0.0.0"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Llockbrace1.001"
+      ],
+      "axis": [
+        -0.9708694815635681,
+        -0.07393570244312286,
+        0.22791647911071777
+      ],
+      "center": [
+        6.63425178435476,
+        -2.6442599296569824,
+        4.292663000638489
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          175.0
+        ],
+        [
+          0.3,
+          175.0
+        ],
+        [
+          0.6,
+          100.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Llockbrace1.001"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#117.1.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.1.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.1.0.0.0"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Llbrace1"
+      ],
+      "axis": [
+        -0.9473448395729065,
+        0.06653416156768799,
+        0.313226580619812
+      ],
+      "center": [
+        6.659061009563974,
+        -2.6290900707244873,
+        4.257563072799733
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -220.0
+        ],
+        [
+          0.3,
+          -220.0
+        ],
+        [
+          0.6,
+          -120.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Llbrace1"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#117.1.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.1.0.0.0"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Llbrace"
+      ],
+      "axis": [
+        -0.9899345636367798,
+        0.0,
+        0.14152581989765167
+      ],
+      "center": [
+        6.807216261906234,
+        -2.551539897918701,
+        4.87302249761258
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          180.0
+        ],
+        [
+          0.3,
+          180.0
+        ],
+        [
+          0.6,
+          90.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Llbrace"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#117.1.0.0.0"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Llbrace1.001"
+      ],
+      "axis": [
+        -0.9472547173500061,
+        -0.0665278285741806,
+        -0.3135005533695221
+      ],
+      "center": [
+        7.244874664158941,
+        -2.6302599906921387,
+        4.284243023382998
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -220.0
+        ],
+        [
+          0.3,
+          -220.0
+        ],
+        [
+          0.6,
+          -120.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Llbrace1.001"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#117.0.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#117.0.0.0.0"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Llbrace.001"
+      ],
+      "axis": [
+        -0.9899345636367798,
+        0.0,
+        -0.14152581989765167
+      ],
+      "center": [
+        7.096511643565911,
+        -2.551539897918701,
+        4.876672203463386
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          180.0
+        ],
+        [
+          0.3,
+          180.0
+        ],
+        [
+          0.6,
+          90.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Llbrace.001"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#117.0.0.0.0"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Lwing.geardoor"
+      ],
+      "axis": [
+        -0.9941744208335876,
+        -0.10738295316696167,
+        0.009279993362724781
+      ],
+      "center": [
+        6.712681707806178,
+        -1.5889999866485596,
+        6.027990367669125
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          0.0
+        ],
+        [
+          0.5,
+          90.0
+        ],
+        [
+          1.0,
+          90.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Lwing.geardoor"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#148"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Lramdoor"
+      ],
+      "axis": [
+        0.9807491898536682,
+        0.19527150690555573,
+        0.0
+      ],
+      "center": [
+        5.540876782673975,
+        -2.2239999771118164,
+        3.064995221628263
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3,
+          80.0
+        ],
+        [
+          1.0,
+          80.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Lramdoor"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#133"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Rstrut"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        6.912718247093953,
+        -5.100069999694824,
+        -5.6196510346349235
+      ],
+      "factor": 1.0,
+      "offset": -12.5,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Rstrut"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#227",
+        "0:777-VMD/Models/777-300ER-v2.xml#227.0"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Rgear"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        6.912718247093953,
+        -5.100069999694824,
+        -5.6196510346349235
+      ],
+      "factor": 1.0,
+      "offset": -10.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Rgear"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#201",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.0.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.0.0.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.1",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.1.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.1.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.1.0.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.2",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.2.0"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Rmain.geardoor",
+        "Rmain.geardoor.001"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        6.267049904474059,
+        -3.4362399578094482,
+        -1.1219582738121798
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3,
+          -90.0
+        ],
+        [
+          0.7,
+          -90.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Rmain.geardoor",
+        "Rmain.geardoor.001"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#213",
+        "0:777-VMD/Models/777-300ER-v2.xml#214"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "RHaxle"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        6.912718247093953,
+        -5.100069999694824,
+        -5.6196510346349235
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.95,
+          -18.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "RHaxle"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#167",
+        "0:777-VMD/Models/777-300ER-v2.xml#167.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#167.1",
+        "0:777-VMD/Models/777-300ER-v2.xml#168",
+        "0:777-VMD/Models/777-300ER-v2.xml#206",
+        "0:777-VMD/Models/777-300ER-v2.xml#207",
+        "0:777-VMD/Models/777-300ER-v2.xml#208"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Raxle.002"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        5.442983072954905,
+        -5.1000800132751465,
+        -5.6196510346349235
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.95,
+          0.0
+        ],
+        [
+          1.0,
+          -6.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Raxle.002"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#167.0"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Raxle.003"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        8.388500372477047,
+        -5.1000800132751465,
+        -5.6196510346349235
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.95,
+          0.0
+        ],
+        [
+          1.0,
+          -18.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Raxle.003"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#167.1"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "RHgear",
+        "Rgear1"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        6.330313687878956,
+        -1.2619999647140503,
+        -5.615991315219594
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -80.0
+        ],
+        [
+          0.2,
+          -80.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "RHgear",
+        "Rgear1"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#167",
+        "0:777-VMD/Models/777-300ER-v2.xml#167.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#167.1",
+        "0:777-VMD/Models/777-300ER-v2.xml#168",
+        "0:777-VMD/Models/777-300ER-v2.xml#201",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.0.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.0.0.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.1",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.1.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.1.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.1.0.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.2",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.2.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#202",
+        "0:777-VMD/Models/777-300ER-v2.xml#206",
+        "0:777-VMD/Models/777-300ER-v2.xml#207",
+        "0:777-VMD/Models/777-300ER-v2.xml#208",
+        "0:777-VMD/Models/777-300ER-v2.xml#227",
+        "0:777-VMD/Models/777-300ER-v2.xml#227.0"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Rgear1"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        6.330313687878956,
+        -1.2619999647140503,
+        -5.615991315219594
+      ],
+      "factor": 1.0,
+      "offset": 80.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Rgear1"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#202"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "RHgear"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        6.330313687878956,
+        -1.2619999647140503,
+        -5.615991315219594
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          10.0
+        ],
+        [
+          0.4,
+          10.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "RHgear"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#167",
+        "0:777-VMD/Models/777-300ER-v2.xml#167.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#167.1",
+        "0:777-VMD/Models/777-300ER-v2.xml#168",
+        "0:777-VMD/Models/777-300ER-v2.xml#201",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.0.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.0.0.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.1",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.1.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.1.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.1.0.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.2",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.2.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#206",
+        "0:777-VMD/Models/777-300ER-v2.xml#207",
+        "0:777-VMD/Models/777-300ER-v2.xml#208",
+        "0:777-VMD/Models/777-300ER-v2.xml#227",
+        "0:777-VMD/Models/777-300ER-v2.xml#227.0"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Rlockbrace"
+      ],
+      "axis": [
+        -0.9596197605133057,
+        0.10596515238285065,
+        0.26057878136634827
+      ],
+      "center": [
+        7.174170798631256,
+        -3.2621700763702393,
+        -5.3654915082500345
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          60.0
+        ],
+        [
+          0.3,
+          60.0
+        ],
+        [
+          0.6,
+          23.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Rlockbrace"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#201.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.0.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.0.0.0.0"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Rlockbrace1"
+      ],
+      "axis": [
+        -0.9708694815635681,
+        0.07393570244312286,
+        0.22791647911071777
+      ],
+      "center": [
+        7.477891704259884,
+        -2.662169933319092,
+        -4.347873027059936
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -175.0
+        ],
+        [
+          0.3,
+          -175.0
+        ],
+        [
+          0.6,
+          -100.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Rlockbrace1"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#201.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.0.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.0.0.0.0"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Rlockbrace.001"
+      ],
+      "axis": [
+        -0.9596197605133057,
+        -0.10596515238285065,
+        -0.26057878136634827
+      ],
+      "center": [
+        6.874392778469043,
+        -3.243220090866089,
+        -5.318891716810037
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          60.0
+        ],
+        [
+          0.3,
+          60.0
+        ],
+        [
+          0.6,
+          23.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Rlockbrace.001"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#201.1",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.1.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.1.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.1.0.0.0"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Rlockbrace1.001"
+      ],
+      "axis": [
+        -0.9708694815635681,
+        -0.07393570244312286,
+        -0.22791647911071777
+      ],
+      "center": [
+        6.63425178435476,
+        -2.6442599296569824,
+        -4.292663000638489
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -175.0
+        ],
+        [
+          0.3,
+          -175.0
+        ],
+        [
+          0.6,
+          -100.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Rlockbrace1.001"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#201.1.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.1.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.1.0.0.0"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Rlbrace1"
+      ],
+      "axis": [
+        -0.9473448395729065,
+        0.06653416156768799,
+        -0.313226580619812
+      ],
+      "center": [
+        6.659061009563974,
+        -2.6290900707244873,
+        -4.257563072799733
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          220.0
+        ],
+        [
+          0.3,
+          220.0
+        ],
+        [
+          0.6,
+          120.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Rlbrace1"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#201.1.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.1.0.0.0"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Rlbrace"
+      ],
+      "axis": [
+        -0.9899345636367798,
+        0.0,
+        -0.14152581989765167
+      ],
+      "center": [
+        6.807216261906234,
+        -2.551539897918701,
+        -4.87302249761258
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -180.0
+        ],
+        [
+          0.3,
+          -180.0
+        ],
+        [
+          0.6,
+          -90.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Rlbrace"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#201.1.0.0.0"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Rlbrace1.001"
+      ],
+      "axis": [
+        -0.9472547173500061,
+        -0.0665278285741806,
+        0.3135005533695221
+      ],
+      "center": [
+        7.244874664158941,
+        -2.6302599906921387,
+        -4.284243023382998
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          220.0
+        ],
+        [
+          0.3,
+          220.0
+        ],
+        [
+          0.6,
+          120.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Rlbrace1.001"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#201.0.0.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#201.0.0.0.0"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Rlbrace.001"
+      ],
+      "axis": [
+        -0.9899345636367798,
+        0.0,
+        0.14152581989765167
+      ],
+      "center": [
+        7.096511643565911,
+        -2.551539897918701,
+        -4.876672203463386
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -180.0
+        ],
+        [
+          0.3,
+          -180.0
+        ],
+        [
+          0.6,
+          -90.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Rlbrace.001"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#201.0.0.0.0"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Rwing.geardoor"
+      ],
+      "axis": [
+        -0.9941744208335876,
+        -0.10738295316696167,
+        -0.009279993362724781
+      ],
+      "center": [
+        6.712681707806178,
+        -1.5889999866485596,
+        -6.027990367669125
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          0.0
+        ],
+        [
+          0.5,
+          -90.0
+        ],
+        [
+          1.0,
+          -90.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Rwing.geardoor"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#229"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Rramdoor"
+      ],
+      "axis": [
+        0.9807491898536682,
+        0.19527150690555573,
+        0.0
+      ],
+      "center": [
+        5.540876782673975,
+        -2.2239999771118164,
+        -3.064995221628263
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3,
+          -80.0
+        ],
+        [
+          1.0,
+          -80.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Rramdoor"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#216"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Rflap1",
+        "Rflap1.001",
+        "Rflap2",
+        "Rflap2.001"
+      ],
+      "axis": [
+        0.0,
+        -0.13794058561325073,
+        0.9904404878616333
+      ],
+      "center": [
+        7.3383124280372485,
+        -1.244089961051941,
+        -7.878737417258581
+      ],
+      "factor": -35.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Rflap1",
+        "Rflap1.001",
+        "Rflap2",
+        "Rflap2.001"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#191",
+        "0:777-VMD/Models/777-300ER-v2.xml#192",
+        "0:777-VMD/Models/777-300ER-v2.xml#193",
+        "0:777-VMD/Models/777-300ER-v2.xml#194"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Rflap1",
+        "Rflap1.001"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.071666667
+        ],
+        [
+          0.166,
+          0.143333334
+        ],
+        [
+          0.5,
+          0.215000001
+        ],
+        [
+          0.666,
+          0.286666668
+        ],
+        [
+          0.833,
+          0.358333335
+        ],
+        [
+          1.0,
+          0.430000002
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Rflap1",
+        "Rflap1.001"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#191",
+        "0:777-VMD/Models/777-300ER-v2.xml#192"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Rflap1",
+        "Rflap1.001"
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.0
+        ],
+        [
+          0.166,
+          0.0
+        ],
+        [
+          0.5,
+          0.1
+        ],
+        [
+          0.666,
+          0.15
+        ],
+        [
+          0.833,
+          0.25
+        ],
+        [
+          1.0,
+          0.36
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Rflap1",
+        "Rflap1.001"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#191",
+        "0:777-VMD/Models/777-300ER-v2.xml#192"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Rflap1",
+        "Rflap1.001"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.0
+        ],
+        [
+          0.166,
+          0.0125
+        ],
+        [
+          0.5,
+          0.05
+        ],
+        [
+          0.666,
+          0.06
+        ],
+        [
+          0.833,
+          0.07
+        ],
+        [
+          1.0,
+          0.075
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Rflap1",
+        "Rflap1.001"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#191",
+        "0:777-VMD/Models/777-300ER-v2.xml#192"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Rflap2",
+        "Rflap2.001"
+      ],
+      "axis": [
+        0.0,
+        -0.13794058561325073,
+        0.9904404878616333
+      ],
+      "center": [
+        7.3383124280372485,
+        -1.244089961051941,
+        -7.878737417258581
+      ],
+      "factor": -35.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Rflap2",
+        "Rflap2.001"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#193",
+        "0:777-VMD/Models/777-300ER-v2.xml#194"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Rflap2",
+        "Rflap2.001"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.0792
+        ],
+        [
+          0.166,
+          0.1584
+        ],
+        [
+          0.5,
+          0.2376
+        ],
+        [
+          0.666,
+          0.3168
+        ],
+        [
+          0.833,
+          0.396
+        ],
+        [
+          1.0,
+          0.6
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Rflap2",
+        "Rflap2.001"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#193",
+        "0:777-VMD/Models/777-300ER-v2.xml#194"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Rflap2",
+        "Rflap2.001"
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.0
+        ],
+        [
+          0.166,
+          0.15
+        ],
+        [
+          0.5,
+          0.55
+        ],
+        [
+          0.666,
+          0.75
+        ],
+        [
+          0.833,
+          1.0
+        ],
+        [
+          1.0,
+          1.4
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Rflap2",
+        "Rflap2.001"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#193",
+        "0:777-VMD/Models/777-300ER-v2.xml#194"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Rflap2",
+        "Rflap2.001"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.0
+        ],
+        [
+          0.166,
+          0.05
+        ],
+        [
+          0.5,
+          0.12
+        ],
+        [
+          0.666,
+          0.15
+        ],
+        [
+          0.833,
+          0.18
+        ],
+        [
+          1.0,
+          0.21
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Rflap2",
+        "Rflap2.001"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#193",
+        "0:777-VMD/Models/777-300ER-v2.xml#194"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Rflap4",
+        "Rflap4a",
+        "Rflap4b"
+      ],
+      "axis": [
+        -0.4217073619365692,
+        -0.09518196433782578,
+        0.9017224311828613
+      ],
+      "center": [
+        12.145863395978758,
+        0.5609999895095825,
+        -21.048966577771015
+      ],
+      "factor": -30.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Rflap4",
+        "Rflap4a",
+        "Rflap4b"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#195",
+        "0:777-VMD/Models/777-300ER-v2.xml#196",
+        "0:777-VMD/Models/777-300ER-v2.xml#197"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Rflap4",
+        "Rflap4a",
+        "Rflap4b"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.666,
+          0.0
+        ],
+        [
+          1.0,
+          0.8
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Rflap4",
+        "Rflap4a",
+        "Rflap4b"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#195",
+        "0:777-VMD/Models/777-300ER-v2.xml#196",
+        "0:777-VMD/Models/777-300ER-v2.xml#197"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Wings.002",
+        "Wings.007",
+        "Wings.008"
+      ],
+      "axis": [
+        -0.4217073619365692,
+        -0.09518196433782578,
+        0.9017224311828613
+      ],
+      "center": [
+        12.145863395978758,
+        0.5609999895095825,
+        -21.048966577771015
+      ],
+      "factor": -20.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Wings.002",
+        "Wings.007",
+        "Wings.008"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#273",
+        "0:777-VMD/Models/777-300ER-v2.xml#277",
+        "0:777-VMD/Models/777-300ER-v2.xml#278"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Wings.002",
+        "Wings.007",
+        "Wings.008"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.666,
+          0.0
+        ],
+        [
+          1.0,
+          0.8
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Wings.002",
+        "Wings.007",
+        "Wings.008"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#273",
+        "0:777-VMD/Models/777-300ER-v2.xml#277",
+        "0:777-VMD/Models/777-300ER-v2.xml#278"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Rflap5"
+      ],
+      "axis": [
+        -0.4217073619365692,
+        -0.09518196433782578,
+        0.9017224311828613
+      ],
+      "center": [
+        10.854112116497072,
+        -0.38017600774765015,
+        -19.617969079572692
+      ],
+      "factor": -25.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Rflap5"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#198"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Rflap6"
+      ],
+      "axis": [
+        0.4217073619365692,
+        -0.09518196433782578,
+        -0.9017224311828613
+      ],
+      "center": [
+        8.252161998288521,
+        -1.2034499645233154,
+        -14.227677786687881
+      ],
+      "factor": 25.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Rflap6"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#199"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[60]",
+      "spinDirection": 1,
+      "inputScale": 60,
+      "targets": [
+        "Rbrake",
+        "Rbrakea"
+      ],
+      "axis": [
+        -0.011538396589457989,
+        -0.12270283699035645,
+        0.9923763871192932
+      ],
+      "center": [
+        7.277370843516801,
+        -0.5515040159225464,
+        -8.363796390148254
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Rbrake",
+        "Rbrakea"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#169",
+        "0:777-VMD/Models/777-300ER-v2.xml#173"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[61]",
+      "spinDirection": 1,
+      "inputScale": 60,
+      "targets": [
+        "Rbrake1",
+        "Rbrake1a",
+        "Rbrake1b"
+      ],
+      "axis": [
+        0.4325490891933441,
+        0.08357694000005722,
+        -0.8977283239364624
+      ],
+      "center": [
+        7.17508007918451,
+        -0.09099999815225601,
+        -11.978981192512514
+      ],
+      "factor": -1.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Rbrake1",
+        "Rbrake1a",
+        "Rbrake1b"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#170",
+        "0:777-VMD/Models/777-300ER-v2.xml#171",
+        "0:777-VMD/Models/777-300ER-v2.xml#172"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Lflap1",
+        "Lflap1.001",
+        "Lflap2",
+        "Lflap2.001"
+      ],
+      "axis": [
+        0.0,
+        -0.13794058561325073,
+        -0.9904404878616333
+      ],
+      "center": [
+        7.3383124280372485,
+        -1.244089961051941,
+        7.878737417258581
+      ],
+      "factor": 35.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Lflap1",
+        "Lflap1.001",
+        "Lflap2",
+        "Lflap2.001"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#107",
+        "0:777-VMD/Models/777-300ER-v2.xml#108",
+        "0:777-VMD/Models/777-300ER-v2.xml#109",
+        "0:777-VMD/Models/777-300ER-v2.xml#110"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Lflap1",
+        "Lflap1.001"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.071666667
+        ],
+        [
+          0.166,
+          0.143333334
+        ],
+        [
+          0.5,
+          0.215000001
+        ],
+        [
+          0.666,
+          0.286666668
+        ],
+        [
+          0.833,
+          0.358333335
+        ],
+        [
+          1.0,
+          0.430000002
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Lflap1",
+        "Lflap1.001"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#107",
+        "0:777-VMD/Models/777-300ER-v2.xml#108"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Lflap1",
+        "Lflap1.001"
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.0
+        ],
+        [
+          0.166,
+          0.0
+        ],
+        [
+          0.5,
+          0.1
+        ],
+        [
+          0.666,
+          0.15
+        ],
+        [
+          0.833,
+          0.25
+        ],
+        [
+          1.0,
+          0.36
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Lflap1",
+        "Lflap1.001"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#107",
+        "0:777-VMD/Models/777-300ER-v2.xml#108"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Lflap1",
+        "Lflap1.001"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.0
+        ],
+        [
+          0.166,
+          0.0125
+        ],
+        [
+          0.5,
+          0.05
+        ],
+        [
+          0.666,
+          0.06
+        ],
+        [
+          0.833,
+          0.07
+        ],
+        [
+          1.0,
+          0.075
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Lflap1",
+        "Lflap1.001"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#107",
+        "0:777-VMD/Models/777-300ER-v2.xml#108"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Lflap2",
+        "Lflap2.001"
+      ],
+      "axis": [
+        0.0,
+        -0.13794058561325073,
+        -0.9904404878616333
+      ],
+      "center": [
+        7.3383124280372485,
+        -1.244089961051941,
+        7.878737417258581
+      ],
+      "factor": 35.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Lflap2",
+        "Lflap2.001"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#109",
+        "0:777-VMD/Models/777-300ER-v2.xml#110"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Lflap2",
+        "Lflap2.001"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.0792
+        ],
+        [
+          0.166,
+          0.1584
+        ],
+        [
+          0.5,
+          0.2376
+        ],
+        [
+          0.666,
+          0.3168
+        ],
+        [
+          0.833,
+          0.396
+        ],
+        [
+          1.0,
+          0.6
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Lflap2",
+        "Lflap2.001"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#109",
+        "0:777-VMD/Models/777-300ER-v2.xml#110"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Lflap2",
+        "Lflap2.001"
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.0
+        ],
+        [
+          0.166,
+          0.15
+        ],
+        [
+          0.5,
+          0.55
+        ],
+        [
+          0.666,
+          0.75
+        ],
+        [
+          0.833,
+          1.0
+        ],
+        [
+          1.0,
+          1.4
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Lflap2",
+        "Lflap2.001"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#109",
+        "0:777-VMD/Models/777-300ER-v2.xml#110"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Lflap2",
+        "Lflap2.001"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.0
+        ],
+        [
+          0.166,
+          0.05
+        ],
+        [
+          0.5,
+          0.12
+        ],
+        [
+          0.666,
+          0.15
+        ],
+        [
+          0.833,
+          0.18
+        ],
+        [
+          1.0,
+          0.21
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Lflap2",
+        "Lflap2.001"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#109",
+        "0:777-VMD/Models/777-300ER-v2.xml#110"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Cube.001"
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.0
+        ],
+        [
+          0.166,
+          0.1
+        ],
+        [
+          0.5,
+          0.2
+        ],
+        [
+          0.666,
+          0.2
+        ],
+        [
+          0.833,
+          0.3
+        ],
+        [
+          1.0,
+          0.43
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Cube.001"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#94.1"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Lflap4",
+        "Lflap4a",
+        "Lflap4b"
+      ],
+      "axis": [
+        -0.4217073619365692,
+        -0.09518196433782578,
+        -0.9017224311828613
+      ],
+      "center": [
+        12.145863395978758,
+        0.5609999895095825,
+        21.048966577771015
+      ],
+      "factor": 30.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Lflap4",
+        "Lflap4a",
+        "Lflap4b"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#111",
+        "0:777-VMD/Models/777-300ER-v2.xml#112",
+        "0:777-VMD/Models/777-300ER-v2.xml#113"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Lflap4",
+        "Lflap4a",
+        "Lflap4b"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.666,
+          0.0
+        ],
+        [
+          1.0,
+          0.8
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Lflap4",
+        "Lflap4a",
+        "Lflap4b"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#111",
+        "0:777-VMD/Models/777-300ER-v2.xml#112",
+        "0:777-VMD/Models/777-300ER-v2.xml#113"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Wings.001",
+        "Wings.005",
+        "Wings.006"
+      ],
+      "axis": [
+        -0.4217073619365692,
+        -0.09518196433782578,
+        -0.9017224311828613
+      ],
+      "center": [
+        12.145863395978758,
+        0.5609999895095825,
+        21.048966577771015
+      ],
+      "factor": 20.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Wings.001",
+        "Wings.005",
+        "Wings.006"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#272",
+        "0:777-VMD/Models/777-300ER-v2.xml#275",
+        "0:777-VMD/Models/777-300ER-v2.xml#276"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Wings.001",
+        "Wings.005",
+        "Wings.006"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.666,
+          0.0
+        ],
+        [
+          1.0,
+          0.8
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Wings.001",
+        "Wings.005",
+        "Wings.006"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#272",
+        "0:777-VMD/Models/777-300ER-v2.xml#275",
+        "0:777-VMD/Models/777-300ER-v2.xml#276"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Lflap5"
+      ],
+      "axis": [
+        -0.4217073619365692,
+        -0.09518196433782578,
+        -0.9017224311828613
+      ],
+      "center": [
+        10.854112116497072,
+        -0.38017600774765015,
+        19.617969079572692
+      ],
+      "factor": 25.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Lflap5"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#114"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Lflap6"
+      ],
+      "axis": [
+        -0.4217073619365692,
+        -0.09518196433782578,
+        -0.9017224311828613
+      ],
+      "center": [
+        8.252161998288521,
+        -1.2034499645233154,
+        14.227677786687881
+      ],
+      "factor": 25.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Lflap6"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#115"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[50]",
+      "spinDirection": 1,
+      "inputScale": 60,
+      "targets": [
+        "Lbrake",
+        "Lbrakea"
+      ],
+      "axis": [
+        -0.011538396589457989,
+        -0.12270283699035645,
+        -0.9923763871192932
+      ],
+      "center": [
+        7.277370843516801,
+        -0.5515040159225464,
+        8.363796390148254
+      ],
+      "factor": -1.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Lbrake",
+        "Lbrakea"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#100",
+        "0:777-VMD/Models/777-300ER-v2.xml#104"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[51]",
+      "spinDirection": 1,
+      "inputScale": 60,
+      "targets": [
+        "Lbrake1",
+        "Lbrake1a",
+        "Lbrake1b"
+      ],
+      "axis": [
+        -0.4325490891933441,
+        -0.08357694000005722,
+        -0.8977283239364624
+      ],
+      "center": [
+        11.217113874029454,
+        0.6899999976158142,
+        20.36796789631198
+      ],
+      "factor": -1.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Lbrake1",
+        "Lbrake1a",
+        "Lbrake1b"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#101",
+        "0:777-VMD/Models/777-300ER-v2.xml#102",
+        "0:777-VMD/Models/777-300ER-v2.xml#103"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "hinge1"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        6.6375911525213205,
+        -2.1549999713897705,
+        0.0
+      ],
+      "factor": 37.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "hinge1"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#94",
+        "0:777-VMD/Models/777-300ER-v2.xml#94.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#94.1"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "sim/multiplay/generic/float[6]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Reversers1",
+        "Reversers1.002"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 0.7,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Reversers1",
+        "Reversers1.002"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#177",
+        "0:777-VMD/Models/777-300ER-v2.xml#179"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "sim/multiplay/generic/float[6]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Reversers2",
+        "Reversers2.002"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 0.7,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Reversers2",
+        "Reversers2.002"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#180",
+        "0:777-VMD/Models/777-300ER-v2.xml#182"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "sim/multiplay/generic/float[76]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Reversers3",
+        "Reversers3.002"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 0.7,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Reversers3",
+        "Reversers3.002"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#183",
+        "0:777-VMD/Models/777-300ER-v2.xml#185"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "sim/multiplay/generic/float[76]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Reversers4",
+        "Reversers4.002"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 0.7,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Reversers4",
+        "Reversers4.002"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#186",
+        "0:777-VMD/Models/777-300ER-v2.xml#188"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[6]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "clapetDD1"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -4.059947092873861,
+        -2.8907999992370605,
+        9.894104606604666
+      ],
+      "factor": 1.0,
+      "offset": 22.5,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "clapetDD1"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#10.0"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[6]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "clapetDD2"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -4.059947092873861,
+        -2.8907999992370605,
+        9.894104606604666
+      ],
+      "factor": 1.0,
+      "offset": 45.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "clapetDD2"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#10.1"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[6]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "clapetDD3"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -4.059947092873861,
+        -2.8907999992370605,
+        9.894104606604666
+      ],
+      "factor": 1.0,
+      "offset": 67.5,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "clapetDD3"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#10.2"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[6]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "clapetDD4"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -4.059947092873861,
+        -2.8907999992370605,
+        9.894104606604666
+      ],
+      "factor": 1.0,
+      "offset": 90.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "clapetDD4"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#10.3"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[6]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "clapetDD5"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -4.059947092873861,
+        -2.8907999992370605,
+        9.894104606604666
+      ],
+      "factor": 1.0,
+      "offset": 112.5,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "clapetDD5"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#10.4"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[6]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "clapetDD6"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -4.059947092873861,
+        -2.8907999992370605,
+        9.894104606604666
+      ],
+      "factor": 1.0,
+      "offset": 135.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "clapetDD6"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#10.5"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[6]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "clapetDD7"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -4.059947092873861,
+        -2.8907999992370605,
+        9.894104606604666
+      ],
+      "factor": 1.0,
+      "offset": 157.5,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "clapetDD7"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#10.6"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[6]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "clapetDG1"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -4.059947092873861,
+        -2.8907999992370605,
+        9.894104606604666
+      ],
+      "factor": 1.0,
+      "offset": -22.5,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "clapetDG1"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#14.0"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[6]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "clapetDG2"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -4.059947092873861,
+        -2.8907999992370605,
+        9.894104606604666
+      ],
+      "factor": 1.0,
+      "offset": -45.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "clapetDG2"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#14.1"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[6]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "clapetDG3"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -4.059947092873861,
+        -2.8907999992370605,
+        9.894104606604666
+      ],
+      "factor": 1.0,
+      "offset": -67.5,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "clapetDG3"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#14.2"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[6]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "clapetDG4"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -4.059947092873861,
+        -2.8907999992370605,
+        9.894104606604666
+      ],
+      "factor": 1.0,
+      "offset": -90.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "clapetDG4"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#14.3"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[6]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "clapetDG5"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -4.059947092873861,
+        -2.8907999992370605,
+        9.894104606604666
+      ],
+      "factor": 1.0,
+      "offset": -112.5,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "clapetDG5"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#14.4"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[6]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "clapetDG6"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -4.059947092873861,
+        -2.8907999992370605,
+        9.894104606604666
+      ],
+      "factor": 1.0,
+      "offset": -135.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "clapetDG6"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#14.5"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[6]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "clapetDG7"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -4.059947092873861,
+        -2.8907999992370605,
+        9.894104606604666
+      ],
+      "factor": 1.0,
+      "offset": -157.5,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "clapetDG7"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#14.6"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[76]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "clapetGG1"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -4.059947092873861,
+        -2.8907999992370605,
+        -9.894104606604666
+      ],
+      "factor": 1.0,
+      "offset": -22.5,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "clapetGG1"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#12.0"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[76]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "clapetGG2"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -4.059947092873861,
+        -2.8907999992370605,
+        -9.894104606604666
+      ],
+      "factor": 1.0,
+      "offset": -45.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "clapetGG2"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#12.1"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[76]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "clapetGG3"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -4.059947092873861,
+        -2.8907999992370605,
+        -9.894104606604666
+      ],
+      "factor": 1.0,
+      "offset": -67.5,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "clapetGG3"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#12.2"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[76]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "clapetGG4"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -4.059947092873861,
+        -2.8907999992370605,
+        -9.894104606604666
+      ],
+      "factor": 1.0,
+      "offset": -90.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "clapetGG4"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#12.3"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[76]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "clapetGG5"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -4.059947092873861,
+        -2.8907999992370605,
+        -9.894104606604666
+      ],
+      "factor": 1.0,
+      "offset": -112.5,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "clapetGG5"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#12.4"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[76]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "clapetGG6"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -4.059947092873861,
+        -2.8907999992370605,
+        -9.894104606604666
+      ],
+      "factor": 1.0,
+      "offset": -135.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "clapetGG6"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#12.5"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[76]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "clapetGG7"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -4.059947092873861,
+        -2.8907999992370605,
+        -9.894104606604666
+      ],
+      "factor": 1.0,
+      "offset": -157.5,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "clapetGG7"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#12.6"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[76]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "clapetGD1"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -4.059947092873861,
+        -2.8907999992370605,
+        -9.894104606604666
+      ],
+      "factor": 1.0,
+      "offset": 22.5,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "clapetGD1"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#16.0"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[76]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "clapetGD2"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -4.059947092873861,
+        -2.8907999992370605,
+        -9.894104606604666
+      ],
+      "factor": 1.0,
+      "offset": 45.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "clapetGD2"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#16.1"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[76]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "clapetGD3"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -4.059947092873861,
+        -2.8907999992370605,
+        -9.894104606604666
+      ],
+      "factor": 1.0,
+      "offset": 67.5,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "clapetGD3"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#16.2"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[76]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "clapetGD4"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -4.059947092873861,
+        -2.8907999992370605,
+        -9.894104606604666
+      ],
+      "factor": 1.0,
+      "offset": 90.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "clapetGD4"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#16.3"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[76]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "clapetGD5"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -4.059947092873861,
+        -2.8907999992370605,
+        -9.894104606604666
+      ],
+      "factor": 1.0,
+      "offset": 112.5,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "clapetGD5"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#16.4"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[76]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "clapetGD6"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -4.059947092873861,
+        -2.8907999992370605,
+        -9.894104606604666
+      ],
+      "factor": 1.0,
+      "offset": 135.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "clapetGD6"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#16.5"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[76]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "clapetGD7"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -4.059947092873861,
+        -2.8907999992370605,
+        -9.894104606604666
+      ],
+      "factor": 1.0,
+      "offset": 157.5,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "clapetGD7"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#16.6"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[6]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "clapetDD1",
+        "clapetDD2",
+        "clapetDD3",
+        "clapetDD4",
+        "clapetDD5",
+        "clapetDD6",
+        "clapetDD7",
+        "clapetDG1",
+        "clapetDG2",
+        "clapetDG3",
+        "clapetDG4",
+        "clapetDG5",
+        "clapetDG6",
+        "clapetDG7"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        -2.123061025293816,
+        -1.1648499965667725,
+        9.894104606604666
+      ],
+      "factor": 90.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "clapetDD1",
+        "clapetDD2",
+        "clapetDD3",
+        "clapetDD4",
+        "clapetDD5",
+        "clapetDD6",
+        "clapetDD7",
+        "clapetDG1",
+        "clapetDG2",
+        "clapetDG3",
+        "clapetDG4",
+        "clapetDG5",
+        "clapetDG6",
+        "clapetDG7"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#10.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#10.1",
+        "0:777-VMD/Models/777-300ER-v2.xml#10.2",
+        "0:777-VMD/Models/777-300ER-v2.xml#10.3",
+        "0:777-VMD/Models/777-300ER-v2.xml#10.4",
+        "0:777-VMD/Models/777-300ER-v2.xml#10.5",
+        "0:777-VMD/Models/777-300ER-v2.xml#10.6",
+        "0:777-VMD/Models/777-300ER-v2.xml#14.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#14.1",
+        "0:777-VMD/Models/777-300ER-v2.xml#14.2",
+        "0:777-VMD/Models/777-300ER-v2.xml#14.3",
+        "0:777-VMD/Models/777-300ER-v2.xml#14.4",
+        "0:777-VMD/Models/777-300ER-v2.xml#14.5",
+        "0:777-VMD/Models/777-300ER-v2.xml#14.6"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[76]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "clapetGG1",
+        "clapetGG2",
+        "clapetGG3",
+        "clapetGG4",
+        "clapetGG5",
+        "clapetGG6",
+        "clapetGG7",
+        "clapetGD1",
+        "clapetGD2",
+        "clapetGD3",
+        "clapetGD4",
+        "clapetGD5",
+        "clapetGD6",
+        "clapetGD7"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        -2.123061025293816,
+        -1.1648499965667725,
+        -9.894104606604666
+      ],
+      "factor": 90.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "clapetGG1",
+        "clapetGG2",
+        "clapetGG3",
+        "clapetGG4",
+        "clapetGG5",
+        "clapetGG6",
+        "clapetGG7",
+        "clapetGD1",
+        "clapetGD2",
+        "clapetGD3",
+        "clapetGD4",
+        "clapetGD5",
+        "clapetGD6",
+        "clapetGD7"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#12.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#12.1",
+        "0:777-VMD/Models/777-300ER-v2.xml#12.2",
+        "0:777-VMD/Models/777-300ER-v2.xml#12.3",
+        "0:777-VMD/Models/777-300ER-v2.xml#12.4",
+        "0:777-VMD/Models/777-300ER-v2.xml#12.5",
+        "0:777-VMD/Models/777-300ER-v2.xml#12.6",
+        "0:777-VMD/Models/777-300ER-v2.xml#16.0",
+        "0:777-VMD/Models/777-300ER-v2.xml#16.1",
+        "0:777-VMD/Models/777-300ER-v2.xml#16.2",
+        "0:777-VMD/Models/777-300ER-v2.xml#16.3",
+        "0:777-VMD/Models/777-300ER-v2.xml#16.4",
+        "0:777-VMD/Models/777-300ER-v2.xml#16.5",
+        "0:777-VMD/Models/777-300ER-v2.xml#16.6"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[0]/rpm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Lfan"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -4.0994682889827905,
+        -2.8907999992370605,
+        9.894104606604666
+      ],
+      "factor": 10.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Lfan"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#105"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[1]/rpm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Rfan"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -4.0994682889827905,
+        -2.8907999992370605,
+        -9.894104606604666
+      ],
+      "factor": 10.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Rfan"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#189"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[1]/rpm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "RInlets"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -4.059947092873861,
+        -2.8907999992370605,
+        -9.894104606604666
+      ],
+      "factor": 10.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "RInlets"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#210"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[0]/rpm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "LInlets"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -4.059947092873861,
+        -2.8907999992370605,
+        9.894104606604666
+      ],
+      "factor": 10.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "LInlets"
+      ],
+      "model": "777-VMD/Models/777-300ER-v2.xml",
+      "scope": "0:777-VMD/Models/777-300ER-v2.xml",
+      "targetPartIds": [
+        "0:777-VMD/Models/777-300ER-v2.xml#128"
+      ]
+    }
+  ],
+  "gearInternalParts": [
+    "FrtGear",
+    "FrtGear.001",
+    "FUdamper",
+    "FLdamper",
+    "FrtGear.002",
+    "FrtGear.003",
+    "Cube.002",
+    "FrtGear.008",
+    "FrtGear.010",
+    "FrtGear.009",
+    "FrtGear.lines",
+    "FrtStrut",
+    "FrtWheel",
+    "Fuselage.008",
+    "Laxle",
+    "Laxle.002",
+    "Laxle.003",
+    "Laxle.001",
+    "Lgear",
+    "Llockbrace",
+    "Llockbrace1",
+    "Llbrace1.001",
+    "Llbrace.001",
+    "Llockbrace.001",
+    "Llockbrace1.001",
+    "Llbrace1",
+    "Llbrace",
+    "LUdamper",
+    "LBdamper",
+    "Lgear1",
+    "LHwheel.1",
+    "LHwheel.2",
+    "LHwheel.3",
+    "Lstrut",
+    "LBdamper.001",
+    "queu pointe",
+    "Raxle",
+    "Raxle.002",
+    "Raxle.003",
+    "Raxle.001",
+    "Rgear",
+    "Rlockbrace",
+    "Rlockbrace1",
+    "Rlbrace1.001",
+    "Rlbrace.001",
+    "Rlockbrace.001",
+    "Rlockbrace1.001",
+    "Rlbrace1",
+    "Rlbrace",
+    "RUdamper",
+    "RBdamper",
+    "Rgear1",
+    "RHwheel.1",
+    "RHwheel.2",
+    "RHwheel.3",
+    "Rstrut",
+    "RBdamper.001"
+  ],
+  "gearInternalPartIds": [
+    "0:777-VMD/Models/777-300ER-v2.xml#68",
+    "0:777-VMD/Models/777-300ER-v2.xml#68.0",
+    "0:777-VMD/Models/777-300ER-v2.xml#68.0.0",
+    "0:777-VMD/Models/777-300ER-v2.xml#68.0.0.0",
+    "0:777-VMD/Models/777-300ER-v2.xml#68.1",
+    "0:777-VMD/Models/777-300ER-v2.xml#68.1.0",
+    "0:777-VMD/Models/777-300ER-v2.xml#68.1.0.0",
+    "0:777-VMD/Models/777-300ER-v2.xml#68.2",
+    "0:777-VMD/Models/777-300ER-v2.xml#68.2.0",
+    "0:777-VMD/Models/777-300ER-v2.xml#70.0.0.0.0",
+    "0:777-VMD/Models/777-300ER-v2.xml#72",
+    "0:777-VMD/Models/777-300ER-v2.xml#73",
+    "0:777-VMD/Models/777-300ER-v2.xml#74",
+    "0:777-VMD/Models/777-300ER-v2.xml#83",
+    "0:777-VMD/Models/777-300ER-v2.xml#98",
+    "0:777-VMD/Models/777-300ER-v2.xml#98.0",
+    "0:777-VMD/Models/777-300ER-v2.xml#98.1",
+    "0:777-VMD/Models/777-300ER-v2.xml#99",
+    "0:777-VMD/Models/777-300ER-v2.xml#117",
+    "0:777-VMD/Models/777-300ER-v2.xml#117.0",
+    "0:777-VMD/Models/777-300ER-v2.xml#117.0.0",
+    "0:777-VMD/Models/777-300ER-v2.xml#117.0.0.0",
+    "0:777-VMD/Models/777-300ER-v2.xml#117.0.0.0.0",
+    "0:777-VMD/Models/777-300ER-v2.xml#117.1",
+    "0:777-VMD/Models/777-300ER-v2.xml#117.1.0",
+    "0:777-VMD/Models/777-300ER-v2.xml#117.1.0.0",
+    "0:777-VMD/Models/777-300ER-v2.xml#117.1.0.0.0",
+    "0:777-VMD/Models/777-300ER-v2.xml#117.2",
+    "0:777-VMD/Models/777-300ER-v2.xml#117.2.0",
+    "0:777-VMD/Models/777-300ER-v2.xml#118",
+    "0:777-VMD/Models/777-300ER-v2.xml#125",
+    "0:777-VMD/Models/777-300ER-v2.xml#126",
+    "0:777-VMD/Models/777-300ER-v2.xml#127",
+    "0:777-VMD/Models/777-300ER-v2.xml#145",
+    "0:777-VMD/Models/777-300ER-v2.xml#145.0",
+    "0:777-VMD/Models/777-300ER-v2.xml#162",
+    "0:777-VMD/Models/777-300ER-v2.xml#167",
+    "0:777-VMD/Models/777-300ER-v2.xml#167.0",
+    "0:777-VMD/Models/777-300ER-v2.xml#167.1",
+    "0:777-VMD/Models/777-300ER-v2.xml#168",
+    "0:777-VMD/Models/777-300ER-v2.xml#201",
+    "0:777-VMD/Models/777-300ER-v2.xml#201.0",
+    "0:777-VMD/Models/777-300ER-v2.xml#201.0.0",
+    "0:777-VMD/Models/777-300ER-v2.xml#201.0.0.0",
+    "0:777-VMD/Models/777-300ER-v2.xml#201.0.0.0.0",
+    "0:777-VMD/Models/777-300ER-v2.xml#201.1",
+    "0:777-VMD/Models/777-300ER-v2.xml#201.1.0",
+    "0:777-VMD/Models/777-300ER-v2.xml#201.1.0.0",
+    "0:777-VMD/Models/777-300ER-v2.xml#201.1.0.0.0",
+    "0:777-VMD/Models/777-300ER-v2.xml#201.2",
+    "0:777-VMD/Models/777-300ER-v2.xml#201.2.0",
+    "0:777-VMD/Models/777-300ER-v2.xml#202",
+    "0:777-VMD/Models/777-300ER-v2.xml#206",
+    "0:777-VMD/Models/777-300ER-v2.xml#207",
+    "0:777-VMD/Models/777-300ER-v2.xml#208",
+    "0:777-VMD/Models/777-300ER-v2.xml#227",
+    "0:777-VMD/Models/777-300ER-v2.xml#227.0"
+  ],
+  "missingTextures": [],
+  "sourceAC": [
+    "777-VMD/Models/Liveries-300ER/777-300.ac"
+  ],
+  "discardedUnreferencedVertices": 37,
+  "provenance": "preparation/Boeing-777-Flightgear",
+  "variantConstruction": {},
+  "capabilities": [
+    "fans",
+    "flaps",
+    "gear",
+    "reversers",
+    "spoilers"
+  ],
+  "reviewPoints": {
+    "cockpit": [
+      -28.238603591918945,
+      0.7505200505256653,
+      0.0004067889822181314
+    ],
+    "door": [
+      -23.288875579833984,
+      0.8968475461006165,
+      2.537631034851074
+    ],
+    "engine": [
+      -0.9198665618896484,
+      -2.9195799827575684,
+      8.909101486206055
+    ],
+    "gear": [
+      -24.235740661621094,
+      -5.067549705505371,
+      0.0007950067520141602
+    ],
+    "wing": [
+      8.175421714782715,
+      -1.3654099702835083,
+      5.477156162261963
+    ]
+  },
+  "fidelityNotes": [
+    "Suppress FlightGear spill-light meshes at exterior door stations. Runtime fixtures supply lighting without opaque projection cards."
+  ],
+  "reviewStatus": "build-awaiting-validation",
+  "addedDoorWindowPanes": 8,
+  "fittedCockpitOpenings": 1,
+  "fittedCabinOpenings": 0,
+  "envelopeCalibration": {
+    "rawDimensions": {
+      "length": 74.75475120544434,
+      "span": 64.80010223388672
+    },
+    "axisScale": [
+      0.9880308449828782,
+      1,
+      0.999998422319052
+    ]
+  },
+  "skippedSourceModels": [
+    "Aircraft/777-VMD/Models/Cockpit/flightdeck-300.xml",
+    "Aircraft/777-VMD/Models/Lights/light-300.xml",
+    "Aircraft/777-VMD/Models/Seating/passenger_seating1300.xml",
+    "Aircraft/777-VMD/Models/Seating/passenger_seating2.xml",
+    "Aircraft/777-VMD/Models/Seating/TV777-300.xml",
+    "Aircraft/777-VMD/Models/Seating/siege strapontin 777-300.xml",
+    "Aircraft/777-VMD/Models/Seating/wc777-300.xml",
+    "Aircraft/777-VMD/Models/Pilot/Airliner/pilot.xml",
+    "Aircraft/777-VMD/Models/Pilot/Airliner/pilot2.xml",
+    "Aircraft/777-VMD/Models/Effects/smoke_1.xml",
+    "Aircraft/777-VMD/Models/Effects/smoke_12.xml",
+    "Aircraft/777-VMD/Models/Effects/smoke_13.xml",
+    "Aircraft/777-VMD/Models/Effects/smoke_2.xml",
+    "Aircraft/777-VMD/Models/Effects/smoke_22.xml",
+    "Aircraft/777-VMD/Models/Effects/smoke_23.xml",
+    "Aircraft/777-VMD/Models/Effects/smoke_3.xml",
+    "Aircraft/777-VMD/Models/Effects/vapour1.xml",
+    "Aircraft/777-VMD/Models/Effects/vapour1.xml",
+    "Aircraft/777-VMD/Models/Effects/contrail1.xml",
+    "Aircraft/777-VMD/Models/Effects/contrail1.xml",
+    "Aircraft/777-VMD/Models/Effects/tire-smoke-nose.xml",
+    "Aircraft/777-VMD/Models/Effects/tire-smoke-left.xml",
+    "Aircraft/777-VMD/Models/Effects/tire-smoke-right.xml",
+    "Aircraft/777-VMD/Models/Autopush/Goldhofert.xml",
+    "Aircraft/777-VMD/Models/Ground/Services/Fuel-Truck/Fuel_Truck_Short_VolvoFM.xml",
+    "Aircraft/777-VMD/Models/Ground/Services/External-Power/ext-pwr-box.xml",
+    "Aircraft/777-VMD/Models/Ground/Services/Chocks/chock_nose.xml",
+    "Aircraft/777-VMD/Models/Ground/Services/Chocks/chock_left.xml",
+    "Aircraft/777-VMD/Models/Ground/Services/Chocks/chock_right.xml",
+    "Aircraft/777-VMD/Models/Ground/Services/Baggage/cargo_ramp_1.xml",
+    "Aircraft/777-VMD/Models/Ground/Services/Baggage/cargo_ramp_2.xml",
+    "Aircraft/777-VMD/Models/Ground/Services/Baggage 2/bagage2.xml",
+    "Aircraft/777-VMD/Models/Ground/Services/Catering/Catering_Loader_Truck_VolvoFM_1R.xml",
+    "Aircraft/777-VMD/Models/Ground/Services/Catering/Catering_Loader_Truck_VolvoFM_2R.xml",
+    "Aircraft/777-VMD/Models/Ground/Services/Catering/Catering_Loader_Truck_VolvoFM_3R.xml",
+    "Aircraft/777-VMD/Models/Ground/Services/Catering/Catering_Loader_Truck_VolvoFM_4R.xml",
+    "Aircraft/777-VMD/Models/Ground/Services/lavatory/lavatory.xml",
+    "Aircraft/777-VMD/Models/Ground/Services/Water/Potable_Water.xml",
+    "Aircraft/777-VMD/Models/Ground/Services/Stairs/stairs-300.xml",
+    "Aircraft/777-VMD/Models/Ground/Operations/Bus/bus.xml",
+    "Aircraft/777-VMD/Models/Ground/Services/Services300.xml",
+    "Aircraft/777-VMD/Models/Ground/Services/De-Icing/volvo_deicing_truck.xml",
+    "Aircraft/777-VMD/Models/Ground/Services/De-Icing/volvo_deicing_truck1.xml",
+    "Aircraft/777-VMD/Models/Ground/Services/De-Icing/volvo_deicing_truck2.xml",
+    "Aircraft/777-VMD/Models/Ground/Services/De-Icing/volvo_deicing_truck3.xml",
+    "Aircraft/777-VMD/Models/Ground/Services/De-Icing/volvo_deicing_truck4.xml",
+    "Aircraft/777-VMD/Models/Ground/Services/De-Icing/volvo_deicing_truck5.xml",
+    "Aircraft/777-VMD/Models/Ground/Services/De-Icing/volvo_deicing_truck6.xml",
+    "Aircraft/777-VMD/Models/Ground/Services/CamionRadar/CamionRadar.xml",
+    "Aircraft/777-VMD/Models/Ground/Operations/Cones/cone1.xml",
+    "Aircraft/777-VMD/Models/Ground/Operations/Cones/cone2.xml",
+    "Aircraft/777-VMD/Models/Ground/Services/Air-Start-Unit/ASU.xml",
+    "Models/Airport/Vehicle/hoskosh-ti-1500.ac [missing exterior submodel]",
+    "Models/Airport/Vehicle/hoskosh-ti-1500.ac [missing exterior submodel]",
+    "Aircraft/777-VMD/Models/Personel/Flight_attendants/flight_attendants_door1l.xml",
+    "Aircraft/777-VMD/Models/Personel/Flight_attendants/flight_attendants_door2l.xml",
+    "Aircraft/777-VMD/Models/Personel/Flight_attendants/flight_attendants_door3l.xml",
+    "Aircraft/777-VMD/Models/Personel/Flight_attendants/flight_attendants_door4l.xml",
+    "Aircraft/777-VMD/Models/Personel/Flight_attendants/flight_attendants_door5l.xml",
+    "Aircraft/777-VMD/Models/Ground/Services/Evacuation/evacuation300.xml",
+    "Aircraft/777-VMD/Models/Ground/Services/Oxygen_masks/oxygen_mask300.xml"
+  ],
+  "unresolvedMotions": [],
+  "cargo": false,
+  "authoredPaint": {
+    "method": "Original airline paint layout projected in physical exterior coordinates; independent destination texture atlases retained.",
+    "maps": [
+      "b77w/generated/ana/authored-color-0.png",
+      "b77w/generated/ana/authored-color-1.png",
+      "b77w/generated/ana/authored-color-2.png",
+      "b77w/generated/ana/authored-color-3.png",
+      "b77w/generated/ana/authored-color-4.png"
+    ],
+    "references": [
+      "https://www.ana.co.jp/group/777_30th/gallery/"
+    ],
+    "artworkMetadata": [],
+    "reviewStatus": "requires-visual-review"
+  }
+}

@@ -1,0 +1,4676 @@
+{
+  "aircraft": "b38m",
+  "label": "Boeing 737 MAX 8",
+  "livery": {
+    "id": "alaska",
+    "name": "Alaska Airlines",
+    "paintProjection": {
+      "sourceBlend": "b738/alaska.blend",
+      "bodyResolution": 4096,
+      "engineResolution": 512,
+      "sourceBodyPattern": "^fuselage$|^Door|^door|window|Pane|^Cargo",
+      "bodyPartPattern": "^(fuselage|belly|door\\.[FA][LR]O|cdoor\\.(fwd|aft)O|v-stab|rudder)$",
+      "finishes": [
+        {
+          "name": "alaska-nacelles",
+          "partPattern": "^n[12]\\.(cowl|panel|reverser)$",
+          "colorSRGB": [
+            0,
+            54,
+            99
+          ]
+        },
+        {
+          "name": "alaska-wingtips",
+          "partPattern": "^winglet\\.[LR]$",
+          "colorSRGB": [
+            0,
+            54,
+            99
+          ]
+        }
+      ],
+      "angularResolution": 1024
+    },
+    "notes": [
+      "NG donor artwork projected onto MAX 8 geometry; source registration and engine lettering require individual review."
+    ]
+  },
+  "referenceDimensions": {
+    "length": 39.47,
+    "span": 35.92
+  },
+  "axes": "X aft; Y up; Z port",
+  "bounds": {
+    "min": [
+      -18.038120857600642,
+      -3.29259991645813,
+      -17.96
+    ],
+    "max": [
+      21.431879142399357,
+      9.573599815368652,
+      17.96
+    ]
+  },
+  "motions": [
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "mlg.tireL",
+        "mlg.axleL",
+        "mlg.scissorLL",
+        "mlg.scissorUL",
+        "mlg.lowerL",
+        "mlg.upperL",
+        "mlg.coverarmL",
+        "mlg.coverL2",
+        "mlg.coverL3",
+        "mlg.armL3"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        1.2324159641566472,
+        -0.6362199783325195,
+        2.861971498270686
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "mlg.tireL",
+        "mlg.axleL",
+        "mlg.scissorLL",
+        "mlg.scissorUL",
+        "mlg.lowerL",
+        "mlg.upperL",
+        "mlg.coverarmL",
+        "mlg.coverL2",
+        "mlg.coverL3",
+        "mlg.armL3"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#100",
+        "0:Models/737-9.xml#77",
+        "0:Models/737-9.xml#81",
+        "0:Models/737-9.xml#84",
+        "0:Models/737-9.xml#87",
+        "0:Models/737-9.xml#88",
+        "0:Models/737-9.xml#92",
+        "0:Models/737-9.xml#94",
+        "0:Models/737-9.xml#96",
+        "0:Models/737-9.xml#98"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "mlg.coverL1"
+      ],
+      "axis": [
+        -0.966047465801239,
+        -0.11142457276582718,
+        0.23310251533985138
+      ],
+      "center": [
+        1.5410093220606274,
+        -0.7310500144958496,
+        3.000567701309335
+      ],
+      "factor": 90.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "mlg.coverL1"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#86"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "mlg.armL2"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        1.5004600639653594,
+        -0.97052001953125,
+        2.1879671151901654
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -55.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "mlg.armL2"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#76"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "mlg.armL3"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        1.4002257287903217,
+        -1.6471500396728516,
+        2.9947286100988237
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          55.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "mlg.armL3"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#77"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "mlg.coverL3",
+        "mlg.coverarmL"
+      ],
+      "axis": [
+        -0.9885947108268738,
+        -0.028437478467822075,
+        0.14789102971553802
+      ],
+      "center": [
+        1.6498628956789845,
+        -1.464419960975647,
+        2.9805779940926174
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          1.0,
+          45.0
+        ],
+        [
+          0.9,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "mlg.coverL3",
+        "mlg.coverarmL"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#84",
+        "0:Models/737-9.xml#88"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "mlg.tireR",
+        "mlg.axleR",
+        "mlg.scissorLR",
+        "mlg.scissorUR",
+        "mlg.lowerR",
+        "mlg.upperR",
+        "mlg.coverarmR",
+        "mlg.coverR2",
+        "mlg.coverR3",
+        "mlg.armR3"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        1.2324159641566472,
+        -0.6362190246582031,
+        -2.8599853596758282
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -80.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "mlg.tireR",
+        "mlg.axleR",
+        "mlg.scissorLR",
+        "mlg.scissorUR",
+        "mlg.lowerR",
+        "mlg.upperR",
+        "mlg.coverarmR",
+        "mlg.coverR2",
+        "mlg.coverR3",
+        "mlg.armR3"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#101",
+        "0:Models/737-9.xml#80",
+        "0:Models/737-9.xml#82",
+        "0:Models/737-9.xml#85",
+        "0:Models/737-9.xml#90",
+        "0:Models/737-9.xml#91",
+        "0:Models/737-9.xml#93",
+        "0:Models/737-9.xml#95",
+        "0:Models/737-9.xml#97",
+        "0:Models/737-9.xml#99"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "mlg.coverR1"
+      ],
+      "axis": [
+        -0.9660476446151733,
+        -0.11142276227474213,
+        -0.23310256004333496
+      ],
+      "center": [
+        1.5410093220606274,
+        -0.7310500144958496,
+        -3.000567701309335
+      ],
+      "factor": -90.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "mlg.coverR1"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#89"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "mlg.armR2"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        1.5003701735735493,
+        -0.7823020219802856,
+        -1.967436480292062
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          55.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "mlg.armR2"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#79"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "mlg.armR3"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        1.4002257287903217,
+        -1.6471500396728516,
+        -2.992742708259073
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -55.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "mlg.armR3"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#80"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "mlg.coverR3",
+        "mlg.coverarmR"
+      ],
+      "axis": [
+        -0.9885972142219543,
+        -0.028437549248337746,
+        -0.14787466824054718
+      ],
+      "center": [
+        1.6498628956789845,
+        -1.4624500274658203,
+        -2.978939648750334
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          1.0,
+          -45.0
+        ],
+        [
+          0.9,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "mlg.coverR3",
+        "mlg.coverarmR"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#85",
+        "0:Models/737-9.xml#91"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.L1",
+        "flap.L2"
+      ],
+      "axis": [
+        0.020943857729434967,
+        -0.17943733930587769,
+        -0.9835464358329773
+      ],
+      "center": [
+        1.7052714522509005,
+        -0.30903899669647217,
+        5.151137216510806
+      ],
+      "factor": 25.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.L1",
+        "flap.L2"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#40",
+        "0:Models/737-9.xml#41"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.L1",
+        "flap.L2"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.3
+        ],
+        [
+          0.75,
+          0.3
+        ],
+        [
+          1.0,
+          0.3
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.L1",
+        "flap.L2"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#40",
+        "0:Models/737-9.xml#41"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.L2"
+      ],
+      "axis": [
+        0.01036661583930254,
+        -0.20284117758274078,
+        -0.9791567325592041
+      ],
+      "center": [
+        2.375403966015421,
+        -0.4872550070285797,
+        3.9047248019799268
+      ],
+      "factor": 10.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.L2"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#41"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.L2"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.05
+        ],
+        [
+          0.75,
+          0.05
+        ],
+        [
+          1.0,
+          0.05
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.L2"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#41"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "cover.L2"
+      ],
+      "axis": [
+        0.7091366052627563,
+        0.0,
+        -0.7050711512565613
+      ],
+      "center": [
+        1.3739995223840027,
+        -0.8029850125312805,
+        4.276612148310571
+      ],
+      "factor": 28.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "cover.L2"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#17"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.L3",
+        "flap.L4"
+      ],
+      "axis": [
+        -0.3233828842639923,
+        -0.1012633740901947,
+        -0.9408343434333801
+      ],
+      "center": [
+        3.552848800486921,
+        0.30824199318885803,
+        10.56020302304107
+      ],
+      "factor": 25.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.L3",
+        "flap.L4"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#42",
+        "0:Models/737-9.xml#43"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.L3",
+        "flap.L4"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.3
+        ],
+        [
+          0.75,
+          0.3
+        ],
+        [
+          1.0,
+          0.3
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.L3",
+        "flap.L4"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#42",
+        "0:Models/737-9.xml#43"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.L4"
+      ],
+      "axis": [
+        -0.2794930636882782,
+        -0.10352268815040588,
+        -0.954550564289093
+      ],
+      "center": [
+        3.878540620574535,
+        0.2701449990272522,
+        10.337368169061497
+      ],
+      "factor": 10.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.L4"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#43"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.L4"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.05
+        ],
+        [
+          0.75,
+          0.05
+        ],
+        [
+          1.0,
+          0.05
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.L4"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#43"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "cover.L4"
+      ],
+      "axis": [
+        0.7091366052627563,
+        0.0,
+        -0.7050711512565613
+      ],
+      "center": [
+        1.738922366900497,
+        -0.478179007768631,
+        6.533047893501752
+      ],
+      "factor": 26.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "cover.L4"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#19"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "cover.L6"
+      ],
+      "axis": [
+        0.7091366052627563,
+        0.0,
+        -0.7050711512565613
+      ],
+      "center": [
+        2.723717447327826,
+        -0.19130000472068787,
+        9.151788558812079
+      ],
+      "factor": 28.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "cover.L6"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#21"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "slat.L1"
+      ],
+      "axis": [
+        -0.5443856120109558,
+        -0.11334124952554703,
+        -0.8311425447463989
+      ],
+      "center": [
+        -1.7258576616367691,
+        -0.308910995721817,
+        4.741535255102837
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.05,
+          100.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "slat.L1"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#154"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "slat.L2",
+        "slat.L3"
+      ],
+      "axis": [
+        0.46118324995040894,
+        0.07822827249765396,
+        0.8838497400283813
+      ],
+      "center": [
+        -0.851303443364714,
+        -0.8015450239181519,
+        5.262654080645644
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.125,
+          12.5
+        ],
+        [
+          0.375,
+          12.5
+        ],
+        [
+          0.5,
+          25.0
+        ],
+        [
+          1.0,
+          25.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "slat.L2",
+        "slat.L3"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#155",
+        "0:Models/737-9.xml#156"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.R1",
+        "flap.R2"
+      ],
+      "axis": [
+        -0.020943857729434967,
+        0.17943733930587769,
+        -0.9835464358329773
+      ],
+      "center": [
+        1.772207647916651,
+        -0.8825169801712036,
+        -2.0077434454164003
+      ],
+      "factor": 25.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.R1",
+        "flap.R2"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#44",
+        "0:Models/737-9.xml#45"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.R1",
+        "flap.R2"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.3
+        ],
+        [
+          0.75,
+          0.3
+        ],
+        [
+          1.0,
+          0.3
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.R1",
+        "flap.R2"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#44",
+        "0:Models/737-9.xml#45"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.R2"
+      ],
+      "axis": [
+        -0.01036661583930254,
+        0.20284117758274078,
+        -0.9791567325592041
+      ],
+      "center": [
+        2.395338916536122,
+        -0.8773189783096313,
+        -2.0218045679920595
+      ],
+      "factor": 10.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.R2"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#45"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.R2"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.05
+        ],
+        [
+          0.75,
+          0.05
+        ],
+        [
+          1.0,
+          0.05
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.R2"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#45"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "cover.R2"
+      ],
+      "axis": [
+        0.7091366052627563,
+        0.0,
+        -0.7050711512565613
+      ],
+      "center": [
+        1.3739995223840027,
+        -0.8029850125312805,
+        -4.276612148310571
+      ],
+      "factor": 28.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "cover.R2"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#23"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.R3",
+        "flap.R4"
+      ],
+      "axis": [
+        0.32362475991249084,
+        0.10125450789928436,
+        -0.9407520294189453
+      ],
+      "center": [
+        1.7000280444955094,
+        -0.2719460129737854,
+        -5.169696922879634
+      ],
+      "factor": 25.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.R3",
+        "flap.R4"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#46",
+        "0:Models/737-9.xml#47"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.R3",
+        "flap.R4"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.3
+        ],
+        [
+          0.75,
+          0.3
+        ],
+        [
+          1.0,
+          0.3
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.R3",
+        "flap.R4"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#46",
+        "0:Models/737-9.xml#47"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.R4"
+      ],
+      "axis": [
+        0.2794070541858673,
+        0.10352538526058197,
+        -0.9545754194259644
+      ],
+      "center": [
+        2.532227338868067,
+        -0.22852200269699097,
+        -5.739315032145965
+      ],
+      "factor": 10.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.R4"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#47"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.R4"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.05
+        ],
+        [
+          0.75,
+          0.05
+        ],
+        [
+          1.0,
+          0.05
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.R4"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#47"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "cover.R4"
+      ],
+      "axis": [
+        0.7091366052627563,
+        0.0,
+        -0.7050711512565613
+      ],
+      "center": [
+        1.7389672525663413,
+        -0.478179007768631,
+        -6.533047893501752
+      ],
+      "factor": 26.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "cover.R4"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#25"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "cover.R6"
+      ],
+      "axis": [
+        0.7091366052627563,
+        0.0,
+        -0.7050711512565613
+      ],
+      "center": [
+        2.723717447327826,
+        -0.19130000472068787,
+        -9.151788558812079
+      ],
+      "factor": 28.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "cover.R6"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#27"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "slat.R1"
+      ],
+      "axis": [
+        0.5443856120109558,
+        0.11334124952554703,
+        -0.8311425447463989
+      ],
+      "center": [
+        -3.2220131069055764,
+        -0.6204109787940979,
+        -2.45727486593017
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.05,
+          100.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "slat.R1"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#157"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "slat.R2",
+        "slat.R3"
+      ],
+      "axis": [
+        -0.46118324995040894,
+        -0.07822827249765396,
+        0.8838497400283813
+      ],
+      "center": [
+        5.0715859027796615,
+        0.2031259983778,
+        -16.613768791184317
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.125,
+          12.5
+        ],
+        [
+          0.375,
+          12.5
+        ],
+        [
+          0.5,
+          25.0
+        ],
+        [
+          1.0,
+          25.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "slat.R2",
+        "slat.R3"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#158",
+        "0:Models/737-9.xml#159"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-6",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler.L1"
+      ],
+      "axis": [
+        -4.5575565309263766e-05,
+        -0.180643692612648,
+        -0.9835485219955444
+      ],
+      "center": [
+        1.6878433125905483,
+        -0.15334199368953705,
+        4.600079287123517
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler.L1"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#164"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-5",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler.L2"
+      ],
+      "axis": [
+        -0.3291815221309662,
+        -0.08825268596410751,
+        -0.9401335120201111
+      ],
+      "center": [
+        1.9427729400047027,
+        0.04740799963474274,
+        6.2219834077380645
+      ],
+      "factor": -38.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler.L2"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#165"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-4",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler.L3"
+      ],
+      "axis": [
+        -0.32920366525650024,
+        -0.08825550973415375,
+        -0.9401254653930664
+      ],
+      "center": [
+        2.3004177583477343,
+        0.1432880014181137,
+        7.243327420607418
+      ],
+      "factor": -38.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler.L3"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#166"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-3",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler.L4"
+      ],
+      "axis": [
+        -0.3291798532009125,
+        -0.08826721459627151,
+        -0.9401326775550842
+      ],
+      "center": [
+        2.6547440139213285,
+        0.23829799890518188,
+        8.255277464330655
+      ],
+      "factor": -33.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler.L4"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#167"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-2",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler.L5"
+      ],
+      "axis": [
+        -0.3291887938976288,
+        -0.0882536843419075,
+        -0.940130889415741
+      ],
+      "center": [
+        3.014393447531788,
+        0.3347179889678955,
+        9.282400669368382
+      ],
+      "factor": -33.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler.L5"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#168"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-1",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler.L6"
+      ],
+      "axis": [
+        -0.329238623380661,
+        -0.08827376365661621,
+        -0.9401115775108337
+      ],
+      "center": [
+        3.4362648912931317,
+        0.4478279948234558,
+        10.487017284282878
+      ],
+      "factor": -60.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler.L6"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#169"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-7",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler.R1"
+      ],
+      "axis": [
+        4.5575565309263766e-05,
+        0.180643692612648,
+        -0.9835485219955444
+      ],
+      "center": [
+        1.6877324676173362,
+        -0.5927519798278809,
+        -2.207628916583319
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler.R1"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#170"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-8",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler.R2"
+      ],
+      "axis": [
+        0.3291815221309662,
+        0.08825268596410751,
+        -0.9401335120201111
+      ],
+      "center": [
+        1.562798991155658,
+        -0.0544620007276535,
+        -5.136788436479818
+      ],
+      "factor": -38.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler.R2"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#171"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-9",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler.R3"
+      ],
+      "axis": [
+        0.32920366525650024,
+        0.08825550973415375,
+        -0.9401254653930664
+      ],
+      "center": [
+        1.9427738924856754,
+        0.04740799963474274,
+        -6.2219834077380645
+      ],
+      "factor": -38.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler.R3"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#172"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-10",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler.R4"
+      ],
+      "axis": [
+        0.3291798532009125,
+        0.08826721459627151,
+        -0.9401326775550842
+      ],
+      "center": [
+        2.3004177583477343,
+        0.1432880014181137,
+        -7.243327420607418
+      ],
+      "factor": -33.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler.R4"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#173"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-11",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler.R5"
+      ],
+      "axis": [
+        0.3291887938976288,
+        0.0882536843419075,
+        -0.940130889415741
+      ],
+      "center": [
+        2.6547440139213285,
+        0.23829799890518188,
+        -8.255277464330655
+      ],
+      "factor": -33.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler.R5"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#174"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-12",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler.R6"
+      ],
+      "axis": [
+        0.329238623380661,
+        0.08827376365661621,
+        -0.9401115775108337
+      ],
+      "center": [
+        3.014393447531788,
+        0.3347179889678955,
+        -9.282400669368382
+      ],
+      "factor": -60.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler.R6"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#175"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[0]/n1",
+      "spinDirection": -1,
+      "inputScale": 1,
+      "targets": [
+        "n1.fan",
+        "n1.cone"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -3.998063293975801,
+        -1.2851500511169434,
+        4.819975929877734
+      ],
+      "factor": -5.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "n1.fan",
+        "n1.cone"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#103",
+        "0:Models/737-9.xml#106"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "engines/engine[0]/reverser-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "n1.reverser"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.16248408310830317,
+        0.0,
+        -0.28795490008759517
+      ],
+      "factor": 0.3,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "n1.reverser"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#111"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[1]/n1",
+      "spinDirection": -1,
+      "inputScale": 1,
+      "targets": [
+        "n2.fan",
+        "n2.cone"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -3.998063293975801,
+        -1.2851500511169434,
+        -4.8219712852870575
+      ],
+      "factor": -5.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "n2.fan",
+        "n2.cone"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#113",
+        "0:Models/737-9.xml#116"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "engines/engine[1]/reverser-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "n2.reverser"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.16248408310830317,
+        0.0,
+        0.28595954467827217
+      ],
+      "factor": 0.3,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "n2.reverser"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#121"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "nlg.doorR"
+      ],
+      "axis": [
+        0.9880375266075134,
+        -0.15421058237552643,
+        0.0009589313413016498
+      ],
+      "center": [
+        -15.724098737319599,
+        -1.2267299890518188,
+        -0.396108873523418
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          90.0
+        ],
+        [
+          0.75,
+          90.0
+        ],
+        [
+          1.0,
+          90.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "nlg.doorR"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#129"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "nlg.doorL"
+      ],
+      "axis": [
+        0.9880375266075134,
+        -0.15421058237552643,
+        -0.0009589313413016498
+      ],
+      "center": [
+        -15.724098737319599,
+        -1.2267299890518188,
+        0.396108873523418
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          -90.0
+        ],
+        [
+          0.75,
+          -90.0
+        ],
+        [
+          1.0,
+          -90.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "nlg.doorL"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#128"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "nlg.upper",
+        "nlg.lower",
+        "nlg.scissorsU",
+        "nlg.scissorsL",
+        "nlg.axle",
+        "nlg.tire"
+      ],
+      "axis": [
+        0.7091366052627563,
+        0.0,
+        -0.7050711512565613
+      ],
+      "center": [
+        -13.966701811349981,
+        -1.413949966430664,
+        -0.3040924029873538
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          120.0
+        ],
+        [
+          0.25,
+          110.0
+        ],
+        [
+          0.75,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "nlg.upper",
+        "nlg.lower",
+        "nlg.scissorsU",
+        "nlg.scissorsL",
+        "nlg.axle",
+        "nlg.tire"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#126",
+        "0:Models/737-9.xml#130",
+        "0:Models/737-9.xml#131",
+        "0:Models/737-9.xml#132",
+        "0:Models/737-9.xml#133",
+        "0:Models/737-9.xml#134"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "mlg.tireL",
+        "mlg.axleL",
+        "mlg.scissorLL",
+        "mlg.scissorUL",
+        "mlg.lowerL",
+        "mlg.upperL",
+        "mlg.coverarmL",
+        "mlg.coverL2",
+        "mlg.coverL3",
+        "mlg.armL3"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        1.2324159641566472,
+        -0.6362199783325195,
+        2.861971498270686
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "mlg.tireL",
+        "mlg.axleL",
+        "mlg.scissorLL",
+        "mlg.scissorUL",
+        "mlg.lowerL",
+        "mlg.upperL",
+        "mlg.coverarmL",
+        "mlg.coverL2",
+        "mlg.coverL3",
+        "mlg.armL3"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#100",
+        "0:Models/737-9.xml#77",
+        "0:Models/737-9.xml#81",
+        "0:Models/737-9.xml#84",
+        "0:Models/737-9.xml#87",
+        "0:Models/737-9.xml#88",
+        "0:Models/737-9.xml#92",
+        "0:Models/737-9.xml#94",
+        "0:Models/737-9.xml#96",
+        "0:Models/737-9.xml#98"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "mlg.coverL1"
+      ],
+      "axis": [
+        -0.966047465801239,
+        -0.11142457276582718,
+        0.23310251533985138
+      ],
+      "center": [
+        1.5410093220606274,
+        -0.7310500144958496,
+        3.000567701309335
+      ],
+      "factor": 90.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "mlg.coverL1"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#86"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "mlg.armL2"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        1.5004600639653594,
+        -0.97052001953125,
+        2.1879671151901654
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -55.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "mlg.armL2"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#76"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "mlg.armL3"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        1.4002257287903217,
+        -1.6471500396728516,
+        2.9947286100988237
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          55.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "mlg.armL3"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#77"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "mlg.coverL3",
+        "mlg.coverarmL"
+      ],
+      "axis": [
+        -0.9885947108268738,
+        -0.028437478467822075,
+        0.14789102971553802
+      ],
+      "center": [
+        1.6498628956789845,
+        -1.464419960975647,
+        2.9805779940926174
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          1.0,
+          45.0
+        ],
+        [
+          0.9,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "mlg.coverL3",
+        "mlg.coverarmL"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#84",
+        "0:Models/737-9.xml#88"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "mlg.tireR",
+        "mlg.axleR",
+        "mlg.scissorLR",
+        "mlg.scissorUR",
+        "mlg.lowerR",
+        "mlg.upperR",
+        "mlg.coverarmR",
+        "mlg.coverR2",
+        "mlg.coverR3",
+        "mlg.armR3"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        1.2324159641566472,
+        -0.6362190246582031,
+        -2.8599853596758282
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -80.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "mlg.tireR",
+        "mlg.axleR",
+        "mlg.scissorLR",
+        "mlg.scissorUR",
+        "mlg.lowerR",
+        "mlg.upperR",
+        "mlg.coverarmR",
+        "mlg.coverR2",
+        "mlg.coverR3",
+        "mlg.armR3"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#101",
+        "0:Models/737-9.xml#80",
+        "0:Models/737-9.xml#82",
+        "0:Models/737-9.xml#85",
+        "0:Models/737-9.xml#90",
+        "0:Models/737-9.xml#91",
+        "0:Models/737-9.xml#93",
+        "0:Models/737-9.xml#95",
+        "0:Models/737-9.xml#97",
+        "0:Models/737-9.xml#99"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "mlg.coverR1"
+      ],
+      "axis": [
+        -0.9660476446151733,
+        -0.11142276227474213,
+        -0.23310256004333496
+      ],
+      "center": [
+        1.5410093220606274,
+        -0.7310500144958496,
+        -3.000567701309335
+      ],
+      "factor": -90.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "mlg.coverR1"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#89"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "mlg.armR2"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        1.5003701735735493,
+        -0.7823020219802856,
+        -1.967436480292062
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          55.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "mlg.armR2"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#79"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "mlg.armR3"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        1.4002257287903217,
+        -1.6471500396728516,
+        -2.992742708259073
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -55.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "mlg.armR3"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#80"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "mlg.coverR3",
+        "mlg.coverarmR"
+      ],
+      "axis": [
+        -0.9885972142219543,
+        -0.028437549248337746,
+        -0.14787466824054718
+      ],
+      "center": [
+        1.6498628956789845,
+        -1.4624500274658203,
+        -2.978939648750334
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          1.0,
+          -45.0
+        ],
+        [
+          0.9,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "mlg.coverR3",
+        "mlg.coverarmR"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#85",
+        "0:Models/737-9.xml#91"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.L1",
+        "flap.L2"
+      ],
+      "axis": [
+        0.020943857729434967,
+        -0.17943733930587769,
+        -0.9835464358329773
+      ],
+      "center": [
+        1.7052714522509005,
+        -0.30903899669647217,
+        5.151137216510806
+      ],
+      "factor": 25.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.L1",
+        "flap.L2"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#40",
+        "0:Models/737-9.xml#41"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.L1",
+        "flap.L2"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.3
+        ],
+        [
+          0.75,
+          0.3
+        ],
+        [
+          1.0,
+          0.3
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.L1",
+        "flap.L2"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#40",
+        "0:Models/737-9.xml#41"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.L2"
+      ],
+      "axis": [
+        0.01036661583930254,
+        -0.20284117758274078,
+        -0.9791567325592041
+      ],
+      "center": [
+        2.375403966015421,
+        -0.4872550070285797,
+        3.9047248019799268
+      ],
+      "factor": 10.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.L2"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#41"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.L2"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.05
+        ],
+        [
+          0.75,
+          0.05
+        ],
+        [
+          1.0,
+          0.05
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.L2"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#41"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "cover.L2"
+      ],
+      "axis": [
+        0.7091366052627563,
+        0.0,
+        -0.7050711512565613
+      ],
+      "center": [
+        1.3739995223840027,
+        -0.8029850125312805,
+        4.276612148310571
+      ],
+      "factor": 28.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "cover.L2"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#17"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.L3",
+        "flap.L4"
+      ],
+      "axis": [
+        -0.3233828842639923,
+        -0.1012633740901947,
+        -0.9408343434333801
+      ],
+      "center": [
+        3.552848800486921,
+        0.30824199318885803,
+        10.56020302304107
+      ],
+      "factor": 25.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.L3",
+        "flap.L4"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#42",
+        "0:Models/737-9.xml#43"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.L3",
+        "flap.L4"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.3
+        ],
+        [
+          0.75,
+          0.3
+        ],
+        [
+          1.0,
+          0.3
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.L3",
+        "flap.L4"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#42",
+        "0:Models/737-9.xml#43"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.L4"
+      ],
+      "axis": [
+        -0.2794930636882782,
+        -0.10352268815040588,
+        -0.954550564289093
+      ],
+      "center": [
+        3.878540620574535,
+        0.2701449990272522,
+        10.337368169061497
+      ],
+      "factor": 10.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.L4"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#43"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.L4"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.05
+        ],
+        [
+          0.75,
+          0.05
+        ],
+        [
+          1.0,
+          0.05
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.L4"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#43"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "cover.L4"
+      ],
+      "axis": [
+        0.7091366052627563,
+        0.0,
+        -0.7050711512565613
+      ],
+      "center": [
+        1.738922366900497,
+        -0.478179007768631,
+        6.533047893501752
+      ],
+      "factor": 26.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "cover.L4"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#19"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "cover.L6"
+      ],
+      "axis": [
+        0.7091366052627563,
+        0.0,
+        -0.7050711512565613
+      ],
+      "center": [
+        2.723717447327826,
+        -0.19130000472068787,
+        9.151788558812079
+      ],
+      "factor": 28.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "cover.L6"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#21"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "slat.L1"
+      ],
+      "axis": [
+        -0.5443856120109558,
+        -0.11334124952554703,
+        -0.8311425447463989
+      ],
+      "center": [
+        -1.7258576616367691,
+        -0.308910995721817,
+        4.741535255102837
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.05,
+          100.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "slat.L1"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#154"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "slat.L2",
+        "slat.L3"
+      ],
+      "axis": [
+        0.46118324995040894,
+        0.07822827249765396,
+        0.8838497400283813
+      ],
+      "center": [
+        -0.851303443364714,
+        -0.8015450239181519,
+        5.262654080645644
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.125,
+          12.5
+        ],
+        [
+          0.375,
+          12.5
+        ],
+        [
+          0.5,
+          25.0
+        ],
+        [
+          1.0,
+          25.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "slat.L2",
+        "slat.L3"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#155",
+        "0:Models/737-9.xml#156"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.R1",
+        "flap.R2"
+      ],
+      "axis": [
+        -0.020943857729434967,
+        0.17943733930587769,
+        -0.9835464358329773
+      ],
+      "center": [
+        1.772207647916651,
+        -0.8825169801712036,
+        -2.0077434454164003
+      ],
+      "factor": 25.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.R1",
+        "flap.R2"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#44",
+        "0:Models/737-9.xml#45"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.R1",
+        "flap.R2"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.3
+        ],
+        [
+          0.75,
+          0.3
+        ],
+        [
+          1.0,
+          0.3
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.R1",
+        "flap.R2"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#44",
+        "0:Models/737-9.xml#45"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.R2"
+      ],
+      "axis": [
+        -0.01036661583930254,
+        0.20284117758274078,
+        -0.9791567325592041
+      ],
+      "center": [
+        2.395338916536122,
+        -0.8773189783096313,
+        -2.0218045679920595
+      ],
+      "factor": 10.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.R2"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#45"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.R2"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.05
+        ],
+        [
+          0.75,
+          0.05
+        ],
+        [
+          1.0,
+          0.05
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.R2"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#45"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "cover.R2"
+      ],
+      "axis": [
+        0.7091366052627563,
+        0.0,
+        -0.7050711512565613
+      ],
+      "center": [
+        1.3739995223840027,
+        -0.8029850125312805,
+        -4.276612148310571
+      ],
+      "factor": 28.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "cover.R2"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#23"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.R3",
+        "flap.R4"
+      ],
+      "axis": [
+        0.32362475991249084,
+        0.10125450789928436,
+        -0.9407520294189453
+      ],
+      "center": [
+        1.7000280444955094,
+        -0.2719460129737854,
+        -5.169696922879634
+      ],
+      "factor": 25.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.R3",
+        "flap.R4"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#46",
+        "0:Models/737-9.xml#47"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.R3",
+        "flap.R4"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.3
+        ],
+        [
+          0.75,
+          0.3
+        ],
+        [
+          1.0,
+          0.3
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.R3",
+        "flap.R4"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#46",
+        "0:Models/737-9.xml#47"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.R4"
+      ],
+      "axis": [
+        0.2794070541858673,
+        0.10352538526058197,
+        -0.9545754194259644
+      ],
+      "center": [
+        2.532227338868067,
+        -0.22852200269699097,
+        -5.739315032145965
+      ],
+      "factor": 10.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.R4"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#47"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.R4"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.05
+        ],
+        [
+          0.75,
+          0.05
+        ],
+        [
+          1.0,
+          0.05
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.R4"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#47"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "cover.R4"
+      ],
+      "axis": [
+        0.7091366052627563,
+        0.0,
+        -0.7050711512565613
+      ],
+      "center": [
+        1.7389672525663413,
+        -0.478179007768631,
+        -6.533047893501752
+      ],
+      "factor": 26.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "cover.R4"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#25"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "cover.R6"
+      ],
+      "axis": [
+        0.7091366052627563,
+        0.0,
+        -0.7050711512565613
+      ],
+      "center": [
+        2.723717447327826,
+        -0.19130000472068787,
+        -9.151788558812079
+      ],
+      "factor": 28.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "cover.R6"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#27"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "slat.R1"
+      ],
+      "axis": [
+        0.5443856120109558,
+        0.11334124952554703,
+        -0.8311425447463989
+      ],
+      "center": [
+        -3.2220131069055764,
+        -0.6204109787940979,
+        -2.45727486593017
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.05,
+          100.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "slat.R1"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#157"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "slat.R2",
+        "slat.R3"
+      ],
+      "axis": [
+        -0.46118324995040894,
+        -0.07822827249765396,
+        0.8838497400283813
+      ],
+      "center": [
+        5.0715859027796615,
+        0.2031259983778,
+        -16.613768791184317
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.125,
+          12.5
+        ],
+        [
+          0.375,
+          12.5
+        ],
+        [
+          0.5,
+          25.0
+        ],
+        [
+          1.0,
+          25.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "slat.R2",
+        "slat.R3"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#158",
+        "0:Models/737-9.xml#159"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-6",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler.L1"
+      ],
+      "axis": [
+        -4.5575565309263766e-05,
+        -0.180643692612648,
+        -0.9835485219955444
+      ],
+      "center": [
+        1.6878433125905483,
+        -0.15334199368953705,
+        4.600079287123517
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler.L1"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#164"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-5",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler.L2"
+      ],
+      "axis": [
+        -0.3291815221309662,
+        -0.08825268596410751,
+        -0.9401335120201111
+      ],
+      "center": [
+        1.9427729400047027,
+        0.04740799963474274,
+        6.2219834077380645
+      ],
+      "factor": -38.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler.L2"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#165"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-4",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler.L3"
+      ],
+      "axis": [
+        -0.32920366525650024,
+        -0.08825550973415375,
+        -0.9401254653930664
+      ],
+      "center": [
+        2.3004177583477343,
+        0.1432880014181137,
+        7.243327420607418
+      ],
+      "factor": -38.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler.L3"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#166"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-3",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler.L4"
+      ],
+      "axis": [
+        -0.3291798532009125,
+        -0.08826721459627151,
+        -0.9401326775550842
+      ],
+      "center": [
+        2.6547440139213285,
+        0.23829799890518188,
+        8.255277464330655
+      ],
+      "factor": -33.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler.L4"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#167"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-2",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler.L5"
+      ],
+      "axis": [
+        -0.3291887938976288,
+        -0.0882536843419075,
+        -0.940130889415741
+      ],
+      "center": [
+        3.014393447531788,
+        0.3347179889678955,
+        9.282400669368382
+      ],
+      "factor": -33.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler.L5"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#168"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-1",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler.L6"
+      ],
+      "axis": [
+        -0.329238623380661,
+        -0.08827376365661621,
+        -0.9401115775108337
+      ],
+      "center": [
+        3.4362648912931317,
+        0.4478279948234558,
+        10.487017284282878
+      ],
+      "factor": -60.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler.L6"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#169"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-7",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler.R1"
+      ],
+      "axis": [
+        4.5575565309263766e-05,
+        0.180643692612648,
+        -0.9835485219955444
+      ],
+      "center": [
+        1.6877324676173362,
+        -0.5927519798278809,
+        -2.207628916583319
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler.R1"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#170"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-8",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler.R2"
+      ],
+      "axis": [
+        0.3291815221309662,
+        0.08825268596410751,
+        -0.9401335120201111
+      ],
+      "center": [
+        1.562798991155658,
+        -0.0544620007276535,
+        -5.136788436479818
+      ],
+      "factor": -38.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler.R2"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#171"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-9",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler.R3"
+      ],
+      "axis": [
+        0.32920366525650024,
+        0.08825550973415375,
+        -0.9401254653930664
+      ],
+      "center": [
+        1.9427738924856754,
+        0.04740799963474274,
+        -6.2219834077380645
+      ],
+      "factor": -38.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler.R3"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#172"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-10",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler.R4"
+      ],
+      "axis": [
+        0.3291798532009125,
+        0.08826721459627151,
+        -0.9401326775550842
+      ],
+      "center": [
+        2.3004177583477343,
+        0.1432880014181137,
+        -7.243327420607418
+      ],
+      "factor": -33.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler.R4"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#173"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-11",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler.R5"
+      ],
+      "axis": [
+        0.3291887938976288,
+        0.0882536843419075,
+        -0.940130889415741
+      ],
+      "center": [
+        2.6547440139213285,
+        0.23829799890518188,
+        -8.255277464330655
+      ],
+      "factor": -33.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler.R5"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#174"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-12",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler.R6"
+      ],
+      "axis": [
+        0.329238623380661,
+        0.08827376365661621,
+        -0.9401115775108337
+      ],
+      "center": [
+        3.014393447531788,
+        0.3347179889678955,
+        -9.282400669368382
+      ],
+      "factor": -60.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler.R6"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#175"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[0]/n1",
+      "spinDirection": -1,
+      "inputScale": 1,
+      "targets": [
+        "n1.fan",
+        "n1.cone"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -3.998063293975801,
+        -1.2851500511169434,
+        4.819975929877734
+      ],
+      "factor": -5.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "n1.fan",
+        "n1.cone"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#103",
+        "0:Models/737-9.xml#106"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "engines/engine[0]/reverser-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "n1.reverser"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.16248408310830317,
+        0.0,
+        -0.28795490008759517
+      ],
+      "factor": 0.3,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "n1.reverser"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#111"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[1]/n1",
+      "spinDirection": -1,
+      "inputScale": 1,
+      "targets": [
+        "n2.fan",
+        "n2.cone"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -3.998063293975801,
+        -1.2851500511169434,
+        -4.8219712852870575
+      ],
+      "factor": -5.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "n2.fan",
+        "n2.cone"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#113",
+        "0:Models/737-9.xml#116"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "engines/engine[1]/reverser-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "n2.reverser"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.16248408310830317,
+        0.0,
+        0.28595954467827217
+      ],
+      "factor": 0.3,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "n2.reverser"
+      ],
+      "model": "Models/737-9.xml",
+      "scope": "0:Models/737-9.xml",
+      "targetPartIds": [
+        "0:Models/737-9.xml#121"
+      ]
+    }
+  ],
+  "gearInternalParts": [
+    "mlg.armL2",
+    "mlg.armL3",
+    "mlg.armR2",
+    "mlg.armR3",
+    "mlg.axleL",
+    "mlg.axleR",
+    "mlg.coverarmL",
+    "mlg.coverarmR",
+    "mlg.coverL1",
+    "mlg.coverL2",
+    "mlg.coverL3",
+    "mlg.coverR1",
+    "mlg.coverR2",
+    "mlg.coverR3",
+    "mlg.lowerL",
+    "mlg.lowerR",
+    "mlg.scissorLL",
+    "mlg.scissorLR",
+    "mlg.scissorUL",
+    "mlg.scissorUR",
+    "mlg.tireL",
+    "mlg.tireR",
+    "mlg.upperL",
+    "mlg.upperR",
+    "nlg.axle",
+    "nlg.lower",
+    "nlg.scissorsL",
+    "nlg.scissorsU",
+    "nlg.tire",
+    "nlg.upper"
+  ],
+  "gearInternalPartIds": [
+    "0:Models/737-9.xml#76",
+    "0:Models/737-9.xml#77",
+    "0:Models/737-9.xml#79",
+    "0:Models/737-9.xml#80",
+    "0:Models/737-9.xml#81",
+    "0:Models/737-9.xml#82",
+    "0:Models/737-9.xml#84",
+    "0:Models/737-9.xml#85",
+    "0:Models/737-9.xml#86",
+    "0:Models/737-9.xml#87",
+    "0:Models/737-9.xml#88",
+    "0:Models/737-9.xml#89",
+    "0:Models/737-9.xml#90",
+    "0:Models/737-9.xml#91",
+    "0:Models/737-9.xml#92",
+    "0:Models/737-9.xml#93",
+    "0:Models/737-9.xml#94",
+    "0:Models/737-9.xml#95",
+    "0:Models/737-9.xml#96",
+    "0:Models/737-9.xml#97",
+    "0:Models/737-9.xml#98",
+    "0:Models/737-9.xml#99",
+    "0:Models/737-9.xml#100",
+    "0:Models/737-9.xml#101",
+    "0:Models/737-9.xml#126",
+    "0:Models/737-9.xml#130",
+    "0:Models/737-9.xml#131",
+    "0:Models/737-9.xml#132",
+    "0:Models/737-9.xml#133",
+    "0:Models/737-9.xml#134"
+  ],
+  "missingTextures": [],
+  "sourceAC": [
+    "Models/737-9.ac"
+  ],
+  "discardedUnreferencedVertices": 197,
+  "provenance": "preparation/737-MAX",
+  "variantConstruction": {
+    "fuselagePlugs": {
+      "removed": [
+        {
+          "side": "forward",
+          "range": [
+            -6,
+            -4.42
+          ]
+        },
+        {
+          "side": "aft",
+          "range": [
+            12,
+            13.06
+          ]
+        }
+      ],
+      "affectedParts": [
+        "antennae",
+        "apu",
+        "apu.cover",
+        "apu.intake",
+        "cargo.fwd",
+        "cdoor.fwdI",
+        "cdoor.fwdO",
+        "door.ALO",
+        "door.ARO",
+        "door.FLO",
+        "door.FRO",
+        "elevators.L1",
+        "elevators.L2",
+        "elevators.R1",
+        "elevators.R2",
+        "fuselage",
+        "h-stab.L",
+        "h-stab.R",
+        "handle.AL",
+        "handle.AR",
+        "handle.FL",
+        "handle.FR",
+        "hinge.ALO",
+        "hinge.ARO",
+        "hinge.FLO",
+        "hinge.FRO",
+        "interior.aft",
+        "interior.fwd",
+        "light.strobeA",
+        "lightning.elevatorL",
+        "lightning.elevatorR",
+        "lightning.rudder",
+        "lightning.vstab",
+        "nlg.arm",
+        "nlg.arm.001",
+        "nlg.arm.002",
+        "nlg.arm.003",
+        "nlg.axle",
+        "nlg.bay",
+        "nlg.doorL",
+        "nlg.doorR",
+        "nlg.lower",
+        "nlg.scissorsL",
+        "nlg.scissorsU",
+        "nlg.tire",
+        "nlg.upper",
+        "pitot tubes",
+        "pitot.v-stab",
+        "Plane",
+        "rudder",
+        "sensor",
+        "skid",
+        "socket.AL",
+        "socket.AR",
+        "socket.FL",
+        "socket.FR",
+        "static-ports",
+        "v-stab",
+        "whiskers",
+        "windshield",
+        "wiper.L",
+        "wiper.R"
+      ],
+      "basis": "Original plug removal: forward 1.58 m and aft 1.06 m, from Boeing Rev K MAX 8/9 station differences (2.2.2/2.2.3); wing and nacelle geometry retained."
+    },
+    "enginePlacement": {
+      "changes": [
+        {
+          "enginePrefix": "n1.",
+          "sourceCenterline": 5.143845558166504,
+          "targetCenterline": 4.82,
+          "longitudinalShift": 0.14639949798583984
+        },
+        {
+          "enginePrefix": "n2.",
+          "sourceCenterline": -5.141833782196045,
+          "targetCenterline": -4.82,
+          "longitudinalShift": 0.14639949798583984
+        }
+      ],
+      "basis": "Boeing D6-38A004 Rev K, 2.2.2/2.2.3: nacelle centerlines 4.82 m from centerline."
+    },
+    "finalEnginePlacement": {
+      "enginePlacement": {
+        "changes": [
+          {
+            "enginePrefix": "n1.",
+            "sourceCenterline": 4.7863688468933105,
+            "targetCenterline": 4.82,
+            "longitudinalShift": 0.016267776489257812
+          },
+          {
+            "enginePrefix": "n2.",
+            "sourceCenterline": -4.786371231079102,
+            "targetCenterline": -4.82,
+            "longitudinalShift": 0.016267776489257812
+          }
+        ],
+        "basis": "Boeing D6-38A004 Rev K, 2.2.2/2.2.3: nacelle centerlines 4.82 m from centerline."
+      }
+    }
+  },
+  "capabilities": [
+    "fans",
+    "flaps",
+    "gear",
+    "reversers",
+    "spoilers"
+  ],
+  "reviewPoints": {
+    "cockpit": [
+      -15.49994945526123,
+      1.077771544456482,
+      0.0007072623120620847
+    ],
+    "door": [
+      -13.046573638916016,
+      1.1932975053787231,
+      1.4145560264587402
+    ],
+    "engine": [
+      -2.141918659210205,
+      -1.2932848930358887,
+      4.859587669372559
+    ],
+    "gear": [
+      -13.94984245300293,
+      -2.808734893798828,
+      0.0014001578092575073
+    ],
+    "wing": [
+      2.2671995162963867,
+      -0.5396000146865845,
+      3.5824193954467773
+    ]
+  },
+  "fidelityNotes": [
+    "MAX 8 exterior reconstructed with explicit forward/aft plug removal and Boeing plan dimensions. Airline paint recipes retain their own review status; cabin interior is not modeled."
+  ],
+  "reviewStatus": "build-awaiting-validation",
+  "addedDoorWindowPanes": 0,
+  "fittedCockpitOpenings": 0,
+  "fittedCabinOpenings": 0,
+  "envelopeCalibration": {
+    "rawDimensions": {
+      "length": 39.51945114135742,
+      "span": 36.17237854003906
+    },
+    "axisScale": [
+      0.9987486885589443,
+      1,
+      0.9930228934279314
+    ]
+  },
+  "skippedSourceModels": [
+    "Aircraft/737-MAX/Models/Cockpit/cockpit.xml",
+    "Aircraft/737-MAX/Models/Autopush/pushback.xml",
+    "Aircraft/737-MAX/Models/Effects/tyre-smoke-nose.xml",
+    "Aircraft/737-MAX/Models/Effects/tyre-smoke-left.xml",
+    "Aircraft/737-MAX/Models/Effects/tyre-smoke-right.xml",
+    "Aircraft/737-MAX/Models/Effects/tyrespray/rain-nose.xml",
+    "Aircraft/737-MAX/Models/Effects/tyrespray/rain-port.xml",
+    "Aircraft/737-MAX/Models/Effects/tyrespray/rain-stbd.xml",
+    "Aircraft/737-MAX/Models/Effects/fire.xml",
+    "Aircraft/737-MAX/Models/Effects/fire.xml",
+    "Aircraft/737-MAX/Models/Effects/fire.xml",
+    "Aircraft/737-MAX/Models/Effects/Contrail/contrail.xml",
+    "Aircraft/737-MAX/Models/Effects/Contrail/contrail.xml",
+    "Aircraft/737-MAX/Models/Services/Fuel-Truck/Fuel_Truck_Short_VolvoFM.xml",
+    "Aircraft/737-MAX/Models/Services/De-Icing/volvo_deicing_truck.xml",
+    "Aircraft/737-MAX/Models/Services/Baggage/cargo_ramp.xml",
+    "Aircraft/737-MAX/Models/Services/External-Power/ext-pwr-box.ac",
+    "Aircraft/737-MAX/Models/Services/Bus/bus.xml",
+    "Aircraft/737-MAX/Models/Services/Services.xml"
+  ],
+  "unresolvedMotions": [],
+  "paintProjection": {
+    "method": "Original cylindrical fuselage and planar fin surface-coordinate transfer; target geometry and UVs retained",
+    "sourceBlend": "b738/alaska.blend",
+    "maps": [
+      {
+        "surface": "body-and-fin",
+        "resolution": 4096,
+        "sourceAtlas": "737-9.png",
+        "map": "b38m/generated/alaska/body-color.png",
+        "sourceTriangles": {
+          "body": 7927,
+          "fin": 300
+        }
+      }
+    ],
+    "operatorFinishParts": [
+      "n1.cowl",
+      "n1.panel",
+      "n1.reverser",
+      "n2.cowl",
+      "n2.panel",
+      "n2.reverser",
+      "winglet.L",
+      "winglet.R"
+    ],
+    "enginePaintStatus": "operator-specific finish applied; visual review required",
+    "reviewStatus": "requires-visual-review"
+  }
+}

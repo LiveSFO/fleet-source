@@ -1,0 +1,2410 @@
+{
+  "inventory": "traffic/2026-11-11-build-inventory.json",
+  "dateLocal": "2026-11-11",
+  "scope": "All published combinations in the saved SFO flight-status snapshots, plus separately attributed receiver-board and AeroPattern log assignments for cargo, private aircraft and special liveries. Scheduled and observed rows retain their source meaning. See individual snapshot coverage intervals; this is not a complete audited record of every operation.",
+  "officialSnapshots": [
+    {
+      "file": "official-flights.json",
+      "lastUpdate": "Nov 11 at 02:00 am",
+      "operatingRows": 507,
+      "coverageLocal": [
+        "2026-11-11T00:01:00-08:00",
+        "2026-11-11T14:00:00-08:00"
+      ]
+    },
+    {
+      "file": "2026-11-11-official-evening.json",
+      "lastUpdate": "Nov 11 at 08:56 pm",
+      "operatingRows": 341,
+      "coverageLocal": [
+        "2026-11-11T17:00:00-08:00",
+        "2026-11-11T23:59:00-08:00"
+      ]
+    }
+  ],
+  "officialOperatingFlights": 848,
+  "updatedAtUTC": "2026-11-12T08:13:43.474879+00:00",
+  "counts": {
+    "accepted": 1,
+    "multi-angle-reviewed": 141
+  },
+  "combinations": [
+    {
+      "id": "UA/B39M",
+      "operator": "United",
+      "reportedType": "B39M",
+      "canonicalType": "B39M",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b39m",
+        "livery": "united",
+        "glb": "b39m/exports/united.glb",
+        "sha256": "6abc5e93eeafe4c98ce12d0f8c7ffcd279a6730886b93e11ed1c8500a9a50c77"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "UA/E75L",
+      "operator": "United",
+      "reportedType": "E75L",
+      "canonicalType": "E75L",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "e75l",
+        "livery": "united",
+        "glb": "e75l/exports/united.glb",
+        "sha256": "de86b7d92b44b94fd92eba4edb0eaa5afdeb1fd1195acdfb1cc0fd9b4a582e4c"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "UA/B738",
+      "operator": "United",
+      "reportedType": "B738",
+      "canonicalType": "B738",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b738-current",
+        "livery": "united",
+        "glb": "b738-current/exports/united.glb",
+        "sha256": "74f04538e674a145b9150f390a3afaf8cf5ff4b14210d00ac7a388fa74f56451"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "UA/A319",
+      "operator": "United",
+      "reportedType": "A319",
+      "canonicalType": "A319",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a319",
+        "livery": "united",
+        "glb": "a319/exports/united.glb",
+        "sha256": "32ab269521de65886c7568f4e8996f0a46abc53061b2a57637ab5369091c8ad4"
+      },
+      "openIssues": [
+        "Source-era paint; not a verified current-aircraft livery match.",
+        "Source-era paint needs a current-aircraft match before full coverage is accepted."
+      ],
+      "source": "official-airport"
+    },
+    {
+      "id": "AA/A321",
+      "operator": "American",
+      "reportedType": "A321",
+      "canonicalType": "A321",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a321",
+        "livery": "american",
+        "glb": "a321/exports/american.glb",
+        "sha256": "2c7edbbddacf718d6c76a21b8997467c3459d4d5fb7bea0ca7cacdd42599563a"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "UA/B38M",
+      "operator": "United",
+      "reportedType": "B38M",
+      "canonicalType": "B38M",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b38m",
+        "livery": "united",
+        "glb": "b38m/exports/united.glb",
+        "sha256": "cdd2c866c80375088cf7c34494f397c6eede03448412702cc66f27cf7c430ee1"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "UA/B772",
+      "operator": "United",
+      "reportedType": "B772",
+      "canonicalType": "B772",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b772",
+        "livery": "united",
+        "glb": "b772/exports/united.glb",
+        "sha256": "b2f89f3c4e127681a25197b86cb66b8f904a800c2d1f0e276695c351e987654f"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "AS/E75L",
+      "operator": "Alaska Airlines",
+      "reportedType": "E75L",
+      "canonicalType": "E75L",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "e75l",
+        "livery": "alaska",
+        "glb": "e75l/exports/alaska.glb",
+        "sha256": "2abd8b90509a451e9ac9455a0cd24cf0e196ceab519fd4cbaa5d53ebfff2ef60"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "WN/B737",
+      "operator": "Southwest",
+      "reportedType": "B737",
+      "canonicalType": "B737",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b737",
+        "livery": "southwest",
+        "glb": "b737/exports/southwest.glb",
+        "sha256": "8e0ef6e88a1419f4e30d5b298e92e759bb09ae7953accba93932bc1c9b9d5236"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "UA/A320",
+      "operator": "United",
+      "reportedType": "A320",
+      "canonicalType": "A320",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a320",
+        "livery": "united",
+        "glb": "a320/exports/united.glb",
+        "sha256": "a1cf83e38e27bdfdeceefecc53d40b0d512b23cb007f3d4ebc942aca8c19725e"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "UA/B789",
+      "operator": "United",
+      "reportedType": "B789",
+      "canonicalType": "B789",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b789-current",
+        "livery": "united",
+        "glb": "b789-current/exports/united.glb",
+        "sha256": "3b3adc7633d4bbb52231516dbf9376147497e2321e8488c38cb1742d980b62aa"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "DL/B739",
+      "operator": "Delta",
+      "reportedType": "B739",
+      "canonicalType": "B739",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b739",
+        "livery": "delta",
+        "glb": "b739/exports/delta.glb",
+        "sha256": "c9aa86f173dd8d9b7adbff67ef5546989b959510c22ce8d4cf3716987cab27fd"
+      },
+      "openIssues": [
+        "Reported 737-900 versus -900ER exit configuration is not verified per captured registration.",
+        "737-900 versus -900ER exit configuration still requires visual verification."
+      ],
+      "source": "official-airport"
+    },
+    {
+      "id": "AS/B738",
+      "operator": "Alaska Airlines",
+      "reportedType": "B738",
+      "canonicalType": "B738",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b738",
+        "livery": "alaska",
+        "glb": "b738/exports/alaska.glb",
+        "sha256": "98709bc3d6775addf2c1a86ef0303e8b82fd09310be28f32d3f786304d14e10f"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "UA/B739",
+      "operator": "United",
+      "reportedType": "B739",
+      "canonicalType": "B739",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b739",
+        "livery": "united",
+        "glb": "b739/exports/united.glb",
+        "sha256": "a6bab43df31afe631eeb896b0ef190e89498539d31ebed0829241a15ed8c3c17"
+      },
+      "openIssues": [
+        "Reported 737-900 versus -900ER exit configuration is not verified per captured registration.",
+        "737-900 versus -900ER exit configuration still requires visual verification."
+      ],
+      "source": "official-airport"
+    },
+    {
+      "id": "AS/B39M",
+      "operator": "Alaska Airlines",
+      "reportedType": "B39M",
+      "canonicalType": "B39M",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b39m",
+        "livery": "alaska",
+        "glb": "b39m/exports/alaska.glb",
+        "sha256": "557c23920da85555e758cc67df88cbe82dfc8a3e871388a60befa6c387d3b211"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "B6/A321",
+      "operator": "JetBlue",
+      "reportedType": "A321",
+      "canonicalType": "A321",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a321",
+        "livery": "jetblue",
+        "glb": "a321/exports/jetblue.glb",
+        "sha256": "8035261c2eb490f2fb0c85f391dd78dcb66326084ab221fd2e142d89a7beabcf"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "UA/B77W",
+      "operator": "United",
+      "reportedType": "B77W",
+      "canonicalType": "B77W",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b77w",
+        "livery": "united",
+        "glb": "b77w/exports/united.glb",
+        "sha256": "36ee66fb7b46dd3d43dd004320bf7ec9b71d3a79414bf1ecc625fdcec3be7fc5"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "UA/CRJ2",
+      "operator": "United",
+      "reportedType": "CRJ2",
+      "canonicalType": "CRJ2",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "crj200",
+        "livery": "united",
+        "glb": "crj200/exports/united.glb",
+        "sha256": "a10682bee99b2503afd78069ef5b200561b09c7441fe233235e396489b85d7d0"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "UA/A21N",
+      "operator": "United",
+      "reportedType": "A21N",
+      "canonicalType": "A21N",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a21n",
+        "livery": "united",
+        "glb": "a21n/exports/united.glb",
+        "sha256": "9322f09ad9e49344b7b2ed365a9955f80a8c6c5fc1e12dd97a0ce1b0b6ff245a"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "UA/B752",
+      "operator": "United",
+      "reportedType": "B752",
+      "canonicalType": "B752",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b752",
+        "livery": "united",
+        "glb": "b752/exports/united.glb",
+        "sha256": "52fdf87a0d187edb30159383c2401753fa72d2762fcd79d937f5655d0c82cbca"
+      },
+      "openIssues": [
+        "Source-era paint; not a verified current-aircraft livery match.",
+        "Source-era paint needs a current-aircraft match before full coverage is accepted."
+      ],
+      "source": "official-airport"
+    },
+    {
+      "id": "AS/B739",
+      "operator": "Alaska Airlines",
+      "reportedType": "B739",
+      "canonicalType": "B739",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b739",
+        "livery": "alaska",
+        "glb": "b739/exports/alaska.glb",
+        "sha256": "90fa9fd9245a11bced3754c8d18b566d7a0c4c7ace6dd079352e95d63d50fd4b"
+      },
+      "openIssues": [
+        "Reported 737-900 versus -900ER exit configuration is not verified per captured registration.",
+        "737-900 versus -900ER exit configuration still requires visual verification."
+      ],
+      "source": "official-airport"
+    },
+    {
+      "id": "WN/B38M",
+      "operator": "Southwest",
+      "reportedType": "B38M",
+      "canonicalType": "B38M",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b38m",
+        "livery": "southwest",
+        "glb": "b38m/exports/southwest.glb",
+        "sha256": "10cf953060905d9706063dbefff1d14b4c3d5edfd3adaf1154115aabd8c817ba"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "AA/A21N",
+      "operator": "American",
+      "reportedType": "A21N",
+      "canonicalType": "A21N",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a21n",
+        "livery": "american",
+        "glb": "a21n/exports/american.glb",
+        "sha256": "d9cf8b85eabb68d18772a61feb210537b92d15dc96d7aedbf0319439bdd90a0a"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "AA/B738",
+      "operator": "American",
+      "reportedType": "B738",
+      "canonicalType": "B738",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b738",
+        "livery": "american",
+        "glb": "b738/exports/american.glb",
+        "sha256": "d2cecb9935721768a55d6e0aca1097161366ec69a04cf40de2c1015ab24a06c3"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "DL/A321",
+      "operator": "Delta",
+      "reportedType": "A321",
+      "canonicalType": "A321",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a321",
+        "livery": "delta",
+        "glb": "a321/exports/delta.glb",
+        "sha256": "20420697167ab4e0f84d300f1b4752b7e3389bd948f7b9d352e7caeae07dcdd2"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "WN/B738",
+      "operator": "Southwest",
+      "reportedType": "B738",
+      "canonicalType": "B738",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b738",
+        "livery": "southwest",
+        "glb": "b738/exports/southwest.glb",
+        "sha256": "49571bb517e3db615b578a40f730d5fb9a3c48120a21b7ab6afe199b26aba04d"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "AC/BCS3",
+      "operator": "Air Canada",
+      "reportedType": "BCS3",
+      "canonicalType": "BCS3",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a223",
+        "livery": "air-canada",
+        "glb": "a223/exports/air-canada.glb",
+        "sha256": "cb1405252a027a7ff0e561a10e2dc73b534227067b9c2d4a1252b01507eec1b2"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "AS/E175",
+      "operator": "Alaska Airlines",
+      "reportedType": "E175",
+      "canonicalType": "E75L",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "e75l",
+        "livery": "alaska",
+        "glb": "e75l/exports/alaska.glb",
+        "sha256": "2abd8b90509a451e9ac9455a0cd24cf0e196ceab519fd4cbaa5d53ebfff2ef60"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "DL/A21N",
+      "operator": "Delta",
+      "reportedType": "A21N",
+      "canonicalType": "A21N",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a21n",
+        "livery": "delta",
+        "glb": "a21n/exports/delta.glb",
+        "sha256": "68e4ca735b629491365cfc6f9dff4e8cfab902b7b00c817b8cf29a38b422d361"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "DL/B738",
+      "operator": "Delta",
+      "reportedType": "B738",
+      "canonicalType": "B738",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b738",
+        "livery": "delta",
+        "glb": "b738/exports/delta.glb",
+        "sha256": "b2c02e1cd5bae55b0ebe0541d138304fbb3186ecc0004926b2b930890aafc4ab"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "F9/A321",
+      "operator": "Frontier",
+      "reportedType": "A321",
+      "canonicalType": "A321",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a321",
+        "livery": "frontier",
+        "glb": "a321/exports/frontier.glb",
+        "sha256": "15b6b2eb6500cff096f016ac5157cda224e9039491546977ca65a3adc8f80b39"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "DL/B763",
+      "operator": "Delta",
+      "reportedType": "B763",
+      "canonicalType": "B763",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b763",
+        "livery": "delta",
+        "glb": "b763/exports/delta.glb",
+        "sha256": "fc0d6edf63c9c951b657096e2c42c0d532e77b63b9d067290c59dea4eb37a7f9"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "B6/A21N",
+      "operator": "JetBlue",
+      "reportedType": "A21N",
+      "canonicalType": "A21N",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a21n",
+        "livery": "jetblue",
+        "glb": "a21n/exports/jetblue.glb",
+        "sha256": "29a9dca9731d6252c437db6368b5d55fd14c9d8875eb6c4c93161570c94bb8ae"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "Flexjet/E545",
+      "operator": "Flexjet",
+      "reportedType": "E545",
+      "canonicalType": "E545",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "e545",
+        "livery": "flexjet",
+        "glb": "e545/exports/flexjet.glb",
+        "sha256": "26492551f50b4c101e9ad708d70bd105bfe43b614698ccc2a4f1d4cd21ad4392"
+      },
+      "openIssues": [
+        "Authored exterior study: exact close-up type contours, gear engineering, small fittings and tail-specific paint are not established by the dimension envelope or these preview views."
+      ],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "UA/B753",
+      "operator": "United",
+      "reportedType": "B753",
+      "canonicalType": "B753",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b753",
+        "livery": "united",
+        "glb": "b753/exports/united.glb",
+        "sha256": "56c2f2743a869812fddd1f8a24215a3ac96ccc0ced00c30baa1c8a866780c7bd"
+      },
+      "openIssues": [
+        "Source-era paint; not a verified current-aircraft livery match.",
+        "Source-era paint needs a current-aircraft match before full coverage is accepted."
+      ],
+      "source": "official-airport"
+    },
+    {
+      "id": "AA/E175",
+      "operator": "American",
+      "reportedType": "E175",
+      "canonicalType": "E75L",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "e75l",
+        "livery": "american",
+        "glb": "e75l/exports/american.glb",
+        "sha256": "82a196be43d8f79a289f8e0cabe99be10463a9296f21941ad1d9d609ef1231ea"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "DL/BCS3",
+      "operator": "Delta",
+      "reportedType": "BCS3",
+      "canonicalType": "BCS3",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a223",
+        "livery": "delta",
+        "glb": "a223/exports/delta.glb",
+        "sha256": "a05f73707672581f3fc83c57f06687d24e7f48945e956641a8bb35f50f322159"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "NetJets/CL60",
+      "operator": "NetJets",
+      "reportedType": "CL60",
+      "canonicalType": "CL60",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "cl60",
+        "livery": "netjets",
+        "glb": "cl60/exports/netjets.glb",
+        "sha256": "0b1e54b36eb8bcdd352fdb0bba4dcf996a8b93b81df795c1727a45eb8579069d"
+      },
+      "openIssues": [
+        "Authored exterior study: exact close-up type contours, gear engineering, small fittings and tail-specific paint are not established by the dimension envelope or these preview views."
+      ],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "AC/A321",
+      "operator": "Air Canada",
+      "reportedType": "A321",
+      "canonicalType": "A321",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a321",
+        "livery": "air-canada",
+        "glb": "a321/exports/air-canada.glb",
+        "sha256": "cbafb308ed45a1ee218323133f6c817bfaf7fba4917a6b1fc2990b966fd99922"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "CX/B77W",
+      "operator": "Cathay Pacific",
+      "reportedType": "B77W",
+      "canonicalType": "B77W",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b77w",
+        "livery": "cathay-pacific",
+        "glb": "b77w/exports/cathay-pacific.glb",
+        "sha256": "1f6a0985f5115579a409ec6cb972e33cbc2dde046d7a83cb2f477ac5fd05c2cd"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "DL/A319",
+      "operator": "Delta",
+      "reportedType": "A319",
+      "canonicalType": "A319",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a319",
+        "livery": "delta",
+        "glb": "a319/exports/delta.glb",
+        "sha256": "b066c7b6462dfd6a52ce43bae3f2cf435fa27ed521a6ee75bb3125cf31debc5a"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "NetJets/GL5T",
+      "operator": "NetJets",
+      "reportedType": "GL5T",
+      "canonicalType": "GL5T",
+      "specialLivery": null,
+      "state": "accepted",
+      "asset": {
+        "aircraft": "gl5t",
+        "livery": "netjets",
+        "glb": "gl5t/exports/netjets.glb",
+        "sha256": "a4da5e6744ed405f98efbe2d7fb7f073e521b4ccbc1c763434c9825268e6f753"
+      },
+      "openIssues": [],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "SQ/A359",
+      "operator": "Singapore Airlines",
+      "reportedType": "A359",
+      "canonicalType": "A359",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a359",
+        "livery": "singapore-airlines",
+        "glb": "a359/exports/singapore-airlines.glb",
+        "sha256": "d8bde6cc551c4a58cf5f9405ce36c3b888f0c2d03b557bb34c50b61d58994cec"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "AS/B38M",
+      "operator": "Alaska Airlines",
+      "reportedType": "B38M",
+      "canonicalType": "B38M",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b38m",
+        "livery": "alaska",
+        "glb": "b38m/exports/alaska.glb",
+        "sha256": "2668bff95261bab250a30b3c24b1f8ac5c9463d93e8ae438ee3195782d03dc3c"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "AV/A20N",
+      "operator": "Avianca",
+      "reportedType": "A20N",
+      "canonicalType": "A20N",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a20n",
+        "livery": "avianca",
+        "glb": "a20n/exports/avianca.glb",
+        "sha256": "871fcd51cd408c84c9e035536c886cf64bc80f8be4664243488979327614e48e"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "CM/B39M",
+      "operator": "Copa Airlines",
+      "reportedType": "B39M",
+      "canonicalType": "B39M",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b39m",
+        "livery": "copa",
+        "glb": "b39m/exports/copa.glb",
+        "sha256": "8de75e45533c764f980364e7a55bfbbeaf48b13a85b771a1cadd3834a7e42b01"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "DL/E75L",
+      "operator": "Delta",
+      "reportedType": "E75L",
+      "canonicalType": "E75L",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "e75l",
+        "livery": "delta",
+        "glb": "e75l/exports/delta.glb",
+        "sha256": "31e37d832c25cc11a2e7f6a089e70d86574eda4bfda80de303588bf8d48766f1"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "F9/A320",
+      "operator": "Frontier",
+      "reportedType": "A320",
+      "canonicalType": "A320",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a320",
+        "livery": "frontier",
+        "glb": "a320/exports/frontier.glb",
+        "sha256": "2a6b661ca58092e74a03d425a180fea69ddd8b60bb866464b9c50f4d530a7a99"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "Flexjet/CL35",
+      "operator": "Flexjet",
+      "reportedType": "CL35",
+      "canonicalType": "CL35",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "cl35",
+        "livery": "flexjet",
+        "glb": "cl35/exports/flexjet.glb",
+        "sha256": "e6878bba7a8f486b656c7ebdf18c937ee050e444c1248c7629a87ec891146aa2"
+      },
+      "openIssues": [
+        "Authored exterior study: exact close-up type contours, gear engineering, small fittings and tail-specific paint are not established by the dimension envelope or these preview views."
+      ],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "NH/B77W",
+      "operator": "ANA (All Nippon Airways)",
+      "reportedType": "B77W",
+      "canonicalType": "B77W",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b77w",
+        "livery": "ana",
+        "glb": "b77w/exports/ana.glb",
+        "sha256": "a9b5734563bc77b50926e5fbbcb8c88ee7dbf08cdd2715da3fe735cd76316662"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "NetJets/C700",
+      "operator": "NetJets",
+      "reportedType": "C700",
+      "canonicalType": "C700",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "c700",
+        "livery": "netjets",
+        "glb": "c700/exports/netjets.glb",
+        "sha256": "06e8f03404fb817df9ffd5cf5fde11dabf06c76088d33128baeafc2ec8236414"
+      },
+      "openIssues": [
+        "Authored exterior study: exact close-up type contours, gear engineering, small fittings and tail-specific paint are not established by the dimension envelope or these preview views.",
+        "Source-era paint needs a current-aircraft match before full coverage is accepted."
+      ],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "AA/A320",
+      "operator": "American",
+      "reportedType": "A320",
+      "canonicalType": "A320",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a320",
+        "livery": "american",
+        "glb": "a320/exports/american.glb",
+        "sha256": "4a8614c6f07c61860356e619189f5a6bf5df1faca09c2a0a0572ed2f90a89963"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "BR/B77W",
+      "operator": "EVA AIR",
+      "reportedType": "B77W",
+      "canonicalType": "B77W",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b77w",
+        "livery": "eva-air",
+        "glb": "b77w/exports/eva-air.glb",
+        "sha256": "22a0509d3d18a280c6bfccbecd6c31eb58989a8d1b1e414f4efb41d3fa91fc1d"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "BR/B789",
+      "operator": "EVA AIR",
+      "reportedType": "B789",
+      "canonicalType": "B789",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b789-current",
+        "livery": "eva-air",
+        "glb": "b789-current/exports/eva-air.glb",
+        "sha256": "bae9c04ff95e398ef42f74931d63b5369a6a92b485757a399724121429f75746"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "CA/B77W",
+      "operator": "Air China",
+      "reportedType": "B77W",
+      "canonicalType": "B77W",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b77w",
+        "livery": "air-china",
+        "glb": "b77w/exports/air-china.glb",
+        "sha256": "0e83b222e7815122b051b929c030efd0ff4c9f565bd2b8aa71349970c644cceb"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "DL/B752",
+      "operator": "Delta",
+      "reportedType": "B752",
+      "canonicalType": "B752",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b752",
+        "livery": "delta",
+        "glb": "b752/exports/delta.glb",
+        "sha256": "b3bc92f62cab807583e47ff3b7fd607b9129531c3b9f9bb1e8f6fae91d9a7aa3"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "DL/B76W",
+      "operator": "Delta",
+      "reportedType": "B76W",
+      "canonicalType": "B763",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b763",
+        "livery": "delta",
+        "glb": "b763/exports/delta.glb",
+        "sha256": "fc0d6edf63c9c951b657096e2c42c0d532e77b63b9d067290c59dea4eb37a7f9"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "KE/B748",
+      "operator": "Korean Air",
+      "reportedType": "B748",
+      "canonicalType": "B748",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b748f",
+        "livery": "korean-air-cargo",
+        "glb": "b748f/exports/korean-air-cargo.glb",
+        "sha256": "03a432a7fe6f9b890e824373e502077de762742e5aae22e722873800502b12a2"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "KE/B78X",
+      "operator": "Korean Air",
+      "reportedType": "B78X",
+      "canonicalType": "B78X",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b78x",
+        "livery": "korean-air",
+        "glb": "b78x/exports/korean-air.glb",
+        "sha256": "898a4d978ab6d649e813e5f9faaf980e30cc58299af908998e5b23ceec93249f"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "LH/A359",
+      "operator": "Lufthansa",
+      "reportedType": "A359",
+      "canonicalType": "A359",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a359",
+        "livery": "lufthansa",
+        "glb": "a359/exports/lufthansa.glb",
+        "sha256": "d33eee07de42a9b6af114f474eee399c4b963ae59b9a3c4775223c66c6c30e0c"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "NetJets/CL35",
+      "operator": "NetJets",
+      "reportedType": "CL35",
+      "canonicalType": "CL35",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "cl35",
+        "livery": "netjets",
+        "glb": "cl35/exports/netjets.glb",
+        "sha256": "cf28c99caa89779582d7cd411ea20f99b6571277b31be1b75fd1553d1e39db62"
+      },
+      "openIssues": [
+        "Authored exterior study: exact close-up type contours, gear engineering, small fittings and tail-specific paint are not established by the dimension envelope or these preview views."
+      ],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "Silver Air/GLF5",
+      "operator": "Silver Air",
+      "reportedType": "GLF5",
+      "canonicalType": "GLF5",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "glf5",
+        "livery": "silver-air",
+        "glb": "glf5/exports/silver-air.glb",
+        "sha256": "4ff29acf6f086aa394c1da6a20435486e472d961fcb0c705fb366f7d491ead60"
+      },
+      "openIssues": [
+        "Authored exterior study: exact close-up type contours, gear engineering, small fittings and tail-specific paint are not established by the dimension envelope or these preview views."
+      ],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "UA/B737",
+      "operator": "United",
+      "reportedType": "B737",
+      "canonicalType": "B737",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b737",
+        "livery": "united",
+        "glb": "b737/exports/united.glb",
+        "sha256": "3cbafe29fb77194dc215e2df688f1d09381925552ede9091f234cd0f5c2dd3d8"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "AA/B38M",
+      "operator": "American",
+      "reportedType": "B38M",
+      "canonicalType": "B38M",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b38m",
+        "livery": "american",
+        "glb": "b38m/exports/american.glb",
+        "sha256": "4710dd2d407d25bbd86eaa121abee60f87f1a67ab7cc2bdd61e72b26d34606d2"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "AC/CRJ9",
+      "operator": "Air Canada",
+      "reportedType": "CRJ9",
+      "canonicalType": "CRJ9",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "crj900",
+        "livery": "air-canada-express",
+        "glb": "crj900/exports/air-canada-express.glb",
+        "sha256": "314acc00aea930a44ae5271bcb01ed9f65a029f83169eb5c3b044d3a4943fdf1"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "AM/B38M",
+      "operator": "AeroMexico",
+      "reportedType": "B38M",
+      "canonicalType": "B38M",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b38m",
+        "livery": "aeromexico",
+        "glb": "b38m/exports/aeromexico.glb",
+        "sha256": "a405fc3ab00289cc8b26ef48ce34f0527c69aadcf2e062c5b518a44941490219"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "AM/B39M",
+      "operator": "AeroMexico",
+      "reportedType": "B39M",
+      "canonicalType": "B39M",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b39m",
+        "livery": "aeromexico",
+        "glb": "b39m/exports/aeromexico.glb",
+        "sha256": "6b819d1bac85c9ba1260caf150f739e06d76b94375a0dc5a00f479168c36085e"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "BA/B77W",
+      "operator": "British Airways",
+      "reportedType": "B77W",
+      "canonicalType": "B77W",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b77w",
+        "livery": "british-airways",
+        "glb": "b77w/exports/british-airways.glb",
+        "sha256": "07f1a77e75a037427cb821fe6e82cf7ce8aa019da899f0515a4f3e57ee6a278f"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "BF/A359",
+      "operator": "French bee",
+      "reportedType": "A359",
+      "canonicalType": "A359",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a359",
+        "livery": "french-bee",
+        "glb": "a359/exports/french-bee.glb",
+        "sha256": "7aada4f57c3544a30f0decb53a1a71b8a53993b2d0807ab198f74833361e663b"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "Baker Aviation/C750",
+      "operator": "Baker Aviation",
+      "reportedType": "C750",
+      "canonicalType": "C750",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "c750",
+        "livery": "baker-aviation",
+        "glb": "c750/exports/baker-aviation.glb",
+        "sha256": "272c5c55a774b7c6db951616cd8e5550ceebf2de87f42bd7638a138b69a22748"
+      },
+      "openIssues": [
+        "Close-up antenna, bay and exact registration paint details remain representative."
+      ],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "CALSTAR/EC35",
+      "operator": "CALSTAR",
+      "reportedType": "EC35",
+      "canonicalType": "EC35",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "ec35",
+        "livery": "calstar",
+        "glb": "ec35/exports/calstar.glb",
+        "sha256": "43b252a10be30f29460829258de075cb421c803b3fc2cd3b42fc10aa91659a05"
+      },
+      "openIssues": [
+        "P2-family exterior and reconstructed medical-operator paint; registration-specific equipment and P3 rotor/fairing differences remain approximate."
+      ],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "CI/B77W",
+      "operator": "China Airlines",
+      "reportedType": "B77W",
+      "canonicalType": "B77W",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b77w",
+        "livery": "china-airlines",
+        "glb": "b77w/exports/china-airlines.glb",
+        "sha256": "e46eca8a64dc3523aa3cbdce9d094fbd3b8a414ca2ee365fe8cbcc956983ce2a"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "DL/A221",
+      "operator": "Delta",
+      "reportedType": "A221",
+      "canonicalType": "BCS1",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a221",
+        "livery": "delta",
+        "glb": "a221/exports/delta.glb",
+        "sha256": "4abdfbd3cb0ff5f6a987519bfb0ea7799ee8da68dbb2678ddaf53127d8d812e9"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "F8/B38M",
+      "operator": "Flair Airlines",
+      "reportedType": "B38M",
+      "canonicalType": "B38M",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b38m",
+        "livery": "flair",
+        "glb": "b38m/exports/flair.glb",
+        "sha256": "655d58706ec4d77c2588e00985b0997ca97a0f061e3a2a807bb9bf5c25d3baf4"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "F9/A20N",
+      "operator": "Frontier",
+      "reportedType": "A20N",
+      "canonicalType": "A20N",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a20n",
+        "livery": "frontier",
+        "glb": "a20n/exports/frontier.glb",
+        "sha256": "4f06fddd482a507aa86c08f2fd7a8b47160f1032c2fca8f4e45446b982c900f5"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "FJ/A333",
+      "operator": "Fiji Airways",
+      "reportedType": "A333",
+      "canonicalType": "A333",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a333",
+        "livery": "fiji-airways",
+        "glb": "a333/exports/fiji-airways.glb",
+        "sha256": "848c805790565eee80494d445d8b7205666c18ff78885fee950d7ec6365ff51d"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "Guardian Flight/PC12",
+      "operator": "Guardian Flight",
+      "reportedType": "PC12",
+      "canonicalType": "PC12",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "pc12",
+        "livery": "guardian-flight",
+        "glb": "pc12/exports/guardian-flight.glb",
+        "sha256": "b4d925c6ec0d80678c9779f2bc01e0a4681ba70a004d7424ae47f51a7009c083"
+      },
+      "openIssues": [
+        "Classic PC-12/45 family source; exact Guardian Flight registration paint remains representative."
+      ],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "HA/A21N",
+      "operator": "Hawaiian Airlines",
+      "reportedType": "A21N",
+      "canonicalType": "A21N",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a21n",
+        "livery": "hawaiian",
+        "glb": "a21n/exports/hawaiian.glb",
+        "sha256": "e265ebed210a73619861548c32f03712bb51b8e90daddf160c3036d503f8bbbe"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "JL/B77W",
+      "operator": "Japan Airlines",
+      "reportedType": "B77W",
+      "canonicalType": "B77W",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b77w",
+        "livery": "japan-airlines",
+        "glb": "b77w/exports/japan-airlines.glb",
+        "sha256": "cf9b00dacdac462f83a07480b84481597ecc4caa9c91664c7d509c291e11befa"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "JL/B789",
+      "operator": "Japan Airlines",
+      "reportedType": "B789",
+      "canonicalType": "B789",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b789-current",
+        "livery": "japan-airlines",
+        "glb": "b789-current/exports/japan-airlines.glb",
+        "sha256": "cf4b31296b8536e7849e04c36f92415b3c51901a394829aafb5d58b9e359a0c2"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "JX/A359",
+      "operator": "STARLUX",
+      "reportedType": "A359",
+      "canonicalType": "A359",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a359",
+        "livery": "starlux",
+        "glb": "a359/exports/starlux.glb",
+        "sha256": "2c57575a2061457936b9f791037563cc7cba3a1366403bb30d4fa0d9ace74e3e"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "Jet Access Aviation/C25B",
+      "operator": "Jet Access Aviation",
+      "reportedType": "C25B",
+      "canonicalType": "C25B",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "c25b",
+        "livery": "jet-access",
+        "glb": "c25b/exports/jet-access.glb",
+        "sha256": "ff0a7f31292acc74a0cb5f2a38cfdf1dd1bb1b0e48f475d59e46ce916aeef650"
+      },
+      "openIssues": [
+        "Authored exterior study: exact close-up type contours, gear engineering, small fittings and tail-specific paint are not established by the dimension envelope or these preview views."
+      ],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "KL/B78X",
+      "operator": "KLM",
+      "reportedType": "B78X",
+      "canonicalType": "B78X",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b78x",
+        "livery": "klm",
+        "glb": "b78x/exports/klm.glb",
+        "sha256": "0485a4b7c743ff8587a147f116647ba6f5a13c3efdd9157b15e43a01646f3849"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "MX/BCS3",
+      "operator": "Breeze Airways",
+      "reportedType": "BCS3",
+      "canonicalType": "BCS3",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a223",
+        "livery": "breeze",
+        "glb": "a223/exports/breeze.glb",
+        "sha256": "b5938efe14ac00cb124e54fb8bbabfb9f83a0dea29f04cc574bf71cb54f33920"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "NZ/B789",
+      "operator": "Air New Zealand",
+      "reportedType": "B789",
+      "canonicalType": "B789",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b789-current",
+        "livery": "air-new-zealand",
+        "glb": "b789-current/exports/air-new-zealand.glb",
+        "sha256": "4e98ef4b41f9ac8263952d0471516d349e9b29be0b05c6411277988f104d4de4"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "Neojets/GALX",
+      "operator": "Neojets",
+      "reportedType": "GALX",
+      "canonicalType": "GALX",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "galx",
+        "livery": "neojets",
+        "glb": "galx/exports/neojets.glb",
+        "sha256": "dbbc9ea8fe34f76f41050942ee33c025d8ac025c1f6ae3d8b636651bd76c601f"
+      },
+      "openIssues": [
+        "Authored exterior study: exact close-up type contours, gear engineering, small fittings and tail-specific paint are not established by the dimension envelope or these preview views."
+      ],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "NetJets/E55P",
+      "operator": "NetJets",
+      "reportedType": "E55P",
+      "canonicalType": "E55P",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "e55p",
+        "livery": "netjets",
+        "glb": "e55p/exports/netjets.glb",
+        "sha256": "e524c480ef054f9b5ca7217fee8491b5a820698e55ba9f3d13cb16f29a7c144e"
+      },
+      "openIssues": [
+        "Authored exterior study: exact close-up type contours, gear engineering, small fittings and tail-specific paint are not established by the dimension envelope or these preview views."
+      ],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "PD/E295",
+      "operator": "Porter",
+      "reportedType": "E295",
+      "canonicalType": "E295",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "e295",
+        "livery": "porter",
+        "glb": "e295/exports/porter.glb",
+        "sha256": "bf0dd716bf1fa609bc366f51ae244263c68d0e26b7a87e31a09a62270c3548e2"
+      },
+      "openIssues": [
+        "Authored exterior study: exact close-up type contours, gear engineering, small fittings and tail-specific paint are not established by the dimension envelope or these preview views."
+      ],
+      "source": "official-airport"
+    },
+    {
+      "id": "Pacific Coast Jet/C56X",
+      "operator": "Pacific Coast Jet",
+      "reportedType": "C56X",
+      "canonicalType": "C56X",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "c56x",
+        "livery": "pacific-coast",
+        "glb": "c56x/exports/pacific-coast.glb",
+        "sha256": "3256b4cf937c99b0e1c567f85d2d705d75ed71e2936f9cf90dbe8be585c3419e"
+      },
+      "openIssues": [
+        "Authored exterior study: exact close-up type contours, gear engineering, small fittings and tail-specific paint are not established by the dimension envelope or these preview views."
+      ],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "Private N999FN/EPIC",
+      "operator": "Private N999FN",
+      "reportedType": "EPIC",
+      "canonicalType": "EPIC",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "epic",
+        "livery": "private-n999fn",
+        "glb": "epic/exports/private-n999fn.glb",
+        "sha256": "17171120b945e6b9337f957cfc722efa3ecc51aab380855351c9aa3c3a05b202"
+      },
+      "openIssues": [
+        "Authored exterior study: exact close-up type contours, gear engineering, small fittings and tail-specific paint are not established by the dimension envelope or these preview views."
+      ],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "REACH Air Medical/EC35",
+      "operator": "REACH Air Medical",
+      "reportedType": "EC35",
+      "canonicalType": "EC35",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "ec35",
+        "livery": "reach",
+        "glb": "ec35/exports/reach.glb",
+        "sha256": "3abf1c5f892b089766b6c5609a8dc2741bfec625e6fead91e6ebf572a6746a5a"
+      },
+      "openIssues": [
+        "P2-family exterior and reconstructed medical-operator paint; registration-specific equipment and P3 rotor/fairing differences remain approximate."
+      ],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "Solairus/CL30",
+      "operator": "Solairus",
+      "reportedType": "CL30",
+      "canonicalType": "CL30",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "cl30",
+        "livery": "twy-n1013",
+        "glb": "cl30/exports/twy-n1013.glb",
+        "sha256": "7b8a903219fcfbd86b26fee0016fab026c25b9b3ab423476b0d9fe452127fa82"
+      },
+      "openIssues": [
+        "Authored exterior study: exact close-up type contours, gear engineering, small fittings and tail-specific paint are not established by the dimension envelope or these preview views."
+      ],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "Thoma Bravo/GLF6",
+      "operator": "Thoma Bravo",
+      "reportedType": "GLF6",
+      "canonicalType": "GLF6",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "glf6",
+        "livery": "thoma-bravo",
+        "glb": "glf6/exports/thoma-bravo.glb",
+        "sha256": "724f6e683c03c99261230a78882152236245095906a53d5f78e6f72e4faab965"
+      },
+      "openIssues": [
+        "Authored exterior study: exact close-up type contours, gear engineering, small fittings and tail-specific paint are not established by the dimension envelope or these preview views."
+      ],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "UA/B763",
+      "operator": "United",
+      "reportedType": "B763",
+      "canonicalType": "B763",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b763",
+        "livery": "united",
+        "glb": "b763/exports/united.glb",
+        "sha256": "0a6e33a04fd5fc756c2b37edadcc4280e65643e9cdf0edcb1a26b70829f308ca"
+      },
+      "openIssues": [
+        "Source-era paint needs a current-aircraft match before full coverage is accepted."
+      ],
+      "source": "official-airport"
+    },
+    {
+      "id": "VN/A359",
+      "operator": "Vietnam Airlines",
+      "reportedType": "A359",
+      "canonicalType": "A359",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a359",
+        "livery": "vietnam-airlines",
+        "glb": "a359/exports/vietnam-airlines.glb",
+        "sha256": "c643e35919ee58b8a778480288ac99c4777305a4c14b6e1cc2dbdf58a3153e9c"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "Vista America/CL30",
+      "operator": "Vista America",
+      "reportedType": "CL30",
+      "canonicalType": "CL30",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "cl30",
+        "livery": "vista-america",
+        "glb": "cl30/exports/vista-america.glb",
+        "sha256": "7d90a10b82fd35c2c110f649e0cffe59ef02efbdb920ecd15ad6f2c08b530b1e"
+      },
+      "openIssues": [
+        "Authored exterior study: exact close-up type contours, gear engineering, small fittings and tail-specific paint are not established by the dimension envelope or these preview views."
+      ],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "flyExclusive/C25B",
+      "operator": "flyExclusive",
+      "reportedType": "C25B",
+      "canonicalType": "C25B",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "c25b",
+        "livery": "flyexclusive",
+        "glb": "c25b/exports/flyexclusive.glb",
+        "sha256": "23c189f25eedf816f5d7d205ff6411adf2fcec3854df06792eaea06b0645dc31"
+      },
+      "openIssues": [
+        "Authored exterior study: exact close-up type contours, gear engineering, small fittings and tail-specific paint are not established by the dimension envelope or these preview views."
+      ],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "8C/B763",
+      "operator": "Amazon Air",
+      "reportedType": "B763",
+      "canonicalType": "B763",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b763f",
+        "livery": "amazon-air",
+        "glb": "b763f/exports/amazon-air.glb",
+        "sha256": "62c4b1204a63cd575aea35da130524892aa98d55cd4593bba5e1ba1ec96a92c3"
+      },
+      "openIssues": [
+        "Exact production-freighter versus converted-freighter fittings and registration paint remain representative; cargo door is fixed closed."
+      ],
+      "source": "official-airport"
+    },
+    {
+      "id": "AA/B738 / American Airlines (AirCal Retro Livery)",
+      "operator": "American Airlines (AirCal Retro Livery)",
+      "reportedType": "B738",
+      "canonicalType": "B738",
+      "specialLivery": "American Airlines (AirCal Retro Livery)",
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b738-current",
+        "livery": "american-aircal",
+        "glb": "b738-current/exports/american-aircal.glb",
+        "sha256": "e05ba340db93999680e5c2372ed53aa4fc9e4147a7422e1ed28ef969987f4234"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "AA/E75L",
+      "operator": "American Eagle",
+      "reportedType": "E75L",
+      "canonicalType": "E75L",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "e75l",
+        "livery": "american",
+        "glb": "e75l/exports/american.glb",
+        "sha256": "82a196be43d8f79a289f8e0cabe99be10463a9296f21941ad1d9d609ef1231ea"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "AF/B77W",
+      "operator": "Air France",
+      "reportedType": "B77W",
+      "canonicalType": "B77W",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b77w",
+        "livery": "air-france",
+        "glb": "b77w/exports/air-france.glb",
+        "sha256": "cdaab5a88f81a386bfc32b173925296407f53662e2186ae7af3d8710c4d147e2"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "AI/B77W",
+      "operator": "Air India",
+      "reportedType": "B77W",
+      "canonicalType": "B77W",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b77w",
+        "livery": "air-india",
+        "glb": "b77w/exports/air-india.glb",
+        "sha256": "0068d8afd0f5f33829eb93c1a3476475cd27b09eabd807461fcc8c0cfb752e4d"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "BA/A388",
+      "operator": "British Airways",
+      "reportedType": "A388",
+      "canonicalType": "A388",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a388",
+        "livery": "british-airways",
+        "glb": "a388/exports/british-airways.glb",
+        "sha256": "d7c57dd90a6baa29751bc94e476ea0ee28c90b2385ac3e708777f3e599e9a00d"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "Blue Skies California/BE9L",
+      "operator": "Blue Skies California",
+      "reportedType": "BE9L",
+      "canonicalType": "BE9L",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "be9l",
+        "livery": "blue-skies",
+        "glb": "be9l/exports/blue-skies.glb",
+        "sha256": "332848db5f4fd37e7caa762cc9d7f2fef7bf6c4c86866ebb4956071ae9505037"
+      },
+      "openIssues": [
+        "C90A source adapted to the C90GT envelope; PT6A-135A nacelle details remain approximate."
+      ],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "CI/B77L",
+      "operator": "China Airlines",
+      "reportedType": "B77L",
+      "canonicalType": "B77L",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b77f",
+        "livery": "china-airlines-cargo",
+        "glb": "b77f/exports/china-airlines-cargo.glb",
+        "sha256": "43d0773560242cc2bf709df4520457e3f146436354f8f60a377832c96ff63eac"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "ConocoPhillips/GA5C",
+      "operator": "ConocoPhillips",
+      "reportedType": "GA5C",
+      "canonicalType": "GA5C",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "ga5c",
+        "livery": "conocophillips",
+        "glb": "ga5c/exports/conocophillips.glb",
+        "sha256": "a466b9e4f50e95d6305fb2a58aa6fa12ac8d0bfa5f420a58c18bc52d2811f0cc"
+      },
+      "openIssues": [
+        "Authored exterior study: exact close-up type contours, gear engineering, small fittings and tail-specific paint are not established by the dimension envelope or these preview views."
+      ],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "DL/BCS1",
+      "operator": "Delta Air Lines",
+      "reportedType": "BCS1",
+      "canonicalType": "BCS1",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a221",
+        "livery": "delta",
+        "glb": "a221/exports/delta.glb",
+        "sha256": "4abdfbd3cb0ff5f6a987519bfb0ea7799ee8da68dbb2678ddaf53127d8d812e9"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "EI/A332",
+      "operator": "Aer Lingus",
+      "reportedType": "A332",
+      "canonicalType": "A332",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a332-ge",
+        "livery": "aer-lingus",
+        "glb": "a332-ge/exports/aer-lingus.glb",
+        "sha256": "b798147d9fda466ceffe260b3d6f1f615940770f8fd32031dfb14be803e4580b"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "EK/A388",
+      "operator": "Emirates",
+      "reportedType": "A388",
+      "canonicalType": "A388",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a388",
+        "livery": "emirates",
+        "glb": "a388/exports/emirates.glb",
+        "sha256": "4d98bd6eea5657a44a4c8ea9831dcf99a30882b7d8330b5b36403ec00245f569"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "F8/73H",
+      "operator": "Flair Airlines",
+      "reportedType": "73H",
+      "canonicalType": "B738",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b738-current",
+        "livery": "flair",
+        "glb": "b738-current/exports/flair.glb",
+        "sha256": "61495c10a68ae42e2494cad6b2042628e46aa589c70e4e291e8791f37ef242e7"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "F9/A20N / Frontier (Adams the Green Salamander Livery)",
+      "operator": "Frontier (Adams the Green Salamander Livery)",
+      "reportedType": "A20N",
+      "canonicalType": "A20N",
+      "specialLivery": "Frontier (Adams the Green Salamander Livery)",
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a20n",
+        "livery": "frontier-adams",
+        "glb": "a20n/exports/frontier-adams.glb",
+        "sha256": "df0248c9006a764a0c892ad5c652c83a36716d39af66484aed5cae20357dca41"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "F9/A20N / Frontier (Marshall the Ring-tailed Cat Livery)",
+      "operator": "Frontier (Marshall the Ring-tailed Cat Livery)",
+      "reportedType": "A20N",
+      "canonicalType": "A20N",
+      "specialLivery": "Frontier (Marshall the Ring-tailed Cat Livery)",
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a20n",
+        "livery": "frontier-marshall",
+        "glb": "a20n/exports/frontier-marshall.glb",
+        "sha256": "4f06fddd482a507aa86c08f2fd7a8b47160f1032c2fca8f4e45446b982c900f5"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "F9/A21N",
+      "operator": "Frontier",
+      "reportedType": "A21N",
+      "canonicalType": "A21N",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a21n",
+        "livery": "frontier-chopper",
+        "glb": "a21n/exports/frontier-chopper.glb",
+        "sha256": "9629ba06ce0c3bae90a810a9be17549c48d3bd19f96b25106f10e70c111f4b9f"
+      },
+      "openIssues": [
+        "Original shark artwork approximates the real motif; exact captured paint assignment is not established."
+      ],
+      "source": "Dated public tracking board"
+    },
+    {
+      "id": "FX/B763",
+      "operator": "FedEx",
+      "reportedType": "B763",
+      "canonicalType": "B763",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b763f",
+        "livery": "fedex",
+        "glb": "b763f/exports/fedex.glb",
+        "sha256": "c4fb9323443f4322267a8494a3592765b39aa7d84c9343d759e4437af229af8e"
+      },
+      "openIssues": [
+        "Exact production-freighter versus converted-freighter fittings and registration paint remain representative; cargo door is fixed closed."
+      ],
+      "source": "official-airport"
+    },
+    {
+      "id": "Flexjet/GLF4",
+      "operator": "Flexjet",
+      "reportedType": "GLF4",
+      "canonicalType": "GLF4",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "glf4",
+        "livery": "flexjet",
+        "glb": "glf4/exports/flexjet.glb",
+        "sha256": "17497fae64e6063c59fc021dc0d9bd9a124c668bab97b78720f1ce923697c45e"
+      },
+      "openIssues": [
+        "Authored exterior study: exact close-up type contours, gear engineering, small fittings and tail-specific paint are not established by the dimension envelope or these preview views."
+      ],
+      "source": "Dated public tracking board"
+    },
+    {
+      "id": "GB/B762",
+      "operator": "ABX Air",
+      "reportedType": "B762",
+      "canonicalType": "B762",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b762f",
+        "livery": "abx-air",
+        "glb": "b762f/exports/abx-air.glb",
+        "sha256": "cf7aa8f9711aa6c93a8efc800a013252054443d43f25b803f8f5cbd732dec11c"
+      },
+      "openIssues": [
+        "Converted-freighter door stations and exact ABX paint remain representative."
+      ],
+      "source": "official-airport"
+    },
+    {
+      "id": "HA/A332",
+      "operator": "Hawaiian Airlines",
+      "reportedType": "A332",
+      "canonicalType": "A332",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a332",
+        "livery": "hawaiian",
+        "glb": "a332/exports/hawaiian.glb",
+        "sha256": "30cc3473eab403d25659556eb77664daffd3bb725074093e393b64e18c2dd3e0"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "Hera Flight/C750",
+      "operator": "Hera Flight",
+      "reportedType": "C750",
+      "canonicalType": "C750",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "c750",
+        "livery": "herajet",
+        "glb": "c750/exports/herajet.glb",
+        "sha256": "4831647eba7f97506a717a3ffdf18c47b426d9a8d7fe4d8a9c9d32236ad348b7"
+      },
+      "openIssues": [
+        "Close-up antenna, bay and exact registration paint details remain representative."
+      ],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "Jet Aviation/GA5C",
+      "operator": "Jet Aviation",
+      "reportedType": "GA5C",
+      "canonicalType": "GA5C",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "ga5c",
+        "livery": "jet-aviation",
+        "glb": "ga5c/exports/jet-aviation.glb",
+        "sha256": "5a75166e9c0ef506839dbb2b3e1ca436d13e0779e135f9bce396d1e68b588b73"
+      },
+      "openIssues": [
+        "Authored exterior study: exact close-up type contours, gear engineering, small fittings and tail-specific paint are not established by the dimension envelope or these preview views."
+      ],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "KJ/B744",
+      "operator": "AirZeta",
+      "reportedType": "B744",
+      "canonicalType": "B744",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b744f",
+        "livery": "airzeta",
+        "glb": "b744f/exports/airzeta.glb",
+        "sha256": "0522bf22ae75c49ad89248994812f3ce26a455c16ccdb87d76a0b1a289811d03"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "LX/B77W",
+      "operator": "Swiss International",
+      "reportedType": "B77W",
+      "canonicalType": "B77W",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b77w",
+        "livery": "swiss",
+        "glb": "b77w/exports/swiss.glb",
+        "sha256": "c7b399ca22696bd8c44e14f25fc93525ea16f21b3630baf12d5566b2337fb85d"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "NetJets/GL7T",
+      "operator": "NetJets",
+      "reportedType": "GL7T",
+      "canonicalType": "GL7T",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "gl7t",
+        "livery": "netjets",
+        "glb": "gl7t/exports/netjets.glb",
+        "sha256": "dbb580c755665947d53c68e9ba337a32398ca5f354041378f3a9a93ba8af31bc"
+      },
+      "openIssues": [
+        "Authored exterior study: exact close-up type contours, gear engineering, small fittings and tail-specific paint are not established by the dimension envelope or these preview views."
+      ],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "NetJets/GLEX",
+      "operator": "NetJets",
+      "reportedType": "GLEX",
+      "canonicalType": "GLEX",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "glex",
+        "livery": "netjets",
+        "glb": "glex/exports/netjets.glb",
+        "sha256": "767240f2fcd758f2cfecb05f39ea361337391a525fcbebc1b3bffc66eef68337"
+      },
+      "openIssues": [
+        "Global 5000-family sections adapted with a 0.80 m cabin insertion. Small Global 6000 variant fittings, exact registration paint and loaded height remain approximate."
+      ],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "OZ/A359",
+      "operator": "Asiana",
+      "reportedType": "A359",
+      "canonicalType": "A359",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a359",
+        "livery": "asiana",
+        "glb": "a359/exports/asiana.glb",
+        "sha256": "5fc6ed1808d5ef41aa51c36cf3a007ac46e5d39f10ad112c43cd7baab8a1f4d5"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "Optimal Aviation/B350",
+      "operator": "Optimal Aviation",
+      "reportedType": "B350",
+      "canonicalType": "B350",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b350",
+        "livery": "optimal-aviation",
+        "glb": "b350/exports/optimal-aviation.glb",
+        "sha256": "831b4f19801ae161ac0bbe30defcb5eb8d9352c3f9c0b24192c451377810a44d"
+      },
+      "openIssues": [
+        "Detailed B300-family source represents a King Air 360; exact registration paint and small antenna fittings remain representative."
+      ],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "PR/A35K",
+      "operator": "Philippine Airlines",
+      "reportedType": "A35K",
+      "canonicalType": "A35K",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a35k",
+        "livery": "philippine-airlines",
+        "glb": "a35k/exports/philippine-airlines.glb",
+        "sha256": "7fc8fac1124dc01519e367e407cc2a1511909238ae879ea5074ef83adc845163"
+      },
+      "openIssues": [
+        "The -1000 wing/nacelle detail is adapted from the -900 family; internal gear engineering and XWB-97-specific surfaces remain approximate."
+      ],
+      "source": "official-airport"
+    },
+    {
+      "id": "PR/A35K / Philippine Airlines (85th Anniversary Sticker Livery)",
+      "operator": "Philippine Airlines",
+      "reportedType": "A35K",
+      "canonicalType": "A35K",
+      "specialLivery": "Philippine Airlines 85th Anniversary Sticker",
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a35k",
+        "livery": "philippine-airlines-85-years",
+        "glb": "a35k/exports/philippine-airlines-85-years.glb",
+        "sha256": "66768c89249b4ee55015f5392f486ac39d3c152b2efd683dbca94a8504dc2d9c"
+      },
+      "openIssues": [
+        "The -1000 wing/nacelle detail is adapted from the -900 family; internal gear engineering and XWB-97-specific surfaces remain approximate."
+      ],
+      "source": "official-airport"
+    },
+    {
+      "id": "Private N707HD/H25C",
+      "operator": "Private N707HD",
+      "reportedType": "H25C",
+      "canonicalType": "H25C",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "h25c",
+        "livery": "private-n707hd",
+        "glb": "h25c/exports/private-n707hd.glb",
+        "sha256": "a3c8809a5ad0d8d98a1dc5b6dc1c1366006b533a8ea9dbaf4b4893620810823d"
+      },
+      "openIssues": [
+        "Authored exterior study: exact close-up type contours, gear engineering, small fittings and tail-specific paint are not established by the dimension envelope or these preview views."
+      ],
+      "source": "Dated public tracking board"
+    },
+    {
+      "id": "QF/B789",
+      "operator": "Qantas",
+      "reportedType": "B789",
+      "canonicalType": "B789",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b789-current",
+        "livery": "qantas",
+        "glb": "b789-current/exports/qantas.glb",
+        "sha256": "f9018164aa59ce683a9cf0e93815feba43a68e77df9554e766809966728d1e9c"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "REACH Air Medical/BE20",
+      "operator": "REACH Air Medical",
+      "reportedType": "BE20",
+      "canonicalType": "BE20",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "be20",
+        "livery": "reach",
+        "glb": "be20/exports/reach.glb",
+        "sha256": "8199fc8ca1065e7b95f96a7c15139d1402ca795e4bf3705b35acff0400775c67"
+      },
+      "openIssues": [],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "Silver Air/C25B",
+      "operator": "Silver Air",
+      "reportedType": "C25B",
+      "canonicalType": "C25B",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "c25b",
+        "livery": "silver-air",
+        "glb": "c25b/exports/silver-air.glb",
+        "sha256": "b8f093f2ad263880f10074b96928c94de5dc39bbe70fcb290f8eba5cd155a144"
+      },
+      "openIssues": [
+        "Authored exterior study: exact close-up type contours, gear engineering, small fittings and tail-specific paint are not established by the dimension envelope or these preview views."
+      ],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "SkyCare/ASTR",
+      "operator": "SkyCare",
+      "reportedType": "ASTR",
+      "canonicalType": "ASTR",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "astr",
+        "livery": "skycare",
+        "glb": "astr/exports/skycare.glb",
+        "sha256": "47b3646ede89a1acd46e0c6187ac733462bb075763000ade3d80954d6e353663"
+      },
+      "openIssues": [
+        "Authored exterior study: exact close-up type contours, gear engineering, small fittings and tail-specific paint are not established by the dimension envelope or these preview views."
+      ],
+      "source": "Dated public tracking board"
+    },
+    {
+      "id": "TK/A359",
+      "operator": "Turkish Airlines",
+      "reportedType": "A359",
+      "canonicalType": "A359",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a359",
+        "livery": "turkish-airlines",
+        "glb": "a359/exports/turkish-airlines.glb",
+        "sha256": "51ec7b6b9f192cbed76758ffb98e79a658bebdaa0d780e719c08f5792fcee4a9"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "TP/A339",
+      "operator": "TAP Air Portugal",
+      "reportedType": "A339",
+      "canonicalType": "A339",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a339",
+        "livery": "tap-portugal",
+        "glb": "a339/exports/tap-portugal.glb",
+        "sha256": "1efc7ca9c25936cc4bbc74400c9618442f44e06d0a81ed890a4084f83ec893ab"
+      },
+      "openIssues": [
+        "Fan, pylon and cascade engineering are authored visualization details; not production CAD."
+      ],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "UA/A320 / United Airlines (Retro Livery)",
+      "operator": "United Airlines (Retro Livery)",
+      "reportedType": "A320",
+      "canonicalType": "A320",
+      "specialLivery": "United Airlines (Retro Livery)",
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "a320",
+        "livery": "united-friend-ship",
+        "glb": "a320/exports/united-friend-ship.glb",
+        "sha256": "03ac9034199acac444575ec5341e333e27a85f35e634a401f059ec3dc85091e5"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "UA/B738 / United Airlines (Star Alliance Livery)",
+      "operator": "United Airlines (Star Alliance Livery)",
+      "reportedType": "B738",
+      "canonicalType": "B738",
+      "specialLivery": "United Airlines (Star Alliance Livery)",
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b738-current",
+        "livery": "united-star-alliance",
+        "glb": "b738-current/exports/united-star-alliance.glb",
+        "sha256": "7a3c180ed02f14350acaa45f5d8a5907d3925302b8a039b0296e1d0f6f0a088f"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "VS/B789",
+      "operator": "Virgin Atlantic",
+      "reportedType": "B789",
+      "canonicalType": "B789",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b789-current",
+        "livery": "virgin-atlantic",
+        "glb": "b789-current/exports/virgin-atlantic.glb",
+        "sha256": "2fbb8b6c9cf613a6a0799597f39a454f51b256d7d19ead3dc86ea43320eff5da"
+      },
+      "openIssues": [
+        "Representative source registration G-VZIG; captured movement identified as G-VCRU."
+      ],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "Vista America/CL35",
+      "operator": "Vista America",
+      "reportedType": "CL35",
+      "canonicalType": "CL35",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "cl35",
+        "livery": "vista-america",
+        "glb": "cl35/exports/vista-america.glb",
+        "sha256": "cc03bb47bd85b3d6d1efd9f8b2ddf06a4192332f4faecab407c54c413745f547"
+      },
+      "openIssues": [
+        "Authored exterior study: exact close-up type contours, gear engineering, small fittings and tail-specific paint are not established by the dimension envelope or these preview views."
+      ],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "VistaJet/GLEX",
+      "operator": "VistaJet",
+      "reportedType": "GLEX",
+      "canonicalType": "GLEX",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "glex",
+        "livery": "vistajet",
+        "glb": "glex/exports/vistajet.glb",
+        "sha256": "03032799c1cc3d1ea09e9b6c6765d5d31ddb1e57a5c493f73127e9acd7a75331"
+      },
+      "openIssues": [
+        "Global 5000-family sections adapted with a 0.80 m cabin insertion. Small Global 6000 variant fittings, exact registration paint and loaded height remain approximate."
+      ],
+      "source": "AeroPattern dated receiver log"
+    },
+    {
+      "id": "YP/B789",
+      "operator": "Air Premia",
+      "reportedType": "B789",
+      "canonicalType": "B789",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b789-current",
+        "livery": "air-premia",
+        "glb": "b789-current/exports/air-premia.glb",
+        "sha256": "efb198f7c3babe70140c32b193309990410d14fc870c1979f6bd1f2dcf72b5dc"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "ZG/B788",
+      "operator": "ZIPAIR",
+      "reportedType": "B788",
+      "canonicalType": "B788",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b788",
+        "livery": "zipair",
+        "glb": "b788/exports/zipair.glb",
+        "sha256": "9b0b2f191fac21534066ac810a52e9f28b16ba9f2948be970acde5b77f0b5dca"
+      },
+      "openIssues": [],
+      "source": "official-airport"
+    },
+    {
+      "id": "ABX Air/B763",
+      "operator": "ABX Air",
+      "reportedType": "B763",
+      "canonicalType": "B763",
+      "specialLivery": null,
+      "state": "multi-angle-reviewed",
+      "asset": {
+        "aircraft": "b763f",
+        "livery": "abx-air",
+        "glb": "b763f/exports/abx-air.glb",
+        "sha256": "2ae77f9f7991a07284f3d90583bbffc3a8d2e31c0885c4ba9090c1aa733f2e51"
+      },
+      "openIssues": [
+        "Exact production-freighter versus converted-freighter fittings and registration paint remain representative; cargo door is fixed closed."
+      ],
+      "source": "AeroPattern dated receiver log"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "batchcomplete": "",
+  "query": {
+    "pages": {
+      "78072241": {
+        "pageid": 78072241,
+        "ns": 6,
+        "title": "File:Flair Airlines logo (2019).svg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Flair_Airlines_logo_%282019%29.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Flair_Airlines_logo_(2019).svg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=78072241",
+            "sha1": "deffab53275d914147b3a8ce14ee63c9f61bdb51",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2019-04-11 01:33:29",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Flair Airlines logo (2019)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "With trademark|PD textlogo|SVG text logos|SVG logos of airlines of Canada|Black logos with transparent background|Flair Airlines logos|2019 SVG logos",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<bdi lang=\"en\">The logo of <bdi lang=\"\"><a href=\"https://en.wikipedia.org/wiki/en:Flair_Airlines\" class=\"extiw\" title=\"w:en:Flair Airlines\"><span title=\"Canadian low-cost airline\">Flair Airlines</span></a> \u2013 Canadian low-cost airline</bdi></bdi>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "Flair Airlines web",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"https://en.wikipedia.org/wiki/en:Flair_Airlines\" class=\"extiw\" title=\"w:en:Flair Airlines\"><span title=\"Canadian low-cost airline\">Flair Airlines</span></a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "trademarked",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

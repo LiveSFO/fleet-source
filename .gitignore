@@ -1,0 +1,3 @@
+# the paint maps (110 MB of PNG) are in the release zip, not the git tree
+library/**/generated/
+.DS_Store

@@ -1,0 +1,254 @@
+[
+  {
+    "aircraft": "a320neo",
+    "livery": "british-airways",
+    "bytes": 9164928,
+    "meshes": 186,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 37.60580062866211,
+      "span": 35.76659965515137,
+      "height": 12.244550228118896
+    },
+    "reference": {
+      "length": 37.57,
+      "span": 35.8
+    },
+    "noseWheelRetractionRise": 2.279054515606706,
+    "runtimeGearCycles": 12,
+    "doorWindows": 4,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a320neo",
+    "livery": "lufthansa",
+    "bytes": 8836104,
+    "meshes": 187,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 37.60580062866211,
+      "span": 35.76659965515137,
+      "height": 12.244550228118896
+    },
+    "reference": {
+      "length": 37.57,
+      "span": 35.8
+    },
+    "noseWheelRetractionRise": 2.279054515606706,
+    "runtimeGearCycles": 12,
+    "doorWindows": 4,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "a320neo",
+    "livery": "sas",
+    "bytes": 9147984,
+    "meshes": 186,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 37.60580062866211,
+      "span": 35.76659965515137,
+      "height": 12.244550228118896
+    },
+    "reference": {
+      "length": 37.57,
+      "span": 35.8
+    },
+    "noseWheelRetractionRise": 2.279054515606706,
+    "runtimeGearCycles": 12,
+    "doorWindows": 4,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b738",
+    "livery": "alaska",
+    "bytes": 4518100,
+    "meshes": 168,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 39.42070007324219,
+      "span": 35.86680030822754,
+      "height": 12.986999988555908
+    },
+    "reference": {
+      "length": 39.47,
+      "span": 35.79
+    },
+    "noseWheelRetractionRise": 1.8775425648910593,
+    "runtimeGearCycles": 12,
+    "doorWindows": 4,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b738",
+    "livery": "american",
+    "bytes": 3770964,
+    "meshes": 168,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 39.42070007324219,
+      "span": 35.86680030822754,
+      "height": 12.986999988555908
+    },
+    "reference": {
+      "length": 39.47,
+      "span": 35.79
+    },
+    "noseWheelRetractionRise": 1.8775425648910593,
+    "runtimeGearCycles": 12,
+    "doorWindows": 4,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b738",
+    "livery": "delta",
+    "bytes": 3438020,
+    "meshes": 168,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 39.42070007324219,
+      "span": 35.86680030822754,
+      "height": 12.986999988555908
+    },
+    "reference": {
+      "length": 39.47,
+      "span": 35.79
+    },
+    "noseWheelRetractionRise": 1.8775425648910593,
+    "runtimeGearCycles": 12,
+    "doorWindows": 4,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b738",
+    "livery": "ryanair",
+    "bytes": 3500396,
+    "meshes": 168,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 39.42070007324219,
+      "span": 35.86680030822754,
+      "height": 12.986999988555908
+    },
+    "reference": {
+      "length": 39.47,
+      "span": 35.79
+    },
+    "noseWheelRetractionRise": 1.8775425648910593,
+    "runtimeGearCycles": 12,
+    "doorWindows": 4,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b738",
+    "livery": "southwest",
+    "bytes": 3529104,
+    "meshes": 168,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 39.42070007324219,
+      "span": 35.86680030822754,
+      "height": 12.986999988555908
+    },
+    "reference": {
+      "length": 39.47,
+      "span": 35.79
+    },
+    "noseWheelRetractionRise": 1.8775425648910593,
+    "runtimeGearCycles": 12,
+    "doorWindows": 4,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  },
+  {
+    "aircraft": "b738",
+    "livery": "united",
+    "bytes": 4160296,
+    "meshes": 168,
+    "animations": [
+      "Gear",
+      "Flaps",
+      "Reversers",
+      "Spoilers",
+      "Fans"
+    ],
+    "dimensions": {
+      "length": 39.42070007324219,
+      "span": 35.86680030822754,
+      "height": 12.986999988555908
+    },
+    "reference": {
+      "length": 39.47,
+      "span": 35.79
+    },
+    "noseWheelRetractionRise": 1.8775425648910593,
+    "runtimeGearCycles": 12,
+    "doorWindows": 4,
+    "cockpitTint": "opaque smoke",
+    "errors": 0,
+    "warnings": 0
+  }
+]

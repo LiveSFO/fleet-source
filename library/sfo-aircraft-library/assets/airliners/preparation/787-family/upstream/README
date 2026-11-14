@@ -1,0 +1,18 @@
+This is the official home of the 787 family for FlightGear. Based off FGAddon 787-8:
+
+http://sourceforge.net/p/flightgear/fgaddon/HEAD/tree/trunk/Aircraft/787-8/
+
+After gitorious closed down and former maintainer Omega95 retired, islandmonkey created a Github repo, which was subsequently merged into FGAddon.
+Now, IskenderWang and Marsdolphin, among others, are collaborating on a project that aims to improve the quality of several aircraft in the 787 family.
+
+This package contains the following models:
+-------
+
+-787-8
+-787-9
+-787-10
+
+Install
+-------
+
+WIKI ARTICLE : http://wiki.flightgear.org/Boeing_787-8_Dreamliner

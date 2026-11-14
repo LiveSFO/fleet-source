@@ -1,0 +1,1117 @@
+{
+  "aircraft": "e75l",
+  "label": "Embraer E175 \u00b7 enhanced wingtip",
+  "livery": {
+    "id": "american",
+    "name": "American Eagle",
+    "textures": {
+      "blank175.png": "Models/Liveries/ERJ175/UnitedExpress.png",
+      "blank.png": "Models/Liveries/ERJ175/UnitedExpress.png"
+    },
+    "paintProjection": {
+      "sourceBlend": "b738/american.blend",
+      "sourceBodyPattern": "^fuselage$",
+      "bodyPartPattern": "^vstab$|^rudder$",
+      "finPartPattern": "^v.?stab$|^rudder$",
+      "bodyTexturePattern": ".*",
+      "bodyResolution": 2048,
+      "angularResolution": 512,
+      "bakeCabinMask": false
+    },
+    "authoredPaint": {
+      "bodyColorSRGB": [
+        219,
+        224,
+        229
+      ],
+      "bodyPartPattern": "^fuselage$|^door\\.[lr][12]$|^geardoor",
+      "finPartPattern": "^vstab$|^rudder$",
+      "preserveFinPaint": true,
+      "bodyGraphics": [
+        {
+          "image": "preparation/brand-art/american-eagle-current.png",
+          "box": [
+            0.12,
+            1.02,
+            0.33,
+            1.43
+          ],
+          "colorSRGB": [
+            52,
+            67,
+            85
+          ]
+        }
+      ],
+      "bodyBands": [],
+      "resolution": 4096,
+      "references": [
+        "reference/Embraer-E175-Airport-Planning.pdf"
+      ],
+      "artworkMetadata": [
+        "preparation/brand-art/american-eagle-current.asset.json"
+      ]
+    },
+    "operatorFinishes": [
+      {
+        "name": "american-nacelles",
+        "partPattern": "^nacelle$|^reverser$",
+        "colorSRGB": [
+          219,
+          224,
+          229
+        ]
+      },
+      {
+        "name": "american-wingtips",
+        "partPattern": "^winglet\\.[lr]$",
+        "colorSRGB": [
+          219,
+          224,
+          229
+        ]
+      },
+      {
+        "name": "CF34 fan alloy",
+        "partPattern": "^fan\\.[lr]$",
+        "flatColor": true,
+        "colorSRGB": [
+          69,
+          75,
+          80
+        ],
+        "metallic": 0.75,
+        "roughness": 0.33
+      }
+    ]
+  },
+  "referenceDimensions": {
+    "length": 31.68,
+    "span": 28.65
+  },
+  "axes": "X aft; Y up; Z port",
+  "bounds": {
+    "min": [
+      -15.251450947110527,
+      -2.3639278411865234,
+      -14.325
+    ],
+    "max": [
+      16.42854905288947,
+      7.583040237426758,
+      14.325
+    ]
+  },
+  "motions": [
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.l.1"
+      ],
+      "axis": [
+        0.0,
+        0.12203190475702286,
+        0.9925261735916138
+      ],
+      "center": [
+        0.43176587994448906,
+        -0.28999999165534973,
+        1.7000000703189186
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          -10.0
+        ],
+        [
+          0.45,
+          -25.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.l.1"
+      ],
+      "model": "XMLs/ERJ-175-Model.xml",
+      "scope": "0:XMLs/ERJ-175-Model.xml",
+      "targetPartIds": [
+        "0:XMLs/ERJ-175-Model.xml#33.10",
+        "0:XMLs/ERJ-175-Model.xml#33.8"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.l.2"
+      ],
+      "axis": [
+        0.2820205092430115,
+        0.09011012315750122,
+        0.9551673531532288
+      ],
+      "center": [
+        0.5551275993193217,
+        0.029999999329447746,
+        4.429999887323294
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          -10.0
+        ],
+        [
+          0.45,
+          -25.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.l.2"
+      ],
+      "model": "XMLs/ERJ-175-Model.xml",
+      "scope": "0:XMLs/ERJ-175-Model.xml",
+      "targetPartIds": [
+        "0:XMLs/ERJ-175-Model.xml#25.0",
+        "0:XMLs/ERJ-175-Model.xml#25.3",
+        "0:XMLs/ERJ-175-Model.xml#25.6",
+        "0:XMLs/ERJ-175-Model.xml#45.1"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.r.1"
+      ],
+      "axis": [
+        0.0,
+        0.12203190475702286,
+        -0.9925261735916138
+      ],
+      "center": [
+        0.43176587994448906,
+        -0.28999999165534973,
+        -1.7000000703189186
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          10.0
+        ],
+        [
+          0.45,
+          25.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.r.1"
+      ],
+      "model": "XMLs/ERJ-175-Model.xml",
+      "scope": "0:XMLs/ERJ-175-Model.xml",
+      "targetPartIds": [
+        "0:XMLs/ERJ-175-Model.xml#30.8",
+        "0:XMLs/ERJ-175-Model.xml#30.9"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.r.2"
+      ],
+      "axis": [
+        0.2820205092430115,
+        0.09011012315750122,
+        -0.9551673531532288
+      ],
+      "center": [
+        0.5551275993193217,
+        0.029999999329447746,
+        -4.429999887323294
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          10.0
+        ],
+        [
+          0.45,
+          25.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.r.2"
+      ],
+      "model": "XMLs/ERJ-175-Model.xml",
+      "scope": "0:XMLs/ERJ-175-Model.xml",
+      "targetPartIds": [
+        "0:XMLs/ERJ-175-Model.xml#26.1",
+        "0:XMLs/ERJ-175-Model.xml#26.2",
+        "0:XMLs/ERJ-175-Model.xml#26.5",
+        "0:XMLs/ERJ-175-Model.xml#44.1"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/speedbrake-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler.l.1"
+      ],
+      "axis": [
+        0.0,
+        0.1282426118850708,
+        0.9917427897453308
+      ],
+      "center": [
+        -0.030840420269581413,
+        -0.12999999523162842,
+        1.8200000766850692
+      ],
+      "factor": 55.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler.l.1"
+      ],
+      "model": "XMLs/ERJ-175-Model.xml",
+      "scope": "0:XMLs/ERJ-175-Model.xml",
+      "targetPartIds": [
+        "0:XMLs/ERJ-175-Model.xml#33.6"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/speedbrake-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler.r.1"
+      ],
+      "axis": [
+        0.0,
+        0.1282426118850708,
+        -0.9917427897453308
+      ],
+      "center": [
+        -0.030840420269581413,
+        -0.12999999523162842,
+        -1.8200000766850692
+      ],
+      "factor": -55.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler.r.1"
+      ],
+      "model": "XMLs/ERJ-175-Model.xml",
+      "scope": "0:XMLs/ERJ-175-Model.xml",
+      "targetPartIds": [
+        "0:XMLs/ERJ-175-Model.xml#30.0"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/speedbrake-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler.l.2"
+      ],
+      "axis": [
+        0.28379908204078674,
+        0.08580410480499268,
+        0.955036997795105
+      ],
+      "center": [
+        0.2570035079909878,
+        0.14000000059604645,
+        4.570000232510129
+      ],
+      "factor": 50.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler.l.2"
+      ],
+      "model": "XMLs/ERJ-175-Model.xml",
+      "scope": "0:XMLs/ERJ-175-Model.xml",
+      "targetPartIds": [
+        "0:XMLs/ERJ-175-Model.xml#25.4"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/speedbrake-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler.r.2"
+      ],
+      "axis": [
+        0.28379908204078674,
+        0.08580410480499268,
+        -0.955036997795105
+      ],
+      "center": [
+        0.2570035079909878,
+        0.14000000059604645,
+        -4.570000232510129
+      ],
+      "factor": -50.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler.r.2"
+      ],
+      "model": "XMLs/ERJ-175-Model.xml",
+      "scope": "0:XMLs/ERJ-175-Model.xml",
+      "targetPartIds": [
+        "0:XMLs/ERJ-175-Model.xml#26.0"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "engines/engine[0]/reverser-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "reverser"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 0.35,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "reverser"
+      ],
+      "model": "XMLs/ERJ-175-Model.xml",
+      "scope": "0:XMLs/ERJ-175-Model.xml",
+      "targetPartIds": [
+        "0:XMLs/ERJ-175-Model.xml#30.4",
+        "0:XMLs/ERJ-175-Model.xml#33.3"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "NoseGear"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        -10.896949130974114,
+        -0.8399999737739563,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          115.0
+        ],
+        [
+          0.2,
+          115.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "NoseGear"
+      ],
+      "model": "XMLs/ERJ-175-Model.xml",
+      "scope": "0:XMLs/ERJ-175-Model.xml",
+      "targetPartIds": [
+        "0:XMLs/ERJ-175-Model.xml#5",
+        "0:XMLs/ERJ-175-Model.xml#6"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "LeftGear"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -0.3700000047683716,
+        2.530000005076277
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          75.0
+        ],
+        [
+          0.2,
+          75.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "LeftGear"
+      ],
+      "model": "XMLs/ERJ-175-Model.xml",
+      "scope": "0:XMLs/ERJ-175-Model.xml",
+      "targetPartIds": [
+        "0:XMLs/ERJ-175-Model.xml#31",
+        "0:XMLs/ERJ-175-Model.xml#32",
+        "0:XMLs/ERJ-175-Model.xml#34"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "RightGear"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -0.3700000047683716,
+        -2.530000005076277
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          75.0
+        ],
+        [
+          0.2,
+          75.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "RightGear"
+      ],
+      "model": "XMLs/ERJ-175-Model.xml",
+      "scope": "0:XMLs/ERJ-175-Model.xml",
+      "targetPartIds": [
+        "0:XMLs/ERJ-175-Model.xml#29",
+        "0:XMLs/ERJ-175-Model.xml#35",
+        "0:XMLs/ERJ-175-Model.xml#36"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "translate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "LeftGear"
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.3
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "LeftGear"
+      ],
+      "model": "XMLs/ERJ-175-Model.xml",
+      "scope": "0:XMLs/ERJ-175-Model.xml",
+      "targetPartIds": [
+        "0:XMLs/ERJ-175-Model.xml#31",
+        "0:XMLs/ERJ-175-Model.xml#32",
+        "0:XMLs/ERJ-175-Model.xml#34"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "translate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "RightGear"
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.3
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "RightGear"
+      ],
+      "model": "XMLs/ERJ-175-Model.xml",
+      "scope": "0:XMLs/ERJ-175-Model.xml",
+      "targetPartIds": [
+        "0:XMLs/ERJ-175-Model.xml#29",
+        "0:XMLs/ERJ-175-Model.xml#35",
+        "0:XMLs/ERJ-175-Model.xml#36"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "geardoor.f.l"
+      ],
+      "axis": [
+        0.9980732202529907,
+        -0.050831157714128494,
+        0.0355818085372448
+      ],
+      "center": [
+        -13.230540473729183,
+        -0.8299999833106995,
+        0.31999999710818644
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          -90.0
+        ],
+        [
+          0.8,
+          -90.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "geardoor.f.l"
+      ],
+      "model": "XMLs/ERJ-175-Model.xml",
+      "scope": "0:XMLs/ERJ-175-Model.xml",
+      "targetPartIds": [
+        "0:XMLs/ERJ-175-Model.xml#12"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "geardoor.f.r"
+      ],
+      "axis": [
+        0.9980732202529907,
+        -0.050831157714128494,
+        -0.0355818085372448
+      ],
+      "center": [
+        -13.230540473729183,
+        -0.8299999833106995,
+        -0.31999999710818644
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          90.0
+        ],
+        [
+          0.8,
+          90.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "geardoor.f.r"
+      ],
+      "model": "XMLs/ERJ-175-Model.xml",
+      "scope": "0:XMLs/ERJ-175-Model.xml",
+      "targetPartIds": [
+        "0:XMLs/ERJ-175-Model.xml#13",
+        "0:XMLs/ERJ-175-Model.xml#14"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "geardoor.b.l"
+      ],
+      "axis": [
+        0.9998316764831543,
+        -0.018350671976804733,
+        0.0
+      ],
+      "center": [
+        -11.267033829540528,
+        -0.949999988079071,
+        0.30000001591537656
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          -50.0
+        ],
+        [
+          1.0,
+          -50.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "geardoor.b.l"
+      ],
+      "model": "XMLs/ERJ-175-Model.xml",
+      "scope": "0:XMLs/ERJ-175-Model.xml",
+      "targetPartIds": [
+        "0:XMLs/ERJ-175-Model.xml#8"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "geardoor.b.r"
+      ],
+      "axis": [
+        0.9998316764831543,
+        -0.018350671976804733,
+        0.0
+      ],
+      "center": [
+        -11.267033829540528,
+        -0.949999988079071,
+        -0.30000001591537656
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          50.0
+        ],
+        [
+          1.0,
+          50.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "geardoor.b.r"
+      ],
+      "model": "XMLs/ERJ-175-Model.xml",
+      "scope": "0:XMLs/ERJ-175-Model.xml",
+      "targetPartIds": [
+        "0:XMLs/ERJ-175-Model.xml#7"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[0]/n1",
+      "spinDirection": -1,
+      "inputScale": 1,
+      "targets": [
+        "fan.l"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -1.0800000429153442,
+        4.040000015644919
+      ],
+      "factor": -67.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "fan.l"
+      ],
+      "model": "XMLs/ERJ-175-Model.xml",
+      "scope": "0:XMLs/ERJ-175-Model.xml",
+      "targetPartIds": [
+        "0:XMLs/ERJ-175-Model.xml#33.9"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[1]/n1",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "fan.r"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -1.0800000429153442,
+        -4.040000015644919
+      ],
+      "factor": 67.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "fan.r"
+      ],
+      "model": "XMLs/ERJ-175-Model.xml",
+      "scope": "0:XMLs/ERJ-175-Model.xml",
+      "targetPartIds": [
+        "0:XMLs/ERJ-175-Model.xml#30.7"
+      ]
+    }
+  ],
+  "gearInternalParts": [
+    "tire.n",
+    "gear.n",
+    "gear.r",
+    "gear.l",
+    "gear.l",
+    "tire.l",
+    "tire.r",
+    "gear.r"
+  ],
+  "gearInternalPartIds": [
+    "0:XMLs/ERJ-175-Model.xml#5",
+    "0:XMLs/ERJ-175-Model.xml#6",
+    "0:XMLs/ERJ-175-Model.xml#29",
+    "0:XMLs/ERJ-175-Model.xml#31",
+    "0:XMLs/ERJ-175-Model.xml#32",
+    "0:XMLs/ERJ-175-Model.xml#34",
+    "0:XMLs/ERJ-175-Model.xml#35",
+    "0:XMLs/ERJ-175-Model.xml#36"
+  ],
+  "missingTextures": [],
+  "sourceAC": [
+    "Models/erj175.ac"
+  ],
+  "discardedUnreferencedVertices": 0,
+  "provenance": "preparation/E-jet-family",
+  "variantConstruction": {
+    "enhancedWingtip": {
+      "changes": [
+        {
+          "part": "winglet.r",
+          "tipDelta": [
+            0.5802739413097662,
+            1.545019340515136,
+            0.14169300079345692
+          ],
+          "rootUnchanged": true
+        },
+        {
+          "part": "winglet.l",
+          "tipDelta": [
+            0.5802772791698736,
+            -1.5449802398681634,
+            0.14169395446777333
+          ],
+          "rootUnchanged": true
+        }
+      ],
+      "basis": "Embraer 170/175 Airport Planning Manual, May 25 2018, fig.2.2 p.2-5, post-SB170-57-0058/02; reference/Embraer-E175-Airport-Planning.pdf",
+      "method": "Remodeled source airfoil tip with fixed attachment seam, manufacturer span, standing tip height and plan-view aft station. Requires three-view shape review; not factory CAD."
+    }
+  },
+  "capabilities": [
+    "fans",
+    "flaps",
+    "gear",
+    "reversers",
+    "spoilers"
+  ],
+  "reviewPoints": {
+    "cockpit": [
+      -10.721156120300293,
+      1.3442355394363403,
+      -0.00015205825911834836
+    ],
+    "engine": [
+      -3.4709067344665527,
+      -1.0353641510009766,
+      4.036525249481201
+    ],
+    "gear": [
+      -11.123111724853516,
+      -1.909999966621399,
+      -0.0
+    ],
+    "wing": [
+      0.7113754749298096,
+      -0.22798137366771698,
+      2.9130043983459473
+    ],
+    "door": [
+      -8.22411225571161,
+      0.1,
+      1.3500000179750136
+    ]
+  },
+  "fidelityNotes": [
+    "Enhanced wingtip reconstructed from the Embraer APM three-view. Inboard wing and attachment seam retained. Tip airfoil and livery placement require visual review."
+  ],
+  "reviewStatus": "build-awaiting-validation",
+  "addedDoorWindowPanes": 0,
+  "fittedCockpitOpenings": 0,
+  "fittedCabinOpenings": 0,
+  "envelopeCalibration": {
+    "rawDimensions": {
+      "length": 30.816699981689453,
+      "span": 28.649999618530273
+    },
+    "axisScale": [
+      1.0280140319639512,
+      1,
+      1.0000000133148248
+    ]
+  },
+  "skippedSourceModels": [
+    "Aircraft/E-jet-family/XMLs/Effects/contrail/contrail.xml",
+    "Aircraft/E-jet-family/XMLs/Effects/contrail/contrail.xml",
+    "Aircraft/E-jet-family/XMLs/Effects/wet-runway-nose.xml",
+    "Aircraft/E-jet-family/XMLs/Effects/wet-runway.xml",
+    "Aircraft/E-jet-family/XMLs/Effects/wet-runway.xml"
+  ],
+  "unresolvedMotions": [],
+  "cargo": false,
+  "paintProjection": {
+    "method": "Original cylindrical fuselage and planar fin surface-coordinate transfer; target geometry and UVs retained",
+    "sourceBlend": "b738/american.blend",
+    "maps": [
+      {
+        "surface": "body-and-fin",
+        "resolution": 2048,
+        "sourceAtlas": "UnitedExpress.png",
+        "map": "e75l/generated/american/body-color.png",
+        "sourceTriangles": {
+          "body": 4125,
+          "fin": 164
+        }
+      }
+    ],
+    "operatorFinishParts": [
+      "reverser",
+      "nacelle",
+      "reverser",
+      "nacelle",
+      "winglet.r",
+      "winglet.l",
+      "fan.r",
+      "fan.l"
+    ],
+    "enginePaintStatus": "operator-specific finish applied; visual review required",
+    "reviewStatus": "requires-visual-review"
+  },
+  "authoredPaint": {
+    "method": "Original airline paint layout projected in physical exterior coordinates; independent destination texture atlases retained.",
+    "maps": [
+      "e75l/generated/american/authored-color-0.png"
+    ],
+    "references": [
+      "reference/Embraer-E175-Airport-Planning.pdf"
+    ],
+    "artworkMetadata": [
+      "preparation/brand-art/american-eagle-current.asset.json"
+    ],
+    "reviewStatus": "requires-visual-review"
+  }
+}

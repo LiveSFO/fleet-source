@@ -1,0 +1,2546 @@
+{
+  "aircraft": "b738-current",
+  "label": "Boeing 737-800 \u00b7 current paint",
+  "livery": {
+    "id": "united-star-alliance",
+    "name": "United \u00b7 Star Alliance",
+    "xml": "Models/Liveries-800/N76516-3.xml"
+  },
+  "referenceDimensions": {
+    "length": 39.47,
+    "span": 35.79
+  },
+  "axes": "X aft; Y up; Z port",
+  "bounds": {
+    "min": [
+      -19.834774051906827,
+      -3.06889009475708,
+      -17.815271298681015
+    ],
+    "max": [
+      19.635225948093165,
+      9.918109893798828,
+      17.974728701318984
+    ]
+  },
+  "motions": [
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flapI/B",
+        "aftflapI/B"
+      ],
+      "axis": [
+        0.0,
+        -0.12918724119663239,
+        -0.9916202425956726
+      ],
+      "center": [
+        0.6808504220484279,
+        -0.1899999976158142,
+        5.607965979000914
+      ],
+      "factor": 25.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flapI/B",
+        "aftflapI/B"
+      ],
+      "model": "Models/LWing.xml",
+      "scope": "0:Models/737-800.xml/2:LeftWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/2:LeftWing#17",
+        "0:Models/737-800.xml/2:LeftWing#4"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flapI/B",
+        "aftflapI/B"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.6808504220484279,
+        -0.1899999976158142,
+        5.607965979000914
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.3
+        ],
+        [
+          0.75,
+          0.3
+        ],
+        [
+          1.0,
+          0.3
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flapI/B",
+        "aftflapI/B"
+      ],
+      "model": "Models/LWing.xml",
+      "scope": "0:Models/737-800.xml/2:LeftWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/2:LeftWing#17",
+        "0:Models/737-800.xml/2:LeftWing#4"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "aftflapI/B"
+      ],
+      "axis": [
+        0.0,
+        -0.12918724119663239,
+        -0.9916202425956726
+      ],
+      "center": [
+        1.1514381777753315,
+        -0.6800000071525574,
+        2.1254392206921597
+      ],
+      "factor": 10.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "aftflapI/B"
+      ],
+      "model": "Models/LWing.xml",
+      "scope": "0:Models/737-800.xml/2:LeftWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/2:LeftWing#4"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "aftflapI/B"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        1.1514381777753315,
+        -0.6800000071525574,
+        2.1254392206921597
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.05
+        ],
+        [
+          0.75,
+          0.05
+        ],
+        [
+          1.0,
+          0.05
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "aftflapI/B"
+      ],
+      "model": "Models/LWing.xml",
+      "scope": "0:Models/737-800.xml/2:LeftWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/2:LeftWing#4"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flapO/B",
+        "aftflapO/B"
+      ],
+      "axis": [
+        -0.31230905652046204,
+        -0.11342506855726242,
+        -0.9431849718093872
+      ],
+      "center": [
+        0.6808504220484279,
+        -0.1899999976158142,
+        5.607965979000914
+      ],
+      "factor": 25.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flapO/B",
+        "aftflapO/B"
+      ],
+      "model": "Models/LWing.xml",
+      "scope": "0:Models/737-800.xml/2:LeftWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/2:LeftWing#18",
+        "0:Models/737-800.xml/2:LeftWing#5"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flapO/B",
+        "aftflapO/B"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.6808504220484279,
+        -0.1899999976158142,
+        5.607965979000914
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.3
+        ],
+        [
+          0.75,
+          0.3
+        ],
+        [
+          1.0,
+          0.3
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flapO/B",
+        "aftflapO/B"
+      ],
+      "model": "Models/LWing.xml",
+      "scope": "0:Models/737-800.xml/2:LeftWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/2:LeftWing#18",
+        "0:Models/737-800.xml/2:LeftWing#5"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "aftflapO/B"
+      ],
+      "axis": [
+        -0.31230905652046204,
+        -0.11342506855726242,
+        -0.9431849718093872
+      ],
+      "center": [
+        1.2015007798967474,
+        -0.17000000178813934,
+        5.867409478608163
+      ],
+      "factor": 10.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "aftflapO/B"
+      ],
+      "model": "Models/LWing.xml",
+      "scope": "0:Models/737-800.xml/2:LeftWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/2:LeftWing#5"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "aftflapO/B"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        1.2015007798967474,
+        -0.17000000178813934,
+        5.867409478608163
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.05
+        ],
+        [
+          0.75,
+          0.05
+        ],
+        [
+          1.0,
+          0.05
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "aftflapO/B"
+      ],
+      "model": "Models/LWing.xml",
+      "scope": "0:Models/737-800.xml/2:LeftWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/2:LeftWing#5"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "slat4",
+        "slat3",
+        "slat2",
+        "slat1"
+      ],
+      "axis": [
+        -0.46069788932800293,
+        -0.0902547836303711,
+        -0.8829562067985535
+      ],
+      "center": [
+        -1.9724637305978379,
+        -0.6000000238418579,
+        5.568051667648434
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.125,
+          -12.5
+        ],
+        [
+          0.375,
+          -12.5
+        ],
+        [
+          0.5,
+          -25.0
+        ],
+        [
+          1.0,
+          -25.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "slat4",
+        "slat3",
+        "slat2",
+        "slat1"
+      ],
+      "model": "Models/LWing.xml",
+      "scope": "0:Models/737-800.xml/2:LeftWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/2:LeftWing#44",
+        "0:Models/737-800.xml/2:LeftWing#45",
+        "0:Models/737-800.xml/2:LeftWing#46",
+        "0:Models/737-800.xml/2:LeftWing#47"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap1",
+        "flap2"
+      ],
+      "axis": [
+        -0.6135589480400085,
+        -0.1337001919746399,
+        -0.7782477736473083
+      ],
+      "center": [
+        -4.886103092007857,
+        -0.7599999904632568,
+        1.8460386843627012
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.125,
+          110.0
+        ],
+        [
+          1.0,
+          110.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap1",
+        "flap2"
+      ],
+      "model": "Models/LWing.xml",
+      "scope": "0:Models/737-800.xml/2:LeftWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/2:LeftWing#15",
+        "0:Models/737-800.xml/2:LeftWing#16"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "fairing1"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        1.6020010000762053,
+        -0.05000000074505806,
+        0.0
+      ],
+      "factor": 28.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "fairing1"
+      ],
+      "model": "Models/LWing.xml",
+      "scope": "0:Models/737-800.xml/2:LeftWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/2:LeftWing#9"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "fairing2"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        0.8911130286907653,
+        -0.23000000417232513,
+        0.0
+      ],
+      "factor": 28.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "fairing2"
+      ],
+      "model": "Models/LWing.xml",
+      "scope": "0:Models/737-800.xml/2:LeftWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/2:LeftWing#10",
+        "0:Models/737-800.xml/2:LeftWing#12"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "fairing3"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        0.34042521102421397,
+        -0.47999998927116394,
+        0.0
+      ],
+      "factor": 26.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "fairing3"
+      ],
+      "model": "Models/LWing.xml",
+      "scope": "0:Models/737-800.xml/2:LeftWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/2:LeftWing#11"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "mgouterstrut",
+        "lhdragstrut",
+        "sidestrutl",
+        "mglhlinkupper",
+        "mglhlinklower",
+        "mglhlowerstrut",
+        "mglhaxle",
+        "Bearing",
+        "Tires",
+        "lhgdmid",
+        "geardoor"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -7.209004201946989,
+        -0.6000000238418579,
+        2.8738332722753603
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          81.5
+        ],
+        [
+          0.25,
+          55.0
+        ],
+        [
+          0.75,
+          28.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "mgouterstrut",
+        "lhdragstrut",
+        "sidestrutl",
+        "mglhlinkupper",
+        "mglhlinklower",
+        "mglhlowerstrut",
+        "mglhaxle",
+        "Bearing",
+        "Tires",
+        "lhgdmid",
+        "geardoor"
+      ],
+      "model": "Models/LWing.xml",
+      "scope": "0:Models/737-800.xml/2:LeftWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/2:LeftWing#2",
+        "0:Models/737-800.xml/2:LeftWing#20",
+        "0:Models/737-800.xml/2:LeftWing#25",
+        "0:Models/737-800.xml/2:LeftWing#27",
+        "0:Models/737-800.xml/2:LeftWing#3",
+        "0:Models/737-800.xml/2:LeftWing#33",
+        "0:Models/737-800.xml/2:LeftWing#34",
+        "0:Models/737-800.xml/2:LeftWing#35",
+        "0:Models/737-800.xml/2:LeftWing#36",
+        "0:Models/737-800.xml/2:LeftWing#37",
+        "0:Models/737-800.xml/2:LeftWing#42"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "sidestrutl"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -7.068829250210471,
+        -1.6299999952316284,
+        2.8838118501134806
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          48.0
+        ],
+        [
+          0.25,
+          41.0
+        ],
+        [
+          0.75,
+          31.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "sidestrutl"
+      ],
+      "model": "Models/LWing.xml",
+      "scope": "0:Models/737-800.xml/2:LeftWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/2:LeftWing#42"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "sidestrutu"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -7.068829250210471,
+        -0.6100000143051147,
+        1.8759744178770619
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -44.0
+        ],
+        [
+          0.25,
+          -32.0
+        ],
+        [
+          0.75,
+          -26.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "sidestrutu"
+      ],
+      "model": "Models/LWing.xml",
+      "scope": "0:Models/737-800.xml/2:LeftWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/2:LeftWing#43"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "geardoor"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.4906128085113074,
+        -1.659999966621399,
+        2.9835976284946826
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.75,
+          0.0
+        ],
+        [
+          1.0,
+          -35.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "geardoor"
+      ],
+      "model": "Models/LWing.xml",
+      "scope": "0:Models/737-800.xml/2:LeftWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/2:LeftWing#20"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lhmgdouter"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        2.332913845208488,
+        -0.6700000166893005,
+        2.993576206332803
+      ],
+      "factor": 110.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lhmgdouter"
+      ],
+      "model": "Models/LWing.xml",
+      "scope": "0:Models/737-800.xml/2:LeftWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/2:LeftWing#28"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-1",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler1"
+      ],
+      "axis": [
+        -0.30863815546035767,
+        -0.09484697878360748,
+        -0.9464388489723206
+      ],
+      "center": [
+        1.261575759212398,
+        0.1899999976158142,
+        7.613662265635631
+      ],
+      "factor": -60.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler1"
+      ],
+      "model": "Models/LWing.xml",
+      "scope": "0:Models/737-800.xml/2:LeftWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/2:LeftWing#48"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-2",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler2"
+      ],
+      "axis": [
+        -0.30863815546035767,
+        -0.09484697878360748,
+        -0.9464388489723206
+      ],
+      "center": [
+        1.261575759212398,
+        0.1899999976158142,
+        7.613662265635631
+      ],
+      "factor": -33.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler2"
+      ],
+      "model": "Models/LWing.xml",
+      "scope": "0:Models/737-800.xml/2:LeftWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/2:LeftWing#49"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-3",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler3"
+      ],
+      "axis": [
+        -0.30863815546035767,
+        -0.09484697878360748,
+        -0.9464388489723206
+      ],
+      "center": [
+        1.261575759212398,
+        0.1899999976158142,
+        7.613662265635631
+      ],
+      "factor": -33.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler3"
+      ],
+      "model": "Models/LWing.xml",
+      "scope": "0:Models/737-800.xml/2:LeftWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/2:LeftWing#50"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-4",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler4"
+      ],
+      "axis": [
+        -0.30863815546035767,
+        -0.09484697878360748,
+        -0.9464388489723206
+      ],
+      "center": [
+        0.6107628865009821,
+        0.029999999329447746,
+        5.607965979000914
+      ],
+      "factor": -38.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler4"
+      ],
+      "model": "Models/LWing.xml",
+      "scope": "0:Models/737-800.xml/2:LeftWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/2:LeftWing#51"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-5",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler5"
+      ],
+      "axis": [
+        -0.30863815546035767,
+        -0.09484697878360748,
+        -0.9464388489723206
+      ],
+      "center": [
+        0.6107628865009821,
+        0.029999999329447746,
+        5.607965979000914
+      ],
+      "factor": -38.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler5"
+      ],
+      "model": "Models/LWing.xml",
+      "scope": "0:Models/737-800.xml/2:LeftWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/2:LeftWing#52"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-6",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler6"
+      ],
+      "axis": [
+        0.0,
+        -0.13893963396549225,
+        -0.9903008937835693
+      ],
+      "center": [
+        0.7509379575958737,
+        -0.5299999713897705,
+        2.4247967937438277
+      ],
+      "factor": -52.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler6"
+      ],
+      "model": "Models/LWing.xml",
+      "scope": "0:Models/737-800.xml/2:LeftWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/2:LeftWing#53"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[0]/n1",
+      "spinDirection": -1,
+      "inputScale": 1,
+      "targets": [
+        "fan",
+        "fan_1"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.2883601633035446,
+        -1.2200000286102295,
+        5.178886894053684
+      ],
+      "factor": -5.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "fan",
+        "fan_1"
+      ],
+      "model": "Models/LWing.xml",
+      "scope": "0:Models/737-800.xml/2:LeftWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/2:LeftWing#13",
+        "0:Models/737-800.xml/2:LeftWing#14"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "engines/engine/reverser-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "No2reverser_1",
+        "lreverserib_1"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.3
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "No2reverser_1",
+        "lreverserib_1"
+      ],
+      "model": "Models/LWing.xml",
+      "scope": "0:Models/737-800.xml/2:LeftWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/2:LeftWing#21.6.1"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "nouterstrut",
+        "rhsteercyl",
+        "lhsteercyl",
+        "collar",
+        "nlinkupper",
+        "nlinklower",
+        "nlowerstrut",
+        "noseaxle",
+        "Bearing",
+        "Tires"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        -15.519384456981388,
+        -1.2200000286102295,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          120.0
+        ],
+        [
+          0.25,
+          110.0
+        ],
+        [
+          0.75,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "nouterstrut",
+        "rhsteercyl",
+        "lhsteercyl",
+        "collar",
+        "nlinkupper",
+        "nlinklower",
+        "nlowerstrut",
+        "noseaxle",
+        "Bearing",
+        "Tires"
+      ],
+      "model": "Models/NoseGear.xml",
+      "scope": "0:Models/737-800.xml/3:NoseGear",
+      "targetPartIds": [
+        "0:Models/737-800.xml/3:NoseGear#0.0",
+        "0:Models/737-800.xml/3:NoseGear#0.1",
+        "0:Models/737-800.xml/3:NoseGear#1",
+        "0:Models/737-800.xml/3:NoseGear#20",
+        "0:Models/737-800.xml/3:NoseGear#21",
+        "0:Models/737-800.xml/3:NoseGear#3",
+        "0:Models/737-800.xml/3:NoseGear#4",
+        "0:Models/737-800.xml/3:NoseGear#5",
+        "0:Models/737-800.xml/3:NoseGear#7"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhngdoor"
+      ],
+      "axis": [
+        0.9950494766235352,
+        -0.09938066452741623,
+        0.0
+      ],
+      "center": [
+        -16.57069683372202,
+        -1.090000033378601,
+        -0.4789721823073857
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          90.0
+        ],
+        [
+          0.75,
+          90.0
+        ],
+        [
+          1.0,
+          90.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhngdoor"
+      ],
+      "model": "Models/NoseGear.xml",
+      "scope": "0:Models/737-800.xml/3:NoseGear",
+      "targetPartIds": [
+        "0:Models/737-800.xml/3:NoseGear#6"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lhngdoor"
+      ],
+      "axis": [
+        0.9959844946861267,
+        -0.08952663838863373,
+        0.0
+      ],
+      "center": [
+        -16.57069683372202,
+        -1.090000033378601,
+        0.5288651012364944
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          -90.0
+        ],
+        [
+          0.75,
+          -90.0
+        ],
+        [
+          1.0,
+          -90.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lhngdoor"
+      ],
+      "model": "Models/NoseGear.xml",
+      "scope": "0:Models/737-800.xml/3:NoseGear",
+      "targetPartIds": [
+        "0:Models/737-800.xml/3:NoseGear#2"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhflapI/B",
+        "rhaftflapI/B"
+      ],
+      "axis": [
+        0.0,
+        0.12918724119663239,
+        -0.9916202425956726
+      ],
+      "center": [
+        0.6808504220484279,
+        -0.1899999976158142,
+        -5.607965979000914
+      ],
+      "factor": 25.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhflapI/B",
+        "rhaftflapI/B"
+      ],
+      "model": "Models/RWing.xml",
+      "scope": "0:Models/737-800.xml/4:RightWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/4:RightWing#22",
+        "0:Models/737-800.xml/4:RightWing#26"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhflapI/B",
+        "rhaftflapI/B"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.6808504220484279,
+        -0.1899999976158142,
+        -5.607965979000914
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.3
+        ],
+        [
+          0.75,
+          0.3
+        ],
+        [
+          1.0,
+          0.3
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhflapI/B",
+        "rhaftflapI/B"
+      ],
+      "model": "Models/RWing.xml",
+      "scope": "0:Models/737-800.xml/4:RightWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/4:RightWing#22",
+        "0:Models/737-800.xml/4:RightWing#26"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhaftflapI/B"
+      ],
+      "axis": [
+        0.0,
+        0.12918724119663239,
+        -0.9916202425956726
+      ],
+      "center": [
+        1.1514381777753315,
+        -0.6800000071525574,
+        -2.1254392206921597
+      ],
+      "factor": 10.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhaftflapI/B"
+      ],
+      "model": "Models/RWing.xml",
+      "scope": "0:Models/737-800.xml/4:RightWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/4:RightWing#22"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhaftflapI/B"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        1.1514381777753315,
+        -0.6800000071525574,
+        -2.1254392206921597
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.05
+        ],
+        [
+          0.75,
+          0.05
+        ],
+        [
+          1.0,
+          0.05
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhaftflapI/B"
+      ],
+      "model": "Models/RWing.xml",
+      "scope": "0:Models/737-800.xml/4:RightWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/4:RightWing#22"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhflapO/B",
+        "rhaftflapO/B"
+      ],
+      "axis": [
+        0.31230905652046204,
+        0.11342506855726242,
+        -0.9431849718093872
+      ],
+      "center": [
+        0.6808504220484279,
+        -0.1899999976158142,
+        -5.607965979000914
+      ],
+      "factor": 25.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhflapO/B",
+        "rhaftflapO/B"
+      ],
+      "model": "Models/RWing.xml",
+      "scope": "0:Models/737-800.xml/4:RightWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/4:RightWing#23",
+        "0:Models/737-800.xml/4:RightWing#27"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhflapO/B",
+        "rhaftflapO/B"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.6808504220484279,
+        -0.1899999976158142,
+        -5.607965979000914
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.3
+        ],
+        [
+          0.75,
+          0.3
+        ],
+        [
+          1.0,
+          0.3
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhflapO/B",
+        "rhaftflapO/B"
+      ],
+      "model": "Models/RWing.xml",
+      "scope": "0:Models/737-800.xml/4:RightWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/4:RightWing#23",
+        "0:Models/737-800.xml/4:RightWing#27"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhaftflapO/B"
+      ],
+      "axis": [
+        0.31230905652046204,
+        0.11342506855726242,
+        -0.9431849718093872
+      ],
+      "center": [
+        1.2015007798967474,
+        -0.17000000178813934,
+        -5.867409478608163
+      ],
+      "factor": 10.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhaftflapO/B"
+      ],
+      "model": "Models/RWing.xml",
+      "scope": "0:Models/737-800.xml/4:RightWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/4:RightWing#23"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhaftflapO/B"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        1.2015007798967474,
+        -0.17000000178813934,
+        -5.867409478608163
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          0.05
+        ],
+        [
+          0.75,
+          0.05
+        ],
+        [
+          1.0,
+          0.05
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhaftflapO/B"
+      ],
+      "model": "Models/RWing.xml",
+      "scope": "0:Models/737-800.xml/4:RightWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/4:RightWing#23"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "slat5",
+        "slat6",
+        "slat7",
+        "slat8"
+      ],
+      "axis": [
+        0.46069788932800293,
+        0.0902547836303711,
+        -0.8829562067985535
+      ],
+      "center": [
+        -1.9724637305978379,
+        -0.6000000238418579,
+        -5.568051667648434
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.125,
+          -12.5
+        ],
+        [
+          0.375,
+          -12.5
+        ],
+        [
+          0.5,
+          -25.0
+        ],
+        [
+          1.0,
+          -25.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "slat5",
+        "slat6",
+        "slat7",
+        "slat8"
+      ],
+      "model": "Models/RWing.xml",
+      "scope": "0:Models/737-800.xml/4:RightWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/4:RightWing#38",
+        "0:Models/737-800.xml/4:RightWing#39",
+        "0:Models/737-800.xml/4:RightWing#40",
+        "0:Models/737-800.xml/4:RightWing#41"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap3",
+        "flap4"
+      ],
+      "axis": [
+        0.6135589480400085,
+        0.1337001919746399,
+        -0.7782477736473083
+      ],
+      "center": [
+        -4.886103092007857,
+        -0.7599999904632568,
+        -1.8460386843627012
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.125,
+          110.0
+        ],
+        [
+          1.0,
+          110.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap3",
+        "flap4"
+      ],
+      "model": "Models/RWing.xml",
+      "scope": "0:Models/737-800.xml/4:RightWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/4:RightWing#10",
+        "0:Models/737-800.xml/4:RightWing#9"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "fairing6"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        1.6020010000762053,
+        -0.05000000074505806,
+        0.0
+      ],
+      "factor": 26.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "fairing6"
+      ],
+      "model": "Models/RWing.xml",
+      "scope": "0:Models/737-800.xml/4:RightWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/4:RightWing#6"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "fairing5"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        0.8911130286907653,
+        -0.23000000417232513,
+        0.0
+      ],
+      "factor": 28.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "fairing5"
+      ],
+      "model": "Models/RWing.xml",
+      "scope": "0:Models/737-800.xml/4:RightWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/4:RightWing#5"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "fairing4"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        0.34042521102421397,
+        -0.47999998927116394,
+        0.0
+      ],
+      "factor": 28.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "fairing4"
+      ],
+      "model": "Models/RWing.xml",
+      "scope": "0:Models/737-800.xml/4:RightWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/4:RightWing#4"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "mgrhouterstrut",
+        "rhdragstrut",
+        "rhsidestrutl",
+        "mgrhlinkupper",
+        "mgrhlinklower",
+        "mgrhlowerstrut",
+        "mgrhaxle",
+        "Bearing",
+        "Tires",
+        "rhgdmid",
+        "geardoorrh"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -7.209004201946989,
+        -0.6000000238418579,
+        -2.8738332722753603
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -82.9
+        ],
+        [
+          0.25,
+          -55.0
+        ],
+        [
+          0.75,
+          -28.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "mgrhouterstrut",
+        "rhdragstrut",
+        "rhsidestrutl",
+        "mgrhlinkupper",
+        "mgrhlinklower",
+        "mgrhlowerstrut",
+        "mgrhaxle",
+        "Bearing",
+        "Tires",
+        "rhgdmid",
+        "geardoorrh"
+      ],
+      "model": "Models/RWing.xml",
+      "scope": "0:Models/737-800.xml/4:RightWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/4:RightWing#11",
+        "0:Models/737-800.xml/4:RightWing#15",
+        "0:Models/737-800.xml/4:RightWing#16",
+        "0:Models/737-800.xml/4:RightWing#17",
+        "0:Models/737-800.xml/4:RightWing#18",
+        "0:Models/737-800.xml/4:RightWing#19",
+        "0:Models/737-800.xml/4:RightWing#2.0",
+        "0:Models/737-800.xml/4:RightWing#2.1",
+        "0:Models/737-800.xml/4:RightWing#25",
+        "0:Models/737-800.xml/4:RightWing#28",
+        "0:Models/737-800.xml/4:RightWing#34"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhsidestrutl"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -7.068829250210471,
+        -1.6299999952316284,
+        -2.8838118501134806
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -48.0
+        ],
+        [
+          0.25,
+          -41.0
+        ],
+        [
+          0.75,
+          -31.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhsidestrutl"
+      ],
+      "model": "Models/RWing.xml",
+      "scope": "0:Models/737-800.xml/4:RightWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/4:RightWing#34"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhsidestrutu"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -7.068829250210471,
+        -0.6100000143051147,
+        -1.8759744178770619
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          44.0
+        ],
+        [
+          0.25,
+          32.0
+        ],
+        [
+          0.75,
+          26.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhsidestrutu"
+      ],
+      "model": "Models/RWing.xml",
+      "scope": "0:Models/737-800.xml/4:RightWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/4:RightWing#35"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "geardoorrh"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.4906128085113074,
+        -1.659999966621399,
+        -2.9835976284946826
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.75,
+          0.0
+        ],
+        [
+          1.0,
+          35.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "geardoorrh"
+      ],
+      "model": "Models/RWing.xml",
+      "scope": "0:Models/737-800.xml/4:RightWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/4:RightWing#11"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhgdouter"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        2.332913845208488,
+        -0.6700000166893005,
+        -2.993576206332803
+      ],
+      "factor": -110.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhgdouter"
+      ],
+      "model": "Models/RWing.xml",
+      "scope": "0:Models/737-800.xml/4:RightWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/4:RightWing#29"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-12",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler12"
+      ],
+      "axis": [
+        0.30863815546035767,
+        0.09484697878360748,
+        -0.9464388489723206
+      ],
+      "center": [
+        1.261575759212398,
+        0.1899999976158142,
+        -7.613662265635631
+      ],
+      "factor": -60.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler12"
+      ],
+      "model": "Models/RWing.xml",
+      "scope": "0:Models/737-800.xml/4:RightWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/4:RightWing#44"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-11",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler11"
+      ],
+      "axis": [
+        0.30863815546035767,
+        0.09484697878360748,
+        -0.9464388489723206
+      ],
+      "center": [
+        1.261575759212398,
+        0.1899999976158142,
+        -7.613662265635631
+      ],
+      "factor": -33.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler11"
+      ],
+      "model": "Models/RWing.xml",
+      "scope": "0:Models/737-800.xml/4:RightWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/4:RightWing#43"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-10",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler10"
+      ],
+      "axis": [
+        0.30863815546035767,
+        0.09484697878360748,
+        -0.9464388489723206
+      ],
+      "center": [
+        1.261575759212398,
+        0.1899999976158142,
+        -7.613662265635631
+      ],
+      "factor": -33.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler10"
+      ],
+      "model": "Models/RWing.xml",
+      "scope": "0:Models/737-800.xml/4:RightWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/4:RightWing#42"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-9",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler9"
+      ],
+      "axis": [
+        0.30863815546035767,
+        0.09484697878360748,
+        -0.9464388489723206
+      ],
+      "center": [
+        0.6107628865009821,
+        0.029999999329447746,
+        -5.607965979000914
+      ],
+      "factor": -38.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler9"
+      ],
+      "model": "Models/RWing.xml",
+      "scope": "0:Models/737-800.xml/4:RightWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/4:RightWing#47"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-8",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler8"
+      ],
+      "axis": [
+        0.30863815546035767,
+        0.09484697878360748,
+        -0.9464388489723206
+      ],
+      "center": [
+        0.6107628865009821,
+        0.029999999329447746,
+        -5.607965979000914
+      ],
+      "factor": -38.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler8"
+      ],
+      "model": "Models/RWing.xml",
+      "scope": "0:Models/737-800.xml/4:RightWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/4:RightWing#46"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-7",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler7"
+      ],
+      "axis": [
+        0.0,
+        0.13893963396549225,
+        -0.9903008937835693
+      ],
+      "center": [
+        0.7509379575958737,
+        -0.5299999713897705,
+        -2.4247967937438277
+      ],
+      "factor": -52.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler7"
+      ],
+      "model": "Models/RWing.xml",
+      "scope": "0:Models/737-800.xml/4:RightWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/4:RightWing#45"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[1]/n1",
+      "spinDirection": -1,
+      "inputScale": 1,
+      "targets": [
+        "fan",
+        "fan_1"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.2883601633035446,
+        -1.2200000286102295,
+        -4.889507898840136
+      ],
+      "factor": -5.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "fan",
+        "fan_1"
+      ],
+      "model": "Models/RWing.xml",
+      "scope": "0:Models/737-800.xml/4:RightWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/4:RightWing#7",
+        "0:Models/737-800.xml/4:RightWing#8"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "engines/engine[1]/reverser-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "No2reverser_1",
+        "lreverserib_1"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.3
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "No2reverser_1",
+        "lreverserib_1"
+      ],
+      "model": "Models/RWing.xml",
+      "scope": "0:Models/737-800.xml/4:RightWing",
+      "targetPartIds": [
+        "0:Models/737-800.xml/4:RightWing#12.6.1"
+      ]
+    }
+  ],
+  "gearInternalParts": [
+    "Bearing",
+    "Tires",
+    "lhdragstrut",
+    "lhgdmid",
+    "lhmgdouter",
+    "mglhaxle",
+    "mglhlinklower",
+    "mglhlinkupper",
+    "mglhlowerstrut",
+    "mgouterstrut",
+    "sidestrutl",
+    "sidestrutu",
+    "Bearing",
+    "Tires",
+    "collar",
+    "lhsteercyl",
+    "nlowerstrut",
+    "nouterstrut",
+    "rhsteercyl",
+    "nlinkupper",
+    "nlinklower",
+    "Bearing",
+    "Tires",
+    "mgrhaxle",
+    "mgrhlinklower",
+    "mgrhlinkupper",
+    "mgrhlowerstrut",
+    "mgrhouterstrut",
+    "rhdragstrut",
+    "rhgdmid",
+    "rhgdouter",
+    "rhsidestrutl",
+    "rhsidestrutu"
+  ],
+  "gearInternalPartIds": [
+    "0:Models/737-800.xml/2:LeftWing#2",
+    "0:Models/737-800.xml/2:LeftWing#3",
+    "0:Models/737-800.xml/2:LeftWing#25",
+    "0:Models/737-800.xml/2:LeftWing#27",
+    "0:Models/737-800.xml/2:LeftWing#28",
+    "0:Models/737-800.xml/2:LeftWing#33",
+    "0:Models/737-800.xml/2:LeftWing#34",
+    "0:Models/737-800.xml/2:LeftWing#35",
+    "0:Models/737-800.xml/2:LeftWing#36",
+    "0:Models/737-800.xml/2:LeftWing#37",
+    "0:Models/737-800.xml/2:LeftWing#42",
+    "0:Models/737-800.xml/2:LeftWing#43",
+    "0:Models/737-800.xml/3:NoseGear#0.0",
+    "0:Models/737-800.xml/3:NoseGear#0.1",
+    "0:Models/737-800.xml/3:NoseGear#1",
+    "0:Models/737-800.xml/3:NoseGear#3",
+    "0:Models/737-800.xml/3:NoseGear#4",
+    "0:Models/737-800.xml/3:NoseGear#5",
+    "0:Models/737-800.xml/3:NoseGear#7",
+    "0:Models/737-800.xml/3:NoseGear#20",
+    "0:Models/737-800.xml/3:NoseGear#21",
+    "0:Models/737-800.xml/4:RightWing#2.0",
+    "0:Models/737-800.xml/4:RightWing#2.1",
+    "0:Models/737-800.xml/4:RightWing#15",
+    "0:Models/737-800.xml/4:RightWing#16",
+    "0:Models/737-800.xml/4:RightWing#17",
+    "0:Models/737-800.xml/4:RightWing#18",
+    "0:Models/737-800.xml/4:RightWing#19",
+    "0:Models/737-800.xml/4:RightWing#25",
+    "0:Models/737-800.xml/4:RightWing#28",
+    "0:Models/737-800.xml/4:RightWing#29",
+    "0:Models/737-800.xml/4:RightWing#34",
+    "0:Models/737-800.xml/4:RightWing#35"
+  ],
+  "missingTextures": [],
+  "sourceAC": [
+    "Models/737-800.ac",
+    "Models/LWing.ac",
+    "Models/nosegear.ac",
+    "Models/RWing.ac",
+    "Models/VertStab.ac",
+    "Models/HorzStab.ac",
+    "Models/winglet2.ac"
+  ],
+  "discardedUnreferencedVertices": 66,
+  "provenance": "preparation/737-Next-Generation",
+  "variantConstruction": {},
+  "capabilities": [
+    "fans",
+    "flaps",
+    "gear",
+    "reversers",
+    "spoilers"
+  ],
+  "reviewPoints": {
+    "cockpit": [
+      -17.327043533325195,
+      1.1822402477264404,
+      0.017472822219133377
+    ],
+    "door": [
+      -1.2582778930664062,
+      1.2601381540298462,
+      1.505921483039856
+    ],
+    "engine": [
+      -2.4746012687683105,
+      -1.242625117301941,
+      5.14168643951416
+    ],
+    "gear": [
+      -15.516780853271484,
+      -2.4833199977874756,
+      -0.0017821639776229858
+    ],
+    "wing": [
+      -4.040561676025391,
+      -0.6266149878501892,
+      2.6734132766723633
+    ]
+  },
+  "fidelityNotes": [],
+  "reviewStatus": "build-awaiting-validation",
+  "addedDoorWindowPanes": 4,
+  "fittedCockpitOpenings": 0,
+  "fittedCabinOpenings": 0,
+  "envelopeCalibration": {
+    "rawDimensions": {
+      "length": 39.42070007324219,
+      "span": 35.86680030822754
+    },
+    "axisScale": [
+      1.0012506101278316,
+      1,
+      0.9978587354442676
+    ]
+  },
+  "skippedSourceModels": [
+    "Aircraft/737-Next-Generation/Models/cockpit.xml",
+    "Aircraft/737-Next-Generation/Models/seats/passengers/passenger-seating.xml",
+    "Aircraft/737-Next-Generation/Models/Pushback/pushback.xml",
+    "Aircraft/737-Next-Generation/Models/Effects/tyre-smoke-nose.xml",
+    "Aircraft/737-Next-Generation/Models/Effects/tyre-smoke-left.xml",
+    "Aircraft/737-Next-Generation/Models/Effects/tyre-smoke-right.xml",
+    "Aircraft/737-Next-Generation/Models/Effects/tyrespray/rain-nose.xml",
+    "Aircraft/737-Next-Generation/Models/Effects/tyrespray/rain-port.xml",
+    "Aircraft/737-Next-Generation/Models/Effects/tyrespray/rain-stbd.xml",
+    "Aircraft/737-Next-Generation/Models/Effects/fire.xml",
+    "Aircraft/737-Next-Generation/Models/Effects/fire.xml",
+    "Aircraft/737-Next-Generation/Models/Effects/fire.xml",
+    "Aircraft/737-Next-Generation/Models/Effects/Contrail/contrail.xml",
+    "Aircraft/737-Next-Generation/Models/Effects/Contrail/contrail.xml",
+    "Aircraft/737-Next-Generation/Models/Services/Fuel-Truck/Fuel_Truck_Short_VolvoFM.xml",
+    "Aircraft/737-Next-Generation/Models/Services/De-Icing/volvo_deicing_truck.xml",
+    "Aircraft/737-Next-Generation/Models/Services/Baggage/cargo_ramp.xml",
+    "Aircraft/737-Next-Generation/Models/Services/External-Power/ext-pwr-box.ac",
+    "Aircraft/737-Next-Generation/Models/Services/Bus/bus.xml",
+    "Aircraft/737-Next-Generation/Models/Services/Services.xml"
+  ],
+  "unresolvedMotions": [],
+  "cargo": false
+}

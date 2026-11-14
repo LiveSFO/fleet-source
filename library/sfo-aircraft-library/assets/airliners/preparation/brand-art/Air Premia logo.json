@@ -1,0 +1,92 @@
+{
+  "batchcomplete": "",
+  "query": {
+    "pages": {
+      "127904146": {
+        "pageid": 127904146,
+        "ns": 6,
+        "title": "File:Air Premia logo.svg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Air_Premia_logo.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Air_Premia_logo.svg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=127904146",
+            "sha1": "563e3e33094b97c9c77fe515959b8446ad0d5753",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-01-19 08:47:52",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Air Premia logo",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "With trademark|Air Premia|PD textlogo|SVG text logos|Blue and orange logos with transparent background|SVG logos of airlines of South Korea|Valid SVG created with Other tools:Text logos|2017 SVG logos",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Logo of Air Premia",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2017-07-27",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "Own work using: <a rel=\"nofollow\" class=\"external free\" href=\"https://airpremia.com\">https://airpremia.com</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"https://en.wikipedia.org/wiki/Air_Premia\" class=\"extiw\" title=\"w:Air Premia\">Air Premia</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "trademarked",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

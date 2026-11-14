@@ -1,0 +1,12 @@
+{
+  "name": "sfo-aircraft-library",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.mjs"
+  },
+  "dependencies": {
+    "three": "0.186.1",
+    "gltf-validator": "2.0.0-dev.3.10"
+  }
+}

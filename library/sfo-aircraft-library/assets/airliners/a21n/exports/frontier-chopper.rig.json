@@ -1,0 +1,2312 @@
+{
+  "aircraft": "a21n",
+  "label": "Airbus A321neo",
+  "livery": {
+    "id": "frontier-chopper",
+    "name": "Frontier \u00b7 Chopper \u00b7 N607FR",
+    "xml": "Models/Liveries/A321/CFM/AAL.xml",
+    "configuration": {
+      "models": [
+        "Models/A321neo-PW.xml"
+      ]
+    },
+    "authoredPaint": {
+      "bodyPartPattern": "^fuselage(?:\\.\\d+)?$|^nosecone$|^door|^entry",
+      "finPartPattern": "^v.?stab$|^rudder",
+      "bodyColorSRGB": [
+        246,
+        248,
+        246
+      ],
+      "finColorSRGB": [
+        25,
+        163,
+        215
+      ],
+      "isolatePartTextures": true,
+      "resolution": 2048,
+      "bodyPolygons": [
+        {
+          "points": [
+            [
+              0.82,
+              -3
+            ],
+            [
+              1,
+              -3
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              0.91,
+              3
+            ],
+            [
+              0.86,
+              -0.65
+            ]
+          ],
+          "colorSRGB": [
+            25,
+            163,
+            215
+          ]
+        }
+      ],
+      "bodyGraphics": [
+        {
+          "image": "preparation/brand-art/frontier-aircraft-title.png",
+          "box": [
+            0.147,
+            -0.27,
+            0.566,
+            1.8
+          ]
+        },
+        {
+          "image": "preparation/brand-art/frontier-website.png",
+          "box": [
+            0.69,
+            -1.03,
+            0.83,
+            -0.57
+          ]
+        },
+        {
+          "image": "preparation/brand-art/n607fr-registration.png",
+          "box": [
+            0.79,
+            0.5,
+            0.857,
+            0.84
+          ]
+        },
+        {
+          "image": "preparation/brand-art/chopper-name.png",
+          "box": [
+            0.075,
+            -0.47,
+            0.131,
+            0.08
+          ]
+        }
+      ],
+      "finGraphics": [
+        {
+          "image": "preparation/brand-art/frontier-chopper-shark-original.png",
+          "box": [
+            0.27,
+            0.06,
+            0.97,
+            0.94
+          ],
+          "sameStationOnBothSides": true
+        }
+      ],
+      "artworkMetadata": [
+        "preparation/brand-art/frontier-chopper-shark-original.asset.json"
+      ],
+      "references": [
+        "https://www.aeroinside.com/20621/frontier-a21n-at-san-juan-on-apr-15th-2025-hard-touchdown-and-go-around",
+        "https://www.flightradar24.com/data/aircraft/n607fr/"
+      ]
+    },
+    "operatorFinishes": [
+      {
+        "name": "Frontier green PW cowls",
+        "partPattern": "^(Nacelle|Reverser)PW1100G$",
+        "colorSRGB": [
+          0,
+          103,
+          76
+        ]
+      },
+      {
+        "name": "Chopper blue sharklets",
+        "partPattern": "sharklet|winglet",
+        "colorSRGB": [
+          25,
+          163,
+          215
+        ]
+      }
+    ],
+    "notes": [
+      "Original generated shark illustration reconstructs the Chopper motif. It is an approximation of the real tail art.",
+      "PW1100G source installation matches the documented A321-271NX."
+    ]
+  },
+  "referenceDimensions": {
+    "length": 44.51,
+    "span": 35.8
+  },
+  "axes": "X aft; Y up; Z port",
+  "bounds": {
+    "min": [
+      -1.7599454050797716,
+      -4.538442134857178,
+      -17.900024236996337
+    ],
+    "max": [
+      42.75005459492022,
+      7.84499979019165,
+      17.899975763003663
+    ]
+  },
+  "motions": [
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearLDoor"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -2.382493734359741,
+        0.4723736658752136
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          84.0
+        ],
+        [
+          0.8,
+          84.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearLDoor"
+      ],
+      "model": "Models/Fuselages/A321neo/fuselage.xml",
+      "scope": "0:Models/A321neo-PW.xml/0:Fuselage",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/0:Fuselage#26"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearRDoor"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -2.382493734359741,
+        -0.4723736658752136
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          84.0
+        ],
+        [
+          0.8,
+          84.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearRDoor"
+      ],
+      "model": "Models/Fuselages/A321neo/fuselage.xml",
+      "scope": "0:Models/A321neo-PW.xml/0:Fuselage",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/0:Fuselage#36"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearNFwdDoorL"
+      ],
+      "axis": [
+        -0.9977802634239197,
+        0.06659296900033951,
+        0.0
+      ],
+      "center": [
+        3.326288699295474,
+        -2.0649564266204834,
+        0.5082866534199972
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          90.0
+        ],
+        [
+          0.8,
+          90.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearNFwdDoorL"
+      ],
+      "model": "Models/Fuselages/A321neo/fuselage.xml",
+      "scope": "0:Models/A321neo-PW.xml/0:Fuselage",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/0:Fuselage#32"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearNAftDoorL"
+      ],
+      "axis": [
+        -0.9995635151863098,
+        0.029544226825237274,
+        0.0
+      ],
+      "center": [
+        3.8038993188971197,
+        -2.079073190689087,
+        0.5082866534199972
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.2,
+          0.0
+        ],
+        [
+          0.8,
+          45.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearNAftDoorL"
+      ],
+      "model": "Models/Fuselages/A321neo/fuselage.xml",
+      "scope": "0:Models/A321neo-PW.xml/0:Fuselage",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/0:Fuselage#29"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearNFwdDoorR"
+      ],
+      "axis": [
+        0.9977802634239197,
+        -0.06659296900033951,
+        0.0
+      ],
+      "center": [
+        1.1230845139245211,
+        -1.9179121255874634,
+        -0.5082866534199972
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          90.0
+        ],
+        [
+          0.8,
+          90.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearNFwdDoorR"
+      ],
+      "model": "Models/Fuselages/A321neo/fuselage.xml",
+      "scope": "0:Models/A321neo-PW.xml/0:Fuselage",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/0:Fuselage#34"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearNAftDoorR"
+      ],
+      "axis": [
+        0.9995635151863098,
+        -0.029544226825237274,
+        0.0
+      ],
+      "center": [
+        3.326288699295474,
+        -2.0649564266204834,
+        -0.5082866534199972
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.2,
+          0.0
+        ],
+        [
+          0.8,
+          45.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearNAftDoorR"
+      ],
+      "model": "Models/Fuselages/A321neo/fuselage.xml",
+      "scope": "0:Models/A321neo-PW.xml/0:Fuselage",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/0:Fuselage#30"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearNDoorC"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        3.5571005084798384,
+        -1.8306008577346802,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.2,
+          0.0
+        ],
+        [
+          0.8,
+          -92.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearNDoorC"
+      ],
+      "model": "Models/Fuselages/A321neo/fuselage.xml",
+      "scope": "0:Models/A321neo-PW.xml/0:Fuselage",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/0:Fuselage#31"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "D_STRUCT.U"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        2.887646112307588,
+        -2.1406006813049316,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -47.0
+        ],
+        [
+          0.2,
+          -47.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "D_STRUCT.U"
+      ],
+      "model": "Models/LandingGears/a320.nlg.xml",
+      "scope": "0:Models/A321neo-PW.xml/3:Nose Gear",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/3:Nose Gear#3"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "D_STRUCT.L",
+        "Drag_Structs.Upper"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        3.222373310393713,
+        -2.680600643157959,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          45.0
+        ],
+        [
+          0.2,
+          45.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "D_STRUCT.L",
+        "Drag_Structs.Upper"
+      ],
+      "model": "Models/LandingGears/a320.nlg.xml",
+      "scope": "0:Models/A321neo-PW.xml/3:Nose Gear",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/3:Nose Gear#2",
+        "0:Models/A321neo-PW.xml/3:Nose Gear#3"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "ACUTATOR",
+        "AXLE",
+        "Drag_Structs.Lower",
+        "FITTING",
+        "LINK.01",
+        "LINK.02",
+        "LINK.FIT",
+        "OLEO",
+        "Nose Tires"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        3.5571005084798384,
+        -1.9306007623672485,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          92.0
+        ],
+        [
+          0.2,
+          92.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "ACUTATOR",
+        "AXLE",
+        "Drag_Structs.Lower",
+        "FITTING",
+        "LINK.01",
+        "LINK.02",
+        "LINK.FIT",
+        "OLEO",
+        "Nose Tires"
+      ],
+      "model": "Models/LandingGears/a320.nlg.xml",
+      "scope": "0:Models/A321neo-PW.xml/3:Nose Gear",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/3:Nose Gear#0",
+        "0:Models/A321neo-PW.xml/3:Nose Gear#1",
+        "0:Models/A321neo-PW.xml/3:Nose Gear#2",
+        "0:Models/A321neo-PW.xml/3:Nose Gear#3",
+        "0:Models/A321neo-PW.xml/3:Nose Gear#4",
+        "0:Models/A321neo-PW.xml/3:Nose Gear#5",
+        "0:Models/A321neo-PW.xml/3:Nose Gear#6",
+        "0:Models/A321neo-PW.xml/3:Nose Gear#7",
+        "0:Models/A321neo-PW.xml/3:Nose Gear#8",
+        "0:Models/A321neo-PW.xml/3:Nose Gear/0:Nose Tires#0",
+        "0:Models/A321neo-PW.xml/3:Nose Gear/0:Nose Tires#1"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "AXLE",
+        "ACTUTATOR",
+        "D_STRUCT.L",
+        "D_STRUCT.U",
+        "FITTING",
+        "OLEO",
+        "LINKS.01",
+        "LINKS.02",
+        "Main Tires"
+      ],
+      "axis": [
+        0.9903364777565002,
+        0.1364886611700058,
+        0.024586819112300873
+      ],
+      "center": [
+        19.19693970610024,
+        -1.2233855724334717,
+        3.8502715450784573
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          80.5
+        ],
+        [
+          0.2,
+          80.5
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "AXLE",
+        "ACTUTATOR",
+        "D_STRUCT.L",
+        "D_STRUCT.U",
+        "FITTING",
+        "OLEO",
+        "LINKS.01",
+        "LINKS.02",
+        "Main Tires"
+      ],
+      "model": "Models/LandingGears/a320.mlg.left.xml",
+      "scope": "0:Models/A321neo-PW.xml/4:Main Gears.Left",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/4:Main Gears.Left#0",
+        "0:Models/A321neo-PW.xml/4:Main Gears.Left#1",
+        "0:Models/A321neo-PW.xml/4:Main Gears.Left#2",
+        "0:Models/A321neo-PW.xml/4:Main Gears.Left#3",
+        "0:Models/A321neo-PW.xml/4:Main Gears.Left#4",
+        "0:Models/A321neo-PW.xml/4:Main Gears.Left#5",
+        "0:Models/A321neo-PW.xml/4:Main Gears.Left#6",
+        "0:Models/A321neo-PW.xml/4:Main Gears.Left#7",
+        "0:Models/A321neo-PW.xml/4:Main Gears.Left/0:Main Tires#0",
+        "0:Models/A321neo-PW.xml/4:Main Gears.Left/0:Main Tires#1"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "D_STRUCT.L",
+        "D_STRUCT.U"
+      ],
+      "axis": [
+        0.6934807896614075,
+        0.017188668251037598,
+        -0.7202699780464172
+      ],
+      "center": [
+        19.94489952381506,
+        -2.7447237968444824,
+        3.748494822950502
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          45.0
+        ],
+        [
+          0.2,
+          45.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "D_STRUCT.L",
+        "D_STRUCT.U"
+      ],
+      "model": "Models/LandingGears/a320.mlg.left.xml",
+      "scope": "0:Models/A321neo-PW.xml/4:Main Gears.Left",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/4:Main Gears.Left#1",
+        "0:Models/A321neo-PW.xml/4:Main Gears.Left#2"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "D_STRUCT.U"
+      ],
+      "axis": [
+        -0.6933079361915588,
+        -0.01486870925873518,
+        0.7204880118370056
+      ],
+      "center": [
+        19.418248267535667,
+        -1.998942255973816,
+        3.008040527399207
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          180.0
+        ],
+        [
+          0.2,
+          180.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "D_STRUCT.U"
+      ],
+      "model": "Models/LandingGears/a320.mlg.left.xml",
+      "scope": "0:Models/A321neo-PW.xml/4:Main Gears.Left",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/4:Main Gears.Left#2"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "AXLE",
+        "ACTUTATOR",
+        "D_STRUCT.L",
+        "D_STRUCT.U",
+        "FITTING",
+        "OLEO",
+        "LINKS.01",
+        "LINKS.02",
+        "Main Tires"
+      ],
+      "axis": [
+        -0.9903364777565002,
+        -0.1364886611700058,
+        0.024586819112300873
+      ],
+      "center": [
+        20.033637159769352,
+        -1.1080715656280518,
+        -3.871043862789029
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          80.5
+        ],
+        [
+          0.2,
+          80.5
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "AXLE",
+        "ACTUTATOR",
+        "D_STRUCT.L",
+        "D_STRUCT.U",
+        "FITTING",
+        "OLEO",
+        "LINKS.01",
+        "LINKS.02",
+        "Main Tires"
+      ],
+      "model": "Models/LandingGears/a320.mlg.right.xml",
+      "scope": "0:Models/A321neo-PW.xml/5:Main Gears.Right",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/5:Main Gears.Right#0",
+        "0:Models/A321neo-PW.xml/5:Main Gears.Right#1",
+        "0:Models/A321neo-PW.xml/5:Main Gears.Right#2",
+        "0:Models/A321neo-PW.xml/5:Main Gears.Right#3",
+        "0:Models/A321neo-PW.xml/5:Main Gears.Right#4",
+        "0:Models/A321neo-PW.xml/5:Main Gears.Right#5",
+        "0:Models/A321neo-PW.xml/5:Main Gears.Right#6",
+        "0:Models/A321neo-PW.xml/5:Main Gears.Right#7",
+        "0:Models/A321neo-PW.xml/5:Main Gears.Right/0:Main Tires#0",
+        "0:Models/A321neo-PW.xml/5:Main Gears.Right/0:Main Tires#1"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "D_STRUCT.L",
+        "D_STRUCT.U"
+      ],
+      "axis": [
+        -0.6934807896614075,
+        -0.017188668251037598,
+        -0.7202699780464172
+      ],
+      "center": [
+        20.034601492138943,
+        -2.7425003051757812,
+        -3.65532587007161
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          45.0
+        ],
+        [
+          0.2,
+          45.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "D_STRUCT.L",
+        "D_STRUCT.U"
+      ],
+      "model": "Models/LandingGears/a320.mlg.right.xml",
+      "scope": "0:Models/A321neo-PW.xml/5:Main Gears.Right",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/5:Main Gears.Right#1",
+        "0:Models/A321neo-PW.xml/5:Main Gears.Right#2"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "D_STRUCT.U"
+      ],
+      "axis": [
+        0.6933079361915588,
+        0.01486870925873518,
+        0.7204880118370056
+      ],
+      "center": [
+        19.27836290008914,
+        -2.0019421577453613,
+        -3.153410395878703
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          180.0
+        ],
+        [
+          0.2,
+          180.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "D_STRUCT.U"
+      ],
+      "model": "Models/LandingGears/a320.mlg.right.xml",
+      "scope": "0:Models/A321neo-PW.xml/5:Main Gears.Right",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/5:Main Gears.Right#2"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FlapL1"
+      ],
+      "axis": [
+        0.0,
+        -0.15184403955936432,
+        -0.9884044528007507
+      ],
+      "center": [
+        21.343503539109527,
+        -0.723656952381134,
+        6.34083547715659
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.375,
+          -40.357875
+        ],
+        [
+          1.0,
+          -72.621
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FlapL1"
+      ],
+      "model": "Models/Wings/a320.wings.neopw.xml",
+      "scope": "0:Models/A321neo-PW.xml/6:a320.wings.neopw",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw#14"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Left inner flap nested"
+      ],
+      "axis": [
+        -0.001423129579052329,
+        -0.14448052644729614,
+        -0.9895066618919373
+      ],
+      "center": [
+        21.320077504550227,
+        -1.1406118869781494,
+        6.407252602958625
+      ],
+      "factor": 107.621,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Left inner flap nested"
+      ],
+      "model": "Models/Wings/a320.wings.neopw.xml",
+      "scope": "0:Models/A321neo-PW.xml/6:a320.wings.neopw",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw#14"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FlapL2"
+      ],
+      "axis": [
+        -0.28570812940597534,
+        -0.0863928496837616,
+        -0.9544146060943604
+      ],
+      "center": [
+        23.453681930221144,
+        -0.07034456729888916,
+        13.489097402882626
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.375,
+          -42.787875
+        ],
+        [
+          1.0,
+          -79.101
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FlapL2"
+      ],
+      "model": "Models/Wings/a320.wings.neopw.xml",
+      "scope": "0:Models/A321neo-PW.xml/6:a320.wings.neopw",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw#15"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Left outer flap nested"
+      ],
+      "axis": [
+        -0.2930869162082672,
+        -0.09132751822471619,
+        -0.9517139792442322
+      ],
+      "center": [
+        23.523283476604174,
+        -0.41691136360168457,
+        13.52161375716826
+      ],
+      "factor": 114.101,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Left outer flap nested"
+      ],
+      "model": "Models/Wings/a320.wings.neopw.xml",
+      "scope": "0:Models/A321neo-PW.xml/6:a320.wings.neopw",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw#15"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FlapR1"
+      ],
+      "axis": [
+        0.0,
+        0.15184403955936432,
+        -0.9884044528007507
+      ],
+      "center": [
+        21.343503539109527,
+        -1.3729647397994995,
+        -2.1142705064893135
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.375,
+          -40.357875
+        ],
+        [
+          1.0,
+          -72.621
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FlapR1"
+      ],
+      "model": "Models/Wings/a320.wings.neopw.xml",
+      "scope": "0:Models/A321neo-PW.xml/6:a320.wings.neopw",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw#16"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Right inner flap nested"
+      ],
+      "axis": [
+        0.001423129579052329,
+        0.14448052644729614,
+        -0.9895066618919373
+      ],
+      "center": [
+        21.313990394691587,
+        -1.7584753036499023,
+        -2.1756790569983204
+      ],
+      "factor": 107.621,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Right inner flap nested"
+      ],
+      "model": "Models/Wings/a320.wings.neopw.xml",
+      "scope": "0:Models/A321neo-PW.xml/6:a320.wings.neopw",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw#16"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FlapR2"
+      ],
+      "axis": [
+        0.28570812940597534,
+        0.0863928496837616,
+        -0.9544146060943604
+      ],
+      "center": [
+        21.343503539109527,
+        -0.7084239721298218,
+        -6.439991937610559
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.375,
+          -42.787875
+        ],
+        [
+          1.0,
+          -74.101
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FlapR2"
+      ],
+      "model": "Models/Wings/a320.wings.neopw.xml",
+      "scope": "0:Models/A321neo-PW.xml/6:a320.wings.neopw",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw#17"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Right outer flap nested"
+      ],
+      "axis": [
+        0.2930869162082672,
+        0.09132751822471619,
+        -0.9517139792442322
+      ],
+      "center": [
+        21.35356042036314,
+        -1.0930089950561523,
+        -6.476075493017064
+      ],
+      "factor": 114.101,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Right outer flap nested"
+      ],
+      "model": "Models/Wings/a320.wings.neopw.xml",
+      "scope": "0:Models/A321neo-PW.xml/6:a320.wings.neopw",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw#17"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FairingL1",
+        "staticDisch5"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        19.759490426502115,
+        -1.2461364269256592,
+        4.418437879278527
+      ],
+      "factor": 20.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FairingL1",
+        "staticDisch5"
+      ],
+      "model": "Models/Wings/a320.wings.neopw.xml",
+      "scope": "0:Models/A321neo-PW.xml/6:a320.wings.neopw",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw#52.0",
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw#52.1"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FairingL2",
+        "staticDisch7"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        20.4690065435067,
+        -0.8473921418190002,
+        8.014860092412553
+      ],
+      "factor": 20.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FairingL2",
+        "staticDisch7"
+      ],
+      "model": "Models/Wings/a320.wings.neopw.xml",
+      "scope": "0:Models/A321neo-PW.xml/6:a320.wings.neopw",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw#4.0",
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw#4.1"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FairingL3",
+        "staticDisch8"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        21.749407423308856,
+        -0.4298408627510071,
+        11.574928265260953
+      ],
+      "factor": 20.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FairingL3",
+        "staticDisch8"
+      ],
+      "model": "Models/Wings/a320.wings.neopw.xml",
+      "scope": "0:Models/A321neo-PW.xml/6:a320.wings.neopw",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw#3.0",
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw#3.1"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FairingR1",
+        "staticDisch4"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        19.759490426502115,
+        -1.2461364269256592,
+        -4.418437879278527
+      ],
+      "factor": 20.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FairingR1",
+        "staticDisch4"
+      ],
+      "model": "Models/Wings/a320.wings.neopw.xml",
+      "scope": "0:Models/A321neo-PW.xml/6:a320.wings.neopw",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw#0.0",
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw#0.1"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FairingR2",
+        "staticDisch2"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        20.4690065435067,
+        -0.8473921418190002,
+        -8.014860092412553
+      ],
+      "factor": 20.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FairingR2",
+        "staticDisch2"
+      ],
+      "model": "Models/Wings/a320.wings.neopw.xml",
+      "scope": "0:Models/A321neo-PW.xml/6:a320.wings.neopw",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw#1.0",
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw#1.1"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FairingR3",
+        "staticDisch1"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        21.749407423308856,
+        -0.4298408627510071,
+        -11.574928265260953
+      ],
+      "factor": 20.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FairingR3",
+        "staticDisch1"
+      ],
+      "model": "Models/Wings/a320.wings.neopw.xml",
+      "scope": "0:Models/A321neo-PW.xml/6:a320.wings.neopw",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw#2.0",
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw#2.1"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-l1",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerL1"
+      ],
+      "axis": [
+        0.0,
+        0.1482093781232834,
+        0.9889560341835022
+      ],
+      "center": [
+        20.14258194219552,
+        -0.8191899657249451,
+        4.528834004413787
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerL1"
+      ],
+      "model": "Models/Wings/a320.wings.neopw.xml",
+      "scope": "0:Models/A321neo-PW.xml/6:a320.wings.neopw",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw#29"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-l2",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerL2"
+      ],
+      "axis": [
+        0.3312413990497589,
+        0.0736692026257515,
+        0.9406656622886658
+      ],
+      "center": [
+        20.347414904154444,
+        -0.48618996143341064,
+        7.019438897015729
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerL2"
+      ],
+      "model": "Models/Wings/a320.wings.neopw.xml",
+      "scope": "0:Models/A321neo-PW.xml/6:a320.wings.neopw",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw#30"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-l3",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerL3"
+      ],
+      "axis": [
+        0.3315905034542084,
+        0.07394403219223022,
+        0.9405211210250854
+      ],
+      "center": [
+        20.947925253286567,
+        -0.35318994522094727,
+        8.723215879495061
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerL3"
+      ],
+      "model": "Models/Wings/a320.wings.neopw.xml",
+      "scope": "0:Models/A321neo-PW.xml/6:a320.wings.neopw",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw#31"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-l4",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerL4"
+      ],
+      "axis": [
+        0.33151310682296753,
+        0.07330097258090973,
+        0.9405987858772278
+      ],
+      "center": [
+        21.51546153392332,
+        -0.22718995809555054,
+        10.332450640883051
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerL4"
+      ],
+      "model": "Models/Wings/a320.wings.neopw.xml",
+      "scope": "0:Models/A321neo-PW.xml/6:a320.wings.neopw",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw#32"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-l5",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerL5"
+      ],
+      "axis": [
+        0.3317170739173889,
+        0.07334607094526291,
+        0.9405233860015869
+      ],
+      "center": [
+        22.038036294276722,
+        -0.11118996143341064,
+        11.814614708395895
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerL5"
+      ],
+      "model": "Models/Wings/a320.wings.neopw.xml",
+      "scope": "0:Models/A321neo-PW.xml/6:a320.wings.neopw",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw#33"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-r1",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerR1"
+      ],
+      "axis": [
+        0.0,
+        -0.1482093781232834,
+        0.9889560341835022
+      ],
+      "center": [
+        20.14258194219552,
+        -0.5531899333000183,
+        -6.3037712928782925
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerR1"
+      ],
+      "model": "Models/Wings/a320.wings.neopw.xml",
+      "scope": "0:Models/A321neo-PW.xml/6:a320.wings.neopw",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw#34"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-r2",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerR2"
+      ],
+      "axis": [
+        -0.3312413990497589,
+        -0.0736692026257515,
+        0.9406656622886658
+      ],
+      "center": [
+        20.94093098491424,
+        -0.35418999195098877,
+        -8.704916947260674
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerR2"
+      ],
+      "model": "Models/Wings/a320.wings.neopw.xml",
+      "scope": "0:Models/A321neo-PW.xml/6:a320.wings.neopw",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw#35"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-r3",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerR3"
+      ],
+      "axis": [
+        -0.3315905034542084,
+        -0.07394403219223022,
+        0.9405211210250854
+      ],
+      "center": [
+        21.508467265550994,
+        -0.22818994522094727,
+        -10.313136663242073
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerR3"
+      ],
+      "model": "Models/Wings/a320.wings.neopw.xml",
+      "scope": "0:Models/A321neo-PW.xml/6:a320.wings.neopw",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw#36"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-r4",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerR4"
+      ],
+      "axis": [
+        -0.33151310682296753,
+        -0.07330097258090973,
+        0.9405987858772278
+      ],
+      "center": [
+        22.031042025904394,
+        -0.1131899356842041,
+        -11.795299761275064
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerR4"
+      ],
+      "model": "Models/Wings/a320.wings.neopw.xml",
+      "scope": "0:Models/A321neo-PW.xml/6:a320.wings.neopw",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw#37"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-r5",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerR5"
+      ],
+      "axis": [
+        -0.3317170739173889,
+        -0.07334607094526291,
+        0.9405233860015869
+      ],
+      "center": [
+        22.553614880462597,
+        0.0028100013732910156,
+        -13.276447813901463
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerR5"
+      ],
+      "model": "Models/Wings/a320.wings.neopw.xml",
+      "scope": "0:Models/A321neo-PW.xml/6:a320.wings.neopw",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw#38"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "sim/multiplay/generic/float[2]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "ReverserPW1100G"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        13.63009859562515,
+        -2.0771985054016113,
+        5.85037949720175
+      ],
+      "factor": 0.25,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "ReverserPW1100G"
+      ],
+      "model": "Models/Engines/NEO/PW1100GLeft.xml",
+      "scope": "0:Models/A321neo-PW.xml/6:a320.wings.neopw/0:Engine.PW.Left",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw/0:Engine.PW.Left#5"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[3]/n1",
+      "spinDirection": -1,
+      "inputScale": 1,
+      "targets": [
+        "Cone",
+        "Fan"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        13.63009859562515,
+        -2.0771985054016113,
+        5.85037949720175
+      ],
+      "factor": -67.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Cone",
+        "Fan"
+      ],
+      "model": "Models/Engines/NEO/PW1100GLeft.xml",
+      "scope": "0:Models/A321neo-PW.xml/6:a320.wings.neopw/0:Engine.PW.Left",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw/0:Engine.PW.Left#0",
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw/0:Engine.PW.Left#2"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "sim/multiplay/generic/float[3]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "ReverserPW1100G"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        13.63009859562515,
+        -2.0771985054016113,
+        -5.85037949720175
+      ],
+      "factor": 0.25,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "ReverserPW1100G"
+      ],
+      "model": "Models/Engines/NEO/PW1100GRight.xml",
+      "scope": "0:Models/A321neo-PW.xml/6:a320.wings.neopw/1:Engine.PW.Right",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw/1:Engine.PW.Right#5"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[4]/n1",
+      "spinDirection": -1,
+      "inputScale": 1,
+      "targets": [
+        "Cone",
+        "Fan"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        13.63009859562515,
+        -2.0771985054016113,
+        -5.85037949720175
+      ],
+      "factor": -67.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Cone",
+        "Fan"
+      ],
+      "model": "Models/Engines/NEO/PW1100GRight.xml",
+      "scope": "0:Models/A321neo-PW.xml/6:a320.wings.neopw/1:Engine.PW.Right",
+      "targetPartIds": [
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw/1:Engine.PW.Right#0",
+        "0:Models/A321neo-PW.xml/6:a320.wings.neopw/1:Engine.PW.Right#2"
+      ]
+    }
+  ],
+  "gearInternalParts": [
+    "ACUTATOR",
+    "AXLE",
+    "D_STRUCT.L",
+    "D_STRUCT.U",
+    "FITTING",
+    "LINK.01",
+    "LINK.02",
+    "LINK.FIT",
+    "OLEO",
+    "Bearing",
+    "Tires",
+    "ACTUTATOR",
+    "D_STRUCT.L",
+    "D_STRUCT.U",
+    "FITTING",
+    "LINKS.01",
+    "LINKS.02",
+    "OLEO",
+    "FITTING",
+    "Bearing",
+    "Tires",
+    "ACTUTATOR",
+    "D_STRUCT.L",
+    "D_STRUCT.U",
+    "FITTING",
+    "LINKS.01",
+    "LINKS.02",
+    "OLEO",
+    "FITTING",
+    "Bearing",
+    "Tires"
+  ],
+  "gearInternalPartIds": [
+    "0:Models/A321neo-PW.xml/3:Nose Gear#0",
+    "0:Models/A321neo-PW.xml/3:Nose Gear#1",
+    "0:Models/A321neo-PW.xml/3:Nose Gear#2",
+    "0:Models/A321neo-PW.xml/3:Nose Gear#3",
+    "0:Models/A321neo-PW.xml/3:Nose Gear#4",
+    "0:Models/A321neo-PW.xml/3:Nose Gear#5",
+    "0:Models/A321neo-PW.xml/3:Nose Gear#6",
+    "0:Models/A321neo-PW.xml/3:Nose Gear#7",
+    "0:Models/A321neo-PW.xml/3:Nose Gear#8",
+    "0:Models/A321neo-PW.xml/3:Nose Gear/0:Nose Tires#0",
+    "0:Models/A321neo-PW.xml/3:Nose Gear/0:Nose Tires#1",
+    "0:Models/A321neo-PW.xml/4:Main Gears.Left#0",
+    "0:Models/A321neo-PW.xml/4:Main Gears.Left#1",
+    "0:Models/A321neo-PW.xml/4:Main Gears.Left#2",
+    "0:Models/A321neo-PW.xml/4:Main Gears.Left#3",
+    "0:Models/A321neo-PW.xml/4:Main Gears.Left#4",
+    "0:Models/A321neo-PW.xml/4:Main Gears.Left#5",
+    "0:Models/A321neo-PW.xml/4:Main Gears.Left#6",
+    "0:Models/A321neo-PW.xml/4:Main Gears.Left#7",
+    "0:Models/A321neo-PW.xml/4:Main Gears.Left/0:Main Tires#0",
+    "0:Models/A321neo-PW.xml/4:Main Gears.Left/0:Main Tires#1",
+    "0:Models/A321neo-PW.xml/5:Main Gears.Right#0",
+    "0:Models/A321neo-PW.xml/5:Main Gears.Right#1",
+    "0:Models/A321neo-PW.xml/5:Main Gears.Right#2",
+    "0:Models/A321neo-PW.xml/5:Main Gears.Right#3",
+    "0:Models/A321neo-PW.xml/5:Main Gears.Right#4",
+    "0:Models/A321neo-PW.xml/5:Main Gears.Right#5",
+    "0:Models/A321neo-PW.xml/5:Main Gears.Right#6",
+    "0:Models/A321neo-PW.xml/5:Main Gears.Right#7",
+    "0:Models/A321neo-PW.xml/5:Main Gears.Right/0:Main Tires#0",
+    "0:Models/A321neo-PW.xml/5:Main Gears.Right/0:Main Tires#1"
+  ],
+  "missingTextures": [],
+  "sourceAC": [
+    "Models/empty.ac",
+    "Models/Fuselages/A321neo/res/fuselage.ac",
+    "Models/LandingGears/res/a320.nlg.ac",
+    "Models/LandingGears/res/a320.nlg.tires.ac",
+    "Models/LandingGears/res/a320.mlg.left.ac",
+    "Models/LandingGears/res/a320.mlg.tires.ac",
+    "Models/LandingGears/res/a320.mlg.right.ac",
+    "Models/LandingGears/res/a320.mlg.tires.ac",
+    "Models/Wings/res/a320.wings.ac",
+    "Models/Engines/NEO/res/PW_PurePower_1100G.ac",
+    "Models/Engines/NEO/res/a320.pylon.cfmleapx.left.ac",
+    "Models/Engines/NEO/res/PW_PurePower_1100G.ac",
+    "Models/Engines/NEO/res/a320.pylon.cfmleapx.right.ac",
+    "Models/Wings/a320neo.sharklets.ac",
+    "Models/Fuselages/A321neo/res/hstab.ac",
+    "Models/Fuselages/A321neo/res/vstab.ac"
+  ],
+  "discardedUnreferencedVertices": 3,
+  "provenance": "preparation/A320Family-modern",
+  "variantConstruction": {},
+  "capabilities": [
+    "fans",
+    "flaps",
+    "gear",
+    "reversers",
+    "spoilers"
+  ],
+  "reviewPoints": {
+    "cockpit": [
+      0.6794595122337341,
+      0.5856000185012817,
+      2.731879703787854e-06
+    ],
+    "door": [
+      3.331324577331543,
+      0.8022445440292358,
+      1.5813255310058594
+    ],
+    "engine": [
+      17.090702056884766,
+      -2.0581369400024414,
+      5.851122856140137
+    ],
+    "gear": [
+      3.2512030601501465,
+      -3.8635363578796387,
+      -0.0
+    ],
+    "wing": [
+      20.824020385742188,
+      -0.9861809015274048,
+      4.2197957038879395
+    ]
+  },
+  "fidelityNotes": [],
+  "reviewStatus": "build-awaiting-validation",
+  "addedDoorWindowPanes": 0,
+  "fittedCockpitOpenings": 0,
+  "fittedCabinOpenings": 0,
+  "envelopeCalibration": {
+    "rawDimensions": {
+      "length": 44.5462806224823,
+      "span": 35.21634864807129
+    },
+    "axisScale": [
+      0.9991855521499141,
+      1,
+      1.0165733068399945
+    ]
+  },
+  "skippedSourceModels": [
+    "Aircraft/IDG-A32X/Models/Effects/enginefire.xml",
+    "Aircraft/IDG-A32X/Models/RAT/RAT.xml",
+    "Aircraft/IDG-A32X/Models/FlightDeck/a320.flightdeck.xml",
+    "Aircraft/IDG-A32X/Models/Interior/a321.interior.xml",
+    "Aircraft/IDG-A32X/Models/Effects/contrail-eng1.xml",
+    "Aircraft/IDG-A32X/Models/Effects/enginefire.xml",
+    "Aircraft/IDG-A32X/Models/Effects/contrail-eng2.xml",
+    "Aircraft/IDG-A32X/Models/Effects/enginefire.xml",
+    "Models/Airport/Pushback/Goldhofert.xml",
+    "Aircraft/IDG-A32X/Models/Services/Fuel-Truck/Fuel_Truck_Short_VolvoFM.ac",
+    "Aircraft/IDG-A32X/Models/Services/De-Icing/volvo_deicing_truck.xml",
+    "Aircraft/IDG-A32X/Models/Services/Catering/L_T_VolvoFM-4_5m-set.xml",
+    "Aircraft/IDG-A32X/Models/Services/Baggage/cargo_ramp.ac",
+    "Aircraft/IDG-A32X/Models/Services/External-Power/ext-pwr-box.ac",
+    "Aircraft/IDG-A32X/Models/Services/Chocks/chock_nose.ac",
+    "Aircraft/IDG-A32X/Models/Services/Chocks/chock_left.ac",
+    "Aircraft/IDG-A32X/Models/Services/Chocks/chock_right.ac",
+    "Aircraft/IDG-A32X/Models/Services/Stairs/stairs.xml",
+    "Aircraft/IDG-A32X/Models/Services/Stairs/stairs.xml"
+  ],
+  "unresolvedMotions": [],
+  "cargo": false,
+  "paintProjection": {
+    "operatorFinishParts": [
+      "NacellePW1100G",
+      "ReverserPW1100G",
+      "NacellePW1100G",
+      "ReverserPW1100G",
+      "WingletL"
+    ],
+    "reviewStatus": "requires-visual-review"
+  },
+  "authoredPaint": {
+    "method": "Original airline paint layout projected in physical exterior coordinates; independent destination texture atlases retained.",
+    "maps": [
+      "a21n/generated/frontier-chopper/authored-color-0.png",
+      "a21n/generated/frontier-chopper/authored-color-1.png",
+      "a21n/generated/frontier-chopper/authored-color-2.png",
+      "a21n/generated/frontier-chopper/authored-color-3.png",
+      "a21n/generated/frontier-chopper/authored-color-4.png",
+      "a21n/generated/frontier-chopper/authored-color-5.png",
+      "a21n/generated/frontier-chopper/authored-color-6.png",
+      "a21n/generated/frontier-chopper/authored-color-7.png",
+      "a21n/generated/frontier-chopper/authored-color-8.png",
+      "a21n/generated/frontier-chopper/authored-color-9.png",
+      "a21n/generated/frontier-chopper/authored-color-10.png",
+      "a21n/generated/frontier-chopper/authored-color-11.png",
+      "a21n/generated/frontier-chopper/authored-color-12.png",
+      "a21n/generated/frontier-chopper/authored-color-13.png",
+      "a21n/generated/frontier-chopper/authored-color-14.png",
+      "a21n/generated/frontier-chopper/authored-color-15.png"
+    ],
+    "references": [
+      "https://www.aeroinside.com/20621/frontier-a21n-at-san-juan-on-apr-15th-2025-hard-touchdown-and-go-around",
+      "https://www.flightradar24.com/data/aircraft/n607fr/"
+    ],
+    "artworkMetadata": [
+      "preparation/brand-art/frontier-chopper-shark-original.asset.json"
+    ],
+    "reviewStatus": "requires-visual-review"
+  }
+}
