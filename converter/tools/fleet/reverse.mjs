@@ -36,6 +36,7 @@ import crypto from 'node:crypto';
 import { execFile } from 'node:child_process';
 import { launch, sleep } from './cdp.mjs';
 import { decodePNG, encodePNG } from './image.mjs';
+import { unwindow } from './unwindow.mjs';
 import { kitFor, isFreighter } from './kitkey.mjs';
 import { TEX, gplVersions, GPL_VERSIONS } from './config.mjs';
 import { CARGO_OPS } from '../../server/src/core/registry.js';
@@ -111,7 +112,7 @@ const imagesOf = c => {
 };
 const kitDir = path.join(ROOT, 'client/vendor/airliners');
 const kitHash = sha(fs.readdirSync(kitDir).filter(f => f.endsWith('.js')).sort().map(f => fileSha(path.join(kitDir, f))).join() + fileSha(path.join(ROOT, 'client/js/kitfix.js')));
-const selfHash = fileSha(new URL(import.meta.url).pathname), painterHash = fileSha(path.join(ROOT, 'client/js/liveries.js'));
+const selfHash = sha(fileSha(new URL(import.meta.url).pathname) + fileSha(path.join(HERE, 'unwindow.mjs'))), painterHash = fileSha(path.join(ROOT, 'client/js/liveries.js'));
 const assetKey = c => `${RP.assets[c.tpl].airframe || c.tpl.split('-')[0]}-${c.al.toLowerCase()}-rb`;
 for (const c of todo) {
   c.key = assetKey(c); c.imgs = imagesOf(c);
@@ -138,7 +139,7 @@ async function pageReverse(o) {
   const ct = c => { const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8; t.needsUpdate = true; return t; };
   // a bake's or trace's images (PNG, the canvas's row order: flipY as a canvas texture)
   const it = async url => { const im = new Image(); im.src = url; await im.decode(); const t = new THREE.Texture(im); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8; t.needsUpdate = true; return t; };
-  const bodyT = o.body ? await it(o.body) : ct(Pn.canvases.body), finT = o.fin ? await it(o.fin) : ct(Pn.canvases.fin), box = Pn.finBox;
+  let bodyT = o.body ? await it(o.body) : ct(Pn.canvases.body); const finT = o.fin ? await it(o.fin) : ct(Pn.canvases.fin), box = Pn.finBox;
   // the kit's section along the body (bake.mjs's): hw, tp, bt, md from the centreline at yc, and the superellipse's n
   const p = M.proto(o.kit), fn = p.fn, Lk = T.L, yc = T.fus.yc, eAt = fn.eAt || (() => 2 / (T.fus.n || 2)), N = 2048, sec = new Float32Array(N * 2 * 4);
   for (let i = 0; i < N; i++) { const s = (i + 0.5) / N * Lk; sec.set([fn.hw(s), fn.tp(s), fn.bt(s), fn.md(s)], i * 4); sec[(N + i) * 4] = eAt(s); }
@@ -209,6 +210,24 @@ async function pageReverse(o) {
     for (const part of H.parts) { const pos = part.geometry.attributes.position; if (!pos) continue; for (let i = 0; i < pos.count; i++) { v.fromBufferAttribute(pos, i).applyMatrix4(part.matrix); if (Math.abs(v.x) < 0.4 && Math.abs(v.y - yAx) < 1.2 && v.z > z) z = v.z; } }
     return z > Lk - 0.8 && z < Lk + 3 ? z : Lk;   // (outside that, the window missed the tip: the kit's own length)
   };
+  // the template's own cabin windows (16 Nov, the user: "a lot of livery issues like this - the windows"): its panes are
+  // geometry of their own, drawn over the paint, so the crowd's painted windows (a sibling's at its own spacing, a
+  // photo's, the painter's) copied into the paint doubled them: uneven blobs, over the titles. Where the template has
+  // panes in its cabin, the crowd's windows go from its body image first (unwindow.mjs, its source put in this page: each
+  // flank's row of window-like blobs on one line, filled from the paint round them; a title's letters, a logo, a stripe
+  // stay), and the panes are the windows. A template whose windows are painted (no panes: the A330s', the A380's cabin
+  // masks) or a freighter keeps the crowd's as they are.
+  const win = (() => {
+    const v = new THREE.Vector3(), Lh = H.dims.L, panes = H.parts.filter(pt => H.cabinFlat.includes(pt.material)); let n = 0;
+    for (const pt of panes) { const pos = pt.geometry.attributes.position; for (let i = 0; i < pos.count; i++) { v.fromBufferAttribute(pos, i).applyMatrix4(pt.matrix); if (v.z > 0.15 * Lh && v.z < 0.85 * Lh) n++; } }
+    return n >= 100 ? { n } : null;
+  })();
+  if (win) {
+    const src = bodyT.image, cv = document.createElement('canvas'); cv.width = src.width; cv.height = src.height;
+    const g = cv.getContext('2d'); g.drawImage(src, 0, 0);
+    const id = g.getImageData(0, 0, cv.width, cv.height); win.removed = unwindow(id.data, cv.width, cv.height).removed; g.putImageData(id, 0, 0);
+    bodyT.dispose(); bodyT = new THREE.CanvasTexture(cv); bodyT.colorSpace = THREE.SRGBColorSpace; bodyT.anisotropy = 8; bodyT.needsUpdate = true;
+  }
   const U = { uSec: { value: secTex }, uL: { value: Lk }, uN: { value: N }, uYc: { value: yc }, uBody: { value: bodyT }, uFin: { value: finT },
     uEng0: { value: eng(0) }, uEngR0: { value: engR(0) }, uEng1: { value: eng(1) }, uEngR1: { value: engR(1) }, uLip: { value: new THREE.Vector2(engs[0] ? engs[0].lip : 0, engs[1] ? engs[1].lip : 0) },
     uCowl: { value: new THREE.Vector3(cw.r, cw.g, cw.b) }, uWl: { value: new THREE.Vector3(wl.r, wl.g, wl.b) }, uTip: { value: uTip }, uLh: { value: tailTip() }, uMask: { value: 0 },
@@ -258,7 +277,9 @@ async function pageReverse(o) {
         bool body = b.z > 0.8 && b.z < 1.25 && s > -0.4 && s < uL + 0.2;
         if (!body && s < 0.12 * uL && s > -1.0) body = abs(vW.x) < max(1.4 * sc.x, 0.6) && y > sc.z - 0.6 && y < sc.y + 0.8;   // the nose
         if (!body && s > 0.85 * uL && s < uL + 0.5) body = abs(vW.x) < max(1.4 * sc.x, 0.9) && y > sc.z - 1.2 && (y < sc.y + 0.8 || eta < 0.1 || (xi > 1.0 && eta < 0.4) || abs(vW.x) >= 0.8);   // the tail cone and what rises from it outside the fin (behind it, or wider than a fin) (the kit's tip sits higher and narrower than some of the library's, its crown lower)
-        if (body) { gl_FragColor = put(texture2D(uBody, vec2(clamp(b.x / uL, 0.0, 1.0), b.y / 6.28318531)).rgb, a); return; }
+        if (body) {
+          gl_FragColor = put(texture2D(uBody, vec2(clamp(b.x / uL, 0.0, 1.0), b.y / 6.28318531)).rgb, a); return;
+        }
         discard;
       }`
   });
@@ -345,7 +366,7 @@ async function pageReverse(o) {
   R.setRenderTarget(prevRT); R.setClearColor(prevCC, prevCA); R.autoClear = prevAC; lib.release(H);
   for (const x of [bodyT, finT, secTex]) x.dispose(); paintMat.dispose(); copyMat.dispose(); coverMat.dispose(); quad.geometry.dispose();
   G.traverse(n => { if (n.geometry) n.geometry.dispose(); });
-  return { images: out, stats, texs: H.texs.length, tail: [+U.uLh.value.toFixed(2), +Lk.toFixed(2)] };
+  return { images: out, stats, texs: H.texs.length, tail: [+U.uLh.value.toFixed(2), +Lk.toFixed(2)], win: win ? win.removed : null };
 }
 
 /* ---------------- encoding, files ---------------- */
@@ -409,7 +430,7 @@ if (misses.length) {
     for (const c of misses) {
       const t0 = Date.now(), data = f => 'data:image/png;base64,' + fs.readFileSync(f).toString('base64');
       let r;
-      try { r = await P.eval(`(${pageReverse.toString()})(${JSON.stringify({ tpl: c.tpl, kit: c.kit, al: c.al, name: null, painted: c.painted, body: c.imgs ? data(c.imgs.body) : null, fin: c.imgs ? data(c.imgs.fin) : null, cowl: c.e.cowl, winglet: c.e.winglet })})`); }
+      try { r = await P.eval(`${unwindow.toString()}; (${pageReverse.toString()})(${JSON.stringify({ tpl: c.tpl, kit: c.kit, al: c.al, name: null, painted: c.painted, body: c.imgs ? data(c.imgs.body) : null, fin: c.imgs ? data(c.imgs.fin) : null, cowl: c.e.cowl, winglet: c.e.winglet })})`); }
       catch (e) { console.log(`${c.id}: failed, ${e.message.split('\n')[0]}`); continue; }
       const lg = P.logs.splice(0).filter(l => /exception|error/i.test(l)).slice(0, 3); if (lg.length) console.log(lg.join('\n'));
       // the glTF and its lite twin: the template's, with the redrawn images swapped in (the lite shares the images)
@@ -437,7 +458,7 @@ if (misses.length) {
         reverse: { template: c.tpl, templateGltf: T.gltf, type: c.code, al: c.al, kit: c.kit, from, licence: c.gpl === 2 ? 'GPL-2.0' : 'GPL-3.0', livery: c.lic, photos: c.e.traced ? c.e.credits : undefined } };
       results.set(c.id, { key: c.key, hash: c.hash, entry, images });
       fs.writeFileSync(path.join(CACHE, `${c.key}.json`), JSON.stringify({ hash: c.hash, entry, images }, null, 1));
-      console.log(`${c.id} → ${c.key} on ${c.tpl}: ${((Date.now() - t0) / 1000).toFixed(1)} s; tail cone ${r.tail[0]} m (kit ${r.tail[1]}); images ${info.join(', ')}; wire ${(entry.wire / 1e6).toFixed(2)} MB, GPU ${(gpu / 1e6).toFixed(1)} MB (template ${(T.wire / 1e6).toFixed(2)}, ${(T.gpu / 1e6).toFixed(1)})`);
+      console.log(`${c.id} → ${c.key} on ${c.tpl}: ${((Date.now() - t0) / 1000).toFixed(1)} s; tail cone ${r.tail[0]} m (kit ${r.tail[1]}); windows ${r.win !== null ? `${r.win} of the crowd's painted out (its panes are the windows)` : 'the crowd\'s (no panes)'}; images ${info.join(', ')}; wire ${(entry.wire / 1e6).toFixed(2)} MB, GPU ${(gpu / 1e6).toFixed(1)} MB (template ${(T.wire / 1e6).toFixed(2)}, ${(T.gpu / 1e6).toFixed(1)})`);
     }
   } finally { P.close(); await sleep(300); }
 }
