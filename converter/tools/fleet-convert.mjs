@@ -33,7 +33,7 @@ import { decodePNG, encodePNG, resize, stats } from './fleet/image.mjs';
 import { kitTransform, kitFit, compressLeg, splitBelow, transformMesh, concat, weld, simplify, reorder, quantize, bounds, apply, capHoles } from './fleet/geometry.mjs';
 import vm from 'node:vm';
 import { matches, chainFor, motionOut, lightsOut, valueAt } from './fleet/rig.mjs';
-import { BATCH, EXCLUDE_AIRFRAMES, SKIP_LIVERY, SKIP_SELECTOR, SPECIAL, IATA_ICAO, INTERIOR_TEXTURES, HIDDEN_NODES, DETENTS, TEX, GEO, PACKAGE_INFO, ENGINE_FIX, GEAR_FIX, STRETCH_FIX, FIN_FIX, COCKPIT_PANES } from './fleet/config.mjs';
+import { BATCH, EXCLUDE_AIRFRAMES, SKIP_LIVERY, SKIP_SELECTOR, SPECIAL, IATA_ICAO, INTERIOR_TEXTURES, HIDDEN_NODES, DETENTS, TEX, GEO, PACKAGE_INFO, ENGINE_FIX, GEAR_FIX, STRETCH_FIX, FIN_FIX, COCKPIT_PANES, DROP_FINISH, TEX_FIX, MAT_FIX } from './fleet/config.mjs';
 import { kitFor, isFreighter } from './fleet/kitkey.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -110,9 +110,49 @@ function loadLivery(asset) {
   const f = path.join(LIB, asset.glb), buf = fs.readFileSync(f);
   if (asset.sha256 && sha(buf) !== asset.sha256) throw new Error(`${asset.glb}: sha256 differs from the handoff manifest`);
   const { json, bin } = readGLB(buf);
+  // an operator's paint finish set aside where photos show the airline's real paint otherwise (config.mjs DROP_FINISH):
+  // its parts take the material the finish was laid over (its name less the finish)
+  const drop = DROP_FINISH[asset.selector];
+  if (drop) {
+    let n = 0;
+    const plain = name => json.materials.findIndex(x => x.name === name && !(x.extras && x.extras.operatorPaintFinish));
+    for (const me of json.meshes) for (const p of me.primitives) {
+      const m = json.materials[p.material], fin = m && m.extras && m.extras.operatorPaintFinish;
+      if (!fin || !drop.includes(fin)) continue;
+      const base = m.name.replace(' ' + fin, ''), bi = plain(base) >= 0 ? plain(base) : plain(base.replace(/\.\d+$/, ''));
+      if (bi < 0) throw new Error(`${asset.selector}: no material under the finish ${fin} (${m.name})`);
+      p.material = bi; n++;
+    }
+    if (!n) throw new Error(`${asset.selector}: DROP_FINISH ${drop} matched no part`);
+  }
+  // a material's colour corrected (config.mjs MAT_FIX)
+  const mf = MAT_FIX[asset.selector];
+  if (mf) {
+    let n = 0; for (const m of json.materials) if (mf[m.name]) { m.pbrMetallicRoughness = { ...(m.pbrMetallicRoughness || {}), baseColorFactor: mf[m.name] }; n++; }
+    if (!n) throw new Error(`${asset.selector}: MAT_FIX matched no material`);
+  }
+  // an image's paint corrected (config.mjs TEX_FIX): the corrected PNG appended to the buffer, the image pointed at it
+  let binOut = bin;
+  const tf = TEX_FIX[asset.selector];
+  if (tf) {
+    const i = (json.images || []).findIndex(x => x.name === tf.image);
+    if (i < 0) throw new Error(`${asset.selector}: TEX_FIX image ${tf.image} not found`);
+    const png = decodePNG(imageBytes(json, bin, i)), ch = png.data.length / (png.w * png.h), L = tf.lift, k = L.to / L.from;
+    let n = 0;
+    for (let q = 0; q < png.w * png.h; q++) {
+      const o = q * ch, r = png.data[o], g = png.data[o + 1], b = png.data[o + 2], v = (r + g + b) / 3;
+      if (Math.max(r, g, b) - Math.min(r, g, b) > L.sat || v < L.lo || v > L.hi) continue;
+      png.data[o] = Math.min(255, Math.round(r * k)); png.data[o + 1] = Math.min(255, Math.round(g * k)); png.data[o + 2] = Math.min(255, Math.round(b * k)); n++;
+    }
+    const enc = encodePNG(png);
+    json.bufferViews.push({ buffer: 0, byteOffset: bin.length, byteLength: enc.length });
+    json.images[i] = { ...json.images[i], bufferView: json.bufferViews.length - 1, mimeType: 'image/png' };
+    binOut = Buffer.concat([bin, enc]);
+    log(`  ${asset.selector}: ${tf.image} corrected (lifted ${n} texels, ${(100 * n / (png.w * png.h)).toFixed(1)} %)`);
+  }
   const rig = JSON.parse(fs.readFileSync(path.join(LIB, asset.rig), 'utf8'));
-  const imgHash = (json.images || []).map((_, i) => sha(imageBytes(json, bin, i)).slice(0, 20));
-  return { asset, json, bin, rig, imgHash, livery: asset.selector.split('/')[1] };
+  const imgHash = (json.images || []).map((_, i) => sha(imageBytes(json, binOut, i)).slice(0, 20));
+  return { asset, json, bin: binOut, rig, imgHash, livery: asset.selector.split('/')[1] };
 }
 /** the geometry's identity, materials aside: liveries with equal signatures share one geometry buffer */
 function geoSignature(L) {

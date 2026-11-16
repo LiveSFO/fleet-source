@@ -264,10 +264,20 @@ async function pageBake(o) {
   // in the model worker (p.G differs between the two)
   const roles = {}, set = (p.variants && p.variants.get('gd0')) || (p.variant && p.variant('gd0'));
   if (set) for (const [r, g] of Object.entries(set)) { if (!g || !g.attributes) continue; g.computeBoundingBox(); roles[r] = g.boundingBox.clone(); }
-  const colors = {}, fans = (H.L.motions || []).filter(m => m.t === 's' && m.p[0] < 0);
+  // the cowl: the left nacelle's outer flank, measured on the hi-fi itself: round its fan's spin axis (the inner one on
+  // four engines), from its own inlet (the front of what lies within 0.6–1.25 of the kit's nacelle radius of that axis)
+  // a seventh of the nacelle's length back to seven tenths (the fan cowl and the reverser's sleeve: not the lip or the
+  // nozzle; the length the kit's engine's, or three radii). A spin motion's centre lies anywhere on its axis (the E175's
+  // 5 m behind its inlet), and a sibling's or a tail-mounted engine isn't where the kit's is, so a box placed by either
+  // missed the nacelle until 15 Nov: no cowl colour for many pairs (the crowd fell back on the painter's: Alaska's navy
+  // under the hi-fi's white nacelles), the wing's or the pylon's for others
+  const colors = {}, fans = (H.L.motions || []).filter(m => m.t === 's' && m.p[0] < -1.5).sort((a, b) => b.p[0] - a.p[0]);
   if (fans.length) {
-    const [fx, fy, fz] = fans[0].p, Rn = roles.cowl ? (roles.cowl.max.y - roles.cowl.min.y) / 2 : 0.055 * H.dims.span;
-    colors.cowl = boxMedian(new THREE.Box3(new THREE.Vector3(fx - 1.1 * Rn, fy - 0.9 * Rn, fz - 0.6 * Rn), new THREE.Vector3(fx - 0.2 * Rn, fy + 0.5 * Rn, fz + 2.2 * Rn)), 'x');
+    const [fx, fy] = fans[0].p, Rn = roles.cowl ? (roles.cowl.max.y - roles.cowl.min.y) / 2 : 0.055 * H.dims.span, E = T.engine;
+    const v = new THREE.Vector3(); let lip = Infinity;
+    for (const part of H.parts) { const pos = part.geometry.attributes.position; if (!pos) continue; for (let i = 0; i < pos.count; i++) { v.fromBufferAttribute(pos, i).applyMatrix4(part.matrix); if (v.x > 0) continue; const r = Math.hypot(v.x - fx, v.y - fy); if (r >= 0.6 * Rn && r <= 1.25 * Rn && v.z < lip) lip = v.z; } }
+    const len = E && E.len ? E.len : 3 * Rn;
+    if (lip < Infinity) colors.cowl = boxMedian(new THREE.Box3(new THREE.Vector3(fx - 1.1 * Rn, fy - 0.9 * Rn, lip + len / 7), new THREE.Vector3(fx - 0.2 * Rn, fy + 0.5 * Rn, lip + 0.7 * len)), 'x');
   }
   if (roles.belly) { const b = roles.belly.clone().expandByScalar(0.15); b.min.z = fTS(b.min.z); b.max.z = fTS(b.max.z); colors.belly = boxMedian(b, 'y'); }
   if (roles.winglet) { const sp = H.dims.span / 2; colors.winglet = boxMedian(new THREE.Box3(new THREE.Vector3(-sp - 0.6, roles.winglet.min.y - 0.5, 0.25 * Ls), new THREE.Vector3(-sp + 1.2, H.dims.H, 0.85 * Ls)), 'x'); }

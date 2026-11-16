@@ -140,6 +140,33 @@ export const GEAR_FIX = {
  * rudder (not `RUdamper`, a gear damper)
  */
 /**
+ * Operator paint finishes set aside (15 Nov, the user: "Some of alaska's engines were drawn as blue and some are white,
+ * even for the same model between the hifi and lowfi models"): the library painted Alaska's 737-8 nacelles navy (its
+ * finish alaska-nacelles), where Commons' photos of the current fleet show every Alaska type's nacelles white (the
+ * 737-800, -900, 737-8 and -9, the A321neo, the E175s; "Current Boeing 737-8 MAX of Alaska Airlines" and the like).
+ * The finish's parts take the material it was laid over (its name less the finish): the engine's own paint.
+ */
+export const DROP_FINISH = { 'b38m/alaska': ['alaska-nacelles'] };
+
+/**
+ * Materials corrected (16 Nov, the user: "delta's 767-300's door doesn't seem right"): the 767-300's passenger door
+ * skins are parts of their own over the fuselage; the library painted them (its finish "Painted passenger door skins",
+ * near white) on every 767 livery but Delta's, whose doors kept the bare material, black. Delta's take the same paint.
+ * Keyed by selector, then the material's name: its base colour.
+ */
+export const MAT_FIX = { 'b763/delta': { '_Gray_Gl_surface': [0.9301, 0.9387, 0.9473, 1] } };
+
+/**
+ * Paint corrected in the library's images (15 Nov, the user: "alaska's E75L seems to have a front half of the plane's
+ * livery brighter than the 2nd half"). The library's E175 Alaska fuselage is a light grey white (228) with a pure-white
+ * box (250) pasted over an older title on the forward fuselage, both sides: the front half read brighter (the bake took
+ * it to the crowd). `lift` scales the image's near-white greys (saturation at most `sat`, value from `lo` to `hi`) by
+ * to / from, so the fuselage is the box's white throughout; the title, the stripes, the belly's greys and the panel
+ * lines are left.
+ */
+export const TEX_FIX = { 'e75l/alaska': { image: 'authored-color-0', lift: { lo: 200, hi: 244, from: 228, to: 250, sat: 14 } } };
+
+/**
  * Cockpit windows the library left open (15 Nov, the user: "the windshield is transparent and leaking the details through
  * from the other side"): on these airframes the cockpit glazing is drawn as the windows' frame, one piece with a hole
  * for each pane (the 737-700 and -900: an outline and six holes, the very panes the 737-800 draws; the 737 MAX's alike),
