@@ -1,0 +1,1008 @@
+{
+  "aircraft": "crj200",
+  "label": "Bombardier CRJ200",
+  "livery": {
+    "id": "united",
+    "name": "United Express \u00b7 Evo-Blue",
+    "xml": "Models/Liveries/ASH.xml",
+    "paintProjection": {
+      "sourceBlend": "b738-current/united.blend",
+      "sourceBodyPattern": "^fuselage$",
+      "bodyPartPattern": "^fin$|^rudder$",
+      "finPartPattern": "^fin$|^rudder$|^v.?stab$",
+      "bodyTexturePattern": ".*",
+      "bodyResolution": 2048,
+      "angularResolution": 512,
+      "bakeCabinMask": false
+    },
+    "authoredPaint": {
+      "bodyColorSRGB": [
+        249,
+        250,
+        250
+      ],
+      "preserveFinPaint": true,
+      "bodyPartPattern": "^Fuselage|^doorFL$|^doorFR$|^OHexit",
+      "finPartPattern": "^fin$|^rudder$",
+      "bodyBands": [
+        {
+          "range": [
+            -4,
+            -0.3
+          ],
+          "colorSRGB": [
+            179,
+            186,
+            191
+          ]
+        },
+        {
+          "range": [
+            -0.3,
+            -0.22
+          ],
+          "colorSRGB": [
+            2,
+            50,
+            161
+          ]
+        }
+      ],
+      "bodyGraphics": [
+        {
+          "image": "preparation/brand-art/United Airlines wordmark.png",
+          "box": [
+            0.13,
+            0.46,
+            0.35,
+            0.88
+          ],
+          "colorSRGB": [
+            2,
+            50,
+            161
+          ]
+        }
+      ],
+      "resolution": 4096,
+      "references": [
+        "https://www.united.com/en/us/fly/company/aircraft.html"
+      ],
+      "artworkMetadata": [
+        "preparation/brand-art/United Airlines wordmark.asset.json"
+      ]
+    },
+    "operatorFinishes": [
+      {
+        "name": "united-engines",
+        "partPattern": "^no[12]engine$|^no[12]reverser$",
+        "colorSRGB": [
+          2,
+          50,
+          161
+        ]
+      }
+    ]
+  },
+  "referenceDimensions": {
+    "length": 26.77,
+    "span": 21.23
+  },
+  "axes": "X aft; Y up; Z port",
+  "bounds": {
+    "min": [
+      -11.435788331204149,
+      -1.7140876477540408,
+      -10.608749027734811
+    ],
+    "max": [
+      15.334211668795847,
+      4.615942839455019,
+      10.621250972265187
+    ]
+  },
+  "motions": [
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "nosedoor"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        -9.214585050178455,
+        -0.641072779305299,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          -120.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "nosedoor"
+      ],
+      "model": "Models/CRJ200.xml",
+      "scope": "0:Models/CRJ200.xml",
+      "targetPartIds": [
+        "0:Models/CRJ200.xml#68"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lhnosedoor"
+      ],
+      "axis": [
+        0.9895572066307068,
+        -0.1441407948732376,
+        0.0
+      ],
+      "center": [
+        -10.16654291245769,
+        -0.4899627994027849,
+        0.27779698047886586
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.05,
+          -80.0
+        ],
+        [
+          0.95,
+          -80.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lhnosedoor"
+      ],
+      "model": "Models/CRJ200.xml",
+      "scope": "0:Models/CRJ200.xml",
+      "targetPartIds": [
+        "0:Models/CRJ200.xml#38"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhnosedoor"
+      ],
+      "axis": [
+        0.9895572066307068,
+        -0.1441407948732376,
+        0.0
+      ],
+      "center": [
+        -10.16654291245769,
+        -0.4899627994027849,
+        -0.27779698047886586
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.05,
+          80.0
+        ],
+        [
+          0.95,
+          80.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhnosedoor"
+      ],
+      "model": "Models/CRJ200.xml",
+      "scope": "0:Models/CRJ200.xml",
+      "targetPartIds": [
+        "0:Models/CRJ200.xml#90"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "nosegear",
+        "ngstrut",
+        "ngltorque",
+        "ngutorque",
+        "ngustrut"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        -9.325492685271767,
+        -0.586123680817015,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          135.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "nosegear",
+        "ngstrut",
+        "ngltorque",
+        "ngutorque",
+        "ngustrut"
+      ],
+      "model": "Models/CRJ200.xml",
+      "scope": "0:Models/CRJ200.xml",
+      "targetPartIds": [
+        "0:Models/CRJ200.xml#57",
+        "0:Models/CRJ200.xml#58",
+        "0:Models/CRJ200.xml#59",
+        "0:Models/CRJ200.xml#60",
+        "0:Models/CRJ200.xml#69"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "leftmaingear",
+        "LHLowerShock",
+        "LHstrut",
+        "LHArm",
+        "LHUpperShock",
+        "lgearp"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        1.8484623477195798,
+        -0.43959276061276126,
+        1.5464030901446388
+      ],
+      "factor": -86.0,
+      "offset": 86.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "leftmaingear",
+        "LHLowerShock",
+        "LHstrut",
+        "LHArm",
+        "LHUpperShock",
+        "lgearp"
+      ],
+      "model": "Models/CRJ200.xml",
+      "scope": "0:Models/CRJ200.xml",
+      "targetPartIds": [
+        "0:Models/CRJ200.xml#22",
+        "0:Models/CRJ200.xml#24",
+        "0:Models/CRJ200.xml#27",
+        "0:Models/CRJ200.xml#34",
+        "0:Models/CRJ200.xml#44",
+        "0:Models/CRJ200.xml#47"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rightmaingear",
+        "RHLowerShock",
+        "RHstrut",
+        "RHArm",
+        "RHUpperShock",
+        "rgearp"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        1.8484623477195798,
+        -0.43959276061276126,
+        -1.5464030901446388
+      ],
+      "factor": 86.0,
+      "offset": -86.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rightmaingear",
+        "RHLowerShock",
+        "RHstrut",
+        "RHArm",
+        "RHUpperShock",
+        "rgearp"
+      ],
+      "model": "Models/CRJ200.xml",
+      "scope": "0:Models/CRJ200.xml",
+      "targetPartIds": [
+        "0:Models/CRJ200.xml#101",
+        "0:Models/CRJ200.xml#76",
+        "0:Models/CRJ200.xml#79",
+        "0:Models/CRJ200.xml#86",
+        "0:Models/CRJ200.xml#96",
+        "0:Models/CRJ200.xml#99"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rgeardoor"
+      ],
+      "axis": [
+        0.9966350197792053,
+        0.08196772634983063,
+        0.0
+      ],
+      "center": [
+        1.9039161652662353,
+        -0.4945418863945567,
+        -1.6390021020353602
+      ],
+      "factor": 115.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rgeardoor"
+      ],
+      "model": "Models/CRJ200.xml",
+      "scope": "0:Models/CRJ200.xml",
+      "targetPartIds": [
+        "0:Models/CRJ200.xml#75"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lhibflap"
+      ],
+      "axis": [
+        -0.012939615175127983,
+        -0.07298580557107925,
+        -0.9972490668296814
+      ],
+      "center": [
+        2.29209332880059,
+        -0.7326546283147801,
+        2.5927716706206176
+      ],
+      "factor": 45.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lhibflap"
+      ],
+      "model": "Models/CRJ200.xml",
+      "scope": "0:Models/CRJ200.xml",
+      "targetPartIds": [
+        "0:Models/CRJ200.xml#29"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lhobflap"
+      ],
+      "axis": [
+        -0.3210820257663727,
+        -0.04117356240749359,
+        -0.9461559057235718
+      ],
+      "center": [
+        3.003751315044317,
+        -0.47622548384044683,
+        5.555939388804122
+      ],
+      "factor": 45.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lhobflap"
+      ],
+      "model": "Models/CRJ200.xml",
+      "scope": "0:Models/CRJ200.xml",
+      "targetPartIds": [
+        "0:Models/CRJ200.xml#39"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhibflap"
+      ],
+      "axis": [
+        0.012939615175127983,
+        0.07298580557107925,
+        -0.9972490668296814
+      ],
+      "center": [
+        2.29209332880059,
+        -0.7326546283147801,
+        -2.5927716706206176
+      ],
+      "factor": 45.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhibflap"
+      ],
+      "model": "Models/CRJ200.xml",
+      "scope": "0:Models/CRJ200.xml",
+      "targetPartIds": [
+        "0:Models/CRJ200.xml#81"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhobflap"
+      ],
+      "axis": [
+        0.3210820257663727,
+        0.04117356240749359,
+        -0.9461559057235718
+      ],
+      "center": [
+        3.003751315044317,
+        -0.47622548384044683,
+        -5.555939388804122
+      ],
+      "factor": 45.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhobflap"
+      ],
+      "model": "Models/CRJ200.xml",
+      "scope": "0:Models/CRJ200.xml",
+      "targetPartIds": [
+        "0:Models/CRJ200.xml#91"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/left-speedbrake-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lhobspoiler"
+      ],
+      "axis": [
+        -0.337970495223999,
+        -0.032559145241975784,
+        -0.9405933618545532
+      ],
+      "center": [
+        3.1423860792648393,
+        -0.09158182853934752,
+        6.63008752934474
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.35,
+          -30.0
+        ],
+        [
+          1.0,
+          -60.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lhobspoiler"
+      ],
+      "model": "Models/CRJ200.xml",
+      "scope": "0:Models/CRJ200.xml",
+      "targetPartIds": [
+        "0:Models/CRJ200.xml#40"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/left-speedbrake-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lhobspoilerb"
+      ],
+      "axis": [
+        -0.337970495223999,
+        -0.032559145241975784,
+        -0.9405933618545532
+      ],
+      "center": [
+        3.1423860792648393,
+        -0.09158182853934752,
+        6.63008752934474
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.35,
+          -30.0
+        ],
+        [
+          1.0,
+          -60.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lhobspoilerb"
+      ],
+      "model": "Models/CRJ200.xml",
+      "scope": "0:Models/CRJ200.xml",
+      "targetPartIds": [
+        "0:Models/CRJ200.xml#41"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/right-speedbrake-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhobspoiler"
+      ],
+      "axis": [
+        0.337970495223999,
+        0.032559145241975784,
+        -0.9405933618545532
+      ],
+      "center": [
+        3.1423860792648393,
+        -0.09158182853934752,
+        -6.63008752934474
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.35,
+          -30.0
+        ],
+        [
+          1.0,
+          -60.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhobspoiler"
+      ],
+      "model": "Models/CRJ200.xml",
+      "scope": "0:Models/CRJ200.xml",
+      "targetPartIds": [
+        "0:Models/CRJ200.xml#92"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/right-speedbrake-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhobspoilerb"
+      ],
+      "axis": [
+        0.337970495223999,
+        0.032559145241975784,
+        -0.9405933618545532
+      ],
+      "center": [
+        3.1423860792648393,
+        -0.09158182853934752,
+        -6.63008752934474
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.35,
+          -30.0
+        ],
+        [
+          1.0,
+          -60.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhobspoilerb"
+      ],
+      "model": "Models/CRJ200.xml",
+      "scope": "0:Models/CRJ200.xml",
+      "targetPartIds": [
+        "0:Models/CRJ200.xml#93"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[0]/rpm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "eng1fan"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        6.099925659333061,
+        1.3737274076200792,
+        2.222375843830927
+      ],
+      "factor": 10.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "eng1fan"
+      ],
+      "model": "Models/CRJ200.xml",
+      "scope": "0:Models/CRJ200.xml",
+      "targetPartIds": [
+        "0:Models/CRJ200.xml#9"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[1]/rpm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "eng2fan"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        6.099925659333061,
+        1.3737274076200792,
+        -2.222375843830927
+      ],
+      "factor": 10.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "eng2fan"
+      ],
+      "model": "Models/CRJ200.xml",
+      "scope": "0:Models/CRJ200.xml",
+      "targetPartIds": [
+        "0:Models/CRJ200.xml#11"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "sim/multiplay/generic/float[4]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "no1reverser",
+        "no2reverser"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 0.9158182717467195,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.3663273086986878
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "no1reverser",
+        "no2reverser"
+      ],
+      "model": "Models/CRJ200.xml",
+      "scope": "0:Models/CRJ200.xml",
+      "targetPartIds": [
+        "0:Models/CRJ200.xml#64",
+        "0:Models/CRJ200.xml#67"
+      ]
+    }
+  ],
+  "gearInternalParts": [
+    "leftmaingear",
+    "lgearp",
+    "LHArm",
+    "LHLowerShock",
+    "LHstrut",
+    "LHUpperShock",
+    "ngltorque",
+    "ngstrut",
+    "ngustrut",
+    "ngutorque",
+    "nosegear",
+    "rgearp",
+    "RHArm",
+    "RHLowerShock",
+    "RHstrut",
+    "RHUpperShock",
+    "rightmaingear"
+  ],
+  "gearInternalPartIds": [
+    "0:Models/CRJ200.xml#22",
+    "0:Models/CRJ200.xml#24",
+    "0:Models/CRJ200.xml#27",
+    "0:Models/CRJ200.xml#34",
+    "0:Models/CRJ200.xml#44",
+    "0:Models/CRJ200.xml#47",
+    "0:Models/CRJ200.xml#57",
+    "0:Models/CRJ200.xml#58",
+    "0:Models/CRJ200.xml#59",
+    "0:Models/CRJ200.xml#60",
+    "0:Models/CRJ200.xml#69",
+    "0:Models/CRJ200.xml#76",
+    "0:Models/CRJ200.xml#79",
+    "0:Models/CRJ200.xml#86",
+    "0:Models/CRJ200.xml#96",
+    "0:Models/CRJ200.xml#99",
+    "0:Models/CRJ200.xml#101"
+  ],
+  "missingTextures": [],
+  "sourceAC": [
+    "Models/crj-200.ac"
+  ],
+  "discardedUnreferencedVertices": 32,
+  "provenance": "preparation/CRJ200",
+  "variantConstruction": {
+    "sourceUnitNormalization": {
+      "scale": 0.9158182717467195,
+      "rawDimensions": {
+        "length": 28.964614868164062,
+        "span": 22.9268159866333
+      },
+      "basis": "Bombardier CSP A-020 Rev8, 00-02-01 p.5 fig.2: total length 26.77 m, fuselage ending at 24.38 m, span 21.23 m, main-gear track 3.14 m. Source length/span excess is a common factor (~1.092), not an airframe variant. Normalize uniformly before sub-0.2% envelope correction; no tail remodeling."
+    }
+  },
+  "capabilities": [
+    "fans",
+    "flaps",
+    "gear",
+    "reversers",
+    "spoilers"
+  ],
+  "reviewPoints": {
+    "cockpit": [
+      -9.0186185836792,
+      1.1236908435821533,
+      7.152557373046875e-07
+    ],
+    "engine": [
+      7.247098445892334,
+      1.3589390516281128,
+      2.222280502319336
+    ],
+    "wing": [
+      2.4887051582336426,
+      -0.5053260922431946,
+      2.4940195083618164
+    ]
+  },
+  "fidelityNotes": [
+    "Uniform source-unit normalization checked against the manufacturer three-view. Height, wheel track and fuselage section require close review before acceptance."
+  ],
+  "reviewStatus": "build-awaiting-validation",
+  "addedDoorWindowPanes": 0,
+  "fittedCockpitOpenings": 0,
+  "fittedCabinOpenings": 0,
+  "envelopeCalibration": {
+    "rawDimensions": {
+      "length": 26.526323530371346,
+      "span": 20.99679699353357
+    },
+    "axisScale": [
+      1.0091862134362364,
+      1,
+      1.0111065990940546
+    ]
+  },
+  "skippedSourceModels": [
+    "Pushback/pushback.xml",
+    "Aircraft/CRJ200/Models/interior.xml",
+    "Aircraft/CRJ200/Models/thrust_flame.xml",
+    "Aircraft/CRJ200/Models/thrust_flame.xml",
+    "Aircraft/CRJ200/Models/Flightdeck/CRJ700-flightdeck.xml",
+    "Aircraft/CRJ200/Models/Effects/contrail.xml",
+    "Aircraft/CRJ200/Models/Effects/contrail.xml",
+    "Aircraft/CRJ200/Models/Effects/tyre-smoke-nose.xml",
+    "Aircraft/CRJ200/Models/Effects/tyre-smoke-left.xml",
+    "Aircraft/CRJ200/Models/Effects/tyre-smoke-right.xml"
+  ],
+  "unresolvedMotions": [],
+  "cargo": false,
+  "minimumCabinSpanRatio": 0.3,
+  "noseWheelPartName": "nosegear",
+  "paintProjection": {
+    "method": "Original cylindrical fuselage and planar fin surface-coordinate transfer; target geometry and UVs retained",
+    "sourceBlend": "b738-current/united.blend",
+    "maps": [
+      {
+        "surface": "body-and-fin",
+        "resolution": 2048,
+        "sourceAtlas": "UAX.png",
+        "map": "crj200/generated/united/body-color.png",
+        "sourceTriangles": {
+          "body": 4125,
+          "fin": 164
+        }
+      }
+    ],
+    "operatorFinishParts": [
+      "no1engine",
+      "no1reverser",
+      "no2engine",
+      "no2reverser"
+    ],
+    "enginePaintStatus": "operator-specific finish applied; visual review required",
+    "reviewStatus": "requires-visual-review"
+  },
+  "authoredPaint": {
+    "method": "Original airline paint layout projected in physical exterior coordinates; independent destination texture atlases retained.",
+    "maps": [
+      "crj200/generated/united/authored-color-0.png",
+      "crj200/generated/united/authored-color-1.png"
+    ],
+    "references": [
+      "https://www.united.com/en/us/fly/company/aircraft.html"
+    ],
+    "artworkMetadata": [
+      "preparation/brand-art/United Airlines wordmark.asset.json"
+    ],
+    "reviewStatus": "requires-visual-review"
+  }
+}

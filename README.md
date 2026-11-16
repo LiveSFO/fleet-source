@@ -7,11 +7,11 @@ under the GNU General Public License, and so are livesfo's conversions of them. 
 corresponding source.
 
 It covers the converted files livesfo serves under `/m/`, as listed in its index generated
-2026-11-13T04:35:02.810Z: 62 liveries of 13 airframes. [SERVED.json](SERVED.json) names every served file
+2026-11-15T19:26:33.738Z: 120 liveries of 37 airframes. [SERVED.json](SERVED.json) names every served file
 with its SHA-256. The rest of the website isn't part of these models: they're separate files the page loads.
 
-**Where the files are.** This git tree holds everything but the paint maps (110 MB of PNG). The release
-[`index-2026-11-13`](../../releases/tag/index-2026-11-13) holds the whole of it as one zip, paint maps included.
+**Where the files are.** This git tree holds everything but the paint maps (200 MB of PNG), the baked liveries' images (52 MB) and the redrawn paint of livesfo's liveries on the library's airframes (49 MB). The release
+[`index-2026-11-15`](../../releases/tag/index-2026-11-15) holds the whole of it as one zip, paint maps included.
 
 ## How the served files are made
 
@@ -22,11 +22,19 @@ with its SHA-256. The rest of the website isn't part of these models: they're se
 - [YV3399/737-800YV](https://github.com/YV3399/737-800YV) (tree `9d967d89dd2e`, 129 files)
 - [REXO-77/737-MAX](https://github.com/REXO-77/737-MAX) (tree `fc4316a01c1e`, 95 files)
 - [omega13a/737-Next-Generation](https://github.com/omega13a/737-Next-Generation) (tree `f0cbdc58213a`, 538 files)
+- [FGMEMBERS/747-400](https://github.com/FGMEMBERS/747-400) (tree `887ff4746c37`, 93 files)
+- [LincolnWorks-FlightGear/747-8i](https://github.com/LincolnWorks-FlightGear/747-8i) (tree `322e77bb5a45`, 90 files)
+- [FGMEMBERS/757-200](https://github.com/FGMEMBERS/757-200) (tree `873a9a12ec1a`, 81 files)
+- [dogsaysmoo/767-300](https://github.com/dogsaysmoo/767-300) (tree `bc582834f42d`, 52 files)
 - [FGMEMBERS/787-9](https://github.com/FGMEMBERS/787-9) (tree `f58fce9fa085`, 66 files)
 - [IskenderWang/787-family](https://github.com/IskenderWang/787-family) (tree `02626b5b659d`, 119 files)
 - [Bombbird2001/A320Family](https://github.com/Bombbird2001/A320Family) (tree `f30d0f9c5d35`, 558 files)
 - [FGMEMBERS/A350XWB](https://github.com/FGMEMBERS/A350XWB) (tree `04da937ab1ba`, 60 files)
+- [FGMEMBERS/A380-omega](https://github.com/FGMEMBERS/A380-omega) (tree `0d1e6ad7e338`, 56 files)
 - [franck-vmd/Boeing-777-Flightgear](https://github.com/franck-vmd/Boeing-777-Flightgear) (tree `cfa61378d121`, 435 files)
+- [FGMEMBERS/CRJ200](https://github.com/FGMEMBERS/CRJ200) (tree `4ae57306711b`, 35 files)
+- [FGMEMBERS/CRJ700-family](https://github.com/FGMEMBERS/CRJ700-family) (tree `4862db2fe6e4`, 76 files)
+- [GodBoyBr/CSeries](https://github.com/GodBoyBr/CSeries) (tree `867b3cc7bb06`, 47 files)
 - [FGMEMBERS/E-jet-family](https://github.com/FGMEMBERS/E-jet-family) (tree `45be9f83c479`, 17 files)
 - [FGDATA/IDG-A33X](https://github.com/FGDATA/IDG-A33X) (tree `1956d9b49272`, 278 files)
 - [Pilot2938/Pilot2938-FG-liveries](https://github.com/Pilot2938/Pilot2938-FG-liveries) (tree `2edd25282b93`, 33 files)
@@ -47,6 +55,18 @@ with its SHA-256. The rest of the website isn't part of these models: they're se
 3. **livesfo's converter** (`converter/`, GPL-2.0-or-later): `tools/fleet-sync.mjs` unpacks the library's
    release, `tools/fleet-convert.mjs` turns each export into the served files (meshopt-compressed geometry, KTX2
    textures, a glTF with the rig and lights in `extras.livesfo`).
+4. **The baked liveries** (`converter/tools/fleet/bake.mjs`), when SERVED.json lists them: each library livery
+   projected onto the fuselage and fin textures of livesfo's own aircraft models (which aren't part of this source),
+   so the site's crowd wears the paint its detailed models show. `bakes/` holds the image each was made from, the
+   preferred form for changing it. The served textures are KTX2 (ETC1S, basisu 2.50: `-mipmap -y_flip
+   -comp_level 2 -q 255`): the image as it is (L), and its 2× and 4× box averages (M, S).
+5. **livesfo's liveries on the library's airframes** (`converter/tools/fleet/reverse.mjs`), when SERVED.json lists
+   them (`reverse`): an airline the library has the aircraft type but no paint for gets a detailed model in the
+   livery livesfo's other aircraft wear (a baked library livery from another of the airline's types, or a livery
+   traced from photos): one of the library's liveries of that type (the template) with its paint images redrawn, the
+   fuselage and fin from that livery, the rest the template's. `reverse/` holds the redrawn images (PNG); each entry
+   names its template and what it was drawn from. Those drawn from photos credit them (CC BY 4.0; the credits are part
+   of the terms).
 
 ## Rebuilding
 
@@ -78,6 +98,9 @@ with its SHA-256. The rest of the website isn't part of these models: they're se
   later version". Each package's notices are next to its records.
 - The library's paint maps, records and scripts, as adaptations of those models and the means of building them: the
   same terms.
+- livesfo's liveries written onto the library's airframes (`reverse/`): the same terms as the airframe they're on. Those
+  drawn from photos (b763f-ups-rb, a359-sas-rb, a21n-fft-rb, a20n-fft-rb, a320-fft-rb, a321-fft-rb, a20n-voi-rb, a21n-voi-rb, a320-voi-rb, b77w-ces-rb, b77w-csn-rb, a339-ity-rb, a35k-qtr-rb) adapt photos published under CC BY 4.0,
+  which allows that with credit: each photo, its author and licence are in SERVED.json.
 - livesfo's converter: GPL-2.0-or-later ([converter/LICENSE](converter/LICENSE)). Version 3's text is in
   [COPYING.GPL-3.0](COPYING.GPL-3.0), for the parts that allow later versions.
 - The logos' sources (`preparation/brand-art/`): each record names its Wikimedia Commons page and licence; most are

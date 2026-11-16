@@ -1,0 +1,3501 @@
+{
+  "aircraft": "a388",
+  "label": "Airbus A380-800 \u00b7 Trent 900",
+  "livery": {
+    "id": "british-airways",
+    "name": "British Airways \u00b7 Chatham Dockyard",
+    "xml": "Models/Liveries/G-XLEA.xml",
+    "configuration": {
+      "cabinMask": {
+        "path": "a388/generated/ba-cabin-window-mask.png",
+        "texturePattern": "G-XLEA[.]png$"
+      }
+    }
+  },
+  "referenceDimensions": {
+    "length": 72.72,
+    "span": 79.75
+  },
+  "axes": "X aft; Y up; Z port",
+  "bounds": {
+    "min": [
+      7.320926796107974,
+      -0.7402570247650146,
+      -39.88538172177693
+    ],
+    "max": [
+      80.04092679610798,
+      24.017192840576172,
+      39.86461827822308
+    ]
+  },
+  "motions": [
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "/sim/multiplay/generic/float[17]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "elev3"
+      ],
+      "axis": [
+        -0.4306683838367462,
+        -0.09781990945339203,
+        0.8971933722496033
+      ],
+      "center": [
+        77.8671481136278,
+        8.800000190734863,
+        -13.442620701198903
+      ],
+      "factor": -20.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "elev3"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#117"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/flap-pos-deg",
+      "spinDirection": 1,
+      "inputScale": 40,
+      "targets": [
+        "flap01"
+      ],
+      "axis": [
+        -0.44584575295448303,
+        -0.08911516517400742,
+        -0.890662670135498
+      ],
+      "center": [
+        49.82016693743177,
+        6.570000171661377,
+        22.647567833283773
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          33.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap01"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#148"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/flap-pos-deg",
+      "spinDirection": 1,
+      "inputScale": 40,
+      "targets": [
+        "flap02"
+      ],
+      "axis": [
+        -0.3898743689060211,
+        -0.09167959541082382,
+        -0.9162929654121399
+      ],
+      "center": [
+        46.408101090256665,
+        5.630000114440918,
+        15.171672062477949
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          33.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap02"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#143"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/flap-pos-deg",
+      "spinDirection": 1,
+      "inputScale": 40,
+      "targets": [
+        "flap03"
+      ],
+      "axis": [
+        -0.21871410310268402,
+        -0.09714741259813309,
+        -0.9709411263465881
+      ],
+      "center": [
+        43.74648964187674,
+        4.489999771118164,
+        7.305989438667505
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          33.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap03"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#149"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/flap-pos-deg",
+      "spinDirection": 1,
+      "inputScale": 40,
+      "targets": [
+        "flap04"
+      ],
+      "axis": [
+        0.21871410310268402,
+        0.09714741259813309,
+        -0.9709411263465881
+      ],
+      "center": [
+        43.74648964187674,
+        4.489999771118164,
+        -7.305989438667505
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          33.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap04"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#150"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/flap-pos-deg",
+      "spinDirection": 1,
+      "inputScale": 40,
+      "targets": [
+        "flap05"
+      ],
+      "axis": [
+        0.3898743689060211,
+        0.09167959541082382,
+        -0.9162929654121399
+      ],
+      "center": [
+        46.408101090256665,
+        5.630000114440918,
+        -15.171672062477949
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          33.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap05"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#142"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/flap-pos-deg",
+      "spinDirection": 1,
+      "inputScale": 40,
+      "targets": [
+        "flap06"
+      ],
+      "axis": [
+        0.44584575295448303,
+        0.08911516517400742,
+        -0.890662670135498
+      ],
+      "center": [
+        49.82016693743177,
+        6.570000171661377,
+        -22.647567833283773
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          33.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap06"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#151"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "fdm/jsbsim/fcs/flap-pos-deg",
+      "spinDirection": 1,
+      "inputScale": 40,
+      "targets": [
+        "flap01"
+      ],
+      "axis": [
+        0.9806034564971924,
+        -0.19600194692611694,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          0.5
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap01"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#148"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "fdm/jsbsim/fcs/flap-pos-deg",
+      "spinDirection": 1,
+      "inputScale": 40,
+      "targets": [
+        "flap02"
+      ],
+      "axis": [
+        0.9806034564971924,
+        -0.19600194692611694,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          0.5
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap02"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#143"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "fdm/jsbsim/fcs/flap-pos-deg",
+      "spinDirection": 1,
+      "inputScale": 40,
+      "targets": [
+        "flap03"
+      ],
+      "axis": [
+        0.9806034564971924,
+        -0.19600194692611694,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          0.5
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap03"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#149"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "fdm/jsbsim/fcs/flap-pos-deg",
+      "spinDirection": 1,
+      "inputScale": 40,
+      "targets": [
+        "flap04"
+      ],
+      "axis": [
+        0.9806034564971924,
+        -0.19600194692611694,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          0.5
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap04"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#150"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "fdm/jsbsim/fcs/flap-pos-deg",
+      "spinDirection": 1,
+      "inputScale": 40,
+      "targets": [
+        "flap05"
+      ],
+      "axis": [
+        0.9806034564971924,
+        -0.19600194692611694,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          0.5
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap05"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#142"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "fdm/jsbsim/fcs/flap-pos-deg",
+      "spinDirection": 1,
+      "inputScale": 40,
+      "targets": [
+        "flap06"
+      ],
+      "axis": [
+        0.9806034564971924,
+        -0.19600194692611694,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          0.5
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap06"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#151"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/flap-pos-deg",
+      "spinDirection": 1,
+      "inputScale": 40,
+      "targets": [
+        "FTF/M01"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        51.30106315967992,
+        6.190000057220459,
+        15.171672062477949
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          43.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FTF/M01"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#125"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/flap-pos-deg",
+      "spinDirection": 1,
+      "inputScale": 40,
+      "targets": [
+        "FTF/M02"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        48.28923736832384,
+        6.190000057220459,
+        11.84349908521398
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          25.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FTF/M02"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#126"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/flap-pos-deg",
+      "spinDirection": 1,
+      "inputScale": 40,
+      "targets": [
+        "FTF/M03"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        46.197970957667586,
+        5.329999923706055,
+        7.645803056095243
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          25.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FTF/M03"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#127"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/flap-pos-deg",
+      "spinDirection": 1,
+      "inputScale": 40,
+      "targets": [
+        "FTF/M04"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        44.186754848380204,
+        4.639999866485596,
+        3.5480523066913956
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          25.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FTF/M04"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#128"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/flap-pos-deg",
+      "spinDirection": 1,
+      "inputScale": 40,
+      "targets": [
+        "FTF/M05"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        42.29561037413769,
+        3.690000057220459,
+        6.186604021532729
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          25.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FTF/M05"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#129"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/flap-pos-deg",
+      "spinDirection": 1,
+      "inputScale": 40,
+      "targets": [
+        "FTF/M06"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        42.29561037413769,
+        3.690000057220459,
+        -6.186604021532729
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          25.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FTF/M06"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#130"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/flap-pos-deg",
+      "spinDirection": 1,
+      "inputScale": 40,
+      "targets": [
+        "FTF/M07"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        44.186754848380204,
+        4.639999866485596,
+        -3.5480523066913956
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          25.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FTF/M07"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#131"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/flap-pos-deg",
+      "spinDirection": 1,
+      "inputScale": 40,
+      "targets": [
+        "FTF/M08"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        46.197970957667586,
+        5.329999923706055,
+        -7.645803056095243
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          25.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FTF/M08"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#132"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/flap-pos-deg",
+      "spinDirection": 1,
+      "inputScale": 40,
+      "targets": [
+        "FTF/M09"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        48.28923736832384,
+        6.190000057220459,
+        -11.84349908521398
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          25.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FTF/M09"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#133"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/flap-pos-deg",
+      "spinDirection": 1,
+      "inputScale": 40,
+      "targets": [
+        "FTF/M010"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        51.30106315967992,
+        6.190000057220459,
+        -15.171672062477949
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          43.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FTF/M010"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#124"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/leading-edge-flap-pos-deg",
+      "spinDirection": 1,
+      "inputScale": 40,
+      "targets": [
+        "slat03"
+      ],
+      "axis": [
+        -0.5884151458740234,
+        -0.1069197878241539,
+        -0.801458477973938
+      ],
+      "center": [
+        33.76044356661648,
+        5.230000019073486,
+        10.933997540212818
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          -15.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "slat03"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#74"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/leading-edge-flap-pos-deg",
+      "spinDirection": 1,
+      "inputScale": 40,
+      "targets": [
+        "slat04"
+      ],
+      "axis": [
+        0.5884151458740234,
+        0.1069197878241539,
+        -0.801458477973938
+      ],
+      "center": [
+        41.194941632366344,
+        6.25,
+        -20.228895447869867
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          -15.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "slat04"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#76"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "fdm/jsbsim/fcs/leading-edge-flap-pos-deg",
+      "spinDirection": 1,
+      "inputScale": 40,
+      "targets": [
+        "slat03"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          0.35
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "slat03"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#74"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "fdm/jsbsim/fcs/leading-edge-flap-pos-deg",
+      "spinDirection": 1,
+      "inputScale": 40,
+      "targets": [
+        "slat04"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          0.35
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "slat04"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#76"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "/sim/multiplay/generic/float[25]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler01"
+      ],
+      "axis": [
+        -0.44450876116752625,
+        -0.050770241767168045,
+        -0.894334614276886
+      ],
+      "center": [
+        50.140360508890375,
+        6.789999961853027,
+        25.146196251839374
+      ],
+      "factor": -57.295,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler01"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#144"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "/sim/multiplay/generic/float[24]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler02"
+      ],
+      "axis": [
+        0.44195565581321716,
+        0.0508417934179306,
+        0.8955950140953064
+      ],
+      "center": [
+        47.34866922929025,
+        6.46999979019165,
+        19.509291149594645
+      ],
+      "factor": 57.295,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler02"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#145"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "/sim/multiplay/generic/float[23]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler03"
+      ],
+      "axis": [
+        -0.44494563341140747,
+        -0.10928484052419662,
+        -0.8888645172119141
+      ],
+      "center": [
+        47.34866922929025,
+        6.46999979019165,
+        19.509291149594645
+      ],
+      "factor": -57.295,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler03"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#88"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "/sim/multiplay/generic/float[22]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler04"
+      ],
+      "axis": [
+        0.4411826729774475,
+        0.11247845739126205,
+        0.8903406858444214
+      ],
+      "center": [
+        45.187360713440455,
+        5.929999828338623,
+        15.171672062477949
+      ],
+      "factor": 57.295,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler04"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#54"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "/sim/multiplay/generic/float[21]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler05"
+      ],
+      "axis": [
+        -0.435739666223526,
+        -0.13548137247562408,
+        -0.8898177146911621
+      ],
+      "center": [
+        45.187360713440455,
+        5.929999828338623,
+        15.171672062477949
+      ],
+      "factor": -57.295,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler05"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#89"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "/sim/multiplay/generic/float[20]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler06"
+      ],
+      "axis": [
+        0.4212794899940491,
+        0.17542684078216553,
+        0.8898028135299683
+      ],
+      "center": [
+        43.32623319370704,
+        5.25,
+        11.303795384932014
+      ],
+      "factor": 57.295,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler06"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#90"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "/sim/multiplay/generic/float[19]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler07"
+      ],
+      "axis": [
+        -0.23669075965881348,
+        -0.22290048003196716,
+        -0.9456706643104553
+      ],
+      "center": [
+        43.32623319370704,
+        5.25,
+        11.303795384932014
+      ],
+      "factor": -57.295,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler07"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#91"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "/sim/multiplay/generic/float[18]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler08"
+      ],
+      "axis": [
+        0.23290576040744781,
+        0.23276475071907043,
+        0.944232702255249
+      ],
+      "center": [
+        42.29561037413769,
+        4.25,
+        7.15607163823906
+      ],
+      "factor": 57.295,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler08"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#92"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "/sim/multiplay/generic/float[32]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler15"
+      ],
+      "axis": [
+        0.44195565581321716,
+        0.0508417934179306,
+        -0.8955950140953064
+      ],
+      "center": [
+        47.34866922929025,
+        6.46999979019165,
+        -19.509291149594645
+      ],
+      "factor": -57.295,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler15"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#96"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "/sim/multiplay/generic/float[31]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler14"
+      ],
+      "axis": [
+        -0.44494563341140747,
+        -0.10928484052419662,
+        0.8888645172119141
+      ],
+      "center": [
+        47.34866922929025,
+        6.46999979019165,
+        -19.509291149594645
+      ],
+      "factor": 57.295,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler14"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#95"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "/sim/multiplay/generic/float[30]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler13"
+      ],
+      "axis": [
+        0.4411826729774475,
+        0.11247845739126205,
+        -0.8903406858444214
+      ],
+      "center": [
+        45.187360713440455,
+        5.929999828338623,
+        -15.171672062477949
+      ],
+      "factor": -57.295,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler13"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#55"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "/sim/multiplay/generic/float[29]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler12"
+      ],
+      "axis": [
+        -0.435739666223526,
+        -0.13548137247562408,
+        0.8898177146911621
+      ],
+      "center": [
+        45.187360713440455,
+        5.929999828338623,
+        -15.171672062477949
+      ],
+      "factor": 57.295,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler12"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#94"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "/sim/multiplay/generic/float[28]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler11"
+      ],
+      "axis": [
+        0.4212794899940491,
+        0.17542684078216553,
+        -0.8898028135299683
+      ],
+      "center": [
+        43.32623319370704,
+        5.25,
+        -11.303795384932014
+      ],
+      "factor": -57.295,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler11"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#93"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "/sim/multiplay/generic/float[27]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler10"
+      ],
+      "axis": [
+        -0.23669075965881348,
+        -0.22290048003196716,
+        0.9456706643104553
+      ],
+      "center": [
+        43.32623319370704,
+        5.25,
+        -11.303795384932014
+      ],
+      "factor": 57.295,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler10"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#147"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "/sim/multiplay/generic/float[26]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler09"
+      ],
+      "axis": [
+        0.23290576040744781,
+        0.23276475071907043,
+        -0.944232702255249
+      ],
+      "center": [
+        42.29561037413769,
+        4.25,
+        -7.15607163823906
+      ],
+      "factor": -57.295,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler09"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#146"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "nosegrdoor_fl"
+      ],
+      "axis": [
+        0.9845336079597473,
+        -0.17519593238830566,
+        7.241513958433643e-05
+      ],
+      "center": [
+        10.089609148726806,
+        2.9677999019622803,
+        0.7327977562240469
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          -110.0
+        ],
+        [
+          0.75,
+          -110.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "nosegrdoor_fl"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#154.1"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "nosegrdoor_fr"
+      ],
+      "axis": [
+        0.9845336079597473,
+        -0.17519593238830566,
+        -7.241513958433643e-05
+      ],
+      "center": [
+        10.089609148726806,
+        2.9677999019622803,
+        -0.7327977562240469
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          110.0
+        ],
+        [
+          0.75,
+          110.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "nosegrdoor_fr"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#154.3"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "nosegrdoor_rl"
+      ],
+      "axis": [
+        0.994393527507782,
+        -0.10574203729629517,
+        6.55608091619797e-05
+      ],
+      "center": [
+        11.448431714994182,
+        2.7260000705718994,
+        0.7328976583736745
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.15,
+          0.0
+        ],
+        [
+          0.55,
+          -65.0
+        ],
+        [
+          1.0,
+          -70.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "nosegrdoor_rl"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#154.2"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "nosegrdoor_rr"
+      ],
+      "axis": [
+        0.994393527507782,
+        -0.10574203729629517,
+        -6.55608091619797e-05
+      ],
+      "center": [
+        11.448431714994182,
+        2.7260000705718994,
+        -0.7328976583736745
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.15,
+          0.0
+        ],
+        [
+          0.55,
+          65.0
+        ],
+        [
+          1.0,
+          70.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "nosegrdoor_rr"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#154.4"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[5]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "gear_cover_m_l"
+      ],
+      "axis": [
+        0.9975131750106812,
+        0.002151631284505129,
+        0.07044728845357895
+      ],
+      "center": [
+        30.57969606597756,
+        1.703320026397705,
+        1.3522577449203919
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          100.0
+        ],
+        [
+          0.8,
+          100.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "gear_cover_m_l"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#12.1"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[6]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "gear_cover_m_r"
+      ],
+      "axis": [
+        0.9975131750106812,
+        0.002151631284505129,
+        -0.07044728845357895
+      ],
+      "center": [
+        30.57969606597756,
+        1.703320026397705,
+        -1.3522577449203919
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          -100.0
+        ],
+        [
+          0.8,
+          -100.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "gear_cover_m_r"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#12.2"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[3]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "gear_cover_r_l1",
+        "gear_cover_r_l2"
+      ],
+      "axis": [
+        0.9978447556495667,
+        0.06561872363090515,
+        0.0
+      ],
+      "center": [
+        43.804733373928414,
+        1.7552900314331055,
+        3.751840539255244
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.15,
+          0.0
+        ],
+        [
+          0.45,
+          -135.0
+        ],
+        [
+          0.8,
+          -135.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "gear_cover_r_l1",
+        "gear_cover_r_l2"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#12.3",
+        "0:Models/A380.xml#12.4"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[3]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "gear_cover_r_l2"
+      ],
+      "axis": [
+        0.9995884895324707,
+        0.02868609130382538,
+        0.0
+      ],
+      "center": [
+        41.95054135856213,
+        1.6700600385665894,
+        3.0982991436938327
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.25,
+          0.0
+        ],
+        [
+          0.45,
+          135.0
+        ],
+        [
+          1.0,
+          135.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "gear_cover_r_l2"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#12.4"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[3]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "gear_cover_r_l3"
+      ],
+      "axis": [
+        0.9994527697563171,
+        0.03307769075036049,
+        0.0
+      ],
+      "center": [
+        41.80846466976027,
+        1.5769799947738647,
+        1.4871336295581539
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.15,
+          0.0
+        ],
+        [
+          0.45,
+          100.0
+        ],
+        [
+          0.8,
+          100.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "gear_cover_r_l3"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#12.5"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[4]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "gear_cover_r_r1",
+        "gear_cover_r_r2"
+      ],
+      "axis": [
+        0.9978447556495667,
+        0.06561872363090515,
+        0.0
+      ],
+      "center": [
+        43.804733373928414,
+        1.7552900314331055,
+        -3.751840539255244
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.15,
+          0.0
+        ],
+        [
+          0.45,
+          135.0
+        ],
+        [
+          0.8,
+          135.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "gear_cover_r_r1",
+        "gear_cover_r_r2"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#12.6",
+        "0:Models/A380.xml#12.7"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[4]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "gear_cover_r_r2"
+      ],
+      "axis": [
+        0.9995884895324707,
+        0.02868609130382538,
+        0.0
+      ],
+      "center": [
+        41.95054135856213,
+        1.6700600385665894,
+        -3.0982991436938327
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.25,
+          0.0
+        ],
+        [
+          0.45,
+          -135.0
+        ],
+        [
+          1.0,
+          -135.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "gear_cover_r_r2"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#12.7"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[4]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "gear_cover_r_r3"
+      ],
+      "axis": [
+        0.9994527697563171,
+        0.03307769075036049,
+        0.0
+      ],
+      "center": [
+        41.80846466976027,
+        1.5769799947738647,
+        -1.4871336295581539
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.15,
+          0.0
+        ],
+        [
+          0.45,
+          -100.0
+        ],
+        [
+          0.8,
+          -100.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "gear_cover_r_r3"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#12.8"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "NoseGear"
+      ],
+      "axis": [
+        0.7075148224830627,
+        0.0,
+        -0.706698477268219
+      ],
+      "center": [
+        12.647658477892294,
+        2.9600000381469727,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          105.0
+        ],
+        [
+          0.25,
+          105.0
+        ],
+        [
+          0.75,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "NoseGear"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#29",
+        "0:Models/A380.xml#30",
+        "0:Models/A380.xml#31"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "LeftMainFwdGear"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        3.5399999618530273,
+        5.666889329536186
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          85.0
+        ],
+        [
+          0.15,
+          85.0
+        ],
+        [
+          0.75,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "LeftMainFwdGear"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#21",
+        "0:Models/A380.xml#22",
+        "0:Models/A380.xml#23",
+        "0:Models/A380.xml#24",
+        "0:Models/A380.xml#25",
+        "0:Models/A380.xml#26",
+        "0:Models/A380.xml#27",
+        "0:Models/A380.xml#28"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "RightMainFwdGear"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        3.5399999618530273,
+        -5.666889329536186
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          85.0
+        ],
+        [
+          0.15,
+          85.0
+        ],
+        [
+          0.75,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "RightMainFwdGear"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#41",
+        "0:Models/A380.xml#42",
+        "0:Models/A380.xml#43",
+        "0:Models/A380.xml#44",
+        "0:Models/A380.xml#45",
+        "0:Models/A380.xml#46",
+        "0:Models/A380.xml#47",
+        "0:Models/A380.xml#48"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "translate",
+      "property": "gear/gear[3]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "LeftMainAftGear"
+      ],
+      "axis": [
+        0.2875076234340668,
+        0.9577783942222595,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          2.7
+        ],
+        [
+          0.3,
+          2.7
+        ],
+        [
+          0.85,
+          -0.55
+        ],
+        [
+          0.9,
+          -0.55
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "LeftMainAftGear"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#13",
+        "0:Models/A380.xml#14",
+        "0:Models/A380.xml#15",
+        "0:Models/A380.xml#16",
+        "0:Models/A380.xml#17",
+        "0:Models/A380.xml#18",
+        "0:Models/A380.xml#19",
+        "0:Models/A380.xml#20"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "translate",
+      "property": "gear/gear[4]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "RightMainAftGear"
+      ],
+      "axis": [
+        0.2875076234340668,
+        0.9577783942222595,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          2.7
+        ],
+        [
+          0.35,
+          2.7
+        ],
+        [
+          0.85,
+          -0.55
+        ],
+        [
+          0.9,
+          -0.55
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "RightMainAftGear"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#33",
+        "0:Models/A380.xml#34",
+        "0:Models/A380.xml#35",
+        "0:Models/A380.xml#36",
+        "0:Models/A380.xml#37",
+        "0:Models/A380.xml#38",
+        "0:Models/A380.xml#39",
+        "0:Models/A380.xml#40"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "leftgear.hyd1"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        1.7760000228881836,
+        5.437015495966049
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          130.0
+        ],
+        [
+          0.15,
+          130.0
+        ],
+        [
+          0.75,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "leftgear.hyd1"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#21"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rightgear.hyd1"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        1.7760000228881836,
+        -5.437015495966049
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          130.0
+        ],
+        [
+          0.15,
+          130.0
+        ],
+        [
+          0.75,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rightgear.hyd1"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#42"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "/gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "LeftWheelFront",
+        "LeftWheelBack",
+        "LeftGearBaseRod"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        40.36924254585016,
+        -0.08550000190734863,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -20.0
+        ],
+        [
+          0.8,
+          -20.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "LeftWheelFront",
+        "LeftWheelBack",
+        "LeftGearBaseRod"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#22",
+        "0:Models/A380.xml#26",
+        "0:Models/A380.xml#27"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "/gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "RightWheelFront",
+        "RightWheelBack",
+        "RightGearBaseRod"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        40.36924254585016,
+        -0.08550000190734863,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -20.0
+        ],
+        [
+          0.8,
+          -20.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "RightWheelFront",
+        "RightWheelBack",
+        "RightGearBaseRod"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#43",
+        "0:Models/A380.xml#47",
+        "0:Models/A380.xml#48"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "/gear/gear[3]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "LeftWheel2Front",
+        "LeftWheel2Mid",
+        "LeftWheel2Back",
+        "L2GearBaseRod"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        43.52585510201286,
+        0.47130000591278076,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          15.0
+        ],
+        [
+          0.9,
+          15.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "LeftWheel2Front",
+        "LeftWheel2Mid",
+        "LeftWheel2Back",
+        "L2GearBaseRod"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#14",
+        "0:Models/A380.xml#18",
+        "0:Models/A380.xml#19",
+        "0:Models/A380.xml#20"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "/gear/gear[4]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "RightWheel2Front",
+        "RightWheel2Mid",
+        "RightWheel2Back",
+        "R2GearBaseRod"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        43.52585510201286,
+        0.47130000591278076,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          15.0
+        ],
+        [
+          0.9,
+          15.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "RightWheel2Front",
+        "RightWheel2Mid",
+        "RightWheel2Back",
+        "R2GearBaseRod"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#35",
+        "0:Models/A380.xml#38",
+        "0:Models/A380.xml#39",
+        "0:Models/A380.xml#40"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "door1B"
+      ],
+      "axis": [
+        0.9964812397956848,
+        0.08381630480289459,
+        0.0
+      ],
+      "center": [
+        39.82361263788825,
+        3.372499942779541,
+        6.899212667312379
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.15,
+          -5.0
+        ],
+        [
+          0.75,
+          -65.0
+        ],
+        [
+          1.0,
+          -65.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "door1B"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#0",
+        "0:Models/A380.xml#8"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "door4B"
+      ],
+      "axis": [
+        0.9964812397956848,
+        0.08381630480289459,
+        0.0
+      ],
+      "center": [
+        39.82361263788825,
+        3.372499942779541,
+        -6.899212667312379
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.15,
+          5.0
+        ],
+        [
+          0.75,
+          65.0
+        ],
+        [
+          1.0,
+          65.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "door4B"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#10",
+        "0:Models/A380.xml#3"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "translate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "door2B"
+      ],
+      "axis": [
+        0.4578608572483063,
+        0.45758363604545593,
+        0.7622209191322327
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.15,
+          0.0
+        ],
+        [
+          0.55,
+          1.2
+        ],
+        [
+          1.0,
+          1.2
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "door2B"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#1",
+        "0:Models/A380.xml#9"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "translate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "door3B"
+      ],
+      "axis": [
+        0.4578608572483063,
+        0.45758363604545593,
+        -0.7622209191322327
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.15,
+          0.0
+        ],
+        [
+          0.55,
+          1.2
+        ],
+        [
+          1.0,
+          1.2
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "door3B"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#11",
+        "0:Models/A380.xml#2"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "door2B"
+      ],
+      "axis": [
+        0.9969472289085388,
+        0.07807782292366028,
+        0.0
+      ],
+      "center": [
+        39.24416403499365,
+        3.0483999252319336,
+        5.789422145721804
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.15,
+          0.0
+        ],
+        [
+          0.75,
+          -75.0
+        ],
+        [
+          1.0,
+          -75.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "door2B"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#1",
+        "0:Models/A380.xml#9"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "door3B"
+      ],
+      "axis": [
+        0.9969472289085388,
+        0.07807782292366028,
+        0.0
+      ],
+      "center": [
+        39.24416403499365,
+        3.0483999252319336,
+        -5.789422145721804
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.15,
+          0.0
+        ],
+        [
+          0.75,
+          75.0
+        ],
+        [
+          1.0,
+          75.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "door3B"
+      ],
+      "model": "Models/A380.xml",
+      "scope": "0:Models/A380.xml",
+      "targetPartIds": [
+        "0:Models/A380.xml#11",
+        "0:Models/A380.xml#2"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[0]/n1",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "nosecone.1",
+        "fan.1"
+      ],
+      "axis": [
+        -0.9993912577629089,
+        0.03488834202289581,
+        0.0
+      ],
+      "center": [
+        46.134433034885475,
+        3.895699977874756,
+        25.418046383260684
+      ],
+      "factor": 20.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "nosecone.1",
+        "fan.1"
+      ],
+      "model": "Models/trent900.xml",
+      "scope": "0:Models/A380.xml/1:trent900",
+      "targetPartIds": [
+        "0:Models/A380.xml/1:trent900#3.15",
+        "0:Models/A380.xml/1:trent900#3.6"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[1]/n1",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "nosecone.2",
+        "fan.2"
+      ],
+      "axis": [
+        -0.9993916749954224,
+        0.03487446904182434,
+        0.0
+      ],
+      "center": [
+        37.85342173550116,
+        2.9052000045776367,
+        14.85834365465501
+      ],
+      "factor": 20.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "nosecone.2",
+        "fan.2"
+      ],
+      "model": "Models/trent900.xml",
+      "scope": "0:Models/A380.xml/1:trent900",
+      "targetPartIds": [
+        "0:Models/A380.xml/1:trent900#2.15",
+        "0:Models/A380.xml/1:trent900#2.6"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[3]/n1",
+      "spinDirection": -1,
+      "inputScale": 1,
+      "targets": [
+        "nosecone.4",
+        "fan.4"
+      ],
+      "axis": [
+        -0.9993912577629089,
+        0.03488834202289581,
+        0.0
+      ],
+      "center": [
+        46.134433034885475,
+        3.895699977874756,
+        -25.418046383260684
+      ],
+      "factor": -20.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "nosecone.4",
+        "fan.4"
+      ],
+      "model": "Models/trent900.xml",
+      "scope": "0:Models/A380.xml/1:trent900",
+      "targetPartIds": [
+        "0:Models/A380.xml/1:trent900#0.18",
+        "0:Models/A380.xml/1:trent900#0.9"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[2]/n1",
+      "spinDirection": -1,
+      "inputScale": 1,
+      "targets": [
+        "nosecone.3",
+        "fan.3"
+      ],
+      "axis": [
+        -0.9993916749954224,
+        0.03487446904182434,
+        0.0
+      ],
+      "center": [
+        37.85342173550116,
+        2.9052000045776367,
+        -14.85834365465501
+      ],
+      "factor": -20.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "nosecone.3",
+        "fan.3"
+      ],
+      "model": "Models/trent900.xml",
+      "scope": "0:Models/A380.xml/1:trent900",
+      "targetPartIds": [
+        "0:Models/A380.xml/1:trent900#1.18",
+        "0:Models/A380.xml/1:trent900#1.9"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "engines/engine[1]/reverser-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "reverse"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 0.85,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "reverse"
+      ],
+      "model": "Models/trent900.xml",
+      "scope": "0:Models/A380.xml/1:trent900",
+      "targetPartIds": [
+        "0:Models/A380.xml/1:trent900#1.3",
+        "0:Models/A380.xml/1:trent900#2.20"
+      ]
+    }
+  ],
+  "gearInternalParts": [
+    "gear_cover_m_l",
+    "gear_cover_m_r",
+    "gear_cover_r_l1",
+    "gear_cover_r_l2",
+    "gear_cover_r_l3",
+    "gear_cover_r_r1",
+    "gear_cover_r_r2",
+    "gear_cover_r_r3",
+    "L2Gear",
+    "L2GearBaseRod",
+    "L2GearCompressor",
+    "L2GearCompressor1",
+    "L2GearCompressor2",
+    "LeftWheel2Back",
+    "LeftWheel2Front",
+    "LeftWheel2Mid",
+    "leftgear.hyd1",
+    "LeftGearBaseRod",
+    "LeftGearCompressor",
+    "LeftGearCompressor1",
+    "LeftGearCompressor2",
+    "LeftWheelBack",
+    "LeftWheelFront",
+    "RGear",
+    "NGear",
+    "NGearStrut",
+    "NoseWheel",
+    "R2Compressor2",
+    "R2Gear",
+    "R2GearBaseRod",
+    "R2GearCompressor",
+    "R2GearCompressor1",
+    "RightWheel2Back",
+    "RightWheel2Front",
+    "RightWheel2Mid",
+    "LGear",
+    "rightgear.hyd1",
+    "RightGearBaseRod",
+    "RightGearCompressor",
+    "RightGearCompressor1",
+    "RightGearCompressor2",
+    "RightWheelBack",
+    "RightWheelFront"
+  ],
+  "gearInternalPartIds": [
+    "0:Models/A380.xml#12.1",
+    "0:Models/A380.xml#12.2",
+    "0:Models/A380.xml#12.3",
+    "0:Models/A380.xml#12.4",
+    "0:Models/A380.xml#12.5",
+    "0:Models/A380.xml#12.6",
+    "0:Models/A380.xml#12.7",
+    "0:Models/A380.xml#12.8",
+    "0:Models/A380.xml#13",
+    "0:Models/A380.xml#14",
+    "0:Models/A380.xml#15",
+    "0:Models/A380.xml#16",
+    "0:Models/A380.xml#17",
+    "0:Models/A380.xml#18",
+    "0:Models/A380.xml#19",
+    "0:Models/A380.xml#20",
+    "0:Models/A380.xml#21",
+    "0:Models/A380.xml#22",
+    "0:Models/A380.xml#23",
+    "0:Models/A380.xml#24",
+    "0:Models/A380.xml#25",
+    "0:Models/A380.xml#26",
+    "0:Models/A380.xml#27",
+    "0:Models/A380.xml#28",
+    "0:Models/A380.xml#29",
+    "0:Models/A380.xml#30",
+    "0:Models/A380.xml#31",
+    "0:Models/A380.xml#33",
+    "0:Models/A380.xml#34",
+    "0:Models/A380.xml#35",
+    "0:Models/A380.xml#36",
+    "0:Models/A380.xml#37",
+    "0:Models/A380.xml#38",
+    "0:Models/A380.xml#39",
+    "0:Models/A380.xml#40",
+    "0:Models/A380.xml#41",
+    "0:Models/A380.xml#42",
+    "0:Models/A380.xml#43",
+    "0:Models/A380.xml#44",
+    "0:Models/A380.xml#45",
+    "0:Models/A380.xml#46",
+    "0:Models/A380.xml#47",
+    "0:Models/A380.xml#48"
+  ],
+  "missingTextures": [],
+  "sourceAC": [
+    "Models/a380.ac",
+    "Models/trent900.ac"
+  ],
+  "discardedUnreferencedVertices": 50,
+  "provenance": "preparation/A380-omega",
+  "variantConstruction": {},
+  "capabilities": [
+    "fans",
+    "flaps",
+    "gear",
+    "reversers",
+    "spoilers"
+  ],
+  "reviewPoints": {
+    "cockpit": [
+      10.148313522338867,
+      6.957016944885254,
+      0.0021753928158432245
+    ],
+    "engine": [
+      34.47333526611328,
+      3.058713912963867,
+      14.858331680297852
+    ],
+    "gear": [
+      12.401293754577637,
+      0.18649959564208984,
+      0.01102486252784729
+    ],
+    "wing": [
+      43.990814208984375,
+      3.8424220085144043,
+      7.43514347076416
+    ]
+  },
+  "fidelityNotes": [
+    "A6-EVN is documented for EK225 on the captured date. Painted window mask follows both decks and the passenger doors."
+  ],
+  "reviewStatus": "build-awaiting-validation",
+  "addedDoorWindowPanes": 0,
+  "fittedCockpitOpenings": 0,
+  "fittedCabinOpenings": 0,
+  "envelopeCalibration": {
+    "rawDimensions": {
+      "length": 72.67596817016602,
+      "span": 79.79377746582031
+    },
+    "axisScale": [
+      1.0006058650602478,
+      1,
+      0.9994513674222396
+    ]
+  },
+  "skippedSourceModels": [
+    "Models/Airport/Pushback/Goldhofert.xml",
+    "Aircraft/A380-omega/Models/FlightDeck/flightdeck.xml",
+    "Aircraft/A380-omega/Models/Effects/fuel-dump.xml",
+    "Aircraft/A380-omega/Models/Effects/fuel-dump.xml",
+    "Aircraft/A380-omega/Models/Effects/contrail-eng1.xml",
+    "Aircraft/A380-omega/Models/Effects/contrail-eng2.xml",
+    "Aircraft/A380-omega/Models/Effects/contrail-eng3.xml",
+    "Aircraft/A380-omega/Models/Effects/contrail-eng4.xml",
+    "Aircraft/A380-omega/Models/Effects/tyresmoke-nose.xml",
+    "Aircraft/A380-omega/Models/Effects/tyresmoke-left.xml",
+    "Aircraft/A380-omega/Models/Effects/tyresmoke-right.xml",
+    "Aircraft/A380-omega/Models/Effects/wet-runway-nose.xml",
+    "Aircraft/A380-omega/Models/Effects/wet-runway-left.xml",
+    "Aircraft/A380-omega/Models/Effects/wet-runway-right.xml"
+  ],
+  "unresolvedMotions": [],
+  "cargo": false
+}

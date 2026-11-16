@@ -1,0 +1,980 @@
+{
+  "aircraft": "a223",
+  "label": "Airbus A220-300",
+  "livery": {
+    "id": "air-canada",
+    "name": "Air Canada \u00b7 2017 paint",
+    "paintProjection": {
+      "sourceBlend": "a321/air-canada.blend",
+      "sourceBodyPattern": "^Fuselage$",
+      "bodyPartPattern": "^body$|^door[FRL]+$|^vstab$|^rudder",
+      "bodyTexturePattern": ".*",
+      "finPartPattern": "^Vstab$|^Rudder",
+      "bodyResolution": 4096,
+      "bakeCabinMask": false,
+      "stripDonorWindows": true,
+      "finishes": [
+        {
+          "name": "air-canada-engines",
+          "partPattern": "^nacelle[LR]$|^reverser[LR]$|^eng\\.[12]\\.reverser$",
+          "colorSRGB": [
+            15,
+            16,
+            17
+          ]
+        }
+      ]
+    },
+    "operatorFinishes": [
+      {
+        "name": "PW1500G rolled inlet lips",
+        "partPattern": "^nacelle[LR]$",
+        "surfaceRegion": {
+          "axis": "x",
+          "fromFront": true,
+          "range": [
+            -0.001,
+            0.27
+          ]
+        },
+        "flatColor": true,
+        "colorSRGB": [
+          174,
+          181,
+          187
+        ],
+        "metallic": 0.88,
+        "roughness": 0.24
+      },
+      {
+        "name": "PW1500G titanium fan blades",
+        "partPattern": "^fan[LR]$",
+        "flatColor": true,
+        "colorSRGB": [
+          66,
+          72,
+          78
+        ],
+        "metallic": 0.75,
+        "roughness": 0.34
+      },
+      {
+        "name": "PW1500G spinner",
+        "partPattern": "^spinner[LR]$",
+        "flatColor": true,
+        "colorSRGB": [
+          57,
+          62,
+          68
+        ],
+        "metallic": 0.5,
+        "roughness": 0.3
+      },
+      {
+        "name": "Air Canada black fin",
+        "partPattern": "^vstab$|^rudder",
+        "flatColor": true,
+        "colorSRGB": [
+          12,
+          14,
+          16
+        ],
+        "metallic": 0.06,
+        "roughness": 0.29,
+        "coat": 0.32
+      },
+      {
+        "name": "PW1500G inner duct and core",
+        "partPattern": "^engine[LR]$",
+        "flatColor": true,
+        "colorSRGB": [
+          47,
+          52,
+          57
+        ],
+        "metallic": 0.4,
+        "roughness": 0.49
+      },
+      {
+        "name": "Air Canada stabilizer skin",
+        "partPattern": "^hstab$",
+        "flatColor": true,
+        "colorSRGB": [
+          205,
+          209,
+          212
+        ],
+        "metallic": 0.15,
+        "roughness": 0.35
+      },
+      {
+        "name": "PW1500G inner cowl duct",
+        "partPattern": "^nacelle[LR]$",
+        "surfaceRegion": {
+          "axis": "x",
+          "fromFront": true,
+          "range": [
+            0.04,
+            2.8
+          ],
+          "radialMaximum": 1.04
+        },
+        "flatColor": true,
+        "colorSRGB": [
+          43,
+          48,
+          53
+        ],
+        "metallic": 0.24,
+        "roughness": 0.52
+      }
+    ],
+    "surfaceDecals": [
+      {
+        "image": "preparation/brand-art/air-canada-fin-roundel.png",
+        "partPattern": "^vstab$",
+        "center": [
+          15.8,
+          3.0
+        ],
+        "size": [
+          1.5,
+          1.5
+        ],
+        "bothSides": true,
+        "grid": [
+          49,
+          49
+        ],
+        "clipTransparentCorners": true
+      }
+    ]
+  },
+  "referenceDimensions": {
+    "length": 38.7,
+    "span": 35.1
+  },
+  "axes": "X aft; Y up; Z port",
+  "bounds": {
+    "min": [
+      -19.362952809666282,
+      -5.737946510314941,
+      -17.55
+    ],
+    "max": [
+      19.337047190333717,
+      5.847814559936523,
+      17.55
+    ]
+  },
+  "motions": [
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "wheelF",
+        "gearFU",
+        "gearFUdamper",
+        "gearFD",
+        "gearFDdamper"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        -15.969232561668536,
+        -3.729909896850586,
+        0.0
+      ],
+      "factor": -108.0,
+      "offset": 108.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "wheelF",
+        "gearFU",
+        "gearFUdamper",
+        "gearFD",
+        "gearFDdamper"
+      ],
+      "model": "Models/CS300.xml",
+      "scope": "0:Models/CS300.xml",
+      "targetPartIds": [
+        "0:Models/CS300.xml#11",
+        "0:Models/CS300.xml#12",
+        "0:Models/CS300.xml#13",
+        "0:Models/CS300.xml#14",
+        "0:Models/CS300.xml#32"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "wheelL",
+        "gearLU",
+        "gearLUdamper",
+        "gearLD",
+        "gearLDdamper"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -3.322510004043579,
+        2.3654202059034564
+      ],
+      "factor": -90.0,
+      "offset": 90.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "wheelL",
+        "gearLU",
+        "gearLUdamper",
+        "gearLD",
+        "gearLDdamper"
+      ],
+      "model": "Models/CS300.xml",
+      "scope": "0:Models/CS300.xml",
+      "targetPartIds": [
+        "0:Models/CS300.xml#15",
+        "0:Models/CS300.xml#16",
+        "0:Models/CS300.xml#17",
+        "0:Models/CS300.xml#18",
+        "0:Models/CS300.xml#33"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "wheelR",
+        "gearRU",
+        "gearRUdamper",
+        "gearRD",
+        "gearRDdamper"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -3.322510004043579,
+        -2.3654202059034564
+      ],
+      "factor": 90.0,
+      "offset": -90.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "wheelR",
+        "gearRU",
+        "gearRUdamper",
+        "gearRD",
+        "gearRDdamper"
+      ],
+      "model": "Models/CS300.xml",
+      "scope": "0:Models/CS300.xml",
+      "targetPartIds": [
+        "0:Models/CS300.xml#19",
+        "0:Models/CS300.xml#20",
+        "0:Models/CS300.xml#21",
+        "0:Models/CS300.xml#22",
+        "0:Models/CS300.xml#34"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "/engines/engine[0]/reverser-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "eng.1.reverser",
+        "eng.2.reverser"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.6
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "eng.1.reverser",
+        "eng.2.reverser"
+      ],
+      "model": "a221/delta.blend / Models/CS100.xml",
+      "scope": "component:a220-common-flight-surfaces:0:Models/CS100.xml",
+      "targetPartIds": [
+        "component:a220-common-flight-surfaces:0:Models/CS100.xml#78",
+        "component:a220-common-flight-surfaces:0:Models/CS100.xml#79"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine/rpm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "fanL",
+        "spinnerL"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -4.016260147094727,
+        5.6177536859331925
+      ],
+      "factor": 67.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "fanL",
+        "spinnerL"
+      ],
+      "model": "a221/delta.blend / Models/CS100.xml",
+      "scope": "component:a220-common-flight-surfaces:0:Models/CS100.xml",
+      "targetPartIds": [
+        "component:a220-common-flight-surfaces:0:Models/CS100.xml#25",
+        "component:a220-common-flight-surfaces:0:Models/CS100.xml#64"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[1]/rpm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "fanR",
+        "spinnerR"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -4.016260147094727,
+        -5.6177536859331925
+      ],
+      "factor": 67.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "fanR",
+        "spinnerR"
+      ],
+      "model": "a221/delta.blend / Models/CS100.xml",
+      "scope": "component:a220-common-flight-surfaces:0:Models/CS100.xml",
+      "targetPartIds": [
+        "component:a220-common-flight-surfaces:0:Models/CS100.xml#26",
+        "component:a220-common-flight-surfaces:0:Models/CS100.xml#65"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flapLO"
+      ],
+      "axis": [
+        0.36840927600860596,
+        0.14798226952552795,
+        0.917810320854187
+      ],
+      "center": [
+        -0.7094907109213922,
+        -2.577270030975342,
+        6.276327923557397
+      ],
+      "factor": -30.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flapLO"
+      ],
+      "model": "a221/delta.blend / Models/CS100.xml",
+      "scope": "component:a220-common-flight-surfaces:0:Models/CS100.xml",
+      "targetPartIds": [
+        "component:a220-common-flight-surfaces:0:Models/CS100.xml#35"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flapRO"
+      ],
+      "axis": [
+        0.36840927600860596,
+        0.14798226952552795,
+        -0.917810320854187
+      ],
+      "center": [
+        -0.7094907109213922,
+        -2.577270030975342,
+        -6.276327923557397
+      ],
+      "factor": 30.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flapRO"
+      ],
+      "model": "a221/delta.blend / Models/CS100.xml",
+      "scope": "component:a220-common-flight-surfaces:0:Models/CS100.xml",
+      "targetPartIds": [
+        "component:a220-common-flight-surfaces:0:Models/CS100.xml#37"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flapacLO2",
+        "flapacRO2"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        0.9676310353626119,
+        -2.124269962310791,
+        0.0
+      ],
+      "factor": 25.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flapacLO2",
+        "flapacRO2"
+      ],
+      "model": "a221/delta.blend / Models/CS100.xml",
+      "scope": "component:a220-common-flight-surfaces:0:Models/CS100.xml",
+      "targetPartIds": [
+        "component:a220-common-flight-surfaces:0:Models/CS100.xml#29",
+        "component:a220-common-flight-surfaces:0:Models/CS100.xml#32"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flapacLO1",
+        "flapacRO1"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        -0.2300771689340891,
+        -2.6113500595092773,
+        0.0
+      ],
+      "factor": 27.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flapacLO1",
+        "flapacRO1"
+      ],
+      "model": "a221/delta.blend / Models/CS100.xml",
+      "scope": "component:a220-common-flight-surfaces:0:Models/CS100.xml",
+      "targetPartIds": [
+        "component:a220-common-flight-surfaces:0:Models/CS100.xml#28",
+        "component:a220-common-flight-surfaces:0:Models/CS100.xml#31"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flapacLI",
+        "flapacRI"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        -0.984701925153267,
+        -3.056040048599243,
+        0.0
+      ],
+      "factor": 25.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flapacLI",
+        "flapacRI"
+      ],
+      "model": "a221/delta.blend / Models/CS100.xml",
+      "scope": "component:a220-common-flight-surfaces:0:Models/CS100.xml",
+      "targetPartIds": [
+        "component:a220-common-flight-surfaces:0:Models/CS100.xml#27",
+        "component:a220-common-flight-surfaces:0:Models/CS100.xml#30"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flapLI"
+      ],
+      "axis": [
+        0.0007158817606978118,
+        0.16472412645816803,
+        0.9863394498825073
+      ],
+      "center": [
+        -0.7126313884619728,
+        -3.2999300956726074,
+        1.9491657430676306
+      ],
+      "factor": -30.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flapLI"
+      ],
+      "model": "a221/delta.blend / Models/CS100.xml",
+      "scope": "component:a220-common-flight-surfaces:0:Models/CS100.xml",
+      "targetPartIds": [
+        "component:a220-common-flight-surfaces:0:Models/CS100.xml#34"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flapRI"
+      ],
+      "axis": [
+        0.0007158817606978118,
+        0.16472412645816803,
+        -0.9863394498825073
+      ],
+      "center": [
+        -0.7126313884619728,
+        -3.2999300956726074,
+        -1.9491657430676306
+      ],
+      "factor": 30.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flapRI"
+      ],
+      "model": "a221/delta.blend / Models/CS100.xml",
+      "scope": "component:a220-common-flight-surfaces:0:Models/CS100.xml",
+      "targetPartIds": [
+        "component:a220-common-flight-surfaces:0:Models/CS100.xml#36"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/left-speedbrake-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoilerLO"
+      ],
+      "axis": [
+        0.36661794781684875,
+        0.13762426376342773,
+        0.9201362729072571
+      ],
+      "center": [
+        -1.122282139942617,
+        -2.3539700508117676,
+        6.457108966583091
+      ],
+      "factor": 70.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoilerLO"
+      ],
+      "model": "a221/delta.blend / Models/CS100.xml",
+      "scope": "component:a220-common-flight-surfaces:0:Models/CS100.xml",
+      "targetPartIds": [
+        "component:a220-common-flight-surfaces:0:Models/CS100.xml#67"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/left-speedbrake-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoilerLI"
+      ],
+      "axis": [
+        -0.0024965740740299225,
+        0.12652847170829773,
+        0.991959810256958
+      ],
+      "center": [
+        -1.3921746128344263,
+        -2.8897600173950195,
+        1.9696335802913125
+      ],
+      "factor": 70.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoilerLI"
+      ],
+      "model": "a221/delta.blend / Models/CS100.xml",
+      "scope": "component:a220-common-flight-surfaces:0:Models/CS100.xml",
+      "targetPartIds": [
+        "component:a220-common-flight-surfaces:0:Models/CS100.xml#66"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/right-speedbrake-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoilerRO"
+      ],
+      "axis": [
+        0.36661794781684875,
+        0.13762426376342773,
+        -0.9201362729072571
+      ],
+      "center": [
+        -1.122282139942617,
+        -2.3539700508117676,
+        -6.457108966583091
+      ],
+      "factor": -70.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoilerRO"
+      ],
+      "model": "a221/delta.blend / Models/CS100.xml",
+      "scope": "component:a220-common-flight-surfaces:0:Models/CS100.xml",
+      "targetPartIds": [
+        "component:a220-common-flight-surfaces:0:Models/CS100.xml#69"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/right-speedbrake-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoilerRI"
+      ],
+      "axis": [
+        -0.0024965740740299225,
+        0.12652847170829773,
+        -0.991959810256958
+      ],
+      "center": [
+        -1.3921746128344263,
+        -2.8897600173950195,
+        -1.9696335802913125
+      ],
+      "factor": -70.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoilerRI"
+      ],
+      "model": "a221/delta.blend / Models/CS100.xml",
+      "scope": "component:a220-common-flight-surfaces:0:Models/CS100.xml",
+      "targetPartIds": [
+        "component:a220-common-flight-surfaces:0:Models/CS100.xml#68"
+      ]
+    }
+  ],
+  "gearInternalParts": [
+    "gearFD",
+    "gearFDdamper",
+    "gearFU",
+    "gearFUdamper",
+    "gearLD",
+    "gearLDdamper",
+    "gearLU",
+    "gearLUdamper",
+    "gearRD",
+    "gearRDdamper",
+    "gearRU",
+    "gearRUdamper",
+    "wheelF",
+    "wheelL",
+    "wheelR"
+  ],
+  "gearInternalPartIds": [
+    "0:Models/CS300.xml#11",
+    "0:Models/CS300.xml#12",
+    "0:Models/CS300.xml#13",
+    "0:Models/CS300.xml#14",
+    "0:Models/CS300.xml#15",
+    "0:Models/CS300.xml#16",
+    "0:Models/CS300.xml#17",
+    "0:Models/CS300.xml#18",
+    "0:Models/CS300.xml#19",
+    "0:Models/CS300.xml#20",
+    "0:Models/CS300.xml#21",
+    "0:Models/CS300.xml#22",
+    "0:Models/CS300.xml#32",
+    "0:Models/CS300.xml#33",
+    "0:Models/CS300.xml#34"
+  ],
+  "missingTextures": [],
+  "sourceAC": [
+    "Models/CS300.ac"
+  ],
+  "discardedUnreferencedVertices": 0,
+  "provenance": "preparation/CSeries-modern",
+  "variantConstruction": {
+    "componentTransplants": [
+      {
+        "id": "a220-common-flight-surfaces",
+        "blend": "a221/delta.blend",
+        "removedParts": 13,
+        "addedParts": [
+          "wings",
+          "vstab",
+          "spoilerRO",
+          "spoilerRI",
+          "spoilerLO",
+          "spoilerLI",
+          "spinnerR",
+          "spinnerL",
+          "nacelleR",
+          "nacelleL",
+          "hstab",
+          "flapRO",
+          "flapRI",
+          "flapLO",
+          "flapLI",
+          "flapacs",
+          "flapacRO2",
+          "flapacRO1",
+          "flapacRI",
+          "flapacLO2",
+          "flapacLO1",
+          "flapacLI",
+          "fanR",
+          "fanL",
+          "engineR.chrome",
+          "engineR",
+          "engineL.chrome",
+          "engineL",
+          "eng.2.reverser",
+          "eng.1.reverser"
+        ],
+        "basis": "A220 family common wing/PW1500G assemblies (Airbus June 2026 factsheet: >99% parts commonality). Detailed CS100 exterior parts replace unseparated CS300 source wings/nacelles. Native CS300 fuselage and gear retained; tail location fitted to its source outline, requiring visual/drawing review."
+      }
+    ]
+  },
+  "capabilities": [
+    "fans",
+    "flaps",
+    "gear",
+    "reversers",
+    "spoilers"
+  ],
+  "reviewPoints": {
+    "cockpit": [
+      -17.074230194091797,
+      -1.6013355255126953,
+      -1.1126201115985168e-07
+    ],
+    "engine": [
+      -4.411580562591553,
+      -4.016180038452148,
+      5.618220329284668
+    ],
+    "gear": [
+      -15.976736068725586,
+      -5.272039890289307,
+      0.03297850489616394
+    ],
+    "wing": [
+      -0.1261320412158966,
+      -2.9929356575012207,
+      4.113193511962891
+    ]
+  },
+  "fidelityNotes": [
+    "Detailed common A220 wing and PW1500G assemblies transplanted into the actual longer CS300 exterior source. Tail alignment and fuselage section require manufacturer-drawing review before release."
+  ],
+  "reviewStatus": "build-awaiting-validation",
+  "addedDoorWindowPanes": 0,
+  "fittedCockpitOpenings": 0,
+  "fittedCabinOpenings": 0,
+  "envelopeCalibration": {
+    "rawDimensions": {
+      "length": 38.17285346984863,
+      "span": 35.099998474121094
+    },
+    "axisScale": [
+      1.013809460971204,
+      1,
+      1.0000000434723355
+    ]
+  },
+  "skippedSourceModels": [
+    "Aircraft/CSeries/Models/Cockpit/flightdeck.xml"
+  ],
+  "unresolvedMotions": [],
+  "cargo": false,
+  "paintProjection": {
+    "method": "Original cylindrical fuselage and planar fin surface-coordinate transfer; target geometry and UVs retained",
+    "sourceBlend": "a321/air-canada.blend",
+    "maps": [
+      {
+        "surface": "body-and-fin",
+        "resolution": 4096,
+        "sourceAtlas": "cs300.png",
+        "map": "a223/generated/air-canada/body-color-0.png",
+        "sourceTriangles": {
+          "body": 5905,
+          "fin": 547
+        }
+      },
+      {
+        "surface": "body-and-fin",
+        "resolution": 4096,
+        "sourceAtlas": "delta.png",
+        "map": "a223/generated/air-canada/body-color-1.png",
+        "sourceTriangles": {
+          "body": 5905,
+          "fin": 547
+        }
+      }
+    ],
+    "operatorFinishParts": [
+      "nacelleR",
+      "nacelleL",
+      "eng.2.reverser",
+      "eng.1.reverser",
+      "nacelleR",
+      "nacelleL",
+      "fanR",
+      "fanL",
+      "spinnerR",
+      "spinnerL",
+      "vstab",
+      "engineR",
+      "engineL",
+      "hstab",
+      "nacelleR",
+      "nacelleL"
+    ],
+    "enginePaintStatus": "operator-specific finish applied; visual review required",
+    "reviewStatus": "requires-visual-review"
+  },
+  "surfaceDecals": [
+    "Fitted decal component:a220-common-flight-surfaces:0:Models/CS100.xml#70 -1",
+    "Fitted decal component:a220-common-flight-surfaces:0:Models/CS100.xml#70 1"
+  ]
+}

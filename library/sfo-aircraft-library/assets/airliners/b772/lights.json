@@ -1,0 +1,101 @@
+[
+  {
+    "name": "CTRLND-on",
+    "kind": "landing",
+    "color": "white",
+    "position": [
+      -19.223953433296465,
+      -2.968155026435852,
+      -5.000882354614881e-06
+    ],
+    "basis": "Source fixture mesh bounds"
+  },
+  {
+    "name": "greennav",
+    "kind": "nav",
+    "color": "green",
+    "position": [
+      15.020872210778975,
+      1.5564650297164917,
+      -30.393439754878013
+    ],
+    "basis": "Source fixture mesh bounds"
+  },
+  {
+    "name": "Lnavlights",
+    "kind": "nav",
+    "color": "red",
+    "position": [
+      15.105711845014707,
+      1.5548799633979797,
+      30.303001893279117
+    ],
+    "basis": "Source fixture mesh bounds"
+  },
+  {
+    "name": "redflash",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "basis": "Source fixture mesh bounds"
+  },
+  {
+    "name": "taxi-on",
+    "kind": "taxi",
+    "color": "white",
+    "position": [
+      -19.206940716289814,
+      -3.213384985923767,
+      0.0
+    ],
+    "basis": "Source fixture mesh bounds"
+  },
+  {
+    "name": "Upper beacon",
+    "kind": "beacon",
+    "color": "red",
+    "position": [
+      -11.4051,
+      3.15021,
+      0
+    ],
+    "basis": "Source XML fixture coordinates; duplicate axis definitions require manual placement review."
+  },
+  {
+    "name": "Lower beacon",
+    "kind": "beacon",
+    "color": "red",
+    "position": [
+      -0.11504,
+      -3.49722,
+      0
+    ],
+    "basis": "Source XML fixture coordinates; manual placement review."
+  },
+  {
+    "name": "Left wing strobe",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      15.3608,
+      1.6419,
+      31.0564
+    ],
+    "basis": "Co-located with the source wingtip navigation fixture; representative exterior placement."
+  },
+  {
+    "name": "Right wing strobe",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      15.2126,
+      1.6438,
+      -31.1304
+    ],
+    "basis": "Co-located with the source wingtip navigation fixture; representative exterior placement."
+  }
+]

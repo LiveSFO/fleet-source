@@ -1,0 +1,68 @@
+[
+  {
+    "name": "nav.l",
+    "kind": "nav",
+    "color": "red",
+    "position": [
+      55.90074920128626,
+      7.477099895477295,
+      39.568279788750644
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "nav.r",
+    "kind": "nav",
+    "color": "green",
+    "position": [
+      55.90074920128626,
+      7.477099895477295,
+      -39.568279788750644
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "strobe.l",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      55.90074920128626,
+      7.477099895477295,
+      39.568279788750644
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "strobe.r",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      55.90074920128626,
+      7.477099895477295,
+      -39.568279788750644
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "beacon.1",
+    "kind": "beacon",
+    "color": "red",
+    "position": [
+      43.31152626012062,
+      10.749899864196777,
+      0.0
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "beacon.2",
+    "kind": "beacon",
+    "color": "red",
+    "position": [
+      31.074315472914595,
+      1.6153000593185425,
+      0.0
+    ],
+    "basis": "Source XML light-model instance offset"
+  }
+]

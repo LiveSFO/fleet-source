@@ -1,0 +1,1605 @@
+{
+  "aircraft": "crj900",
+  "label": "Bombardier CRJ900",
+  "livery": {
+    "id": "air-canada-express",
+    "name": "Air Canada Express \u00b7 C-GCJZ",
+    "xml": "Models/Liveries/CRJ900/JZA.xml",
+    "authoredPaint": {
+      "bodyColorSRGB": [
+        247,
+        248,
+        248
+      ],
+      "finColorSRGB": [
+        19,
+        21,
+        24
+      ],
+      "bodyPartPattern": "^Fuselage$|^Door|^RudderWires$",
+      "finPartPattern": "^v.?stab$|^rudder$",
+      "bodyBands": [
+        {
+          "range": [
+            -3,
+            -0.6
+          ],
+          "colorSRGB": [
+            24,
+            27,
+            30
+          ]
+        }
+      ],
+      "bodyPolygons": [
+        {
+          "colorSRGB": [
+            25,
+            29,
+            32
+          ],
+          "points": [
+            [
+              0.025,
+              0.32
+            ],
+            [
+              0.12,
+              0.35
+            ],
+            [
+              0.11,
+              1.2
+            ],
+            [
+              0.025,
+              1.2
+            ]
+          ]
+        }
+      ],
+      "bodyGraphics": [
+        {
+          "image": "preparation/brand-art/air-canada-express-title.png",
+          "box": [
+            0.146,
+            0.43,
+            0.51,
+            0.87
+          ]
+        },
+        {
+          "image": "preparation/brand-art/c-gcjz.png",
+          "box": [
+            0.756,
+            0.32,
+            0.829,
+            0.6
+          ]
+        }
+      ],
+      "resolution": 4096,
+      "references": [
+        "https://www.aircanada.com/content/dam/aircanada/portal/documents/PDF/speeches-presentations/en/20200116-AltaCorp.pdf",
+        "https://www.flightradar24.com/data/aircraft/c-gcjz/",
+        "https://www.globenewswire.com/news-release/2019/02/06/1711314/0/en/Bombardier-Sells-Nine-CRJ900-Aircraft-to-Chorus-Aviation.html"
+      ],
+      "finGraphics": [
+        {
+          "image": "preparation/brand-art/air-canada-fin-roundel.png",
+          "box": [
+            0.438,
+            0.35,
+            0.756,
+            0.77
+          ]
+        }
+      ],
+      "bodyCenterZ": -1.04412
+    },
+    "operatorFinishes": [
+      {
+        "name": "Air Canada Express cowls",
+        "partPattern": "^Nacelle(Rear)?$|^Reverser(Rear)?$",
+        "colorSRGB": [
+          242,
+          243,
+          242
+        ]
+      },
+      {
+        "name": "Air Canada Express winglets",
+        "partPattern": "^Winglets$",
+        "colorSRGB": [
+          19,
+          23,
+          27
+        ]
+      }
+    ]
+  },
+  "referenceDimensions": {
+    "length": 36.4,
+    "span": 24.85
+  },
+  "axes": "X aft; Y up; Z port",
+  "bounds": {
+    "min": [
+      -18.214369819591116,
+      -3.810305118560791,
+      -12.425
+    ],
+    "max": [
+      18.185630180408886,
+      3.271198034286499,
+      12.425
+    ]
+  },
+  "motions": [
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FlapL1"
+      ],
+      "axis": [
+        -0.058805160224437714,
+        -0.034550298005342484,
+        -0.9976714253425598
+      ],
+      "center": [
+        2.0193919406459457,
+        -2.0880000591278076,
+        4.8910631176661346
+      ],
+      "factor": 45.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FlapL1"
+      ],
+      "model": "Models/CRJ900.xml",
+      "scope": "0:Models/CRJ900.xml",
+      "targetPartIds": [
+        "0:Models/CRJ900.xml#29.3"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FlapL2"
+      ],
+      "axis": [
+        -0.31473174691200256,
+        -0.03652660921216011,
+        -0.948477566242218
+      ],
+      "center": [
+        3.2378352009219853,
+        -1.9529999494552612,
+        8.45283030641944
+      ],
+      "factor": 45.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FlapL2"
+      ],
+      "model": "Models/CRJ900.xml",
+      "scope": "0:Models/CRJ900.xml",
+      "targetPartIds": [
+        "0:Models/CRJ900.xml#29.4"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FlapR1"
+      ],
+      "axis": [
+        0.058805160224437714,
+        0.034550298005342484,
+        -0.9976714253425598
+      ],
+      "center": [
+        1.8151500187970735,
+        -2.2079999446868896,
+        -1.425953826383989
+      ],
+      "factor": 45.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FlapR1"
+      ],
+      "model": "Models/CRJ900.xml",
+      "scope": "0:Models/CRJ900.xml",
+      "targetPartIds": [
+        "0:Models/CRJ900.xml#29.5"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FlapR2"
+      ],
+      "axis": [
+        0.31473174691200256,
+        0.03652660921216011,
+        -0.948477566242218
+      ],
+      "center": [
+        2.1435390660682243,
+        -2.0799999237060547,
+        -5.155051852345262
+      ],
+      "factor": 45.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FlapR2"
+      ],
+      "model": "Models/CRJ900.xml",
+      "scope": "0:Models/CRJ900.xml",
+      "targetPartIds": [
+        "0:Models/CRJ900.xml#29.6"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/left-speedbrake-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerL4"
+      ],
+      "axis": [
+        0.34479978680610657,
+        0.02860393188893795,
+        0.9382402896881104
+      ],
+      "center": [
+        2.2807016197799563,
+        -1.9490000009536743,
+        6.306623704339523
+      ],
+      "factor": 40.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerL4"
+      ],
+      "model": "Models/CRJ900.xml",
+      "scope": "0:Models/CRJ900.xml",
+      "targetPartIds": [
+        "0:Models/CRJ900.xml#29.14"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/left-speedbrake-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerL3"
+      ],
+      "axis": [
+        0.34543439745903015,
+        0.027419226244091988,
+        0.9380422830581665
+      ],
+      "center": [
+        1.9703339255749215,
+        -1.9739999771118164,
+        5.464770544397773
+      ],
+      "factor": 40.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerL3"
+      ],
+      "model": "Models/CRJ900.xml",
+      "scope": "0:Models/CRJ900.xml",
+      "targetPartIds": [
+        "0:Models/CRJ900.xml#29.13"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/spoiler-ground-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerL2"
+      ],
+      "axis": [
+        0.05392947047948837,
+        0.024861043319106102,
+        0.998235285282135
+      ],
+      "center": [
+        1.6409437649588348,
+        -2.0169999599456787,
+        3.5253902302802542
+      ],
+      "factor": 40.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerL2"
+      ],
+      "model": "Models/CRJ900.xml",
+      "scope": "0:Models/CRJ900.xml",
+      "targetPartIds": [
+        "0:Models/CRJ900.xml#29.12"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/spoiler-ground-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerL1"
+      ],
+      "axis": [
+        0.061286043375730515,
+        0.04053322970867157,
+        0.997296929359436
+      ],
+      "center": [
+        1.5448298421559965,
+        -2.0739998817443848,
+        1.9664027869239555
+      ],
+      "factor": 40.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerL1"
+      ],
+      "model": "Models/CRJ900.xml",
+      "scope": "0:Models/CRJ900.xml",
+      "targetPartIds": [
+        "0:Models/CRJ900.xml#29.11"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/right-speedbrake-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerR4"
+      ],
+      "axis": [
+        -0.34479978680610657,
+        -0.02860393188893795,
+        0.9382402896881104
+      ],
+      "center": [
+        2.5820584584259416,
+        -1.9240000247955322,
+        -7.126651135227327
+      ],
+      "factor": 40.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerR4"
+      ],
+      "model": "Models/CRJ900.xml",
+      "scope": "0:Models/CRJ900.xml",
+      "targetPartIds": [
+        "0:Models/CRJ900.xml#29.18"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/right-speedbrake-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerR3"
+      ],
+      "axis": [
+        -0.34543439745903015,
+        -0.027419226244091988,
+        0.9380422830581665
+      ],
+      "center": [
+        2.2726919969165036,
+        -1.9500000476837158,
+        -6.285837224918323
+      ],
+      "factor": 40.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerR3"
+      ],
+      "model": "Models/CRJ900.xml",
+      "scope": "0:Models/CRJ900.xml",
+      "targetPartIds": [
+        "0:Models/CRJ900.xml#29.17"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/spoiler-ground-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerR2"
+      ],
+      "axis": [
+        -0.05392947047948837,
+        -0.024861043319106102,
+        0.998235285282135
+      ],
+      "center": [
+        1.7060207870554425,
+        -1.9869999885559082,
+        -4.729968026049023
+      ],
+      "factor": 40.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerR2"
+      ],
+      "model": "Models/CRJ900.xml",
+      "scope": "0:Models/CRJ900.xml",
+      "targetPartIds": [
+        "0:Models/CRJ900.xml#29.16"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/spoiler-ground-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerR1"
+      ],
+      "axis": [
+        -0.061286043375730515,
+        -0.04053322970867157,
+        0.997296929359436
+      ],
+      "center": [
+        1.6189176004609926,
+        -2.0250000953674316,
+        -3.17201983232547
+      ],
+      "factor": 40.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerR1"
+      ],
+      "model": "Models/CRJ900.xml",
+      "scope": "0:Models/CRJ900.xml",
+      "targetPartIds": [
+        "0:Models/CRJ900.xml#29.15"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearNDoorL",
+        "GearNDoorLInt"
+      ],
+      "axis": [
+        -0.944617509841919,
+        0.3281734585762024,
+        0.0
+      ],
+      "center": [
+        -16.881996327881815,
+        -2.177000045776367,
+        0.3585671107329768
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          85.0
+        ],
+        [
+          1.0,
+          85.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearNDoorL",
+        "GearNDoorLInt"
+      ],
+      "model": "Models/CRJ900.xml",
+      "scope": "0:Models/CRJ900.xml",
+      "targetPartIds": [
+        "0:Models/CRJ900.xml#5.6",
+        "0:Models/CRJ900.xml#9"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearNDoorR",
+        "GearNDoorRInt"
+      ],
+      "axis": [
+        0.944617509841919,
+        -0.3281734585762024,
+        0.0
+      ],
+      "center": [
+        -17.664923297133623,
+        -1.9049999713897705,
+        -0.3585671107329768
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          85.0
+        ],
+        [
+          1.0,
+          85.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearNDoorR",
+        "GearNDoorRInt"
+      ],
+      "model": "Models/CRJ900.xml",
+      "scope": "0:Models/CRJ900.xml",
+      "targetPartIds": [
+        "0:Models/CRJ900.xml#10",
+        "0:Models/CRJ900.xml#5.7"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearNDoorC",
+        "GearNDoorCInt"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        -16.11709035364414,
+        -2.3440001010894775,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          0.0
+        ],
+        [
+          0.9,
+          -120.0
+        ],
+        [
+          1.0,
+          -120.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearNDoorC",
+        "GearNDoorCInt"
+      ],
+      "model": "Models/CRJ900.xml",
+      "scope": "0:Models/CRJ900.xml",
+      "targetPartIds": [
+        "0:Models/CRJ900.xml#5.5",
+        "0:Models/CRJ900.xml#8"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearLDoor1",
+        "GearLDoor1Int",
+        "GearLDoor2",
+        "GearLDoor2Int"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -2.2660000324249268,
+        2.2698857333856113
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          0.0
+        ],
+        [
+          0.8,
+          -90.0
+        ],
+        [
+          1.0,
+          -90.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearLDoor1",
+        "GearLDoor1Int",
+        "GearLDoor2",
+        "GearLDoor2Int"
+      ],
+      "model": "Models/CRJ900.xml",
+      "scope": "0:Models/CRJ900.xml",
+      "targetPartIds": [
+        "0:Models/CRJ900.xml#29.7",
+        "0:Models/CRJ900.xml#5.1.1",
+        "0:Models/CRJ900.xml#6",
+        "0:Models/CRJ900.xml#7"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearLDoor2",
+        "GearLDoor2Int"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -2.2790000438690186,
+        1.9352230677921551
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.4,
+          -80.0
+        ],
+        [
+          1.0,
+          -80.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearLDoor2",
+        "GearLDoor2Int"
+      ],
+      "model": "Models/CRJ900.xml",
+      "scope": "0:Models/CRJ900.xml",
+      "targetPartIds": [
+        "0:Models/CRJ900.xml#5.1.1",
+        "0:Models/CRJ900.xml#7"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearRDoor1",
+        "GearRDoor1Int",
+        "GearRDoor2",
+        "GearRDoor2Int"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -2.2660000324249268,
+        -2.2698857333856113
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          0.0
+        ],
+        [
+          0.8,
+          90.0
+        ],
+        [
+          1.0,
+          90.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearRDoor1",
+        "GearRDoor1Int",
+        "GearRDoor2",
+        "GearRDoor2Int"
+      ],
+      "model": "Models/CRJ900.xml",
+      "scope": "0:Models/CRJ900.xml",
+      "targetPartIds": [
+        "0:Models/CRJ900.xml#11",
+        "0:Models/CRJ900.xml#12",
+        "0:Models/CRJ900.xml#29.8",
+        "0:Models/CRJ900.xml#5.1.2"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearRDoor2",
+        "GearRDoor2Int"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -2.2790000438690186,
+        -1.9352230677921551
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.4,
+          80.0
+        ],
+        [
+          1.0,
+          80.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearRDoor2",
+        "GearRDoor2Int"
+      ],
+      "model": "Models/CRJ900.xml",
+      "scope": "0:Models/CRJ900.xml",
+      "targetPartIds": [
+        "0:Models/CRJ900.xml#12",
+        "0:Models/CRJ900.xml#5.1.2"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Nose gear lower strut",
+        "Nose gear upper strut"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        -16.246244955401675,
+        -2.2319998741149902,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          118.0
+        ],
+        [
+          0.1,
+          118.0
+        ],
+        [
+          0.9,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Nose gear lower strut",
+        "Nose gear upper strut"
+      ],
+      "model": "Models/CRJ700-nosegear.xml",
+      "scope": "0:Models/CRJ900.xml/0:Nose gear",
+      "targetPartIds": [
+        "0:Models/CRJ900.xml/0:Nose gear#0.0",
+        "0:Models/CRJ900.xml/0:Nose gear#0.10",
+        "0:Models/CRJ900.xml/0:Nose gear#0.2",
+        "0:Models/CRJ900.xml/0:Nose gear#0.3",
+        "0:Models/CRJ900.xml/0:Nose gear#0.4",
+        "0:Models/CRJ900.xml/0:Nose gear#0.5",
+        "0:Models/CRJ900.xml/0:Nose gear#0.6",
+        "0:Models/CRJ900.xml/0:Nose gear#0.8",
+        "0:Models/CRJ900.xml/0:Nose gear#0.9"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "LGUpperRetract"
+      ],
+      "axis": [
+        -0.9634488821029663,
+        0.0,
+        0.2678923010826111
+      ],
+      "center": [
+        1.2619347605154227,
+        -2.5414199829101562,
+        1.867282432794375
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          180.0
+        ],
+        [
+          0.2,
+          180.0
+        ],
+        [
+          0.9,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "LGUpperRetract"
+      ],
+      "model": "Models/CRJ700-maingear.xml",
+      "scope": "0:Models/CRJ900.xml/1:Main gears",
+      "targetPartIds": [
+        "0:Models/CRJ900.xml/1:Main gears#9"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "LGLowerRetract",
+        "Left main gear upper retraction scissor"
+      ],
+      "axis": [
+        0.9634758830070496,
+        0.0,
+        -0.2677951157093048
+      ],
+      "center": [
+        1.2910091783019135,
+        -2.6193599700927734,
+        2.089604418457999
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          71.0
+        ],
+        [
+          0.2,
+          71.0
+        ],
+        [
+          0.9,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "LGLowerRetract",
+        "Left main gear upper retraction scissor"
+      ],
+      "model": "Models/CRJ700-maingear.xml",
+      "scope": "0:Models/CRJ900.xml/1:Main gears",
+      "targetPartIds": [
+        "0:Models/CRJ900.xml/1:Main gears#3",
+        "0:Models/CRJ900.xml/1:Main gears#9"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Left main gear lower strut",
+        "Left main gear upper strut"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        1.3576080406776432,
+        -2.0199999809265137,
+        1.9331444446294732
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          90.0
+        ],
+        [
+          0.1,
+          90.0
+        ],
+        [
+          0.9,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Left main gear lower strut",
+        "Left main gear upper strut"
+      ],
+      "model": "Models/CRJ700-maingear.xml",
+      "scope": "0:Models/CRJ900.xml/1:Main gears",
+      "targetPartIds": [
+        "0:Models/CRJ900.xml/1:Main gears#0",
+        "0:Models/CRJ900.xml/1:Main gears#1",
+        "0:Models/CRJ900.xml/1:Main gears#10",
+        "0:Models/CRJ900.xml/1:Main gears#2",
+        "0:Models/CRJ900.xml/1:Main gears#3",
+        "0:Models/CRJ900.xml/1:Main gears#4",
+        "0:Models/CRJ900.xml/1:Main gears#5",
+        "0:Models/CRJ900.xml/1:Main gears#6",
+        "0:Models/CRJ900.xml/1:Main gears#7",
+        "0:Models/CRJ900.xml/1:Main gears#8",
+        "0:Models/CRJ900.xml/1:Main gears#9"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "RGUpperRetract"
+      ],
+      "axis": [
+        0.9634488821029663,
+        0.0,
+        0.2678923010826111
+      ],
+      "center": [
+        1.2270233792993388,
+        -2.5414199829101562,
+        -1.8769896537619475
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          180.0
+        ],
+        [
+          0.2,
+          180.0
+        ],
+        [
+          0.9,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "RGUpperRetract"
+      ],
+      "model": "Models/CRJ700-maingear.xml",
+      "scope": "0:Models/CRJ900.xml/1:Main gears",
+      "targetPartIds": [
+        "0:Models/CRJ900.xml/1:Main gears#20"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "RGLowerRetract",
+        "Right main gear upper retraction scissor"
+      ],
+      "axis": [
+        -0.9634758830070496,
+        0.0,
+        -0.2677951157093048
+      ],
+      "center": [
+        1.308920370707875,
+        -2.6193599700927734,
+        -2.0846259815549244
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          71.0
+        ],
+        [
+          0.2,
+          71.0
+        ],
+        [
+          0.9,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "RGLowerRetract",
+        "Right main gear upper retraction scissor"
+      ],
+      "model": "Models/CRJ700-maingear.xml",
+      "scope": "0:Models/CRJ900.xml/1:Main gears",
+      "targetPartIds": [
+        "0:Models/CRJ900.xml/1:Main gears#14",
+        "0:Models/CRJ900.xml/1:Main gears#20"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Right main gear lower strut",
+        "Right main gear upper strut"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        1.3576080406776432,
+        -2.0199999809265137,
+        -1.9331444446294732
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -90.0
+        ],
+        [
+          0.1,
+          -90.0
+        ],
+        [
+          0.9,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Right main gear lower strut",
+        "Right main gear upper strut"
+      ],
+      "model": "Models/CRJ700-maingear.xml",
+      "scope": "0:Models/CRJ900.xml/1:Main gears",
+      "targetPartIds": [
+        "0:Models/CRJ900.xml/1:Main gears#11",
+        "0:Models/CRJ900.xml/1:Main gears#12",
+        "0:Models/CRJ900.xml/1:Main gears#13",
+        "0:Models/CRJ900.xml/1:Main gears#14",
+        "0:Models/CRJ900.xml/1:Main gears#15",
+        "0:Models/CRJ900.xml/1:Main gears#16",
+        "0:Models/CRJ900.xml/1:Main gears#17",
+        "0:Models/CRJ900.xml/1:Main gears#18",
+        "0:Models/CRJ900.xml/1:Main gears#19",
+        "0:Models/CRJ900.xml/1:Main gears#20",
+        "0:Models/CRJ900.xml/1:Main gears#21"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[0]/rpm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Cone",
+        "Blades"
+      ],
+      "axis": [
+        -0.9998359084129333,
+        0.0,
+        0.018116921186447144
+      ],
+      "center": [
+        8.746360172070602,
+        -0.3100000023841858,
+        2.3592676444556484
+      ],
+      "factor": 67.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Cone",
+        "Blades"
+      ],
+      "model": "Models/CRJ700-engine.xml",
+      "scope": "0:Models/CRJ900.xml/2:Engine 1",
+      "targetPartIds": [
+        "0:Models/CRJ900.xml/2:Engine 1#0",
+        "0:Models/CRJ900.xml/2:Engine 1#1"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "engines/engine[0]/reverser-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Reverser",
+        "ReverserRear"
+      ],
+      "axis": [
+        0.9998359084129333,
+        0.0,
+        -0.018116921186447144
+      ],
+      "center": [
+        8.746360172070602,
+        -0.3100000023841858,
+        2.3592676444556484
+      ],
+      "factor": 0.2,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Reverser",
+        "ReverserRear"
+      ],
+      "model": "Models/CRJ700-engine.xml",
+      "scope": "0:Models/CRJ900.xml/2:Engine 1",
+      "targetPartIds": [
+        "0:Models/CRJ900.xml/2:Engine 1#10",
+        "0:Models/CRJ900.xml/2:Engine 1#11"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[1]/rpm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Cone",
+        "Blades"
+      ],
+      "axis": [
+        -0.9998359084129333,
+        0.0,
+        -0.018116921186447144
+      ],
+      "center": [
+        8.746360172070602,
+        -0.3100000023841858,
+        -2.3592676444556484
+      ],
+      "factor": 67.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Cone",
+        "Blades"
+      ],
+      "model": "Models/CRJ700-engine.xml",
+      "scope": "0:Models/CRJ900.xml/3:Engine 2",
+      "targetPartIds": [
+        "0:Models/CRJ900.xml/3:Engine 2#0",
+        "0:Models/CRJ900.xml/3:Engine 2#1"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "engines/engine[1]/reverser-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Reverser",
+        "ReverserRear"
+      ],
+      "axis": [
+        0.9998359084129333,
+        0.0,
+        0.018116921186447144
+      ],
+      "center": [
+        8.746360172070602,
+        -0.3100000023841858,
+        -2.3592676444556484
+      ],
+      "factor": 0.2,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Reverser",
+        "ReverserRear"
+      ],
+      "model": "Models/CRJ700-engine.xml",
+      "scope": "0:Models/CRJ900.xml/3:Engine 2",
+      "targetPartIds": [
+        "0:Models/CRJ900.xml/3:Engine 2#10",
+        "0:Models/CRJ900.xml/3:Engine 2#11"
+      ]
+    }
+  ],
+  "gearInternalParts": [
+    "NGAxle",
+    "NGLowerRetract",
+    "NGLowerScissor",
+    "NGLowerStrut",
+    "NGScissorAnchor",
+    "NGTires",
+    "NGUpperRetract",
+    "NGUpperScissor",
+    "NGUpperStrut",
+    "LGAxle",
+    "LGLowerFrontScissor",
+    "LGLowerRearScissor",
+    "LGLowerRetract",
+    "LGLowerStrut",
+    "LGTires",
+    "LGTubing",
+    "LGUpperFrontScissor",
+    "LGUpperRearScissor",
+    "LGUpperRetract",
+    "LGUpperStrut",
+    "RGAxle",
+    "RGLowerFrontScissor",
+    "RGLowerRearScissor",
+    "RGLowerRetract",
+    "RGLowerStrut",
+    "RGTires",
+    "RGTubing",
+    "RGUpperFrontScissor",
+    "RGUpperRearScissor",
+    "RGUpperRetract",
+    "RGUpperStrut"
+  ],
+  "gearInternalPartIds": [
+    "0:Models/CRJ900.xml/0:Nose gear#0.0",
+    "0:Models/CRJ900.xml/0:Nose gear#0.2",
+    "0:Models/CRJ900.xml/0:Nose gear#0.3",
+    "0:Models/CRJ900.xml/0:Nose gear#0.4",
+    "0:Models/CRJ900.xml/0:Nose gear#0.5",
+    "0:Models/CRJ900.xml/0:Nose gear#0.6",
+    "0:Models/CRJ900.xml/0:Nose gear#0.8",
+    "0:Models/CRJ900.xml/0:Nose gear#0.9",
+    "0:Models/CRJ900.xml/0:Nose gear#0.10",
+    "0:Models/CRJ900.xml/1:Main gears#0",
+    "0:Models/CRJ900.xml/1:Main gears#1",
+    "0:Models/CRJ900.xml/1:Main gears#2",
+    "0:Models/CRJ900.xml/1:Main gears#3",
+    "0:Models/CRJ900.xml/1:Main gears#4",
+    "0:Models/CRJ900.xml/1:Main gears#5",
+    "0:Models/CRJ900.xml/1:Main gears#6",
+    "0:Models/CRJ900.xml/1:Main gears#7",
+    "0:Models/CRJ900.xml/1:Main gears#8",
+    "0:Models/CRJ900.xml/1:Main gears#9",
+    "0:Models/CRJ900.xml/1:Main gears#10",
+    "0:Models/CRJ900.xml/1:Main gears#11",
+    "0:Models/CRJ900.xml/1:Main gears#12",
+    "0:Models/CRJ900.xml/1:Main gears#13",
+    "0:Models/CRJ900.xml/1:Main gears#14",
+    "0:Models/CRJ900.xml/1:Main gears#15",
+    "0:Models/CRJ900.xml/1:Main gears#16",
+    "0:Models/CRJ900.xml/1:Main gears#17",
+    "0:Models/CRJ900.xml/1:Main gears#18",
+    "0:Models/CRJ900.xml/1:Main gears#19",
+    "0:Models/CRJ900.xml/1:Main gears#20",
+    "0:Models/CRJ900.xml/1:Main gears#21"
+  ],
+  "missingTextures": [],
+  "sourceAC": [
+    "Models/CRJ900.ac",
+    "Models/CRJ700-nosegear.ac",
+    "Models/CRJ700-maingear.ac",
+    "Models/CRJ700-engine.ac",
+    "Models/CRJ700-engine.ac"
+  ],
+  "discardedUnreferencedVertices": 8,
+  "provenance": "preparation/CRJ700-family",
+  "variantConstruction": {},
+  "capabilities": [
+    "fans",
+    "flaps",
+    "gear",
+    "reversers",
+    "spoilers"
+  ],
+  "reviewPoints": {
+    "cockpit": [
+      -15.50152587890625,
+      -0.47908663749694824,
+      -2.6266453900802844e-08
+    ],
+    "engine": [
+      9.361532211303711,
+      -0.3114260137081146,
+      2.3562021255493164
+    ],
+    "gear": [
+      -16.191179275512695,
+      -3.2009999752044678,
+      -0.0
+    ],
+    "wing": [
+      2.1934361457824707,
+      -2.317098617553711,
+      3.1583807468414307
+    ]
+  },
+  "fidelityNotes": [],
+  "reviewStatus": "build-awaiting-validation",
+  "addedDoorWindowPanes": 0,
+  "fittedCockpitOpenings": 1,
+  "fittedCabinOpenings": 0,
+  "envelopeCalibration": {
+    "rawDimensions": {
+      "length": 36.35688400268555,
+      "span": 23.90974998474121
+    },
+    "axisScale": [
+      1.0011859101377134,
+      1,
+      1.0393249622375325
+    ]
+  },
+  "skippedSourceModels": [
+    "Aircraft/Generic/Effects/tyre-smoke-nose.xml",
+    "Aircraft/Generic/Effects/rain-nose.xml",
+    "Aircraft/Generic/Effects/tyre-smoke-port.xml",
+    "Aircraft/Generic/Effects/rain-port.xml",
+    "Aircraft/Generic/Effects/tyre-smoke-stbd.xml",
+    "Aircraft/Generic/Effects/rain-stbd.xml",
+    "Aircraft/CRJ700-family/Models/Effects/enginefire.xml",
+    "Aircraft/CRJ700-family/Models/Effects/contrail.xml",
+    "Aircraft/CRJ700-family/Models/Effects/enginefire.xml",
+    "Aircraft/CRJ700-family/Models/Effects/contrail.xml",
+    "Aircraft/CRJ700-family/Models/Flightdeck/CRJ700-flightdeck.xml",
+    "Aircraft/CRJ700-family/Models/Interior/CRJ900-interior.xml",
+    "Models/Airport/Pushback/Goldhofert.xml",
+    "Aircraft/CRJ700-family/Models/Effects/enginefire.xml",
+    "Models/Aircraft/marker.xml [missing exterior submodel]"
+  ],
+  "unresolvedMotions": [],
+  "cargo": false,
+  "paintProjection": {
+    "operatorFinishParts": [
+      "Nacelle",
+      "NacelleRear",
+      "Reverser",
+      "ReverserRear",
+      "Nacelle",
+      "NacelleRear",
+      "Reverser",
+      "ReverserRear",
+      "Winglets"
+    ],
+    "reviewStatus": "requires-visual-review"
+  },
+  "authoredPaint": {
+    "method": "Original airline paint layout projected in physical exterior coordinates; independent destination texture atlases retained.",
+    "maps": [
+      "crj900/generated/air-canada-express/authored-color-0.png"
+    ],
+    "references": [
+      "https://www.aircanada.com/content/dam/aircanada/portal/documents/PDF/speeches-presentations/en/20200116-AltaCorp.pdf",
+      "https://www.flightradar24.com/data/aircraft/c-gcjz/",
+      "https://www.globenewswire.com/news-release/2019/02/06/1711314/0/en/Bombardier-Sells-Nine-CRJ900-Aircraft-to-Chorus-Aviation.html"
+    ],
+    "artworkMetadata": [],
+    "reviewStatus": "requires-visual-review"
+  }
+}

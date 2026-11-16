@@ -1,0 +1,189 @@
+[
+  {
+    "name": "Left nav light",
+    "kind": "nav",
+    "color": "red",
+    "position": [
+      12.86460875097933,
+      0.9160000085830688,
+      29.00706751596185
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Right nav light",
+    "kind": "nav",
+    "color": "green",
+    "position": [
+      12.86460875097933,
+      0.9160000085830688,
+      -29.00706751596185
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Left strobe light",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      12.86460875097933,
+      0.9160000085830688,
+      29.00706751596185
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Right strobe light",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      12.86460875097933,
+      0.9160000085830688,
+      -29.00706751596185
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Top beacon light",
+    "kind": "beacon",
+    "color": "red",
+    "position": [
+      7.39785573853816,
+      3.1600000858306885,
+      0.0
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Bottom beacon light",
+    "kind": "beacon",
+    "color": "red",
+    "position": [
+      -5.120041662957206,
+      -2.9800000190734863,
+      0.0
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Port landing light ALS",
+    "kind": "landing",
+    "color": "white",
+    "position": [
+      -1.904897404543007,
+      -1.2000000476837158,
+      3.5527896512014667
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Nosegear landing light ALS",
+    "kind": "taxi",
+    "color": "white",
+    "position": [
+      -16.52926822449614,
+      -3.0,
+      0.20129120299926886
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Second Nosegear landing light ALS",
+    "kind": "taxi",
+    "color": "white",
+    "position": [
+      -16.52926822449614,
+      -3.0,
+      -0.20129120299926886
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "left turnoff light ALS",
+    "kind": "turnoff",
+    "color": "white",
+    "position": [
+      -16.52926822449614,
+      -3.0,
+      0.35225959400069823
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "right turnoff light ALS",
+    "kind": "turnoff",
+    "color": "white",
+    "position": [
+      -16.52926822449614,
+      -3.0,
+      -0.35225959400069823
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Starboard landing light ALS",
+    "kind": "landing",
+    "color": "white",
+    "position": [
+      -1.904897404543007,
+      -1.2000000476837158,
+      -3.5527896512014667
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Tail nav light",
+    "kind": "nav",
+    "color": "white",
+    "position": [
+      34.50660204950453,
+      2.846679925918579,
+      -0.049887408552596144
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Tail strobe light",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      34.50660204950453,
+      2.846679925918579,
+      0.049887408552596144
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "wingLights",
+    "kind": "winglight",
+    "color": "white",
+    "position": [
+      -4.072112352260535,
+      0.9534468650817871,
+      2.87584731450362
+    ],
+    "basis": "Source fixture mesh bounds"
+  },
+  {
+    "name": "wingLights",
+    "kind": "winglight",
+    "color": "white",
+    "position": [
+      -4.072112352260535,
+      0.9534468650817871,
+      -2.8902296657285045
+    ],
+    "basis": "Source fixture mesh bounds"
+  },
+  {
+    "name": "taxi-light",
+    "kind": "taxi",
+    "color": "white",
+    "position": [
+      -16.476860224664517,
+      -3.315428137779236,
+      0.011154138824928437
+    ],
+    "basis": "Source fixture mesh bounds"
+  }
+]

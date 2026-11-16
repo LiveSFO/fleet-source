@@ -1,0 +1,101 @@
+[
+  {
+    "name": "Greenlight",
+    "kind": "nav",
+    "color": "green",
+    "position": [
+      7.00045632919075,
+      -0.8999999761581421,
+      -22.592998108009997
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Redlight",
+    "kind": "nav",
+    "color": "red",
+    "position": [
+      7.00045632919075,
+      -0.8999999761581421,
+      22.592998108009997
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "flashright",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      8.000521519075143,
+      -1.0,
+      -22.6912289092859
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "flashleft",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      8.000521519075143,
+      -1.0,
+      22.6912289092859
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "NoseGearLandinglight",
+    "kind": "taxi",
+    "color": "white",
+    "position": [
+      -22.401459871915804,
+      -4.800000190734863,
+      0.0
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "LeftWingLandinglight",
+    "kind": "landing",
+    "color": "white",
+    "position": [
+      -6.300410887018972,
+      -3.0,
+      2.9469127966969557
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "RightWingLandinglight",
+    "kind": "landing",
+    "color": "white",
+    "position": [
+      -6.300410887018972,
+      -3.0,
+      -2.9469127966969557
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Beaconlight.top",
+    "kind": "beacon",
+    "color": "red",
+    "position": [
+      -16.001043038150286,
+      0.9399999976158142,
+      0.0
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Beaconlight.bottom",
+    "kind": "beacon",
+    "color": "red",
+    "position": [
+      -2.500162974710982,
+      -4.550000190734863,
+      0.0
+    ],
+    "basis": "Source XML light-model instance offset"
+  }
+]

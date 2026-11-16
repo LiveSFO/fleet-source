@@ -1,0 +1,3587 @@
+{
+  "aircraft": "b788",
+  "label": "Boeing 787-8",
+  "livery": {
+    "id": "zipair",
+    "name": "ZIPAIR \u00b7 renovated striped tail",
+    "xml": "Models/Liveries-8/GEnx/BlankGEnx.xml",
+    "authoredPaint": {
+      "bodyColorSRGB": [
+        250,
+        251,
+        249
+      ],
+      "finColorSRGB": [
+        192,
+        196,
+        194
+      ],
+      "bodyPartPattern": "^fuselage$|^aftcargodoor$|^bulkcargodoor$|^fwdcargodoor$|^bodyfairing$",
+      "bodyBands": [
+        {
+          "range": [
+            0.65,
+            0.83
+          ],
+          "colorSRGB": [
+            55,
+            137,
+            109
+          ],
+          "xRange": [
+            0.1,
+            0.94
+          ]
+        }
+      ],
+      "bodyGraphics": [
+        {
+          "image": "preparation/brand-art/ZIPAIR logo.png",
+          "box": [
+            0.12,
+            -0.38,
+            0.26,
+            0.57
+          ]
+        }
+      ],
+      "finBands": [
+        {
+          "range": [
+            0.04,
+            0.053
+          ],
+          "colorSRGB": [
+            245,
+            246,
+            245
+          ]
+        },
+        {
+          "range": [
+            0.053,
+            0.064
+          ],
+          "colorSRGB": [
+            25,
+            29,
+            29
+          ],
+          "xRange": [
+            0.31520000000000004,
+            0.5652
+          ]
+        },
+        {
+          "range": [
+            0.053,
+            0.06
+          ],
+          "colorSRGB": [
+            40,
+            145,
+            113
+          ],
+          "xRange": [
+            0.5552,
+            0.7252
+          ]
+        },
+        {
+          "range": [
+            0.10400000000000001,
+            0.117
+          ],
+          "colorSRGB": [
+            245,
+            246,
+            245
+          ]
+        },
+        {
+          "range": [
+            0.117,
+            0.128
+          ],
+          "colorSRGB": [
+            25,
+            29,
+            29
+          ],
+          "xRange": [
+            0.30752,
+            0.55752
+          ]
+        },
+        {
+          "range": [
+            0.117,
+            0.12400000000000001
+          ],
+          "colorSRGB": [
+            40,
+            145,
+            113
+          ],
+          "xRange": [
+            0.54752,
+            0.7175199999999999
+          ]
+        },
+        {
+          "range": [
+            0.168,
+            0.18100000000000002
+          ],
+          "colorSRGB": [
+            245,
+            246,
+            245
+          ]
+        },
+        {
+          "range": [
+            0.18100000000000002,
+            0.192
+          ],
+          "colorSRGB": [
+            25,
+            29,
+            29
+          ],
+          "xRange": [
+            0.29984,
+            0.54984
+          ]
+        },
+        {
+          "range": [
+            0.18100000000000002,
+            0.188
+          ],
+          "colorSRGB": [
+            40,
+            145,
+            113
+          ],
+          "xRange": [
+            0.53984,
+            0.70984
+          ]
+        },
+        {
+          "range": [
+            0.232,
+            0.24500000000000002
+          ],
+          "colorSRGB": [
+            245,
+            246,
+            245
+          ]
+        },
+        {
+          "range": [
+            0.24500000000000002,
+            0.256
+          ],
+          "colorSRGB": [
+            25,
+            29,
+            29
+          ],
+          "xRange": [
+            0.29216,
+            0.54216
+          ]
+        },
+        {
+          "range": [
+            0.24500000000000002,
+            0.252
+          ],
+          "colorSRGB": [
+            40,
+            145,
+            113
+          ],
+          "xRange": [
+            0.53216,
+            0.70216
+          ]
+        },
+        {
+          "range": [
+            0.296,
+            0.309
+          ],
+          "colorSRGB": [
+            245,
+            246,
+            245
+          ]
+        },
+        {
+          "range": [
+            0.309,
+            0.32
+          ],
+          "colorSRGB": [
+            25,
+            29,
+            29
+          ],
+          "xRange": [
+            0.28448,
+            0.53448
+          ]
+        },
+        {
+          "range": [
+            0.309,
+            0.316
+          ],
+          "colorSRGB": [
+            40,
+            145,
+            113
+          ],
+          "xRange": [
+            0.52448,
+            0.69448
+          ]
+        },
+        {
+          "range": [
+            0.36,
+            0.373
+          ],
+          "colorSRGB": [
+            245,
+            246,
+            245
+          ]
+        },
+        {
+          "range": [
+            0.373,
+            0.384
+          ],
+          "colorSRGB": [
+            25,
+            29,
+            29
+          ],
+          "xRange": [
+            0.2768,
+            0.5268
+          ]
+        },
+        {
+          "range": [
+            0.373,
+            0.38
+          ],
+          "colorSRGB": [
+            40,
+            145,
+            113
+          ],
+          "xRange": [
+            0.5168,
+            0.6868
+          ]
+        },
+        {
+          "range": [
+            0.424,
+            0.437
+          ],
+          "colorSRGB": [
+            245,
+            246,
+            245
+          ]
+        },
+        {
+          "range": [
+            0.437,
+            0.448
+          ],
+          "colorSRGB": [
+            25,
+            29,
+            29
+          ],
+          "xRange": [
+            0.26912,
+            0.51912
+          ]
+        },
+        {
+          "range": [
+            0.437,
+            0.444
+          ],
+          "colorSRGB": [
+            40,
+            145,
+            113
+          ],
+          "xRange": [
+            0.50912,
+            0.67912
+          ]
+        },
+        {
+          "range": [
+            0.488,
+            0.501
+          ],
+          "colorSRGB": [
+            245,
+            246,
+            245
+          ]
+        },
+        {
+          "range": [
+            0.501,
+            0.512
+          ],
+          "colorSRGB": [
+            25,
+            29,
+            29
+          ],
+          "xRange": [
+            0.26144,
+            0.51144
+          ]
+        },
+        {
+          "range": [
+            0.501,
+            0.508
+          ],
+          "colorSRGB": [
+            40,
+            145,
+            113
+          ],
+          "xRange": [
+            0.50144,
+            0.67144
+          ]
+        },
+        {
+          "range": [
+            0.552,
+            0.5650000000000001
+          ],
+          "colorSRGB": [
+            245,
+            246,
+            245
+          ]
+        },
+        {
+          "range": [
+            0.5650000000000001,
+            0.5760000000000001
+          ],
+          "colorSRGB": [
+            25,
+            29,
+            29
+          ],
+          "xRange": [
+            0.25376,
+            0.50376
+          ]
+        },
+        {
+          "range": [
+            0.5650000000000001,
+            0.5720000000000001
+          ],
+          "colorSRGB": [
+            40,
+            145,
+            113
+          ],
+          "xRange": [
+            0.49376,
+            0.66376
+          ]
+        },
+        {
+          "range": [
+            0.6160000000000001,
+            0.6290000000000001
+          ],
+          "colorSRGB": [
+            245,
+            246,
+            245
+          ]
+        },
+        {
+          "range": [
+            0.6290000000000001,
+            0.6400000000000001
+          ],
+          "colorSRGB": [
+            25,
+            29,
+            29
+          ],
+          "xRange": [
+            0.24608,
+            0.49608
+          ]
+        },
+        {
+          "range": [
+            0.6290000000000001,
+            0.6360000000000001
+          ],
+          "colorSRGB": [
+            40,
+            145,
+            113
+          ],
+          "xRange": [
+            0.48608,
+            0.65608
+          ]
+        },
+        {
+          "range": [
+            0.68,
+            0.6930000000000001
+          ],
+          "colorSRGB": [
+            245,
+            246,
+            245
+          ]
+        },
+        {
+          "range": [
+            0.6930000000000001,
+            0.7040000000000001
+          ],
+          "colorSRGB": [
+            25,
+            29,
+            29
+          ],
+          "xRange": [
+            0.2384,
+            0.4884
+          ]
+        },
+        {
+          "range": [
+            0.6930000000000001,
+            0.7000000000000001
+          ],
+          "colorSRGB": [
+            40,
+            145,
+            113
+          ],
+          "xRange": [
+            0.4784,
+            0.6484
+          ]
+        },
+        {
+          "range": [
+            0.744,
+            0.757
+          ],
+          "colorSRGB": [
+            245,
+            246,
+            245
+          ]
+        },
+        {
+          "range": [
+            0.757,
+            0.768
+          ],
+          "colorSRGB": [
+            25,
+            29,
+            29
+          ],
+          "xRange": [
+            0.23072,
+            0.48072000000000004
+          ]
+        },
+        {
+          "range": [
+            0.757,
+            0.764
+          ],
+          "colorSRGB": [
+            40,
+            145,
+            113
+          ],
+          "xRange": [
+            0.47072,
+            0.64072
+          ]
+        },
+        {
+          "range": [
+            0.808,
+            0.8210000000000001
+          ],
+          "colorSRGB": [
+            245,
+            246,
+            245
+          ]
+        },
+        {
+          "range": [
+            0.8210000000000001,
+            0.8320000000000001
+          ],
+          "colorSRGB": [
+            25,
+            29,
+            29
+          ],
+          "xRange": [
+            0.22304000000000002,
+            0.47304
+          ]
+        },
+        {
+          "range": [
+            0.8210000000000001,
+            0.8280000000000001
+          ],
+          "colorSRGB": [
+            40,
+            145,
+            113
+          ],
+          "xRange": [
+            0.46304,
+            0.6330399999999999
+          ]
+        },
+        {
+          "range": [
+            0.8720000000000001,
+            0.8850000000000001
+          ],
+          "colorSRGB": [
+            245,
+            246,
+            245
+          ]
+        },
+        {
+          "range": [
+            0.8850000000000001,
+            0.8960000000000001
+          ],
+          "colorSRGB": [
+            25,
+            29,
+            29
+          ],
+          "xRange": [
+            0.21536,
+            0.46536
+          ]
+        },
+        {
+          "range": [
+            0.8850000000000001,
+            0.8920000000000001
+          ],
+          "colorSRGB": [
+            40,
+            145,
+            113
+          ],
+          "xRange": [
+            0.45536,
+            0.62536
+          ]
+        },
+        {
+          "range": [
+            0.936,
+            0.9490000000000001
+          ],
+          "colorSRGB": [
+            245,
+            246,
+            245
+          ]
+        },
+        {
+          "range": [
+            0.9490000000000001,
+            0.9600000000000001
+          ],
+          "colorSRGB": [
+            25,
+            29,
+            29
+          ],
+          "xRange": [
+            0.20768,
+            0.45768000000000003
+          ]
+        },
+        {
+          "range": [
+            0.9490000000000001,
+            0.9560000000000001
+          ],
+          "colorSRGB": [
+            40,
+            145,
+            113
+          ],
+          "xRange": [
+            0.44768,
+            0.61768
+          ]
+        }
+      ],
+      "references": [
+        "https://www.zipair.net/en/notification/112",
+        "reference/ZIPAIR-renovated-livery-2022.pdf"
+      ],
+      "artworkMetadata": [
+        "preparation/brand-art/ZIPAIR logo.json"
+      ]
+    },
+    "operatorFinishes": [
+      {
+        "name": "Unpainted fan blade alloy",
+        "partPattern": "^eng[12]fanb?$|^[lr]hfan(s)?$",
+        "flatColor": true,
+        "colorSRGB": [
+          73,
+          79,
+          83
+        ],
+        "metallic": 0.78,
+        "roughness": 0.32
+      },
+      {
+        "name": "Acoustic intake liner",
+        "partPattern": "^[lr]h(fancasing|inside)$",
+        "flatColor": true,
+        "colorSRGB": [
+          41,
+          45,
+          49
+        ],
+        "metallic": 0.24,
+        "roughness": 0.53
+      },
+      {
+        "name": "Fan spinner",
+        "partPattern": "^[lr]hcone$",
+        "flatColor": true,
+        "colorSRGB": [
+          67,
+          72,
+          77
+        ],
+        "metallic": 0.56,
+        "roughness": 0.3
+      }
+    ]
+  },
+  "referenceDimensions": {
+    "length": 56.72,
+    "span": 60.12
+  },
+  "axes": "X aft; Y up; Z port",
+  "bounds": {
+    "min": [
+      -25.62152488958729,
+      -4.1554999351501465,
+      -30.059999999999995
+    ],
+    "max": [
+      31.09847511041271,
+      13.259690284729004,
+      30.059999999999995
+    ]
+  },
+  "motions": [
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhobdoor"
+      ],
+      "axis": [
+        0.9958567023277283,
+        0.0909360721707344,
+        0.0
+      ],
+      "center": [
+        1.4933418608953497,
+        0.05000000074505806,
+        -5.755080733487685
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          0.0
+        ],
+        [
+          0.9,
+          80.0
+        ],
+        [
+          1.0,
+          80.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhobdoor"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.63"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhfdoor"
+      ],
+      "axis": [
+        0.9974862337112427,
+        0.07013534754514694,
+        0.0101161552593112
+      ],
+      "center": [
+        0.6968928565498151,
+        -0.41999998688697815,
+        -3.129956196834443
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          0.0
+        ],
+        [
+          0.7,
+          -15.0
+        ],
+        [
+          0.9,
+          -55.0
+        ],
+        [
+          1.0,
+          -55.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhfdoor"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.47"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhibdoor"
+      ],
+      "axis": [
+        0.9958567023277283,
+        0.0909360721707344,
+        0.0
+      ],
+      "center": [
+        1.622764817425741,
+        0.10000000149011612,
+        -5.149282837559243
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          0.0
+        ],
+        [
+          0.9,
+          80.0
+        ],
+        [
+          1.0,
+          80.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhibdoor"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.51"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhgearibdoor"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        1.9911224811937998,
+        -1.25,
+        -0.8077306683260448
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          -90.0
+        ],
+        [
+          0.9,
+          -90.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhgearibdoor"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.49"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Lgear"
+      ],
+      "axis": [
+        0.9958567023277283,
+        0.0909360721707344,
+        0.0
+      ],
+      "center": [
+        1.622764817425741,
+        0.30000001192092896,
+        4.947350366064758
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.1,
+          80.0
+        ],
+        [
+          0.9,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Lgear"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": []
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lhobdoor"
+      ],
+      "axis": [
+        0.9958567023277283,
+        0.0909360721707344,
+        0.0
+      ],
+      "center": [
+        1.4933418608953497,
+        0.05000000074505806,
+        5.755080733487685
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          0.0
+        ],
+        [
+          0.9,
+          -80.0
+        ],
+        [
+          1.0,
+          -80.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lhobdoor"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.29"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lhfdoor"
+      ],
+      "axis": [
+        0.9974862337112427,
+        0.07013534754514694,
+        -0.0101161552593112
+      ],
+      "center": [
+        0.6968928565498151,
+        -0.41999998688697815,
+        3.129956196834443
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          0.0
+        ],
+        [
+          0.7,
+          15.0
+        ],
+        [
+          0.9,
+          55.0
+        ],
+        [
+          1.0,
+          55.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lhfdoor"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.13"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lhibdoor"
+      ],
+      "axis": [
+        0.9958567023277283,
+        0.0909360721707344,
+        0.0
+      ],
+      "center": [
+        1.622764817425741,
+        0.10000000149011612,
+        5.149282837559243
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          0.0
+        ],
+        [
+          0.9,
+          -80.0
+        ],
+        [
+          1.0,
+          -80.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lhibdoor"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.17"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lhgearibdoor"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        1.9911224811937998,
+        -1.25,
+        0.8077306683260448
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          90.0
+        ],
+        [
+          0.9,
+          90.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lhgearibdoor"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.15"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lhibaileron"
+      ],
+      "axis": [
+        -0.29792317748069763,
+        -0.1662508249282837,
+        -0.9400012493133545
+      ],
+      "center": [
+        3.7831326667961602,
+        1.0750000476837158,
+        11.323374291926713
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.0
+        ],
+        [
+          1.0,
+          43.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lhibaileron"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.16"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhibaileron"
+      ],
+      "axis": [
+        0.29792317748069763,
+        0.1662508249282837,
+        -0.9400012493133545
+      ],
+      "center": [
+        3.7831326667961602,
+        1.0750000476837158,
+        -11.323374291926713
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.0
+        ],
+        [
+          1.0,
+          43.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhibaileron"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.50"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lhobslata",
+        "lhobslat_a",
+        "lhobslatb",
+        "lhobslat_b",
+        "lhlightedslata"
+      ],
+      "axis": [
+        -0.5562346577644348,
+        -0.09539031237363815,
+        -0.8255323171615601
+      ],
+      "center": [
+        3.7831326667961602,
+        1.899999976158142,
+        18.426355596613803
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          -20.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lhobslata",
+        "lhobslat_a",
+        "lhobslatb",
+        "lhobslat_b",
+        "lhlightedslata"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.33",
+        "0:Models/787-8-GEnx.xml#1.34"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lhobslatc",
+        "lhobslat_c"
+      ],
+      "axis": [
+        -0.5729040503501892,
+        -0.12044476717710495,
+        -0.8107244372367859
+      ],
+      "center": [
+        8.093912999985738,
+        2.4000000953674316,
+        24.736751348878805
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          -20.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lhobslatc",
+        "lhobslat_c"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.35"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lhibslat",
+        "lhibslat_",
+        "lhlightedslat"
+      ],
+      "axis": [
+        -0.47992148995399475,
+        -0.20568840205669403,
+        -0.8528585433959961
+      ],
+      "center": [
+        -5.366074953895525,
+        -1.065000057220459,
+        3.3520821562008702
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          -16.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lhibslat",
+        "lhibslat_",
+        "lhlightedslat"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.21"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhobslata",
+        "rhobslat_a",
+        "rhlightedslata",
+        "rhobslatb",
+        "rhobslat_b"
+      ],
+      "axis": [
+        0.5562346577644348,
+        0.09539031237363815,
+        -0.8255323171615601
+      ],
+      "center": [
+        3.7831326667961602,
+        1.600000023841858,
+        -18.426355596613803
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          -20.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhobslata",
+        "rhobslat_a",
+        "rhlightedslata",
+        "rhobslatb",
+        "rhobslat_b"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.67",
+        "0:Models/787-8-GEnx.xml#1.68"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhobslatc",
+        "rhobslat_c"
+      ],
+      "axis": [
+        0.5729040503501892,
+        0.12044476717710495,
+        -0.8107244372367859
+      ],
+      "center": [
+        8.093912999985738,
+        2.4000000953674316,
+        -24.736751348878805
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          -20.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhobslatc",
+        "rhobslat_c"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.69"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhibslat",
+        "rhibslat_",
+        "rhlightedslat"
+      ],
+      "axis": [
+        0.47992148995399475,
+        0.20568840205669403,
+        -0.8528585433959961
+      ],
+      "center": [
+        -5.366074953895525,
+        -1.065000057220459,
+        -3.3520821562008702
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          -16.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhibslat",
+        "rhibslat_",
+        "rhlightedslat"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.55"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lhkflap"
+      ],
+      "axis": [
+        -0.5497496724128723,
+        -0.10447040945291519,
+        -0.8287709951400757
+      ],
+      "center": [
+        -2.8871276926751284,
+        1.0199999809265137,
+        9.107163611856038
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          90.0
+        ],
+        [
+          1.0,
+          90.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lhkflap"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.24"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lhobaileron"
+      ],
+      "axis": [
+        -0.440461128950119,
+        -0.0884849950671196,
+        -0.8934004902839661
+      ],
+      "center": [
+        9.059607669208264,
+        2.75,
+        23.171773972629065
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.0
+        ],
+        [
+          0.666,
+          3.0
+        ],
+        [
+          1.0,
+          3.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lhobaileron"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.28"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lhobflapa",
+        "lhobflapb",
+        "lhobfairing",
+        "lhmfairing"
+      ],
+      "axis": [
+        -0.4182485342025757,
+        -0.11573369801044464,
+        -0.9009295105934143
+      ],
+      "center": [
+        5.047495660725696,
+        1.399999976158142,
+        14.640118145254801
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.0
+        ],
+        [
+          1.0,
+          43.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lhobflapa",
+        "lhobflapb",
+        "lhobfairing",
+        "lhmfairing"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.26",
+        "0:Models/787-8-GEnx.xml#1.30",
+        "0:Models/787-8-GEnx.xml#1.31",
+        "0:Models/787-8-GEnx.xml#1.32"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lhibflap",
+        "lhibflapa",
+        "lhibfairing"
+      ],
+      "axis": [
+        -0.0470733679831028,
+        -0.19701352715492249,
+        -0.9792700409889221
+      ],
+      "center": [
+        3.195751620293696,
+        0.44999998807907104,
+        8.784070694574886
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.0
+        ],
+        [
+          1.0,
+          43.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lhibflap",
+        "lhibflapa",
+        "lhibfairing"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.18",
+        "0:Models/787-8-GEnx.xml#1.19",
+        "0:Models/787-8-GEnx.xml#1.20"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhkflap"
+      ],
+      "axis": [
+        0.5497496724128723,
+        0.10447040945291519,
+        -0.8287709951400757
+      ],
+      "center": [
+        -2.8871276926751284,
+        1.0199999809265137,
+        -9.107163611856038
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          90.0
+        ],
+        [
+          1.0,
+          90.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhkflap"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.58"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhobflapa",
+        "rhobflapb",
+        "rhobfairing",
+        "rhmfairing"
+      ],
+      "axis": [
+        0.4182485342025757,
+        0.11573369801044464,
+        -0.9009295105934143
+      ],
+      "center": [
+        5.047495660725696,
+        1.399999976158142,
+        -14.65021500955202
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.0
+        ],
+        [
+          1.0,
+          43.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhobflapa",
+        "rhobflapb",
+        "rhobfairing",
+        "rhmfairing"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.60",
+        "0:Models/787-8-GEnx.xml#1.64",
+        "0:Models/787-8-GEnx.xml#1.65",
+        "0:Models/787-8-GEnx.xml#1.66"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhibflap",
+        "rhibflapa",
+        "rhibfairing"
+      ],
+      "axis": [
+        0.0470733679831028,
+        0.19701352715492249,
+        -0.9792700409889221
+      ],
+      "center": [
+        3.195751620293696,
+        0.44999998807907104,
+        -8.784070694574886
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.0
+        ],
+        [
+          1.0,
+          43.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhibflap",
+        "rhibflapa",
+        "rhibfairing"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.52",
+        "0:Models/787-8-GEnx.xml#1.53",
+        "0:Models/787-8-GEnx.xml#1.54"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/speedbrake-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lhspoilera"
+      ],
+      "axis": [
+        0.3470703959465027,
+        0.14678646624088287,
+        0.926280677318573
+      ],
+      "center": [
+        3.270418760810523,
+        1.5199999809265137,
+        11.409195712673117
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          55.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lhspoilera"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.38"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/speedbrake-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhspoilera"
+      ],
+      "axis": [
+        0.3470703959465027,
+        0.14678646624088287,
+        -0.926280677318573
+      ],
+      "center": [
+        3.270418760810523,
+        1.5199999809265137,
+        -11.409195712673117
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          -55.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhspoilera"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.72"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/speedbrake-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lhobspoilerb"
+      ],
+      "axis": [
+        -0.4373435974121094,
+        -0.10047207772731781,
+        -0.8936643004417419
+      ],
+      "center": [
+        5.8339890028195995,
+        2.1600000858306885,
+        16.942151208961857
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          -60.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lhobspoilerb"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.37"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/speedbrake-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhobspoilerb"
+      ],
+      "axis": [
+        0.4373435974121094,
+        0.10047207772731781,
+        -0.8936643004417419
+      ],
+      "center": [
+        5.8339890028195995,
+        2.1600000858306885,
+        -16.942151208961857
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          -60.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhobspoilerb"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.71"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/speedbrake-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lhobspoilera"
+      ],
+      "axis": [
+        -0.4373435974121094,
+        -0.10047207772731781,
+        -0.8936643004417419
+      ],
+      "center": [
+        5.8339890028195995,
+        2.1600000858306885,
+        16.942151208961857
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          -60.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lhobspoilera"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.36"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/speedbrake-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhobspoilera"
+      ],
+      "axis": [
+        0.4373435974121094,
+        0.10047207772731781,
+        -0.8936643004417419
+      ],
+      "center": [
+        5.8339890028195995,
+        2.1600000858306885,
+        -16.942151208961857
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          -60.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhobspoilera"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.70"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/speedbrake-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lhibspoilera.001"
+      ],
+      "axis": [
+        -0.053402747958898544,
+        -0.16579896211624146,
+        -0.9847126007080078
+      ],
+      "center": [
+        2.697970999995246,
+        0.699999988079071,
+        6.815227412446201
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          -50.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lhibspoilera.001"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.23"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/speedbrake-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhibspoilera.001"
+      ],
+      "axis": [
+        0.053402747958898544,
+        0.16579896211624146,
+        -0.9847126007080078
+      ],
+      "center": [
+        2.697970999995246,
+        0.699999988079071,
+        -6.815227412446201
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          -50.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhibspoilera.001"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.57"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/speedbrake-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lhibspoilera"
+      ],
+      "axis": [
+        -0.053402747958898544,
+        -0.16579896211624146,
+        -0.9847126007080078
+      ],
+      "center": [
+        2.697970999995246,
+        0.699999988079071,
+        6.815227412446201
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          -50.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lhibspoilera"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.22"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/speedbrake-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhibspoilera"
+      ],
+      "axis": [
+        0.053402747958898544,
+        0.16579896211624146,
+        -0.9847126007080078
+      ],
+      "center": [
+        2.697970999995246,
+        0.699999988079071,
+        -6.815227412446201
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          -50.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhibspoilera"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.56"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "LeftGear"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.28700000047683716,
+        4.892121885662741
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          76.0
+        ],
+        [
+          0.2,
+          76.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "LeftGear"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#5.0",
+        "0:Models/787-8-GEnx.xml#5.1",
+        "0:Models/787-8-GEnx.xml#5.2",
+        "0:Models/787-8-GEnx.xml#5.3",
+        "0:Models/787-8-GEnx.xml#5.4",
+        "0:Models/787-8-GEnx.xml#5.5",
+        "0:Models/787-8-GEnx.xml#5.6",
+        "0:Models/787-8-GEnx.xml#5.7",
+        "0:Models/787-8-GEnx.xml#5.8"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "leftgear.hyd1",
+        "leftgear.hyd2"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -1.5312999486923218,
+        4.659595992378883
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          50.0
+        ],
+        [
+          0.2,
+          50.0
+        ],
+        [
+          0.8,
+          45.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "leftgear.hyd1",
+        "leftgear.hyd2"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#5.0",
+        "0:Models/787-8-GEnx.xml#5.1"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "leftgear.hyd2"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -0.7493000030517578,
+        3.797444768522018
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -170.0
+        ],
+        [
+          0.2,
+          -170.0
+        ],
+        [
+          0.8,
+          -60.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "leftgear.hyd2"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#5.1"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "RightGear"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.28700000047683716,
+        -4.892121885662741
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          76.0
+        ],
+        [
+          0.2,
+          76.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "RightGear"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#23.0",
+        "0:Models/787-8-GEnx.xml#23.1",
+        "0:Models/787-8-GEnx.xml#23.2",
+        "0:Models/787-8-GEnx.xml#23.3",
+        "0:Models/787-8-GEnx.xml#23.4",
+        "0:Models/787-8-GEnx.xml#23.5",
+        "0:Models/787-8-GEnx.xml#23.6",
+        "0:Models/787-8-GEnx.xml#23.7",
+        "0:Models/787-8-GEnx.xml#23.8"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rightgear.hyd1",
+        "rightgear.hyd2"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -1.5312999486923218,
+        -4.659595992378883
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -50.0
+        ],
+        [
+          0.2,
+          -50.0
+        ],
+        [
+          0.8,
+          -45.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rightgear.hyd1",
+        "rightgear.hyd2"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#23.1",
+        "0:Models/787-8-GEnx.xml#23.2"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rightgear.hyd2"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -0.7493000030517578,
+        -3.797444768522018
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          170.0
+        ],
+        [
+          0.2,
+          170.0
+        ],
+        [
+          0.8,
+          60.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rightgear.hyd2"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#23.2"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "LeftGearBaseRod",
+        "LeftWheelFront",
+        "LeftWheelBack"
+      ],
+      "axis": [
+        0.7021165490150452,
+        0.0,
+        -0.7120620012283325
+      ],
+      "center": [
+        2.1279125079234484,
+        -3.4862000942230225,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          20.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "LeftGearBaseRod",
+        "LeftWheelFront",
+        "LeftWheelBack"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#5.2",
+        "0:Models/787-8-GEnx.xml#5.6",
+        "0:Models/787-8-GEnx.xml#5.7"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "RightGearBaseRod",
+        "RightWheelFront",
+        "RightWheelBack"
+      ],
+      "axis": [
+        0.7021165490150452,
+        0.0,
+        -0.7120620012283325
+      ],
+      "center": [
+        2.1279125079234484,
+        -3.4862000942230225,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          20.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "RightGearBaseRod",
+        "RightWheelFront",
+        "RightWheelBack"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#23.3",
+        "0:Models/787-8-GEnx.xml#23.7",
+        "0:Models/787-8-GEnx.xml#23.8"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lhnosedoor"
+      ],
+      "axis": [
+        0.9915819764137268,
+        -0.12948037683963776,
+        0.0
+      ],
+      "center": [
+        -20.906786052534898,
+        -1.350000023841858,
+        0.6057980162896895
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          0.0
+        ],
+        [
+          0.25,
+          -80.0
+        ],
+        [
+          0.75,
+          -80.0
+        ],
+        [
+          0.9,
+          -70.0
+        ],
+        [
+          1.0,
+          -70.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lhnosedoor"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.27"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lhlightdoor"
+      ],
+      "axis": [
+        0.9915819764137268,
+        -0.12948037683963776,
+        0.0
+      ],
+      "center": [
+        -20.906786052534898,
+        -1.350000023841858,
+        0.6057980162896895
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          0.0
+        ],
+        [
+          0.25,
+          -80.0
+        ],
+        [
+          0.75,
+          -80.0
+        ],
+        [
+          0.9,
+          -70.0
+        ],
+        [
+          1.0,
+          -70.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lhlightdoor"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": []
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhnosedoor"
+      ],
+      "axis": [
+        -0.9915819764137268,
+        0.12948037683963776,
+        0.0
+      ],
+      "center": [
+        -20.906786052534898,
+        -1.350000023841858,
+        -0.6057980162896895
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          0.0
+        ],
+        [
+          0.25,
+          -80.0
+        ],
+        [
+          0.75,
+          -80.0
+        ],
+        [
+          0.9,
+          -70.0
+        ],
+        [
+          1.0,
+          -70.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhnosedoor"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.61"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhlightdoor"
+      ],
+      "axis": [
+        -0.9915819764137268,
+        0.12948037683963776,
+        0.0
+      ],
+      "center": [
+        -20.906786052534898,
+        -1.350000023841858,
+        -0.6057980162896895
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          0.0
+        ],
+        [
+          0.25,
+          -80.0
+        ],
+        [
+          0.75,
+          -80.0
+        ],
+        [
+          0.9,
+          -70.0
+        ],
+        [
+          1.0,
+          -70.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhlightdoor"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": []
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lhfnosedoor"
+      ],
+      "axis": [
+        0.9804122447967529,
+        -0.19695669412612915,
+        0.0
+      ],
+      "center": [
+        -22.400127913430246,
+        -1.0700000524520874,
+        0.8582138463802895
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          -80.0
+        ],
+        [
+          0.9,
+          -80.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lhfnosedoor"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.14"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lhlighteddoor"
+      ],
+      "axis": [
+        0.9804122447967529,
+        -0.19695669412612915,
+        0.0
+      ],
+      "center": [
+        -22.400127913430246,
+        -1.0700000524520874,
+        0.8077306683260448
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          -80.0
+        ],
+        [
+          0.9,
+          -80.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lhlighteddoor"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": []
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhfnosedoor"
+      ],
+      "axis": [
+        -0.9804122447967529,
+        0.19695669412612915,
+        0.0
+      ],
+      "center": [
+        -22.400127913430246,
+        -1.0700000524520874,
+        -0.8582138463802895
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          -80.0
+        ],
+        [
+          0.9,
+          -80.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhfnosedoor"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#1.48"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhlighteddoor"
+      ],
+      "axis": [
+        -0.9804122447967529,
+        0.19695669412612915,
+        0.0
+      ],
+      "center": [
+        -22.400127913430246,
+        -1.0700000524520874,
+        -0.8077306683260448
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          -80.0
+        ],
+        [
+          0.9,
+          -80.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhlighteddoor"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": []
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "NoseGear"
+      ],
+      "axis": [
+        0.7021165490150452,
+        0.0,
+        -0.7120620012283325
+      ],
+      "center": [
+        -20.38909375169274,
+        -1.062999963760376,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          100.0
+        ],
+        [
+          0.2,
+          100.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "NoseGear"
+      ],
+      "model": "Models/787-8-GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml#20.0",
+        "0:Models/787-8-GEnx.xml#20.1",
+        "0:Models/787-8-GEnx.xml#20.2"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[0]/n1",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "eng1fan",
+        "eng1fanb",
+        "eng1fan1"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -7.528036084255473,
+        -1.127020001411438,
+        9.504323951936222
+      ],
+      "factor": 10.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "eng1fan",
+        "eng1fanb",
+        "eng1fan1"
+      ],
+      "model": "Models/GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml/29:genx",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml/29:genx#0",
+        "0:Models/787-8-GEnx.xml/29:genx#2"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[1]/n1",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "eng2fan",
+        "eng2fanb",
+        "eng2fan1"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -7.528036084255473,
+        -1.127020001411438,
+        -9.504323951936222
+      ],
+      "factor": 10.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "eng2fan",
+        "eng2fanb",
+        "eng2fan1"
+      ],
+      "model": "Models/GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml/29:genx",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml/29:genx#3",
+        "0:Models/787-8-GEnx.xml/29:genx#5"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "engines/engine[0]/reverser-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "lhreverser",
+        "lhreverser.001"
+      ],
+      "axis": [
+        0.9999999403953552,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "lhreverser",
+        "lhreverser.001"
+      ],
+      "model": "Models/GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml/29:genx",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml/29:genx#13"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "engines/engine[1]/reverser-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rhreverser",
+        "rhreverser.001"
+      ],
+      "axis": [
+        0.9999999403953552,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rhreverser",
+        "rhreverser.001"
+      ],
+      "model": "Models/GEnx.xml",
+      "scope": "0:Models/787-8-GEnx.xml/29:genx",
+      "targetPartIds": [
+        "0:Models/787-8-GEnx.xml/29:genx#26"
+      ]
+    }
+  ],
+  "gearInternalParts": [
+    "leftgear.hyd1",
+    "leftgear.hyd2",
+    "LeftGearBaseRod",
+    "LeftGearCompressor",
+    "LeftGearCompressor1",
+    "LeftGearCompressor2",
+    "LeftWheelBack",
+    "LeftWheelFront",
+    "RGear.001",
+    "NGear",
+    "NGearStrut",
+    "NoseWheel",
+    "RGear",
+    "rightgear.hyd1",
+    "rightgear.hyd2",
+    "RightGearBaseRod",
+    "RightGearCompressor",
+    "RightGearCompressor1",
+    "RightGearCompressor2",
+    "RightWheelBack",
+    "RightWheelFront"
+  ],
+  "gearInternalPartIds": [
+    "0:Models/787-8-GEnx.xml#5.0",
+    "0:Models/787-8-GEnx.xml#5.1",
+    "0:Models/787-8-GEnx.xml#5.2",
+    "0:Models/787-8-GEnx.xml#5.3",
+    "0:Models/787-8-GEnx.xml#5.4",
+    "0:Models/787-8-GEnx.xml#5.5",
+    "0:Models/787-8-GEnx.xml#5.6",
+    "0:Models/787-8-GEnx.xml#5.7",
+    "0:Models/787-8-GEnx.xml#5.8",
+    "0:Models/787-8-GEnx.xml#20.0",
+    "0:Models/787-8-GEnx.xml#20.1",
+    "0:Models/787-8-GEnx.xml#20.2",
+    "0:Models/787-8-GEnx.xml#23.0",
+    "0:Models/787-8-GEnx.xml#23.1",
+    "0:Models/787-8-GEnx.xml#23.2",
+    "0:Models/787-8-GEnx.xml#23.3",
+    "0:Models/787-8-GEnx.xml#23.4",
+    "0:Models/787-8-GEnx.xml#23.5",
+    "0:Models/787-8-GEnx.xml#23.6",
+    "0:Models/787-8-GEnx.xml#23.7",
+    "0:Models/787-8-GEnx.xml#23.8"
+  ],
+  "missingTextures": [],
+  "sourceAC": [
+    "Models/787-8.ac",
+    "Models/GEnx.ac"
+  ],
+  "discardedUnreferencedVertices": 135,
+  "provenance": "preparation/787-family",
+  "variantConstruction": {},
+  "capabilities": [
+    "fans",
+    "flaps",
+    "gear",
+    "reversers",
+    "spoilers"
+  ],
+  "reviewPoints": {
+    "cockpit": [
+      -23.247718811035156,
+      2.198814630508423,
+      -1.1416492498028674e-06
+    ],
+    "engine": [
+      -4.206892967224121,
+      -1.1806750297546387,
+      9.514496803283691
+    ],
+    "gear": [
+      -20.497730255126953,
+      -3.2642600536346436,
+      0.011187076568603516
+    ],
+    "wing": [
+      -2.8980093002319336,
+      0.8928450345993042,
+      8.845317840576172
+    ]
+  },
+  "fidelityNotes": [],
+  "reviewStatus": "build-awaiting-validation",
+  "addedDoorWindowPanes": 0,
+  "fittedCockpitOpenings": 0,
+  "fittedCabinOpenings": 0,
+  "envelopeCalibration": {
+    "rawDimensions": {
+      "length": 56.9728889465332,
+      "span": 59.54460144042969
+    },
+    "axisScale": [
+      0.9955612405968999,
+      1,
+      1.0096633203624001
+    ]
+  },
+  "skippedSourceModels": [
+    "Aircraft/787-family/Models/Effects/contrail.xml",
+    "Aircraft/787-family/Models/Effects/contrail.xml",
+    "Aircraft/787-family/Models/Effects/tiptrail.xml",
+    "Aircraft/787-family/Models/Effects/tiptrail.xml",
+    "Aircraft/787-family/Models/Effects/tire-smoke-left.xml",
+    "Aircraft/787-family/Models/Effects/tire-smoke-right.xml",
+    "Aircraft/787-family/Models/Effects/wet-runway.xml",
+    "Aircraft/787-family/Models/Effects/wet-runway.xml",
+    "Aircraft/787-family/Models/Effects/fuel-dump.xml",
+    "Aircraft/787-family/Models/Effects/fuel-dump.xml",
+    "Aircraft/787-family/Models/RAT.xml",
+    "Aircraft/787-family/Models/Effects/fire.xml",
+    "Aircraft/787-family/Models/Effects/smoke.xml",
+    "Aircraft/787-family/Models/Effects/explode1.xml",
+    "Aircraft/787-family/Models/Effects/fire.xml",
+    "Aircraft/787-family/Models/Effects/smoke.xml",
+    "Aircraft/787-family/Models/Effects/explode1.xml",
+    "Aircraft/787-family/Models/Effects/ext.xml",
+    "Aircraft/787-family/Models/Effects/ext.xml",
+    "Autopush/Goldhofert.xml",
+    "FlightDeck/b787.flightdeck.xml",
+    "Aircraft/787-family/Models/Effects/fire.xml",
+    "Aircraft/787-family/Models/Effects/smoke.xml",
+    "Aircraft/787-family/Models/Effects/explode1.xml",
+    "Aircraft/787-family/Models/Effects/fire.xml",
+    "Aircraft/787-family/Models/Effects/smoke.xml",
+    "Aircraft/787-family/Models/Effects/explode1.xml",
+    "Aircraft/787-family/Models/Effects/ext.xml",
+    "Aircraft/787-family/Models/Effects/ext.xml",
+    "Aircraft/787-family/Models/Effects/tire-smoke-nose.xml",
+    "Aircraft/787-family/Models/Effects/wet-runway-nose.xml",
+    "Ground/landing-ground-lights.xml",
+    "Ground/taxi-ground-lights.xml",
+    "Aircraft/787-family/Models/Ground/Services/Fuel-Truck/Fuel_Truck_Short_VolvoFM.ac",
+    "Aircraft/787-family/Models/Ground/Services/De-Icing/volvo_deicing_truck.xml",
+    "Aircraft/787-family/Models/Ground/Services/Catering/Catering_Loader_Truck_VolvoFM.xml",
+    "Aircraft/787-family/Models/Ground/Services/Baggage/cargo_ramp.ac",
+    "Aircraft/787-family/Models/Ground/Services/Stairs/stairs.xml",
+    "Aircraft/787-family/Models/Ground/Services/External-Power/ext-pwr-box.ac",
+    "Aircraft/787-family/Models/Ground/Services/Chocks-8/chock_nose.ac",
+    "Aircraft/787-family/Models/Ground/Services/Chocks-8/chock_left.ac",
+    "Aircraft/787-family/Models/Ground/Services/Chocks-8/chock_right.ac"
+  ],
+  "unresolvedMotions": [
+    {
+      "control": "gear",
+      "targets": [
+        "Lgear"
+      ],
+      "model": "Models/787-8-GEnx.xml"
+    },
+    {
+      "control": "gear",
+      "targets": [
+        "lhlightdoor"
+      ],
+      "model": "Models/787-8-GEnx.xml"
+    },
+    {
+      "control": "gear",
+      "targets": [
+        "rhlightdoor"
+      ],
+      "model": "Models/787-8-GEnx.xml"
+    },
+    {
+      "control": "gear",
+      "targets": [
+        "lhlighteddoor"
+      ],
+      "model": "Models/787-8-GEnx.xml"
+    },
+    {
+      "control": "gear",
+      "targets": [
+        "rhlighteddoor"
+      ],
+      "model": "Models/787-8-GEnx.xml"
+    }
+  ],
+  "cargo": false,
+  "paintProjection": {
+    "operatorFinishParts": [
+      "eng1fan",
+      "eng1fanb",
+      "eng2fan",
+      "eng2fanb",
+      "lhfan",
+      "lhfans",
+      "rhfan",
+      "rhfans",
+      "lhfancasing",
+      "lhinside",
+      "rhfancasing",
+      "rhinside",
+      "lhcone",
+      "rhcone"
+    ],
+    "reviewStatus": "requires-visual-review"
+  },
+  "authoredPaint": {
+    "method": "Original airline paint layout projected in physical exterior coordinates; independent destination texture atlases retained.",
+    "maps": [
+      "b788/generated/zipair/authored-color-0.png"
+    ],
+    "references": [
+      "https://www.zipair.net/en/notification/112",
+      "reference/ZIPAIR-renovated-livery-2022.pdf"
+    ],
+    "artworkMetadata": [
+      "preparation/brand-art/ZIPAIR logo.json"
+    ],
+    "reviewStatus": "requires-visual-review"
+  }
+}

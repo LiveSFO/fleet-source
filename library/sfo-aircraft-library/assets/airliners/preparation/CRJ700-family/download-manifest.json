@@ -1,0 +1,458 @@
+[
+  {
+    "path": "LICENSE",
+    "gitBlob": "9459763d56acacd2e224a9e00c7d5ff23a9fae8d",
+    "sha256": "9f2ea023bb32f950ae91990487ea9f3d63263851bd77bac5fd01a82419421d90",
+    "bytes": 314
+  },
+  {
+    "path": "README.md",
+    "gitBlob": "c16f0e3f337d70c7235d59abf491e69cb7cd42d1",
+    "sha256": "8ff1eb068feff3edd9fe28181af9cbeec98995fd6fd64ed2b8f0fd1a3a1e02b8",
+    "bytes": 1210
+  },
+  {
+    "path": "CRJ1000-EuroLite-set.xml",
+    "gitBlob": "9b10e12223d86c46f521883f42b6f5b7cbbbe1ef",
+    "sha256": "d0c6ae5cfa277dfa26380d605d839d384716d595942267f580a86c854b4d1cc5",
+    "bytes": 2772
+  },
+  {
+    "path": "CRJ1000-EuroLite.xml",
+    "gitBlob": "1f1b2c53488aa15229c900345c941c21877a834e",
+    "sha256": "f67e98ea73e1e32c718c25b3ccfbce0aa9f33f70cd8829e1b8eda154ffb72ef4",
+    "bytes": 9797
+  },
+  {
+    "path": "CRJ1000-set.xml",
+    "gitBlob": "fe8a51d5d7501b94cceb8fb49a1c4126e0054b5b",
+    "sha256": "8f96ce8ab89febaeb1d3097005f02597bd5d3cdc7b846645145050af00b4b3fa",
+    "bytes": 2695
+  },
+  {
+    "path": "CRJ1000.xml",
+    "gitBlob": "221ddae678417c1458e237867652a8836773f5c3",
+    "sha256": "b67d9b5bd511bd04ce452912f5661f1b3aaa5446a75a5118d6c1fc973272b092",
+    "bytes": 9786
+  },
+  {
+    "path": "CRJ1000ER-set.xml",
+    "gitBlob": "43f9fb124575c389274d6d82a8de8c1e345a36eb",
+    "sha256": "5fa38687ca0297cb81b7e5eb27c0e9968cf559c056cec5aabcb694aecc9e8b2a",
+    "bytes": 2741
+  },
+  {
+    "path": "CRJ1000ER.xml",
+    "gitBlob": "2bcaf83af5f747b325a19c6191e195742f20969a",
+    "sha256": "cf7ce8cc9c9382528e9f1ef165545ed9de625bf5901ea632ea9439f1e0768e67",
+    "bytes": 9788
+  },
+  {
+    "path": "CRJ700-firstofficer-set.xml",
+    "gitBlob": "ed7e5f9733142dc8e360ce8b816be03e6860a5e5",
+    "sha256": "a052635442155eaf29a51d71190b5470b445eaa038ae3836883892a766f1eed8",
+    "bytes": 5928
+  },
+  {
+    "path": "CRJ700-help.xml",
+    "gitBlob": "67d487ab44790379abd04641243e7cf9886bd62b",
+    "sha256": "c39d4a1fb7943582c304daadcc72326e7f97e438e2f220671d11e3cfd13276f1",
+    "bytes": 4089
+  },
+  {
+    "path": "CRJ700-main.xml",
+    "gitBlob": "97fb3b133ef2058248173405d4b881414291175c",
+    "sha256": "80e19f2eabece92197715309ba0ed82365b0174d744be37defe81444ee337e69",
+    "bytes": 34225
+  },
+  {
+    "path": "CRJ700-set.xml",
+    "gitBlob": "42fc80d754b71bdf7c3f5d34814d6e9e62ff0dcc",
+    "sha256": "c3b9cfe4450a6ebc06bb62e19b7e95a9b4bec3255a6d91a7fa92e24f91e4f477",
+    "bytes": 2926
+  },
+  {
+    "path": "CRJ700.xml",
+    "gitBlob": "3b2d9655df6f55ec4fd0f80ee1ccaf46ef6ac82c",
+    "sha256": "eb8c2f9c09f653ea5471952d5751f32eb24404bc34361058a25ead38a58cf098",
+    "bytes": 9419
+  },
+  {
+    "path": "CRJ700ER-set.xml",
+    "gitBlob": "a047d2bc269b4b0887590b1be3e66a0466c0ef03",
+    "sha256": "06125bb2f632f176a58621102e6d824d845aaf351869da30c7f02ce3bbaf49be",
+    "bytes": 3232
+  },
+  {
+    "path": "CRJ700ER.xml",
+    "gitBlob": "938c0113d15f8bd452cd38f31e5089138b4a0f87",
+    "sha256": "928528d204322ab70120b97f1fbd8c255a657d1fe9b8d21150831c89f38ec7dd",
+    "bytes": 9788
+  },
+  {
+    "path": "CRJ700LR-set.xml",
+    "gitBlob": "8e3f48bd5b8f4319804661af74f9b6cfc0470ffa",
+    "sha256": "3694be4dcd0f5368c7f96515d4dcb00b829f223f2650c6a59ef2aeb483e6f486",
+    "bytes": 2817
+  },
+  {
+    "path": "CRJ700LR.xml",
+    "gitBlob": "5af1d95d4629ae75823767b57f0e537d17e357c3",
+    "sha256": "b9c3547bfa207f977ca8b3cad9c0bbe321165afc466a38392316e7ae29076bc7",
+    "bytes": 9790
+  },
+  {
+    "path": "CRJ900-set.xml",
+    "gitBlob": "fac788453d4fcca5bf778bf24769ef6851c979a8",
+    "sha256": "d16c2503c47be9741fc759b142358470b1780e943910118f2e65b0152fc26797",
+    "bytes": 2876
+  },
+  {
+    "path": "CRJ900.xml",
+    "gitBlob": "467b8f0f15d5fa4bb7df0b65bbca85291a56a5a9",
+    "sha256": "e34c430f3ff3056c79e8985468376278e0de3e2a7c9b14b5817e23b6a2d5bb2a",
+    "bytes": 9787
+  },
+  {
+    "path": "CRJ900ER-set.xml",
+    "gitBlob": "d36b114f13936ad292fbf9afe4269fea380ac48a",
+    "sha256": "0745940d9d2517bb333e45719826bb31d807c2c0f75afd9051555de72af35c3c",
+    "bytes": 2734
+  },
+  {
+    "path": "CRJ900ER.xml",
+    "gitBlob": "59bf5590a64203293a23b9689fb3fb0b5e2a1e7a",
+    "sha256": "abd4413050f3c800c6a6ab4ad4bc032fada796c29d21e52ca413997e969048a4",
+    "bytes": 9789
+  },
+  {
+    "path": "CRJ900LR-set.xml",
+    "gitBlob": "21e606fe146f6454afd7452947a31f0f719d4177",
+    "sha256": "7601dc5d07a7226309b8c32cf0d9b4f64b0d6bef6de1604805f80bfa589d6e73",
+    "bytes": 2734
+  },
+  {
+    "path": "CRJ900LR.xml",
+    "gitBlob": "35c961b139788bed0cf866a69122e12b3834ba13",
+    "sha256": "9c74ee5701ac29624df0788b5c2a9e601f6104d0da0467c4041fcecb105ae5ab",
+    "bytes": 9791
+  },
+  {
+    "path": "Models/CRJ1000.xml",
+    "gitBlob": "40d0b3c7ab2ee44cf0088b2f01b8b23821601235",
+    "sha256": "978c0930121f2db75c5e6aca46a284ae50b61bd77d61c7149c3ace7524928b7d",
+    "bytes": 19845
+  },
+  {
+    "path": "Models/CRJ700-engine.xml",
+    "gitBlob": "b0b84ad043338aa0f356c9b947ca824aecdb6c8a",
+    "sha256": "3db14be937eb8f0c61d643dfaa2d7dd6fd1ad21c0929e87a950399a894706409",
+    "bytes": 2013
+  },
+  {
+    "path": "Models/CRJ700-firstofficer.xml",
+    "gitBlob": "27bedc63179703f66ebb8feb0990d24fbfad3397",
+    "sha256": "32e6e077b75599cd97925e328a84a9bf71983ff062eaaa13ffe0d90c6d1428eb",
+    "bytes": 105
+  },
+  {
+    "path": "Models/CRJ700-main.xml",
+    "gitBlob": "f2bf804feba316aa02029ba0b15443616a4f7c7f",
+    "sha256": "6aad3b3dbb40987cf1893a7b9f7523c9ce4c328d6390d6d713848652ce03400e",
+    "bytes": 5402
+  },
+  {
+    "path": "Models/CRJ700-maingear.xml",
+    "gitBlob": "8b1d4d07b327c8bace0dd5ce6cf8024a7b5ef946",
+    "sha256": "42fb59dec0a125bd6371616bfa6a6cae3e5f060ce588089fe6ee0fc566b801a9",
+    "bytes": 12290
+  },
+  {
+    "path": "Models/CRJ700-nosegear.xml",
+    "gitBlob": "aff0bec058d8306e5f2018fc16ee52c649493aca",
+    "sha256": "b19da6a6ce33b1f5e024d165a0beff3e7e29d7298bc2af80012553dfc04a8212",
+    "bytes": 4652
+  },
+  {
+    "path": "Models/CRJ700.xml",
+    "gitBlob": "724e2c9a63988a44166a413427ab9394560a4aeb",
+    "sha256": "a66593638b29cb5c9e82add170d04a3754528d6202abe9144e89e32b7001dd21",
+    "bytes": 20776
+  },
+  {
+    "path": "Models/CRJ900.xml",
+    "gitBlob": "8c5f6fb046f92ad85e4e14637717613a13aa53d5",
+    "sha256": "dd122701e93ed656d5eeeb62b26626abb2be84719ff03d865fddd6c73ac38f58",
+    "bytes": 19652
+  },
+  {
+    "path": "Models/Effects/contrail.xml",
+    "gitBlob": "43a4ca9fe2459bb1dfdd169fac1df21f68063fa6",
+    "sha256": "7323e880eb3a48697049a31aa2f59414ef12f44e852cc86c61bc65400c8b66f0",
+    "bytes": 2312
+  },
+  {
+    "path": "Models/Effects/enginefire.xml",
+    "gitBlob": "ade1145dd16c2280c41ae55f240fff3abfbf94d2",
+    "sha256": "c1917dc071101e489675d90c0f940121de5819bdd0ebac45069c7eedd5f00ae4",
+    "bytes": 1770
+  },
+  {
+    "path": "Models/Interior/CRJ1000-interior.xml",
+    "gitBlob": "ed4b35c8bfe685ccfd8376574665608e0832296d",
+    "sha256": "f11abf486c5d44485db2422cabd330530ec3038c41e1c8e013e25b4d9e6d3707",
+    "bytes": 3477
+  },
+  {
+    "path": "Models/Interior/CRJ700-interior.xml",
+    "gitBlob": "95b7c3ccd6906f2f301e7d034e80f52115a65b9a",
+    "sha256": "9f616c787240cba1830fb5e52a30c6e457068281e91eff57131f19fd35caf2bf",
+    "bytes": 3475
+  },
+  {
+    "path": "Models/Interior/CRJ900-interior.xml",
+    "gitBlob": "e8c61d3e7d943435bacee8a349b1eed6882be6ed",
+    "sha256": "8904510ab1881a76a1413653ae79f0fbce5d33de656f32255190346b005140d7",
+    "bytes": 3474
+  },
+  {
+    "path": "Models/Lights/beacon.xml",
+    "gitBlob": "1054dc9e1fefd9b4625bc4918bd7362f6b9334f6",
+    "sha256": "f474fd9bd8fb6f00f85c9676423fb430fd797606a3b7e533506da59eb05a231a",
+    "bytes": 1219
+  },
+  {
+    "path": "Models/Lights/greennav.xml",
+    "gitBlob": "2e7a3907c5465b6775cdd282c42da3ee8064356d",
+    "sha256": "fb37d6e9f0f7e0d8e421320c2dc419647eba359e7bd60c12c96e230ce65ce637",
+    "bytes": 1314
+  },
+  {
+    "path": "Models/Lights/landing-nose.xml",
+    "gitBlob": "2520d11742b93aa3810daa602003d8f49c375950",
+    "sha256": "f36a5a7d74f6c60f673da7a871b5d1f3c7114f6aca05d2580c03b236c32ca138",
+    "bytes": 1522
+  },
+  {
+    "path": "Models/Lights/landing-wing-inside.xml",
+    "gitBlob": "6367787eac37f9616b80044b453e9e62be5d95dc",
+    "sha256": "514b5ee605996100301bd212972d7214b5a7c65884af44be0fccc320b0a16abd",
+    "bytes": 1290
+  },
+  {
+    "path": "Models/Lights/landing-wing.xml",
+    "gitBlob": "74fc163e97c62f3ccd39987c07dbae37087cca99",
+    "sha256": "3e9e05fa38c9a9c0f37ea1d2c343b5c41f7f9c9e0bae30873751d503d38b5028",
+    "bytes": 1560
+  },
+  {
+    "path": "Models/Lights/rednav.xml",
+    "gitBlob": "dd4e97a42a9dd2cb68dd3f72b7ff5b3a8d515107",
+    "sha256": "da7ce8c345b62e24aeb9eb68752954a0aae78dd5d94e6a58f7985b4edb9246ee",
+    "bytes": 1312
+  },
+  {
+    "path": "Models/Lights/strobe.xml",
+    "gitBlob": "e65a793db6acd42e1e191f6847e88000b95a3cd2",
+    "sha256": "c45fd52d749520cfe496d2fa4f95f220d8cfd944ebab0bc141d9fff54dc6fe9c",
+    "bytes": 1307
+  },
+  {
+    "path": "Models/Lights/taxi.xml",
+    "gitBlob": "f38b283406582dab9cb256553f9f0093edb4f1ab",
+    "sha256": "06fbfe83f83cbb0e437a8bc5fccc491f1c92086a31904391907116f9f65a8ddf",
+    "bytes": 1487
+  },
+  {
+    "path": "Models/Liveries/CRJ1000-EuroLite/Blank.xml",
+    "gitBlob": "4a887519a0fd5fe52c2fb0f1f079cd03e3b4c7a6",
+    "sha256": "49053148d079fd607817ca80e077c9f0d9cf9a2c6d1a1b543fe76db8da5e3a6b",
+    "bytes": 239
+  },
+  {
+    "path": "Models/Liveries/CRJ1000/BZH.xml",
+    "gitBlob": "639b674d9aec95f453b01a5f7ed1aca029c61717",
+    "sha256": "ef357200d9391d3c438c5cf6782e4c197188ce41f8e37730010775f8cbc63d8f",
+    "bytes": 260
+  },
+  {
+    "path": "Models/Liveries/CRJ1000/Blank.xml",
+    "gitBlob": "4a887519a0fd5fe52c2fb0f1f079cd03e3b4c7a6",
+    "sha256": "49053148d079fd607817ca80e077c9f0d9cf9a2c6d1a1b543fe76db8da5e3a6b",
+    "bytes": 239
+  },
+  {
+    "path": "Models/Liveries/CRJ1000ER/Blank.xml",
+    "gitBlob": "4a887519a0fd5fe52c2fb0f1f079cd03e3b4c7a6",
+    "sha256": "49053148d079fd607817ca80e077c9f0d9cf9a2c6d1a1b543fe76db8da5e3a6b",
+    "bytes": 239
+  },
+  {
+    "path": "Models/Liveries/CRJ700/ASH.xml",
+    "gitBlob": "c5674ba9984bf9cba3d3d3c67b9205c2cf5cdb45",
+    "sha256": "5fe8ba778a6850978fa5776925b905a42dbb27de3bd650da70b560cf4fff3898",
+    "bytes": 268
+  },
+  {
+    "path": "Models/Liveries/CRJ700/Blank.xml",
+    "gitBlob": "478b5f817914432e461bc569a19c08a239f13b4f",
+    "sha256": "5d23318a06445e88b00a23f365cf0c32bf993743573e1301d467a0739b4546f6",
+    "bytes": 238
+  },
+  {
+    "path": "Models/Liveries/CRJ700/DAN.xml",
+    "gitBlob": "4d361ccc9922cd6210dc09d35b6b5919106a334d",
+    "sha256": "928de1504f54ea4cbdf529fae38a8deffae0353f7c548fa84aa7e20f53493333",
+    "bytes": 274
+  },
+  {
+    "path": "Models/Liveries/CRJ700/EXK.xml",
+    "gitBlob": "92ff48fe964ba6f619cce6da8ebf684177a339c5",
+    "sha256": "d6539ef022d5369636e24d13dda2bc873ccb4b87ed39f6fb78d11b9886a91131",
+    "bytes": 254
+  },
+  {
+    "path": "Models/Liveries/CRJ700ER/Blank.xml",
+    "gitBlob": "478b5f817914432e461bc569a19c08a239f13b4f",
+    "sha256": "5d23318a06445e88b00a23f365cf0c32bf993743573e1301d467a0739b4546f6",
+    "bytes": 238
+  },
+  {
+    "path": "Models/Liveries/CRJ700ER/LRL.xml",
+    "gitBlob": "f664c19a9309b69fe2443b34f37fc707c9d48f1d",
+    "sha256": "073542c9155289dd03ae06fe4db56a028ff556fbc5da6adacd4b82793aad5a84",
+    "bytes": 260
+  },
+  {
+    "path": "Models/Liveries/CRJ700ER/SAL.xml",
+    "gitBlob": "78f8bf7da95203beaf1bc71d8b38f9c9a4576e6e",
+    "sha256": "d758b2d269bbb9729b9dafbae77cc1ddb110d485cf1984e8fe456ebeae72206d",
+    "bytes": 265
+  },
+  {
+    "path": "Models/Liveries/CRJ700LR/Blank.xml",
+    "gitBlob": "478b5f817914432e461bc569a19c08a239f13b4f",
+    "sha256": "5d23318a06445e88b00a23f365cf0c32bf993743573e1301d467a0739b4546f6",
+    "bytes": 238
+  },
+  {
+    "path": "Models/Liveries/CRJ900/Blank.xml",
+    "gitBlob": "8a6d321a69f3f5e14063535dc232885a32f8c777",
+    "sha256": "59e20c30f25d63554af05c0fa2fdf426b98938d568b024ad059df18915128c64",
+    "bytes": 238
+  },
+  {
+    "path": "Models/Liveries/CRJ900/JZA-1.xml",
+    "gitBlob": "f4f4ac2b63518f205be9e4838fe4f66c2d1b09c4",
+    "sha256": "381cc4747c1d2ef0d041b93c0cab08f721fff8b55fe0b95a72762e7f846c7c0b",
+    "bytes": 266
+  },
+  {
+    "path": "Models/Liveries/CRJ900/JZA-2.xml",
+    "gitBlob": "4ec734aef128c3ab4867dab66b6ef431d7500142",
+    "sha256": "d0fc0f75d612577dbf5de7ef6bd25f38a9c018364b6431f20d2ca343d583462e",
+    "bytes": 266
+  },
+  {
+    "path": "Models/Liveries/CRJ900/JZA-3.xml",
+    "gitBlob": "7bf597a3067ceab88b6e9dd007017e29abcf638a",
+    "sha256": "39e4ec8995de9b18b3039d35a683a84b9c2f05e51a3f42244d72499ea45d6b04",
+    "bytes": 263
+  },
+  {
+    "path": "Models/Liveries/CRJ900/JZA.xml",
+    "gitBlob": "f3068197c6ddede911809855ab595d357900a893",
+    "sha256": "d5768ffc4d909b90e01c64ccc472446bfd3233a56de9366cbe4425d92deea092",
+    "bytes": 263
+  },
+  {
+    "path": "Models/Liveries/CRJ900/SKW.xml",
+    "gitBlob": "0dddf130173eac478b90eb8a582fe8a46364253e",
+    "sha256": "17825119067b403c7940047cfb71adbd6d7df934eede5b7b823e1738de376961",
+    "bytes": 273
+  },
+  {
+    "path": "Models/Liveries/CRJ900ER/ASH.xml",
+    "gitBlob": "fdc9a9e41858d15b2a7ee981771e7fc4553aba96",
+    "sha256": "34e36cb07cf21fe6d1841f754c0492e2a290f37bba5def68e8eb6c0d73619e9f",
+    "bytes": 274
+  },
+  {
+    "path": "Models/Liveries/CRJ900ER/Blank.xml",
+    "gitBlob": "8a6d321a69f3f5e14063535dc232885a32f8c777",
+    "sha256": "59e20c30f25d63554af05c0fa2fdf426b98938d568b024ad059df18915128c64",
+    "bytes": 238
+  },
+  {
+    "path": "Models/Liveries/CRJ900LR/Blank.xml",
+    "gitBlob": "8a6d321a69f3f5e14063535dc232885a32f8c777",
+    "sha256": "59e20c30f25d63554af05c0fa2fdf426b98938d568b024ad059df18915128c64",
+    "bytes": 238
+  },
+  {
+    "path": "Models/CRJ700-engine.ac",
+    "gitBlob": "f0b749262fb8e5407bd331ad396de410373f06b1",
+    "sha256": "6180da399ea52a7ab4039774212f882ebc64ef6eee2917755562f9fc830332bd",
+    "bytes": 119352
+  },
+  {
+    "path": "Models/CRJ700-maingear.ac",
+    "gitBlob": "97c5c6ab50c601718ba7d72a3f9e8d32b35a9959",
+    "sha256": "72f2cbdd44d74aa3b07cd309fe090a9844d880aafa8bded7021316922fdae5c4",
+    "bytes": 981563
+  },
+  {
+    "path": "Models/CRJ700-nosegear.ac",
+    "gitBlob": "5313a323a5905bb04f6fcb75ef896d34bff3b5d2",
+    "sha256": "d13c81ac6934ec3f9c3366a623fa1040da021d5b224e4feee0a295728eaac63a",
+    "bytes": 729999
+  },
+  {
+    "path": "Models/CRJ900.ac",
+    "gitBlob": "7c7db1a73085d12fee40ba59013d55f063e964e7",
+    "sha256": "5e692c1b462b3cf15aca3a0eef2953c809ce48fd04983e5b576c5c0b92504f20",
+    "bytes": 1282217
+  },
+  {
+    "path": "Models/CRJ700-Blank.png",
+    "gitBlob": "dc0e26dd4e661ddacf4ee19e5e876be6e64f5528",
+    "sha256": "8572e5fd5f802b5b420cd19da4b3e9924698c513d4f103e2b8feaf2fddda5f7b",
+    "bytes": 982849
+  },
+  {
+    "path": "Models/CRJ900-Blank.png",
+    "gitBlob": "ad5eee78f9adf69ec0343222b24eb7c3341c23a5",
+    "sha256": "16b4f42cdd2a76d87baa0bc8892bdf60112b5e2099dc6f22041ffb24c8bbfd1a",
+    "bytes": 956055
+  },
+  {
+    "path": "Models/engine.png",
+    "gitBlob": "59190a3e34c6d42e28ecf523983b276598ae8f1f",
+    "sha256": "0297959625e992342d020864a75811c734496c78adea2134f578318992e4f1f7",
+    "bytes": 173111
+  },
+  {
+    "path": "Models/maingear.png",
+    "gitBlob": "658f6046a48887a9304e230f808086846c408361",
+    "sha256": "3aedf7c83071c6194d86b31f570581677326c301c8dccf4aa160a1e0f1b78101",
+    "bytes": 2794158
+  },
+  {
+    "path": "Models/nosegear.png",
+    "gitBlob": "23e6874207efee0b63ad96afa376d52fc60bf6d2",
+    "sha256": "2fbc66429f2eae3a82248a32cb31c1675b01ff285ed4972cfe1e7bd340039355",
+    "bytes": 1597443
+  },
+  {
+    "path": "Models/wheel.png",
+    "gitBlob": "16ba56e620556f6e7f76063a98460064bad347ad",
+    "sha256": "6b3e6040175f94023127023f55025e8a79fc6f4489e5a8db4efa20f4072de902",
+    "bytes": 25883
+  },
+  {
+    "path": "Models/Liveries/CRJ900/JZA.png",
+    "gitBlob": "3c9860c0119b98993ebc9b0d96aa9c40a07a773b",
+    "sha256": "20100aa8d5f7ea9ac2e1e40f9e3b9ddecc82363cc143b05588a3a012a0869619",
+    "bytes": 1025289
+  }
+]

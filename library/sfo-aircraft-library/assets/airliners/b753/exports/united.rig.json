@@ -1,0 +1,2810 @@
+{
+  "aircraft": "b753",
+  "label": "Boeing 757-300",
+  "livery": {
+    "id": "united",
+    "name": "United \u00b7 source globe era",
+    "xml": "Models/Liveries/UAL.xml",
+    "configuration": {
+      "properties": {
+        "sim/model/livery/winglets": false
+      }
+    }
+  },
+  "referenceDimensions": {
+    "length": 54.47,
+    "span": 41.1
+  },
+  "axes": "X aft; Y up; Z port",
+  "bounds": {
+    "min": [
+      -4.586901878577553,
+      -3.4359099864959717,
+      -20.55
+    ],
+    "max": [
+      49.88309812142244,
+      9.97012996673584,
+      20.55
+    ]
+  },
+  "motions": [
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Flap2",
+        "Flap6",
+        "FlapTk3"
+      ],
+      "axis": [
+        0.0,
+        0.12884128093719482,
+        0.991665244102478
+      ],
+      "center": [
+        25.067206902364735,
+        -0.1932000070810318,
+        1.669868074785945
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          0.0
+        ],
+        [
+          1.0,
+          -30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Flap2",
+        "Flap6",
+        "FlapTk3"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#40",
+        "0:Models/757-300.xml#44",
+        "0:Models/757-300.xml#51"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Flap2",
+        "Flap6",
+        "FlapTk3"
+      ],
+      "axis": [
+        0.9987983703613281,
+        -0.04900912940502167,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.0
+        ],
+        [
+          0.167,
+          0.3
+        ],
+        [
+          1.0,
+          0.3
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Flap2",
+        "Flap6",
+        "FlapTk3"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#40",
+        "0:Models/757-300.xml#44",
+        "0:Models/757-300.xml#51"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Flap6"
+      ],
+      "axis": [
+        0.9987983703613281,
+        -0.04900912940502167,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.25
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Flap6"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#44"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Flap6"
+      ],
+      "axis": [
+        0.0,
+        0.12884128093719482,
+        0.991665244102478
+      ],
+      "center": [
+        25.067206902364735,
+        -0.1932000070810318,
+        1.669868074785945
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7,
+          0.0
+        ],
+        [
+          1.0,
+          -15.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Flap6"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#44"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Flap1",
+        "FlapTk1",
+        "FlapTk2",
+        "Flap5"
+      ],
+      "axis": [
+        0.2704906463623047,
+        0.08665184676647186,
+        0.9588150382041931
+      ],
+      "center": [
+        25.072199942056752,
+        0.6168000102043152,
+        7.407743476330661
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          0.0
+        ],
+        [
+          1.0,
+          -30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Flap1",
+        "FlapTk1",
+        "FlapTk2",
+        "Flap5"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#39",
+        "0:Models/757-300.xml#43",
+        "0:Models/757-300.xml#47",
+        "0:Models/757-300.xml#49"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Flap1",
+        "FlapTk1",
+        "FlapTk2",
+        "Flap5"
+      ],
+      "axis": [
+        0.9987983703613281,
+        -0.04900912940502167,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.0
+        ],
+        [
+          0.167,
+          0.3
+        ],
+        [
+          1.0,
+          0.3
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Flap1",
+        "FlapTk1",
+        "FlapTk2",
+        "Flap5"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#39",
+        "0:Models/757-300.xml#43",
+        "0:Models/757-300.xml#47",
+        "0:Models/757-300.xml#49"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Flap5"
+      ],
+      "axis": [
+        0.896882176399231,
+        -0.044008295983076096,
+        -0.4400745928287506
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.15
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Flap5"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#43"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Flap5"
+      ],
+      "axis": [
+        0.2704906463623047,
+        0.08665184676647186,
+        0.9588150382041931
+      ],
+      "center": [
+        25.072199942056752,
+        0.6168000102043152,
+        7.407743476330661
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7,
+          0.0
+        ],
+        [
+          1.0,
+          -15.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Flap5"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#43"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FlapTk1",
+        "FlapTk2"
+      ],
+      "axis": [
+        0.2704906463623047,
+        0.08665184676647186,
+        0.9588150382041931
+      ],
+      "center": [
+        25.072199942056752,
+        0.6168000102043152,
+        7.407743476330661
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7,
+          0.0
+        ],
+        [
+          1.0,
+          -10.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FlapTk1",
+        "FlapTk2"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#47",
+        "0:Models/757-300.xml#49"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Flap3",
+        "Flap7",
+        "FlapTk6"
+      ],
+      "axis": [
+        0.0,
+        0.12884128093719482,
+        -0.991665244102478
+      ],
+      "center": [
+        25.067206902364735,
+        -0.1932000070810318,
+        -1.669868074785945
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Flap3",
+        "Flap7",
+        "FlapTk6"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#41",
+        "0:Models/757-300.xml#45",
+        "0:Models/757-300.xml#55"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Flap3",
+        "Flap7",
+        "FlapTk6"
+      ],
+      "axis": [
+        0.9987983703613281,
+        -0.04900912940502167,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.0
+        ],
+        [
+          0.167,
+          0.3
+        ],
+        [
+          1.0,
+          0.3
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Flap3",
+        "Flap7",
+        "FlapTk6"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#41",
+        "0:Models/757-300.xml#45",
+        "0:Models/757-300.xml#55"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Flap7"
+      ],
+      "axis": [
+        0.9987983703613281,
+        -0.04900912940502167,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.25
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Flap7"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#45"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Flap7"
+      ],
+      "axis": [
+        0.0,
+        0.12884128093719482,
+        -0.991665244102478
+      ],
+      "center": [
+        25.067206902364735,
+        -0.1932000070810318,
+        -1.669868074785945
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7,
+          0.0
+        ],
+        [
+          1.0,
+          15.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Flap7"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#45"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Flap4",
+        "FlapTk7",
+        "FlapTk8",
+        "Flap8"
+      ],
+      "axis": [
+        0.2704906463623047,
+        0.08665184676647186,
+        -0.9588150382041931
+      ],
+      "center": [
+        25.072199942056752,
+        0.6168000102043152,
+        -7.407743476330661
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Flap4",
+        "FlapTk7",
+        "FlapTk8",
+        "Flap8"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#42",
+        "0:Models/757-300.xml#46",
+        "0:Models/757-300.xml#57",
+        "0:Models/757-300.xml#59"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Flap4",
+        "FlapTk7",
+        "FlapTk8",
+        "Flap8"
+      ],
+      "axis": [
+        0.9987983703613281,
+        -0.04900912940502167,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.0
+        ],
+        [
+          0.167,
+          0.3
+        ],
+        [
+          1.0,
+          0.3
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Flap4",
+        "FlapTk7",
+        "FlapTk8",
+        "Flap8"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#42",
+        "0:Models/757-300.xml#46",
+        "0:Models/757-300.xml#57",
+        "0:Models/757-300.xml#59"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Flap8"
+      ],
+      "axis": [
+        0.896882176399231,
+        -0.044008295983076096,
+        0.4400745928287506
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.15
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Flap8"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#46"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Flap8"
+      ],
+      "axis": [
+        0.2704906463623047,
+        0.08665184676647186,
+        -0.9588150382041931
+      ],
+      "center": [
+        25.072199942056752,
+        0.6168000102043152,
+        -7.407743476330661
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7,
+          0.0
+        ],
+        [
+          1.0,
+          15.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Flap8"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#46"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FlapTk7",
+        "FlapTk8"
+      ],
+      "axis": [
+        0.2704906463623047,
+        0.08665184676647186,
+        -0.9588150382041931
+      ],
+      "center": [
+        25.072199942056752,
+        0.6168000102043152,
+        -7.407743476330661
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.7,
+          0.0
+        ],
+        [
+          1.0,
+          10.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FlapTk7",
+        "FlapTk8"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#57",
+        "0:Models/757-300.xml#59"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Slat1"
+      ],
+      "axis": [
+        -0.9812778234481812,
+        -0.19259771704673767,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.15
+        ],
+        [
+          0.833,
+          0.15
+        ],
+        [
+          1.0,
+          0.4
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Slat1"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#122"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Slat1"
+      ],
+      "axis": [
+        -0.470305860042572,
+        -0.0649196058511734,
+        -0.88011234998703
+      ],
+      "center": [
+        26.92890519039498,
+        1.5880000591278076,
+        18.473157859731863
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          -5.0
+        ],
+        [
+          0.833,
+          -5.0
+        ],
+        [
+          1.0,
+          -20.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Slat1"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#122"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Slat4"
+      ],
+      "axis": [
+        -0.9812778234481812,
+        -0.19259771704673767,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.15
+        ],
+        [
+          0.833,
+          0.15
+        ],
+        [
+          1.0,
+          0.4
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Slat4"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#125"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Slat4"
+      ],
+      "axis": [
+        -0.470305860042572,
+        -0.0649196058511734,
+        0.88011234998703
+      ],
+      "center": [
+        26.92890519039498,
+        1.5880000591278076,
+        -18.473157859731863
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          5.0
+        ],
+        [
+          0.833,
+          5.0
+        ],
+        [
+          1.0,
+          20.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Slat4"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#125"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Slat2"
+      ],
+      "axis": [
+        -0.9812778234481812,
+        -0.19259771704673767,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.15
+        ],
+        [
+          0.833,
+          0.15
+        ],
+        [
+          1.0,
+          0.4
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Slat2"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#123"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Slat2"
+      ],
+      "axis": [
+        -0.44721996784210205,
+        -0.06252355873584747,
+        -0.8922359943389893
+      ],
+      "center": [
+        20.367207524293907,
+        0.6657000184059143,
+        6.077026239356045
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          -5.0
+        ],
+        [
+          0.833,
+          -5.0
+        ],
+        [
+          1.0,
+          -20.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Slat2"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#123"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Slat3"
+      ],
+      "axis": [
+        -0.9812778234481812,
+        -0.19259771704673767,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.15
+        ],
+        [
+          0.833,
+          0.15
+        ],
+        [
+          1.0,
+          0.4
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Slat3"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#124"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Slat3"
+      ],
+      "axis": [
+        -0.44721996784210205,
+        -0.06252355873584747,
+        0.8922359943389893
+      ],
+      "center": [
+        20.367207524293907,
+        0.6657000184059143,
+        -6.077026239356045
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          5.0
+        ],
+        [
+          0.833,
+          5.0
+        ],
+        [
+          1.0,
+          20.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Slat3"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#124"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/speedbrake-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilOutL1"
+      ],
+      "axis": [
+        0.27540987730026245,
+        0.08055990189313889,
+        0.9579454660415649
+      ],
+      "center": [
+        24.444703711677203,
+        0.7250000238418579,
+        7.406813566489115
+      ],
+      "factor": 60.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilOutL1"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#130"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/speedbrake-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilOutR1"
+      ],
+      "axis": [
+        0.27540987730026245,
+        0.08055990189313889,
+        -0.9579454660415649
+      ],
+      "center": [
+        24.444703711677203,
+        0.7250000238418579,
+        -7.406813566489115
+      ],
+      "factor": -60.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilOutR1"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#134"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "NoseGear.LeftDr2"
+      ],
+      "axis": [
+        0.9999361038208008,
+        0.0016391949029639363,
+        0.011184880509972572
+      ],
+      "center": [
+        0.49166369163127394,
+        -0.8607000112533569,
+        0.3700929291625396
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.1,
+          68.0
+        ],
+        [
+          0.3,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "NoseGear.LeftDr2"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#94"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "NoseGear.RightDr2"
+      ],
+      "axis": [
+        0.9999371767044067,
+        0.0016391966491937637,
+        -0.011088470928370953
+      ],
+      "center": [
+        0.49166369163127394,
+        -0.8607000112533569,
+        -0.36359304747622684
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.1,
+          -68.0
+        ],
+        [
+          0.3,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "NoseGear.RightDr2"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#96"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "NoseGear.LeftDr1"
+      ],
+      "axis": [
+        -0.998630940914154,
+        0.034332577139139175,
+        -0.03946460038423538
+      ],
+      "center": [
+        -0.4867725376934837,
+        -0.8155999779701233,
+        0.5296898732637426
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          90.0
+        ],
+        [
+          0.8,
+          90.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "NoseGear.LeftDr1"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#93"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "NoseGear.RightDr1"
+      ],
+      "axis": [
+        -0.998630940914154,
+        0.034332577139139175,
+        0.03946460038423538
+      ],
+      "center": [
+        -0.4867725376934837,
+        -0.8155999779701233,
+        -0.5296898732637426
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          -90.0
+        ],
+        [
+          0.8,
+          -90.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "NoseGear.RightDr1"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#95"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "NoseGear.Strut",
+        "NoseGear.StrutLo",
+        "NoseGear.Brace",
+        "NoseGear.ScissorL",
+        "NoseGear.ScissorU",
+        "NoseGear.Tires",
+        "NoseGear.lamp.glass",
+        "nosegear_lamp",
+        "taxi_lamp",
+        "taxi.lamp.glass"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        1.1896733366994103,
+        -0.508899986743927,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          95.0
+        ],
+        [
+          0.25,
+          95.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "NoseGear.Strut",
+        "NoseGear.StrutLo",
+        "NoseGear.Brace",
+        "NoseGear.ScissorL",
+        "NoseGear.ScissorU",
+        "NoseGear.Tires",
+        "NoseGear.lamp.glass",
+        "nosegear_lamp",
+        "taxi_lamp",
+        "taxi.lamp.glass"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#100",
+        "0:Models/757-300.xml#101",
+        "0:Models/757-300.xml#102",
+        "0:Models/757-300.xml#140",
+        "0:Models/757-300.xml#141",
+        "0:Models/757-300.xml#92",
+        "0:Models/757-300.xml#97",
+        "0:Models/757-300.xml#98",
+        "0:Models/757-300.xml#99"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Front_landing_gear"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        0.07550731987806851,
+        -0.23440000414848328,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -50.0
+        ],
+        [
+          0.25,
+          -50.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Front_landing_gear"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#61"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "MainGearDr2"
+      ],
+      "axis": [
+        0.9997269511222839,
+        0.016107818111777306,
+        0.016931423917412758
+      ],
+      "center": [
+        22.213009326671756,
+        -1.154099941253662,
+        0.15159711035003218
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          90.0
+        ],
+        [
+          0.8,
+          90.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "MainGearDr2"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#83"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[3]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "MainGearDr3"
+      ],
+      "axis": [
+        0.9997269511222839,
+        0.016107818111777306,
+        -0.016931423917412758
+      ],
+      "center": [
+        22.213009326671756,
+        -1.154099941253662,
+        -0.15159711035003218
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          -90.0
+        ],
+        [
+          0.8,
+          -90.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "MainGearDr3"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#84"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "MainGearTruckL",
+        "MainGr.Tires1",
+        "MainGr.Tires2"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        23.43294750020423,
+        -2.9066998958587646,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          20.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "MainGearTruckL",
+        "MainGr.Tires1",
+        "MainGr.Tires2"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#86",
+        "0:Models/757-300.xml#88",
+        "0:Models/757-300.xml#89"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "MainGr.Tires1",
+        "MainGr.Tires2",
+        "MainGearTruckL",
+        "MainGear1.Strut",
+        "MainGear1.scissor1",
+        "MainGear1.scissor2",
+        "MainGearDr1",
+        "compression",
+        "Third.arm1",
+        "second.arm1",
+        "first.arm1"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.2378000020980835,
+        3.781040668959401
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -83.9
+        ],
+        [
+          0.25,
+          -83.9
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "MainGr.Tires1",
+        "MainGr.Tires2",
+        "MainGearTruckL",
+        "MainGear1.Strut",
+        "MainGear1.scissor1",
+        "MainGear1.scissor2",
+        "MainGearDr1",
+        "compression",
+        "Third.arm1",
+        "second.arm1",
+        "first.arm1"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#120",
+        "0:Models/757-300.xml#143",
+        "0:Models/757-300.xml#37",
+        "0:Models/757-300.xml#76",
+        "0:Models/757-300.xml#77",
+        "0:Models/757-300.xml#78",
+        "0:Models/757-300.xml#8",
+        "0:Models/757-300.xml#82",
+        "0:Models/757-300.xml#86",
+        "0:Models/757-300.xml#88",
+        "0:Models/757-300.xml#89"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Third.arm1",
+        "second.arm1",
+        "first.arm1"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -1.2515000104904175,
+        3.3706595857431596
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -60.0
+        ],
+        [
+          0.25,
+          -60.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Third.arm1",
+        "second.arm1",
+        "first.arm1"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#120",
+        "0:Models/757-300.xml#143",
+        "0:Models/757-300.xml#37"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "first.arm1"
+      ],
+      "axis": [
+        -0.6434779167175293,
+        -0.6794455647468567,
+        -0.35254770517349243
+      ],
+      "center": [
+        23.395549263632116,
+        -0.49900001287460327,
+        2.679948925914053
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          215.0
+        ],
+        [
+          0.4,
+          215.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "first.arm1"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#37"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "second.arm1"
+      ],
+      "axis": [
+        -0.6432444453239441,
+        -0.6795549988746643,
+        -0.35276272892951965
+      ],
+      "center": [
+        23.424388003589346,
+        -0.46860000491142273,
+        2.6957486236491497
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          50.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "second.arm1"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#120"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "pala1"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.07062000036239624,
+        4.076250349644669
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -70.0
+        ],
+        [
+          0.25,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "pala1"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#103"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "MainGearTruckR",
+        "MainGr.Tires3",
+        "MainGr.Tires4"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        23.43294750020423,
+        -2.9066998958587646,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          20.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "MainGearTruckR",
+        "MainGr.Tires3",
+        "MainGr.Tires4"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#87",
+        "0:Models/757-300.xml#90",
+        "0:Models/757-300.xml#91"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "MainGr.Tires3",
+        "MainGr.Tires4",
+        "MainGearTruckR",
+        "MainGear2.Strut",
+        "MainGear2.scissor1",
+        "MainGear2.scissor2",
+        "MainGearDr4",
+        "compression_2",
+        "Third.arm2",
+        "second.arm2",
+        "first.arm2"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.2378000020980835,
+        -3.781040668959401
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          83.9
+        ],
+        [
+          0.25,
+          83.9
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "MainGr.Tires3",
+        "MainGr.Tires4",
+        "MainGearTruckR",
+        "MainGear2.Strut",
+        "MainGear2.scissor1",
+        "MainGear2.scissor2",
+        "MainGearDr4",
+        "compression_2",
+        "Third.arm2",
+        "second.arm2",
+        "first.arm2"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#121",
+        "0:Models/757-300.xml#144",
+        "0:Models/757-300.xml#38",
+        "0:Models/757-300.xml#79",
+        "0:Models/757-300.xml#80",
+        "0:Models/757-300.xml#81",
+        "0:Models/757-300.xml#85",
+        "0:Models/757-300.xml#87",
+        "0:Models/757-300.xml#9",
+        "0:Models/757-300.xml#90",
+        "0:Models/757-300.xml#91"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Third.arm2",
+        "second.arm2",
+        "first.arm2"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -1.2515000104904175,
+        -3.3706595857431596
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          60.0
+        ],
+        [
+          0.25,
+          60.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Third.arm2",
+        "second.arm2",
+        "first.arm2"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#121",
+        "0:Models/757-300.xml#144",
+        "0:Models/757-300.xml#38"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "first.arm2"
+      ],
+      "axis": [
+        -0.6434779167175293,
+        -0.6794455647468567,
+        0.35254770517349243
+      ],
+      "center": [
+        23.395549263632116,
+        -0.49900001287460327,
+        -2.679948925914053
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -215.0
+        ],
+        [
+          0.4,
+          -215.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "first.arm2"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#38"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "second.arm2"
+      ],
+      "axis": [
+        -0.6432444453239441,
+        -0.6795549988746643,
+        0.35276272892951965
+      ],
+      "center": [
+        23.424388003589346,
+        -0.46860000491142273,
+        -2.6957486236491497
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -50.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "second.arm2"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#121"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "pala2"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.07062000036239624,
+        -4.076250349644669
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          70.0
+        ],
+        [
+          0.25,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "pala2"
+      ],
+      "model": "Models/757-300.xml",
+      "scope": "0:Models/757-300.xml",
+      "targetPartIds": [
+        "0:Models/757-300.xml#108"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[0]/rpm",
+      "spinDirection": -1,
+      "inputScale": 1,
+      "targets": [
+        "center.1",
+        "turbofan_1"
+      ],
+      "axis": [
+        -0.9986174702644348,
+        0.0,
+        -0.05256477743387222
+      ],
+      "center": [
+        17.842960662230748,
+        -1.045699954032898,
+        6.602475046066371
+      ],
+      "factor": -30.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "center.1",
+        "turbofan_1"
+      ],
+      "model": "Models/757-200-RRengines.xml",
+      "scope": "0:Models/757-300.xml/0:RR_engines",
+      "targetPartIds": [
+        "0:Models/757-300.xml/0:RR_engines#0",
+        "0:Models/757-300.xml/0:RR_engines#36"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[0]/rpm",
+      "spinDirection": -1,
+      "inputScale": 1,
+      "targets": [
+        "engine.1.fan2"
+      ],
+      "axis": [
+        0.9985930323600769,
+        0.0,
+        0.053027741611003876
+      ],
+      "center": [
+        20.88363243029848,
+        -1.093500018119812,
+        6.76402471687052
+      ],
+      "factor": -30.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "engine.1.fan2"
+      ],
+      "model": "Models/757-200-RRengines.xml",
+      "scope": "0:Models/757-300.xml/0:RR_engines",
+      "targetPartIds": [
+        "0:Models/757-300.xml/0:RR_engines#27"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[1]/rpm",
+      "spinDirection": -1,
+      "inputScale": 1,
+      "targets": [
+        "center.2",
+        "turbofan_2"
+      ],
+      "axis": [
+        -0.9986174702644348,
+        0.0,
+        0.05256477743387222
+      ],
+      "center": [
+        17.842960662230748,
+        -1.045699954032898,
+        -6.602475046066371
+      ],
+      "factor": -30.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "center.2",
+        "turbofan_2"
+      ],
+      "model": "Models/757-200-RRengines.xml",
+      "scope": "0:Models/757-300.xml/0:RR_engines",
+      "targetPartIds": [
+        "0:Models/757-300.xml/0:RR_engines#1",
+        "0:Models/757-300.xml/0:RR_engines#37"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[0]/rpm",
+      "spinDirection": -1,
+      "inputScale": 1,
+      "targets": [
+        "engine.2.fan2"
+      ],
+      "axis": [
+        0.9985930323600769,
+        0.0,
+        -0.053027741611003876
+      ],
+      "center": [
+        20.88363243029848,
+        -1.093500018119812,
+        -6.76402471687052
+      ],
+      "factor": -30.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "engine.2.fan2"
+      ],
+      "model": "Models/757-200-RRengines.xml",
+      "scope": "0:Models/757-300.xml/0:RR_engines",
+      "targetPartIds": [
+        "0:Models/757-300.xml/0:RR_engines#29"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "sim/multiplay/generic/float[6]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "left.reverser"
+      ],
+      "axis": [
+        0.9856671690940857,
+        -0.12327689677476883,
+        0.11516551673412323
+      ],
+      "center": [
+        19.33669971805699,
+        -0.04859999939799309,
+        6.219879698467777
+      ],
+      "factor": 0.7,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "left.reverser"
+      ],
+      "model": "Models/757-200-RRengines.xml",
+      "scope": "0:Models/757-300.xml/0:RR_engines",
+      "targetPartIds": [
+        "0:Models/757-300.xml/0:RR_engines#32"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "sim/multiplay/generic/float[7]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "right.reverser"
+      ],
+      "axis": [
+        0.9856671690940857,
+        -0.12327689677476883,
+        -0.11516551673412323
+      ],
+      "center": [
+        19.33669971805699,
+        -0.04859999939799309,
+        -6.219879698467777
+      ],
+      "factor": 0.7,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "right.reverser"
+      ],
+      "model": "Models/757-200-RRengines.xml",
+      "scope": "0:Models/757-300.xml/0:RR_engines",
+      "targetPartIds": [
+        "0:Models/757-300.xml/0:RR_engines#34"
+      ]
+    }
+  ],
+  "gearInternalParts": [
+    "compression",
+    "compression_2",
+    "first.arm1",
+    "first.arm2",
+    "Front_landing_gear",
+    "MainGear1.scissor1",
+    "MainGear1.scissor2",
+    "MainGear1.Strut",
+    "MainGear2.scissor1",
+    "MainGear2.scissor2",
+    "MainGear2.Strut",
+    "MainGearDr1",
+    "MainGearDr2",
+    "MainGearDr3",
+    "MainGearDr4",
+    "MainGearTruckL",
+    "MainGearTruckR",
+    "MainGr.Tires1",
+    "MainGr.Tires2",
+    "MainGr.Tires3",
+    "MainGr.Tires4",
+    "NoseGear.lamp.glass",
+    "NoseGear.LeftDr1",
+    "NoseGear.LeftDr2",
+    "NoseGear.RightDr1",
+    "NoseGear.RightDr2",
+    "NoseGear.ScissorL",
+    "NoseGear.ScissorU",
+    "NoseGear.Strut",
+    "NoseGear.StrutLo",
+    "NoseGear.Tires",
+    "nosegear_lamp",
+    "pala1",
+    "pala2",
+    "second.arm1",
+    "second.arm2",
+    "taxi.lamp.glass",
+    "taxi_lamp",
+    "Third.arm1",
+    "Third.arm2"
+  ],
+  "gearInternalPartIds": [
+    "0:Models/757-300.xml#8",
+    "0:Models/757-300.xml#9",
+    "0:Models/757-300.xml#37",
+    "0:Models/757-300.xml#38",
+    "0:Models/757-300.xml#61",
+    "0:Models/757-300.xml#76",
+    "0:Models/757-300.xml#77",
+    "0:Models/757-300.xml#78",
+    "0:Models/757-300.xml#79",
+    "0:Models/757-300.xml#80",
+    "0:Models/757-300.xml#81",
+    "0:Models/757-300.xml#82",
+    "0:Models/757-300.xml#83",
+    "0:Models/757-300.xml#84",
+    "0:Models/757-300.xml#85",
+    "0:Models/757-300.xml#86",
+    "0:Models/757-300.xml#87",
+    "0:Models/757-300.xml#88",
+    "0:Models/757-300.xml#89",
+    "0:Models/757-300.xml#90",
+    "0:Models/757-300.xml#91",
+    "0:Models/757-300.xml#92",
+    "0:Models/757-300.xml#93",
+    "0:Models/757-300.xml#94",
+    "0:Models/757-300.xml#95",
+    "0:Models/757-300.xml#96",
+    "0:Models/757-300.xml#97",
+    "0:Models/757-300.xml#98",
+    "0:Models/757-300.xml#99",
+    "0:Models/757-300.xml#100",
+    "0:Models/757-300.xml#101",
+    "0:Models/757-300.xml#102",
+    "0:Models/757-300.xml#103",
+    "0:Models/757-300.xml#108",
+    "0:Models/757-300.xml#120",
+    "0:Models/757-300.xml#121",
+    "0:Models/757-300.xml#140",
+    "0:Models/757-300.xml#141",
+    "0:Models/757-300.xml#143",
+    "0:Models/757-300.xml#144"
+  ],
+  "missingTextures": [],
+  "sourceAC": [
+    "Models/757-300.ac",
+    "Models/757-200RB211engines.ac",
+    "Models/winglets.ac"
+  ],
+  "discardedUnreferencedVertices": 148,
+  "provenance": "preparation/757-200",
+  "variantConstruction": {
+    "spanStations": {
+      "stations": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          18.5139,
+          19.025
+        ],
+        [
+          19.178,
+          20.55
+        ]
+      ],
+      "basis": "Boeing/APB winglet span table: baseline 38.05 m; APB-equipped 41.1 m. Source wing and tip transverse stations corrected separately; inboard body width retained. Native attachment overlap remains joined.",
+      "references": [
+        "https://www.boeing.com/content/dam/boeing/v2/airports/faq/wingletspans.pdf"
+      ],
+      "method": "Piecewise transverse station correction, preserving longitudinal/vertical sections. Meshes and mechanism pivots use the same map."
+    }
+  },
+  "capabilities": [
+    "fans",
+    "flaps",
+    "gear",
+    "reversers",
+    "spoilers"
+  ],
+  "reviewPoints": {
+    "cockpit": [
+      -2.3484673500061035,
+      1.5437685251235962,
+      0.00311067677102983
+    ],
+    "engine": [
+      19.95457649230957,
+      -1.1629400253295898,
+      6.674893379211426
+    ],
+    "gear": [
+      1.2449026107788086,
+      -2.8379600048065186,
+      -0.00043998658657073975
+    ],
+    "wing": [
+      25.1912784576416,
+      0.16945502161979675,
+      4.522495269775391
+    ]
+  },
+  "fidelityNotes": [
+    "APB winglet-equipped configuration: explicit native winglet assembly retained with Boeing/APB 41.1 m reference span. Native source selection restricted winglets to RR variants; this conversion selects the physical assembly independently of that simulator-era restriction."
+  ],
+  "reviewStatus": "build-awaiting-validation",
+  "addedDoorWindowPanes": 0,
+  "fittedCockpitOpenings": 0,
+  "fittedCabinOpenings": 0,
+  "envelopeCalibration": {
+    "rawDimensions": {
+      "length": 53.454779624938965,
+      "span": 41.10078430175781
+    },
+    "axisScale": [
+      1.018992134701223,
+      1,
+      0.9999809175963151
+    ]
+  },
+  "skippedSourceModels": [
+    "Aircraft/757-200/Models/winglets.ac [parent selection false]",
+    "Aircraft/757-200/Models/Flightdeck/Flightdeck.xml",
+    "Aircraft/757-200/Models/Pushback/pushback.xml",
+    "Aircraft/757-200/Models/Services/services_300.ac",
+    "Aircraft/757-200/Models/Effects/contrail-eng1.xml",
+    "Aircraft/757-200/Models/Effects/contrail-eng2.xml",
+    "Aircraft/757-200/Models/Effects/vaportrail.xml",
+    "Aircraft/757-200/Models/Effects/vaportrail.xml",
+    "Aircraft/Generic/Effects/tyre-smoke-nose.xml",
+    "Aircraft/Generic/Effects/tyre-smoke-port.xml",
+    "Aircraft/Generic/Effects/tyre-smoke-stbd.xml",
+    "Aircraft/757-200/Models/Effects/enginefire.xml",
+    "Aircraft/757-200/Models/Effects/enginefire.xml"
+  ],
+  "unresolvedMotions": [],
+  "cargo": false
+}

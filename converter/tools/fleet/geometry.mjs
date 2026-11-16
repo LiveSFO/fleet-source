@@ -60,6 +60,160 @@ export function kitTransform(libPositions) {
   return { P, pitchDeg: -a * 180 / Math.PI, floatM: h, contacts: c };
 }
 
+/** a kit profile's height at station z (fus.top or fus.bot: [[z, y from yc], …]) */
+const profileAt = (pts, z) => {
+  if (z <= pts[0][0]) return pts[0][1];
+  for (let i = 1; i < pts.length; i++) if (pts[i][0] >= z) { const [z0, y0] = pts[i - 1], [z1, y1] = pts[i]; return y0 + (y1 - y0) * (z - z0) / Math.max(1e-9, z1 - z0); }
+  return pts[pts.length - 1][1];
+};
+const median = a => { const s = a.filter(Number.isFinite).sort((p, q) => p - q); return s.length ? s[s.length >> 1] : NaN; };
+
+/**
+ * The library model fitted to its kit twin (the crowd model a selection swaps it for; D-149: "the current model and the
+ * hifi models are not of the same dimension … the switch over is not smooth"). The library's models stand on unloaded
+ * gear (their struts fully extended, as in flight), so levelling them on their own tyres (kitTransform) left the body
+ * about 0.4 m above the kit's and pitched it nose down by up to 1.3°, lifting the fin tip a metre. Here, instead:
+ *   - the body is levelled by its crown over the cabin (15–62 % of the length), as the kit stands;
+ *   - and raised or lowered so its crown (cabin) and belly (forward of the wing box) meet the kit's: the centrelines
+ *     coincide;
+ *   - then each gear leg is compressed (or extended) by what its tyres sank (or floated): the vertices below a cut just
+ *     above its tyres move up with them, so the oleo slides into its strut, as a loaded gear's does;
+ *   - the nose tip at z = 0, as before.
+ * Parts that move with the gear and stand clear of the cut (doors, bay hardware) move with the body. The rig's motions
+ * are re-expressed through P as before; a compressed leg retracts about the same pivots.
+ * @param {{pos: Float32Array, idx: Uint32Array}[]} meshes each part's mesh in the library frame (gear down)
+ * @param {boolean[]} isGear the parts the gear moves (or bay hardware)
+ * @param {any} twin the kit type (AL_TYPES): fus.yc, fus.top, fus.bot, gear.nose.z, gear.main.z
+ */
+export function kitFit(meshes, isGear, twin) {
+  const R0 = { R: LIB_TO_KIT, t: [0, 0, 0] };
+  const toKit = P => { const o = new Float32Array(P.length); for (let i = 0; i < P.length; i += 3) { o[i] = -P[i + 2]; o[i + 1] = P[i + 1]; o[i + 2] = P[i]; } return o; };
+  const rot = meshes.map(m => toKit(m.pos));
+  const c = contacts(rot), S = bodySlices(rot, meshes, isGear), { L, zMin } = S;
+  const crown = [], belly = [];
+  for (let s = 0; s < S.nb; s++) {
+    const f = (S.zs(s) - zMin) / L;
+    if (f >= 0.1 && f <= 0.72 && Number.isFinite(S.top[s])) crown.push([S.top[s], S.zs(s)]);
+    if (f >= 0.1 && f <= 0.3 && Number.isFinite(S.bot[s])) belly.push([S.bot[s], S.zs(s)]);
+  }
+  if (crown.length < 20) return null;
+  const noseV = []; for (const P of rot) for (let i = 0; i < P.length; i += 3) if (P[i + 2] < zMin + 2.5) noseV.push(P[i + 1], P[i + 2]);
+  // pitch and height together: the body turned about its main gear contact until its crown and belly follow the kit's
+  // (yc + fus.top, yc + fus.bot) best, by the median distance (robust to fairings, antennas, a 747's hump)
+  const my = c.main.y, mz = c.main.z, yc = twin.fus.yc;
+  const evalA = a => {
+    const ca = Math.cos(a), sa = Math.sin(a), ry = (y, z) => my + ca * (y - my) - sa * (z - mz), rz = (y, z) => mz + sa * (y - my) + ca * (z - mz);
+    let zN = Infinity; for (let i = 0; i < noseV.length; i += 2) { const z = rz(noseV[i], noseV[i + 1]); if (z < zN) zN = z; }
+    const rc = crown.map(([y, z]) => yc + profileAt(twin.fus.top, rz(y, z) - zN) - ry(y, z));
+    const rb = belly.map(([y, z]) => yc + profileAt(twin.fus.bot, rz(y, z) - zN) - ry(y, z));
+    const mc = median(rc), mb = rb.length >= 8 ? median(rb) : NaN;
+    const cost = median(rc.map(r => Math.abs(r - mc))) + (Number.isFinite(mb) ? median(rb.map(r => Math.abs(r - mb))) : 0);
+    return { a, zN, mc, mb, cost };
+  };
+  let best = null;
+  for (let d = -5; d <= 5.001; d += 0.1) { const r = evalA(d * Math.PI / 180); if (!best || r.cost < best.cost) best = r; }
+  for (let d = -0.1; d <= 0.1001; d += 0.01) { const r = evalA(best.a + d * Math.PI / 180); if (r.cost < best.cost) best = r; }
+  const { a, zN, mc, mb } = best, ca = Math.cos(a), sa = Math.sin(a);
+  // the centrelines meet: the crown and belly each off by half of any difference in the body's depth
+  const dy = Number.isFinite(mb) ? (mc + mb) / 2 : mc;
+  const Rx = [1, 0, 0, 0, ca, -sa, 0, sa, ca], Rm = rotate(Rx, [0, my, mz]);
+  const P = compose({ R: [1, 0, 0, 0, 1, 0, 0, 0, 1], t: [0, dy, -zN] }, compose({ R: Rx, t: [0, my - Rm[1], mz - Rm[2]] }, R0));
+  // the gear legs: the nose leg ahead of mid-wheelbase, the others by side and by how far out (gaps over 1.2 m)
+  const mid = (twin.gear.nose.z + twin.gear.main.z) / 2, info = [];
+  meshes.forEach((M, k) => {
+    if (!isGear[k] || !M.pos.length) return;
+    let y0 = Infinity, y1 = -Infinity, sx = 0, sz = 0, n = 0;
+    for (let i = 0; i < M.pos.length; i += 3) { const v = apply(P, [M.pos[i], M.pos[i + 1], M.pos[i + 2]]); if (v[1] < y0) y0 = v[1]; if (v[1] > y1) y1 = v[1]; sx += v[0]; sz += v[2]; n++; }
+    info.push({ k, y0, y1, x: sx / n, z: sz / n });
+  });
+  const groups = [];
+  const nose = info.filter(p => p.z < mid), rest = info.filter(p => p.z >= mid);
+  if (nose.length) groups.push({ name: 'nose', parts: nose });
+  for (const side of [-1, 1]) {
+    const sp = rest.filter(p => (p.x < 0 ? -1 : 1) === side).sort((p, q) => Math.abs(p.x) - Math.abs(q.x));
+    let cur = null;
+    for (const p of sp) { if (!cur || Math.abs(p.x) - cur.last > 1.2) { cur = { name: `${side < 0 ? 'left' : 'right'} ${groups.length}`, parts: [], last: 0 }; groups.push(cur); } cur.parts.push(p); cur.last = Math.abs(p.x); }
+  }
+  const legs = [];
+  for (const g of groups) {
+    const low = g.parts.reduce((b, p) => (p.y0 < b.y0 ? p : b), g.parts[0]);
+    if (!(Math.abs(low.y0) < 1.2)) continue;   // no tyre near the ground: doors or bay parts only
+    const R = Math.max(0.3, Math.min(0.8, (low.y1 - low.y0) / 2));
+    // the axles: the bottom of the leg along its length (10 cm bins), each local low within a tyre's radius one tyre
+    const bins = new Map();
+    for (const p of g.parts) { const M = meshes[p.k]; for (let i = 0; i < M.pos.length; i += 3) { const v = apply(P, [M.pos[i], M.pos[i + 1], M.pos[i + 2]]); if (v[1] > low.y0 + 2.5) continue; const b = Math.round(v[2] / 0.1); if (!bins.has(b) || v[1] < bins.get(b)) bins.set(b, v[1]); } }
+    const keys = [...bins.keys()].sort((p, q) => p - q), axles = [];
+    for (const b of keys) {
+      const y = bins.get(b); if (y > low.y0 + 1.2) continue;
+      let lowest = true; for (let o = -4; o <= 4 && lowest; o++) if (o && bins.has(b + o) && bins.get(b + o) < y) lowest = false;
+      if (lowest && !axles.some(a => Math.abs(a[0] - b * 0.1) < 0.6)) axles.push([+(b * 0.1).toFixed(2), +y.toFixed(3)]);
+    }
+    const tiltDeg = axles.length > 1 ? Math.atan2(axles[axles.length - 1][1] - axles[0][1], axles[axles.length - 1][0] - axles[0][0]) * 180 / Math.PI : 0;
+    // the leg's moving parts: those reaching down into the wheels' half (tyres, axles, bogie, the oleo's piston); doors
+    // and bay hardware that stop short of it stay as they are
+    legs.push({ name: g.name, parts: new Set(g.parts.filter(p => p.y0 < low.y0 + R + 0.15).map(p => p.k)), cut: low.y0 + 2 * R + 0.08, d: -low.y0, y0: low.y0, R, axles, tiltDeg });
+  }
+  // for the record (and FIT_DEBUG): the profiles after the fit
+  const fitted = ([y, z], prof) => { const v = apply(P, [z, y, -0]); return [+v[2].toFixed(2), +v[1].toFixed(3), +(yc + profileAt(prof, v[2])).toFixed(3)]; };
+  const sec = f => { const s = Math.round((f * L) / S.BIN); return { f, depth: Number.isFinite(S.top[s]) && Number.isFinite(S.bot[s]) ? +(S.top[s] - S.bot[s]).toFixed(3) : null, halfW: +S.half[s].toFixed(3) }; };
+  return {
+    P, pitchDeg: -a * 180 / Math.PI, dyM: dy, depthM: Number.isFinite(mb) ? mb - mc : null, spreadM: best.cost, legs, contacts: c,
+    debug: { L, crown: crown.map(p => fitted(p, twin.fus.top)), belly: belly.map(p => fitted(p, twin.fus.bot)), sections: [0.25, 0.4, 0.55].map(sec) }
+  };
+}
+
+/**
+ * The body's sections, in kit axes about the library's origin: the fuselage-sized parts (not the gear; longer than a
+ * quarter of the aircraft, narrower than 8 m) sliced across every BIN metres. Where a slice of a triangle crosses the
+ * centre plane, its height there is a crown (highest) or belly (lowest) candidate; every slice point is a half-width
+ * candidate. (The library's fuselages are long quads: their vertices miss most stations, so the triangles are sliced.)
+ */
+export function bodySlices(rot, meshes, isGear, BIN = 0.25) {
+  let zMin = Infinity, zMax = -Infinity;
+  for (const P of rot) for (let i = 2; i < P.length; i += 3) { if (P[i] < zMin) zMin = P[i]; if (P[i] > zMax) zMax = P[i]; }
+  const L = zMax - zMin, nb = Math.ceil(L / BIN) + 2, zs = b => zMin + b * BIN;
+  const body = rot.map((P, k) => {
+    if (isGear[k] || !P.length) return false;
+    let x0 = Infinity, x1 = -Infinity, z0 = Infinity, z1 = -Infinity;
+    for (let i = 0; i < P.length; i += 3) { if (P[i] < x0) x0 = P[i]; if (P[i] > x1) x1 = P[i]; if (P[i + 2] < z0) z0 = P[i + 2]; if (P[i + 2] > z1) z1 = P[i + 2]; }
+    return z1 - z0 > 0.25 * L && x1 - x0 < 8;
+  });
+  const top = new Float64Array(nb).fill(-Infinity), bot = new Float64Array(nb).fill(Infinity), half = new Float64Array(nb);
+  rot.forEach((P, k) => {
+    if (!body[k]) return;
+    const I = meshes[k].idx;
+    for (let t = 0; t < I.length; t += 3) {
+      const a = I[t] * 3, b = I[t + 1] * 3, d = I[t + 2] * 3, vs = [[P[a], P[a + 1], P[a + 2]], [P[b], P[b + 1], P[b + 2]], [P[d], P[d + 1], P[d + 2]]];
+      const lo = Math.min(vs[0][2], vs[1][2], vs[2][2]), hi = Math.max(vs[0][2], vs[1][2], vs[2][2]);
+      for (let s = Math.ceil((lo - zMin) / BIN); s <= Math.floor((hi - zMin) / BIN); s++) {
+        const z = zs(s), pts = [];
+        for (let e = 0; e < 3; e++) { const p = vs[e], q = vs[(e + 1) % 3]; if ((p[2] - z) * (q[2] - z) > 0 || p[2] === q[2]) continue; const f = (z - p[2]) / (q[2] - p[2]); pts.push([p[0] + f * (q[0] - p[0]), p[1] + f * (q[1] - p[1])]); }
+        if (pts.length < 2) continue;
+        const [u, v] = pts;
+        for (const w of pts) if (Math.abs(w[0]) > half[s]) half[s] = Math.abs(w[0]);
+        if (u[0] * v[0] > 0 && Math.min(Math.abs(u[0]), Math.abs(v[0])) > 0.05) continue;   // not across the centre plane
+        const g = Math.abs(v[0] - u[0]) < 1e-9 ? 0.5 : Math.max(0, Math.min(1, -u[0] / (v[0] - u[0]))), y = u[1] + g * (v[1] - u[1]);
+        if (y > top[s]) top[s] = y; if (y < bot[s]) bot[s] = y;
+      }
+    }
+  });
+  return { zMin, L, BIN, nb, zs, top, bot, half };
+}
+
+/** a leg's compression, in place (kit frame): the vertices below its cut move by its d (up: the strut shortens) */
+export function compressLeg(mesh, leg) {
+  for (let i = 1; i < mesh.pos.length; i += 3) if (mesh.pos[i] < leg.cut) mesh.pos[i] += leg.d;
+  return mesh;
+}
+
+/** a mesh split at a height (kit frame): the triangles with a corner below it, and the rest (either may be null) */
+export function splitBelow(mesh, cut) {
+  const lo = [], hi = [], I = mesh.idx, P = mesh.pos;
+  for (let t = 0; t < I.length; t += 3) (P[I[t] * 3 + 1] < cut || P[I[t + 1] * 3 + 1] < cut || P[I[t + 2] * 3 + 1] < cut ? lo : hi).push(I[t], I[t + 1], I[t + 2]);
+  const part = list => (list.length ? compact({ ...mesh, idx: Uint32Array.from(list) }) : null);
+  return [part(lo), part(hi)];
+}
+
 /** a mesh moved by P (positions) and its rotation (normals) */
 export function transformMesh(mesh, P) {
   const pos = new Float32Array(mesh.pos.length), nrm = new Float32Array(mesh.nrm.length);

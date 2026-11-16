@@ -1,3 +1,6 @@
-# the paint maps (110 MB of PNG) are in the release zip, not the git tree
+# the paint maps, the baked liveries' source images and the redrawn paint of livesfo's liveries on the library's
+# airframes (PNG, about 150 MB) are in the release zip, not the git tree
 library/**/generated/
+bakes/
+reverse/
 .DS_Store

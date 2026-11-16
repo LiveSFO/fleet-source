@@ -30,9 +30,11 @@ import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { readGLB, accessor, imageBytes, meshopt, MeshoptPacker } from './fleet/gltf.mjs';
 import { decodePNG, encodePNG, resize, stats } from './fleet/image.mjs';
-import { kitTransform, transformMesh, concat, weld, simplify, reorder, quantize, bounds, apply } from './fleet/geometry.mjs';
-import { matches, motionOut, lightsOut } from './fleet/rig.mjs';
-import { BATCH, EXCLUDE_AIRFRAMES, SKIP_LIVERY, SKIP_SELECTOR, SPECIAL, IATA_ICAO, INTERIOR_TEXTURES, HIDDEN_NODES, DETENTS, TEX, GEO, PACKAGE_INFO } from './fleet/config.mjs';
+import { kitTransform, kitFit, compressLeg, splitBelow, transformMesh, concat, weld, simplify, reorder, quantize, bounds, apply } from './fleet/geometry.mjs';
+import vm from 'node:vm';
+import { matches, chainFor, motionOut, lightsOut, valueAt } from './fleet/rig.mjs';
+import { BATCH, EXCLUDE_AIRFRAMES, SKIP_LIVERY, SKIP_SELECTOR, SPECIAL, IATA_ICAO, INTERIOR_TEXTURES, HIDDEN_NODES, DETENTS, TEX, GEO, PACKAGE_INFO, ENGINE_FIX, GEAR_FIX, STRETCH_FIX } from './fleet/config.mjs';
+import { kitFor, isFreighter } from './fleet/kitkey.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const argv = process.argv.slice(2);
@@ -79,6 +81,18 @@ function put(dir, ext, buf, compress = true) {
 /* ---------------- the library's records ---------------- */
 const handoff = JSON.parse(fs.readFileSync(path.join(LIB, 'asset-handoff-manifest.json'), 'utf8'));
 const coverage = JSON.parse(fs.readFileSync(path.join(LIB, 'sfo-build-coverage.json'), 'utf8'));
+// the kit's types (client/vendor/airliners, read only), for each airframe's twin: the crowd model a selection swaps it
+// for, found as the crowd finds it (the type's ICAO code → shared/aircraft-types.json → the kit key)
+const KIT = (() => {
+  const dir = path.join(ROOT, 'client/vendor/airliners'), ctx = vm.createContext({ console });
+  vm.runInContext(fs.readFileSync(path.join(ROOT, 'client/vendor/three/three.iife.js'), 'utf8'), ctx);
+  const files = fs.readdirSync(dir).filter(f => /^1\d_.*\.js$/.test(f)).sort();
+  vm.runInContext(files.map(f => fs.readFileSync(path.join(dir, f), 'utf8')).join('\n;') + '\n;this.AL_TYPES = AL_TYPES;', ctx);
+  return ctx.AL_TYPES;
+})();
+// (tools/fleet/kitkey.mjs: as the registry resolves the type for the client; a freighter airframe's twin is the kit's
+// freighter model of its type where it has one: the 777F's is b777f, whose body sits 8 cm higher than the 777-200LR's)
+const TWIN = {}; for (const c of coverage.combinations) { const a = c.asset, k = a && kitFor(c.canonicalType, isFreighter(a.aircraft)); if (k && !TWIN[a.aircraft]) TWIN[a.aircraft] = k; }
 const libPkg = (() => { try { return JSON.parse(fs.readFileSync(path.join(SRC, 'sync.json'), 'utf8')); } catch { return {}; } })();
 
 /** the licence of a source package, from the library's evidence string */
@@ -118,7 +132,8 @@ function matKey(L, k) {
     bc: img(texOf(L.json, pbr.baseColorTexture)), f: (pbr.baseColorFactor || [1, 1, 1, 1]).map(r4), m: r4(pbr.metallicFactor ?? 1), r: r4(pbr.roughnessFactor ?? 1),
     mr: img(texOf(L.json, pbr.metallicRoughnessTexture)), n: img(texOf(L.json, m.normalTexture)), e: (m.emissiveFactor || [0, 0, 0]).map(r4),
     cc: cc ? [r4(cc.clearcoatFactor || 0), r4(cc.clearcoatRoughnessFactor || 0)] : null, a: m.alphaMode || 'OPAQUE', ac: m.alphaCutoff, ds: !!m.doubleSided,
-    g: !!(m.extras && m.extras.cockpitGlazing), w: !!(m.extras && m.extras.cabinWindow && !pbr.baseColorTexture)
+    g: !!(m.extras && m.extras.cockpitGlazing), w: !!(m.extras && m.extras.cabinWindow && !pbr.baseColorTexture),
+    ...(m.extras && m.extras.cabinWindow && m.emissiveTexture ? { cm: img(texOf(L.json, m.emissiveTexture)) } : {})   // a cabin-window mask (737 MAX)
   });
 }
 
@@ -184,6 +199,28 @@ function imageStats(json, bin, i, hash) {
 async function pool(items, n, fn) { const out = new Array(items.length); let i = 0; await Promise.all(Array.from({ length: Math.min(n, items.length) }, async () => { while (i < items.length) { const k = i++; out[k] = await fn(items[k], k); } })); return out; }
 
 /** a mesh's surface area (m²) and the area its UVs cover (in units of the image, tiling counted) */
+/**
+ * A few of the library's vertices carry UVs hundreds or thousands of units out (the 767's fuselage ±1,555 while 98 %
+ * lie in 0–1; some engine cones ±60): stray, on slivers nobody sees, but each slot's UVs are quantized over their full
+ * range (GEO.uvBits), so one stray vertex spread the 767's paint over thousands of repeats and smeared it into
+ * stripes (its hi-fi model and so its bakes, D-149). Coordinates outside the middle 98 % (± half a unit) are moved by
+ * whole repeats toward the median (the sampler repeats), then clamped. Returns how many moved. In place.
+ */
+function wrapStrayUVs(m) {
+  const U = m.uv; if (!U || U.length < 8) return 0;
+  const n = U.length / 2, us = new Float64Array(n), vs = new Float64Array(n);
+  for (let i = 0; i < n; i++) { us[i] = U[2 * i]; vs[i] = U[2 * i + 1]; }
+  us.sort(); vs.sort();
+  const at = (a, f) => a[Math.min(n - 1, Math.floor(f * n))];
+  const lo = [at(us, 0.01) - 0.5, at(vs, 0.01) - 0.5], hi = [at(us, 0.99) + 0.5, at(vs, 0.99) + 0.5], mid = [at(us, 0.5), at(vs, 0.5)];
+  let moved = 0;
+  for (let i = 0; i < U.length; i += 2) for (let c = 0; c < 2; c++) {
+    let x = U[i + c]; if (x >= lo[c] && x <= hi[c]) continue;
+    x -= Math.round(x - mid[c]); U[i + c] = Math.max(lo[c], Math.min(hi[c], x)); moved++;
+  }
+  return moved;
+}
+
 function surfaceOf(m) {
   let area = 0, uvArea = 0; const P = m.pos, U = m.uv, I = m.idx;
   for (let t = 0; t < I.length; t += 3) {
@@ -213,34 +250,124 @@ async function convertVariant(af, liveries, MO, report) {
     const tris = prims.reduce((s, p) => s + json.accessors[p.indices].count / 3, 0);
     const interior = prims.every(p => INTERIOR_TEXTURES.has(imgName(texOf(json, (json.materials[p.material].pbrMetallicRoughness || {}).baseColorTexture))));
     if (interior || HIDDEN_NODES.test(n.name) || HIDDEN_NODES.test(x.sourceName || '')) { droppedTris += tris; continue; }
-    const mi = []; motions.forEach((m, i) => { if (matches(m, x)) mi.push(i); });
+    const all = []; motions.forEach((m, i) => { if (matches(m, x)) all.push(i); });
+    const mi = chainFor(motions, all, x);   // FlightGear's nesting, outermost first; a motion listed twice, once
     const internal = x.sourcePartId !== undefined && internalIds.size ? internalIds.has(x.sourcePartId) : internalNames.has(x.sourceName || n.name);
     parts.push({ node: n, mi, internal, prims: prims.map((p, j) => ({ j, mat: p.material, mesh: { pos: accessor(json, bin, p.attributes.POSITION), nrm: accessor(json, bin, p.attributes.NORMAL), uv: p.attributes.TEXCOORD_0 !== undefined ? accessor(json, bin, p.attributes.TEXCOORD_0) : null, idx: Uint32Array.from(accessor(json, bin, p.indices)) } })) });
   }
-  // ---- into the kit frame, levelled on the gear (gear down: the rest pose)
-  const { P, pitchDeg, floatM, contacts } = kitTransform(parts.flatMap(p => p.prims.map(q => q.mesh.pos)));
+  // ---- into the kit frame: fitted to its kit twin where it has one (levelled at the twin's height, each gear leg
+  // compressed onto the ground: geometry.mjs kitFit, D-149), else levelled on its own gear (kitTransform)
+  const entries = parts.flatMap((p, pi) => p.prims.map((q, qi) => ({ pi, qi, pos: q.mesh.pos, idx: q.mesh.idx, gear: p.internal || p.mi.some(i => motions[i].control === 'gear') })));
+  const entryOf = new Map(entries.map((e, k) => [`${e.pi}:${e.qi}`, k]));
+  const twinKey = TWIN[af] || null, twinT = twinKey && KIT.get(twinKey);
+  const fit = twinT && twinT.fus && twinT.gear ? kitFit(entries, entries.map(e => e.gear), twinT) : null;
+  const { P, pitchDeg, floatM, contacts } = fit ? { P: fit.P, pitchDeg: fit.pitchDeg, floatM: fit.dyM, contacts: fit.contacts } : kitTransform(entries.map(e => e.pos));
+  const legOf = new Map(); if (fit) for (const leg of fit.legs) for (const k of leg.parts) legOf.set(k, leg);
+  // a leg that has to shorten (the library's stand on unloaded struts, fully extended as in flight) keeps its length in
+  // the geometry: its lower part (below a cut just over the tyres) is a mesh of its own, moved up by a motion of its own,
+  // 'wow' (weight on wheels: 1 on the ground, 0 in the air; traffic.js libState). So in flight the strut hangs extended
+  // as drawn and retracts into its bay as the rig was made, and on the ground it's compressed by what the tyres sank, as
+  // an oleo is. A leg that has to lengthen (the library's is short of the kit's stance) is stretched in the geometry.
+  const motionsX = motions.slice(), wowOf = new Map();
+  // a gear motion that isn't at rest with the gear down and moves a leg's wheels (the 787's and others' bogie tilt:
+  // FlightGear levels it by the strut's compression, the rig only by the gear's position) turns only in the air: on
+  // the ground the wheels lie as drawn, which is where the fit put them on the kit's ground
+  if (fit) {
+    const wheelParts = new Set(); for (const leg of fit.legs) for (const k of leg.parts) wheelParts.add(entries[k].pi);
+    const tilts = new Set();
+    for (const pi of wheelParts) for (const i of parts[pi].mi) { const m = motions[i]; if (m.control === 'gear' && Math.abs(valueAt(m, 1)) > (m.type === 'translate' ? 0.01 : 0.5)) tilts.add(i); }
+    for (const i of tilts) motionsX[i] = { ...motions[i], wowZero: true };
+    if (tilts.size) log(`  ${tilts.size} gear motion${tilts.size > 1 ? 's' : ''} not at rest with the gear down on the wheels (${[...tilts].map(i => `${motions[i].type} ${valueAt(motions[i], 1).toFixed(1)}`).join(', ')}): level on the ground`);
+  }
+  if (fit) for (const leg of fit.legs) if (leg.d > 0.01) wowOf.set(leg, motionsX.push({ control: 'wow', type: 'translate', property: 'livesfo/wow', axis: [P.R[3], P.R[4], P.R[5]], factor: +leg.d.toFixed(4), offset: 0, targets: [] }) - 1);
+  if (fit) log(`  fitted to ${twinKey}: pitched ${fit.pitchDeg.toFixed(2)}°, raised ${fit.dyM.toFixed(2)} m (body ${fit.depthM === null ? '?' : (fit.depthM >= 0 ? '+' : '') + fit.depthM.toFixed(2)} m deeper than the kit's, spread ${fit.spreadM.toFixed(3)} m); legs ${fit.legs.map(l => `${l.name} ${l.d >= 0 ? 'compressed' : 'extended'} ${Math.abs(l.d).toFixed(2)} m`).join(', ') || 'none'}`);
+  if (fit && process.env.FIT_DEBUG) { fs.mkdirSync(process.env.FIT_DEBUG, { recursive: true }); fs.writeFileSync(path.join(process.env.FIT_DEBUG, `${af}--${String(ref.asset.selector || "").replace(/[^a-z0-9-]+/gi, "_")}.json`), JSON.stringify({ af, twin: twinKey, pitchDeg: fit.pitchDeg, dyM: fit.dyM, depthM: fit.depthM, spreadM: fit.spreadM, legs: fit.legs.map(l => ({ name: l.name, d: l.d, cut: l.cut, R: l.R, parts: l.parts.size, axles: l.axles, tiltDeg: l.tiltDeg })), kit: { yc: twinT.fus.yc, w: twinT.fus.w, h: twinT.fus.h, L: twinT.L, nose: twinT.gear.nose.z, main: twinT.gear.main.z }, ...fit.debug })); }
   // ---- merge: by motion group, then by what each livery draws there
   const matIds = liveries.map(() => new Map());   // per livery: material key → id
   const keyOf = (li, k) => { const L = liveries[li], mk = matKey(L, k), M = matIds[li]; if (!M.has(mk)) M.set(mk, { id: M.size, k, mk }); return M.get(mk).id; };
   const groups = new Map();
-  for (const part of parts) {
-    const g = part.mi.join(',') + (part.internal ? '|i' : '');
-    for (const pr of part.prims) {
-      const slot = liveries.map((L, li) => keyOf(li, L.json.meshes[part.node.mesh].primitives[pr.j].material)).join('.');
-      const key = g + '#' + slot;
-      let e = groups.get(key); if (!e) groups.set(key, (e = { g, mi: part.mi, internal: part.internal, slot, meshes: [], names: new Set() }));
-      e.meshes.push(transformMesh(pr.mesh, P)); e.names.add(part.node.name);
+  // engines moved to the published stations (config.mjs ENGINE_FIX): per side, the fans' spin centres (kit frame)
+  // give the move across; the parts named for the engine move, and the motions turning only them
+  const EF = ENGINE_FIX[af], shiftOf = new Map(), motionShift = new Map(); let nearFix = null;
+  if (EF) {
+    const side = x => (x < 0 ? 'L' : 'R'), fanX = {};
+    for (const m of motions) if (m.type === 'spin') { const c = apply(P, m.center || [0, 0, 0]); fanX[side(c[0])] = c[0]; }
+    const dxOf = s => (EF.x === undefined || fanX[s] === undefined ? 0 : (s === 'L' ? -EF.x : EF.x) - fanX[s]);
+    const moved = new Set();
+    parts.forEach((part, pi) => {
+      const name = part.node.name || '';
+      if (!EF.parts.test(name)) return;
+      let sx = 0, n = 0; for (const pr of part.prims) for (let i = 0; i < pr.mesh.pos.length; i += 3) { sx += apply(P, [pr.mesh.pos[i], pr.mesh.pos[i + 1], pr.mesh.pos[i + 2]])[0]; n++; }
+      const s = side(sx / Math.max(1, n)); shiftOf.set(pi, [dxOf(s), 0, EF.dz]); moved.add(pi);
+    });
+    motions.forEach((m, i) => {
+      const on = parts.map((p, pi) => (p.mi.includes(i) ? pi : -1)).filter(pi => pi >= 0);
+      if (on.length && on.every(pi => moved.has(pi))) motionShift.set(i, shiftOf.get(on[0]));
+    });
+    // the engine's extent per side (the moved parts round the fan's axis), for `near`'s vertices
+    if (EF.near) {
+      const axis = {}; for (const m of motions) if (m.type === 'spin') { const c = apply(P, m.center || [0, 0, 0]); axis[side(c[0])] = c; }
+      const ext = {}; for (const pi of moved) { const t = shiftOf.get(pi); for (const pr of parts[pi].prims) for (let i = 0; i < pr.mesh.pos.length; i += 3) { const v = apply(P, [pr.mesh.pos[i], pr.mesh.pos[i + 1], pr.mesh.pos[i + 2]]), sd = side(v[0]), a = axis[sd]; if (!a) continue; const e = ext[sd] || (ext[sd] = { r: 0, z0: Infinity, z1: -Infinity }); e.r = Math.max(e.r, Math.hypot(v[0] - a[0], v[1] - a[1])); e.z0 = Math.min(e.z0, v[2]); e.z1 = Math.max(e.z1, v[2]); } }
+      nearFix = { axis, ext, dxOf, dz: EF.dz, re: EF.near };
+      let nv = 0; parts.forEach(part => { if (EF.near.test(part.node.name || '')) for (const pr of part.prims) for (let i = 0; i < pr.mesh.pos.length; i += 3) { const v = apply(P, [pr.mesh.pos[i], pr.mesh.pos[i + 1], pr.mesh.pos[i + 2]]); if (nearOf(v)) nv++; } });
+      log(`  and ${nv} vertices of ${EF.near} round the engines`);
     }
+    log(`  engines moved ${EF.dz > 0 ? '+' : ''}${EF.dz} m along${EF.x !== undefined ? `, across to ${EF.x} m (left ${dxOf('L').toFixed(2)}, right ${dxOf('R').toFixed(2)})` : ''}: ${moved.size} parts, ${motionShift.size} motions`);
   }
+  // the main gear moved to the published station (config.mjs GEAR_FIX), the motions turning only it with it
+  const GF = GEAR_FIX[af];
+  if (GF) {
+    const movedG = new Set();
+    parts.forEach((part, pi) => { if (!GF.parts.test(part.node.name || '')) return; const t = shiftOf.get(pi) || [0, 0, 0]; shiftOf.set(pi, [t[0], t[1], t[2] + GF.dz]); movedG.add(pi); });
+    let nm = 0; motions.forEach((m, i) => { const on = parts.map((p, pi) => (p.mi.includes(i) ? pi : -1)).filter(pi => pi >= 0); if (on.length && on.every(pi => movedG.has(pi))) { motionShift.set(i, shiftOf.get(on[0])); nm++; } });
+    log(`  main gear moved ${GF.dz > 0 ? '+' : ''}${GF.dz} m along: ${movedG.size} parts, ${nm} motions`);
+  }
+  // a vertex (kit frame) of a `near` part within an engine's radius (+10 %) and length (1 m ahead, 0.3 m behind): its move
+  function nearOf(v) {
+    if (!nearFix) return null; const sd = v[0] < 0 ? 'L' : 'R', a = nearFix.axis[sd], e = nearFix.ext[sd];
+    if (!a || !e || v[2] < e.z0 - 1.0 || v[2] > e.z1 + 0.3 || Math.hypot(v[0] - a[0], v[1] - a[1]) > e.r * 1.1) return null;   // (an inlet lip reaches up to a metre ahead of the nacelle's parts)
+    return [nearFix.dxOf(sd), 0, nearFix.dz];
+  }
+  const shiftNear = (mesh, name) => { if (!nearFix || !nearFix.re.test(name || '')) return mesh; for (let i = 0; i < mesh.pos.length; i += 3) { const t = nearOf([mesh.pos[i], mesh.pos[i + 1], mesh.pos[i + 2]]); if (t) { mesh.pos[i] += t[0]; mesh.pos[i + 1] += t[1]; mesh.pos[i + 2] += t[2]; } } return mesh; };
+  const shifted = (mesh, t) => { if (!t) return mesh; for (let i = 0; i < mesh.pos.length; i += 3) { mesh.pos[i] += t[0]; mesh.pos[i + 1] += t[1]; mesh.pos[i + 2] += t[2]; } return mesh; };
+  // parts stretched aft to a published station (config.mjs STRETCH_FIX): each part's own front and aft end, kit frame
+  const SF = STRETCH_FIX[af], spanOf = new Map();
+  if (SF) {
+    parts.forEach((part, pi) => { if (!SF.parts.test(part.node.name || '')) return; let z0 = Infinity, z1 = -Infinity; for (const pr of part.prims) for (let i = 0; i < pr.mesh.pos.length; i += 3) { const v = apply(P, [pr.mesh.pos[i], pr.mesh.pos[i + 1], pr.mesh.pos[i + 2]]); z0 = Math.min(z0, v[2]); z1 = Math.max(z1, v[2]); } if (z1 > z0) spanOf.set(pi, [z0, z1]); });
+    log(`  stretched to ${SF.aftTo} m: ${[...spanOf].map(([pi, [z0, z1]]) => `${parts[pi].node.name} ${z0.toFixed(2)}–${z1.toFixed(2)}`).join(', ')}`);
+  }
+  const stretched = (mesh, pi) => { const sp = spanOf.get(pi); if (!sp) return mesh; const [z0, z1] = sp, k = (SF.aftTo - z0) / (z1 - z0); for (let i = 2; i < mesh.pos.length; i += 3) if (mesh.pos[i] > z0) mesh.pos[i] = z0 + (mesh.pos[i] - z0) * k; return mesh; };
+  const groupFor = (mi, internal, slot) => {
+    const g = mi.join(',') + (internal ? '|i' : ''), key = g + '#' + slot;
+    let e = groups.get(key); if (!e) groups.set(key, (e = { g, mi, internal, slot, meshes: [], names: new Set() }));
+    return e;
+  };
+  parts.forEach((part, pi) => {
+    part.prims.forEach((pr, qi) => {
+      const slot = liveries.map((L, li) => keyOf(li, L.json.meshes[part.node.mesh].primitives[pr.j].material)).join('.');
+      const tm = stretched(shiftNear(shifted(transformMesh(pr.mesh, P), shiftOf.get(pi)), part.node.name), pi), leg = legOf.get(entryOf.get(`${pi}:${qi}`));
+      if (leg && wowOf.has(leg)) {
+        const [lo, hi] = splitBelow(tm, leg.cut);
+        if (hi) { const e = groupFor(part.mi, part.internal, slot); e.meshes.push(hi); e.names.add(part.node.name); }
+        if (lo) { const e = groupFor([...part.mi, wowOf.get(leg)], part.internal, slot); e.meshes.push(lo); e.names.add(part.node.name); }
+        return;
+      }
+      if (leg) compressLeg(tm, leg);
+      const e = groupFor(part.mi, part.internal, slot); e.meshes.push(tm); e.names.add(part.node.name);
+    });
+  });
   // the materials each merged mesh draws with, per livery
   const slotMats = liveries.map((L, li) => { const byId = new Map(); for (const v of matIds[li].values()) byId.set(v.id, v); return byId; });
+  let uvWrapped = 0;
   let merged = [...groups.values()].map(e => {
     const mats = e.slot.split('.').map((id, li) => slotMats[li].get(+id));
     const textured = mats.some((m, li) => !!(liveries[li].json.materials[m.k].pbrMetallicRoughness || {}).baseColorTexture);
     let mesh = weld(concat(e.meshes));
     if (!textured) mesh = weld({ ...mesh, uv: null });
+    else uvWrapped += wrapStrayUVs(mesh);
     return { ...e, mats, mesh, ...surfaceOf(mesh) };
   });
+  if (uvWrapped) log(`  ${uvWrapped} stray UV coordinates wrapped back (the library's ±hundreds; a slot's range is quantized to ${GEO.uvBits} bits)`);
   const tris0 = merged.reduce((s, m) => s + m.mesh.idx.length / 3, 0);
   // ---- the desktop hero's own detail: over budget (the 777 family, the 787s), simplified within 5 mm
   if (tris0 > GEO.heroTris) merged = merged.map(m => ({ ...m, mesh: simplify(MO.MeshoptSimplifier, m.mesh, GEO.heroError) }));
@@ -255,8 +382,8 @@ async function convertVariant(af, liveries, MO, report) {
   const lv = v => apply(P, [v[2], v[1], -v[0]]);
   const nose = lv([0, contacts.nose.y, contacts.nose.z]), main = lv([0, contacts.main.y, contacts.main.z]);
   const rp = rig.reviewPoints || {};
-  const dims = { noseZ: r4(nose[2]), mainZ: r4(main[2]), L: r4(bb.max[2]), span: r4(bb.max[0] - bb.min[0]), H: r4(bb.max[1]), track: r4(contacts.main.track),
-    eye: rp.cockpit ? apply(P, rp.cockpit).map(r4) : null, door: rp.door ? apply(P, rp.door).map(r4) : null, pitchFixDeg: r4(pitchDeg), floatM: r4(floatM) };
+  const dims = { noseZ: r4(nose[2]), mainZ: r4(main[2] + (GF ? GF.dz : 0)), L: r4(bb.max[2]), span: r4(bb.max[0] - bb.min[0]), H: r4(bb.max[1]), track: r4(contacts.main.track),
+    eye: rp.cockpit ? apply(P, rp.cockpit).map(r4) : null, door: rp.door ? apply(P, rp.door).map(r4) : null, pitchFixDeg: r4(pitchDeg), floatM: r4(floatM), twin: fit ? twinKey : null };
 
   // ---- quantize and pack (one grid for every mesh and LOD of the variant)
   const grid = { off: bb.min.map(v => Math.floor(v * 100) / 100), step: GEO.posStep };
@@ -295,10 +422,18 @@ async function convertVariant(af, liveries, MO, report) {
   for (const [name, meshes] of Object.entries(lods)) packs[name] = packOne(meshes);
 
   // ---- per livery: textures, materials, the glTF
-  const variantOut = { af, geometry: packs.lod0.bin, tris, srcTris: tris0 + droppedTris, droppedTris, meshes: merged.length, dims, lods: {} };
+  const variantOut = { af, geometry: packs.lod0.bin, tris, srcTris: tris0 + droppedTris, droppedTris, meshes: merged.length, dims, lods: {},
+    fit: fit ? { twin: twinKey, pitchDeg: r4(fit.pitchDeg), dyM: r4(fit.dyM), depthM: fit.depthM === null ? null : r4(fit.depthM), spreadM: r4(fit.spreadM), legs: fit.legs.map(l => ({ name: l.name, d: r4(l.d), cut: r4(l.cut) })) } : null };
   for (const [name, pk] of Object.entries(packs)) variantOut.lods[name] = { bin: pk.bin.rel, wire: pk.bin.wire, tris: pk.prims.reduce((s, p) => s + (p ? p.tris : 0), 0) };
   const motionList = [], motionIdx = new Map();
-  const motionRef = i => { if (!motionIdx.has(i)) { motionIdx.set(i, motionList.length); motionList.push(motionOut(motions[i], P)); } return motionIdx.get(i); };
+  const motionRef = i => {
+    if (!motionIdx.has(i)) {
+      const o = motionOut(motionsX[i], P), t = motionShift.get(i);
+      if (t && o.p) o.p = o.p.map((v, k) => +(v + t[k]).toFixed(4));   // (a translation's axis doesn't move)
+      motionIdx.set(i, motionList.length); motionList.push(o);
+    }
+    return motionIdx.get(i);
+  };
   const lightsFile = path.join(LIB, af, 'lights.json');
   const lights = fs.existsSync(lightsFile) ? lightsOut(JSON.parse(fs.readFileSync(lightsFile, 'utf8')), P) : [];
   // which images are paint: those that differ between this airframe's liveries (or, with one livery, the materials tagged as paint)
@@ -311,6 +446,9 @@ async function convertVariant(af, liveries, MO, report) {
     const used = new Map();   // image index → { paint, area (m² of surface), uv (share of the image those surfaces use) }
     for (const m of merged) {
       const mm = lj.materials[m.mats[li].k], pbr = mm.pbrMetallicRoughness || {};
+      // a cabin-window mask (the 737 MAX's painted windows): kept, for the cabin lights at night (D-144)
+      const ei = mm.extras && mm.extras.cabinWindow ? texOf(lj, mm.emissiveTexture) : -1;
+      if (ei >= 0) { const r = used.get(ei) || { paint: false, area: 0, uv: 0, mask: true }; r.area += m.area; r.uv += m.uvArea; used.set(ei, r); }
       const i = texOf(lj, pbr.baseColorTexture); if (i < 0) continue;
       const r = used.get(i) || { paint: false, area: 0, uv: 0 };
       r.paint ||= liveries.length > 1 ? useCount.get(L.imgHash[i]) < liveries.length : !!(mm.extras && (mm.extras.operatorPaintFinish || mm.extras.cabinWindow));
@@ -322,20 +460,21 @@ async function convertVariant(af, liveries, MO, report) {
     for (const [i, r] of used) {
       const s = imageStats(lj, L.bin, i, L.imgHash[i]);
       if (s.flat) { tex.set(i, { flat: s.color, name: lj.images[i].name }); continue; }
-      const codec = !r.paint && s.busy >= TEX.busyEtc1s ? 'etc1s' : 'auto';   // (auto: budgeted as UASTC, decided when encoded)
-      const cap = r.paint ? TEX.paintCap : TEX.otherCap;
+      const codec = r.mask || (!r.paint && s.busy >= TEX.busyEtc1s) ? 'etc1s' : 'auto';   // (auto: budgeted as UASTC, decided when encoded)
+      const cap = r.mask ? TEX.maskCap : r.paint ? TEX.paintCap : TEX.otherCap;
       let w = Math.min(cap, pot(s.w)), h = Math.min(cap, pot(s.h));
       if (s.w / s.h !== w / h) { const ar = s.w / s.h; if (ar > 1) h = Math.max(4, pot(w / ar)); else w = Math.max(4, pot(h * ar)); }
-      tex.set(i, { src: [lj, L.bin, i], w, h, codec, alpha: s.alpha, paint: r.paint, busy: s.busy, name: lj.images[i].name, hash: L.imgHash[i], area: r.area, uv: Math.min(1, r.uv) });
+      tex.set(i, { src: [lj, L.bin, i], w, h, codec, alpha: s.alpha, paint: r.paint, mask: !!r.mask, busy: s.busy, name: lj.images[i].name, hash: L.imgHash[i], area: r.area, uv: Math.min(1, r.uv) });
     }
     // the budget, by texel density: the map with the most texels per square metre of the surface it covers is the most
     // over-resolved, and is halved first (a 4096² winglet atlas before the fuselage's paint); maps finer than 5 mm a
     // texel are halved even within budget. Floors: paint 1024, the rest 512 (or less where already finer than 5 mm)
-    const total = () => [...tex.values()].reduce((s, t) => s + (t.flat ? 0 : gpuBytes(t.w, t.h, t.codec, t.alpha)), 0);
+    // (a cabin-window mask, 0.7 MB at most, comes on top: counted in, it tipped the 737-9 over and halved its paint)
+    const total = () => [...tex.values()].reduce((s, t) => s + (t.flat || t.mask ? 0 : gpuBytes(t.w, t.h, t.codec, t.alpha)), 0);
     const density = t => (t.w * t.h * Math.max(0.02, t.uv)) / Math.max(0.05, t.area);
     for (let guard = 0; guard < 60; guard++) {
       const over = total() > TEX.gpuBudget;
-      const cand = [...tex.values()].filter(t => !t.flat && Math.max(t.w, t.h) > 16 && (density(t) > TEX.maxDensity || (over && Math.max(t.w, t.h) > (t.paint ? TEX.minPaint : TEX.minOther))));
+      const cand = [...tex.values()].filter(t => !t.flat && !t.mask && Math.max(t.w, t.h) > 16 && (density(t) > TEX.maxDensity || (over && Math.max(t.w, t.h) > (t.paint ? TEX.minPaint : TEX.minOther))));
       if (!cand.length) break;
       cand.sort((a, b) => density(b) - density(a));
       cand[0].w = Math.max(4, cand[0].w >> 1); cand[0].h = Math.max(4, cand[0].h >> 1);
@@ -382,6 +521,9 @@ async function convertVariant(af, liveries, MO, report) {
       const x = src.extras || {}, ex = {};
       if (x.cockpitGlazing) ex.glaze = 1;
       if (x.cabinWindow && !pbr.baseColorTexture) ex.cabin = 1;
+      // the cabin-window mask: the emissive texture, its factor left 0 (the page lights it at night, D-144)
+      const ei = x.cabinWindow ? texOf(lj, src.emissiveTexture) : -1, et = ei >= 0 ? tex.get(ei) : null;
+      if (et && !et.flat) { const info = textureFor(ei, m.slot); if (info) { out.emissiveTexture = info; ex.cabinMask = 1; } }
       if (x.operatorPaintFinish || (t && t.paint)) ex.paint = 1;
       if (Object.keys(ex).length) out.extras = ex;
       matIndex.set(key, materials.length); materials.push(out);
@@ -475,6 +617,14 @@ for (const c of coverage.combinations) {
   const al = IATA_ICAO[iata]; if (!al) continue;
   (report.types[c.canonicalType] ||= {})[al] = key;
 }
+// our crowd's liveries on the library's airframes (tools/fleet/reverse.mjs, `reverse`): kept while their template's model
+// is the same file, else dropped (run reverse.mjs again); the library's own livery of the pair, once it has one, wins
+if (prev) for (const [k, v] of Object.entries(prev.assets || {})) {
+  if (!v.reverse) continue;
+  const t = report.assets[v.reverse.template], mine = report.types[v.reverse.type] && report.types[v.reverse.type][v.reverse.al];
+  if (!t || t.gltf !== v.reverse.templateGltf || (mine && mine !== k)) { delete report.assets[k]; log(`${k}: ${mine && mine !== k ? `the library has ${v.reverse.type}|${v.reverse.al} now` : `its template ${v.reverse.template} changed`}: run tools/fleet/reverse.mjs again`); continue; }
+  report.assets[k] = v; (report.types[v.reverse.type] ||= {})[v.reverse.al] = k;
+}
 for (const c of credits.values()) report.credits[c.id] = { ...c, copyright: undefined };
 if (prev) for (const [k, v] of Object.entries(prev.credits || {})) if (!report.credits[k]) report.credits[k] = v;
 if (NO_INDEX) {
@@ -486,7 +636,8 @@ if (NO_INDEX) {
 }
 fs.writeFileSync(path.join(OUT, 'report.json'), JSON.stringify(report, null, 1) + '\n');
 // the page's index: what it needs to pick and load a model, and to credit it (textures and variants stay in the report)
-const lean = { ...report, variants: undefined, assets: Object.fromEntries(Object.entries(report.assets).map(([k, a]) => [k, { gltf: a.gltf, lite: a.lite, label: a.label, wire: a.wire, gpu: a.gpu, tris: a.tris, draws: a.draws, special: a.special || undefined, credits: a.credits }])),
+const lean = { ...report, variants: undefined, assets: Object.fromEntries(Object.entries(report.assets).map(([k, a]) => [k, { gltf: a.gltf, lite: a.lite, label: a.label, wire: a.wire, gpu: a.gpu, tris: a.tris, draws: a.draws, special: a.special || undefined, credits: a.credits,
+  livery: a.reverse ? a.livery : undefined, reverse: a.reverse ? { template: a.reverse.template, from: a.reverse.from, licence: a.reverse.licence } : undefined }])),
   credits: Object.fromEntries(Object.entries(report.credits).map(([k, c]) => [k, { licences: c.licences, sources: c.sources.map(s => ({ id: s.id, repo: s.repo, url: s.url, rev: s.rev, licence: s.licence })) }])) };
 fs.writeFileSync(prevPath, JSON.stringify(lean) + '\n');
 const A = Object.values(report.assets), med = arr => { const s = [...arr].sort((p, q) => p - q); return s[Math.floor(s.length / 2)] || 0; };

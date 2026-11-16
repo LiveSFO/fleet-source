@@ -1,0 +1,101 @@
+[
+  {
+    "name": "nav-light-left",
+    "kind": "nav",
+    "color": "red",
+    "position": [
+      2.349299746681317,
+      -0.9518200159072876,
+      16.238839805694976
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "nav-light-right",
+    "kind": "nav",
+    "color": "green",
+    "position": [
+      2.349299746681317,
+      -0.9518200159072876,
+      -16.238839805694976
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "strobe-light-left",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      2.349299746681317,
+      -0.9518200159072876,
+      16.238839805694976
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "strobe-light-right",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      2.349299746681317,
+      -0.9518200159072876,
+      -16.238839805694976
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "beacon-light-bottom",
+    "kind": "beacon",
+    "color": "red",
+    "position": [
+      -3.0472308802091645,
+      -4.539159774780273,
+      0.0
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "beacon-light-top",
+    "kind": "beacon",
+    "color": "red",
+    "position": [
+      -3.0472308802091645,
+      -0.33500000834465027,
+      0.0
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Landing light",
+    "kind": "landing",
+    "color": "white",
+    "position": [
+      -14.436810481763862,
+      -4.389999866485596,
+      0.0
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Left Fuselage Landing light",
+    "kind": "landing",
+    "color": "white",
+    "position": [
+      -8.104876059937608,
+      -3.881319999694824,
+      1.4714131943000823
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Right Fuselage Landing light",
+    "kind": "landing",
+    "color": "white",
+    "position": [
+      -8.104876059937608,
+      -3.881319999694824,
+      -1.4714131943000823
+    ],
+    "basis": "Source XML light-model instance offset"
+  }
+]

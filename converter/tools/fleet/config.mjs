@@ -3,8 +3,14 @@
  * What the fleet converter converts, and how. Edit here, not in fleet-convert.mjs.
  */
 
-/** the first batch: the types most seen at SFO (library airframe folders) */
-export const BATCH = ['a320', 'a321', 'a20n', 'a21n', 'b738', 'b738-current', 'b38m', 'b39m', 'b77w', 'b789-current', 'a359', 'a35k', 'e75l'];
+/**
+ * The airframes converted (library airframe folders): the first batch, the types most seen at SFO; then, for every
+ * airliner and freighter (the user, 15 Nov: "Yes, convert it"), the rest of the library's airliners. Business jets stay
+ * the kit's (D-121: "keep plain is fine").
+ */
+export const BATCH = ['a320', 'a321', 'a20n', 'a21n', 'b738', 'b738-current', 'b38m', 'b39m', 'b77w', 'b789-current', 'a359', 'a35k', 'e75l',
+  'a221', 'a223', 'a319', 'a332', 'a332-ge', 'a333', 'a339', 'a388', 'b737', 'b739', 'b744f', 'b748f', 'b752', 'b753', 'b762f', 'b763',
+  'b763f', 'b772', 'b77f', 'b788', 'b78x', 'crj200', 'crj900', 'e295'];
 
 /** never converted: the King Air B200 and C90 sources are CC BY-NC-SA 3.0 (non-commercial) */
 export const EXCLUDE_AIRFRAMES = new Set(['be20', 'be9l']);
@@ -26,7 +32,10 @@ export const IATA_ICAO = {
   AA: 'AAL', AC: 'ACA', AF: 'AFR', AI: 'AIC', AM: 'AMX', AS: 'ASA', AV: 'AVA', B6: 'JBU', BA: 'BAW', BF: 'FBU', BR: 'EVA',
   CA: 'CCA', CI: 'CAL', CM: 'CMP', CX: 'CPA', DL: 'DAL', EI: 'EIN', EK: 'UAE', F8: 'FLE', F9: 'FFT', FJ: 'FJI', HA: 'HAL',
   JL: 'JAL', JX: 'SJX', KE: 'KAL', KL: 'KLM', LH: 'DLH', LX: 'SWR', MX: 'MXY', NH: 'ANA', NZ: 'ANZ', OZ: 'AAR', PR: 'PAL',
-  QF: 'QFA', SQ: 'SIA', TK: 'THY', TP: 'TAP', UA: 'UAL', VN: 'HVN', VS: 'VIR', WN: 'SWA', YP: 'APZ', ZG: 'TZP', PD: 'POE'
+  QF: 'QFA', SQ: 'SIA', TK: 'THY', TP: 'TAP', UA: 'UAL', VN: 'HVN', VS: 'VIR', WN: 'SWA', YP: 'APZ', ZG: 'TZP', PD: 'POE',
+  // freight: the library's FedEx, Amazon (flown by ATI), ABX and Air Zeta (formerly Air Incheon) exports, and UPS
+  FX: 'FDX', '8C': 'ATN', GB: 'ABX', KJ: 'AIH', '5X': 'UPS',
+  'ABX Air': 'ABX'   // (one coverage entry names the operator instead of its code)
 };
 
 /**
@@ -47,17 +56,80 @@ export const DETENTS = {
   b738: { takeoff: 0.375, approach: 0.625, landing: 0.875 }, 'b738-current': { takeoff: 0.375, approach: 0.625, landing: 0.875 },
   b38m: { takeoff: 0.375, approach: 0.625, landing: 0.875 }, b39m: { takeoff: 0.375, approach: 0.625, landing: 0.875 },
   a320: { takeoff: 0.3, approach: 0.6, landing: 1.0 }, a321: { takeoff: 0.3, approach: 0.6, landing: 1.0 },
-  a20n: { takeoff: 0.3, approach: 0.6, landing: 1.0 }, a21n: { takeoff: 0.3, approach: 0.6, landing: 1.0 }
+  a20n: { takeoff: 0.3, approach: 0.6, landing: 1.0 }, a21n: { takeoff: 0.3, approach: 0.6, landing: 1.0 },
+  // the rest of the library (15 Nov): the 737 NG's 1/8 steps as the 737-800's; the IDG A320 and A330 families' CONF
+  // detents as the A320's; the others the default (estimates, marked in the report)
+  b737: { takeoff: 0.375, approach: 0.625, landing: 0.875 }, b739: { takeoff: 0.375, approach: 0.625, landing: 0.875 },
+  a319: { takeoff: 0.3, approach: 0.6, landing: 1.0 }, a332: { takeoff: 0.3, approach: 0.6, landing: 1.0 },
+  'a332-ge': { takeoff: 0.3, approach: 0.6, landing: 1.0 }, a333: { takeoff: 0.3, approach: 0.6, landing: 1.0 },
+  a339: { takeoff: 0.3, approach: 0.6, landing: 1.0 }
 };
 
 /**
  * Textures. The GPU cost of a texture is set by its pixels (compressed formats are 0.5 or 1 byte a pixel, plus a third
  * for mipmaps), its download by its content. Paint atlases (the textures that differ between an airframe's liveries)
  * are capped at 2048, everything else at 2048 too but shrunk first when a hero is over its GPU budget. Images that
- * are a single colour become a material colour; cabin-light masks are dropped (no night window glow yet).
+ * are a single colour become a material colour; a cabin-window mask is kept as the emissive map (D-144).
  */
+/**
+ * Engines moved to the makers' published stations (D-149; tools/research/fleet/spec.json, docs/research/
+ * fleet-size-match.md): the parts matching `parts` (the nacelle, fan, spinner, reversers, core, the forward pylon) moved
+ * along the aircraft by dz (m, + aft) and across so the engine's axis (its fan's spin centre) lands at x (m out from the
+ * centreline; left and right moved apart: the library's NG 737s are drawn asymmetric, the left engine 0.29 m further
+ * out); the motions that turn only those parts move with them; parts matching `near` move only their vertices within
+ * the engine's radius and length. The library's NG 737 nacelles sit 0.8–1.2 m aft of
+ * Boeing's inlet stations (D6-58325-7 Rev C), its 787 nacelles 0.6–0.9 m forward (D6-58333 Rev O).
+ */
+const NG_ENGINE = /^(engnose|engcore|tailpipe|ductinner|lreverserib|ReverserCascade|fan|fan_1|fwdpylon|rhnacascoop)(\.\d+)?$/;
+const A330_ENGINE = /^(intake(\.001)?|fan[01]|fan\.cone[01]|cylinder\.00[78]|pw\.nacelle0_(\.001)?|rr\.(exhaust(\.001)?|nacelle[01]|pylon[01]|reverser\.[du][lr][01]i?)|ge\.(exhaust([01]|\.001)?|nacelle[01]|nozzle[01]|pylon[01]|reverser[01]|rim[01]))$/;
+const B787_ENGINE = /^(rh|lh)(cone|inside|reverser|enginecore|fans|reversergrid|fan|ring|fancasing)$|^no[12]enge$|^eng[12]fanb?$/;
+export const ENGINE_FIX = {
+  b737: { parts: NG_ENGINE, dz: -1.23, x: 4.83 },
+  b738: { parts: NG_ENGINE, dz: -1.11, x: 4.83 },
+  'b738-current': { parts: NG_ENGINE, dz: -1.10, x: 4.83 },
+  b739: { parts: NG_ENGINE, dz: -0.77, x: 4.83 },
+  // (the 787's inlet lips and their chrome rings are in parts that span both engines and more: `near` moves only their
+  // vertices round each engine's axis, within the moved parts' radius and length)
+  // (and across to 9.72 m, the kit's from Boeing's D6-58333 Rev Q: the library's fans at 9.505, 0.215 m in)
+  b788: { parts: B787_ENGINE, near: /^(front|chrome)$/, dz: 0.91, x: 9.72 },
+  'b789-current': { parts: B787_ENGINE, near: /^(front|chrome)$/, dz: 0.61, x: 9.72 },
+  b78x: { parts: B787_ENGINE, near: /^(front|chrome)$/, dz: 0.67, x: 9.72 },
+  // the A330s (Airbus A330 Aircraft Characteristics, Dec 2025, figure 2-2-0-991-001: the -300's inlets GE 21.14, PW
+  // 21.45, RR 21.28 m; the -200's 3.20 m sooner, its main gear at 28.85 m to the -300's 32.05: GE 17.94, RR 18.08): the
+  // library's nacelles 1.6–2.0 m aft, each measured at its own inlet lip (the kit's checked against the same pages,
+  // 15 Nov); the -900's Trent 7000 already at 21.05 m, the kit's. Across: the library's 9.37 m, the kit's
+  a333: { parts: A330_ENGINE, dz: -1.64 },        // Fiji's A330-343, Trent 772: its inlet at 22.92 m
+  a332: { parts: A330_ENGINE, dz: -2.03 },        // Hawaiian's A330-243, Trent 772B: 20.11 m
+  'a332-ge': { parts: A330_ENGINE, dz: -1.63 },   // Aer Lingus's A330-203, CF6-80E1: its lip ring at 19.57 m
+  // the E175's CF34-8E5: no document gives its inlet, so measured on four Commons photos (15 Nov, docs/FLEET.md "The
+  // E175's inlet, measured"): the lip at 10.6 ± 0.1 m, 4.0 ± 0.1 out, 1.36 up; the library's lip at 9.93 (its fans at
+  // 4.04 out and 1.34 up: kept), the kit's estimate 10.9 and ~4.5. The library's 4.0 m from lip to plug matches the
+  // photos' 3.85, so the whole engine moves
+  e75l: { parts: /^(nacelle(\.001)?|fan\.[lr]|cylinder\.00[12]|exhaust(\.001)?|reverser(\.001)?|pylon(\.001)?)$/, dz: 0.67 }
+};
+/**
+ * Parts stretched aft to a published station (D-149): each matching part's vertices behind its own front (its least z,
+ * kit frame) spread so its aft end (its greatest z) lands on `aftTo`; for static parts only (nothing turns them).
+ */
+/**
+ * Main gear moved to the published station (D-149, as ENGINE_FIX: the parts matching `parts` along the aircraft by dz,
+ * the motions turning only them with them; the dims' mainZ with them). The library's E175 stands its main gear at
+ * 14.25 m, the kit's (checked against Embraer's documents, 15 Nov) at 15.62: 1.37 m forward (photos agree: 15.68 and
+ * 15.50 m, docs/FLEET.md "The E175's inlet, measured"). It folds sideways, so aft it still folds into the belly.
+ */
+export const STRETCH_FIX = {
+  // the 757s' pylons to the kit's ends (D6-58327 §2.2.1–2.2.2, the kit's v0.8 reading: 26.0 m on the -200, 30.06 on the
+  // -300, ahead of the wing's trailing edge): the library's end at 24.88 and 28.89, their fronts at the nacelle kept
+  b752: { parts: /^Pylon[LR]$/, aftTo: 26.0 },
+  b753: { parts: /^[LR]Pylon$/, aftTo: 30.06 }
+};
+export const GEAR_FIX = {
+  e75l: { parts: /^(gear\.[lr](\.001)?|tire\.[lr])$/, dz: 1.37 }
+};
+
 export const TEX = {
   paintCap: 2048, otherCap: 2048, minPaint: 1024, minOther: 512,
+  maskCap: 1024,   // a cabin-window mask (737 MAX), black with white windows: ETC1S, outside the budget (on top of it)
   gpuBudget: 13e6,          // textures, bytes on a desktop GPU (geometry comes on top: the whole hero aims at ≤ 15 MB)
   maxDensity: 40000,        // texels per m² of surface (5 mm a texel): finer is never seen, and is halved
   busyEtc1s: 0.3,           // share of noisy 4×4 blocks above which a non-paint map goes straight to ETC1S
@@ -85,6 +157,24 @@ export const LICENCE_NAMES = {
 };
 
 /**
+ * The GNU GPL versions each upstream package's own notice allows, for what may be combined in one image (the reverse
+ * bake, tools/fleet/reverse.mjs). The library's records say gpl-2.0-or-later for most packages, but their own notices
+ * are what count (docs/FLEET.md, "Licences and publishing the source"): most ship the GPL-2.0 text and say no more, read
+ * here as version 2 only (the conservative reading; a package naming no version arguably allows any, GPLv2 §9: the
+ * user's call); A350XWB's README says "Released under GPL2+"; the 767-300's says "GNU GPL" with no version (any).
+ * Combining: GPL paint with GPL paint of a version both allow; CC BY 4.0 or CC0 with any; CC BY-SA 4.0 only into
+ * GPL-3.0, its one compatible GPL (creativecommons.org/compatiblelicenses). `--or-later` in reverse.mjs takes the
+ * library's records instead.
+ */
+export const GPL_VERSIONS = { 'FGMEMBERS/A350XWB': [2, 3], 'dogsaysmoo/767-300': [2, 3] };
+/** @param {string} repo @param {string} [recorded] the library's record (gpl-2.0-or-later, gpl-3.0) @param {boolean} [orLater] */
+export function gplVersions(repo, recorded = '', orLater = false) {
+  if (GPL_VERSIONS[repo]) return GPL_VERSIONS[repo];
+  if (orLater && /^gpl-2\.0-or-later$/.test(recorded)) return [2, 3];
+  return /^gpl-3\.0/.test(recorded) ? [3] : [2];
+}
+
+/**
  * What the handoff manifest leaves out about a source package: the legacy 737-800's upstream (its README and
  * upstream-revision.json name it) and the E-jet family's pinned tree (its repository-tree.json).
  */
@@ -99,4 +189,4 @@ export const PACKAGE_INFO = {
  * it; docs/FLEET.md stays out (it describes our hosting), and so do the bundle's own tools (tools/fleet/bundle-*.mjs).
  * @param {string} root the checkout @param {(dir: string) => string[]} list a directory's file names
  */
-export const converterFiles = (root, list) => ['tools/fleet-sync.mjs', 'tools/fleet-convert.mjs', ...list(root + '/tools/fleet').filter(f => f.endsWith('.mjs') && !f.startsWith('bundle-')).sort().map(f => 'tools/fleet/' + f)];
+export const converterFiles = (root, list) => ['tools/fleet-sync.mjs', 'tools/fleet-convert.mjs', ...list(root + '/tools/fleet').filter(f => (f.endsWith('.mjs') && !f.startsWith('bundle-')) || f === 'bake-siblings.json').sort().map(f => 'tools/fleet/' + f)];

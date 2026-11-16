@@ -1,0 +1,112 @@
+[
+  {
+    "name": "Greenlight",
+    "kind": "nav",
+    "color": "green",
+    "position": [
+      3.6307774911240256,
+      1.059999942779541,
+      -16.993534949791094
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Redlight",
+    "kind": "nav",
+    "color": "red",
+    "position": [
+      3.6307774911240256,
+      1.059999942779541,
+      16.993534949791094
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "flashright",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      3.6307774911240256,
+      1.059999942779541,
+      -16.993534949791094
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "flashleft",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      3.6307774911240256,
+      1.059999942779541,
+      16.993534949791094
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "flashtail",
+    "kind": "nav",
+    "color": "white",
+    "position": [
+      19.678414274845004,
+      2.059999942779541,
+      0.0
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "NoseGearLandinglight",
+    "kind": "taxi",
+    "color": "white",
+    "position": [
+      -15.776831513496676,
+      -1.600000023841858,
+      0.0
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "LeftWingLandinglight",
+    "kind": "landing",
+    "color": "white",
+    "position": [
+      -4.844379988817126,
+      -0.5099999904632568,
+      2.13541779853028
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "RightWingLandinglight",
+    "kind": "landing",
+    "color": "white",
+    "position": [
+      -4.844379988817126,
+      -0.5099999904632568,
+      -2.13541779853028
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Beaconlight.top",
+    "kind": "beacon",
+    "color": "red",
+    "position": [
+      0.0,
+      2.559999942779541,
+      0.0
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Beaconlight.bottom",
+    "kind": "beacon",
+    "color": "red",
+    "position": [
+      0.0,
+      -1.409999966621399,
+      0.0
+    ],
+    "basis": "Source XML light-model instance offset"
+  }
+]

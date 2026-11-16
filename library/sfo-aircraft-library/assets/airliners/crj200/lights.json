@@ -1,0 +1,156 @@
+[
+  {
+    "name": "lbeacon",
+    "kind": "beacon",
+    "color": "red",
+    "position": [
+      -4.068419747889475,
+      -0.7115664332121557,
+      0.0
+    ],
+    "basis": "Source fixture mesh bounds"
+  },
+  {
+    "name": "lhlandinglight",
+    "kind": "landing",
+    "color": "white",
+    "position": [
+      -0.9137013982840877,
+      -0.4555838651710733,
+      1.7761199736609152
+    ],
+    "basis": "Source fixture mesh bounds"
+  },
+  {
+    "name": "lhnavlight",
+    "kind": "nav",
+    "color": "red",
+    "position": [
+      3.6822318290360068,
+      -0.010127576125089332,
+      10.201244538333192
+    ],
+    "basis": "Source fixture mesh bounds"
+  },
+  {
+    "name": "lhstrobelight",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      3.740168924669757,
+      -0.008901753896250387,
+      10.255102600989021
+    ],
+    "basis": "Source fixture mesh bounds"
+  },
+  {
+    "name": "lhtaxilight",
+    "kind": "taxi",
+    "color": "white",
+    "position": [
+      -0.83175536986033,
+      -0.45553899463835945,
+      1.9200868921390142
+    ],
+    "basis": "Source fixture mesh bounds"
+  },
+  {
+    "name": "ltnavlight",
+    "kind": "nav",
+    "color": "white",
+    "position": [
+      13.035150750207428,
+      1.1920693288630566,
+      0.0018654067321945793
+    ],
+    "basis": "Source fixture mesh bounds"
+  },
+  {
+    "name": "noselandinglights",
+    "kind": "landing",
+    "color": "white",
+    "position": [
+      -10.983587346896442,
+      -0.3333422868455267,
+      -0.0008820027154479133
+    ],
+    "basis": "Source fixture mesh bounds"
+  },
+  {
+    "name": "rhlandinglight",
+    "kind": "landing",
+    "color": "white",
+    "position": [
+      -0.9135831233372624,
+      -0.45548268812437603,
+      -1.7763824729906923
+    ],
+    "basis": "Source fixture mesh bounds"
+  },
+  {
+    "name": "rhnavlight",
+    "kind": "nav",
+    "color": "green",
+    "position": [
+      3.68223271045154,
+      -0.010133986741883086,
+      -10.201242772147628
+    ],
+    "basis": "Source fixture mesh bounds"
+  },
+  {
+    "name": "rhstrobelight",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      3.7401693653775236,
+      -0.008908164513044142,
+      -10.255100834803455
+    ],
+    "basis": "Source fixture mesh bounds"
+  },
+  {
+    "name": "rhtaxilight",
+    "kind": "taxi",
+    "color": "white",
+    "position": [
+      -0.8318163803417501,
+      -0.4554474112609133,
+      -1.9184626637376936
+    ],
+    "basis": "Source fixture mesh bounds"
+  },
+  {
+    "name": "tstrobelight",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      13.022390938244937,
+      1.1939288903806125,
+      0.00023057173112864414
+    ],
+    "basis": "Source fixture mesh bounds"
+  },
+  {
+    "name": "ubeacon",
+    "kind": "beacon",
+    "color": "red",
+    "position": [
+      -4.068670290254711,
+      1.969583517900139,
+      0.0
+    ],
+    "basis": "Source fixture mesh bounds"
+  },
+  {
+    "name": "utnavlight",
+    "kind": "nav",
+    "color": "white",
+    "position": [
+      14.787731834839125,
+      4.27304419358838,
+      -0.0004972562652772087
+    ],
+    "basis": "Source fixture mesh bounds"
+  }
+]

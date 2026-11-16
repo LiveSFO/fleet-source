@@ -1,0 +1,4101 @@
+{
+  "aircraft": "b744f",
+  "label": "Boeing 747-400F",
+  "livery": {
+    "id": "airzeta",
+    "name": "AirZeta \u00b7 new colours",
+    "authoredPaint": {
+      "bodyColorSRGB": [
+        250,
+        250,
+        249
+      ],
+      "finColorSRGB": [
+        30,
+        56,
+        141
+      ],
+      "bodyPartPattern": "^fuselage$|^nosecone$|^cargodoor1$|^cockpitshell_0_1_0$|^FLG_.*(?<!\\.in)$|^NLG_.*(?<!\\.in)$",
+      "finPartPattern": "^vstab$|^rudder_1$",
+      "bodyBands": [
+        {
+          "range": [
+            -100,
+            -49.8
+          ],
+          "slope": 60,
+          "xRange": [
+            0.72,
+            1.001
+          ],
+          "colorSRGB": [
+            30,
+            56,
+            141
+          ]
+        }
+      ],
+      "bodyGraphics": [
+        {
+          "image": "preparation/brand-art/airzeta-title.png",
+          "box": [
+            0.19,
+            0.38,
+            0.47,
+            2.69
+          ]
+        }
+      ],
+      "finGraphics": [
+        {
+          "image": "preparation/brand-art/airzeta-tail.png",
+          "box": [
+            0.53,
+            0.3,
+            0.85,
+            0.73
+          ]
+        }
+      ],
+      "resolution": 4096,
+      "references": [
+        "https://www.boeing.com/commercial/airports/plan-manuals",
+        "https://www.cargopress.co.kr/files/bannerfile/ad_38_m.jpg",
+        "https://www.jetphotos.com/registration/HL7616"
+      ],
+      "artworkMetadata": [
+        "preparation/brand-art/AirZeta logo 2025.asset.json"
+      ]
+    },
+    "operatorFinishes": [
+      {
+        "name": "airzeta-cf6-white",
+        "partPattern": "^engine_body_[01]$|^engine_reverser$",
+        "colorSRGB": [
+          247,
+          249,
+          249
+        ]
+      }
+    ]
+  },
+  "referenceDimensions": {
+    "length": 70.67,
+    "span": 64.44
+  },
+  "axes": "X aft; Y up; Z port",
+  "bounds": {
+    "min": [
+      -29.68959121232769,
+      -5.66300106048584,
+      -32.22
+    ],
+    "max": [
+      40.98040878767231,
+      14.353799819946289,
+      32.22
+    ]
+  },
+  "motions": [
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "NLG_L_lg.in",
+        "NLG_L_lg"
+      ],
+      "axis": [
+        0.9694747924804688,
+        -0.24519099295139313,
+        0.0
+      ],
+      "center": [
+        -26.244975309722232,
+        -1.496999979019165,
+        0.8799999618915072
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          -80.0
+        ],
+        [
+          0.9,
+          -80.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "NLG_L_lg.in",
+        "NLG_L_lg"
+      ],
+      "model": "Models/747-8F.xml",
+      "scope": "0:Models/747-8F.xml",
+      "targetPartIds": [
+        "0:Models/747-8F.xml#48",
+        "0:Models/747-8F.xml#49"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "NLG_R_lg.in",
+        "NLG_R_lg"
+      ],
+      "axis": [
+        0.9694747924804688,
+        -0.24519099295139313,
+        0.0
+      ],
+      "center": [
+        -26.244975309722232,
+        -1.496999979019165,
+        -0.8799999618915072
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          80.0
+        ],
+        [
+          0.9,
+          80.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "NLG_R_lg.in",
+        "NLG_R_lg"
+      ],
+      "model": "Models/747-8F.xml",
+      "scope": "0:Models/747-8F.xml",
+      "targetPartIds": [
+        "0:Models/747-8F.xml#52",
+        "0:Models/747-8F.xml#53"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "NLG_L_sm.in",
+        "NLG_L_sm"
+      ],
+      "axis": [
+        0.9917556047439575,
+        -0.12814375758171082,
+        0.0
+      ],
+      "center": [
+        -22.689202968475314,
+        -2.382999897003174,
+        0.574999966294333
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          -50.0
+        ],
+        [
+          0.9,
+          -100.0
+        ],
+        [
+          1.0,
+          -100.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "NLG_L_sm.in",
+        "NLG_L_sm"
+      ],
+      "model": "Models/747-8F.xml",
+      "scope": "0:Models/747-8F.xml",
+      "targetPartIds": [
+        "0:Models/747-8F.xml#50",
+        "0:Models/747-8F.xml#51"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "NLG_R_sm.in",
+        "NLG_R_sm"
+      ],
+      "axis": [
+        0.9917556047439575,
+        -0.12814375758171082,
+        0.0
+      ],
+      "center": [
+        -22.689202968475314,
+        -2.382999897003174,
+        -0.574999966294333
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          50.0
+        ],
+        [
+          0.9,
+          100.0
+        ],
+        [
+          1.0,
+          100.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "NLG_R_sm.in",
+        "NLG_R_sm"
+      ],
+      "model": "Models/747-8F.xml",
+      "scope": "0:Models/747-8F.xml",
+      "targetPartIds": [
+        "0:Models/747-8F.xml#54",
+        "0:Models/747-8F.xml#55"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FLG_FL_in",
+        "FLG_FL_out",
+        "FLG_FL_in.in",
+        "FLG_FL_out.in"
+      ],
+      "axis": [
+        0.9999999403953552,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -0.007968114093781585,
+        -2.9189999103546143,
+        0.300000000554978
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.15,
+          100.0
+        ],
+        [
+          0.65,
+          100.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FLG_FL_in",
+        "FLG_FL_out",
+        "FLG_FL_in.in",
+        "FLG_FL_out.in"
+      ],
+      "model": "Models/747-8F.xml",
+      "scope": "0:Models/747-8F.xml",
+      "targetPartIds": [
+        "0:Models/747-8F.xml#13",
+        "0:Models/747-8F.xml#14",
+        "0:Models/747-8F.xml#15",
+        "0:Models/747-8F.xml#16"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[3]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FLG_FR_in",
+        "FLG_FR_out",
+        "FLG_FR_in.in",
+        "FLG_FR_out.in"
+      ],
+      "axis": [
+        0.9999999403953552,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -0.007968114093781585,
+        -2.9189999103546143,
+        -0.300000000554978
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.15,
+          -100.0
+        ],
+        [
+          0.65,
+          -100.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FLG_FR_in",
+        "FLG_FR_out",
+        "FLG_FR_in.in",
+        "FLG_FR_out.in"
+      ],
+      "model": "Models/747-8F.xml",
+      "scope": "0:Models/747-8F.xml",
+      "targetPartIds": [
+        "0:Models/747-8F.xml#17",
+        "0:Models/747-8F.xml#18",
+        "0:Models/747-8F.xml#19",
+        "0:Models/747-8F.xml#20"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FLG_FL_out",
+        "FLG_FL_out.in"
+      ],
+      "axis": [
+        0.9999999403953552,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -0.007968114093781585,
+        -2.7920000553131104,
+        1.917999910167553
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.15,
+          -155.0
+        ],
+        [
+          0.65,
+          -155.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FLG_FL_out",
+        "FLG_FL_out.in"
+      ],
+      "model": "Models/747-8F.xml",
+      "scope": "0:Models/747-8F.xml",
+      "targetPartIds": [
+        "0:Models/747-8F.xml#15",
+        "0:Models/747-8F.xml#16"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[3]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FLG_FR_out",
+        "FLG_FR_out.in"
+      ],
+      "axis": [
+        0.9999999403953552,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -0.007968114093781585,
+        -2.7920000553131104,
+        -1.917999910167553
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.15,
+          155.0
+        ],
+        [
+          0.65,
+          155.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FLG_FR_out",
+        "FLG_FR_out.in"
+      ],
+      "model": "Models/747-8F.xml",
+      "scope": "0:Models/747-8F.xml",
+      "targetPartIds": [
+        "0:Models/747-8F.xml#19",
+        "0:Models/747-8F.xml#20"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FLG_ML_in",
+        "FLG_ML_out",
+        "FLG_ML_in.in",
+        "FLG_ML_out.in"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        2.4252945551070666,
+        -2.621000051498413,
+        2.7849999803167784
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.15,
+          -135.0
+        ],
+        [
+          0.65,
+          -135.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FLG_ML_in",
+        "FLG_ML_out",
+        "FLG_ML_in.in",
+        "FLG_ML_out.in"
+      ],
+      "model": "Models/747-8F.xml",
+      "scope": "0:Models/747-8F.xml",
+      "targetPartIds": [
+        "0:Models/747-8F.xml#21",
+        "0:Models/747-8F.xml#22",
+        "0:Models/747-8F.xml#23",
+        "0:Models/747-8F.xml#24"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[3]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FLG_MR_in",
+        "FLG_MR_out",
+        "FLG_MR_in.in",
+        "FLG_MR_out.in"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        2.4252945551070666,
+        -2.621000051498413,
+        -2.7849999803167784
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.15,
+          135.0
+        ],
+        [
+          0.65,
+          135.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FLG_MR_in",
+        "FLG_MR_out",
+        "FLG_MR_in.in",
+        "FLG_MR_out.in"
+      ],
+      "model": "Models/747-8F.xml",
+      "scope": "0:Models/747-8F.xml",
+      "targetPartIds": [
+        "0:Models/747-8F.xml#25",
+        "0:Models/747-8F.xml#26",
+        "0:Models/747-8F.xml#27",
+        "0:Models/747-8F.xml#28"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FLG_ML_in",
+        "FLG_ML_in.in"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        2.417326543978053,
+        -2.7909998893737793,
+        1.917999910167553
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          110.0
+        ],
+        [
+          0.7,
+          110.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FLG_ML_in",
+        "FLG_ML_in.in"
+      ],
+      "model": "Models/747-8F.xml",
+      "scope": "0:Models/747-8F.xml",
+      "targetPartIds": [
+        "0:Models/747-8F.xml#21",
+        "0:Models/747-8F.xml#22"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[3]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FLG_MR_in",
+        "FLG_MR_in.in"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        2.417326543978053,
+        -2.7909998893737793,
+        -1.917999910167553
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          -110.0
+        ],
+        [
+          0.7,
+          -110.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FLG_MR_in",
+        "FLG_MR_in.in"
+      ],
+      "model": "Models/747-8F.xml",
+      "scope": "0:Models/747-8F.xml",
+      "targetPartIds": [
+        "0:Models/747-8F.xml#25",
+        "0:Models/747-8F.xml#26"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[3]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FLG_RR_in",
+        "FLG_RR_in.in"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        3.6294758505195595,
+        -2.9189999103546143,
+        -0.300000000554978
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          -85.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FLG_RR_in",
+        "FLG_RR_in.in"
+      ],
+      "model": "Models/747-8F.xml",
+      "scope": "0:Models/747-8F.xml",
+      "targetPartIds": [
+        "0:Models/747-8F.xml#33",
+        "0:Models/747-8F.xml#34"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FLG_RL_in",
+        "FLG_RL_in.in"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        3.6294758505195595,
+        -2.9189999103546143,
+        0.300000000554978
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          85.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FLG_RL_in",
+        "FLG_RL_in.in"
+      ],
+      "model": "Models/747-8F.xml",
+      "scope": "0:Models/747-8F.xml",
+      "targetPartIds": [
+        "0:Models/747-8F.xml#29",
+        "0:Models/747-8F.xml#30"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FLG_RL_out",
+        "FLG_RL_out.in"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        4.841625157061066,
+        -2.621000051498413,
+        2.7849999803167784
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          -95.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FLG_RL_out",
+        "FLG_RL_out.in"
+      ],
+      "model": "Models/747-8F.xml",
+      "scope": "0:Models/747-8F.xml",
+      "targetPartIds": [
+        "0:Models/747-8F.xml#31",
+        "0:Models/747-8F.xml#32"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[3]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FLG_RR_out",
+        "FLG_RR_out.in"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        4.841625157061066,
+        -2.621000051498413,
+        -2.7849999803167784
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.25,
+          95.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FLG_RR_out",
+        "FLG_RR_out.in"
+      ],
+      "model": "Models/747-8F.xml",
+      "scope": "0:Models/747-8F.xml",
+      "targetPartIds": [
+        "0:Models/747-8F.xml#35",
+        "0:Models/747-8F.xml#36"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearNose"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        -21.913508037523847,
+        -2.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          115.0
+        ],
+        [
+          0.1,
+          115.0
+        ],
+        [
+          0.9,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearNose"
+      ],
+      "model": "Models/747-8i_gear.xml",
+      "scope": "0:Models/747-8F.xml/2:747-8i_gear",
+      "targetPartIds": [
+        "0:Models/747-8F.xml/2:747-8i_gear#1.0",
+        "0:Models/747-8F.xml/2:747-8i_gear#1.1",
+        "0:Models/747-8F.xml/2:747-8i_gear#2.0.0",
+        "0:Models/747-8F.xml/2:747-8i_gear#2.0.1",
+        "0:Models/747-8F.xml/2:747-8i_gear#2.1.0.0",
+        "0:Models/747-8F.xml/2:747-8i_gear#2.1.0.1",
+        "0:Models/747-8F.xml/2:747-8i_gear#2.2.0.0.0",
+        "0:Models/747-8F.xml/2:747-8i_gear#2.2.0.0.1",
+        "0:Models/747-8F.xml/2:747-8i_gear#2.3",
+        "0:Models/747-8F.xml/2:747-8i_gear#2.6",
+        "0:Models/747-8F.xml/2:747-8i_gear#2.7",
+        "0:Models/747-8F.xml/2:747-8i_gear#2.8",
+        "0:Models/747-8F.xml/2:747-8i_gear#5"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearWingLeft"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        2.0866498076947013,
+        -0.9739999771118164,
+        5.510000020127204
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          86.0
+        ],
+        [
+          0.15,
+          86.0
+        ],
+        [
+          0.65,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearWingLeft"
+      ],
+      "model": "Models/747-8i_gear.xml",
+      "scope": "0:Models/747-8F.xml/2:747-8i_gear",
+      "targetPartIds": [
+        "0:Models/747-8F.xml/2:747-8i_gear#2.4.0",
+        "0:Models/747-8F.xml/2:747-8i_gear#2.4.1",
+        "0:Models/747-8F.xml/2:747-8i_gear#2.9",
+        "0:Models/747-8F.xml/2:747-8i_gear#20",
+        "0:Models/747-8F.xml/2:747-8i_gear#21",
+        "0:Models/747-8F.xml/2:747-8i_gear#24",
+        "0:Models/747-8F.xml/2:747-8i_gear#25",
+        "0:Models/747-8F.xml/2:747-8i_gear#26",
+        "0:Models/747-8F.xml/2:747-8i_gear#27",
+        "0:Models/747-8F.xml/2:747-8i_gear#28",
+        "0:Models/747-8F.xml/2:747-8i_gear#29"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "wlg_left_lower",
+        "wlg_left_upper",
+        "wlg_left_upper.001",
+        "wlg_left_support"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        2.0906338132592084,
+        -3.937000036239624,
+        5.531999855261724
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          40.0
+        ],
+        [
+          0.15,
+          40.0
+        ],
+        [
+          0.65,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "wlg_left_lower",
+        "wlg_left_upper",
+        "wlg_left_upper.001",
+        "wlg_left_support"
+      ],
+      "model": "Models/747-8i_gear.xml",
+      "scope": "0:Models/747-8F.xml/2:747-8i_gear",
+      "targetPartIds": [
+        "0:Models/747-8F.xml/2:747-8i_gear#24",
+        "0:Models/747-8F.xml/2:747-8i_gear#27",
+        "0:Models/747-8F.xml/2:747-8i_gear#28",
+        "0:Models/747-8F.xml/2:747-8i_gear#29"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "wlg_left_support"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        2.0906338132592084,
+        -2.7669999599456787,
+        4.372999979280819
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -135.0
+        ],
+        [
+          0.15,
+          -135.0
+        ],
+        [
+          0.65,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "wlg_left_support"
+      ],
+      "model": "Models/747-8i_gear.xml",
+      "scope": "0:Models/747-8F.xml/2:747-8i_gear",
+      "targetPartIds": [
+        "0:Models/747-8F.xml/2:747-8i_gear#27"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "wlg_left_upper",
+        "wlg_left_upper.001"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        2.0906338132592084,
+        -2.759999990463257,
+        4.3599999683292525
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -150.0
+        ],
+        [
+          0.15,
+          -150.0
+        ],
+        [
+          0.65,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "wlg_left_upper",
+        "wlg_left_upper.001"
+      ],
+      "model": "Models/747-8i_gear.xml",
+      "scope": "0:Models/747-8F.xml/2:747-8i_gear",
+      "targetPartIds": [
+        "0:Models/747-8F.xml/2:747-8i_gear#28",
+        "0:Models/747-8F.xml/2:747-8i_gear#29"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[4]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearWingRight"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        2.0866498076947013,
+        -0.9739999771118164,
+        -5.510000020127204
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -86.0
+        ],
+        [
+          0.15,
+          -86.0
+        ],
+        [
+          0.65,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearWingRight"
+      ],
+      "model": "Models/747-8i_gear.xml",
+      "scope": "0:Models/747-8F.xml/2:747-8i_gear",
+      "targetPartIds": [
+        "0:Models/747-8F.xml/2:747-8i_gear#0.0",
+        "0:Models/747-8F.xml/2:747-8i_gear#2.5",
+        "0:Models/747-8F.xml/2:747-8i_gear#22",
+        "0:Models/747-8F.xml/2:747-8i_gear#23",
+        "0:Models/747-8F.xml/2:747-8i_gear#30",
+        "0:Models/747-8F.xml/2:747-8i_gear#31",
+        "0:Models/747-8F.xml/2:747-8i_gear#32",
+        "0:Models/747-8F.xml/2:747-8i_gear#33",
+        "0:Models/747-8F.xml/2:747-8i_gear#34",
+        "0:Models/747-8F.xml/2:747-8i_gear#35"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[4]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "wlg_right_lower",
+        "wlg_right_upper",
+        "wlg_right_upper.001",
+        "wlg_right_support"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        2.0906338132592084,
+        -3.937000036239624,
+        -5.531999855261724
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -40.0
+        ],
+        [
+          0.15,
+          -40.0
+        ],
+        [
+          0.65,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "wlg_right_lower",
+        "wlg_right_upper",
+        "wlg_right_upper.001",
+        "wlg_right_support"
+      ],
+      "model": "Models/747-8i_gear.xml",
+      "scope": "0:Models/747-8F.xml/2:747-8i_gear",
+      "targetPartIds": [
+        "0:Models/747-8F.xml/2:747-8i_gear#30",
+        "0:Models/747-8F.xml/2:747-8i_gear#33",
+        "0:Models/747-8F.xml/2:747-8i_gear#34",
+        "0:Models/747-8F.xml/2:747-8i_gear#35"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[4]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "wlg_right_upper",
+        "wlg_right_upper.001"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        2.0906338132592084,
+        -2.759999990463257,
+        -4.3599999683292525
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          150.0
+        ],
+        [
+          0.15,
+          150.0
+        ],
+        [
+          0.65,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "wlg_right_upper",
+        "wlg_right_upper.001"
+      ],
+      "model": "Models/747-8i_gear.xml",
+      "scope": "0:Models/747-8F.xml/2:747-8i_gear",
+      "targetPartIds": [
+        "0:Models/747-8F.xml/2:747-8i_gear#34",
+        "0:Models/747-8F.xml/2:747-8i_gear#35"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[4]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "wlg_right_support"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        2.0906338132592084,
+        -2.7669999599456787,
+        -4.372999979280819
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          135.0
+        ],
+        [
+          0.15,
+          135.0
+        ],
+        [
+          0.65,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "wlg_right_support"
+      ],
+      "model": "Models/747-8i_gear.xml",
+      "scope": "0:Models/747-8F.xml/2:747-8i_gear",
+      "targetPartIds": [
+        "0:Models/747-8F.xml/2:747-8i_gear#33"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearBodyLeft"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        5.4511858448843,
+        -1.003999948501587,
+        1.8919998882644191
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          90.0
+        ],
+        [
+          0.3,
+          90.0
+        ],
+        [
+          0.77,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearBodyLeft"
+      ],
+      "model": "Models/747-8i_gear.xml",
+      "scope": "0:Models/747-8F.xml/2:747-8i_gear",
+      "targetPartIds": [
+        "0:Models/747-8F.xml/2:747-8i_gear#10",
+        "0:Models/747-8F.xml/2:747-8i_gear#11",
+        "0:Models/747-8F.xml/2:747-8i_gear#12",
+        "0:Models/747-8F.xml/2:747-8i_gear#13",
+        "0:Models/747-8F.xml/2:747-8i_gear#14",
+        "0:Models/747-8F.xml/2:747-8i_gear#3",
+        "0:Models/747-8F.xml/2:747-8i_gear#6",
+        "0:Models/747-8F.xml/2:747-8i_gear#7"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[3]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearBodyRight"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        5.4511858448843,
+        -1.003999948501587,
+        1.8919998882644191
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          90.0
+        ],
+        [
+          0.3,
+          90.0
+        ],
+        [
+          0.77,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearBodyRight"
+      ],
+      "model": "Models/747-8i_gear.xml",
+      "scope": "0:Models/747-8F.xml/2:747-8i_gear",
+      "targetPartIds": [
+        "0:Models/747-8F.xml/2:747-8i_gear#15",
+        "0:Models/747-8F.xml/2:747-8i_gear#16",
+        "0:Models/747-8F.xml/2:747-8i_gear#17",
+        "0:Models/747-8F.xml/2:747-8i_gear#18",
+        "0:Models/747-8F.xml/2:747-8i_gear#19",
+        "0:Models/747-8F.xml/2:747-8i_gear#4",
+        "0:Models/747-8F.xml/2:747-8i_gear#8",
+        "0:Models/747-8F.xml/2:747-8i_gear#9"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/spoiler[6]/pos-rad",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "speedbrake_right.1"
+      ],
+      "axis": [
+        0.23441946506500244,
+        0.12648555636405945,
+        -0.9638718962669373
+      ],
+      "center": [
+        4.871636758009326,
+        -1.0499999523162842,
+        -7.003901386492176
+      ],
+      "factor": -57.3,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "speedbrake_right.1"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#50"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/spoiler[7]/pos-rad",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "speedbrake_right.2"
+      ],
+      "axis": [
+        0.23441946506500244,
+        0.12648555636405945,
+        -0.9638718962669373
+      ],
+      "center": [
+        4.871636758009326,
+        -1.0499999523162842,
+        -7.003901386492176
+      ],
+      "factor": -57.3,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "speedbrake_right.2"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#51"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/spoiler[8]/pos-rad",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "speedbrake_right.3"
+      ],
+      "axis": [
+        0.5258045792579651,
+        0.09685682505369186,
+        -0.8450730443000793
+      ],
+      "center": [
+        7.957338135129647,
+        -0.3400000035762787,
+        -14.165415027848585
+      ],
+      "factor": -57.3,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "speedbrake_right.3"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#52"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/spoiler[9]/pos-rad",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "speedbrake_right.4"
+      ],
+      "axis": [
+        0.5258045792579651,
+        0.09685682505369186,
+        -0.8450730443000793
+      ],
+      "center": [
+        7.957338135129647,
+        -0.3400000035762787,
+        -14.165415027848585
+      ],
+      "factor": -57.3,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "speedbrake_right.4"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#53"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/spoiler[10]/pos-rad",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "speedbrake_right.5"
+      ],
+      "axis": [
+        0.5258045792579651,
+        0.09685682505369186,
+        -0.8450730443000793
+      ],
+      "center": [
+        7.957338135129647,
+        -0.3400000035762787,
+        -14.165415027848585
+      ],
+      "factor": -57.3,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "speedbrake_right.5"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#54"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/spoiler[11]/pos-rad",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "speedbrake_right.6"
+      ],
+      "axis": [
+        0.5258045792579651,
+        0.09685682505369186,
+        -0.8450730443000793
+      ],
+      "center": [
+        7.957338135129647,
+        -0.3400000035762787,
+        -14.165415027848585
+      ],
+      "factor": -57.3,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "speedbrake_right.6"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#55"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/spoiler[5]/pos-rad",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "speedbrake_left.1"
+      ],
+      "axis": [
+        0.23441946506500244,
+        0.12648555636405945,
+        0.9638718962669373
+      ],
+      "center": [
+        4.871636758009326,
+        -1.0499999523162842,
+        7.003901386492176
+      ],
+      "factor": 57.3,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "speedbrake_left.1"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#44"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/spoiler[4]/pos-rad",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "speedbrake_left.2"
+      ],
+      "axis": [
+        0.23441946506500244,
+        0.12648555636405945,
+        0.9638718962669373
+      ],
+      "center": [
+        4.871636758009326,
+        -1.0499999523162842,
+        7.003901386492176
+      ],
+      "factor": 57.3,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "speedbrake_left.2"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#45"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/spoiler[3]/pos-rad",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "speedbrake_left.3"
+      ],
+      "axis": [
+        0.5258045792579651,
+        0.09685682505369186,
+        0.8450730443000793
+      ],
+      "center": [
+        7.957338135129647,
+        -0.3400000035762787,
+        14.165415027848585
+      ],
+      "factor": 57.3,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "speedbrake_left.3"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#46"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/spoiler[2]/pos-rad",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "speedbrake_left.4"
+      ],
+      "axis": [
+        0.5258045792579651,
+        0.09685682505369186,
+        0.8450730443000793
+      ],
+      "center": [
+        7.957338135129647,
+        -0.3400000035762787,
+        14.165415027848585
+      ],
+      "factor": 57.3,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "speedbrake_left.4"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#47"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/spoiler[1]/pos-rad",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "speedbrake_left.5"
+      ],
+      "axis": [
+        0.5258045792579651,
+        0.09685682505369186,
+        0.8450730443000793
+      ],
+      "center": [
+        7.957338135129647,
+        -0.3400000035762787,
+        14.165415027848585
+      ],
+      "factor": 57.3,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "speedbrake_left.5"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#48"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/spoiler[0]/pos-rad",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "speedbrake_left.6"
+      ],
+      "axis": [
+        0.5258045792579651,
+        0.09685682505369186,
+        0.8450730443000793
+      ],
+      "center": [
+        7.957338135129647,
+        -0.3400000035762787,
+        14.165415027848585
+      ],
+      "factor": 57.3,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "speedbrake_left.6"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#49"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "LEinbL.1"
+      ],
+      "axis": [
+        0.6675904989242554,
+        0.09252125769853592,
+        0.7387576103210449
+      ],
+      "center": [
+        -4.881558852535446,
+        -1.1180000305175781,
+        6.886677201478666
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          -100.0
+        ],
+        [
+          1.0,
+          -100.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "LEinbL.1"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#20.0"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "LEinbL.2"
+      ],
+      "axis": [
+        0.6673835515975952,
+        0.0925443023443222,
+        0.7389416694641113
+      ],
+      "center": [
+        -3.1065367347798576,
+        -0.871999979019165,
+        8.850921289916737
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          -100.0
+        ],
+        [
+          1.0,
+          -100.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "LEinbL.2"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#20.1"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "LEinbL.3"
+      ],
+      "axis": [
+        0.6597346663475037,
+        0.066752590239048,
+        0.7485279440879822
+      ],
+      "center": [
+        -1.3325068501324564,
+        -0.6259999871253967,
+        10.815166317797951
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          -100.0
+        ],
+        [
+          1.0,
+          -100.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "LEinbL.3"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#20.2"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "LEinbR.1"
+      ],
+      "axis": [
+        0.6675904989242554,
+        0.09252125769853592,
+        -0.7387576103210449
+      ],
+      "center": [
+        -4.881558852535446,
+        -1.1180000305175781,
+        -6.886677201478666
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          100.0
+        ],
+        [
+          1.0,
+          100.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "LEinbR.1"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#23.0"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "LEinbR.2"
+      ],
+      "axis": [
+        0.6673835515975952,
+        0.0925443023443222,
+        -0.7389416694641113
+      ],
+      "center": [
+        -3.1065367347798576,
+        -0.871999979019165,
+        -8.850921289916737
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          100.0
+        ],
+        [
+          1.0,
+          100.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "LEinbR.2"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#23.1"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "LEinbR.3"
+      ],
+      "axis": [
+        0.6597346663475037,
+        0.066752590239048,
+        -0.7485279440879822
+      ],
+      "center": [
+        -1.3325068501324564,
+        -0.6259999871253967,
+        -10.815166317797951
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          100.0
+        ],
+        [
+          1.0,
+          100.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "LEinbR.3"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#23.2"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap_left_h.1",
+        "flap_left_h.2"
+      ],
+      "axis": [
+        0.2489376664161682,
+        0.13045361638069153,
+        0.9596937298774719
+      ],
+      "center": [
+        5.72690171934449,
+        -1.8070000410079956,
+        5.947898245514351
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          0.0
+        ],
+        [
+          1.0,
+          -35.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap_left_h.1",
+        "flap_left_h.2"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#28",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#30"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "fdm/jsbsim/fcs/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap_left_inner.1",
+        "flap_left_inner.2",
+        "flap_left_inner.3"
+      ],
+      "axis": [
+        0.9987326264381409,
+        -0.050329867750406265,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.0
+        ],
+        [
+          0.167,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap_left_inner.1",
+        "flap_left_inner.2",
+        "flap_left_inner.3"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#10.0",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#10.1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#10.2",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#8.0",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#8.1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#8.2",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#8.3",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#9.0",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#9.1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#9.2"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "fdm/jsbsim/fcs/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap_left_inner.1",
+        "flap_left_inner.2"
+      ],
+      "axis": [
+        0.9987326264381409,
+        -0.050329867750406265,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.0
+        ],
+        [
+          0.167,
+          0.5
+        ],
+        [
+          1.0,
+          0.5
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap_left_inner.1",
+        "flap_left_inner.2"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#8.0",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#8.1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#8.2",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#8.3",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#9.0",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#9.1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#9.2"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap_left_inner.1",
+        "flap_left_inner.2"
+      ],
+      "axis": [
+        0.2546524107456207,
+        0.13669677078723907,
+        0.9573224782943726
+      ],
+      "center": [
+        4.787300846983333,
+        -1.847000002861023,
+        3.6063688590658
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.167,
+          0.0
+        ],
+        [
+          1.0,
+          -35.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap_left_inner.1",
+        "flap_left_inner.2"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#8.0",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#8.1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#8.2",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#8.3",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#9.0",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#9.1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#9.2"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "fdm/jsbsim/fcs/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap_left_inner.1"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.667,
+          0.0
+        ],
+        [
+          1.0,
+          0.5
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap_left_inner.1"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#8.0",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#8.1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#8.2",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#8.3"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap_right_h.1",
+        "flap_right_h.2"
+      ],
+      "axis": [
+        0.2489376664161682,
+        0.13045361638069153,
+        -0.9596937298774719
+      ],
+      "center": [
+        5.72690171934449,
+        -1.8070000410079956,
+        -5.947898245514351
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          0.0
+        ],
+        [
+          1.0,
+          35.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap_right_h.1",
+        "flap_right_h.2"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#36",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#38"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "fdm/jsbsim/fcs/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap_right_inner.1",
+        "flap_right_inner.2",
+        "flap_right_inner.3"
+      ],
+      "axis": [
+        0.9987326264381409,
+        -0.050329867750406265,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.0
+        ],
+        [
+          0.167,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap_right_inner.1",
+        "flap_right_inner.2",
+        "flap_right_inner.3"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#14.0",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#14.1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#14.2",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#14.3",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#15.0",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#15.1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#15.2",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#16.0",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#16.1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#16.2"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "fdm/jsbsim/fcs/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap_right_inner.1",
+        "flap_right_inner.2"
+      ],
+      "axis": [
+        0.9987326264381409,
+        -0.050329867750406265,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.0
+        ],
+        [
+          0.167,
+          0.5
+        ],
+        [
+          1.0,
+          0.5
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap_right_inner.1",
+        "flap_right_inner.2"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#14.0",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#14.1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#14.2",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#14.3",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#15.0",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#15.1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#15.2"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap_right_inner.1",
+        "flap_right_inner.2"
+      ],
+      "axis": [
+        0.2546524107456207,
+        0.13669677078723907,
+        -0.9573224782943726
+      ],
+      "center": [
+        4.787300846983333,
+        -1.847000002861023,
+        -3.6063688590658
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.167,
+          0.0
+        ],
+        [
+          1.0,
+          35.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap_right_inner.1",
+        "flap_right_inner.2"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#14.0",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#14.1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#14.2",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#14.3",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#15.0",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#15.1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#15.2"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "fdm/jsbsim/fcs/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap_right_inner.1"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.667,
+          0.0
+        ],
+        [
+          1.0,
+          0.5
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap_right_inner.1"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#14.0",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#14.1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#14.2",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#14.3"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap_left_h.3",
+        "flap_left_h.4"
+      ],
+      "axis": [
+        0.49719417095184326,
+        0.10004599392414093,
+        0.8618519306182861
+      ],
+      "center": [
+        8.000994026332357,
+        -0.7910000085830688,
+        14.644162768692425
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          0.0
+        ],
+        [
+          1.0,
+          -35.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap_left_h.3",
+        "flap_left_h.4"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#32",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#34"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "fdm/jsbsim/fcs/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap_left_outer.1",
+        "flap_left_outer.2",
+        "flap_left_outer.3"
+      ],
+      "axis": [
+        0.9802826642990112,
+        -0.19760043919086456,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.0
+        ],
+        [
+          0.167,
+          0.5
+        ],
+        [
+          1.0,
+          0.75
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap_left_outer.1",
+        "flap_left_outer.2",
+        "flap_left_outer.3"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#11.0",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#11.1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#11.2",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#12.0",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#12.1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#12.2",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#13.0",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#13.1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#13.2"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "fdm/jsbsim/fcs/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap_left_outer.1",
+        "flap_left_outer.2"
+      ],
+      "axis": [
+        0.9987326264381409,
+        -0.050329867750406265,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.0
+        ],
+        [
+          0.167,
+          0.25
+        ],
+        [
+          1.0,
+          0.25
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap_left_outer.1",
+        "flap_left_outer.2"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#11.0",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#11.1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#11.2",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#12.0",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#12.1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#12.2"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap_left_outer.1",
+        "flap_left_outer.2"
+      ],
+      "axis": [
+        0.5400639772415161,
+        0.03642890229821205,
+        0.8408352136611938
+      ],
+      "center": [
+        7.3292835557268505,
+        -0.6039999723434448,
+        13.081829366492263
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          0.0
+        ],
+        [
+          1.0,
+          -35.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap_left_outer.1",
+        "flap_left_outer.2"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#11.0",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#11.1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#11.2",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#12.0",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#12.1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#12.2"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "fdm/jsbsim/fcs/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap_left_outer.1"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.667,
+          0.0
+        ],
+        [
+          1.0,
+          0.5
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap_left_outer.1"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#11.0",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#11.1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#11.2"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap_right_h.3",
+        "flap_right_h.4"
+      ],
+      "axis": [
+        0.49719417095184326,
+        0.10004599392414093,
+        -0.8618519306182861
+      ],
+      "center": [
+        8.000994026332357,
+        -0.7910000085830688,
+        -14.644162768692425
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          0.0
+        ],
+        [
+          1.0,
+          35.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap_right_h.3",
+        "flap_right_h.4"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#40",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#42"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "fdm/jsbsim/fcs/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap_right_outer.1",
+        "flap_right_outer.2",
+        "flap_right_outer.3"
+      ],
+      "axis": [
+        0.9802826642990112,
+        -0.19760043919086456,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.0
+        ],
+        [
+          0.167,
+          0.5
+        ],
+        [
+          1.0,
+          0.75
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap_right_outer.1",
+        "flap_right_outer.2",
+        "flap_right_outer.3"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#17.0",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#17.1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#17.2",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#18.0",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#18.1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#18.2",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#19.0",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#19.1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#19.2"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "fdm/jsbsim/fcs/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap_right_outer.1",
+        "flap_right_outer.2"
+      ],
+      "axis": [
+        0.9987326264381409,
+        -0.050329867750406265,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.033,
+          0.0
+        ],
+        [
+          0.167,
+          0.25
+        ],
+        [
+          1.0,
+          0.25
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap_right_outer.1",
+        "flap_right_outer.2"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#17.0",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#17.1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#17.2",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#18.0",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#18.1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#18.2"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "fdm/jsbsim/fcs/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap_right_outer.1",
+        "flap_right_outer.2"
+      ],
+      "axis": [
+        0.5400639772415161,
+        0.03642890229821205,
+        -0.8408352136611938
+      ],
+      "center": [
+        7.3292835557268505,
+        -0.6039999723434448,
+        -13.081829366492263
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          0.0
+        ],
+        [
+          1.0,
+          35.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap_right_outer.1",
+        "flap_right_outer.2"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#17.0",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#17.1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#17.2",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#18.0",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#18.1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#18.2"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "fdm/jsbsim/fcs/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap_right_outer.1"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.667,
+          0.0
+        ],
+        [
+          1.0,
+          0.5
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap_right_outer.1"
+      ],
+      "model": "b744-components/neutral.blend / Models/747-400_wings.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#17.0",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#17.1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings#17.2"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "/engines/engine[0]/n1",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Blades",
+        "Cone"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        4.792261894246393,
+        -1.9900000095367432,
+        20.91319556074324
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Blades",
+        "Cone"
+      ],
+      "model": "b744-components/neutral.blend / Models/GE_CF6-80C2B1F.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings/10:engine.1",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings/10:engine.1#1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings/10:engine.1#2"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "engines/engine/reverser-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "engine_reverser"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        4.792261894246393,
+        -1.9900000095367432,
+        20.91319556074324
+      ],
+      "factor": 0.6,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "engine_reverser"
+      ],
+      "model": "b744-components/neutral.blend / Models/GE_CF6-80C2B1F.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings/10:engine.1",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings/10:engine.1#5"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "/engines/engine[1]/n1",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Blades",
+        "Cone"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -2.6491386802011756,
+        -2.5999999046325684,
+        13.259143622936097
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Blades",
+        "Cone"
+      ],
+      "model": "b744-components/neutral.blend / Models/GE_CF6-80C2B1F.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings/11:engine.2",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings/11:engine.2#1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings/11:engine.2#2"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "engines/engine/reverser-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "engine_reverser"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -2.6491386802011756,
+        -2.5999999046325684,
+        13.259143622936097
+      ],
+      "factor": 0.6,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "engine_reverser"
+      ],
+      "model": "b744-components/neutral.blend / Models/GE_CF6-80C2B1F.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings/11:engine.2",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings/11:engine.2#5"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "/engines/engine[2]/n1",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Blades",
+        "Cone"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -2.6491386802011756,
+        -2.5999999046325684,
+        -13.259143622936097
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Blades",
+        "Cone"
+      ],
+      "model": "b744-components/neutral.blend / Models/GE_CF6-80C2B1F.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings/12:engine.3",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings/12:engine.3#1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings/12:engine.3#2"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "engines/engine/reverser-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "engine_reverser"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -2.6491386802011756,
+        -2.5999999046325684,
+        -13.259143622936097
+      ],
+      "factor": 0.6,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "engine_reverser"
+      ],
+      "model": "b744-components/neutral.blend / Models/GE_CF6-80C2B1F.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings/12:engine.3",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings/12:engine.3#5"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "/engines/engine[3]/n1",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Blades",
+        "Cone"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        4.792261894246393,
+        -1.9900000095367432,
+        -20.91319556074324
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Blades",
+        "Cone"
+      ],
+      "model": "b744-components/neutral.blend / Models/GE_CF6-80C2B1F.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings/13:engine.4",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings/13:engine.4#1",
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings/13:engine.4#2"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "engines/engine/reverser-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "engine_reverser"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        4.792261894246393,
+        -1.9900000095367432,
+        -20.91319556074324
+      ],
+      "factor": 0.6,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "engine_reverser"
+      ],
+      "model": "b744-components/neutral.blend / Models/GE_CF6-80C2B1F.xml",
+      "scope": "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings/13:engine.4",
+      "targetPartIds": [
+        "component:747-400-wing-and-CF6:0:Models/747-400.xml/4:747-400_wings/13:engine.4#5"
+      ]
+    }
+  ],
+  "gearInternalParts": [
+    "FLG_FL_in",
+    "FLG_FL_in.in",
+    "FLG_FL_out",
+    "FLG_FL_out.in",
+    "FLG_FR_in",
+    "FLG_FR_in.in",
+    "FLG_FR_out",
+    "FLG_FR_out.in",
+    "FLG_ML_in",
+    "FLG_ML_in.in",
+    "FLG_ML_out",
+    "FLG_ML_out.in",
+    "FLG_MR_in",
+    "FLG_MR_in.in",
+    "FLG_MR_out",
+    "FLG_MR_out.in",
+    "FLG_RL_in",
+    "FLG_RL_in.in",
+    "FLG_RL_out",
+    "FLG_RL_out.in",
+    "FLG_RR_in",
+    "FLG_RR_in.in",
+    "FLG_RR_out",
+    "FLG_RR_out.in",
+    "NLG_L_lg",
+    "NLG_L_lg.in",
+    "NLG_L_sm",
+    "NLG_L_sm.in",
+    "NLG_R_lg",
+    "NLG_R_lg.in",
+    "NLG_R_sm",
+    "NLG_R_sm.in",
+    "wlg_right_main",
+    "GearNoseMainStrutColl",
+    "GearNoseMainStrutCyli",
+    "GearNoseTorqueLinkUp",
+    "GearNoseTorqueLinkUpp",
+    "GearNoseTorqueLinkLow_1",
+    "GearNoseTorqueLinkLow",
+    "GearNoseWheels_0",
+    "GearNoseWheels_1",
+    "GearNoseMainStrutPist",
+    "wlg_left_main_0",
+    "wlg_left_main_1",
+    "Mesh2",
+    "Mesh20",
+    "Mesh22",
+    "Mesh25",
+    "Mesh4",
+    "Mesh6",
+    "Mesh8",
+    "Plane",
+    "blg.lf",
+    "blg.lr",
+    "blg.rf",
+    "blg.rr",
+    "blg_left_main",
+    "blg_left_poly1",
+    "blg_left_poly2",
+    "blg_left_strut1",
+    "blg_left_strut2",
+    "blg_right_main",
+    "blg_right_poly1",
+    "blg_right_poly2",
+    "blg_right_strut1",
+    "blg_right_strut2",
+    "wlg.lf",
+    "wlg.lr",
+    "wlg.rf",
+    "wlg.rr",
+    "wlg_left_lower",
+    "wlg_left_poly1",
+    "wlg_left_poly2",
+    "wlg_left_support",
+    "wlg_left_upper",
+    "wlg_left_upper.001",
+    "wlg_right_lower",
+    "wlg_right_poly1",
+    "wlg_right_poly2",
+    "wlg_right_support",
+    "wlg_right_upper",
+    "wlg_right_upper.001"
+  ],
+  "gearInternalPartIds": [
+    "0:Models/747-8F.xml#13",
+    "0:Models/747-8F.xml#14",
+    "0:Models/747-8F.xml#15",
+    "0:Models/747-8F.xml#16",
+    "0:Models/747-8F.xml#17",
+    "0:Models/747-8F.xml#18",
+    "0:Models/747-8F.xml#19",
+    "0:Models/747-8F.xml#20",
+    "0:Models/747-8F.xml#21",
+    "0:Models/747-8F.xml#22",
+    "0:Models/747-8F.xml#23",
+    "0:Models/747-8F.xml#24",
+    "0:Models/747-8F.xml#25",
+    "0:Models/747-8F.xml#26",
+    "0:Models/747-8F.xml#27",
+    "0:Models/747-8F.xml#28",
+    "0:Models/747-8F.xml#29",
+    "0:Models/747-8F.xml#30",
+    "0:Models/747-8F.xml#31",
+    "0:Models/747-8F.xml#32",
+    "0:Models/747-8F.xml#33",
+    "0:Models/747-8F.xml#34",
+    "0:Models/747-8F.xml#35",
+    "0:Models/747-8F.xml#36",
+    "0:Models/747-8F.xml#48",
+    "0:Models/747-8F.xml#49",
+    "0:Models/747-8F.xml#50",
+    "0:Models/747-8F.xml#51",
+    "0:Models/747-8F.xml#52",
+    "0:Models/747-8F.xml#53",
+    "0:Models/747-8F.xml#54",
+    "0:Models/747-8F.xml#55",
+    "0:Models/747-8F.xml/2:747-8i_gear#0.0",
+    "0:Models/747-8F.xml/2:747-8i_gear#1.0",
+    "0:Models/747-8F.xml/2:747-8i_gear#1.1",
+    "0:Models/747-8F.xml/2:747-8i_gear#2.0.0",
+    "0:Models/747-8F.xml/2:747-8i_gear#2.0.1",
+    "0:Models/747-8F.xml/2:747-8i_gear#2.1.0.0",
+    "0:Models/747-8F.xml/2:747-8i_gear#2.1.0.1",
+    "0:Models/747-8F.xml/2:747-8i_gear#2.2.0.0.0",
+    "0:Models/747-8F.xml/2:747-8i_gear#2.2.0.0.1",
+    "0:Models/747-8F.xml/2:747-8i_gear#2.3",
+    "0:Models/747-8F.xml/2:747-8i_gear#2.4.0",
+    "0:Models/747-8F.xml/2:747-8i_gear#2.4.1",
+    "0:Models/747-8F.xml/2:747-8i_gear#2.5",
+    "0:Models/747-8F.xml/2:747-8i_gear#2.6",
+    "0:Models/747-8F.xml/2:747-8i_gear#2.7",
+    "0:Models/747-8F.xml/2:747-8i_gear#2.8",
+    "0:Models/747-8F.xml/2:747-8i_gear#2.9",
+    "0:Models/747-8F.xml/2:747-8i_gear#3",
+    "0:Models/747-8F.xml/2:747-8i_gear#4",
+    "0:Models/747-8F.xml/2:747-8i_gear#5",
+    "0:Models/747-8F.xml/2:747-8i_gear#6",
+    "0:Models/747-8F.xml/2:747-8i_gear#7",
+    "0:Models/747-8F.xml/2:747-8i_gear#8",
+    "0:Models/747-8F.xml/2:747-8i_gear#9",
+    "0:Models/747-8F.xml/2:747-8i_gear#10",
+    "0:Models/747-8F.xml/2:747-8i_gear#11",
+    "0:Models/747-8F.xml/2:747-8i_gear#12",
+    "0:Models/747-8F.xml/2:747-8i_gear#13",
+    "0:Models/747-8F.xml/2:747-8i_gear#14",
+    "0:Models/747-8F.xml/2:747-8i_gear#15",
+    "0:Models/747-8F.xml/2:747-8i_gear#16",
+    "0:Models/747-8F.xml/2:747-8i_gear#17",
+    "0:Models/747-8F.xml/2:747-8i_gear#18",
+    "0:Models/747-8F.xml/2:747-8i_gear#19",
+    "0:Models/747-8F.xml/2:747-8i_gear#20",
+    "0:Models/747-8F.xml/2:747-8i_gear#21",
+    "0:Models/747-8F.xml/2:747-8i_gear#22",
+    "0:Models/747-8F.xml/2:747-8i_gear#23",
+    "0:Models/747-8F.xml/2:747-8i_gear#24",
+    "0:Models/747-8F.xml/2:747-8i_gear#25",
+    "0:Models/747-8F.xml/2:747-8i_gear#26",
+    "0:Models/747-8F.xml/2:747-8i_gear#27",
+    "0:Models/747-8F.xml/2:747-8i_gear#28",
+    "0:Models/747-8F.xml/2:747-8i_gear#29",
+    "0:Models/747-8F.xml/2:747-8i_gear#30",
+    "0:Models/747-8F.xml/2:747-8i_gear#31",
+    "0:Models/747-8F.xml/2:747-8i_gear#32",
+    "0:Models/747-8F.xml/2:747-8i_gear#33",
+    "0:Models/747-8F.xml/2:747-8i_gear#34",
+    "0:Models/747-8F.xml/2:747-8i_gear#35"
+  ],
+  "missingTextures": [],
+  "sourceAC": [
+    "Models/747-8F.ac",
+    "Models/747-8i_gear.ac"
+  ],
+  "discardedUnreferencedVertices": 146,
+  "provenance": "preparation/747-8i",
+  "variantConstruction": {
+    "fuselagePlugs": {
+      "removed": [
+        {
+          "side": "forward",
+          "range": [
+            -17,
+            -12.9
+          ]
+        },
+        {
+          "side": "aft",
+          "range": [
+            17.5,
+            19
+          ]
+        }
+      ],
+      "affectedParts": [
+        "antenna3",
+        "elevator_left",
+        "elevator_left",
+        "elevator_right",
+        "elevator_right",
+        "hstab_L",
+        "hstab_L",
+        "hstab_R",
+        "hstab_R",
+        "beacon.top",
+        "cabinlighting",
+        "cabinwindows",
+        "cargodoor1",
+        "cargodoor_in",
+        "cockpitdoor",
+        "cockpitshell_0_0",
+        "cockpitshell_0_1_0",
+        "cockpitshell_0_1_1",
+        "exhaust_apu",
+        "fuselage",
+        "lav1door1",
+        "lav1door1.003",
+        "lav1door2",
+        "lav2door1",
+        "lav2door2",
+        "LHwiper",
+        "LHwiper.arm",
+        "LHwiper.blade",
+        "NLG_L_lg",
+        "NLG_L_lg.in",
+        "NLG_L_sm",
+        "NLG_L_sm.in",
+        "NLG_R_lg",
+        "NLG_R_lg.in",
+        "NLG_R_sm",
+        "NLG_R_sm.in",
+        "nosecone",
+        "pitot.001",
+        "pitot.002",
+        "pitot.003",
+        "pitot.004",
+        "Plane.001_0.001",
+        "RHwiper",
+        "RHwiper.arm",
+        "RHwiper.blade",
+        "rudder_1",
+        "upper_deck",
+        "VHFantenna",
+        "vstab",
+        "GearNoseMainStrutColl",
+        "GearNoseMainStrutCyli",
+        "GearNoseTorqueLinkUp",
+        "GearNoseTorqueLinkUpp",
+        "GearNoseTorqueLinkLow_1",
+        "GearNoseTorqueLinkLow",
+        "GearNoseWheels_0",
+        "GearNoseWheels_1",
+        "GearNoseMainStrutPist",
+        "Mesh20",
+        "Mesh22",
+        "Mesh25",
+        "Plane"
+      ],
+      "basis": "Boeing D6-58326-1 and D6-58326-3. A 4.10 m forward barrel and 1.50 m aft barrel are removed from the short-deck 747-8F source. The 747-400 wing, winglets, pylons and four CF6 nacelles retain their original donor assembly."
+    },
+    "componentTransplants": [
+      {
+        "id": "747-400-wing-and-CF6",
+        "blend": "b744-components/neutral.blend",
+        "removedParts": 98,
+        "addedParts": [
+          "winglet_right",
+          "winglet_left",
+          "wing_right.3_2",
+          "wing_right.3_1",
+          "wing_right.3_0",
+          "wing_right.2_2",
+          "wing_right.2_1",
+          "wing_right.2_0",
+          "wing_right.1_2",
+          "wing_right.1_1",
+          "wing_right.1_0",
+          "wing_left.3_2",
+          "wing_left.3_1",
+          "wing_left.3_0",
+          "wing_left.2_2",
+          "wing_left.2_1",
+          "wing_left.2_0",
+          "wing_left.1_2",
+          "wing_left.1_1",
+          "wing_left.1_0",
+          "speedbrake_right.6",
+          "speedbrake_right.5",
+          "speedbrake_right.4",
+          "speedbrake_right.3",
+          "speedbrake_right.2",
+          "speedbrake_right.1",
+          "speedbrake_left.6",
+          "speedbrake_left.5",
+          "speedbrake_left.4",
+          "speedbrake_left.3",
+          "speedbrake_left.2",
+          "speedbrake_left.1",
+          "LEinbR.3",
+          "LEinbR.2",
+          "LEinbR.1",
+          "LEinbL.3",
+          "LEinbL.2",
+          "LEinbL.1",
+          "flap_right_outer.3_2",
+          "flap_right_outer.3_1",
+          "flap_right_outer.3_0",
+          "flap_right_outer.2_2",
+          "flap_right_outer.2_1",
+          "flap_right_outer.2_0",
+          "flap_right_outer.1_2",
+          "flap_right_outer.1_1",
+          "flap_right_outer.1_0",
+          "flap_right_inner.3_2",
+          "flap_right_inner.3_1",
+          "flap_right_inner.3_0",
+          "flap_right_inner.2_2",
+          "flap_right_inner.2_1",
+          "flap_right_inner.2_0",
+          "flap_right_inner.1_3",
+          "flap_right_inner.1_2",
+          "flap_right_inner.1_1",
+          "flap_right_inner.1_0",
+          "flap_right_h.4.1",
+          "flap_right_h.4",
+          "flap_right_h.3.1",
+          "flap_right_h.3",
+          "flap_right_h.2.1",
+          "flap_right_h.2",
+          "flap_right_h.1.1",
+          "flap_right_h.1",
+          "flap_left_outer.3_2",
+          "flap_left_outer.3_1",
+          "flap_left_outer.3_0",
+          "flap_left_outer.2_2",
+          "flap_left_outer.2_1",
+          "flap_left_outer.2_0",
+          "flap_left_outer.1_2",
+          "flap_left_outer.1_1",
+          "flap_left_outer.1_0",
+          "flap_left_inner.3_2",
+          "flap_left_inner.3_1",
+          "flap_left_inner.3_0",
+          "flap_left_inner.2_2",
+          "flap_left_inner.2_1",
+          "flap_left_inner.2_0",
+          "flap_left_inner.1_3",
+          "flap_left_inner.1_2",
+          "flap_left_inner.1_1",
+          "flap_left_inner.1_0",
+          "flap_left_h.4.1",
+          "flap_left_h.4",
+          "flap_left_h.3.1",
+          "flap_left_h.3",
+          "flap_left_h.2.1",
+          "flap_left_h.2",
+          "flap_left_h.1.1",
+          "flap_left_h.1",
+          "engine_reverser",
+          "engine_reverser",
+          "engine_reverser",
+          "engine_reverser",
+          "engine_nozzle",
+          "engine_nozzle",
+          "engine_nozzle",
+          "engine_nozzle",
+          "engine_chrome",
+          "engine_chrome",
+          "engine_chrome",
+          "engine_chrome",
+          "engine_body_1",
+          "engine_body_1",
+          "engine_body_1",
+          "engine_body_1",
+          "engine_body_0",
+          "engine_body_0",
+          "engine_body_0",
+          "engine_body_0",
+          "eng.4_2",
+          "eng.3_2",
+          "eng.2_2",
+          "eng.1_2",
+          "Cone",
+          "Cone",
+          "Cone",
+          "Cone",
+          "Blades",
+          "Blades",
+          "Blades",
+          "Blades",
+          "aileron_right_outer_2",
+          "aileron_right_outer_1",
+          "aileron_right_outer_0",
+          "aileron_right_inner_2",
+          "aileron_right_inner_1",
+          "aileron_right_inner_0",
+          "aileron_left_outer_2",
+          "aileron_left_outer_1",
+          "aileron_left_outer_0",
+          "aileron_left_inner_2",
+          "aileron_left_inner_1",
+          "aileron_left_inner_0"
+        ],
+        "basis": "Both FlightGear sources share the fuselage cross-section and center-section datum. Native 747-400 wing parts and hinges replace the 747-8F wing and GEnx nacelles."
+      }
+    ]
+  },
+  "capabilities": [
+    "fans",
+    "flaps",
+    "gear",
+    "reversers",
+    "spoilers"
+  ],
+  "reviewPoints": {
+    "cockpit": [
+      -24.493844985961914,
+      3.7230231761932373,
+      -4.6566128730773926e-09
+    ],
+    "engine": [
+      0.027203261852264404,
+      -2.5995068550109863,
+      13.259143829345703
+    ],
+    "gear": [
+      -21.91350746154785,
+      -5.0,
+      1.3500452041625977e-05
+    ],
+    "wing": [
+      5.124758243560791,
+      -1.1972734928131104,
+      7.353121280670166
+    ]
+  },
+  "fidelityNotes": [
+    "Short upper-deck freighter with 747-400 winglets and CF6 nacelles. Cargo door surfaces are closed.",
+    "AirZeta current paint, using HL7616 as the reference airframe. The captured flight board does not identify a registration."
+  ],
+  "reviewStatus": "build-awaiting-validation",
+  "addedDoorWindowPanes": 0,
+  "fittedCockpitOpenings": 0,
+  "fittedCabinOpenings": 0,
+  "envelopeCalibration": {
+    "rawDimensions": {
+      "length": 70.95280265808105,
+      "span": 64.44000244140625
+    },
+    "axisScale": [
+      0.9960142144145614,
+      1,
+      0.9999999621134984
+    ]
+  },
+  "skippedSourceModels": [
+    "Aircraft/747-8i/Models/Service/Pushback/pushback.xml",
+    "Aircraft/747-8i/Models/Service/Fueltender/fueltender.xml",
+    "Aircraft/747-8i/Models/Effects/TireSmoke/tyre-smoke.xml",
+    "Aircraft/747-8i/Models/Effects/TireSmoke/tyre-smoke.xml",
+    "Aircraft/747-8i/Models/Effects/TireSmoke/tyre-smoke.xml",
+    "Aircraft/747-8i/Models/Effects/TireSmoke/tyre-smoke.xml",
+    "Aircraft/747-8i/Models/Effects/TireSmoke/tyre-smoke.xml",
+    "Aircraft/747-8i/Models/Effects/fire.xml",
+    "Aircraft/747-8i/Models/Effects/fire.xml",
+    "Aircraft/747-8i/Models/Effects/fire.xml",
+    "Aircraft/747-8i/Models/Effects/fire.xml",
+    "Aircraft/747-8i/Models/Cockpit/cockpit.xml",
+    "Aircraft/747-8i/Models/Shadow/shadow.xml",
+    "Aircraft/747-8i/Models/Effects/Contrail/contrail0.xml",
+    "Aircraft/747-8i/Models/Effects/Contrail/contrail1.xml",
+    "Aircraft/747-8i/Models/Effects/Contrail/contrail2.xml",
+    "Aircraft/747-8i/Models/Effects/Contrail/contrail3.xml",
+    "Aircraft/747-8i/Models/Effects/fuel-dump.xml",
+    "Aircraft/747-8i/Models/Effects/fuel-dump.xml"
+  ],
+  "unresolvedMotions": [],
+  "cargo": true,
+  "paintProjection": {
+    "operatorFinishParts": [
+      "engine_reverser",
+      "engine_reverser",
+      "engine_reverser",
+      "engine_reverser",
+      "engine_body_1",
+      "engine_body_1",
+      "engine_body_1",
+      "engine_body_1",
+      "engine_body_0",
+      "engine_body_0",
+      "engine_body_0",
+      "engine_body_0"
+    ],
+    "reviewStatus": "requires-visual-review"
+  },
+  "authoredPaint": {
+    "method": "Original airline paint layout projected in physical exterior coordinates; independent destination texture atlases retained.",
+    "maps": [
+      "b744f/generated/airzeta/authored-color-0.png"
+    ],
+    "references": [
+      "https://www.boeing.com/commercial/airports/plan-manuals",
+      "https://www.cargopress.co.kr/files/bannerfile/ad_38_m.jpg",
+      "https://www.jetphotos.com/registration/HL7616"
+    ],
+    "artworkMetadata": [
+      "preparation/brand-art/AirZeta logo 2025.asset.json"
+    ],
+    "reviewStatus": "requires-visual-review"
+  }
+}

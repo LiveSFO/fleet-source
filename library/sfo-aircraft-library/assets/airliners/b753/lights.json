@@ -1,0 +1,134 @@
+[
+  {
+    "name": "beacon_1",
+    "kind": "beacon",
+    "color": "red",
+    "position": [
+      6.197650846859326,
+      3.13726806640625,
+      0.0
+    ],
+    "basis": "Source static light translation in Models/757-300.xml"
+  },
+  {
+    "name": "beacon_2",
+    "kind": "beacon",
+    "color": "red",
+    "position": [
+      21.196666282317054,
+      -1.2151000499725342,
+      0.0
+    ],
+    "basis": "Source static light translation in Models/757-300.xml"
+  },
+  {
+    "name": "rednav",
+    "kind": "nav",
+    "color": "red",
+    "position": [
+      26.88597554433922,
+      1.529479742050171,
+      18.900790297373483
+    ],
+    "basis": "Source static light translation in Models/757-300.xml"
+  },
+  {
+    "name": "greennav",
+    "kind": "nav",
+    "color": "green",
+    "position": [
+      26.88597554433922,
+      1.529479742050171,
+      -18.900790297373483
+    ],
+    "basis": "Source static light translation in Models/757-300.xml"
+  },
+  {
+    "name": "strobelight_1",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      28.125705124327045,
+      1.5055358409881592,
+      19.1495035286764
+    ],
+    "basis": "Source static light translation in Models/757-300.xml"
+  },
+  {
+    "name": "strobelight_2",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      28.125705124327045,
+      1.5055358409881592,
+      -19.1495035286764
+    ],
+    "basis": "Source static light translation in Models/757-300.xml"
+  },
+  {
+    "name": "center_light1",
+    "kind": "landing",
+    "color": "white",
+    "position": [
+      0.8588218376025725,
+      -1.5374199151992798,
+      -0.12217786217086567
+    ],
+    "basis": "Source fixture mesh bounds"
+  },
+  {
+    "name": "Front_landing_gear",
+    "kind": "landing",
+    "color": "white",
+    "position": [
+      0.44832598629697,
+      -0.5191650167107582,
+      -0.0004849937395144234
+    ],
+    "basis": "Source fixture mesh bounds"
+  },
+  {
+    "name": "rwy_turnoff1",
+    "kind": "turnoff",
+    "color": "white",
+    "position": [
+      0.9031989294716354,
+      -1.3377355933189392,
+      0.1723799071661886
+    ],
+    "basis": "Source fixture mesh bounds"
+  },
+  {
+    "name": "taxi.lamp.glass",
+    "kind": "taxi",
+    "color": "white",
+    "position": [
+      1.0411960014593034,
+      -2.53442645072937,
+      -0.004072422679698107
+    ],
+    "basis": "Source fixture mesh bounds"
+  },
+  {
+    "name": "winglightL",
+    "kind": "winglight",
+    "color": "white",
+    "position": [
+      11.744276565514447,
+      0.5932300239801407,
+      1.918096835036936
+    ],
+    "basis": "Source fixture mesh bounds"
+  },
+  {
+    "name": "winglightR",
+    "kind": "winglight",
+    "color": "white",
+    "position": [
+      11.744158979332521,
+      0.5932300239801407,
+      -1.8984062799438741
+    ],
+    "basis": "Source fixture mesh bounds"
+  }
+]

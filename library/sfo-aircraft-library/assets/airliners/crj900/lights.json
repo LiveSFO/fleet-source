@@ -1,0 +1,156 @@
+[
+  {
+    "name": "Landing light",
+    "kind": "landing",
+    "color": "white",
+    "position": [
+      -16.301310485996943,
+      -2.3269999027252197,
+      -0.048848271552551954
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Port nav light",
+    "kind": "nav",
+    "color": "red",
+    "position": [
+      3.651325088747053,
+      -1.8660000562667847,
+      12.043697971655913
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Starboard nav light",
+    "kind": "nav",
+    "color": "green",
+    "position": [
+      3.651325088747053,
+      -1.8660000562667847,
+      -12.043697971655913
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Port strobe light",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      3.651325088747053,
+      -1.8660000562667847,
+      12.043697971655913
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Rear strobe light",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      17.571814504625507,
+      2.7230000495910645,
+      0.0
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Starboard strobe light",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      3.651325088747053,
+      -1.8660000562667847,
+      -12.043697971655913
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Top beacon",
+    "kind": "beacon",
+    "color": "red",
+    "position": [
+      -7.234569218609386,
+      0.30000001192092896,
+      0.0
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Bottom beacon",
+    "kind": "beacon",
+    "color": "red",
+    "position": [
+      -8.256779941198683,
+      -2.385999917984009,
+      0.0
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Port landing light",
+    "kind": "landing",
+    "color": "white",
+    "position": [
+      -2.408853198581978,
+      -2.1989998817443848,
+      1.8188186839156817
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Port landing light (inside)",
+    "kind": "landing",
+    "color": "white",
+    "position": [
+      -7.590991349149316,
+      -1.906000018119812,
+      7.503926009295929
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Port taxi light",
+    "kind": "taxi",
+    "color": "white",
+    "position": [
+      -2.5770524142986186,
+      -2.203000068664551,
+      1.570420056596835
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Starboard landing light",
+    "kind": "landing",
+    "color": "white",
+    "position": [
+      -2.408853198581978,
+      -2.1989998817443848,
+      -1.8188186839156817
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Starboard landing light (inside)",
+    "kind": "landing",
+    "color": "white",
+    "position": [
+      -7.590991349149316,
+      -1.906000018119812,
+      -7.503926009295929
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Starboard taxi light",
+    "kind": "taxi",
+    "color": "white",
+    "position": [
+      -2.5770524142986186,
+      -2.203000068664551,
+      -1.570420056596835
+    ],
+    "basis": "Source XML light-model instance offset"
+  }
+]

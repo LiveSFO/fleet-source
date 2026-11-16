@@ -1,0 +1,1183 @@
+{
+  "aircraft": "b763f",
+  "label": "Boeing 767-300F / converted freighter",
+  "livery": {
+    "id": "fedex",
+    "name": "FedEx Express",
+    "xml": "@preparation/naviat-liveries/upstream/767/FDX.xml"
+  },
+  "referenceDimensions": {
+    "length": 54.94,
+    "span": 47.57
+  },
+  "axes": "X aft; Y up; Z port",
+  "bounds": {
+    "min": [
+      -26.46996247403674,
+      -6.369992256164551,
+      -23.78500093679835
+    ],
+    "max": [
+      28.470037525963253,
+      9.264009475708008,
+      23.784999063201653
+    ]
+  },
+  "motions": [
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "left_gear",
+        "left_gear2"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        6.407368815103432,
+        -3.450000047683716,
+        4.223908529291974
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          95.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "left_gear",
+        "left_gear2"
+      ],
+      "model": "Models/767-300.xml",
+      "scope": "0:Models/767-300.xml",
+      "targetPartIds": [
+        "0:Models/767-300.xml#55.0.0.0",
+        "0:Models/767-300.xml#55.0.0.1",
+        "0:Models/767-300.xml#55.0.0.2",
+        "0:Models/767-300.xml#55.0.0.3",
+        "0:Models/767-300.xml#55.0.0.4",
+        "0:Models/767-300.xml#57.0",
+        "0:Models/767-300.xml#57.1",
+        "0:Models/767-300.xml#57.10",
+        "0:Models/767-300.xml#57.11",
+        "0:Models/767-300.xml#57.12",
+        "0:Models/767-300.xml#57.13",
+        "0:Models/767-300.xml#57.14",
+        "0:Models/767-300.xml#57.15",
+        "0:Models/767-300.xml#57.16",
+        "0:Models/767-300.xml#57.17",
+        "0:Models/767-300.xml#57.2",
+        "0:Models/767-300.xml#57.3",
+        "0:Models/767-300.xml#57.4",
+        "0:Models/767-300.xml#57.5",
+        "0:Models/767-300.xml#57.6",
+        "0:Models/767-300.xml#57.7",
+        "0:Models/767-300.xml#57.8",
+        "0:Models/767-300.xml#57.9"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "right_gear",
+        "right_gear2"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        6.407368815103432,
+        -3.450000047683716,
+        -4.223908529291974
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          95.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "right_gear",
+        "right_gear2"
+      ],
+      "model": "Models/767-300.xml",
+      "scope": "0:Models/767-300.xml",
+      "targetPartIds": [
+        "0:Models/767-300.xml#12.0.0.0.0",
+        "0:Models/767-300.xml#12.0.0.0.1",
+        "0:Models/767-300.xml#12.0.0.1",
+        "0:Models/767-300.xml#12.0.0.10.0.0",
+        "0:Models/767-300.xml#12.0.0.10.1",
+        "0:Models/767-300.xml#12.0.0.11.0.0",
+        "0:Models/767-300.xml#12.0.0.11.1",
+        "0:Models/767-300.xml#12.0.0.12.0.0",
+        "0:Models/767-300.xml#12.0.0.12.1",
+        "0:Models/767-300.xml#12.0.0.2",
+        "0:Models/767-300.xml#12.0.0.3",
+        "0:Models/767-300.xml#12.0.0.4",
+        "0:Models/767-300.xml#12.0.0.5",
+        "0:Models/767-300.xml#12.0.0.6",
+        "0:Models/767-300.xml#12.0.0.7",
+        "0:Models/767-300.xml#12.0.0.8",
+        "0:Models/767-300.xml#12.0.0.9.0.0",
+        "0:Models/767-300.xml#12.0.0.9.1",
+        "0:Models/767-300.xml#56.0.0.0",
+        "0:Models/767-300.xml#56.0.0.1",
+        "0:Models/767-300.xml#56.0.0.2",
+        "0:Models/767-300.xml#56.0.0.3",
+        "0:Models/767-300.xml#56.0.0.4"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "nose_gear"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        -22.50129497122234,
+        -3.549999952316284,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          120.0
+        ],
+        [
+          0.2,
+          115.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "nose_gear"
+      ],
+      "model": "Models/767-300.xml",
+      "scope": "0:Models/767-300.xml",
+      "targetPartIds": [
+        "0:Models/767-300.xml#18.0.0",
+        "0:Models/767-300.xml#18.0.1",
+        "0:Models/767-300.xml#18.0.2",
+        "0:Models/767-300.xml#18.0.3",
+        "0:Models/767-300.xml#18.0.4",
+        "0:Models/767-300.xml#18.0.5",
+        "0:Models/767-300.xml#18.0.6",
+        "0:Models/767-300.xml#18.0.7.0.0",
+        "0:Models/767-300.xml#18.0.7.1",
+        "0:Models/767-300.xml#18.0.8.0",
+        "0:Models/767-300.xml#18.0.8.1.0"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flapl"
+      ],
+      "axis": [
+        0.01719752699136734,
+        0.17523358762264252,
+        0.9843767285346985
+      ],
+      "center": [
+        1.9653130530184209,
+        -3.7750399112701416,
+        2.5954836692632743
+      ],
+      "factor": -30.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flapl"
+      ],
+      "model": "Models/767-300.xml",
+      "scope": "0:Models/767-300.xml",
+      "targetPartIds": [
+        "0:Models/767-300.xml#47"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flapr"
+      ],
+      "axis": [
+        0.01719752699136734,
+        0.17523358762264252,
+        -0.9843767285346985
+      ],
+      "center": [
+        1.9653130530184209,
+        -3.7750399112701416,
+        -2.5954836692632743
+      ],
+      "factor": 30.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flapr"
+      ],
+      "model": "Models/767-300.xml",
+      "scope": "0:Models/767-300.xml",
+      "targetPartIds": [
+        "0:Models/767-300.xml#50"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "LgomoWingInt"
+      ],
+      "axis": [
+        0.01719752699136734,
+        0.17523358762264252,
+        0.9843767285346985
+      ],
+      "center": [
+        1.9653130530184209,
+        -3.7750399112701416,
+        2.5954836692632743
+      ],
+      "factor": -30.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "LgomoWingInt"
+      ],
+      "model": "Models/767-300.xml",
+      "scope": "0:Models/767-300.xml",
+      "targetPartIds": [
+        "0:Models/767-300.xml#46"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "RgomoWingInt"
+      ],
+      "axis": [
+        0.01719752699136734,
+        0.17523358762264252,
+        -0.9843767285346985
+      ],
+      "center": [
+        1.9653130530184209,
+        -3.7750399112701416,
+        -2.5954836692632743
+      ],
+      "factor": 30.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "RgomoWingInt"
+      ],
+      "model": "Models/767-300.xml",
+      "scope": "0:Models/767-300.xml",
+      "targetPartIds": [
+        "0:Models/767-300.xml#49"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap_ext_L",
+        "RgomoWing1b",
+        "RgomoWing0b"
+      ],
+      "axis": [
+        0.3774137496948242,
+        0.11071667075157166,
+        0.9194023013114929
+      ],
+      "center": [
+        3.2774885036051273,
+        -2.5550599098205566,
+        9.058829729721959
+      ],
+      "factor": -30.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap_ext_L",
+        "RgomoWing1b",
+        "RgomoWing0b"
+      ],
+      "model": "Models/767-300.xml",
+      "scope": "0:Models/767-300.xml",
+      "targetPartIds": [
+        "0:Models/767-300.xml#75",
+        "0:Models/767-300.xml#80.0.0.0.0",
+        "0:Models/767-300.xml#81.0.0.0.0"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap_ext_R",
+        "RgomoWing2b",
+        "RgomoWing3b"
+      ],
+      "axis": [
+        0.3774137496948242,
+        0.11071667075157166,
+        -0.9194023013114929
+      ],
+      "center": [
+        3.2774885036051273,
+        -2.5550599098205566,
+        -9.058829729721959
+      ],
+      "factor": 30.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap_ext_R",
+        "RgomoWing2b",
+        "RgomoWing3b"
+      ],
+      "model": "Models/767-300.xml",
+      "scope": "0:Models/767-300.xml",
+      "targetPartIds": [
+        "0:Models/767-300.xml#74",
+        "0:Models/767-300.xml#78.0.0.0.0",
+        "0:Models/767-300.xml#79.0.0.0.0"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/speedbrake-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "speedbrakel"
+      ],
+      "axis": [
+        -0.08804654330015182,
+        -0.15197299420833588,
+        -0.9844551086425781
+      ],
+      "center": [
+        1.801093640141688,
+        -2.4767000675201416,
+        6.700140110727714
+      ],
+      "factor": -75.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "speedbrakel"
+      ],
+      "model": "Models/767-300.xml",
+      "scope": "0:Models/767-300.xml",
+      "targetPartIds": [
+        "0:Models/767-300.xml#13",
+        "0:Models/767-300.xml#14"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/speedbrake-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "speedbraker"
+      ],
+      "axis": [
+        -0.08804654330015182,
+        -0.15197299420833588,
+        0.9844551086425781
+      ],
+      "center": [
+        1.801093640141688,
+        -2.4767000675201416,
+        -6.700140110727714
+      ],
+      "factor": 75.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "speedbraker"
+      ],
+      "model": "Models/767-300.xml",
+      "scope": "0:Models/767-300.xml",
+      "targetPartIds": [
+        "0:Models/767-300.xml#69",
+        "0:Models/767-300.xml#70"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/speedbrake-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "speedbrake_LE"
+      ],
+      "axis": [
+        -0.3705862760543823,
+        -0.10357808321714401,
+        -0.9230045676231384
+      ],
+      "center": [
+        5.002987778760517,
+        -1.597830057144165,
+        15.083085757242445
+      ],
+      "factor": -75.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "speedbrake_LE"
+      ],
+      "model": "Models/767-300.xml",
+      "scope": "0:Models/767-300.xml",
+      "targetPartIds": [
+        "0:Models/767-300.xml#86",
+        "0:Models/767-300.xml#87",
+        "0:Models/767-300.xml#88",
+        "0:Models/767-300.xml#89"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "surface-positions/speedbrake-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "speedbrake_RE"
+      ],
+      "axis": [
+        -0.3705862760543823,
+        -0.10357808321714401,
+        0.9230045676231384
+      ],
+      "center": [
+        5.002987778760517,
+        -1.597830057144165,
+        -15.083085757242445
+      ],
+      "factor": 75.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "speedbrake_RE"
+      ],
+      "model": "Models/767-300.xml",
+      "scope": "0:Models/767-300.xml",
+      "targetPartIds": [
+        "0:Models/767-300.xml#83",
+        "0:Models/767-300.xml#84",
+        "0:Models/767-300.xml#85",
+        "0:Models/767-300.xml#90"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "LFflapwing1"
+      ],
+      "axis": [
+        -0.5733081698417664,
+        -0.08911564201116562,
+        -0.8144791126251221
+      ],
+      "center": [
+        -0.8398133443320033,
+        -2.731920003890991,
+        8.201641441249196
+      ],
+      "factor": -5.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "LFflapwing1"
+      ],
+      "model": "Models/767-300.xml",
+      "scope": "0:Models/767-300.xml",
+      "targetPartIds": [
+        "0:Models/767-300.xml#48.0.1.2.1"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "RFflapwing1"
+      ],
+      "axis": [
+        -0.5733081698417664,
+        -0.08911564201116562,
+        0.8144791126251221
+      ],
+      "center": [
+        -0.8398133443320033,
+        -2.731920003890991,
+        -8.201641441249196
+      ],
+      "factor": 5.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "RFflapwing1"
+      ],
+      "model": "Models/767-300.xml",
+      "scope": "0:Models/767-300.xml",
+      "targetPartIds": [
+        "0:Models/767-300.xml#48.0.2.2.1"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "LFflapwing1"
+      ],
+      "axis": [
+        -0.8072554469108582,
+        -0.30557161569595337,
+        0.5049402117729187
+      ],
+      "center": [
+        -4.154189291985394,
+        -2.4227399826049805,
+        4.850755902922563
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.15
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "LFflapwing1"
+      ],
+      "model": "Models/767-300.xml",
+      "scope": "0:Models/767-300.xml",
+      "targetPartIds": [
+        "0:Models/767-300.xml#48.0.1.2.1"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "RFflapwing1"
+      ],
+      "axis": [
+        -0.8072554469108582,
+        -0.30557161569595337,
+        -0.5049402117729187
+      ],
+      "center": [
+        -4.154189291985394,
+        -2.4227399826049805,
+        -4.850755902922563
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.15
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "RFflapwing1"
+      ],
+      "model": "Models/767-300.xml",
+      "scope": "0:Models/767-300.xml",
+      "targetPartIds": [
+        "0:Models/767-300.xml#48.0.2.2.1"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "LFflapwing2"
+      ],
+      "axis": [
+        -0.5548165440559387,
+        -0.08636361360549927,
+        -0.8274780511856079
+      ],
+      "center": [
+        6.85099404709103,
+        -0.9322599768638611,
+        22.443099130595204
+      ],
+      "factor": -10.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "LFflapwing2"
+      ],
+      "model": "Models/767-300.xml",
+      "scope": "0:Models/767-300.xml",
+      "targetPartIds": [
+        "0:Models/767-300.xml#48.0.1.2.0"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "RFflapwing2"
+      ],
+      "axis": [
+        -0.5548165440559387,
+        -0.08636361360549927,
+        0.8274780511856079
+      ],
+      "center": [
+        6.85099404709103,
+        -0.9322599768638611,
+        -22.443099130595204
+      ],
+      "factor": 10.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "RFflapwing2"
+      ],
+      "model": "Models/767-300.xml",
+      "scope": "0:Models/767-300.xml",
+      "targetPartIds": [
+        "0:Models/767-300.xml#48.0.2.2.0"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "LFflapwing2"
+      ],
+      "axis": [
+        -0.8391161561012268,
+        -0.24976621568202972,
+        0.48321929574012756
+      ],
+      "center": [
+        2.631751362935278,
+        -1.4376399517059326,
+        14.97689872758877
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.45
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "LFflapwing2"
+      ],
+      "model": "Models/767-300.xml",
+      "scope": "0:Models/767-300.xml",
+      "targetPartIds": [
+        "0:Models/767-300.xml#48.0.1.2.0"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "RFflapwing2"
+      ],
+      "axis": [
+        -0.8391161561012268,
+        -0.24976621568202972,
+        -0.48321929574012756
+      ],
+      "center": [
+        2.631751362935278,
+        -1.4376399517059326,
+        -14.97689872758877
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.45
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "RFflapwing2"
+      ],
+      "model": "Models/767-300.xml",
+      "scope": "0:Models/767-300.xml",
+      "targetPartIds": [
+        "0:Models/767-300.xml#48.0.2.2.0"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[0]/rpm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "fanl"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -5.740330132652379,
+        -4.429999828338623,
+        7.642327392196409
+      ],
+      "factor": 10.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "fanl"
+      ],
+      "model": "Models/767-300.xml",
+      "scope": "0:Models/767-300.xml",
+      "targetPartIds": [
+        "0:Models/767-300.xml#39.0.0.0.0",
+        "0:Models/767-300.xml#40.0.0.0.0"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[1]/rpm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "fanr"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -5.740330132652379,
+        -4.429999828338623,
+        -7.642327392196409
+      ],
+      "factor": 10.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "fanr"
+      ],
+      "model": "Models/767-300.xml",
+      "scope": "0:Models/767-300.xml",
+      "targetPartIds": [
+        "0:Models/767-300.xml#37.0.0.0.0",
+        "0:Models/767-300.xml#38.0.0.0.0"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "sim/multiplay/generic/float[5]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "reverser"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 0.35,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "reverser"
+      ],
+      "model": "Models/767-300.xml",
+      "scope": "0:Models/767-300.xml",
+      "targetPartIds": [
+        "0:Models/767-300.xml#24.0.0.0.0.0",
+        "0:Models/767-300.xml#27.0.0.0.0.0.0",
+        "0:Models/767-300.xml#27.1.0.0.0.0.0"
+      ]
+    }
+  ],
+  "gearInternalParts": [
+    "Rtrimpiece8",
+    "Rtrimpiece7",
+    "Rtrimpiece2",
+    "RmeEixo",
+    "Rtrimpiece4",
+    "Rtrimpiece3",
+    "Rtrimpiece1",
+    "Rtrimpiece9",
+    "Rtrimpiece5",
+    "Rtrimpiece6",
+    "RBtrimTire1",
+    "RBtrimWhell1",
+    "RFtrimTire1",
+    "RFtrimWhell1",
+    "RFtrimTire2",
+    "RFtrimWhell2",
+    "RBtrimTire2",
+    "RBtrimWhell2",
+    "FCbarNG",
+    "FL1barNG",
+    "FB4barNG",
+    "FR1barNG",
+    "FB3barNG",
+    "FFbarNG",
+    "FAbarNG",
+    "LTirenoseGear",
+    "LWhellnoseGear",
+    "RWhellnoseGear",
+    "RTirenoseGear",
+    "LiEixo2",
+    "LiEixo1",
+    "LmeEixo",
+    "LmiEixo",
+    "Ltrimpiece1",
+    "RiEixo2",
+    "RiEixo1",
+    "RmeEixo",
+    "RmiEixo",
+    "Rtrimpiece1",
+    "Ltrimpiece2",
+    "LmeEixo",
+    "Ltrimpiece4",
+    "Ltrimpiece3",
+    "Ltrimpiece1",
+    "Ltrimpiece9",
+    "Ltrimpiece5",
+    "Ltrimpiece6",
+    "Ltrimpiece8",
+    "Ltrimpiece7",
+    "LFtrimWhell1",
+    "LFtrimWhell2",
+    "LBtrimWhell2",
+    "LBtrimWhell1",
+    "LFtrimTire1",
+    "LFtrimTire2",
+    "LBtrimTire2",
+    "LBtrimTire1"
+  ],
+  "gearInternalPartIds": [
+    "0:Models/767-300.xml#12.0.0.0.0",
+    "0:Models/767-300.xml#12.0.0.0.1",
+    "0:Models/767-300.xml#12.0.0.1",
+    "0:Models/767-300.xml#12.0.0.2",
+    "0:Models/767-300.xml#12.0.0.3",
+    "0:Models/767-300.xml#12.0.0.4",
+    "0:Models/767-300.xml#12.0.0.5",
+    "0:Models/767-300.xml#12.0.0.6",
+    "0:Models/767-300.xml#12.0.0.7",
+    "0:Models/767-300.xml#12.0.0.8",
+    "0:Models/767-300.xml#12.0.0.9.0.0",
+    "0:Models/767-300.xml#12.0.0.9.1",
+    "0:Models/767-300.xml#12.0.0.10.0.0",
+    "0:Models/767-300.xml#12.0.0.10.1",
+    "0:Models/767-300.xml#12.0.0.11.0.0",
+    "0:Models/767-300.xml#12.0.0.11.1",
+    "0:Models/767-300.xml#12.0.0.12.0.0",
+    "0:Models/767-300.xml#12.0.0.12.1",
+    "0:Models/767-300.xml#18.0.0",
+    "0:Models/767-300.xml#18.0.1",
+    "0:Models/767-300.xml#18.0.2",
+    "0:Models/767-300.xml#18.0.3",
+    "0:Models/767-300.xml#18.0.4",
+    "0:Models/767-300.xml#18.0.5",
+    "0:Models/767-300.xml#18.0.6",
+    "0:Models/767-300.xml#18.0.7.0.0",
+    "0:Models/767-300.xml#18.0.7.1",
+    "0:Models/767-300.xml#18.0.8.0",
+    "0:Models/767-300.xml#18.0.8.1.0",
+    "0:Models/767-300.xml#55.0.0.0",
+    "0:Models/767-300.xml#55.0.0.1",
+    "0:Models/767-300.xml#55.0.0.2",
+    "0:Models/767-300.xml#55.0.0.3",
+    "0:Models/767-300.xml#55.0.0.4",
+    "0:Models/767-300.xml#56.0.0.0",
+    "0:Models/767-300.xml#56.0.0.1",
+    "0:Models/767-300.xml#56.0.0.2",
+    "0:Models/767-300.xml#56.0.0.3",
+    "0:Models/767-300.xml#56.0.0.4",
+    "0:Models/767-300.xml#57.0",
+    "0:Models/767-300.xml#57.1",
+    "0:Models/767-300.xml#57.2",
+    "0:Models/767-300.xml#57.3",
+    "0:Models/767-300.xml#57.4",
+    "0:Models/767-300.xml#57.5",
+    "0:Models/767-300.xml#57.6",
+    "0:Models/767-300.xml#57.7",
+    "0:Models/767-300.xml#57.8",
+    "0:Models/767-300.xml#57.9",
+    "0:Models/767-300.xml#57.10",
+    "0:Models/767-300.xml#57.11",
+    "0:Models/767-300.xml#57.12",
+    "0:Models/767-300.xml#57.13",
+    "0:Models/767-300.xml#57.14",
+    "0:Models/767-300.xml#57.15",
+    "0:Models/767-300.xml#57.16",
+    "0:Models/767-300.xml#57.17"
+  ],
+  "missingTextures": [],
+  "sourceAC": [
+    "Models/767-300.ac",
+    "Models/winglets.ac",
+    "Models/cargodoor.ac",
+    "Models/cargodoor.ac",
+    "Models/passengerdoor.ac",
+    "Models/passengerdoor.ac"
+  ],
+  "discardedUnreferencedVertices": 4,
+  "provenance": "preparation/767-300-modern",
+  "variantConstruction": {
+    "cargoConversion": {
+      "sealedPassengerGlazing": [
+        "0:Models/767-300.xml#28.1"
+      ],
+      "mainDeckDoor": {
+        "bodyPattern": "^Fuselage$",
+        "sealPattern": "^Glass_Fuselage$",
+        "centerFromNose": 11.93,
+        "width": 3.4,
+        "height": 2.63,
+        "sillAboveGround": 4.2,
+        "basis": "Boeing D6-58328 Rev K, 2.7.7 p.2-36: 11.93 m door center station, 3.40 m width, manual loading clear height 2.63 m. Sill 4.20 m nominal, within 2.3.3 clearance range."
+      },
+      "method": "Closed curved panel and 8 mm perimeter seal ray-fitted to actual fuselage triangles; source skin UV retained. Door dimensions follow Boeing drawing; nominal sill height lies within published loading-clearance range."
+    }
+  },
+  "capabilities": [
+    "fans",
+    "flaps",
+    "gear",
+    "reversers",
+    "spoilers"
+  ],
+  "reviewPoints": {
+    "cockpit": [
+      -24.058813095092773,
+      -0.8018984198570251,
+      0.0013115336187183857
+    ],
+    "gear": [
+      -22.12005615234375,
+      -5.614194869995117,
+      0.4016052782535553
+    ],
+    "wing": [
+      -4.422702789306641,
+      -2.7318201065063477,
+      5.024378299713135
+    ]
+  },
+  "fidelityNotes": [
+    "Passenger glazing sealed in geometry, passenger emission removed, closed main-deck cargo door fitted to actual skin. Native landing gear/flaps/reversers retained. Door does not open; cargo cabin not modeled. Exact 300F versus 300 converted-freighter details and source registration need review."
+  ],
+  "reviewStatus": "build-awaiting-validation",
+  "addedDoorWindowPanes": 0,
+  "fittedCockpitOpenings": 1,
+  "fittedCabinOpenings": 0,
+  "envelopeCalibration": {
+    "rawDimensions": {
+      "length": 54.936838150024414,
+      "span": 48.426950454711914
+    },
+    "axisScale": [
+      1.0000575542765484,
+      1,
+      0.982304265565652
+    ]
+  },
+  "skippedSourceModels": [
+    "Aircraft/767-300/Models/Flightdeck/Flightdeck.xml",
+    "Models/Airport/Pushback/Goldhofert.xml",
+    "Aircraft/767-300/Models/shadow.xml",
+    "Aircraft/767-300/Models/Operations/Followme/followme.xml",
+    "Aircraft/767-300/Models/Operations/Catering/catering.xml",
+    "Aircraft/767-300/Models/Operations/Stairways/stairs.xml",
+    "Aircraft/767-300/Models/Operations/Stairways/stairs.xml",
+    "Aircraft/767-300/Models/Operations/Fuel/citerne.xml",
+    "Aircraft/767-300/Models/Operations/Bus/bus.xml",
+    "Aircraft/767-300/Models/Operations/Baggage/chariot.xml",
+    "Aircraft/767-300/Models/Operations/Cones/cone.xml",
+    "Aircraft/767-300/Models/Operations/Cones/cone.xml",
+    "Aircraft/767-300/Models/Operations/Cones/cone.xml",
+    "Aircraft/767-300/Models/Operations/Cones/cone.xml",
+    "Aircraft/767-300/Models/Operations/Cones/cone.xml",
+    "Aircraft/767-300/Models/Operations/Cones/cone.xml",
+    "Aircraft/767-300/Models/Effects/Exhaust/Exhaust.xml",
+    "Aircraft/767-300/Models/Effects/Exhaust/Exhaust.xml",
+    "Aircraft/767-300/Models/Effects/Contrail/contrail.xml",
+    "Aircraft/767-300/Models/Effects/Contrail/contrail1.xml",
+    "Aircraft/767-300/Models/Effects/fuel-dump.xml",
+    "Aircraft/767-300/Models/Effects/fuel-dump.xml"
+  ],
+  "unresolvedMotions": [],
+  "cargo": true
+}

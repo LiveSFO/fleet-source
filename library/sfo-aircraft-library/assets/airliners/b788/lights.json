@@ -1,0 +1,145 @@
+[
+  {
+    "name": "greennav",
+    "kind": "nav",
+    "color": "green",
+    "position": [
+      9.641015069131438,
+      3.427500009536743,
+      -27.512820925527535
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "rednav",
+    "kind": "nav",
+    "color": "red",
+    "position": [
+      9.641015069131438,
+      3.427500009536743,
+      27.512820925527535
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "strobe.left",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      9.641015069131438,
+      3.460099935531616,
+      27.70142603685248
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "strobe.right",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      9.641015069131438,
+      3.460099935531616,
+      -27.70142603685248
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "NoseLandingLight",
+    "kind": "landing",
+    "color": "white",
+    "position": [
+      -20.941928668577468,
+      -2.0,
+      0.0
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "taxilight",
+    "kind": "taxi",
+    "color": "white",
+    "position": [
+      -20.941928668577468,
+      -2.0,
+      0.0
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "LeftWingLandinglight",
+    "kind": "landing",
+    "color": "white",
+    "position": [
+      -6.946628209611706,
+      0.3411000072956085,
+      3.4094311610543993
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "RightWingLandinglight",
+    "kind": "landing",
+    "color": "white",
+    "position": [
+      -6.946628209611706,
+      0.3411000072956085,
+      -3.4094311610543993
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Beaconlight.top",
+    "kind": "beacon",
+    "color": "red",
+    "position": [
+      -13.733468316016076,
+      4.4822797775268555,
+      0.0
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "Beaconlight.bottom",
+    "kind": "beacon",
+    "color": "red",
+    "position": [
+      -10.268418147289395,
+      -1.677150011062622,
+      0.0
+    ],
+    "basis": "Source XML light-model instance offset"
+  },
+  {
+    "name": "lhturnoffl",
+    "kind": "turnoff",
+    "color": "white",
+    "position": [
+      -6.860422510366686,
+      0.361380010843277,
+      3.001749201835961
+    ],
+    "basis": "Source fixture mesh bounds"
+  },
+  {
+    "name": "rhturnoffl",
+    "kind": "turnoff",
+    "color": "white",
+    "position": [
+      -6.863075723759752,
+      0.3613850027322769,
+      -2.9996238629345653
+    ],
+    "basis": "Source fixture mesh bounds"
+  },
+  {
+    "name": "tlight",
+    "kind": "taxi",
+    "color": "white",
+    "position": [
+      28.090492574506193,
+      2.1090049743652344,
+      0.0008178245837727092
+    ],
+    "basis": "Source fixture mesh bounds"
+  }
+]

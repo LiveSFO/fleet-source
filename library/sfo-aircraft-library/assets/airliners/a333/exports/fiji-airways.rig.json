@@ -1,0 +1,2513 @@
+{
+  "aircraft": "a333",
+  "label": "Airbus A330-300 \u00b7 Rolls-Royce",
+  "livery": {
+    "id": "fiji-airways",
+    "name": "Fiji Airways",
+    "paintProjection": {
+      "sourceBlend": "preparation/paint-donors/a330-fiji.blend",
+      "sourceBodyPattern": "^fuselage$|^nosecone$|door",
+      "bodyPartPattern": "^fuselage$|^nosecone$|^door|^Door|^vstab$|^rudder$",
+      "bodyTexturePattern": "323_blank.png$",
+      "finPartPattern": "^vstab$|^rudder$",
+      "bodyResolution": 4096,
+      "angularResolution": 1024,
+      "bakeCabinMask": false,
+      "stripDonorWindows": false,
+      "sourceTextureOverrides": {
+        "FJI.png": "preparation/paint-donors/clean-a330/FJI.png"
+      },
+      "preserveTargetCabinMask": true
+    },
+    "notes": [
+      "Licensed A332 airline artwork transferred to the native A333 fuselage. Window count, registration and exact decal fit require review."
+    ]
+  },
+  "referenceDimensions": {
+    "length": 63.66,
+    "span": 60.3
+  },
+  "axes": "X aft; Y up; Z port",
+  "bounds": {
+    "min": [
+      -25.777224798596965,
+      -5.561404228210449,
+      -30.149980803375243
+    ],
+    "max": [
+      37.882775201403035,
+      11.227790832519531,
+      30.150019196624754
+    ]
+  },
+  "motions": [
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "fdm/jsbsim/hydraulics/spoiler-l6/final-deg",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler0.1"
+      ],
+      "axis": [
+        -0.332544207572937,
+        -0.06510112434625626,
+        -0.9408380389213562
+      ],
+      "center": [
+        10.162883930272528,
+        0.4530999958515167,
+        19.32546482255124
+      ],
+      "factor": -1.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler0.1"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#10.7"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "fdm/jsbsim/hydraulics/spoiler-l5/final-deg",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler0.2"
+      ],
+      "axis": [
+        -0.332544207572937,
+        -0.06510112434625626,
+        -0.9408380389213562
+      ],
+      "center": [
+        10.162883930272528,
+        0.4530999958515167,
+        19.32546482255124
+      ],
+      "factor": -1.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler0.2"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#10.6"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "fdm/jsbsim/hydraulics/spoiler-l4/final-deg",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler0.3"
+      ],
+      "axis": [
+        -0.332544207572937,
+        -0.06510112434625626,
+        -0.9408380389213562
+      ],
+      "center": [
+        10.162883930272528,
+        0.4530999958515167,
+        19.32546482255124
+      ],
+      "factor": -1.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler0.3"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#10.8"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "fdm/jsbsim/hydraulics/spoiler-l3/final-deg",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler0.4"
+      ],
+      "axis": [
+        -0.332544207572937,
+        -0.06510112434625626,
+        -0.9408380389213562
+      ],
+      "center": [
+        10.162883930272528,
+        0.4530999958515167,
+        19.32546482255124
+      ],
+      "factor": -1.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler0.4"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#10.11"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "fdm/jsbsim/hydraulics/spoiler-l2/final-deg",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler0.5"
+      ],
+      "axis": [
+        -0.332544207572937,
+        -0.06510112434625626,
+        -0.9408380389213562
+      ],
+      "center": [
+        10.162883930272528,
+        0.4530999958515167,
+        19.32546482255124
+      ],
+      "factor": -1.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler0.5"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#10.9"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "fdm/jsbsim/hydraulics/spoiler-l1/final-deg",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler0.6"
+      ],
+      "axis": [
+        -0.1298314779996872,
+        -0.08778242766857147,
+        -0.9876425862312317
+      ],
+      "center": [
+        6.383165349239665,
+        -0.3693999946117401,
+        8.041181040343728
+      ],
+      "factor": -1.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler0.6"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#9.4"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "fdm/jsbsim/hydraulics/spoiler-r6/final-deg",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler1.1"
+      ],
+      "axis": [
+        -0.332544207572937,
+        -0.06510112434625626,
+        0.9408380389213562
+      ],
+      "center": [
+        10.162883930272528,
+        0.4530999958515167,
+        -19.32546482255124
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler1.1"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#13.7"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "fdm/jsbsim/hydraulics/spoiler-r5/final-deg",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler1.2"
+      ],
+      "axis": [
+        -0.332544207572937,
+        -0.06510112434625626,
+        0.9408380389213562
+      ],
+      "center": [
+        10.162883930272528,
+        0.4530999958515167,
+        -19.32546482255124
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler1.2"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#13.6"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "fdm/jsbsim/hydraulics/spoiler-r4/final-deg",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler1.3"
+      ],
+      "axis": [
+        -0.332544207572937,
+        -0.06510112434625626,
+        0.9408380389213562
+      ],
+      "center": [
+        10.162883930272528,
+        0.4530999958515167,
+        -19.32546482255124
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler1.3"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#13.8"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "fdm/jsbsim/hydraulics/spoiler-r3/final-deg",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler1.4"
+      ],
+      "axis": [
+        -0.332544207572937,
+        -0.06510112434625626,
+        0.9408380389213562
+      ],
+      "center": [
+        10.162883930272528,
+        0.4530999958515167,
+        -19.32546482255124
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler1.4"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#13.11"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "fdm/jsbsim/hydraulics/spoiler-r2/final-deg",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler1.5"
+      ],
+      "axis": [
+        -0.332544207572937,
+        -0.06510112434625626,
+        0.9408380389213562
+      ],
+      "center": [
+        10.162883930272528,
+        0.4530999958515167,
+        -19.32546482255124
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler1.5"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#13.9"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "fdm/jsbsim/hydraulics/spoiler-r1/final-deg",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "spoiler1.6"
+      ],
+      "axis": [
+        -0.1298314779996872,
+        -0.08778242766857147,
+        0.9876425862312317
+      ],
+      "center": [
+        6.383165349239665,
+        -0.3693999946117401,
+        -8.041181040343728
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "spoiler1.6"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#14.4"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.outer0"
+      ],
+      "axis": [
+        0.9992161989212036,
+        -0.0395856536924839,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.29,
+          0.1
+        ],
+        [
+          0.596,
+          0.25
+        ],
+        [
+          0.745,
+          0.4
+        ],
+        [
+          1.0,
+          0.58
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.outer0"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#10.14",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#10.2"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.outer0"
+      ],
+      "axis": [
+        -0.3335801362991333,
+        -0.069941945374012,
+        -0.9401236176490784
+      ],
+      "center": [
+        10.278491763489706,
+        0.23999999463558197,
+        19.39440758069936
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.29,
+          5.0
+        ],
+        [
+          0.596,
+          10.0
+        ],
+        [
+          0.745,
+          15.0
+        ],
+        [
+          1.0,
+          22.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.outer0"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#10.14",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#10.2"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.outer.support0",
+        "fueldumpL"
+      ],
+      "axis": [
+        -0.32335951924324036,
+        -0.08370456844568253,
+        -0.9425668716430664
+      ],
+      "center": [
+        9.88471816855543,
+        -0.10000000149011612,
+        18.54898438712722
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.29,
+          4.0
+        ],
+        [
+          0.596,
+          8.0
+        ],
+        [
+          0.745,
+          12.0
+        ],
+        [
+          1.0,
+          15.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.outer.support0",
+        "fueldumpL"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#10.0",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#10.16"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.outer1"
+      ],
+      "axis": [
+        0.9992161989212036,
+        -0.0395856536924839,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.29,
+          0.1
+        ],
+        [
+          0.596,
+          0.25
+        ],
+        [
+          0.745,
+          0.4
+        ],
+        [
+          1.0,
+          0.58
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.outer1"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#13.14",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#13.2"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.outer1"
+      ],
+      "axis": [
+        -0.3335801362991333,
+        -0.069941945374012,
+        0.9401236176490784
+      ],
+      "center": [
+        10.278491763489706,
+        0.23999999463558197,
+        -19.39440758069936
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.29,
+          -5.0
+        ],
+        [
+          0.596,
+          -10.0
+        ],
+        [
+          0.745,
+          -15.0
+        ],
+        [
+          1.0,
+          -22.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.outer1"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#13.14",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#13.2"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.outer.support1",
+        "fueldumpR"
+      ],
+      "axis": [
+        -0.32335951924324036,
+        -0.08370456844568253,
+        0.9425668716430664
+      ],
+      "center": [
+        9.88471816855543,
+        -0.10000000149011612,
+        -18.54898438712722
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.29,
+          -4.0
+        ],
+        [
+          0.596,
+          -8.0
+        ],
+        [
+          0.745,
+          -12.0
+        ],
+        [
+          1.0,
+          -15.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.outer.support1",
+        "fueldumpR"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#13.0",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#13.16"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.inner0"
+      ],
+      "axis": [
+        0.9770746827125549,
+        -0.21289664506912231,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.29,
+          0.1
+        ],
+        [
+          0.596,
+          0.25
+        ],
+        [
+          0.745,
+          0.41
+        ],
+        [
+          1.0,
+          0.6
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.inner0"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#10.1",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#10.15",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#9.2",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#9.8"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.inner0"
+      ],
+      "axis": [
+        -0.12808294594287872,
+        -0.09967227280139923,
+        -0.9867421984672546
+      ],
+      "center": [
+        7.067724969305448,
+        -0.5699999928474426,
+        9.148685193563738
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.29,
+          5.0
+        ],
+        [
+          0.596,
+          10.0
+        ],
+        [
+          0.745,
+          15.0
+        ],
+        [
+          1.0,
+          22.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.inner0"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#10.1",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#10.15",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#9.2",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#9.8"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.inner.support0"
+      ],
+      "axis": [
+        -0.11805937439203262,
+        -0.1559041291475296,
+        -0.9806915521621704
+      ],
+      "center": [
+        6.229694799977033,
+        -1.0399999618530273,
+        7.216289596779195
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.29,
+          4.0
+        ],
+        [
+          0.596,
+          8.0
+        ],
+        [
+          0.745,
+          12.0
+        ],
+        [
+          1.0,
+          15.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.inner.support0"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#9.5"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.inner1"
+      ],
+      "axis": [
+        0.9770746827125549,
+        -0.21289664506912231,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.29,
+          0.1
+        ],
+        [
+          0.596,
+          0.25
+        ],
+        [
+          0.745,
+          0.41
+        ],
+        [
+          1.0,
+          0.6
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.inner1"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#13.1",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#13.15",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#14.2",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#14.7"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.inner1"
+      ],
+      "axis": [
+        -0.12808294594287872,
+        -0.09967227280139923,
+        0.9867421984672546
+      ],
+      "center": [
+        7.067724969305448,
+        -0.5699999928474426,
+        -9.148685193563738
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.29,
+          -5.0
+        ],
+        [
+          0.596,
+          -10.0
+        ],
+        [
+          0.745,
+          -15.0
+        ],
+        [
+          1.0,
+          -22.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.inner1"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#13.1",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#13.15",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#14.2",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#14.7"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "flap.inner.support1"
+      ],
+      "axis": [
+        -0.11805937439203262,
+        -0.1559041291475296,
+        0.9806915521621704
+      ],
+      "center": [
+        6.229694799977033,
+        -1.0399999618530273,
+        -7.216289596779195
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.29,
+          -4.0
+        ],
+        [
+          0.596,
+          -8.0
+        ],
+        [
+          0.745,
+          -12.0
+        ],
+        [
+          1.0,
+          -15.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "flap.inner.support1"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#14.5"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "NoseGear"
+      ],
+      "axis": [
+        0.7082348465919495,
+        0.0,
+        -0.7059769034385681
+      ],
+      "center": [
+        -18.711296602765085,
+        -2.5799999237060547,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          110.0
+        ],
+        [
+          0.2,
+          110.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "NoseGear"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#22.0",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#22.1",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#22.2"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "translate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "NoseWheel",
+        "NGearStrut"
+      ],
+      "axis": [
+        0.7105027437210083,
+        0.7036944627761841,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.5
+        ],
+        [
+          0.2,
+          0.5
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "NoseWheel",
+        "NGearStrut"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#22.0",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#22.1"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "translate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "NoseGear"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.1
+        ],
+        [
+          0.2,
+          0.1
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "NoseGear"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#22.0",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#22.1",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#22.2"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "LeftGear"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -0.9309999942779541,
+        5.112796403208326
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.1,
+          80.0
+        ],
+        [
+          0.9,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "LeftGear"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#29.0",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#29.1",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#29.2",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#29.3",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#29.4",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#29.5",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#29.6",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#29.7",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#29.8"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "RightGear"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -0.9309999942779541,
+        -5.112796403208326
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.1,
+          80.0
+        ],
+        [
+          0.9,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "RightGear"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#21.0",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#21.1",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#21.2",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#21.3",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#21.4",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#21.5",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#21.6",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#21.7",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#21.8"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "LeftGearRodDoor"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -1.0946999788284302,
+        5.933963701570226
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          90.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "LeftGearRodDoor"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#9.7"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "RightGearRodDoor"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -1.0946999788284302,
+        -5.933963701570226
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          90.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "RightGearRodDoor"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#33"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "LeftGearDoor"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -3.052999973297119,
+        0.5571740549410903
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3,
+          -80.0
+        ],
+        [
+          0.7,
+          -80.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "LeftGearDoor"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#30.1"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "RightGearDoor"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -3.052999973297119,
+        -0.5571740549410903
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3,
+          -80.0
+        ],
+        [
+          0.7,
+          -80.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "RightGearDoor"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#30.2"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "NoseGearDoor.lf"
+      ],
+      "axis": [
+        -0.9901739358901978,
+        0.13984088599681854,
+        5.3271647630026564e-05
+      ],
+      "center": [
+        -19.533980054182624,
+        -2.4238998889923096,
+        0.6814713603828209
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          90.0
+        ],
+        [
+          0.8,
+          90.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "NoseGearDoor.lf"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#31.1"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "NoseGearDoor.rf"
+      ],
+      "axis": [
+        -0.9901739358901978,
+        0.13984088599681854,
+        0.0
+      ],
+      "center": [
+        -19.533980054182624,
+        -2.4238998889923096,
+        -0.6990843235857563
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          -90.0
+        ],
+        [
+          0.8,
+          -90.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "NoseGearDoor.rf"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#31.2"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "NoseGearDoor.lr"
+      ],
+      "axis": [
+        -0.9959028363227844,
+        0.09042932838201523,
+        0.0
+      ],
+      "center": [
+        -18.62799795343431,
+        -2.5499000549316406,
+        0.47826788860797154
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          60.0
+        ],
+        [
+          1.0,
+          60.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "NoseGearDoor.lr"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#31.3"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "NoseGearDoor.rr"
+      ],
+      "axis": [
+        -0.9959028363227844,
+        0.09042932838201523,
+        0.0
+      ],
+      "center": [
+        -18.62799795343431,
+        -2.5499000549316406,
+        -0.49890024092719126
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          -60.0
+        ],
+        [
+          1.0,
+          -60.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "NoseGearDoor.rr"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#31.4"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "LeftWheelFront",
+        "LeftWheelBack",
+        "LeftGearBaseRod"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        5.911546013967541,
+        -4.796000003814697,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -32.0
+        ],
+        [
+          0.4,
+          -32.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "LeftWheelFront",
+        "LeftWheelBack",
+        "LeftGearBaseRod"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#29.5",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#29.7",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#29.8"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "RightWheelFront",
+        "RightWheelBack",
+        "RightGearBaseRod"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        5.911546013967541,
+        -4.796000003814697,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -32.0
+        ],
+        [
+          0.4,
+          -32.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "RightWheelFront",
+        "RightWheelBack",
+        "RightGearBaseRod"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#21.4",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#21.7",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#21.8"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "leftgear.hyd1",
+        "leftgear.hyd2"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -2.2370998859405518,
+        4.805223762129688
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          130.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "leftgear.hyd1",
+        "leftgear.hyd2"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#29.0",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#29.1"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "leftgear.hyd2"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -1.5263999700546265,
+        3.923870006044231
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          20.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "leftgear.hyd2"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#29.0"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rightgear.hyd1",
+        "rightgear.hyd2"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -2.2370998859405518,
+        -4.805223762129688
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          130.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rightgear.hyd1",
+        "rightgear.hyd2"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#21.0",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#21.1"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rightgear.hyd2"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -1.5263999700546265,
+        -3.923870006044231
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          20.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rightgear.hyd2"
+      ],
+      "model": "Models/A330-343-main.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main#21.0"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[3]/n1",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "fan.cone0",
+        "fan0"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -2.0177344838907523,
+        -2.4684998989105225,
+        9.37020560476499
+      ],
+      "factor": 80.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "fan.cone0",
+        "fan0"
+      ],
+      "model": "Models/trent772b-60.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main/0:Rolls Royce Engines",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main/0:Rolls Royce Engines#0.2",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main/0:Rolls Royce Engines#0.3"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[4]/n1",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "fan.cone1",
+        "fan1"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        -2.0177344838907523,
+        -2.4684998989105225,
+        -9.37020560476499
+      ],
+      "factor": 80.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "fan.cone1",
+        "fan1"
+      ],
+      "model": "Models/trent772b-60.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main/0:Rolls Royce Engines",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main/0:Rolls Royce Engines#1.2",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main/0:Rolls Royce Engines#1.3"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[2]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rr.reverser.ul0",
+        "rr.reverser.ul0i"
+      ],
+      "axis": [
+        -0.006509407889097929,
+        -0.7908360362052917,
+        0.6119934916496277
+      ],
+      "center": [
+        0.8406553988455593,
+        -1.3055000305175781,
+        10.042316870885221
+      ],
+      "factor": -40.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rr.reverser.ul0",
+        "rr.reverser.ul0i"
+      ],
+      "model": "Models/trent772b-60.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main/0:Rolls Royce Engines",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main/0:Rolls Royce Engines#0.14",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main/0:Rolls Royce Engines#0.9"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[2]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rr.reverser.dl0",
+        "rr.reverser.dl0i"
+      ],
+      "axis": [
+        0.0,
+        -0.8070644736289978,
+        -0.5904632806777954
+      ],
+      "center": [
+        0.8245006263583999,
+        -2.9382998943328857,
+        10.561749701672355
+      ],
+      "factor": -40.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rr.reverser.dl0",
+        "rr.reverser.dl0i"
+      ],
+      "model": "Models/trent772b-60.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main/0:Rolls Royce Engines",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main/0:Rolls Royce Engines#0.5",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main/0:Rolls Royce Engines#0.6"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[2]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rr.reverser.dr0",
+        "rr.reverser.dr0i"
+      ],
+      "axis": [
+        0.0,
+        0.7798332571983337,
+        -0.6259872317314148
+      ],
+      "center": [
+        0.8245006263583999,
+        -3.584199905395508,
+        8.64455111287577
+      ],
+      "factor": -40.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rr.reverser.dr0",
+        "rr.reverser.dr0i"
+      ],
+      "model": "Models/trent772b-60.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main/0:Rolls Royce Engines",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main/0:Rolls Royce Engines#0.4",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main/0:Rolls Royce Engines#0.7"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[2]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rr.reverser.ur0",
+        "rr.reverser.ur0i"
+      ],
+      "axis": [
+        0.0,
+        0.8101269602775574,
+        0.5862544178962708
+      ],
+      "center": [
+        0.8245006263583999,
+        -2.0757999420166016,
+        8.084961822593135
+      ],
+      "factor": -40.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rr.reverser.ur0",
+        "rr.reverser.ur0i"
+      ],
+      "model": "Models/trent772b-60.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main/0:Rolls Royce Engines",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main/0:Rolls Royce Engines#0.15",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main/0:Rolls Royce Engines#0.8"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[3]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rr.reverser.ur1",
+        "rr.reverser.ur1i"
+      ],
+      "axis": [
+        -0.006509407889097929,
+        -0.7908360362052917,
+        -0.6119934916496277
+      ],
+      "center": [
+        0.8406553988455593,
+        -1.3055000305175781,
+        -10.042316870885221
+      ],
+      "factor": 40.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rr.reverser.ur1",
+        "rr.reverser.ur1i"
+      ],
+      "model": "Models/trent772b-60.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main/0:Rolls Royce Engines",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main/0:Rolls Royce Engines#1.4",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main/0:Rolls Royce Engines#1.6"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[3]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rr.reverser.dr1",
+        "rr.reverser.dr1i"
+      ],
+      "axis": [
+        0.0,
+        -0.8070644736289978,
+        0.5904632806777954
+      ],
+      "center": [
+        0.8245006263583999,
+        -2.9382998943328857,
+        -10.561749701672355
+      ],
+      "factor": 40.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rr.reverser.dr1",
+        "rr.reverser.dr1i"
+      ],
+      "model": "Models/trent772b-60.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main/0:Rolls Royce Engines",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main/0:Rolls Royce Engines#1.5",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main/0:Rolls Royce Engines#1.9"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[3]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rr.reverser.dl1",
+        "rr.reverser.dl1i"
+      ],
+      "axis": [
+        0.0,
+        0.7798332571983337,
+        0.6259872317314148
+      ],
+      "center": [
+        0.8245006263583999,
+        -3.584199905395508,
+        -8.64455111287577
+      ],
+      "factor": 40.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rr.reverser.dl1",
+        "rr.reverser.dl1i"
+      ],
+      "model": "Models/trent772b-60.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main/0:Rolls Royce Engines",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main/0:Rolls Royce Engines#1.15",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main/0:Rolls Royce Engines#1.8"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "rotate",
+      "property": "sim/multiplay/generic/float[3]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "rr.reverser.ul1",
+        "rr.reverser.ul1i"
+      ],
+      "axis": [
+        0.0,
+        0.8101269602775574,
+        -0.5862544178962708
+      ],
+      "center": [
+        0.8245006263583999,
+        -2.0757999420166016,
+        -8.084961822593135
+      ],
+      "factor": 40.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "rr.reverser.ul1",
+        "rr.reverser.ul1i"
+      ],
+      "model": "Models/trent772b-60.xml",
+      "scope": "0:Models/A330-300-RR.xml/0:A330-343 Main/0:Rolls Royce Engines",
+      "targetPartIds": [
+        "0:Models/A330-300-RR.xml/0:A330-343 Main/0:Rolls Royce Engines#1.14",
+        "0:Models/A330-300-RR.xml/0:A330-343 Main/0:Rolls Royce Engines#1.7"
+      ]
+    }
+  ],
+  "gearInternalParts": [
+    "rightgear.hyd2",
+    "rightgear.hyd1",
+    "RightGearCompressor2",
+    "RightGearCompressor1",
+    "RightGearBaseRod",
+    "RightGearCompressor",
+    "RGear",
+    "RightWheelBack",
+    "RightWheelFront",
+    "NoseWheel",
+    "NGearStrut",
+    "NGear",
+    "leftgear.hyd2",
+    "leftgear.hyd1",
+    "LeftGearCompressor2",
+    "LeftGearCompressor1",
+    "RGear",
+    "LeftGearBaseRod",
+    "LeftGearCompressor",
+    "LeftWheelBack",
+    "LeftWheelFront"
+  ],
+  "gearInternalPartIds": [
+    "0:Models/A330-300-RR.xml/0:A330-343 Main#21.0",
+    "0:Models/A330-300-RR.xml/0:A330-343 Main#21.1",
+    "0:Models/A330-300-RR.xml/0:A330-343 Main#21.2",
+    "0:Models/A330-300-RR.xml/0:A330-343 Main#21.3",
+    "0:Models/A330-300-RR.xml/0:A330-343 Main#21.4",
+    "0:Models/A330-300-RR.xml/0:A330-343 Main#21.5",
+    "0:Models/A330-300-RR.xml/0:A330-343 Main#21.6",
+    "0:Models/A330-300-RR.xml/0:A330-343 Main#21.7",
+    "0:Models/A330-300-RR.xml/0:A330-343 Main#21.8",
+    "0:Models/A330-300-RR.xml/0:A330-343 Main#22.0",
+    "0:Models/A330-300-RR.xml/0:A330-343 Main#22.1",
+    "0:Models/A330-300-RR.xml/0:A330-343 Main#22.2",
+    "0:Models/A330-300-RR.xml/0:A330-343 Main#29.0",
+    "0:Models/A330-300-RR.xml/0:A330-343 Main#29.1",
+    "0:Models/A330-300-RR.xml/0:A330-343 Main#29.2",
+    "0:Models/A330-300-RR.xml/0:A330-343 Main#29.3",
+    "0:Models/A330-300-RR.xml/0:A330-343 Main#29.4",
+    "0:Models/A330-300-RR.xml/0:A330-343 Main#29.5",
+    "0:Models/A330-300-RR.xml/0:A330-343 Main#29.6",
+    "0:Models/A330-300-RR.xml/0:A330-343 Main#29.7",
+    "0:Models/A330-300-RR.xml/0:A330-343 Main#29.8"
+  ],
+  "missingTextures": [],
+  "sourceAC": [
+    "Models/empty.ac",
+    "Models/a330-300-main.ac",
+    "Models/trent772b-60.ac"
+  ],
+  "discardedUnreferencedVertices": 10,
+  "provenance": "preparation/IDG-A33X",
+  "variantConstruction": {},
+  "capabilities": [
+    "fans",
+    "flaps",
+    "gear",
+    "reversers",
+    "spoilers"
+  ],
+  "reviewPoints": {
+    "cockpit": [
+      -23.45340919494629,
+      1.3288800716400146,
+      0.009259470738470554
+    ],
+    "engine": [
+      0.3393063247203827,
+      -1.7688877582550049,
+      8.32649040222168
+    ],
+    "gear": [
+      -18.889450073242188,
+      -4.797341346740723,
+      0.01115235686302185
+    ],
+    "wing": [
+      6.684874534606934,
+      -1.002316951751709,
+      6.423135757446289
+    ]
+  },
+  "fidelityNotes": [],
+  "reviewStatus": "build-awaiting-validation",
+  "addedDoorWindowPanes": 0,
+  "fittedCockpitOpenings": 0,
+  "fittedCabinOpenings": 0,
+  "envelopeCalibration": {
+    "rawDimensions": {
+      "length": 63.049991607666016,
+      "span": 59.91320037841797
+    },
+    "axisScale": [
+      1.009674995615064,
+      1,
+      1.0064559999989813
+    ]
+  },
+  "skippedSourceModels": [
+    "Aircraft/IDG-A33X/Models/FlightDeck/a330.flightdeck.xml",
+    "Aircraft/IDG-A33X/Models/A333-groundservices.xml",
+    "Aircraft/IDG-A33X/Models/Effects/Contrail/contrail-eng1.xml",
+    "Aircraft/IDG-A33X/Models/Effects/Contrail/contrail-eng2.xml",
+    "Aircraft/IDG-A33X/Models/Services/Pushback/Douglas.xml"
+  ],
+  "unresolvedMotions": [],
+  "paintProjection": {
+    "method": "Original cylindrical fuselage and planar fin surface-coordinate transfer; target geometry and UVs retained",
+    "sourceBlend": "preparation/paint-donors/a330-fiji.blend",
+    "maps": [
+      {
+        "surface": "body-and-fin",
+        "resolution": 4096,
+        "sourceAtlas": "323_blank.png",
+        "map": "a333/generated/fiji-airways/body-color.png",
+        "sourceTriangles": {
+          "body": 2705,
+          "fin": 466
+        }
+      }
+    ],
+    "operatorFinishParts": [],
+    "enginePaintStatus": "original target map; operator finish pending",
+    "reviewStatus": "requires-visual-review"
+  }
+}

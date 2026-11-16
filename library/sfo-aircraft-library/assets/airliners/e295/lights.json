@@ -1,0 +1,123 @@
+[
+  {
+    "name": "Port wing navigation",
+    "kind": "nav",
+    "color": "red",
+    "position": [
+      24.9565,
+      4.0329999999999995,
+      17.56
+    ],
+    "basis": "Exterior drawing and operator photo placement"
+  },
+  {
+    "name": "Port wing strobe",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      25.0765,
+      4.0329999999999995,
+      17.56
+    ],
+    "basis": "Exterior drawing and operator photo placement"
+  },
+  {
+    "name": "Port wing root landing light",
+    "kind": "landing",
+    "color": "white",
+    "position": [
+      15.454715123394488,
+      2.3570691650860103,
+      1.42
+    ],
+    "basis": "Exterior drawing and operator photo placement"
+  },
+  {
+    "name": "Starboard wing navigation",
+    "kind": "nav",
+    "color": "green",
+    "position": [
+      24.9565,
+      4.0329999999999995,
+      -17.56
+    ],
+    "basis": "Exterior drawing and operator photo placement"
+  },
+  {
+    "name": "Starboard wing strobe",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      25.0765,
+      4.0329999999999995,
+      -17.56
+    ],
+    "basis": "Exterior drawing and operator photo placement"
+  },
+  {
+    "name": "Starboard wing root landing light",
+    "kind": "landing",
+    "color": "white",
+    "position": [
+      15.454715123394488,
+      2.3570691650860103,
+      -1.42
+    ],
+    "basis": "Exterior drawing and operator photo placement"
+  },
+  {
+    "name": "Tail position light",
+    "kind": "nav",
+    "color": "white",
+    "position": [
+      41.585,
+      4.32,
+      0
+    ],
+    "basis": "Exterior drawing and operator photo placement"
+  },
+  {
+    "name": "Tail strobe",
+    "kind": "strobe",
+    "color": "white",
+    "position": [
+      41.5,
+      4.265000000000001,
+      0
+    ],
+    "basis": "Exterior drawing and operator photo placement"
+  },
+  {
+    "name": "Upper fuselage beacon",
+    "kind": "beacon",
+    "color": "red",
+    "position": [
+      17.888,
+      5.2410000000000005,
+      0
+    ],
+    "basis": "Exterior drawing and operator photo placement"
+  },
+  {
+    "name": "Belly beacon",
+    "kind": "beacon",
+    "color": "red",
+    "position": [
+      17.888,
+      1.615,
+      0
+    ],
+    "basis": "Exterior drawing and operator photo placement"
+  },
+  {
+    "name": "Nose gear taxi light",
+    "kind": "taxi",
+    "color": "white",
+    "position": [
+      4.444999999999999,
+      0.5735,
+      0
+    ],
+    "basis": "Exterior drawing and operator photo placement"
+  }
+]

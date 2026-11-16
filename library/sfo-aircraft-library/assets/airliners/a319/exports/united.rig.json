@@ -1,0 +1,2142 @@
+{
+  "aircraft": "a319",
+  "label": "Airbus A319ceo",
+  "livery": {
+    "id": "united",
+    "name": "United \u00b7 source globe era",
+    "xml": "@preparation/naviat-liveries/upstream/A320 family/A319/IAE/UAL2.xml"
+  },
+  "referenceDimensions": {
+    "length": 33.84,
+    "span": 34.1
+  },
+  "axes": "X aft; Y up; Z port",
+  "bounds": {
+    "min": [
+      4.1043245571009885,
+      -4.538442134857178,
+      -17.065048337716792
+    ],
+    "max": [
+      37.94432455710099,
+      7.84499979019165,
+      17.034951662283206
+    ]
+  },
+  "motions": [
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearLDoor"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -2.382493734359741,
+        0.4660111126305095
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          84.0
+        ],
+        [
+          0.8,
+          84.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearLDoor"
+      ],
+      "model": "Models/Fuselages/A319/fuselage.xml",
+      "scope": "0:Models/A319-100-IAE.xml/0:Fuselage",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/0:Fuselage#12.20"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearRDoor"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        0.0,
+        -2.382493734359741,
+        -0.4660111126305095
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          84.0
+        ],
+        [
+          0.8,
+          84.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearRDoor"
+      ],
+      "model": "Models/Fuselages/A319/fuselage.xml",
+      "scope": "0:Models/A319-100-IAE.xml/0:Fuselage",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/0:Fuselage#12.26"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearNFwdDoorL"
+      ],
+      "axis": [
+        -0.992621123790741,
+        0.12125774472951889,
+        0.0
+      ],
+      "center": [
+        9.189159804943504,
+        -2.0649564266204834,
+        0.5014403765642261
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          90.0
+        ],
+        [
+          0.8,
+          90.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearNFwdDoorL"
+      ],
+      "model": "Models/Fuselages/A319/fuselage.xml",
+      "scope": "0:Models/A319-100-IAE.xml/0:Fuselage",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/0:Fuselage#12.24"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearNAftDoorL"
+      ],
+      "axis": [
+        -0.9995632171630859,
+        0.02955177053809166,
+        0.0
+      ],
+      "center": [
+        9.666648155973805,
+        -2.079073190689087,
+        0.5014403765642261
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.2,
+          0.0
+        ],
+        [
+          0.8,
+          45.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearNAftDoorL"
+      ],
+      "model": "Models/Fuselages/A319/fuselage.xml",
+      "scope": "0:Models/A319-100-IAE.xml/0:Fuselage",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/0:Fuselage#12.21"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearNFwdDoorR"
+      ],
+      "axis": [
+        0.9977790713310242,
+        -0.06660990417003632,
+        0.0
+      ],
+      "center": [
+        6.986518185122938,
+        -1.9179121255874634,
+        -0.5014403765642261
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          90.0
+        ],
+        [
+          0.8,
+          90.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearNFwdDoorR"
+      ],
+      "model": "Models/Fuselages/A319/fuselage.xml",
+      "scope": "0:Models/A319-100-IAE.xml/0:Fuselage",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/0:Fuselage#12.25"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearNAftDoorR"
+      ],
+      "axis": [
+        0.9995632171630859,
+        -0.02955177053809166,
+        0.0
+      ],
+      "center": [
+        9.189159804943504,
+        -2.0649564266204834,
+        -0.5014403765642261
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.2,
+          0.0
+        ],
+        [
+          0.8,
+          45.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearNAftDoorR"
+      ],
+      "model": "Models/Fuselages/A319/fuselage.xml",
+      "scope": "0:Models/A319-100-IAE.xml/0:Fuselage",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/0:Fuselage#12.22"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "GearNDoorC"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        9.41991264127834,
+        -1.8306008577346802,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.2,
+          0.0
+        ],
+        [
+          0.8,
+          -92.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "GearNDoorC"
+      ],
+      "model": "Models/Fuselages/A319/fuselage.xml",
+      "scope": "0:Models/A319-100-IAE.xml/0:Fuselage",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/0:Fuselage#12.23"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "D_STRUCT.U"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        8.750629291958116,
+        -2.1406006813049316,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          -47.0
+        ],
+        [
+          0.2,
+          -47.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "D_STRUCT.U"
+      ],
+      "model": "Models/LandingGears/a320.nlg.xml",
+      "scope": "0:Models/A319-100-IAE.xml/3:Nose Gear",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/3:Nose Gear#3"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "D_STRUCT.L",
+        "Drag_Structs.Upper"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        9.085270966618229,
+        -2.680600643157959,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          45.0
+        ],
+        [
+          0.2,
+          45.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "D_STRUCT.L",
+        "Drag_Structs.Upper"
+      ],
+      "model": "Models/LandingGears/a320.nlg.xml",
+      "scope": "0:Models/A319-100-IAE.xml/3:Nose Gear",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/3:Nose Gear#2",
+        "0:Models/A319-100-IAE.xml/3:Nose Gear#3"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[0]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "ACUTATOR",
+        "AXLE",
+        "Drag_Structs.Lower",
+        "FITTING",
+        "LINK.01",
+        "LINK.02",
+        "LINK.FIT",
+        "OLEO",
+        "Nose Tires"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        9.41991264127834,
+        -1.9306007623672485,
+        0.0
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          92.0
+        ],
+        [
+          0.2,
+          92.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "ACUTATOR",
+        "AXLE",
+        "Drag_Structs.Lower",
+        "FITTING",
+        "LINK.01",
+        "LINK.02",
+        "LINK.FIT",
+        "OLEO",
+        "Nose Tires"
+      ],
+      "model": "Models/LandingGears/a320.nlg.xml",
+      "scope": "0:Models/A319-100-IAE.xml/3:Nose Gear",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/3:Nose Gear#0",
+        "0:Models/A319-100-IAE.xml/3:Nose Gear#1",
+        "0:Models/A319-100-IAE.xml/3:Nose Gear#2",
+        "0:Models/A319-100-IAE.xml/3:Nose Gear#3",
+        "0:Models/A319-100-IAE.xml/3:Nose Gear#4",
+        "0:Models/A319-100-IAE.xml/3:Nose Gear#5",
+        "0:Models/A319-100-IAE.xml/3:Nose Gear#6",
+        "0:Models/A319-100-IAE.xml/3:Nose Gear#7",
+        "0:Models/A319-100-IAE.xml/3:Nose Gear#8",
+        "0:Models/A319-100-IAE.xml/3:Nose Gear/0:Nose Tires#0",
+        "0:Models/A319-100-IAE.xml/3:Nose Gear/0:Nose Tires#1"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "AXLE",
+        "ACTUTATOR",
+        "D_STRUCT.L",
+        "D_STRUCT.U",
+        "FITTING",
+        "OLEO",
+        "LINKS.01",
+        "LINKS.02",
+        "Main Tires"
+      ],
+      "axis": [
+        0.9903395771980286,
+        0.13652396202087402,
+        0.024261929094791412
+      ],
+      "center": [
+        19.192034852051886,
+        -1.2233855724334717,
+        3.7984109959372554
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          80.5
+        ],
+        [
+          0.2,
+          80.5
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "AXLE",
+        "ACTUTATOR",
+        "D_STRUCT.L",
+        "D_STRUCT.U",
+        "FITTING",
+        "OLEO",
+        "LINKS.01",
+        "LINKS.02",
+        "Main Tires"
+      ],
+      "model": "Models/LandingGears/a320.mlg.left.xml",
+      "scope": "0:Models/A319-100-IAE.xml/4:Main Gears.Left",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/4:Main Gears.Left#0",
+        "0:Models/A319-100-IAE.xml/4:Main Gears.Left#1",
+        "0:Models/A319-100-IAE.xml/4:Main Gears.Left#2",
+        "0:Models/A319-100-IAE.xml/4:Main Gears.Left#3",
+        "0:Models/A319-100-IAE.xml/4:Main Gears.Left#4",
+        "0:Models/A319-100-IAE.xml/4:Main Gears.Left#5",
+        "0:Models/A319-100-IAE.xml/4:Main Gears.Left#6",
+        "0:Models/A319-100-IAE.xml/4:Main Gears.Left#7",
+        "0:Models/A319-100-IAE.xml/4:Main Gears.Left/0:Main Tires#0",
+        "0:Models/A319-100-IAE.xml/4:Main Gears.Left/0:Main Tires#1"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "D_STRUCT.L",
+        "D_STRUCT.U"
+      ],
+      "axis": [
+        0.698253333568573,
+        0.01731138303875923,
+        -0.715641438961029
+      ],
+      "center": [
+        19.939803564632445,
+        -2.7447237968444824,
+        3.6980051373023164
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          45.0
+        ],
+        [
+          0.2,
+          45.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "D_STRUCT.L",
+        "D_STRUCT.U"
+      ],
+      "model": "Models/LandingGears/a320.mlg.left.xml",
+      "scope": "0:Models/A319-100-IAE.xml/4:Main Gears.Left",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/4:Main Gears.Left#1",
+        "0:Models/A319-100-IAE.xml/4:Main Gears.Left#2"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[1]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "D_STRUCT.U"
+      ],
+      "axis": [
+        -0.6980822086334229,
+        -0.014974922873079777,
+        0.7158609628677368
+      ],
+      "center": [
+        19.413286868735383,
+        -1.998942255973816,
+        2.9675242594519977
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          180.0
+        ],
+        [
+          0.2,
+          180.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "D_STRUCT.U"
+      ],
+      "model": "Models/LandingGears/a320.mlg.left.xml",
+      "scope": "0:Models/A319-100-IAE.xml/4:Main Gears.Left",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/4:Main Gears.Left#2"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "AXLE",
+        "ACTUTATOR",
+        "D_STRUCT.L",
+        "D_STRUCT.U",
+        "FITTING",
+        "OLEO",
+        "LINKS.01",
+        "LINKS.02",
+        "Main Tires"
+      ],
+      "axis": [
+        -0.9903395771980286,
+        -0.13652396202087402,
+        0.024261929094791412
+      ],
+      "center": [
+        20.02851852795456,
+        -1.1080715656280518,
+        -3.818903524601576
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          80.5
+        ],
+        [
+          0.2,
+          80.5
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "AXLE",
+        "ACTUTATOR",
+        "D_STRUCT.L",
+        "D_STRUCT.U",
+        "FITTING",
+        "OLEO",
+        "LINKS.01",
+        "LINKS.02",
+        "Main Tires"
+      ],
+      "model": "Models/LandingGears/a320.mlg.right.xml",
+      "scope": "0:Models/A319-100-IAE.xml/5:Main Gears.Right",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/5:Main Gears.Right#0",
+        "0:Models/A319-100-IAE.xml/5:Main Gears.Right#1",
+        "0:Models/A319-100-IAE.xml/5:Main Gears.Right#2",
+        "0:Models/A319-100-IAE.xml/5:Main Gears.Right#3",
+        "0:Models/A319-100-IAE.xml/5:Main Gears.Right#4",
+        "0:Models/A319-100-IAE.xml/5:Main Gears.Right#5",
+        "0:Models/A319-100-IAE.xml/5:Main Gears.Right#6",
+        "0:Models/A319-100-IAE.xml/5:Main Gears.Right#7",
+        "0:Models/A319-100-IAE.xml/5:Main Gears.Right/0:Main Tires#0",
+        "0:Models/A319-100-IAE.xml/5:Main Gears.Right/0:Main Tires#1"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "D_STRUCT.L",
+        "D_STRUCT.U"
+      ],
+      "axis": [
+        -0.698253333568573,
+        -0.01731138303875923,
+        -0.715641438961029
+      ],
+      "center": [
+        20.02948261393542,
+        -2.7425003051757812,
+        -3.606091107096446
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          45.0
+        ],
+        [
+          0.2,
+          45.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "D_STRUCT.L",
+        "D_STRUCT.U"
+      ],
+      "model": "Models/LandingGears/a320.mlg.right.xml",
+      "scope": "0:Models/A319-100-IAE.xml/5:Main Gears.Right",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/5:Main Gears.Right#1",
+        "0:Models/A319-100-IAE.xml/5:Main Gears.Right#2"
+      ]
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "gear/gear[2]/position-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "D_STRUCT.U"
+      ],
+      "axis": [
+        0.6980822086334229,
+        0.014974922873079777,
+        0.7158609628677368
+      ],
+      "center": [
+        19.273437242262226,
+        -2.0019421577453613,
+        -3.1109360942916156
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          180.0
+        ],
+        [
+          0.2,
+          180.0
+        ],
+        [
+          0.8,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "D_STRUCT.U"
+      ],
+      "model": "Models/LandingGears/a320.mlg.right.xml",
+      "scope": "0:Models/A319-100-IAE.xml/5:Main Gears.Right",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/5:Main Gears.Right#2"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FlapL1"
+      ],
+      "axis": [
+        0.0,
+        -0.15386845171451569,
+        -0.9880912899971008
+      ],
+      "center": [
+        21.338050233981598,
+        -0.723656952381134,
+        6.255428719215144
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.375,
+          -40.357875
+        ],
+        [
+          1.0,
+          -72.621
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FlapL1"
+      ],
+      "model": "Models/Wings/a319321.wings.iae.xml",
+      "scope": "0:Models/A319-100-IAE.xml/6:a319321.wings.iae",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae#14"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Left inner flap nested"
+      ],
+      "axis": [
+        -0.0014417774509638548,
+        -0.14641112089157104,
+        -0.9892227053642273
+      ],
+      "center": [
+        21.314630184818,
+        -1.1406118869781494,
+        6.320951251330436
+      ],
+      "factor": 107.621,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Left inner flap nested"
+      ],
+      "model": "Models/Wings/a319321.wings.iae.xml",
+      "scope": "0:Models/A319-100-IAE.xml/6:a319321.wings.iae",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae#14"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FlapL2"
+      ],
+      "axis": [
+        -0.28918716311454773,
+        -0.08746720105409622,
+        -0.9532681107521057
+      ],
+      "center": [
+        23.447689470562185,
+        -0.07034456729888916,
+        13.307408399771445
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.375,
+          -42.787875
+        ],
+        [
+          1.0,
+          -79.101
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FlapL2"
+      ],
+      "model": "Models/Wings/a319321.wings.iae.xml",
+      "scope": "0:Models/A319-100-IAE.xml/6:a319321.wings.iae",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae#15"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Left outer flap nested"
+      ],
+      "axis": [
+        -0.296635240316391,
+        -0.09245681762695312,
+        -0.9505047798156738
+      ],
+      "center": [
+        23.51727323361976,
+        -0.41691136360168457,
+        13.339486780794784
+      ],
+      "factor": 114.101,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Left outer flap nested"
+      ],
+      "model": "Models/Wings/a319321.wings.iae.xml",
+      "scope": "0:Models/A319-100-IAE.xml/6:a319321.wings.iae",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae#15"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FlapR1"
+      ],
+      "axis": [
+        0.0,
+        0.15386845171451569,
+        -0.9880912899971008
+      ],
+      "center": [
+        21.338050233981598,
+        -1.3729647397994995,
+        -2.0857927151917783
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.375,
+          -40.357875
+        ],
+        [
+          1.0,
+          -72.621
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FlapR1"
+      ],
+      "model": "Models/Wings/a319321.wings.iae.xml",
+      "scope": "0:Models/A319-100-IAE.xml/6:a319321.wings.iae",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae#16"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Right inner flap nested"
+      ],
+      "axis": [
+        0.0014417774509638548,
+        0.14641112089157104,
+        -0.9892227053642273
+      ],
+      "center": [
+        21.308544630227328,
+        -1.7584753036499023,
+        -2.1463741341299136
+      ],
+      "factor": 107.621,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Right inner flap nested"
+      ],
+      "model": "Models/Wings/a319321.wings.iae.xml",
+      "scope": "0:Models/A319-100-IAE.xml/6:a319321.wings.iae",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae#16"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FlapR2"
+      ],
+      "axis": [
+        0.28918716311454773,
+        0.08746720105409622,
+        -0.9532681107521057
+      ],
+      "center": [
+        21.338050233981598,
+        -0.7084239721298218,
+        -6.3532496093256094
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.375,
+          -42.787875
+        ],
+        [
+          1.0,
+          -74.101
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FlapR2"
+      ],
+      "model": "Models/Wings/a319321.wings.iae.xml",
+      "scope": "0:Models/A319-100-IAE.xml/6:a319321.wings.iae",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae#17"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Right outer flap nested"
+      ],
+      "axis": [
+        0.296635240316391,
+        0.09245681762695312,
+        -0.9505047798156738
+      ],
+      "center": [
+        21.348104545683217,
+        -1.0930089950561523,
+        -6.38884714368751
+      ],
+      "factor": 114.101,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Right outer flap nested"
+      ],
+      "model": "Models/Wings/a319321.wings.iae.xml",
+      "scope": "0:Models/A319-100-IAE.xml/6:a319321.wings.iae",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae#17"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FairingL1",
+        "staticDisch5"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        19.754441839691115,
+        -1.2461364269256592,
+        4.358924514550117
+      ],
+      "factor": 20.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FairingL1",
+        "staticDisch5"
+      ],
+      "model": "Models/Wings/a319321.wings.iae.xml",
+      "scope": "0:Models/A319-100-IAE.xml/6:a319321.wings.iae",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae#52.0",
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae#52.1"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FairingL2",
+        "staticDisch7"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        20.46377667399897,
+        -0.8473921418190002,
+        7.906905357060517
+      ],
+      "factor": 20.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FairingL2",
+        "staticDisch7"
+      ],
+      "model": "Models/Wings/a319321.wings.iae.xml",
+      "scope": "0:Models/A319-100-IAE.xml/6:a319321.wings.iae",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae#4.0",
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae#4.1"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FairingL3",
+        "staticDisch8"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        21.743850408978304,
+        -0.4298408627510071,
+        11.419021823577964
+      ],
+      "factor": 20.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FairingL3",
+        "staticDisch8"
+      ],
+      "model": "Models/Wings/a319321.wings.iae.xml",
+      "scope": "0:Models/A319-100-IAE.xml/6:a319321.wings.iae",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae#3.0",
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae#3.1"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FairingR1",
+        "staticDisch4"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        19.754441839691115,
+        -1.2461364269256592,
+        -4.358924514550117
+      ],
+      "factor": 20.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FairingR1",
+        "staticDisch4"
+      ],
+      "model": "Models/Wings/a319321.wings.iae.xml",
+      "scope": "0:Models/A319-100-IAE.xml/6:a319321.wings.iae",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae#0.0",
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae#0.1"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FairingR2",
+        "staticDisch2"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        20.46377667399897,
+        -0.8473921418190002,
+        -7.906905357060517
+      ],
+      "factor": 20.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FairingR2",
+        "staticDisch2"
+      ],
+      "model": "Models/Wings/a319321.wings.iae.xml",
+      "scope": "0:Models/A319-100-IAE.xml/6:a319321.wings.iae",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae#1.0",
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae#1.1"
+      ]
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "surface-positions/flap-pos-norm",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "FairingR3",
+        "staticDisch1"
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "center": [
+        21.743850408978304,
+        -0.4298408627510071,
+        -11.419021823577964
+      ],
+      "factor": 20.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "FairingR3",
+        "staticDisch1"
+      ],
+      "model": "Models/Wings/a319321.wings.iae.xml",
+      "scope": "0:Models/A319-100-IAE.xml/6:a319321.wings.iae",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae#2.0",
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae#2.1"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-l1",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerL1"
+      ],
+      "axis": [
+        0.0,
+        0.15018756687641144,
+        0.988657534122467
+      ],
+      "center": [
+        20.137435474784773,
+        -0.8191899657249451,
+        4.467833678673525
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerL1"
+      ],
+      "model": "Models/Wings/a319321.wings.iae.xml",
+      "scope": "0:Models/A319-100-IAE.xml/6:a319321.wings.iae",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae#29"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-l2",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerL2"
+      ],
+      "axis": [
+        0.33515769243240356,
+        0.07455924898386002,
+        0.9392071962356567
+      ],
+      "center": [
+        20.34221610153829,
+        -0.48618996143341064,
+        6.924891810764718
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerL2"
+      ],
+      "model": "Models/Wings/a319321.wings.iae.xml",
+      "scope": "0:Models/A319-100-IAE.xml/6:a319321.wings.iae",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae#30"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-l3",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerL3"
+      ],
+      "axis": [
+        0.335509717464447,
+        0.07483711838722229,
+        0.9390594959259033
+      ],
+      "center": [
+        20.94257301915153,
+        -0.35318994522094727,
+        8.605720071604285
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerL3"
+      ],
+      "model": "Models/Wings/a319321.wings.iae.xml",
+      "scope": "0:Models/A319-100-IAE.xml/6:a319321.wings.iae",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae#31"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-l4",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerL4"
+      ],
+      "axis": [
+        0.3354320228099823,
+        0.07418644428253174,
+        0.9391387701034546
+      ],
+      "center": [
+        21.50996429320566,
+        -0.22718995809555054,
+        10.193279531017959
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerL4"
+      ],
+      "model": "Models/Wings/a319321.wings.iae.xml",
+      "scope": "0:Models/A319-100-IAE.xml/6:a319321.wings.iae",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae#32"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-l5",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerL5"
+      ],
+      "axis": [
+        0.33563774824142456,
+        0.07423194497823715,
+        0.93906170129776
+      ],
+      "center": [
+        22.032405534729072,
+        -0.11118996143341064,
+        11.655479852712192
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerL5"
+      ],
+      "model": "Models/Wings/a319321.wings.iae.xml",
+      "scope": "0:Models/A319-100-IAE.xml/6:a319321.wings.iae",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae#33"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-r1",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerR1"
+      ],
+      "axis": [
+        0.0,
+        -0.15018756687641144,
+        0.988657534122467
+      ],
+      "center": [
+        20.137435474784773,
+        -0.5531899333000183,
+        -6.218863764387975
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerR1"
+      ],
+      "model": "Models/Wings/a319321.wings.iae.xml",
+      "scope": "0:Models/A319-100-IAE.xml/6:a319321.wings.iae",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae#34"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-r2",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerR2"
+      ],
+      "axis": [
+        -0.33515769243240356,
+        -0.07455924898386002,
+        0.9392071962356567
+      ],
+      "center": [
+        20.93558053782787,
+        -0.35418999195098877,
+        -8.587667613589511
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerR2"
+      ],
+      "model": "Models/Wings/a319321.wings.iae.xml",
+      "scope": "0:Models/A319-100-IAE.xml/6:a319321.wings.iae",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae#35"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-r3",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerR3"
+      ],
+      "axis": [
+        -0.335509717464447,
+        -0.07483711838722229,
+        0.9390594959259033
+      ],
+      "center": [
+        21.502971811882002,
+        -0.22818994522094727,
+        -10.174225699570524
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerR3"
+      ],
+      "model": "Models/Wings/a319321.wings.iae.xml",
+      "scope": "0:Models/A319-100-IAE.xml/6:a319321.wings.iae",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae#36"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-r4",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerR4"
+      ],
+      "axis": [
+        -0.3354320228099823,
+        -0.07418644428253174,
+        0.9391387701034546
+      ],
+      "center": [
+        22.025413053405416,
+        -0.1131899356842041,
+        -11.636425064843142
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerR4"
+      ],
+      "model": "Models/Wings/a319321.wings.iae.xml",
+      "scope": "0:Models/A319-100-IAE.xml/6:a319321.wings.iae",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae#37"
+      ]
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "controls/flight/spoiler-r5",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "SpoilerR5"
+      ],
+      "axis": [
+        -0.33563774824142456,
+        -0.07423194497823715,
+        0.93906170129776
+      ],
+      "center": [
+        22.547852389620566,
+        0.0028100013732910156,
+        -13.097623056683098
+      ],
+      "factor": 1.0,
+      "offset": 0.0,
+      "interpolation": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "SpoilerR5"
+      ],
+      "model": "Models/Wings/a319321.wings.iae.xml",
+      "scope": "0:Models/A319-100-IAE.xml/6:a319321.wings.iae",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae#38"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[3]/n1",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "cone",
+        "fan"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        13.626616079906512,
+        -2.0771985054016113,
+        5.771578849024837
+      ],
+      "factor": 67.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "cone",
+        "fan"
+      ],
+      "model": "Models/Engines/XMLs/a319321.engine.iae.left.xml",
+      "scope": "0:Models/A319-100-IAE.xml/6:a319321.wings.iae/0:Engine.IAE.Left",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae/0:Engine.IAE.Left/1:a320.v2500#1",
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae/0:Engine.IAE.Left/1:a320.v2500#2"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "sim/multiplay/generic/float[2]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Reverser"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        13.626616079906512,
+        -2.0771985054016113,
+        5.771578849024837
+      ],
+      "factor": 0.5,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Reverser"
+      ],
+      "model": "Models/Engines/XMLs/a319321.nacelle.iae.xml",
+      "scope": "0:Models/A319-100-IAE.xml/6:a319321.wings.iae/0:Engine.IAE.Left/2:a319321.nacelle.iae",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae/0:Engine.IAE.Left/2:a319321.nacelle.iae#6"
+      ]
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "engines/engine[4]/n1",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "cone",
+        "fan"
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        13.626616079906512,
+        -2.0771985054016113,
+        -5.771578849024837
+      ],
+      "factor": 67.0,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "cone",
+        "fan"
+      ],
+      "model": "Models/Engines/XMLs/a319321.engine.iae.right.xml",
+      "scope": "0:Models/A319-100-IAE.xml/6:a319321.wings.iae/1:Engine.IAE.Right",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae/1:Engine.IAE.Right/1:a320.v2500#1",
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae/1:Engine.IAE.Right/1:a320.v2500#2"
+      ]
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "sim/multiplay/generic/float[3]",
+      "spinDirection": 1,
+      "inputScale": 1,
+      "targets": [
+        "Reverser"
+      ],
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "center": [
+        13.626616079906512,
+        -2.0771985054016113,
+        -5.771578849024837
+      ],
+      "factor": 0.5,
+      "offset": 0.0,
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "sourceTargets": [
+        "Reverser"
+      ],
+      "model": "Models/Engines/XMLs/a319321.nacelle.iae.xml",
+      "scope": "0:Models/A319-100-IAE.xml/6:a319321.wings.iae/1:Engine.IAE.Right/2:a319321.nacelle.iae",
+      "targetPartIds": [
+        "0:Models/A319-100-IAE.xml/6:a319321.wings.iae/1:Engine.IAE.Right/2:a319321.nacelle.iae#6"
+      ]
+    }
+  ],
+  "gearInternalParts": [
+    "ACUTATOR",
+    "AXLE",
+    "D_STRUCT.L",
+    "D_STRUCT.U",
+    "FITTING",
+    "LINK.01",
+    "LINK.02",
+    "LINK.FIT",
+    "OLEO",
+    "Bearing",
+    "Tires",
+    "ACTUTATOR",
+    "D_STRUCT.L",
+    "D_STRUCT.U",
+    "FITTING",
+    "LINKS.01",
+    "LINKS.02",
+    "OLEO",
+    "FITTING",
+    "Bearing",
+    "Tires",
+    "ACTUTATOR",
+    "D_STRUCT.L",
+    "D_STRUCT.U",
+    "FITTING",
+    "LINKS.01",
+    "LINKS.02",
+    "OLEO",
+    "FITTING",
+    "Bearing",
+    "Tires"
+  ],
+  "gearInternalPartIds": [
+    "0:Models/A319-100-IAE.xml/3:Nose Gear#0",
+    "0:Models/A319-100-IAE.xml/3:Nose Gear#1",
+    "0:Models/A319-100-IAE.xml/3:Nose Gear#2",
+    "0:Models/A319-100-IAE.xml/3:Nose Gear#3",
+    "0:Models/A319-100-IAE.xml/3:Nose Gear#4",
+    "0:Models/A319-100-IAE.xml/3:Nose Gear#5",
+    "0:Models/A319-100-IAE.xml/3:Nose Gear#6",
+    "0:Models/A319-100-IAE.xml/3:Nose Gear#7",
+    "0:Models/A319-100-IAE.xml/3:Nose Gear#8",
+    "0:Models/A319-100-IAE.xml/3:Nose Gear/0:Nose Tires#0",
+    "0:Models/A319-100-IAE.xml/3:Nose Gear/0:Nose Tires#1",
+    "0:Models/A319-100-IAE.xml/4:Main Gears.Left#0",
+    "0:Models/A319-100-IAE.xml/4:Main Gears.Left#1",
+    "0:Models/A319-100-IAE.xml/4:Main Gears.Left#2",
+    "0:Models/A319-100-IAE.xml/4:Main Gears.Left#3",
+    "0:Models/A319-100-IAE.xml/4:Main Gears.Left#4",
+    "0:Models/A319-100-IAE.xml/4:Main Gears.Left#5",
+    "0:Models/A319-100-IAE.xml/4:Main Gears.Left#6",
+    "0:Models/A319-100-IAE.xml/4:Main Gears.Left#7",
+    "0:Models/A319-100-IAE.xml/4:Main Gears.Left/0:Main Tires#0",
+    "0:Models/A319-100-IAE.xml/4:Main Gears.Left/0:Main Tires#1",
+    "0:Models/A319-100-IAE.xml/5:Main Gears.Right#0",
+    "0:Models/A319-100-IAE.xml/5:Main Gears.Right#1",
+    "0:Models/A319-100-IAE.xml/5:Main Gears.Right#2",
+    "0:Models/A319-100-IAE.xml/5:Main Gears.Right#3",
+    "0:Models/A319-100-IAE.xml/5:Main Gears.Right#4",
+    "0:Models/A319-100-IAE.xml/5:Main Gears.Right#5",
+    "0:Models/A319-100-IAE.xml/5:Main Gears.Right#6",
+    "0:Models/A319-100-IAE.xml/5:Main Gears.Right#7",
+    "0:Models/A319-100-IAE.xml/5:Main Gears.Right/0:Main Tires#0",
+    "0:Models/A319-100-IAE.xml/5:Main Gears.Right/0:Main Tires#1"
+  ],
+  "missingTextures": [],
+  "sourceAC": [
+    "Models/empty.ac",
+    "Models/Fuselages/A319/res/fuselage.ac",
+    "Models/LandingGears/res/a320.nlg.ac",
+    "Models/LandingGears/res/a320.nlg.tires.ac",
+    "Models/LandingGears/res/a320.mlg.left.ac",
+    "Models/LandingGears/res/a320.mlg.tires.ac",
+    "Models/LandingGears/res/a320.mlg.right.ac",
+    "Models/LandingGears/res/a320.mlg.tires.ac",
+    "Models/Wings/res/a320.wings.ac",
+    "Models/Engines/Models/a320.pylon.iae.left.ac",
+    "Models/Engines/Models/v2500.ac",
+    "Models/Engines/Models/a319321.nacelle.iae.ac",
+    "Models/Engines/Models/a320.pylon.iae.right.ac",
+    "Models/Engines/Models/v2500.ac",
+    "Models/Engines/Models/a319321.nacelle.iae.ac",
+    "Models/Wings/a320.winglets.ac",
+    "Models/Fuselages/A319/res/hstab.ac",
+    "Models/Fuselages/A319/res/vstab.ac"
+  ],
+  "discardedUnreferencedVertices": 128,
+  "provenance": "preparation/A320Family-modern",
+  "variantConstruction": {},
+  "capabilities": [
+    "fans",
+    "flaps",
+    "gear",
+    "reversers",
+    "spoilers"
+  ],
+  "reviewPoints": {
+    "cockpit": [
+      6.543115615844727,
+      0.5856000185012817,
+      2.6598572731018066e-06
+    ],
+    "door": [
+      9.194293975830078,
+      0.8021944761276245,
+      1.5600261688232422
+    ],
+    "engine": [
+      16.844921112060547,
+      -2.1308484077453613,
+      5.770576000213623
+    ],
+    "gear": [
+      9.114093780517578,
+      -3.8635363578796387,
+      -0.0
+    ],
+    "wing": [
+      20.818700790405273,
+      -0.9861809015274048,
+      4.162958145141602
+    ]
+  },
+  "fidelityNotes": [],
+  "reviewStatus": "build-awaiting-validation",
+  "addedDoorWindowPanes": 4,
+  "fittedCockpitOpenings": 0,
+  "fittedCabinOpenings": 68,
+  "envelopeCalibration": {
+    "rawDimensions": {
+      "length": 33.87623882293701,
+      "span": 34.00204849243164
+    },
+    "axisScale": [
+      0.9989302583699914,
+      1,
+      1.0028807531284523
+    ]
+  },
+  "skippedSourceModels": [
+    "Aircraft/IDG-A32X/Models/Effects/enginefire.xml",
+    "Aircraft/IDG-A32X/Models/RAT/RAT.xml",
+    "Aircraft/IDG-A32X/Models/FlightDeck/a320.flightdeck.xml",
+    "Aircraft/IDG-A32X/Models/Interior/a319.interior.xml",
+    "Aircraft/IDG-A32X/Models/Effects/contrail-eng1.xml",
+    "Aircraft/IDG-A32X/Models/Effects/enginefire.xml",
+    "Aircraft/IDG-A32X/Models/Effects/contrail-eng2.xml",
+    "Aircraft/IDG-A32X/Models/Effects/enginefire.xml",
+    "Aircraft/IDG-A32X/Models/Wings/a320.sharklets.xml [source condition false]",
+    "Models/Airport/Pushback/Goldhofert.xml",
+    "Aircraft/IDG-A32X/Models/Services/Fuel-Truck/Fuel_Truck_Short_VolvoFM.ac",
+    "Aircraft/IDG-A32X/Models/Services/De-Icing/volvo_deicing_truck.xml",
+    "Aircraft/IDG-A32X/Models/Services/Catering/L_T_VolvoFM-4_5m-set.xml",
+    "Aircraft/IDG-A32X/Models/Services/Baggage/cargo_ramp.ac",
+    "Aircraft/IDG-A32X/Models/Services/External-Power/ext-pwr-box.ac",
+    "Aircraft/IDG-A32X/Models/Services/Chocks/chock_nose.ac",
+    "Aircraft/IDG-A32X/Models/Services/Chocks/chock_left.ac",
+    "Aircraft/IDG-A32X/Models/Services/Chocks/chock_right.ac",
+    "Aircraft/IDG-A32X/Models/Services/Stairs/stairs.xml",
+    "Aircraft/IDG-A32X/Models/Services/Stairs/stairs.xml"
+  ],
+  "unresolvedMotions": []
+}

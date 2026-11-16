@@ -1,0 +1,1583 @@
+{
+  "aircraft": "e295",
+  "label": "Embraer E195-E2 \u00b7 PW1900G",
+  "livery": {
+    "id": "porter",
+    "name": "Porter Airlines",
+    "paint": {
+      "base": "f8f8f5",
+      "fin": "13475d",
+      "logoFile": "Porter Airlines Logo.png",
+      "logo": [
+        5.85,
+        12.72,
+        3.12,
+        4.94,
+        "231f20"
+      ],
+      "porterFin": true
+    }
+  },
+  "referenceDimensions": {
+    "length": 41.6,
+    "span": 35.12,
+    "height": 10.55
+  },
+  "axes": "X aft; Y up; Z port",
+  "bounds": {
+    "min": [
+      0.0,
+      0.0,
+      -17.559999465942383
+    ],
+    "max": [
+      41.599998474121094,
+      10.550000190734863,
+      17.559999465942383
+    ]
+  },
+  "motions": [
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "reference/flaps",
+      "factor": 38,
+      "offset": 0,
+      "axis": [
+        -0.035106658935546875,
+        -0.41023802757263184,
+        -3.739999771118164
+      ],
+      "center": [
+        20.096516059037157,
+        2.6503998313270984,
+        1.86
+      ],
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Port flap 1"
+      ],
+      "targetPartIds": [
+        "Port flap 1"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "reference/flaps",
+      "factor": 0.24,
+      "offset": 0,
+      "axis": [
+        1,
+        -0.18,
+        0
+      ],
+      "center": [
+        20.096516059037157,
+        2.6503998313270984,
+        1.86
+      ],
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Port flap 1"
+      ],
+      "targetPartIds": [
+        "Port flap 1"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "reference/flaps",
+      "factor": 38,
+      "offset": 0,
+      "axis": [
+        -1.1960010528564453,
+        -0.24195504188537598,
+        -2.9200005531311035
+      ],
+      "center": [
+        20.131622934182904,
+        3.0606378987777276,
+        5.6
+      ],
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Port flap 2"
+      ],
+      "targetPartIds": [
+        "Port flap 2"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "reference/flaps",
+      "factor": 0.24,
+      "offset": 0,
+      "axis": [
+        1,
+        -0.18,
+        0
+      ],
+      "center": [
+        20.131622934182904,
+        3.0606378987777276,
+        5.6
+      ],
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Port flap 2"
+      ],
+      "targetPartIds": [
+        "Port flap 2"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "reference/flaps",
+      "factor": 38,
+      "offset": 0,
+      "axis": [
+        -1.5413455963134766,
+        -0.2548038959503174,
+        -3.6599998474121094
+      ],
+      "center": [
+        21.327623055328846,
+        3.302593055448658,
+        8.52
+      ],
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Port flap 3"
+      ],
+      "targetPartIds": [
+        "Port flap 3"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "reference/flaps",
+      "factor": 0.24,
+      "offset": 0,
+      "axis": [
+        1,
+        -0.18,
+        0
+      ],
+      "center": [
+        21.327623055328846,
+        3.302593055448658,
+        8.52
+      ],
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Port flap 3"
+      ],
+      "targetPartIds": [
+        "Port flap 3"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "reference/spoilers",
+      "factor": -51,
+      "offset": 0,
+      "axis": [
+        -0.21022987365722656,
+        -0.11377358436584473,
+        -1.4800000190734863
+      ],
+      "center": [
+        18.934927364567272,
+        3.1422793200229386,
+        2.65
+      ],
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Port spoiler 1"
+      ],
+      "targetPartIds": [
+        "Port spoiler 1"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "reference/spoilers",
+      "factor": -51,
+      "offset": 0,
+      "axis": [
+        -0.5121555328369141,
+        -0.09887337684631348,
+        -1.75
+      ],
+      "center": [
+        19.18169654196875,
+        3.2649045221672015,
+        4.27
+      ],
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Port spoiler 2"
+      ],
+      "targetPartIds": [
+        "Port spoiler 2"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "reference/spoilers",
+      "factor": -51,
+      "offset": 0,
+      "axis": [
+        -1.0021286010742188,
+        -0.12173724174499512,
+        -2.2200002670288086
+      ],
+      "center": [
+        19.750207177508404,
+        3.3714499135558906,
+        6.16
+      ],
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Port spoiler 3"
+      ],
+      "targetPartIds": [
+        "Port spoiler 3"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "reference/spoilers",
+      "factor": -51,
+      "offset": 0,
+      "axis": [
+        -0.9608650207519531,
+        -0.10965204238891602,
+        -2.09999942779541
+      ],
+      "center": [
+        20.814769134688394,
+        3.500691702775288,
+        8.52
+      ],
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Port spoiler 4"
+      ],
+      "targetPartIds": [
+        "Port spoiler 4"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "reference/spoilers",
+      "factor": -51,
+      "offset": 0,
+      "axis": [
+        -0.6349105834960938,
+        -0.07497668266296387,
+        -1.4200000762939453
+      ],
+      "center": [
+        21.83062260760783,
+        3.6165710748676476,
+        10.74
+      ],
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Port spoiler 5"
+      ],
+      "targetPartIds": [
+        "Port spoiler 5"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "reference/flaps",
+      "factor": 38,
+      "offset": 0,
+      "axis": [
+        0.035106658935546875,
+        0.41023802757263184,
+        -3.739999771118164
+      ],
+      "center": [
+        20.096516059037157,
+        2.6503998313270984,
+        -1.86
+      ],
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Starboard flap 1"
+      ],
+      "targetPartIds": [
+        "Starboard flap 1"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "reference/flaps",
+      "factor": 0.24,
+      "offset": 0,
+      "axis": [
+        1,
+        -0.18,
+        0
+      ],
+      "center": [
+        20.096516059037157,
+        2.6503998313270984,
+        -1.86
+      ],
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Starboard flap 1"
+      ],
+      "targetPartIds": [
+        "Starboard flap 1"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "reference/flaps",
+      "factor": 38,
+      "offset": 0,
+      "axis": [
+        1.1960010528564453,
+        0.24195504188537598,
+        -2.9200005531311035
+      ],
+      "center": [
+        20.131622934182904,
+        3.0606378987777276,
+        -5.6
+      ],
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Starboard flap 2"
+      ],
+      "targetPartIds": [
+        "Starboard flap 2"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "reference/flaps",
+      "factor": 0.24,
+      "offset": 0,
+      "axis": [
+        1,
+        -0.18,
+        0
+      ],
+      "center": [
+        20.131622934182904,
+        3.0606378987777276,
+        -5.6
+      ],
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Starboard flap 2"
+      ],
+      "targetPartIds": [
+        "Starboard flap 2"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "flaps",
+      "type": "rotate",
+      "property": "reference/flaps",
+      "factor": 38,
+      "offset": 0,
+      "axis": [
+        1.5413455963134766,
+        0.2548038959503174,
+        -3.6599998474121094
+      ],
+      "center": [
+        21.327623055328846,
+        3.302593055448658,
+        -8.52
+      ],
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Starboard flap 3"
+      ],
+      "targetPartIds": [
+        "Starboard flap 3"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "flaps",
+      "type": "translate",
+      "property": "reference/flaps",
+      "factor": 0.24,
+      "offset": 0,
+      "axis": [
+        1,
+        -0.18,
+        0
+      ],
+      "center": [
+        21.327623055328846,
+        3.302593055448658,
+        -8.52
+      ],
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Starboard flap 3"
+      ],
+      "targetPartIds": [
+        "Starboard flap 3"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "reference/spoilers",
+      "factor": -51,
+      "offset": 0,
+      "axis": [
+        0.21022987365722656,
+        0.11377358436584473,
+        -1.4800000190734863
+      ],
+      "center": [
+        18.934927364567272,
+        3.1422793200229386,
+        -2.65
+      ],
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Starboard spoiler 1"
+      ],
+      "targetPartIds": [
+        "Starboard spoiler 1"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "reference/spoilers",
+      "factor": -51,
+      "offset": 0,
+      "axis": [
+        0.5121555328369141,
+        0.09887337684631348,
+        -1.75
+      ],
+      "center": [
+        19.18169654196875,
+        3.2649045221672015,
+        -4.27
+      ],
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Starboard spoiler 2"
+      ],
+      "targetPartIds": [
+        "Starboard spoiler 2"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "reference/spoilers",
+      "factor": -51,
+      "offset": 0,
+      "axis": [
+        1.0021286010742188,
+        0.12173724174499512,
+        -2.2200002670288086
+      ],
+      "center": [
+        19.750207177508404,
+        3.3714499135558906,
+        -6.16
+      ],
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Starboard spoiler 3"
+      ],
+      "targetPartIds": [
+        "Starboard spoiler 3"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "reference/spoilers",
+      "factor": -51,
+      "offset": 0,
+      "axis": [
+        0.9608650207519531,
+        0.10965204238891602,
+        -2.09999942779541
+      ],
+      "center": [
+        20.814769134688394,
+        3.500691702775288,
+        -8.52
+      ],
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Starboard spoiler 4"
+      ],
+      "targetPartIds": [
+        "Starboard spoiler 4"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "spoilers",
+      "type": "rotate",
+      "property": "reference/spoilers",
+      "factor": -51,
+      "offset": 0,
+      "axis": [
+        0.6349105834960938,
+        0.07497668266296387,
+        -1.4200000762939453
+      ],
+      "center": [
+        21.83062260760783,
+        3.6165710748676476,
+        -10.74
+      ],
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Starboard spoiler 5"
+      ],
+      "targetPartIds": [
+        "Starboard spoiler 5"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "reference/fans",
+      "factor": 1,
+      "offset": 0,
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "center": [
+        14.17192,
+        1.78,
+        4.84
+      ],
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "spinDirection": -1,
+      "targets": [
+        "Port turbofan blades",
+        "Port spinner"
+      ],
+      "targetPartIds": [
+        "Port turbofan blades",
+        "Port spinner"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "reference/reversers",
+      "factor": 0.5376000000000001,
+      "offset": 0,
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "center": [
+        13.45,
+        1.78,
+        4.84
+      ],
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Port translating reverser sleeve"
+      ],
+      "targetPartIds": [
+        "Port translating reverser sleeve"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "fans",
+      "type": "spin",
+      "property": "reference/fans",
+      "factor": 1,
+      "offset": 0,
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "center": [
+        14.17192,
+        1.78,
+        -4.84
+      ],
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Starboard turbofan blades",
+        "Starboard spinner"
+      ],
+      "targetPartIds": [
+        "Starboard turbofan blades",
+        "Starboard spinner"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "reversers",
+      "type": "translate",
+      "property": "reference/reversers",
+      "factor": 0.5376000000000001,
+      "offset": 0,
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "center": [
+        13.45,
+        1.78,
+        -4.84
+      ],
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Starboard translating reverser sleeve"
+      ],
+      "targetPartIds": [
+        "Starboard translating reverser sleeve"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "reference/gear",
+      "factor": 95,
+      "offset": -95,
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "center": [
+        4.6,
+        2.0341898665280858,
+        0
+      ],
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Nose wheel 1 tire",
+        "Nose wheel 1 inboard hub",
+        "Nose wheel 1 hub fastener -1 1",
+        "Nose wheel 1 hub fastener -1 2",
+        "Nose wheel 1 hub fastener -1 3",
+        "Nose wheel 1 hub fastener -1 4",
+        "Nose wheel 1 hub fastener -1 5",
+        "Nose wheel 1 hub fastener -1 6",
+        "Nose wheel 1 outboard hub",
+        "Nose wheel 1 hub fastener 1 1",
+        "Nose wheel 1 hub fastener 1 2",
+        "Nose wheel 1 hub fastener 1 3",
+        "Nose wheel 1 hub fastener 1 4",
+        "Nose wheel 1 hub fastener 1 5",
+        "Nose wheel 1 hub fastener 1 6",
+        "Nose wheel 2 tire",
+        "Nose wheel 2 inboard hub",
+        "Nose wheel 2 hub fastener -1 1",
+        "Nose wheel 2 hub fastener -1 2",
+        "Nose wheel 2 hub fastener -1 3",
+        "Nose wheel 2 hub fastener -1 4",
+        "Nose wheel 2 hub fastener -1 5",
+        "Nose wheel 2 hub fastener -1 6",
+        "Nose wheel 2 outboard hub",
+        "Nose wheel 2 hub fastener 1 1",
+        "Nose wheel 2 hub fastener 1 2",
+        "Nose wheel 2 hub fastener 1 3",
+        "Nose wheel 2 hub fastener 1 4",
+        "Nose wheel 2 hub fastener 1 5",
+        "Nose wheel 2 hub fastener 1 6",
+        "Nose axle",
+        "Nose oleo piston",
+        "Nose upper strut",
+        "Nose drag brace"
+      ],
+      "targetPartIds": [
+        "Nose wheel 1 tire",
+        "Nose wheel 1 inboard hub",
+        "Nose wheel 1 hub fastener -1 1",
+        "Nose wheel 1 hub fastener -1 2",
+        "Nose wheel 1 hub fastener -1 3",
+        "Nose wheel 1 hub fastener -1 4",
+        "Nose wheel 1 hub fastener -1 5",
+        "Nose wheel 1 hub fastener -1 6",
+        "Nose wheel 1 outboard hub",
+        "Nose wheel 1 hub fastener 1 1",
+        "Nose wheel 1 hub fastener 1 2",
+        "Nose wheel 1 hub fastener 1 3",
+        "Nose wheel 1 hub fastener 1 4",
+        "Nose wheel 1 hub fastener 1 5",
+        "Nose wheel 1 hub fastener 1 6",
+        "Nose wheel 2 tire",
+        "Nose wheel 2 inboard hub",
+        "Nose wheel 2 hub fastener -1 1",
+        "Nose wheel 2 hub fastener -1 2",
+        "Nose wheel 2 hub fastener -1 3",
+        "Nose wheel 2 hub fastener -1 4",
+        "Nose wheel 2 hub fastener -1 5",
+        "Nose wheel 2 hub fastener -1 6",
+        "Nose wheel 2 outboard hub",
+        "Nose wheel 2 hub fastener 1 1",
+        "Nose wheel 2 hub fastener 1 2",
+        "Nose wheel 2 hub fastener 1 3",
+        "Nose wheel 2 hub fastener 1 4",
+        "Nose wheel 2 hub fastener 1 5",
+        "Nose wheel 2 hub fastener 1 6",
+        "Nose axle",
+        "Nose oleo piston",
+        "Nose upper strut",
+        "Nose drag brace"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "reference/gear",
+      "factor": 1,
+      "offset": 0,
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "center": [
+        4.55,
+        1.8794939395511372,
+        0.2449
+      ],
+      "interpolation": [
+        [
+          0,
+          0
+        ],
+        [
+          0.18,
+          -78
+        ],
+        [
+          0.79,
+          -78
+        ],
+        [
+          1,
+          -76
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Nose gear door -1"
+      ],
+      "targetPartIds": [
+        "Nose gear door -1"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "reference/gear",
+      "factor": 1,
+      "offset": 0,
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "center": [
+        4.55,
+        1.8794939395511372,
+        -0.2449
+      ],
+      "interpolation": [
+        [
+          0,
+          0
+        ],
+        [
+          0.18,
+          78
+        ],
+        [
+          0.79,
+          78
+        ],
+        [
+          1,
+          76
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Nose gear door 1"
+      ],
+      "targetPartIds": [
+        "Nose gear door 1"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "reference/gear",
+      "factor": -91,
+      "offset": 91,
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "center": [
+        20.080000000000002,
+        2.6748360698124727,
+        3.365
+      ],
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Port main wheel 1 tire",
+        "Port main wheel 1 inboard hub",
+        "Port main wheel 1 hub fastener -1 1",
+        "Port main wheel 1 hub fastener -1 2",
+        "Port main wheel 1 hub fastener -1 3",
+        "Port main wheel 1 hub fastener -1 4",
+        "Port main wheel 1 hub fastener -1 5",
+        "Port main wheel 1 hub fastener -1 6",
+        "Port main wheel 1 outboard hub",
+        "Port main wheel 1 hub fastener 1 1",
+        "Port main wheel 1 hub fastener 1 2",
+        "Port main wheel 1 hub fastener 1 3",
+        "Port main wheel 1 hub fastener 1 4",
+        "Port main wheel 1 hub fastener 1 5",
+        "Port main wheel 1 hub fastener 1 6",
+        "Port main wheel 2 tire",
+        "Port main wheel 2 inboard hub",
+        "Port main wheel 2 hub fastener -1 1",
+        "Port main wheel 2 hub fastener -1 2",
+        "Port main wheel 2 hub fastener -1 3",
+        "Port main wheel 2 hub fastener -1 4",
+        "Port main wheel 2 hub fastener -1 5",
+        "Port main wheel 2 hub fastener -1 6",
+        "Port main wheel 2 outboard hub",
+        "Port main wheel 2 hub fastener 1 1",
+        "Port main wheel 2 hub fastener 1 2",
+        "Port main wheel 2 hub fastener 1 3",
+        "Port main wheel 2 hub fastener 1 4",
+        "Port main wheel 2 hub fastener 1 5",
+        "Port main wheel 2 hub fastener 1 6",
+        "Port main axle",
+        "Port main oleo piston",
+        "Port main upper strut",
+        "Port main drag brace"
+      ],
+      "targetPartIds": [
+        "Port main wheel 1 tire",
+        "Port main wheel 1 inboard hub",
+        "Port main wheel 1 hub fastener -1 1",
+        "Port main wheel 1 hub fastener -1 2",
+        "Port main wheel 1 hub fastener -1 3",
+        "Port main wheel 1 hub fastener -1 4",
+        "Port main wheel 1 hub fastener -1 5",
+        "Port main wheel 1 hub fastener -1 6",
+        "Port main wheel 1 outboard hub",
+        "Port main wheel 1 hub fastener 1 1",
+        "Port main wheel 1 hub fastener 1 2",
+        "Port main wheel 1 hub fastener 1 3",
+        "Port main wheel 1 hub fastener 1 4",
+        "Port main wheel 1 hub fastener 1 5",
+        "Port main wheel 1 hub fastener 1 6",
+        "Port main wheel 2 tire",
+        "Port main wheel 2 inboard hub",
+        "Port main wheel 2 hub fastener -1 1",
+        "Port main wheel 2 hub fastener -1 2",
+        "Port main wheel 2 hub fastener -1 3",
+        "Port main wheel 2 hub fastener -1 4",
+        "Port main wheel 2 hub fastener -1 5",
+        "Port main wheel 2 hub fastener -1 6",
+        "Port main wheel 2 outboard hub",
+        "Port main wheel 2 hub fastener 1 1",
+        "Port main wheel 2 hub fastener 1 2",
+        "Port main wheel 2 hub fastener 1 3",
+        "Port main wheel 2 hub fastener 1 4",
+        "Port main wheel 2 hub fastener 1 5",
+        "Port main wheel 2 hub fastener 1 6",
+        "Port main axle",
+        "Port main oleo piston",
+        "Port main upper strut",
+        "Port main drag brace"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "reference/gear",
+      "factor": 1,
+      "offset": 0,
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "center": [
+        20.26,
+        2.582575974023447,
+        3.7797500000000004
+      ],
+      "interpolation": [
+        [
+          0,
+          0
+        ],
+        [
+          0.18,
+          -78
+        ],
+        [
+          0.79,
+          -78
+        ],
+        [
+          1,
+          -54
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Port main gear door -1"
+      ],
+      "targetPartIds": [
+        "Port main gear door -1"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "reference/gear",
+      "factor": 1,
+      "offset": 0,
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "center": [
+        20.26,
+        2.4556738559610105,
+        2.95025
+      ],
+      "interpolation": [
+        [
+          0,
+          0
+        ],
+        [
+          0.18,
+          78
+        ],
+        [
+          0.79,
+          78
+        ],
+        [
+          1,
+          54
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Port main gear door 1"
+      ],
+      "targetPartIds": [
+        "Port main gear door 1"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "reference/gear",
+      "factor": 91,
+      "offset": -91,
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "center": [
+        20.080000000000002,
+        2.6748360698124727,
+        -3.365
+      ],
+      "interpolation": [],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Starboard main wheel 1 tire",
+        "Starboard main wheel 1 inboard hub",
+        "Starboard main wheel 1 hub fastener -1 1",
+        "Starboard main wheel 1 hub fastener -1 2",
+        "Starboard main wheel 1 hub fastener -1 3",
+        "Starboard main wheel 1 hub fastener -1 4",
+        "Starboard main wheel 1 hub fastener -1 5",
+        "Starboard main wheel 1 hub fastener -1 6",
+        "Starboard main wheel 1 outboard hub",
+        "Starboard main wheel 1 hub fastener 1 1",
+        "Starboard main wheel 1 hub fastener 1 2",
+        "Starboard main wheel 1 hub fastener 1 3",
+        "Starboard main wheel 1 hub fastener 1 4",
+        "Starboard main wheel 1 hub fastener 1 5",
+        "Starboard main wheel 1 hub fastener 1 6",
+        "Starboard main wheel 2 tire",
+        "Starboard main wheel 2 inboard hub",
+        "Starboard main wheel 2 hub fastener -1 1",
+        "Starboard main wheel 2 hub fastener -1 2",
+        "Starboard main wheel 2 hub fastener -1 3",
+        "Starboard main wheel 2 hub fastener -1 4",
+        "Starboard main wheel 2 hub fastener -1 5",
+        "Starboard main wheel 2 hub fastener -1 6",
+        "Starboard main wheel 2 outboard hub",
+        "Starboard main wheel 2 hub fastener 1 1",
+        "Starboard main wheel 2 hub fastener 1 2",
+        "Starboard main wheel 2 hub fastener 1 3",
+        "Starboard main wheel 2 hub fastener 1 4",
+        "Starboard main wheel 2 hub fastener 1 5",
+        "Starboard main wheel 2 hub fastener 1 6",
+        "Starboard main axle",
+        "Starboard main oleo piston",
+        "Starboard main upper strut",
+        "Starboard main drag brace"
+      ],
+      "targetPartIds": [
+        "Starboard main wheel 1 tire",
+        "Starboard main wheel 1 inboard hub",
+        "Starboard main wheel 1 hub fastener -1 1",
+        "Starboard main wheel 1 hub fastener -1 2",
+        "Starboard main wheel 1 hub fastener -1 3",
+        "Starboard main wheel 1 hub fastener -1 4",
+        "Starboard main wheel 1 hub fastener -1 5",
+        "Starboard main wheel 1 hub fastener -1 6",
+        "Starboard main wheel 1 outboard hub",
+        "Starboard main wheel 1 hub fastener 1 1",
+        "Starboard main wheel 1 hub fastener 1 2",
+        "Starboard main wheel 1 hub fastener 1 3",
+        "Starboard main wheel 1 hub fastener 1 4",
+        "Starboard main wheel 1 hub fastener 1 5",
+        "Starboard main wheel 1 hub fastener 1 6",
+        "Starboard main wheel 2 tire",
+        "Starboard main wheel 2 inboard hub",
+        "Starboard main wheel 2 hub fastener -1 1",
+        "Starboard main wheel 2 hub fastener -1 2",
+        "Starboard main wheel 2 hub fastener -1 3",
+        "Starboard main wheel 2 hub fastener -1 4",
+        "Starboard main wheel 2 hub fastener -1 5",
+        "Starboard main wheel 2 hub fastener -1 6",
+        "Starboard main wheel 2 outboard hub",
+        "Starboard main wheel 2 hub fastener 1 1",
+        "Starboard main wheel 2 hub fastener 1 2",
+        "Starboard main wheel 2 hub fastener 1 3",
+        "Starboard main wheel 2 hub fastener 1 4",
+        "Starboard main wheel 2 hub fastener 1 5",
+        "Starboard main wheel 2 hub fastener 1 6",
+        "Starboard main axle",
+        "Starboard main oleo piston",
+        "Starboard main upper strut",
+        "Starboard main drag brace"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "reference/gear",
+      "factor": 1,
+      "offset": 0,
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "center": [
+        20.26,
+        2.4556738559610105,
+        -2.95025
+      ],
+      "interpolation": [
+        [
+          0,
+          0
+        ],
+        [
+          0.18,
+          -78
+        ],
+        [
+          0.79,
+          -78
+        ],
+        [
+          1,
+          -54
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Starboard main gear door -1"
+      ],
+      "targetPartIds": [
+        "Starboard main gear door -1"
+      ],
+      "model": "e295-reference-loft"
+    },
+    {
+      "control": "gear",
+      "type": "rotate",
+      "property": "reference/gear",
+      "factor": 1,
+      "offset": 0,
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "center": [
+        20.26,
+        2.582575974023447,
+        -3.7797500000000004
+      ],
+      "interpolation": [
+        [
+          0,
+          0
+        ],
+        [
+          0.18,
+          78
+        ],
+        [
+          0.79,
+          78
+        ],
+        [
+          1,
+          54
+        ]
+      ],
+      "min": null,
+      "max": null,
+      "spinDirection": 1,
+      "targets": [
+        "Starboard main gear door 1"
+      ],
+      "targetPartIds": [
+        "Starboard main gear door 1"
+      ],
+      "model": "e295-reference-loft"
+    }
+  ],
+  "gearInternalParts": [
+    "Nose wheel 1 tire",
+    "Nose wheel 1 inboard hub",
+    "Nose wheel 1 hub fastener -1 1",
+    "Nose wheel 1 hub fastener -1 2",
+    "Nose wheel 1 hub fastener -1 3",
+    "Nose wheel 1 hub fastener -1 4",
+    "Nose wheel 1 hub fastener -1 5",
+    "Nose wheel 1 hub fastener -1 6",
+    "Nose wheel 1 outboard hub",
+    "Nose wheel 1 hub fastener 1 1",
+    "Nose wheel 1 hub fastener 1 2",
+    "Nose wheel 1 hub fastener 1 3",
+    "Nose wheel 1 hub fastener 1 4",
+    "Nose wheel 1 hub fastener 1 5",
+    "Nose wheel 1 hub fastener 1 6",
+    "Nose wheel 2 tire",
+    "Nose wheel 2 inboard hub",
+    "Nose wheel 2 hub fastener -1 1",
+    "Nose wheel 2 hub fastener -1 2",
+    "Nose wheel 2 hub fastener -1 3",
+    "Nose wheel 2 hub fastener -1 4",
+    "Nose wheel 2 hub fastener -1 5",
+    "Nose wheel 2 hub fastener -1 6",
+    "Nose wheel 2 outboard hub",
+    "Nose wheel 2 hub fastener 1 1",
+    "Nose wheel 2 hub fastener 1 2",
+    "Nose wheel 2 hub fastener 1 3",
+    "Nose wheel 2 hub fastener 1 4",
+    "Nose wheel 2 hub fastener 1 5",
+    "Nose wheel 2 hub fastener 1 6",
+    "Nose axle",
+    "Nose oleo piston",
+    "Nose upper strut",
+    "Nose drag brace",
+    "Port main wheel 1 tire",
+    "Port main wheel 1 inboard hub",
+    "Port main wheel 1 hub fastener -1 1",
+    "Port main wheel 1 hub fastener -1 2",
+    "Port main wheel 1 hub fastener -1 3",
+    "Port main wheel 1 hub fastener -1 4",
+    "Port main wheel 1 hub fastener -1 5",
+    "Port main wheel 1 hub fastener -1 6",
+    "Port main wheel 1 outboard hub",
+    "Port main wheel 1 hub fastener 1 1",
+    "Port main wheel 1 hub fastener 1 2",
+    "Port main wheel 1 hub fastener 1 3",
+    "Port main wheel 1 hub fastener 1 4",
+    "Port main wheel 1 hub fastener 1 5",
+    "Port main wheel 1 hub fastener 1 6",
+    "Port main wheel 2 tire",
+    "Port main wheel 2 inboard hub",
+    "Port main wheel 2 hub fastener -1 1",
+    "Port main wheel 2 hub fastener -1 2",
+    "Port main wheel 2 hub fastener -1 3",
+    "Port main wheel 2 hub fastener -1 4",
+    "Port main wheel 2 hub fastener -1 5",
+    "Port main wheel 2 hub fastener -1 6",
+    "Port main wheel 2 outboard hub",
+    "Port main wheel 2 hub fastener 1 1",
+    "Port main wheel 2 hub fastener 1 2",
+    "Port main wheel 2 hub fastener 1 3",
+    "Port main wheel 2 hub fastener 1 4",
+    "Port main wheel 2 hub fastener 1 5",
+    "Port main wheel 2 hub fastener 1 6",
+    "Port main axle",
+    "Port main oleo piston",
+    "Port main upper strut",
+    "Port main drag brace",
+    "Starboard main wheel 1 tire",
+    "Starboard main wheel 1 inboard hub",
+    "Starboard main wheel 1 hub fastener -1 1",
+    "Starboard main wheel 1 hub fastener -1 2",
+    "Starboard main wheel 1 hub fastener -1 3",
+    "Starboard main wheel 1 hub fastener -1 4",
+    "Starboard main wheel 1 hub fastener -1 5",
+    "Starboard main wheel 1 hub fastener -1 6",
+    "Starboard main wheel 1 outboard hub",
+    "Starboard main wheel 1 hub fastener 1 1",
+    "Starboard main wheel 1 hub fastener 1 2",
+    "Starboard main wheel 1 hub fastener 1 3",
+    "Starboard main wheel 1 hub fastener 1 4",
+    "Starboard main wheel 1 hub fastener 1 5",
+    "Starboard main wheel 1 hub fastener 1 6",
+    "Starboard main wheel 2 tire",
+    "Starboard main wheel 2 inboard hub",
+    "Starboard main wheel 2 hub fastener -1 1",
+    "Starboard main wheel 2 hub fastener -1 2",
+    "Starboard main wheel 2 hub fastener -1 3",
+    "Starboard main wheel 2 hub fastener -1 4",
+    "Starboard main wheel 2 hub fastener -1 5",
+    "Starboard main wheel 2 hub fastener -1 6",
+    "Starboard main wheel 2 outboard hub",
+    "Starboard main wheel 2 hub fastener 1 1",
+    "Starboard main wheel 2 hub fastener 1 2",
+    "Starboard main wheel 2 hub fastener 1 3",
+    "Starboard main wheel 2 hub fastener 1 4",
+    "Starboard main wheel 2 hub fastener 1 5",
+    "Starboard main wheel 2 hub fastener 1 6",
+    "Starboard main axle",
+    "Starboard main oleo piston",
+    "Starboard main upper strut",
+    "Starboard main drag brace"
+  ],
+  "gearInternalPartIds": [
+    "Nose wheel 1 tire",
+    "Nose wheel 1 inboard hub",
+    "Nose wheel 1 hub fastener -1 1",
+    "Nose wheel 1 hub fastener -1 2",
+    "Nose wheel 1 hub fastener -1 3",
+    "Nose wheel 1 hub fastener -1 4",
+    "Nose wheel 1 hub fastener -1 5",
+    "Nose wheel 1 hub fastener -1 6",
+    "Nose wheel 1 outboard hub",
+    "Nose wheel 1 hub fastener 1 1",
+    "Nose wheel 1 hub fastener 1 2",
+    "Nose wheel 1 hub fastener 1 3",
+    "Nose wheel 1 hub fastener 1 4",
+    "Nose wheel 1 hub fastener 1 5",
+    "Nose wheel 1 hub fastener 1 6",
+    "Nose wheel 2 tire",
+    "Nose wheel 2 inboard hub",
+    "Nose wheel 2 hub fastener -1 1",
+    "Nose wheel 2 hub fastener -1 2",
+    "Nose wheel 2 hub fastener -1 3",
+    "Nose wheel 2 hub fastener -1 4",
+    "Nose wheel 2 hub fastener -1 5",
+    "Nose wheel 2 hub fastener -1 6",
+    "Nose wheel 2 outboard hub",
+    "Nose wheel 2 hub fastener 1 1",
+    "Nose wheel 2 hub fastener 1 2",
+    "Nose wheel 2 hub fastener 1 3",
+    "Nose wheel 2 hub fastener 1 4",
+    "Nose wheel 2 hub fastener 1 5",
+    "Nose wheel 2 hub fastener 1 6",
+    "Nose axle",
+    "Nose oleo piston",
+    "Nose upper strut",
+    "Nose drag brace",
+    "Port main wheel 1 tire",
+    "Port main wheel 1 inboard hub",
+    "Port main wheel 1 hub fastener -1 1",
+    "Port main wheel 1 hub fastener -1 2",
+    "Port main wheel 1 hub fastener -1 3",
+    "Port main wheel 1 hub fastener -1 4",
+    "Port main wheel 1 hub fastener -1 5",
+    "Port main wheel 1 hub fastener -1 6",
+    "Port main wheel 1 outboard hub",
+    "Port main wheel 1 hub fastener 1 1",
+    "Port main wheel 1 hub fastener 1 2",
+    "Port main wheel 1 hub fastener 1 3",
+    "Port main wheel 1 hub fastener 1 4",
+    "Port main wheel 1 hub fastener 1 5",
+    "Port main wheel 1 hub fastener 1 6",
+    "Port main wheel 2 tire",
+    "Port main wheel 2 inboard hub",
+    "Port main wheel 2 hub fastener -1 1",
+    "Port main wheel 2 hub fastener -1 2",
+    "Port main wheel 2 hub fastener -1 3",
+    "Port main wheel 2 hub fastener -1 4",
+    "Port main wheel 2 hub fastener -1 5",
+    "Port main wheel 2 hub fastener -1 6",
+    "Port main wheel 2 outboard hub",
+    "Port main wheel 2 hub fastener 1 1",
+    "Port main wheel 2 hub fastener 1 2",
+    "Port main wheel 2 hub fastener 1 3",
+    "Port main wheel 2 hub fastener 1 4",
+    "Port main wheel 2 hub fastener 1 5",
+    "Port main wheel 2 hub fastener 1 6",
+    "Port main axle",
+    "Port main oleo piston",
+    "Port main upper strut",
+    "Port main drag brace",
+    "Starboard main wheel 1 tire",
+    "Starboard main wheel 1 inboard hub",
+    "Starboard main wheel 1 hub fastener -1 1",
+    "Starboard main wheel 1 hub fastener -1 2",
+    "Starboard main wheel 1 hub fastener -1 3",
+    "Starboard main wheel 1 hub fastener -1 4",
+    "Starboard main wheel 1 hub fastener -1 5",
+    "Starboard main wheel 1 hub fastener -1 6",
+    "Starboard main wheel 1 outboard hub",
+    "Starboard main wheel 1 hub fastener 1 1",
+    "Starboard main wheel 1 hub fastener 1 2",
+    "Starboard main wheel 1 hub fastener 1 3",
+    "Starboard main wheel 1 hub fastener 1 4",
+    "Starboard main wheel 1 hub fastener 1 5",
+    "Starboard main wheel 1 hub fastener 1 6",
+    "Starboard main wheel 2 tire",
+    "Starboard main wheel 2 inboard hub",
+    "Starboard main wheel 2 hub fastener -1 1",
+    "Starboard main wheel 2 hub fastener -1 2",
+    "Starboard main wheel 2 hub fastener -1 3",
+    "Starboard main wheel 2 hub fastener -1 4",
+    "Starboard main wheel 2 hub fastener -1 5",
+    "Starboard main wheel 2 hub fastener -1 6",
+    "Starboard main wheel 2 outboard hub",
+    "Starboard main wheel 2 hub fastener 1 1",
+    "Starboard main wheel 2 hub fastener 1 2",
+    "Starboard main wheel 2 hub fastener 1 3",
+    "Starboard main wheel 2 hub fastener 1 4",
+    "Starboard main wheel 2 hub fastener 1 5",
+    "Starboard main wheel 2 hub fastener 1 6",
+    "Starboard main axle",
+    "Starboard main oleo piston",
+    "Starboard main upper strut",
+    "Starboard main drag brace"
+  ],
+  "missingTextures": [],
+  "provenance": {
+    "method": "Original geometry from measured airframe stations",
+    "airframe": "https://www.embraer.com/media/vmsjxvk5/e-jets-e2_apm_e-jetse2.pdf",
+    "drawing": "APM 5824, section 02, figure 2.2",
+    "paint": "https://www.flyporter.com/en-us/about-porter/our-fleet/embraer-e195-e2"
+  },
+  "originalGeometry": true,
+  "capabilities": [
+    "fans",
+    "flaps",
+    "gear",
+    "reversers",
+    "spoilers"
+  ],
+  "minimumCabinSpanRatio": 0.24,
+  "minimumCabinWindowMeshes": 10,
+  "reviewPoints": {
+    "gear": [
+      4.55,
+      0.5,
+      0
+    ],
+    "cockpit": [
+      1.69,
+      4.007,
+      0
+    ],
+    "door": [
+      4.71,
+      4.10280689997689,
+      1.4082096740548615
+    ],
+    "wing": [
+      20.865048591607163,
+      3.3072724195514884,
+      8.428799999999999
+    ],
+    "engine": [
+      16.0612,
+      1.78,
+      4.84
+    ]
+  },
+  "unresolvedMotions": [],
+  "fidelityNotes": [
+    "Embraer E195-E2 plan, side and front views set the shell and lifting surface stations. PW1900G nacelles, fan and translating sleeves are modeled independently.",
+    "Porter finish uses repainted vector lettering and an authored repeat on the tail. Cabin panes and door outlines are fitted to the curved shell."
+  ],
+  "reviewStatus": "build-awaiting-validation"
+}

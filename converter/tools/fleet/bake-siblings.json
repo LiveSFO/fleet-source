@@ -1,0 +1,75 @@
+{
+  "about": "The sibling types the bakes cover (LS-086, D-116: 'all siblings but try to match as much as possible'): each (type, airline) seen at SFO that the fleet library lacks, baked from the airline's library type closest in length and generation. tools/fleet/bake.mjs maps it by station, anchored at the nose and the tail, and skips any pair the library has exactly. 15 Nov: the rest of the library converted, so United's A319, 737-700, 737-900 and 777-200, Alaska's and Delta's 737-900, Delta's A319, Southwest's 737-700 and China Airlines' 777F are exact now and left this list; United's E170 and Aer Lingus's A330-300 joined it. Source: docs/research/fleet-gaps.md. 15 Nov (kit v0.7 and the freighter rule): FedEx's 777F and MD-11F from its 767-300F (the same livery; the 777F onto the kit's b777f, as the server draws a cargo operator's B77L, the MD-11F onto md11), and United Express's and American Eagle's ERJ-145s (CommuteAir, Piedmont) from the airlines' E175s. 15 Nov (the traced row, main): Cathay's A350-900 from its 777-300ER, Air New Zealand's 777-300ER from its 787-9, Lufthansa's A380 from its A350-900.",
+  "pairs": [
+    {
+      "type": "A321",
+      "al": "UAL",
+      "src": "a21n-united"
+    },
+    {
+      "type": "A320",
+      "al": "DAL",
+      "src": "a321-delta"
+    },
+    {
+      "type": "B738",
+      "al": "AMX",
+      "src": "b38m-aeromexico"
+    },
+    {
+      "type": "A320",
+      "al": "AVA",
+      "src": "a20n-avianca"
+    },
+    {
+      "type": "E170",
+      "al": "UAL",
+      "src": "e75l-united"
+    },
+    {
+      "type": "A333",
+      "al": "EIN",
+      "src": "a332-ge-aer-lingus"
+    },
+    {
+      "type": "B77L",
+      "al": "FDX",
+      "src": "b763f-fedex"
+    },
+    {
+      "type": "MD11",
+      "al": "FDX",
+      "src": "b763f-fedex"
+    },
+    {
+      "type": "E145",
+      "al": "UAL",
+      "src": "e75l-united"
+    },
+    {
+      "type": "E45X",
+      "al": "UAL",
+      "src": "e75l-united"
+    },
+    {
+      "type": "E145",
+      "al": "AAL",
+      "src": "e75l-american"
+    },
+    {
+      "type": "A359",
+      "al": "CPA",
+      "src": "b77w-cathay-pacific"
+    },
+    {
+      "type": "B77W",
+      "al": "ANZ",
+      "src": "b789-current-air-new-zealand"
+    },
+    {
+      "type": "A388",
+      "al": "DLH",
+      "src": "a359-lufthansa"
+    }
+  ]
+}
