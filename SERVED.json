@@ -2221,13 +2221,106 @@
     "t/e079bbbabc11855b.ktx2": "e079bbbabc11855b7a204235d44565b71f700629980503594ff7c0ea93d97aec",
     "t/fb6467e7c61c4d77.ktx2": "fb6467e7c61c4d77f1d1c969b8a4bf3e12f6eadfa9f79a1f05b042891bf67532"
    }
+  },
+  "a320-aca-rb": {
+   "label": "Airbus A320ceo",
+   "selector": "reverse:a320/american",
+   "files": {
+    "a/65548421f74eff33.gltf": "65548421f74eff3337d710e6d74b97ff826e50296c815bfbb65d28fb5d98c8b9",
+    "a/6f2afd903bc8ffb1.gltf": "6f2afd903bc8ffb1d08860641b549b4f2c41b96cb2ad67a328f9a7ab3c157490",
+    "g/81ad7f9d54b4e144.bin": "81ad7f9d54b4e144a9fbfb89d2e365c4499b2e979eddf1af3473e9a7b4703dfd",
+    "g/a852ef02e07183de.bin": "a852ef02e07183dec654eb15fe20a78399188c423a6db179fbd2307ac5f954c6",
+    "t/123439bfef99bcc4.ktx2": "123439bfef99bcc40244bc99955e3a0d56d3f24c61233d8f7b89740ff63c912b",
+    "t/478e2d637edb1a35.ktx2": "478e2d637edb1a3546855f32e419ab40998228a7f4af96a78185de76f5528177",
+    "t/c1741a432d1d159e.ktx2": "c1741a432d1d159e8f82cd5aac9865955f77befc41f2dca7b71ddbaaf65eac0c",
+    "t/d89bd8bf69cee569.ktx2": "d89bd8bf69cee569eaf50e1b4f1026a9cde71a4996dbd29cb995ead9eecd79ec",
+    "t/dc9009bef8f58791.ktx2": "dc9009bef8f5879139b62122002ddb16c099b88d10a5fe1073351e5cebe4607f"
+   }
+  },
+  "crj900-dal-rb": {
+   "label": "Bombardier CRJ900",
+   "selector": "reverse:crj900/air-canada-express",
+   "files": {
+    "a/39949f0c38b40114.gltf": "39949f0c38b40114a669d91882327495765675fe82925d26e22d1ee89e8ef43e",
+    "a/db6fc4b1c0ba5431.gltf": "db6fc4b1c0ba543102c0aba7cd272824d6dc26f1d549e6f6be0d89069cf47c77",
+    "g/78069cd7fe36ce29.bin": "78069cd7fe36ce29e0f8c01b6b604b5efb6ef0bcb00918e479cf82477b3f3dcb",
+    "g/7c679e5b73303c1b.bin": "7c679e5b73303c1b70fe3106f8ac05ef432f19857b14bcd34d1969dc00ba00d4",
+    "t/099fce7c4a01aacd.ktx2": "099fce7c4a01aacd3e9329a9c1084c5d2bda3801ad549ab7cec996e601fbb6de",
+    "t/378168dfd2bbbaa7.ktx2": "378168dfd2bbbaa735ab2695c9838acda5d0613169b94de9f86775b24edd2947",
+    "t/44abcef0f3f551ee.ktx2": "44abcef0f3f551eef1a68ce055adceb3aa80ecb68cfe6274396b60f366bc1b99",
+    "t/68073f3025aa25bc.ktx2": "68073f3025aa25bc247e2d28322907696a4019ffd83dc39a839d4d5e66dfb591",
+    "t/76f10229035956e7.ktx2": "76f10229035956e79020f02965d165b06d41b3f1aa18808e3e7370fd1f55939e",
+    "t/96135e9c219412fb.ktx2": "96135e9c219412fbe8bca5861fcd992c66051fac4e1c523a8cb08c90e9bb2743",
+    "t/b25f655981c2f379.ktx2": "b25f655981c2f37988969e4405dd7178f8186d1e56379b44c9de1667e3050d85",
+    "t/bb2c31b38963eaa2.ktx2": "bb2c31b38963eaa2a3e7e21fb341cff9acbc2ed61251d9b93025c42a3f5e1906",
+    "t/f17e558031ba598f.ktx2": "f17e558031ba598f6d57f98dd5bf97f71777e4f7cb9a34c603878d7130a2d238"
+   }
+  },
+  "b788-aal-rb": {
+   "label": "Boeing 787-8",
+   "selector": "reverse:b788/zipair",
+   "files": {
+    "a/6c0b6464905ecad0.gltf": "6c0b6464905ecad02f87490e199a1ae57477e70447ca23a2d27a2afd979e30ff",
+    "a/a203d111dd6b5d67.gltf": "a203d111dd6b5d67d1a6255b2387e536fdaf6a52e7d1d955ec188bc95828140b",
+    "g/2647c183891a8f71.bin": "2647c183891a8f71858b5c28fee21c9a28d473888e46d33054ace6d667da6a02",
+    "g/9710196f67999a09.bin": "9710196f67999a09a9c933ed13fa12907df0619ca1884457a90f262c66e6693e",
+    "t/132736c0b20ab023.ktx2": "132736c0b20ab0234f48408a1eb200f02b6584704445d89d1f96c03efeb1e1b2",
+    "t/210fa86e493eb200.ktx2": "210fa86e493eb200582d41203166b79c81d2c38324d11c303939a0d61881996d",
+    "t/5a0880a438441d90.ktx2": "5a0880a438441d9084c937fe79ed398d883db33699e65a0061c62efc340bfa92",
+    "t/5ef23dfb45be214e.ktx2": "5ef23dfb45be214e8b0b15e1f9bfa4159be39c2cccbbb360d704b589a2c75775",
+    "t/bfaa88c51ec9003c.ktx2": "bfaa88c51ec9003cad933cf5e17de0b7dd8ea8e96821253af13bfbbf88fb4a63",
+    "t/e03b0a41812190c1.ktx2": "e03b0a41812190c1bfad960b8c37fbf2714195c0af82b6275de3806e35813ab1"
+   }
+  },
+  "a359-aic-rb": {
+   "label": "Airbus A350-900",
+   "selector": "reverse:a359/asiana",
+   "files": {
+    "a/91ccf3e4adfe1fdd.gltf": "91ccf3e4adfe1fdd3fbcbb45d0c6a43635cdb2fc251b97666cb2c355df88de1f",
+    "a/a0272ffbcb4f5d6b.gltf": "a0272ffbcb4f5d6b128eccff19bb01abc3565701e4ebb670a34a0c02ccd7a84b",
+    "g/1dc7ddd3a3d1139a.bin": "1dc7ddd3a3d1139af26aa0339030951008be98461bf0f78021e4db2a0629962c",
+    "g/6f89a6570d36b462.bin": "6f89a6570d36b462c1558be96726e2300f1d34e1fdf153599b0f117fdf991257",
+    "t/2c7b0afc7e951063.ktx2": "2c7b0afc7e95106315702a9bab44aae1384ddbddec10241f70f8c692aa7c553c",
+    "t/75d059f26436d387.ktx2": "75d059f26436d38702c5039c86e23ed73da27b128676e4df98c5b966cc9fba3a",
+    "t/f56cac5967d959bb.ktx2": "f56cac5967d959bb98cdbdbb785e913e4277722717fe85580e62af614b879a28"
+   }
+  },
+  "e75l-aca-rb": {
+   "label": "Embraer E175 · enhanced wingtip",
+   "selector": "reverse:e75l/delta",
+   "files": {
+    "a/94f7fbc1173280a1.gltf": "94f7fbc1173280a1113a4a03ce6fff04d2c60dc6e1662c89bdd2f7fe764b6ca1",
+    "a/d796f85bcdca896e.gltf": "d796f85bcdca896e1df5a5c1bec21feba936dfdf51665c6b6d82c6dbe461cf11",
+    "g/866cfeaf4f3296e0.bin": "866cfeaf4f3296e09388c6156c624f58c96336a2091cfcea10196b12d6945d40",
+    "g/93d0c712557f5cc1.bin": "93d0c712557f5cc119c8a4bcc95ab43bc17dd5315c14199fcfb91452aa280726",
+    "t/2316b3751e4fb65b.ktx2": "2316b3751e4fb65b06df1955d4a586898c1dc279ef4b345aab3b83c59b5610be",
+    "t/89e9308d2d1453b6.ktx2": "89e9308d2d1453b626df2d7143ded3fe20a9e1005aa664139b5dfbcb88a5c38b",
+    "t/a5d3b211b1149abf.ktx2": "a5d3b211b1149abfaafeefdb6258187c41c795c2b4a5c8fb3ae3015286af45d2"
+   }
+  },
+  "b789-current-aal-rb": {
+   "label": "Boeing 787-9 · current source",
+   "selector": "reverse:b789-current/air-premia",
+   "files": {
+    "a/6f8b17966e565720.gltf": "6f8b17966e565720c8928b2f225e9c8e353b0988af8fca2bbbec8be7b38019c9",
+    "a/fb0a123792106398.gltf": "fb0a1237921063982fc5fcf702eaa99b10644a5e75e18c741d63b6c807d26148",
+    "g/888173eb024803df.bin": "888173eb024803df0123880f21fa7fb390838b683205c168188b34abe4c8b79a",
+    "g/fc76b8eb3399fbc3.bin": "fc76b8eb3399fbc3763c4b319b757281f21329efd6b1198245d9f8b0568711d0",
+    "t/12844b7aa6a1bd2e.ktx2": "12844b7aa6a1bd2e371ec2b702048b61b3f64e439bbaa7c8732fc38f28f8242f",
+    "t/5625958a3bc057fd.ktx2": "5625958a3bc057fde3d6837957e6904c4c2ec0a70aacacb56b1b05fcf41bd488",
+    "t/62e7eac24e96deb8.ktx2": "62e7eac24e96deb84c8a21a791329686df86b98a6c109e49f1329c2c55d4006e",
+    "t/c32d35d190486c87.ktx2": "c32d35d190486c8747480e198a4305ec07f1e6e3d08288b35e5455e1c4f2bd0e",
+    "t/e03b0a41812190c1.ktx2": "e03b0a41812190c1bfad960b8c37fbf2714195c0af82b6275de3806e35813ab1",
+    "t/ed016b7e890b7a1d.ktx2": "ed016b7e890b7a1d0383f2745e4d802b45c1a6f9b9db80ea01dca2e57ce1bc01",
+    "t/f885cdb208bbd079.ktx2": "f885cdb208bbd079eedb98927ac1216e54d8a05011c97d694b2708712927bf32"
+   }
   }
  },
  "bakes": {
   "index": {
    "file": "shared/fleet-bakes.json",
-   "sha256": "9dc63238e26160e12dc900d268751b023185b85ede05a64c8f8f073803fa64fe",
-   "made": "2026-11-16T10:12:17.806Z",
+   "sha256": "56320c10d91929de38cd32b0a03e9e6376967d049f2456b76f3bbad8b7bb2358",
+   "made": "2026-11-16T12:36:21.895Z",
    "sizes": {
     "L": [
      2048,
@@ -4039,6 +4132,86 @@
      "body": "bakes/b737-700@ASA-L-body.png",
      "fin": "bakes/b737-700@ASA-L-fin.png"
     }
+   },
+   "a320ceo|ACA": {
+    "from": "a321-air-canada",
+    "sibling": true,
+    "files": {
+     "bake/e8ff69fb6bf5a5cd.ktx2": "e8ff69fb6bf5a5cd26f1adfc720fa988a9c86c81bf47ffbe6fbca269afc6e924",
+     "bake/2acf68b457fcf92b.ktx2": "2acf68b457fcf92b6c79443baae27f8d5499c550404a3bc9fa0776712adceb92",
+     "bake/401b6a46b3a51193.ktx2": "401b6a46b3a51193ceba24d0b731ef437b4380aadfe8c437e855935e3d991999",
+     "bake/7578238170132aa1.ktx2": "7578238170132aa1852a08a4ebe80336ee9db14ef31e18cfc6c0c4e51fc4180d",
+     "bake/9f788d01f43871d2.ktx2": "9f788d01f43871d2bb14e85bb9f5b5fa3653872d39a797d9624e8ee520cf9f6e",
+     "bake/118785e4c9a8ae51.ktx2": "118785e4c9a8ae51ef32c6a22c36b6c4a9f40acdef355fa5fd7ea2c0d478cbcb"
+    },
+    "source": {
+     "body": "bakes/a320ceo@ACA-L-body.png",
+     "fin": "bakes/a320ceo@ACA-L-fin.png"
+    }
+   },
+   "e170|AAL": {
+    "from": "e75l-american",
+    "sibling": true,
+    "files": {
+     "bake/6dd5a0a036959835.ktx2": "6dd5a0a03695983555e23e9807c5f07e8b3b0079c990286d8c5292e3d965adb9",
+     "bake/1d0c394ae20db45b.ktx2": "1d0c394ae20db45b0e816bb1d8fd85c7da0e0e18d56874663791391974aa7adf",
+     "bake/49cb38aa63c42ff4.ktx2": "49cb38aa63c42ff49424bc6c18cfaecce930c7a7950dac523f97ea6f5fb3f026",
+     "bake/269359595d307115.ktx2": "269359595d30711511a8b64f9864b8bb1ffc0e65328aad2cf1ebbabcd801d29e",
+     "bake/03acb5e62d0a8d10.ktx2": "03acb5e62d0a8d1038632078768a94a0fb834aada31771ee7d7ad1490c63124b",
+     "bake/b946d8bdeccd163d.ktx2": "b946d8bdeccd163d86495abe34178a3b1eefb5e111a5c2c0f171e29501cd6f84"
+    },
+    "source": {
+     "body": "bakes/e170@AAL-L-body.png",
+     "fin": "bakes/e170@AAL-L-fin.png"
+    }
+   },
+   "e170|DAL": {
+    "from": "e75l-delta",
+    "sibling": true,
+    "files": {
+     "bake/1f173b8a8d11ca85.ktx2": "1f173b8a8d11ca8535498ece7fbac06dcae636876d59870f177d1340c611e28a",
+     "bake/d429048c5e612e51.ktx2": "d429048c5e612e510ee4dd475abf80e5c548de1b96b820acae9e614b82eb8c04",
+     "bake/8a6ed9ee78206186.ktx2": "8a6ed9ee78206186faf63dabfb63c4f74032bed699890f423ae09d37bf726437",
+     "bake/2a8173f18a235530.ktx2": "2a8173f18a235530a761a15f63cc4be82e4cb85cf7f3641070ffecf9f68129e4",
+     "bake/69ff6ffce3a51322.ktx2": "69ff6ffce3a513223f9f83ae243d1b0f9d9da6a695d3491ae7d47a58e8b8ad99",
+     "bake/28dcc08df825a943.ktx2": "28dcc08df825a9438e561cde8414e27059137c268f0d28ea85f24005b06df965"
+    },
+    "source": {
+     "body": "bakes/e170@DAL-L-body.png",
+     "fin": "bakes/e170@DAL-L-fin.png"
+    }
+   },
+   "crj900|DAL": {
+    "from": "e75l-delta",
+    "sibling": true,
+    "files": {
+     "bake/d7a11fb0512b7a63.ktx2": "d7a11fb0512b7a63e546a998373a02d2a340fe5bb1679d992dd01e5d7543c892",
+     "bake/2a675375a4077274.ktx2": "2a675375a407727466870b00316cce504a137cd55ccbf988fd1024149e3746e6",
+     "bake/0a61935b778bf0ed.ktx2": "0a61935b778bf0edb73e1aacd61de774f4b39b71e42bba56182b481ce03c8afe",
+     "bake/ecbb52f826f5f3f6.ktx2": "ecbb52f826f5f3f625782730cced14a1d1bc962f012730a2d660f42fd5194352",
+     "bake/c96cae13ef2c648a.ktx2": "c96cae13ef2c648a873cfbe57e665d2ff502ed3ca96bd982d280f47b185e0766",
+     "bake/26507aa4652170fb.ktx2": "26507aa4652170fb409937d9a7705ec447552298c038f3acf6ae3f56c92a11c2"
+    },
+    "source": {
+     "body": "bakes/crj900@DAL-L-body.png",
+     "fin": "bakes/crj900@DAL-L-fin.png"
+    }
+   },
+   "e175|ACA": {
+    "from": "crj900-air-canada-express",
+    "sibling": true,
+    "files": {
+     "bake/6a81b6ae0fbc4e5b.ktx2": "6a81b6ae0fbc4e5b6a57950cd9604c6498721d8c81d18644c5269001fce3e943",
+     "bake/5c732b4daabe6238.ktx2": "5c732b4daabe6238c8f40632cbc6ca2864851306db5e9cae56da290916fb6e92",
+     "bake/2197822284784fb2.ktx2": "2197822284784fb2b5996332656e7da9b63c38a1f311b3c7a88796156e804864",
+     "bake/4b37f619dde785ce.ktx2": "4b37f619dde785ce169a66e77c86dde0ca31b071f3cb5bc240af8102ff10fa8f",
+     "bake/5f0a8e77f4f6f7ab.ktx2": "5f0a8e77f4f6f7abc869f139381d6aab553370781544ee20fec734356a153827",
+     "bake/a802a59761cdefe1.ktx2": "a802a59761cdefe1e36f2aef25efd9532837cc0c76bbe5fabd0ff6e913f94bc1"
+    },
+    "source": {
+     "body": "bakes/e175@ACA-L-body.png",
+     "fin": "bakes/e175@ACA-L-fin.png"
+    }
    }
   },
   "traced": [
@@ -4060,7 +4233,10 @@
    "b777-300er|AAL",
    "a330-900|DAL",
    "a220-300|JBU",
-   "b787-9|ELY"
+   "b787-9|ELY",
+   "b787-8|AAL",
+   "a350-900|AIC",
+   "b787-9|AAL"
   ]
  },
  "reverse": {
@@ -4852,6 +5028,147 @@
     "reverse/b77w-aal-rb-7.png",
     "reverse/b77w-aal-rb-8.png",
     "reverse/b77w-aal-rb-9.png"
+   ],
+   "photos": [
+    {
+     "title": "File:N734AR - Boeing 777-323(ER) - American Airlines LHR 310326.jpg",
+     "author": "kitmasterbloke",
+     "licence": "CC BY 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+     "page": "https://commons.wikimedia.org/wiki/File:N734AR_-_Boeing_777-323(ER)_-_American_Airlines_LHR_310326.jpg"
+    },
+    {
+     "title": "File:American Airlines Boeing 777-300ER (N719AN) at Frankfurt Airport (2).jpg",
+     "author": "tjdarmstadt",
+     "licence": "CC BY 2.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+     "page": "https://commons.wikimedia.org/wiki/File:American_Airlines_Boeing_777-300ER_(N719AN)_at_Frankfurt_Airport_(2).jpg"
+    }
+   ]
+  },
+  "a320-aca-rb": {
+   "template": "a320-american",
+   "type": "A320",
+   "airline": "ACA",
+   "livery": "GPL paint of a321-air-canada",
+   "from": "bake:a321-air-canada",
+   "licence": "GPL-2.0",
+   "source": [
+    "reverse/a320-aca-rb-0.png",
+    "reverse/a320-aca-rb-1.png",
+    "reverse/a320-aca-rb-2.png",
+    "reverse/a320-aca-rb-3.png",
+    "reverse/a320-aca-rb-4.png"
+   ]
+  },
+  "crj900-dal-rb": {
+   "template": "crj900-air-canada-express",
+   "type": "CRJ9",
+   "airline": "DAL",
+   "livery": "GPL paint of e75l-delta",
+   "from": "bake:e75l-delta",
+   "licence": "GPL-2.0",
+   "source": [
+    "reverse/crj900-dal-rb-0.png",
+    "reverse/crj900-dal-rb-1.png",
+    "reverse/crj900-dal-rb-2.png",
+    "reverse/crj900-dal-rb-3.png",
+    "reverse/crj900-dal-rb-4.png",
+    "reverse/crj900-dal-rb-5.png",
+    "reverse/crj900-dal-rb-6.png",
+    "reverse/crj900-dal-rb-7.png",
+    "reverse/crj900-dal-rb-8.png"
+   ]
+  },
+  "b788-aal-rb": {
+   "template": "b788-zipair",
+   "type": "B788",
+   "airline": "AAL",
+   "livery": "CC BY 4.0 (traced from photos)",
+   "from": "trace:AAL-B77W",
+   "licence": "GPL-2.0",
+   "source": [
+    "reverse/b788-aal-rb-0.png",
+    "reverse/b788-aal-rb-1.png",
+    "reverse/b788-aal-rb-2.png",
+    "reverse/b788-aal-rb-3.png",
+    "reverse/b788-aal-rb-4.png",
+    "reverse/b788-aal-rb-5.png"
+   ],
+   "photos": [
+    {
+     "title": "File:N734AR - Boeing 777-323(ER) - American Airlines LHR 310326.jpg",
+     "author": "kitmasterbloke",
+     "licence": "CC BY 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+     "page": "https://commons.wikimedia.org/wiki/File:N734AR_-_Boeing_777-323(ER)_-_American_Airlines_LHR_310326.jpg"
+    },
+    {
+     "title": "File:American Airlines Boeing 777-300ER (N719AN) at Frankfurt Airport (2).jpg",
+     "author": "tjdarmstadt",
+     "licence": "CC BY 2.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+     "page": "https://commons.wikimedia.org/wiki/File:American_Airlines_Boeing_777-300ER_(N719AN)_at_Frankfurt_Airport_(2).jpg"
+    }
+   ]
+  },
+  "a359-aic-rb": {
+   "template": "a359-asiana",
+   "type": "A359",
+   "airline": "AIC",
+   "livery": "CC BY 4.0 (traced from photos)",
+   "from": "trace:AIC-A359",
+   "licence": "GPL-2.0",
+   "source": [
+    "reverse/a359-aic-rb-0.png",
+    "reverse/a359-aic-rb-1.png",
+    "reverse/a359-aic-rb-2.png"
+   ],
+   "photos": [
+    {
+     "title": "File:Air India A350-941, VT-JRI, MSN 594 (11 2023), as AI 161 Delhi (DEL) - London (LHR), Flight time 9 42 (54895341887).jpg",
+     "author": "Charles from Port Chester, New York",
+     "licence": "CC0",
+     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "page": "https://commons.wikimedia.org/wiki/File:Air_India_A350-941,_VT-JRI,_MSN_594_(11_2023),_as_AI_161_Delhi_(DEL)_-_London_(LHR),_Flight_time_9_42_(54895341887).jpg"
+    },
+    {
+     "title": "File:(GBR-London) Air India Airbus A350-941 VT-JRB @ EGLL 2025-06-18.jpg",
+     "author": "S5A-0043",
+     "licence": "CC BY 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+     "page": "https://commons.wikimedia.org/wiki/File:(GBR-London)_Air_India_Airbus_A350-941_VT-JRB_@_EGLL_2025-06-18.jpg"
+    }
+   ]
+  },
+  "e75l-aca-rb": {
+   "template": "e75l-delta",
+   "type": "E75L",
+   "airline": "ACA",
+   "livery": "GPL paint of crj900-air-canada-express",
+   "from": "bake:crj900-air-canada-express",
+   "licence": "GPL-2.0",
+   "source": [
+    "reverse/e75l-aca-rb-0.png",
+    "reverse/e75l-aca-rb-1.png",
+    "reverse/e75l-aca-rb-2.png"
+   ]
+  },
+  "b789-current-aal-rb": {
+   "template": "b789-current-air-premia",
+   "type": "B789",
+   "airline": "AAL",
+   "livery": "CC BY 4.0 (traced from photos)",
+   "from": "trace:AAL-B77W",
+   "licence": "GPL-2.0",
+   "source": [
+    "reverse/b789-current-aal-rb-0.png",
+    "reverse/b789-current-aal-rb-1.png",
+    "reverse/b789-current-aal-rb-2.png",
+    "reverse/b789-current-aal-rb-3.png",
+    "reverse/b789-current-aal-rb-4.png",
+    "reverse/b789-current-aal-rb-5.png",
+    "reverse/b789-current-aal-rb-6.png"
    ],
    "photos": [
     {

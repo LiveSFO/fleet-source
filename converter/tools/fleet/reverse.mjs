@@ -37,7 +37,7 @@ import { execFile } from 'node:child_process';
 import { launch, sleep } from './cdp.mjs';
 import { decodePNG, encodePNG } from './image.mjs';
 import { kitFor, isFreighter } from './kitkey.mjs';
-import { TEX, gplVersions } from './config.mjs';
+import { TEX, gplVersions, GPL_VERSIONS } from './config.mjs';
 import { CARGO_OPS } from '../../server/src/core/registry.js';
 import { LIVERIES } from '../../client/js/liveries.js';
 
@@ -58,7 +58,8 @@ const own = (code, al) => { const k = IX.types[code] && IX.types[code][al]; retu
 const templatesOf = code => [...new Set(Object.values(IX.types[code] || {}))].filter(k => RP.assets[k] && !ours(k) && !RP.assets[k].special);
 const credOf = k => IX.credits[RP.assets[k].credits] || RP.credits[RP.assets[k].credits] || { sources: [], licences: [] };
 /** the GPL versions an asset's paint may go out under: every source package's, intersected ([] if one is unknown) */
-const versionsOf = k => { const c = credOf(k); if (!c.sources.length || c.sources.some(s => !/^gpl/.test(s.licence || ''))) return []; return c.sources.reduce((v, s) => v.filter(x => gplVersions(s.repo, s.licence, OR_LATER).includes(x)), [2, 3]); };
+// (a package the library records as unknown counts where its own notice is read into config.mjs GPL_VERSIONS: CRJ700-family)
+const versionsOf = k => { const c = credOf(k); if (!c.sources.length || c.sources.some(s => !/^gpl/.test(s.licence || '') && !GPL_VERSIONS[s.repo])) return []; return c.sources.reduce((v, s) => v.filter(x => gplVersions(s.repo, s.licence, OR_LATER).includes(x)), [2, 3]); };
 const cands = [];
 for (const [bkey, e] of Object.entries(BK.liveries)) {
   if (!e || (!e.sibling && !e.traced)) continue;   // an own-type bake: the library has the pair

@@ -215,12 +215,14 @@ export const LICENCE_NAMES = {
  * bake, tools/fleet/reverse.mjs). The library's records say gpl-2.0-or-later for most packages, but their own notices
  * are what count (docs/FLEET.md, "Licences and publishing the source"): most ship the GPL-2.0 text and say no more, read
  * here as version 2 only (the conservative reading; a package naming no version arguably allows any, GPLv2 §9: the
- * user's call); A350XWB's README says "Released under GPL2+"; the 767-300's says "GNU GPL" with no version (any).
+ * user's call); A350XWB's README says "Released under GPL2+"; the 767-300's says "GNU GPL" with no version (any);
+ * CRJ700-family's LICENSE says "licensed under the GNU General Public License, version 2 or above" (the library records
+ * it as unknown: a notice to inspect, read here, 16 Nov).
  * Combining: GPL paint with GPL paint of a version both allow; CC BY 4.0 or CC0 with any; CC BY-SA 4.0 only into
  * GPL-3.0, its one compatible GPL (creativecommons.org/compatiblelicenses). `--or-later` in reverse.mjs takes the
  * library's records instead.
  */
-export const GPL_VERSIONS = { 'FGMEMBERS/A350XWB': [2, 3], 'dogsaysmoo/767-300': [2, 3] };
+export const GPL_VERSIONS = { 'FGMEMBERS/A350XWB': [2, 3], 'dogsaysmoo/767-300': [2, 3], 'FGMEMBERS/CRJ700-family': [2, 3] };
 /** @param {string} repo @param {string} [recorded] the library's record (gpl-2.0-or-later, gpl-3.0) @param {boolean} [orLater] */
 export function gplVersions(repo, recorded = '', orLater = false) {
   if (GPL_VERSIONS[repo]) return GPL_VERSIONS[repo];
