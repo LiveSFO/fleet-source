@@ -2156,28 +2156,28 @@
    "label": "Airbus A330-900neo · Trent 7000",
    "selector": "reverse:a339/tap-portugal",
    "files": {
-    "a/08e075736019b9b7.gltf": "08e075736019b9b76dc209f7802acc6df539aabeeb492fffff5ded7f1abf5ac3",
-    "a/793b58150caa11d9.gltf": "793b58150caa11d94c5c3ce7d6ad596cceefeb244b24e8f62fcc3ce37b70001a",
+    "a/202f47df956ffaac.gltf": "202f47df956ffaacb3a8e222742a7c213710a25e234da9b82c3e642389b320e1",
+    "a/3a3c59bbf4498320.gltf": "3a3c59bbf4498320e85f623e5c7eb4ebc834de3d46f7f1fd270bc515a46d29c3",
     "g/21d17a96863c3054.bin": "21d17a96863c305472887bce7a7dc2136345b3fce81607d367d61ca428f6549f",
     "g/be6795cf16ab1a7b.bin": "be6795cf16ab1a7b1e17dfdf9c532127f2f1dae66e576714910dbe65317fba5c",
-    "t/09e9c445c7781898.ktx2": "09e9c445c77818982c3fd7992014fa2c2dcd08ce87f860eb66c9b3c4d10ab214",
+    "t/2a1068b17a0c861c.ktx2": "2a1068b17a0c861c8e4b03f95c01d5678f2fb19bc04573a92ed4c13f81a109e7",
     "t/315d29398a6f5a88.ktx2": "315d29398a6f5a88cc26a049c3592bef719edb2ea4065e3b9b0d01a579eb5526",
+    "t/462be9c7320ea018.ktx2": "462be9c7320ea0185a62b2f3a7011a152511eb12e043f0d20939465982b03ab3",
     "t/4cb7f34ad3655ad7.ktx2": "4cb7f34ad3655ad7d66f5ddfc48131242a7a11eb2075660a6ecad36ca74a423d",
-    "t/baa4f85e60070ed1.ktx2": "baa4f85e60070ed1404d1109a546349f72c49022520289bf08d55abe8d418432",
-    "t/eb20dda886a906c8.ktx2": "eb20dda886a906c88bb73d46c0d72b7780587e1690a40d3f1a2afcdba4623b63",
-    "t/fd69142aacda01f6.ktx2": "fd69142aacda01f6cbdadf7472f3f4e9f77493027add2b778bfe64a210adfeec"
+    "t/c7cd45ebd4070301.ktx2": "c7cd45ebd40703014b0cb941d9e43d142b2f1aa659cfd3f732a77cfb194aed2d",
+    "t/ff786ede6b29c100.ktx2": "ff786ede6b29c100ad086ad8f42bef4cc78db471d8576bdf79355b1f6673c0f3"
    }
   },
   "a223-jbu-rb": {
    "label": "Airbus A220-300",
    "selector": "reverse:a223/breeze",
    "files": {
-    "a/c5e4d47c32ec5d00.gltf": "c5e4d47c32ec5d00f97500b10e75be747ab7ad9b1fa1b5bfd94ec79c2eefa06d",
-    "a/d58acfaf7a91f736.gltf": "d58acfaf7a91f73695fdafc8e8c78e28e01cdf11e5c7390e1bcfe4171bbfa0ba",
+    "a/14f5e11ce0b5c4ec.gltf": "14f5e11ce0b5c4eccaf8f9054ba0ade13d29ee4b157627998ca0d5ce93f7b09f",
+    "a/67d6870130d55d8f.gltf": "67d6870130d55d8f5eb56ec6559727a876f702f5cabab3ae3e210f42d6493cca",
     "g/7c467874633410cd.bin": "7c467874633410cd54f78e3cd6ad4ed61efc9b9921d9033bf1f3bf4c858e867e",
     "g/e38530558c747855.bin": "e38530558c747855228d14d87ac7d1d4ed743accc338253c3a6903ee25f17dc0",
-    "t/0a4181e051b7c3e1.ktx2": "0a4181e051b7c3e1b893bed1d79141d3dda5259ba6ce16c2928f5d0d16b485ba",
-    "t/10498c123854e188.ktx2": "10498c123854e1881c85545fbc64ab2ec4dfea6c8c3d3f6135b6311287da1e3f",
+    "t/23fdcf34673f7225.ktx2": "23fdcf34673f72259d618cf3bd4a5b854e5ece7ebb0217a0f88ab90e5961d908",
+    "t/817cb0bc8e789e6f.ktx2": "817cb0bc8e789e6fe0526adc3d4b8ea31e1397c131cfd03069d650ebc4f33304",
     "t/f2132b71a0159372.ktx2": "f2132b71a0159372cac88b39e81318fad9319af5d7acc7417348efefd1fa4683",
     "t/f6124be175063090.ktx2": "f6124be17506309004c34e5eb75c98be21f3e8fd04da48b6523486f2183b4c38"
    }
@@ -2186,17 +2186,17 @@
    "label": "Boeing 787-9 · current source",
    "selector": "reverse:b789-current/air-premia",
    "files": {
-    "a/6c1229f78eadd641.gltf": "6c1229f78eadd64148bfb18623d780b0abbd949db6e822bdf7a2e5f220287d56",
-    "a/e42d2872eebb4816.gltf": "e42d2872eebb481634d50c39c80161abeea621600eeef149e001c6c71024bacd",
+    "a/059e45a42239edbd.gltf": "059e45a42239edbd2f56b7e08e6e258660f05abcf367849b83e9ab621ae64beb",
+    "a/c9dc59eb5bdd9b72.gltf": "c9dc59eb5bdd9b72c0aaea3a3fea13d40c254f0b5e0d1510e4f7341b3d253c9d",
     "g/888173eb024803df.bin": "888173eb024803df0123880f21fa7fb390838b683205c168188b34abe4c8b79a",
     "g/fc76b8eb3399fbc3.bin": "fc76b8eb3399fbc3763c4b319b757281f21329efd6b1198245d9f8b0568711d0",
-    "t/1da00be22a155a2f.ktx2": "1da00be22a155a2fd739236df27a159133f7bccb4502a6cd3b984d3efc165e8f",
-    "t/5c90718425fe1ebd.ktx2": "5c90718425fe1ebd98039d123d5131e5eb1ae5591837f181239736bede320816",
-    "t/9d0308d561744b45.ktx2": "9d0308d561744b456d01ae8bf8b48777be910cc79677b6c030ddf44bc01b1a81",
-    "t/bb4d25e74a68e0bd.ktx2": "bb4d25e74a68e0bd36c43408f84a68153a84765c3fa2e64f9993eb7784b79c3b",
+    "t/4593c1c9bb7b3c62.ktx2": "4593c1c9bb7b3c629b8549bc7b9e09455e0a29efb4cda7c9818cb5ea77f4559d",
+    "t/4c471206fbcb09b0.ktx2": "4c471206fbcb09b08747c5e0b82599ed8f327d45f39358d309bac1913fa82f06",
+    "t/9979cafc1d4d1e8c.ktx2": "9979cafc1d4d1e8c76dc180d9c666c08c9f3be306321f0e65efa45fbdbd24dd7",
     "t/c32d35d190486c87.ktx2": "c32d35d190486c8747480e198a4305ec07f1e6e3d08288b35e5455e1c4f2bd0e",
-    "t/c714e2ee4fb73f60.ktx2": "c714e2ee4fb73f6040d3ff4907b3d54d5e6918b9a20424a4b2248262ef4e063f",
-    "t/d1757c3763311ce4.ktx2": "d1757c3763311ce4be94f5ebc2cc883e11a0a7e729884751c14df513915abaa2"
+    "t/c80906f795eeb1bf.ktx2": "c80906f795eeb1bf8dedc0834b9d8bb8b79e09c4202cdd8b867a1d6ae7550bb3",
+    "t/cd3a7709c620ca64.ktx2": "cd3a7709c620ca64387438a940dc53c261eb419dba29866a54ca351feda8e3d1",
+    "t/da4216b656790969.ktx2": "da4216b6567909690b6fc966d052f89f7e18c467c18d3c87bc40272fc5f32aeb"
    }
   },
   "b77w-aal-rb": {
@@ -2226,7 +2226,7 @@
  "bakes": {
   "index": {
    "file": "shared/fleet-bakes.json",
-   "sha256": "cb35267af7534cde66393f96b5ee6084b8757a4468b15fc902decf8e2a93f72b",
+   "sha256": "9dc63238e26160e12dc900d268751b023185b85ede05a64c8f8f073803fa64fe",
    "made": "2026-11-16T10:12:17.806Z",
    "sizes": {
     "L": [
@@ -4057,7 +4057,10 @@
    "a350-1000|QTR",
    "b767-300er|UPS",
    "a350-900|SAS",
-   "b777-300er|AAL"
+   "b777-300er|AAL",
+   "a330-900|DAL",
+   "a220-300|JBU",
+   "b787-9|ELY"
   ]
  },
  "reverse": {
@@ -4745,8 +4748,8 @@
    "template": "a339-tap-portugal",
    "type": "A339",
    "airline": "DAL",
-   "livery": "ours (liveries.js)",
-   "from": "painted",
+   "livery": "CC BY 4.0 (traced from photos)",
+   "from": "trace:DAL-A339",
    "licence": "GPL-2.0",
    "source": [
     "reverse/a339-dal-rb-0.png",
@@ -4754,28 +4757,60 @@
     "reverse/a339-dal-rb-2.png",
     "reverse/a339-dal-rb-4.png",
     "reverse/a339-dal-rb-5.png"
+   ],
+   "photos": [
+    {
+     "title": "File:Airbus A330 (N436DX) Taxiing in Boston, March 2026.jpg",
+     "author": "Fletcher",
+     "licence": "CC BY 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+     "page": "https://commons.wikimedia.org/wiki/File:Airbus_A330_(N436DX)_Taxiing_in_Boston,_March_2026.jpg"
+    },
+    {
+     "title": "File:Delta Airbus A330-900 N402DX departing Boston June 2025 1.jpg",
+     "author": "4300streetcar",
+     "licence": "CC BY 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+     "page": "https://commons.wikimedia.org/wiki/File:Delta_Airbus_A330-900_N402DX_departing_Boston_June_2025_1.jpg"
+    }
    ]
   },
   "a223-jbu-rb": {
    "template": "a223-breeze",
    "type": "BCS3",
    "airline": "JBU",
-   "livery": "ours (liveries.js)",
-   "from": "painted",
+   "livery": "CC BY 4.0 (traced from photos)",
+   "from": "trace:JBU-BCS3",
    "licence": "GPL-2.0",
    "source": [
     "reverse/a223-jbu-rb-0.png",
     "reverse/a223-jbu-rb-1.png",
     "reverse/a223-jbu-rb-2.png",
     "reverse/a223-jbu-rb-3.png"
+   ],
+   "photos": [
+    {
+     "title": "File:JetBlue Airways A220-371, N3102J, named Do You, Blue.jpg",
+     "author": "Charles",
+     "licence": "CC BY 2.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+     "page": "https://commons.wikimedia.org/wiki/File:JetBlue_Airways_A220-371,_N3102J,_named_Do_You,_Blue.jpg"
+    },
+    {
+     "title": "File:JetBlue A220-300 (N3102J) arriving at Boston.jpg",
+     "author": "Tim",
+     "licence": "CC0",
+     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "page": "https://commons.wikimedia.org/wiki/File:JetBlue_A220-300_(N3102J)_arriving_at_Boston.jpg"
+    }
    ]
   },
   "b789-current-ely-rb": {
    "template": "b789-current-air-premia",
    "type": "B789",
    "airline": "ELY",
-   "livery": "ours (liveries.js)",
-   "from": "painted",
+   "livery": "CC BY 4.0 (traced from photos)",
+   "from": "trace:ELY-B789",
    "licence": "GPL-2.0",
    "source": [
     "reverse/b789-current-ely-rb-0.png",
@@ -4785,6 +4820,15 @@
     "reverse/b789-current-ely-rb-4.png",
     "reverse/b789-current-ely-rb-5.png",
     "reverse/b789-current-ely-rb-6.png"
+   ],
+   "photos": [
+    {
+     "title": "File:4X-EDH EL AL ISRAEL AIRLINES BOEING 787-9 DREAMLINER (51199372702).jpg",
+     "author": "km30192002",
+     "licence": "CC BY 2.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+     "page": "https://commons.wikimedia.org/wiki/File:4X-EDH_EL_AL_ISRAEL_AIRLINES_BOEING_787-9_DREAMLINER_(51199372702).jpg"
+    }
    ]
   },
   "b77w-aal-rb": {
