@@ -2203,30 +2203,30 @@
    "label": "Boeing 777-300ER",
    "selector": "reverse:b77w/air-china",
    "files": {
-    "a/076f91e47c94c45e.gltf": "076f91e47c94c45e361a801d2ea0b22f8106bf4b41d96668944bcff32b459931",
-    "a/119b182adbf59c93.gltf": "119b182adbf59c9315736f32e87fee78100e182f1ff4709a1acf6a23fd6650fa",
+    "a/02ae9bed91ee5d88.gltf": "02ae9bed91ee5d880403ded1d1d966317c609489a12be23204c278c1c9b124b6",
+    "a/a26227b8835b00a6.gltf": "a26227b8835b00a608422b00e71efffdb074c77240a0187315087991b943a806",
     "g/a99fe149542d1e7c.bin": "a99fe149542d1e7c6df98779c55f258f12f75da2911a3b1dcb0cab652d13ea64",
     "g/eb0d4df7f1d87450.bin": "eb0d4df7f1d874500a1d11699da440b74e53d168271de2319bc00f68071d79ad",
     "t/0765892ed29c2c54.ktx2": "0765892ed29c2c541888d9f6b853eb237f21a66cc3a53f691dfdcdc3fc90919f",
-    "t/560efd2fa8dc2904.ktx2": "560efd2fa8dc2904f14baf66b7bee3d44c19541ca91ed5e4f76f0e7632733128",
-    "t/56ca8167d0013782.ktx2": "56ca8167d0013782fd1ca411dac58b3da801560b186713d81bcac81c0a2dd4ba",
-    "t/5f0df1fc818d9818.ktx2": "5f0df1fc818d9818d8df1b2ba6863d7111c7f18d8c77398929aac09523b3d72c",
-    "t/6311787d94f46133.ktx2": "6311787d94f4613344aa89d522d0547f010664970327042483d14fac6fe968d2",
-    "t/660ec3cd4983dd81.ktx2": "660ec3cd4983dd81d5246d19f6f102cd3411e78d2544d4cf97327c38fc476fd2",
-    "t/705234dbaa0d19d5.ktx2": "705234dbaa0d19d5f9af077b5dd26b2fd571cbce3d87ee06036aa3524b81d0d7",
-    "t/9be1ee1f493c6d84.ktx2": "9be1ee1f493c6d848ca5759c779a3523a231d320fe0b615feb6140f4f63dcbe5",
-    "t/9d8557d693bfe96c.ktx2": "9d8557d693bfe96c2a8db74098c43c2b6b72f3ff91187fc777e765dff169d081",
-    "t/a4fe7886dd389874.ktx2": "a4fe7886dd389874382b2610d06c4d84d86e8ea5603127ca974485d49301976d",
-    "t/abd8a785bb8abc57.ktx2": "abd8a785bb8abc57a1d1542a38c83299df46572d53c1c4ac8d8ef810d6b2431a",
-    "t/e3b959c301e8f48f.ktx2": "e3b959c301e8f48f04dbd8ac64eaa8329bdb336e1752a1f0f1a1dd98903a2d18",
-    "t/f267f78bfb224a02.ktx2": "f267f78bfb224a0264c8f8b079134a123c362aae52e98be9452ee903473271bd"
+    "t/1b0f8cb79e6ba493.ktx2": "1b0f8cb79e6ba49303cfef1bdcef7b25d5471aaabe094b04599f6009b6925dac",
+    "t/294a004842450f99.ktx2": "294a004842450f99c4623cf6c58e6f243301e7585507b0ca8a8ec024866829f2",
+    "t/3e78009940384b46.ktx2": "3e78009940384b468a2d7dbe1eaaea51d8d758d46b23b83503546c950b6eb939",
+    "t/59a686322c7f054e.ktx2": "59a686322c7f054e91db2e0546b73fdba0729e4f441309eae7da4be43bb4976f",
+    "t/644020f16c01a3f5.ktx2": "644020f16c01a3f53fab59d735cf1d95c1a1224d28dfed10666e704635377c28",
+    "t/a36935a927d24802.ktx2": "a36935a927d248025d3c78b52a1a3d736486ac9d8ea909f3ba1dabbee5db1d4c",
+    "t/adbab1aaa5255cab.ktx2": "adbab1aaa5255cab89208d6eeada2f52791afc4480a8d20f05148a85f69424ea",
+    "t/bf8cc34cadfc7e8b.ktx2": "bf8cc34cadfc7e8bfc579c30feb0b930e29239e663ca82ef8b75a170421d8b8c",
+    "t/c25900d657937221.ktx2": "c25900d65793722170b55baa096254e829e34bfe91aad5d603b5ac2a8aa7a7a9",
+    "t/d0440dd35d0f414e.ktx2": "d0440dd35d0f414e4c64a7f3cc112e5fe0ba2aec43408e277e4cd1f1d128a1c0",
+    "t/e079bbbabc11855b.ktx2": "e079bbbabc11855b7a204235d44565b71f700629980503594ff7c0ea93d97aec",
+    "t/fb6467e7c61c4d77.ktx2": "fb6467e7c61c4d77f1d1c969b8a4bf3e12f6eadfa9f79a1f05b042891bf67532"
    }
   }
  },
  "bakes": {
   "index": {
    "file": "shared/fleet-bakes.json",
-   "sha256": "96e319db9bda5ebc2756a52bff3eeec11a3f253fbd857927c36bde5abce5a8f9",
+   "sha256": "cb35267af7534cde66393f96b5ee6084b8757a4468b15fc902decf8e2a93f72b",
    "made": "2026-11-16T10:12:17.806Z",
    "sizes": {
     "L": [
@@ -4056,7 +4056,8 @@
    "a330-900|ITY",
    "a350-1000|QTR",
    "b767-300er|UPS",
-   "a350-900|SAS"
+   "a350-900|SAS",
+   "b777-300er|AAL"
   ]
  },
  "reverse": {
@@ -4790,8 +4791,8 @@
    "template": "b77w-air-china",
    "type": "B77W",
    "airline": "AAL",
-   "livery": "ours (liveries.js)",
-   "from": "painted",
+   "livery": "CC BY 4.0 (traced from photos)",
+   "from": "trace:AAL-B77W",
    "licence": "GPL-2.0",
    "source": [
     "reverse/b77w-aal-rb-0.png",
@@ -4807,6 +4808,22 @@
     "reverse/b77w-aal-rb-7.png",
     "reverse/b77w-aal-rb-8.png",
     "reverse/b77w-aal-rb-9.png"
+   ],
+   "photos": [
+    {
+     "title": "File:N734AR - Boeing 777-323(ER) - American Airlines LHR 310326.jpg",
+     "author": "kitmasterbloke",
+     "licence": "CC BY 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+     "page": "https://commons.wikimedia.org/wiki/File:N734AR_-_Boeing_777-323(ER)_-_American_Airlines_LHR_310326.jpg"
+    },
+    {
+     "title": "File:American Airlines Boeing 777-300ER (N719AN) at Frankfurt Airport (2).jpg",
+     "author": "tjdarmstadt",
+     "licence": "CC BY 2.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+     "page": "https://commons.wikimedia.org/wiki/File:American_Airlines_Boeing_777-300ER_(N719AN)_at_Frankfurt_Airport_(2).jpg"
+    }
    ]
   }
  }
