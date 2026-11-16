@@ -69,16 +69,28 @@ for (const [bkey, e] of Object.entries(BK.liveries)) {
     const id = `${code}|${al}`; if (ONLY && !ONLY.has(id)) continue;
     const painted = PAINTED.has(id);
     // the livery's own licence: ours (the painter's), a trace's photos, or the library paint a sibling was baked from
-    const sv = painted ? [2, 3] : e.traced ? (/SA/i.test(e.licence || '') ? [3] : [2, 3]) : versionsOf(e.src);
-    const lic = painted ? 'ours (liveries.js)' : e.traced ? `${e.licence} (traced from photos)` : `GPL paint of ${e.src}`;
-    // the template: the airframe a cargo airline flies (a freighter) or a passenger one; a licence both allow, GPL-2.0
-    // first; the fewest packages (the simplest credits); then by name
-    const scored = tpls.map(k => { const v = versionsOf(k).filter(x => sv.includes(x)); return { k, v, fr: isFreighter(k, RP.assets[k].label) === cargo ? 1 : 0, n: credOf(k).sources.length }; });
-    const fit = scored.filter(s => s.v.length).sort((p, q) => q.fr - p.fr || +q.v.includes(2) - +p.v.includes(2) || p.n - q.n || p.k.localeCompare(q.k));
-    const pick = fit.find(s => s.v.includes(2)) || (GPL3 ? fit[0] : null);
-    const why = pick ? null : fit.length ? `only as GPL-3.0 (${lic} onto ${fit[0].k}; --gpl3)` : `licences don't combine (${lic} onto ${tpls.map(k => `${k}: GPL-${versionsOf(k).join('/') || '?'}`).join(', ')})`;
-    cands.push({ id, code, al, kit, bkey, e, cargo, painted, lic, tpl: pick && pick.k, gpl: pick ? (pick.v.includes(2) ? 2 : 3) : null, why });
+    cands.push(candidate(id, code, al, kit, bkey, e, cargo, painted, tpls));
   }
+}
+// --painted pairs the bakes have no entry for (16 Nov: an airline the library has no livery of in the type's family,
+// at the other regions' airports: Delta's A330-900, JetBlue's A220-300, El Al's 787-9, American's 777-300ER): drawn
+// from the painter alone, as the crowd paints them (no bake), until a trace replaces them
+for (const id of PAINTED) {
+  if (cands.some(c => c.id === id)) continue;
+  const [code, al] = id.split('|'), cargo = CARGO_OPS.has(al), kit = kitFor(code, cargo), tpls = templatesOf(code);
+  if (own(code, al) || !tpls.length || (ONLY && !ONLY.has(id))) { console.log(`  ${id}: ${own(code, al) ? 'the library has it' : 'no library airframe of the type'}`); continue; }
+  cands.push(candidate(id, code, al, kit, `${kit}|${al}`, { src: `painted:${al}`, painted: true }, cargo, true, tpls));
+}
+/** a pair's template and licence: the airframe a cargo airline flies (a freighter) or a passenger one; a licence both
+ * allow, GPL-2.0 first; the fewest packages (the simplest credits); then by name */
+function candidate(id, code, al, kit, bkey, e, cargo, painted, tpls) {
+  const sv = painted ? [2, 3] : e.traced ? (/SA/i.test(e.licence || '') ? [3] : [2, 3]) : versionsOf(e.src);
+  const lic = painted ? 'ours (liveries.js)' : e.traced ? `${e.licence} (traced from photos)` : `GPL paint of ${e.src}`;
+  const scored = tpls.map(k => { const v = versionsOf(k).filter(x => sv.includes(x)); return { k, v, fr: isFreighter(k, RP.assets[k].label) === cargo ? 1 : 0, n: credOf(k).sources.length }; });
+  const fit = scored.filter(s => s.v.length).sort((p, q) => q.fr - p.fr || +q.v.includes(2) - +p.v.includes(2) || p.n - q.n || p.k.localeCompare(q.k));
+  const pick = fit.find(s => s.v.includes(2)) || (GPL3 ? fit[0] : null);
+  const why = pick ? null : fit.length ? `only as GPL-3.0 (${lic} onto ${fit[0].k}; --gpl3)` : `licences don't combine (${lic} onto ${tpls.map(k => `${k}: GPL-${versionsOf(k).join('/') || '?'}`).join(', ')})`;
+  return { id, code, al, kit, bkey, e, cargo, painted, lic, tpl: pick && pick.k, gpl: pick ? (pick.v.includes(2) ? 2 : 3) : null, why };
 }
 const todo = cands.filter(c => c.tpl), held = cands.filter(c => !c.tpl);
 console.log(`reverse bake: ${cands.length} pairs the crowd has a livery for and the library an airframe of; ${todo.length} to draw, ${held.length} held`);

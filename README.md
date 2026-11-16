@@ -7,10 +7,10 @@ under the GNU General Public License, and so are livesfo's conversions of them. 
 corresponding source.
 
 It covers the converted files livesfo serves under `/m/`, as listed in its index generated
-2026-11-16T08:00:02.525Z: 120 liveries of 37 airframes. [SERVED.json](SERVED.json) names every served file
+2026-11-16T08:00:02.525Z: 128 liveries of 37 airframes. [SERVED.json](SERVED.json) names every served file
 with its SHA-256. The rest of the website isn't part of these models: they're separate files the page loads.
 
-**Where the files are.** This git tree holds everything but the paint maps (200 MB of PNG), the baked liveries' images (52 MB) and the redrawn paint of livesfo's liveries on the library's airframes (50 MB). The release
+**Where the files are.** This git tree holds everything but the paint maps (200 MB of PNG), the baked liveries' images (54 MB) and the redrawn paint of livesfo's liveries on the library's airframes (59 MB). The release
 [`index-2026-11-16`](../../releases/tag/index-2026-11-16) holds the whole of it as one zip, paint maps included.
 
 ## How the served files are made
