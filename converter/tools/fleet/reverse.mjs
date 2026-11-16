@@ -144,15 +144,28 @@ async function pageReverse(o) {
   // the engines (the kit's, at the published stations: the hi-fi's lie on them; up to two pairs, T.engines on four-engine
   // types) take the cowl colour; the winglets (not on raked tips, which the kit doesn't paint apart) the winglet colour
   const Es = (T.engines && T.engines.length ? T.engines : T.engine ? [T.engine] : []).slice(0, 2);
-  const eng = i => { const E = Es[i]; return E ? new THREE.Vector4(E.x || 0, E.y || 0, (E.lipZ || 0) - 0.3, (E.lipZ || 0) + (E.len || 0) + 0.3) : new THREE.Vector4(0, -99, 0, 0); };
-  const engR = i => (Es[i] ? (Es[i].dMax || 0) / 2 + 0.15 : 0);
+  // ... measured on the hi-fi itself (15 Nov): on its fans' spin axes (the library's engines can sit a little off the
+  // kit's: the A320neo's 0.10 m further out and 0.16 m higher, which left the template's paint, Avianca's red, JetBlue's
+  // blue, on the nacelles' tops), from its own inlet lips (the front of what lies within the kit's nacelle radius of the
+  // axis), the kit's nacelle length aft; within them only the cowl's outside takes the colour: the lip (its first 9 % of
+  // the nacelle's diameter) and the inlet's inside keep the template's bare metal, as on the real engines
+  const axes = []; for (const m of H.L.motions || []) if (m.t === 's' && m.p && m.p[0] > 1.5 && !axes.some(b => Math.abs(b[0] - m.p[0]) < 0.5)) axes.push([m.p[0], m.p[1]]);
+  axes.sort((a, b) => a[0] - b[0]);
+  const lipOf = (E, ax) => {
+    const v = new THREE.Vector3(), R = (E.dMax || 0) / 2 + 0.1; let z = Infinity;
+    for (const part of H.parts) { const pos = part.geometry.attributes.position; if (!pos) continue; for (let i = 0; i < pos.count; i++) { v.fromBufferAttribute(pos, i).applyMatrix4(part.matrix); if (v.x < 0 || v.z < E.lipZ - 2.5 || v.z > E.lipZ + 0.5 * E.len) continue; if (Math.hypot(v.x - ax[0], v.y - ax[1]) < R) z = Math.min(z, v.z); } }
+    return z < Infinity ? z : E.lipZ;
+  };
+  const engs = Es.map((E, i) => { const ax = axes.length === Es.length ? axes[i] : [E.x || 0, E.y || 0], z0 = lipOf(E, ax); return { x: ax[0], y: ax[1], z0, z1: z0 + (E.len || 0), R: (E.dMax || 0) / 2 + 0.3, lip: z0 + 0.09 * (E.dMax || 0) }; });
+  const eng = i => { const e = engs[i]; return e ? new THREE.Vector4(e.x, e.y, e.z0 - 0.3, e.z1 + 0.3) : new THREE.Vector4(0, -99, 0, 0); };
+  const engR = i => (engs[i] ? engs[i].R : 0);
   const cw = new THREE.Color(o.cowl || L.spec.cowl || '#c9ced4'), wl = new THREE.Color(o.winglet || L.spec.winglet || L.spec.tail || '#c9ced4');
   const tipKind = T.wing && T.wing.tip && T.wing.tip.kind, uTip = tipKind && tipKind !== 'raked' ? T.span / 2 - 1.0 : 1e9;
   // the fins, each measured on its own (bake.mjs's way, the other direction): the hi-fi's leading and trailing edges as
   // lines over its height, fitted to its points above the kit's crown (the root's fillet left out), its root and top;
   // the kit's from its type (T.fin). A hi-fi fin texel maps onto the kit's fin by span and chord fraction, so the art
-  // lands where the crowd shows it even where the two fins stand apart (the library's 777 fins 1 m forward of the kit's
-  // since its v0.8 batch 3, the ACAP's)
+  // lands where the crowd shows it even where the two fins stand apart (the library's 777 fins stood half a metre forward
+  // of the kit's after its v0.8 batch 3, the ACAP's, until the converter's FIN_FIX)
   const Fi = T.fin, ybK = yc + Fi.yBase, tanS = Math.tan(Fi.sweepLE * Math.PI / 180), kRoot = yc + fn.tp(Math.min(Lk, Fi.rootZ + Fi.rootChord * 0.5)), kTop = ybK + Fi.height;
   const finH = (() => {
     // (points sampled every 25 cm across each triangle: a fin is a few large quads, its vertices only at the root and tip)
@@ -184,25 +197,33 @@ async function pageReverse(o) {
     return z > Lk - 0.8 && z < Lk + 3 ? z : Lk;   // (outside that, the window missed the tip: the kit's own length)
   };
   const U = { uSec: { value: secTex }, uL: { value: Lk }, uN: { value: N }, uYc: { value: yc }, uBody: { value: bodyT }, uFin: { value: finT },
-    uEng0: { value: eng(0) }, uEngR0: { value: engR(0) }, uEng1: { value: eng(1) }, uEngR1: { value: engR(1) },
+    uEng0: { value: eng(0) }, uEngR0: { value: engR(0) }, uEng1: { value: eng(1) }, uEngR1: { value: engR(1) }, uLip: { value: new THREE.Vector2(engs[0] ? engs[0].lip : 0, engs[1] ? engs[1].lip : 0) },
     uCowl: { value: new THREE.Vector3(cw.r, cw.g, cw.b) }, uWl: { value: new THREE.Vector3(wl.r, wl.g, wl.b) }, uTip: { value: uTip }, uLh: { value: tailTip() }, uMask: { value: 0 },
     uFinH: { value: finH ? new THREE.Vector4(finH.kL, finH.cL, finH.kT, finH.cT) : new THREE.Vector4(tanS, Fi.rootZ - tanS * ybK, tanS, Fi.rootZ + Fi.rootChord - tanS * ybK) }, uFinHy: { value: finH ? new THREE.Vector2(finH.y0, finH.y1) : new THREE.Vector2(kRoot, kTop) },
     uFinK: { value: new THREE.Vector4(Fi.rootZ, ybK, Fi.height, tanS) }, uFinKc: { value: new THREE.Vector4(Fi.rootChord, Fi.tipChord, kRoot, kTop) },
     uBox: { value: new THREE.Vector4(box.z0, box.z1, box.y0, box.y1) }, uXf: { value: new THREE.Matrix3() }, uTpl: { value: null }, uSize: { value: new THREE.Vector2() } };
   const paintMat = new THREE.ShaderMaterial({
     uniforms: U, side: THREE.DoubleSide, depthTest: false, depthWrite: false,
-    vertexShader: `uniform mat3 uXf; varying vec3 vW; void main() { vW = (modelMatrix * vec4(position, 1.0)).xyz; vec2 t = (uXf * vec3(uv, 1.0)).xy; gl_Position = vec4(t * 2.0 - 1.0, 0.0, 1.0); }`,
+    vertexShader: `uniform mat3 uXf; varying vec3 vW; varying vec3 vN; void main() { vW = (modelMatrix * vec4(position, 1.0)).xyz; vN = normalize(mat3(modelMatrix) * normal); vec2 t = (uXf * vec3(uv, 1.0)).xy; gl_Position = vec4(t * 2.0 - 1.0, 0.0, 1.0); }`,
     fragmentShader: SA + `uniform sampler2D uBody; uniform sampler2D uFin; uniform sampler2D uTpl; uniform vec2 uSize; uniform vec4 uBox; uniform vec4 uEng0; uniform float uEngR0; uniform vec4 uEng1; uniform float uEngR1;
-      uniform vec3 uCowl; uniform vec3 uWl; uniform float uTip; uniform float uLh; uniform float uMask; uniform vec4 uFinH; uniform vec2 uFinHy; uniform vec4 uFinK; uniform vec4 uFinKc; varying vec3 vW;
+      uniform vec3 uCowl; uniform vec3 uWl; uniform float uTip; uniform float uLh; uniform float uMask; uniform vec4 uFinH; uniform vec2 uFinHy; uniform vec4 uFinK; uniform vec4 uFinKc; uniform vec2 uLip; varying vec3 vW; varying vec3 vN;
       // a station on the kit's body: the tail cone (behind 85 % of the kit's length) laid onto the kit's in proportion, as
       // the library's ends a little elsewhere (its tail cones within about 0.5 m of the kit's)
       float kitS(float z) { float zs = 0.85 * uL; return z <= zs ? z : zs + (z - zs) * (uL - zs) / max(uLh - zs, 0.1); }
-      bool inEng(vec4 E, float R) { return R > 0.2 && vW.z > E.z && vW.z < E.w && length(vec2(abs(vW.x) - E.x, vW.y - E.y)) < R; }
+      // an engine's texel: 1 its cowl's outside (the cowl colour), 2 its lip or inside (the template's own), 0 not this engine's
+      int inEng(vec4 E, float R, float lip) {
+        if (R < 0.2 || vW.z < E.z || vW.z > E.w) return 0;
+        vec2 d = vec2(abs(vW.x) - E.x, vW.y - E.y); float r = length(d); if (r > R) return 0;
+        float nr = dot(d / max(r, 0.001), vec2(vN.x * sign(vW.x), vN.y));   // the surface facing out from the axis, or in
+        return vW.z < lip || nr < 0.25 ? 2 : 1;
+      }
       // (uMask: the same drawing, writing white where it paints: the edge padding below grows the painted texels)
       vec4 put(vec3 c, float a) { return uMask > 0.5 ? vec4(1.0) : vec4(toSRGB(c), a); }
       void main() {
         float a = texture2D(uTpl, gl_FragCoord.xy / uSize).a;   // (the template's alpha stays: a decal keeps its shape)
-        if (inEng(uEng0, uEngR0) || inEng(uEng1, uEngR1)) { gl_FragColor = put(uCowl, a); return; }   // a cowl
+        int e = max(inEng(uEng0, uEngR0, uLip.x), inEng(uEng1, uEngR1, uLip.y));
+        if (e == 1) { gl_FragColor = put(uCowl, a); return; }   // a cowl's outside
+        if (e == 2) discard;   // its lip and the inlet's inside: the template's bare metal
         if (abs(vW.x) > uTip) { gl_FragColor = put(uWl, a); return; }   // a winglet
         float s = kitS(vW.z); vec3 b = bkSA(vec3(vW.x, vW.y, s)); vec4 sc = bkSec(s);
         float y = vW.y - uYc;

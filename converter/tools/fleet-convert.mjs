@@ -30,10 +30,10 @@ import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { readGLB, accessor, imageBytes, meshopt, MeshoptPacker } from './fleet/gltf.mjs';
 import { decodePNG, encodePNG, resize, stats } from './fleet/image.mjs';
-import { kitTransform, kitFit, compressLeg, splitBelow, transformMesh, concat, weld, simplify, reorder, quantize, bounds, apply } from './fleet/geometry.mjs';
+import { kitTransform, kitFit, compressLeg, splitBelow, transformMesh, concat, weld, simplify, reorder, quantize, bounds, apply, capHoles } from './fleet/geometry.mjs';
 import vm from 'node:vm';
 import { matches, chainFor, motionOut, lightsOut, valueAt } from './fleet/rig.mjs';
-import { BATCH, EXCLUDE_AIRFRAMES, SKIP_LIVERY, SKIP_SELECTOR, SPECIAL, IATA_ICAO, INTERIOR_TEXTURES, HIDDEN_NODES, DETENTS, TEX, GEO, PACKAGE_INFO, ENGINE_FIX, GEAR_FIX, STRETCH_FIX } from './fleet/config.mjs';
+import { BATCH, EXCLUDE_AIRFRAMES, SKIP_LIVERY, SKIP_SELECTOR, SPECIAL, IATA_ICAO, INTERIOR_TEXTURES, HIDDEN_NODES, DETENTS, TEX, GEO, PACKAGE_INFO, ENGINE_FIX, GEAR_FIX, STRETCH_FIX, FIN_FIX, COCKPIT_PANES } from './fleet/config.mjs';
 import { kitFor, isFreighter } from './fleet/kitkey.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -313,6 +313,10 @@ async function convertVariant(af, liveries, MO, report) {
       log(`  and ${nv} vertices of ${EF.near} round the engines`);
     }
     log(`  engines moved ${EF.dz > 0 ? '+' : ''}${EF.dz} m along${EF.x !== undefined ? `, across to ${EF.x} m (left ${dxOf('L').toFixed(2)}, right ${dxOf('R').toFixed(2)})` : ''}: ${moved.size} parts, ${motionShift.size} motions`);
+    // every part the reversers move goes with its engine: one left behind stands apart from the nacelle at rest (the NG
+    // 737s' reverser halves until 15 Nov: a gap like reversers out, on an aircraft holding at 0 kt)
+    const left = parts.filter((part, pi) => !moved.has(pi) && part.mi.some(i => motions[i].control === 'reversers')).map(part => part.node.name || '?');
+    if (left.length) throw new Error(`${af}: ENGINE_FIX leaves parts the reversers move behind: ${[...new Set(left)].join(', ')} (config.mjs ${af}'s parts)`);
   }
   // the main gear moved to the published station (config.mjs GEAR_FIX), the motions turning only it with it
   const GF = GEAR_FIX[af];
@@ -321,6 +325,15 @@ async function convertVariant(af, liveries, MO, report) {
     parts.forEach((part, pi) => { if (!GF.parts.test(part.node.name || '')) return; const t = shiftOf.get(pi) || [0, 0, 0]; shiftOf.set(pi, [t[0], t[1], t[2] + GF.dz]); movedG.add(pi); });
     let nm = 0; motions.forEach((m, i) => { const on = parts.map((p, pi) => (p.mi.includes(i) ? pi : -1)).filter(pi => pi >= 0); if (on.length && on.every(pi => movedG.has(pi))) { motionShift.set(i, shiftOf.get(on[0])); nm++; } });
     log(`  main gear moved ${GF.dz > 0 ? '+' : ''}${GF.dz} m along: ${movedG.size} parts, ${nm} motions`);
+  }
+  // the fin moved to the published station (config.mjs FIN_FIX), the motions turning only it (the rudder's hinge) with it
+  const FF = FIN_FIX[af];
+  if (FF) {
+    const movedF = new Set();
+    parts.forEach((part, pi) => { if (!FF.parts.test(part.node.name || '')) return; const t = shiftOf.get(pi) || [0, 0, 0]; shiftOf.set(pi, [t[0], t[1], t[2] + FF.dz]); movedF.add(pi); });
+    if (!movedF.size) throw new Error(`${af}: FIN_FIX matches no part (config.mjs)`);
+    let nm = 0; motions.forEach((m, i) => { const on = parts.map((p, pi) => (p.mi.includes(i) ? pi : -1)).filter(pi => pi >= 0); if (on.length && on.every(pi => movedF.has(pi))) { motionShift.set(i, shiftOf.get(on[0])); nm++; } });
+    log(`  fin moved ${FF.dz > 0 ? '+' : ''}${FF.dz} m along: ${movedF.size} parts (${[...new Set([...movedF].map(pi => parts[pi].node.name))].join(', ')}), ${nm} motions`);
   }
   // a vertex (kit frame) of a `near` part within an engine's radius (+10 %) and length (1 m ahead, 0.3 m behind): its move
   function nearOf(v) {
@@ -342,10 +355,15 @@ async function convertVariant(af, liveries, MO, report) {
     let e = groups.get(key); if (!e) groups.set(key, (e = { g, mi, internal, slot, meshes: [], names: new Set() }));
     return e;
   };
+  let panesAdded = 0;
   parts.forEach((part, pi) => {
     part.prims.forEach((pr, qi) => {
       const slot = liveries.map((L, li) => keyOf(li, L.json.meshes[part.node.mesh].primitives[pr.j].material)).join('.');
-      const tm = stretched(shiftNear(shifted(transformMesh(pr.mesh, P), shiftOf.get(pi)), part.node.name), pi), leg = legOf.get(entryOf.get(`${pi}:${qi}`));
+      let tm = stretched(shiftNear(shifted(transformMesh(pr.mesh, P), shiftOf.get(pi)), part.node.name), pi);
+      const leg = legOf.get(entryOf.get(`${pi}:${qi}`));
+      // cockpit glass drawn as a frame with holes (config.mjs COCKPIT_PANES): each hole gets its pane (geometry.mjs capHoles)
+      const gm = liveries[0].json.materials[liveries[0].json.meshes[part.node.mesh].primitives[pr.j].material];
+      if (COCKPIT_PANES.has(af) && gm && gm.extras && gm.extras.cockpitGlazing) { const c = capHoles(tm); if (c.panes) { tm = c.mesh; panesAdded += c.panes; } }
       if (leg && wowOf.has(leg)) {
         const [lo, hi] = splitBelow(tm, leg.cut);
         if (hi) { const e = groupFor(part.mi, part.internal, slot); e.meshes.push(hi); e.names.add(part.node.name); }
@@ -356,6 +374,7 @@ async function convertVariant(af, liveries, MO, report) {
       const e = groupFor(part.mi, part.internal, slot); e.meshes.push(tm); e.names.add(part.node.name);
     });
   });
+  if (panesAdded) log(`  ${panesAdded} cockpit window${panesAdded > 1 ? 's' : ''} left open in the library's glazing given panes`);
   // the materials each merged mesh draws with, per livery
   const slotMats = liveries.map((L, li) => { const byId = new Map(); for (const v of matIds[li].values()) byId.set(v.id, v); return byId; });
   let uvWrapped = 0;

@@ -224,6 +224,57 @@ export function transformMesh(mesh, P) {
   return { pos, nrm, uv: mesh.uv, idx: mesh.idx };
 }
 
+/**
+ * Windows left open in a cockpit's glass (15 Nov, the user: "the windshield is transparent and leaking the details
+ * through from the other side"): where the library drew the glazing as a frame with holes (the 737-700's: one piece,
+ * its outline and six holes, the very panes the 737-800 draws), each hole gets a pane. Per connected piece of the mesh
+ * (welded at 1 mm), its closed boundary loops: a piece with one loop is a pane already; in a piece with more, the
+ * largest loop is its outline, every other one a hole, filled by a fan from its centre. Kit frame (x across, y up, z
+ * aft): a pane faces away from a point a metre below and two behind its centre, inside the nose.
+ * Returns the mesh with the panes added (the input as it is when nothing is open) and the number of panes.
+ */
+export function capHoles(mesh) {
+  const nv = mesh.pos.length / 3, key = i => `${Math.round(mesh.pos[3 * i] * 1000)},${Math.round(mesh.pos[3 * i + 1] * 1000)},${Math.round(mesh.pos[3 * i + 2] * 1000)}`;
+  const ids = new Map(), W = new Int32Array(nv); for (let i = 0; i < nv; i++) { const k = key(i); if (!ids.has(k)) ids.set(k, i); W[i] = ids.get(k); }
+  const tris = []; for (let i = 0; i < mesh.idx.length; i += 3) { const a = W[mesh.idx[i]], b = W[mesh.idx[i + 1]], c = W[mesh.idx[i + 2]]; if (a !== b && b !== c && a !== c) tris.push(a, b, c); }
+  const ek = (a, b) => (a < b ? a * nv + b : b * nv + a), cnt = new Map();
+  for (let t = 0; t < tris.length; t += 3) for (let e = 0; e < 3; e++) { const k = ek(tris[t + e], tris[t + (e + 1) % 3]); cnt.set(k, (cnt.get(k) || 0) + 1); }
+  const par = new Int32Array(nv).map((_, i) => i), find = x => { while (par[x] !== x) x = par[x] = par[par[x]]; return x; };
+  for (let t = 0; t < tris.length; t += 3) { par[find(tris[t + 1])] = find(tris[t]); par[find(tris[t + 2])] = find(tris[t]); }
+  const adj = new Map(); for (const [k, c] of cnt) if (c === 1) { const a = Math.floor(k / nv), b = k % nv; (adj.get(a) || adj.set(a, []).get(a)).push(b); (adj.get(b) || adj.set(b, []).get(b)).push(a); }
+  // every run of open edges: a hole's is a closed loop through vertices with two open edges each; an outline may run
+  // through vertices where open edges branch (the 737 MAX's), so it's traced too, to be known as the outline
+  const used = new Set(), loops = [];
+  for (const [a, nb0] of adj) for (const b0 of nb0) {
+    if (used.has(ek(a, b0))) continue;
+    const loop = [a]; let prev = a, cur = b0, closed = false; used.add(ek(a, b0));
+    for (;;) {
+      if (cur === a) { closed = true; break; }
+      loop.push(cur); const nb = adj.get(cur).filter(v => !used.has(ek(cur, v)));
+      if (!nb.length) break;
+      const nx = nb[0]; used.add(ek(cur, nx)); prev = cur; cur = nx;
+    }
+    loops.push({ l: loop, closed: closed && loop.length >= 3 && loop.every(v => adj.get(v).length === 2) });
+  }
+  const P = i => [mesh.pos[3 * i], mesh.pos[3 * i + 1], mesh.pos[3 * i + 2]];
+  const size = l => { const bb = [0, 1, 2].map(k => { let lo = Infinity, hi = -Infinity; for (const i of l) { lo = Math.min(lo, mesh.pos[3 * i + k]); hi = Math.max(hi, mesh.pos[3 * i + k]); } return hi - lo; }); return Math.hypot(...bb); };
+  // per piece: its largest run is its outline; every other closed loop a hole, if it's a window's size (not a sliver)
+  const byPiece = new Map(); for (const o of loops) { const r = find(o.l[0]); (byPiece.get(r) || byPiece.set(r, []).get(r)).push(o); }
+  const holes = []; for (const ls of byPiece.values()) { if (ls.length < 2) continue; ls.sort((a, b) => size(b.l) - size(a.l)); for (const o of ls.slice(1)) if (o.closed && size(o.l) > 0.15) holes.push(o.l); }
+  if (!holes.length) return { mesh, panes: 0 };
+  const pos = [...mesh.pos], nrm = [...mesh.nrm], uv = mesh.uv ? [...mesh.uv] : null, idx = [...mesh.idx];
+  for (const l of holes) {
+    const c = [0, 1, 2].map(k => l.reduce((s, i) => s + mesh.pos[3 * i + k], 0) / l.length);
+    // the pane's normal: the fan's, summed, turned to face out of the nose
+    let n = [0, 0, 0]; for (let i = 0; i < l.length; i++) { const a = P(l[i]), b = P(l[(i + 1) % l.length]); const u = [a[0] - c[0], a[1] - c[1], a[2] - c[2]], v = [b[0] - c[0], b[1] - c[1], b[2] - c[2]]; n = [n[0] + u[1] * v[2] - u[2] * v[1], n[1] + u[2] * v[0] - u[0] * v[2], n[2] + u[0] * v[1] - u[1] * v[0]]; }
+    const out = [c[0], 1.0, -2.0], flip = n[0] * out[0] + n[1] * out[1] + n[2] * out[2] < 0, nl = Math.hypot(...n) || 1; if (flip) n = n.map(x => -x); n = n.map(x => x / nl);
+    const base = pos.length / 3; pos.push(...c); nrm.push(...n); if (uv) uv.push(0, 0);
+    for (const i of l) { pos.push(...P(i)); nrm.push(...n); if (uv) uv.push(0, 0); }
+    for (let i = 0; i < l.length; i++) { const a = base + 1 + i, b = base + 1 + (i + 1) % l.length; if (flip) idx.push(base, b, a); else idx.push(base, a, b); }
+  }
+  return { mesh: { pos: new Float32Array(pos), nrm: new Float32Array(nrm), uv: uv ? new Float32Array(uv) : null, idx: new Uint32Array(idx) }, panes: holes.length };
+}
+
 /** several meshes as one (all with UVs or none: a missing set is zero-filled) */
 export function concat(meshes) {
   let nv = 0, ni = 0; const withUV = meshes.some(m => m.uv);

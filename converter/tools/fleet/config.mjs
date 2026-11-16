@@ -80,7 +80,10 @@ export const DETENTS = {
  * the engine's radius and length. The library's NG 737 nacelles sit 0.8–1.2 m aft of
  * Boeing's inlet stations (D6-58325-7 Rev C), its 787 nacelles 0.6–0.9 m forward (D6-58333 Rev O).
  */
-const NG_ENGINE = /^(engnose|engcore|tailpipe|ductinner|lreverserib|ReverserCascade|fan|fan_1|fwdpylon|rhnacascoop)(\.\d+)?$/;
+// (the reverser halves, lreverserib_0 and _1, and the 737-800's ReverserCascade1 and -1 with them: missed until 15 Nov,
+// they stood 0.8–1.2 m behind the moved nacelles, a gap like reversers out at rest; the converter now refuses an engine
+// move that leaves a part the reversers turn behind)
+const NG_ENGINE = /^(engnose|engcore|tailpipe|ductinner|lreverserib(_\d)?|ReverserCascade(-?\d)?|fan|fan_1|fwdpylon|rhnacascoop)(\.\d+)?$/;
 const A330_ENGINE = /^(intake(\.001)?|fan[01]|fan\.cone[01]|cylinder\.00[78]|pw\.nacelle0_(\.001)?|rr\.(exhaust(\.001)?|nacelle[01]|pylon[01]|reverser\.[du][lr][01]i?)|ge\.(exhaust([01]|\.001)?|nacelle[01]|nozzle[01]|pylon[01]|reverser[01]|rim[01]))$/;
 const B787_ENGINE = /^(rh|lh)(cone|inside|reverser|enginecore|fans|reversergrid|fan|ring|fancasing)$|^no[12]enge$|^eng[12]fanb?$/;
 export const ENGINE_FIX = {
@@ -125,6 +128,30 @@ export const STRETCH_FIX = {
 };
 export const GEAR_FIX = {
   e75l: { parts: /^(gear\.[lr](\.001)?|tire\.[lr])$/, dz: 1.37 }
+};
+/**
+ * Fins moved to the published station (15 Nov, the user: "can we fix these?" of a 777's fin shifting at the swap): the
+ * parts matching `parts` along the aircraft by dz, the motions turning only them (the rudder's hinge) with them. The
+ * library's 777 fins stood forward of the kit's, which follows Boeing's airport planning drawing (the kit's v0.8 batch
+ * 3 moved its fin 0.75–0.86 m aft; photos agree, docs/FLEET.md): measured on the converted models against the kit's fin
+ * (tools/research/fleet/fin-fit.mjs), the chord's middle at half the fin's height 0.54 m forward on the -300ER, 0.51 on
+ * the -200, 0.53 on the freighter (the leading edge 0.62–0.76, the trailing edge 0.40: the library's chord a little
+ * shorter); moved by that, each edge is within 0.15 m of the kit's. `Tail` is the fin, `Rudder` and `LRudder` its
+ * rudder (not `RUdamper`, a gear damper)
+ */
+/**
+ * Cockpit windows the library left open (15 Nov, the user: "the windshield is transparent and leaking the details through
+ * from the other side"): on these airframes the cockpit glazing is drawn as the windows' frame, one piece with a hole
+ * for each pane (the 737-700 and -900: an outline and six holes, the very panes the 737-800 draws; the 737 MAX's alike),
+ * so you looked through the cockpit to its far side. The converter gives each hole its pane (geometry.mjs capHoles).
+ * Only these: elsewhere the panes are drawn, some as one joined piece whose seams aren't holes (the A330s, the E2)
+ */
+export const COCKPIT_PANES = new Set(['b737', 'b739', 'b38m', 'b39m']);
+const B777_FIN = /^(Tail|Rudder|LRudder)$/;
+export const FIN_FIX = {
+  b77w: { parts: B777_FIN, dz: 0.54 },
+  b772: { parts: B777_FIN, dz: 0.51 },
+  b77f: { parts: B777_FIN, dz: 0.53 }
 };
 
 export const TEX = {

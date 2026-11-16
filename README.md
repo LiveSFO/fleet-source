@@ -7,11 +7,11 @@ under the GNU General Public License, and so are livesfo's conversions of them. 
 corresponding source.
 
 It covers the converted files livesfo serves under `/m/`, as listed in its index generated
-2026-11-15T19:26:33.738Z: 120 liveries of 37 airframes. [SERVED.json](SERVED.json) names every served file
+2026-11-16T06:40:57.461Z: 120 liveries of 37 airframes. [SERVED.json](SERVED.json) names every served file
 with its SHA-256. The rest of the website isn't part of these models: they're separate files the page loads.
 
-**Where the files are.** This git tree holds everything but the paint maps (200 MB of PNG), the baked liveries' images (52 MB) and the redrawn paint of livesfo's liveries on the library's airframes (49 MB). The release
-[`index-2026-11-15`](../../releases/tag/index-2026-11-15) holds the whole of it as one zip, paint maps included.
+**Where the files are.** This git tree holds everything but the paint maps (200 MB of PNG), the baked liveries' images (52 MB) and the redrawn paint of livesfo's liveries on the library's airframes (50 MB). The release
+[`index-2026-11-16`](../../releases/tag/index-2026-11-16) holds the whole of it as one zip, paint maps included.
 
 ## How the served files are made
 
@@ -99,7 +99,7 @@ with its SHA-256. The rest of the website isn't part of these models: they're se
 - The library's paint maps, records and scripts, as adaptations of those models and the means of building them: the
   same terms.
 - livesfo's liveries written onto the library's airframes (`reverse/`): the same terms as the airframe they're on. Those
-  drawn from photos (b763f-ups-rb, a359-sas-rb, a21n-fft-rb, a20n-fft-rb, a320-fft-rb, a321-fft-rb, a20n-voi-rb, a21n-voi-rb, a320-voi-rb, b77w-ces-rb, b77w-csn-rb, a339-ity-rb, a35k-qtr-rb) adapt photos published under CC BY 4.0,
+  drawn from photos (b763f-ups-rb, a359-sas-rb, a21n-fft-rb, a20n-fft-rb, a320-fft-rb, a321-fft-rb, a20n-voi-rb, a21n-voi-rb, a320-voi-rb, a339-ity-rb, a35k-qtr-rb, b77w-ces-rb, b77w-csn-rb) adapt photos published under CC BY 4.0,
   which allows that with credit: each photo, its author and licence are in SERVED.json.
 - livesfo's converter: GPL-2.0-or-later ([converter/LICENSE](converter/LICENSE)). Version 3's text is in
   [COPYING.GPL-3.0](COPYING.GPL-3.0), for the parts that allow later versions.
