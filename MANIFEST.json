@@ -1,6 +1,6 @@
 {
  "files": 1179,
- "bytes": 351664602,
+ "bytes": 351343011,
  "entries": [
   {
    "path": "COPYING",
@@ -15,12 +15,12 @@
   {
    "path": "README.md",
    "bytes": 10525,
-   "sha256": "f3255b369fcb5f1f7db2df93cee35af50fc2f93858e6b6b883a162df59412d25"
+   "sha256": "b4bf2d8f61cc5d43565f8eddbaa5d6c58d5d5c1f43a6d1a79c3ebdd1ab36e970"
   },
   {
    "path": "SERVED.json",
-   "bytes": 808449,
-   "sha256": "8898be87e976bfd80380f378fd623ce4b2df16dfd535ea59f67786da9fb1c956"
+   "bytes": 797654,
+   "sha256": "5f79d2ad166a4e88295a8f433c04bef801204485cfb6748e55bba22357bbd699"
   },
   {
    "path": "UPSTREAM-LINKS.json",
@@ -5029,8 +5029,8 @@
   },
   {
    "path": "reverse/a333-dal-rb-0.png",
-   "bytes": 170473,
-   "sha256": "3d58dc739137cc6d868363aa4414cac0ec24371a39cdbac0157994e1d25ba636"
+   "bytes": 170351,
+   "sha256": "4ce8bc2f237c2a5fa74e649abbce39ab0655000aeeec8bdf943fc7402ab8ee73"
   },
   {
    "path": "reverse/a333-dal-rb-1.png",
@@ -5039,8 +5039,8 @@
   },
   {
    "path": "reverse/a333-dal-rb-2.png",
-   "bytes": 1800723,
-   "sha256": "910e729797d62dddcccbb6408f3355e4027331463b1ea6609775325e8813bcc5"
+   "bytes": 1494085,
+   "sha256": "568c4a8de23c19141c38e7774803d5b4270113226a9c0292587b7fd48147929a"
   },
   {
    "path": "reverse/a333-dal-rb-4.png",
@@ -5049,8 +5049,8 @@
   },
   {
    "path": "reverse/a333-dal-rb-5.png",
-   "bytes": 23605,
-   "sha256": "3acf3fb8845f3fbab39a649b63763b4d4a54f279c419f71152ffafb7e83af2c4"
+   "bytes": 19455,
+   "sha256": "19f7a6d794ddb5d8347d4913ff992260d785b3b492f1e794f1bcfa1a926dac5b"
   },
   {
    "path": "reverse/a333-dal-rb-6.png",
@@ -5059,8 +5059,8 @@
   },
   {
    "path": "reverse/a333-dal-rb-7.png",
-   "bytes": 74078,
-   "sha256": "8f1ebebc55023cec424c23c7c70f6ae2b12afa50cf5d193e848bcaf0c92108b8"
+   "bytes": 74192,
+   "sha256": "275d6afce21d01edbec23ba3b8d70268d79f83c1fd8d814da1987dfcf5866230"
   },
   {
    "path": "reverse/a333-dal-rb-8.png",

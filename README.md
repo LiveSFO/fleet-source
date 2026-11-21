@@ -15,7 +15,7 @@ compressed copies, photo-traced crowd texture paths and older files retained at 
 hashes re-used from earlier SERVED.json records.
 
 **Where the files are.** This git tree holds everything but the paint maps (200 MB of PNG), the baked liveries' images (58 MB) and the redrawn paint of livesfo's liveries on the library's airframes (76 MB). The release
-[`index-2026-11-20`](../../releases/tag/index-2026-11-20) holds the whole of it as one zip, paint maps included.
+[`index-2026-11-21`](../../releases/tag/index-2026-11-21) holds the whole of it as one zip, paint maps included.
 
 ## How the served files are made
 
