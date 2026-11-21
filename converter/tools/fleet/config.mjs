@@ -24,6 +24,11 @@ export const EXCLUDE_AIRFRAMES = new Set(['be20', 'be9l']);
 export const SKIP_LIVERY = [/^frontier/, /^ryanair$/];
 export const SKIP_SELECTOR = new Set(['b738/united', 'b738/ryanair']);
 
+export function convertibleSelector(selector) {
+  const [airframe, livery] = selector.split('/');
+  return !EXCLUDE_AIRFRAMES.has(airframe) && !SKIP_SELECTOR.has(selector) && !SKIP_LIVERY.some(r => r.test(livery));
+}
+
 /** special liveries: converted (they exist on real aircraft) but never a type's default; matched by registration later */
 export const SPECIAL = new Set(['b738-current/american-aircal', 'b738-current/united-star-alliance', 'a320/united-friend-ship', 'a35k/philippine-airlines-85-years']);
 
@@ -238,11 +243,3 @@ export const PACKAGE_INFO = {
   b738: { repo: 'YV3399/737-800YV', url: 'https://github.com/YV3399/737-800YV', rev: '9d967d89dd2ee0ae1bf01d00c49839a574aa9da5' },
   'preparation/E-jet-family': { rev: 'tree 45be9f83c479c5df6a03b117513aae740ffe9cc3' }
 };
-
-/**
- * livesfo's converter as it goes out with the models' corresponding source (tools/fleet-sync.mjs --bundle): every
- * file it runs. The bundle adds a package.json that pins meshoptimizer, the one dependency, and a README on running
- * it; docs/FLEET.md stays out (it describes our hosting), and so do the bundle's own tools (tools/fleet/bundle-*.mjs).
- * @param {string} root the checkout @param {(dir: string) => string[]} list a directory's file names
- */
-export const converterFiles = (root, list) => ['tools/fleet-sync.mjs', 'tools/fleet-convert.mjs', ...list(root + '/tools/fleet').filter(f => (f.endsWith('.mjs') && !f.startsWith('bundle-')) || f === 'bake-siblings.json').sort().map(f => 'tools/fleet/' + f)];

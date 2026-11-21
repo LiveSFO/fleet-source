@@ -68,6 +68,35 @@ const profileAt = (pts, z) => {
 };
 const median = a => { const s = a.filter(Number.isFinite).sort((p, q) => p - q); return s.length ? s[s.length >> 1] : NaN; };
 
+function fitPositions(meshes) {
+  return meshes.map(({ pos }) => {
+    const rotated = new Float32Array(pos.length);
+    for (let i = 0; i < pos.length; i += 3) {
+      rotated[i] = -pos[i + 2]; rotated[i + 1] = pos[i + 1]; rotated[i + 2] = pos[i];
+    }
+    return rotated;
+  });
+}
+
+function noseVertices(rot, zMin) {
+  const nose = [];
+  for (const P of rot) for (let i = 0; i < P.length; i += 3) {
+    if (P[i + 2] < zMin + 2.5) nose.push(P[i + 1], P[i + 2]);
+  }
+  return nose;
+}
+
+function noseStation(vertices, rotateZ) {
+  let zN = Infinity;
+  for (let i = 0; i < vertices.length; i += 2) {
+    const z = rotateZ(vertices[i], vertices[i + 1]);
+    if (z < zN) zN = z;
+  }
+  return zN;
+}
+
+/** @typedef {{pitchRad: number, dyM: number, gearBoundaryM: number, depthM: number|null, spreadM: number}} FitRecord */
+
 /**
  * The library model fitted to its kit twin (the crowd model a selection swaps it for; D-149: "the current model and the
  * hifi models are not of the same dimension … the switch over is not smooth"). The library's models stand on unloaded
@@ -86,9 +115,7 @@ const median = a => { const s = a.filter(Number.isFinite).sort((p, q) => p - q);
  * @param {any} twin the kit type (AL_TYPES): fus.yc, fus.top, fus.bot, gear.nose.z, gear.main.z
  */
 export function kitFit(meshes, isGear, twin) {
-  const R0 = { R: LIB_TO_KIT, t: [0, 0, 0] };
-  const toKit = P => { const o = new Float32Array(P.length); for (let i = 0; i < P.length; i += 3) { o[i] = -P[i + 2]; o[i + 1] = P[i + 1]; o[i + 2] = P[i]; } return o; };
-  const rot = meshes.map(m => toKit(m.pos));
+  const rot = fitPositions(meshes);
   const c = contacts(rot), S = bodySlices(rot, meshes, isGear), { L, zMin } = S;
   const crown = [], belly = [];
   for (let s = 0; s < S.nb; s++) {
@@ -97,13 +124,13 @@ export function kitFit(meshes, isGear, twin) {
     if (f >= 0.1 && f <= 0.3 && Number.isFinite(S.bot[s])) belly.push([S.bot[s], S.zs(s)]);
   }
   if (crown.length < 20) return null;
-  const noseV = []; for (const P of rot) for (let i = 0; i < P.length; i += 3) if (P[i + 2] < zMin + 2.5) noseV.push(P[i + 1], P[i + 2]);
+  const noseV = noseVertices(rot, zMin);
   // pitch and height together: the body turned about its main gear contact until its crown and belly follow the kit's
   // (yc + fus.top, yc + fus.bot) best, by the median distance (robust to fairings, antennas, a 747's hump)
   const my = c.main.y, mz = c.main.z, yc = twin.fus.yc;
   const evalA = a => {
     const ca = Math.cos(a), sa = Math.sin(a), ry = (y, z) => my + ca * (y - my) - sa * (z - mz), rz = (y, z) => mz + sa * (y - my) + ca * (z - mz);
-    let zN = Infinity; for (let i = 0; i < noseV.length; i += 2) { const z = rz(noseV[i], noseV[i + 1]); if (z < zN) zN = z; }
+    const zN = noseStation(noseV, rz);
     const rc = crown.map(([y, z]) => yc + profileAt(twin.fus.top, rz(y, z) - zN) - ry(y, z));
     const rb = belly.map(([y, z]) => yc + profileAt(twin.fus.bot, rz(y, z) - zN) - ry(y, z));
     const mc = median(rc), mb = rb.length >= 8 ? median(rb) : NaN;
@@ -113,13 +140,39 @@ export function kitFit(meshes, isGear, twin) {
   let best = null;
   for (let d = -5; d <= 5.001; d += 0.1) { const r = evalA(d * Math.PI / 180); if (!best || r.cost < best.cost) best = r; }
   for (let d = -0.1; d <= 0.1001; d += 0.01) { const r = evalA(best.a + d * Math.PI / 180); if (r.cost < best.cost) best = r; }
-  const { a, zN, mc, mb } = best, ca = Math.cos(a), sa = Math.sin(a);
-  // the centrelines meet: the crown and belly each off by half of any difference in the body's depth
-  const dy = Number.isFinite(mb) ? (mc + mb) / 2 : mc;
+  const { a, zN, mc, mb } = best;
+  // The centrelines meet: the crown and belly each off by half of any difference in the body's depth.
+  const record = {
+    pitchRad: a, dyM: Number.isFinite(mb) ? (mc + mb) / 2 : mc,
+    gearBoundaryM: (twin.gear.nose.z + twin.gear.main.z) / 2,
+    depthM: Number.isFinite(mb) ? mb - mc : null, spreadM: best.cost
+  };
+  const fit = finishKitFit(meshes, isGear, c, record, zN), { P } = fit;
+  // The reference profiles are for local FIT_DEBUG only.
+  const fitted = ([y, z], prof) => { const v = apply(P, [z, y, -0]); return [+v[2].toFixed(2), +v[1].toFixed(3), +(yc + profileAt(prof, v[2])).toFixed(3)]; };
+  const sec = f => { const s = Math.round((f * L) / S.BIN); return { f, depth: Number.isFinite(S.top[s]) && Number.isFinite(S.bot[s]) ? +(S.top[s] - S.bot[s]).toFixed(3) : null, halfW: +S.half[s].toFixed(3) }; };
+  return { ...fit, debug: { L, crown: crown.map(p => fitted(p, twin.fus.top)), belly: belly.map(p => fitted(p, twin.fus.bot)), sections: [0.25, 0.4, 0.55].map(sec) } };
+}
+
+/** Apply the saved values to the source mesh, without a twin's profiles or stations. */
+export function applyKitFit(meshes, isGear, record) {
+  const rot = fitPositions(meshes), c = contacts(rot);
+  let zMin = Infinity;
+  for (const P of rot) for (let i = 2; i < P.length; i += 3) if (P[i] < zMin) zMin = P[i];
+  const { y: my, z: mz } = c.main;
+  const ca = Math.cos(record.pitchRad), sa = Math.sin(record.pitchRad);
+  const zN = noseStation(noseVertices(rot, zMin), (y, z) => mz + sa * (y - my) + ca * (z - mz));
+  return finishKitFit(meshes, isGear, c, record, zN);
+}
+
+function finishKitFit(meshes, isGear, c, record, zN) {
+  const { pitchRad: a, dyM, gearBoundaryM, depthM, spreadM } = record;
+  const { y: my, z: mz } = c.main, ca = Math.cos(a), sa = Math.sin(a);
+  const R0 = { R: LIB_TO_KIT, t: [0, 0, 0] };
   const Rx = [1, 0, 0, 0, ca, -sa, 0, sa, ca], Rm = rotate(Rx, [0, my, mz]);
-  const P = compose({ R: [1, 0, 0, 0, 1, 0, 0, 0, 1], t: [0, dy, -zN] }, compose({ R: Rx, t: [0, my - Rm[1], mz - Rm[2]] }, R0));
-  // the gear legs: the nose leg ahead of mid-wheelbase, the others by side and by how far out (gaps over 1.2 m)
-  const mid = (twin.gear.nose.z + twin.gear.main.z) / 2, info = [];
+  const P = compose({ R: [1, 0, 0, 0, 1, 0, 0, 0, 1], t: [0, dyM, -zN] }, compose({ R: Rx, t: [0, my - Rm[1], mz - Rm[2]] }, R0));
+  // The nose leg is ahead of mid-wheelbase. Group the others by side and gaps over 1.2 m.
+  const info = [];
   meshes.forEach((M, k) => {
     if (!isGear[k] || !M.pos.length) return;
     let y0 = Infinity, y1 = -Infinity, sx = 0, sz = 0, n = 0;
@@ -127,7 +180,7 @@ export function kitFit(meshes, isGear, twin) {
     info.push({ k, y0, y1, x: sx / n, z: sz / n });
   });
   const groups = [];
-  const nose = info.filter(p => p.z < mid), rest = info.filter(p => p.z >= mid);
+  const nose = info.filter(p => p.z < gearBoundaryM), rest = info.filter(p => p.z >= gearBoundaryM);
   if (nose.length) groups.push({ name: 'nose', parts: nose });
   for (const side of [-1, 1]) {
     const sp = rest.filter(p => (p.x < 0 ? -1 : 1) === side).sort((p, q) => Math.abs(p.x) - Math.abs(q.x));
@@ -153,13 +206,7 @@ export function kitFit(meshes, isGear, twin) {
     // and bay hardware that stop short of it stay as they are
     legs.push({ name: g.name, parts: new Set(g.parts.filter(p => p.y0 < low.y0 + R + 0.15).map(p => p.k)), cut: low.y0 + 2 * R + 0.08, d: -low.y0, y0: low.y0, R, axles, tiltDeg });
   }
-  // for the record (and FIT_DEBUG): the profiles after the fit
-  const fitted = ([y, z], prof) => { const v = apply(P, [z, y, -0]); return [+v[2].toFixed(2), +v[1].toFixed(3), +(yc + profileAt(prof, v[2])).toFixed(3)]; };
-  const sec = f => { const s = Math.round((f * L) / S.BIN); return { f, depth: Number.isFinite(S.top[s]) && Number.isFinite(S.bot[s]) ? +(S.top[s] - S.bot[s]).toFixed(3) : null, halfW: +S.half[s].toFixed(3) }; };
-  return {
-    P, pitchDeg: -a * 180 / Math.PI, dyM: dy, depthM: Number.isFinite(mb) ? mb - mc : null, spreadM: best.cost, legs, contacts: c,
-    debug: { L, crown: crown.map(p => fitted(p, twin.fus.top)), belly: belly.map(p => fitted(p, twin.fus.bot)), sections: [0.25, 0.4, 0.55].map(sec) }
-  };
+  return { P, pitchDeg: -a * 180 / Math.PI, dyM, depthM, spreadM, legs, contacts: c, record };
 }
 
 /**

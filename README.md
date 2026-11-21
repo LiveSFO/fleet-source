@@ -7,11 +7,15 @@ under the GNU General Public License, and so are livesfo's conversions of them. 
 corresponding source.
 
 It covers the converted files livesfo serves under `/m/`, as listed in its index generated
-2026-11-16T08:00:02.525Z: 134 liveries of 37 airframes. [SERVED.json](SERVED.json) names every served file
-with its SHA-256. The rest of the website isn't part of these models: they're separate files the page loads.
+2026-11-16T08:00:02.525Z: 135 liveries of 37 airframes. [SERVED.json](SERVED.json) names every served file
+with its SHA-256. Its `production` record covers the deployed /m/ inventory, including
+compressed copies, photo-traced crowd texture paths and older files retained at their existing URLs. The
+`indexed` list is what the current fleet and bake indexes name, including compressed copies. The
+`uploaded` list identifies the files added by this deployment. The `archived` list identifies the
+hashes re-used from earlier SERVED.json records.
 
-**Where the files are.** This git tree holds everything but the paint maps (200 MB of PNG), the baked liveries' images (56 MB) and the redrawn paint of livesfo's liveries on the library's airframes (75 MB). The release
-[`index-2026-11-16`](../../releases/tag/index-2026-11-16) holds the whole of it as one zip, paint maps included.
+**Where the files are.** This git tree holds everything but the paint maps (200 MB of PNG), the baked liveries' images (58 MB) and the redrawn paint of livesfo's liveries on the library's airframes (76 MB). The release
+[`index-2026-11-20`](../../releases/tag/index-2026-11-20) holds the whole of it as one zip, paint maps included.
 
 ## How the served files are made
 
@@ -52,16 +56,16 @@ with its SHA-256. The rest of the website isn't part of these models: they're se
      licence (`*.asset.json`).
    - `scripts/`: the build scripts (Python for Blender, and Node) that fetch the upstream models, assemble and paint
      each aircraft, and export it as glTF binary (GLB).
-3. **livesfo's converter** (`converter/`, GPL-2.0-or-later): `tools/fleet-sync.mjs` unpacks the library's
-   release, `tools/fleet-convert.mjs` turns each export into the served files (meshopt-compressed geometry, KTX2
-   textures, a glTF with the rig and lights in `extras.livesfo`).
-4. **The baked liveries** (`converter/tools/fleet/bake.mjs`), when SERVED.json lists them: each library livery
+3. **livesfo's converter** (`converter/`, GPL-2.0-or-later) includes `tools/fleet-convert.mjs` and the local
+   modules it imports. It turns each library export into meshopt-compressed geometry, KTX2 textures and a glTF
+   with the rig and lights in `extras.livesfo`. `converter/fits.json` holds the recorded fit values.
+4. **The baked liveries**, when listed in SERVED.json, are library liveries
    projected onto the fuselage and fin textures of livesfo's own aircraft models (which aren't part of this source),
    so the site's crowd wears the paint its detailed models show. `bakes/` holds the image each was made from, the
    preferred form for changing it. The served textures are KTX2 (ETC1S, basisu 2.50: `-mipmap -y_flip
    -comp_level 2 -q 255`): the image as it is (L), and its 2× and 4× box averages (M, S).
-5. **livesfo's liveries on the library's airframes** (`converter/tools/fleet/reverse.mjs`), when SERVED.json lists
-   them (`reverse`): an airline the library has the aircraft type but no paint for gets a detailed model in the
+5. **livesfo's liveries on the library's airframes**, when listed in SERVED.json under `reverse`: an airline
+   the library has the aircraft type but no paint for gets a detailed model in the
    livery livesfo's other aircraft wear (a baked library livery from another of the airline's types, or a livery
    traced from photos): one of the library's liveries of that type (the template) with its paint images redrawn, the
    fuselage and fin from that livery, the rest the template's. `reverse/` holds the redrawn images (PNG); each entry
@@ -76,12 +80,18 @@ with its SHA-256. The rest of the website isn't part of these models: they're se
 2. Build the exports with the library's scripts (Blender, Python 3, Node 20 or later): see
    `library/sfo-aircraft-library/assets/airliners/README.md`, and `scripts/run_fleet_builds.py` and
    `scripts/package_sfo_fleet.py` for the whole run.
-3. Convert them: in `converter/`, `npm install` (meshoptimizer 1.1.1), and basisu 2.50 for the KTX2 textures. Put the
-   library's `assets/airliners/` (its records and exports) at `converter/data/fleet/src/assets/airliners/`, which
-   is what `tools/fleet-sync.mjs` does from the release zip, then `node tools/fleet-convert.mjs`. Its `tools/fleet/config.mjs` holds the
-   batch, the exclusions and the texture rules.
+3. In `converter/`, install meshoptimizer 1.1.1 with `npm install` and use basisu 2.50 for KTX2. Point
+   `--src` at the reconstructed library directory containing `assets/airliners/`.
+   Run `node tools/fleet-convert.mjs --src <library> --fits fits.json --no-index`.
+   `tools/fleet/config.mjs` holds the batch, exclusions and texture rules.
 
-## Left out
+## Outside this source release
+
+- livesfo's own aircraft models and the painter's liveries.
+- Crowd liveries traced from photos. The photo licences and credits are listed on livesfo's credits page.
+- The website's code, airports, landscapes and maps.
+
+## Left out of the archive
 
 - The King Air B200 and C90: CC BY-NC-SA, not converted.
 - All Frontier liveries: their tail animals are AI-generated look-alikes. Not converted.
@@ -99,7 +109,7 @@ with its SHA-256. The rest of the website isn't part of these models: they're se
 - The library's paint maps, records and scripts, as adaptations of those models and the means of building them: the
   same terms.
 - livesfo's liveries written onto the library's airframes (`reverse/`): the same terms as the airframe they're on. Those
-  drawn from photos (b763f-ups-rb, a359-sas-rb, a21n-fft-rb, a20n-fft-rb, a320-fft-rb, a321-fft-rb, a20n-voi-rb, a21n-voi-rb, a320-voi-rb, a339-ity-rb, a35k-qtr-rb, b77w-ces-rb, b77w-csn-rb, a339-dal-rb, a223-jbu-rb, b789-current-ely-rb, b77w-aal-rb, b788-aal-rb, a359-aic-rb, b789-current-aal-rb) adapt photos published under CC BY 4.0,
+  drawn from photos (b763f-ups-rb, a359-sas-rb, a21n-fft-rb, a20n-fft-rb, a320-fft-rb, a321-fft-rb, a20n-voi-rb, a21n-voi-rb, a320-voi-rb, a339-ity-rb, a35k-qtr-rb, b77w-ces-rb, b77w-csn-rb, a339-dal-rb, a223-jbu-rb, b789-current-ely-rb, b77w-aal-rb, b788-aal-rb, a359-aic-rb, b789-current-aal-rb, a333-dal-rb) adapt photos published under CC BY 4.0,
   which allows that with credit: each photo, its author and licence are in SERVED.json.
 - livesfo's converter: GPL-2.0-or-later ([converter/LICENSE](converter/LICENSE)). Version 3's text is in
   [COPYING.GPL-3.0](COPYING.GPL-3.0), for the parts that allow later versions.
@@ -112,8 +122,7 @@ with its SHA-256. The rest of the website isn't part of these models: they're se
 
 ## Written offer
 
-The upstream files the library used unchanged are linked, not copied. So that the complete source never depends on
-those repositories: for at least three years after livesfo last serves the files listed in SERVED.json, livesfo will
-give anyone who asks a complete machine-readable copy of their corresponding source (this repository's files together
-with every file listed in UPSTREAM-LINKS.json) for no more than the cost of physically distributing it. Ask by opening
-an issue on this repository.
+The upstream files the library used unchanged are linked, not copied. For at least three years after livesfo last
+serves the GPL-covered assets described above, livesfo will give anyone who asks a complete machine-readable copy of
+their corresponding source (this repository's files together with every file listed in UPSTREAM-LINKS.json) for no
+more than the cost of physically distributing it. Ask by opening an issue on this repository.

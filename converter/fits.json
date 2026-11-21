@@ -1,0 +1,684 @@
+{
+ "v": 1,
+ "airframes": {
+  "b763": {
+   "twin": "b767-300er",
+   "variants": {
+    "f8803c4966b1b34851bb17a1528f960d89c5cca6": {
+     "pitchRad": -1.7923768670322136e-17,
+     "dyM": 6.593130080699921,
+     "gearBoundaryM": 15.915000000000001,
+     "depthM": -0.0066800451278687945,
+     "spreadM": 0
+    }
+   },
+   "liveries": {
+    "delta": "f8803c4966b1b34851bb17a1528f960d89c5cca6",
+    "united": "f8803c4966b1b34851bb17a1528f960d89c5cca6"
+   }
+  },
+  "e75l": {
+   "twin": "e175",
+   "variants": {
+    "a66b2c3ed0254a40dbd010f1856f76ffcbb87009": {
+     "pitchRad": 0.0010471975511965794,
+     "dyM": 2.3788573003494733,
+     "gearBoundaryM": 9.875,
+     "depthM": -0.002338428948164495,
+     "spreadM": 0.010955932814725955
+    }
+   },
+   "liveries": {
+    "alaska": "a66b2c3ed0254a40dbd010f1856f76ffcbb87009",
+    "american": "a66b2c3ed0254a40dbd010f1856f76ffcbb87009",
+    "delta": "a66b2c3ed0254a40dbd010f1856f76ffcbb87009",
+    "united": "a66b2c3ed0254a40dbd010f1856f76ffcbb87009"
+   }
+  },
+  "b38m": {
+   "twin": "b737-8",
+   "variants": {
+    "d88734fa9efad8218574d5a184a048be044bf7c3": {
+     "pitchRad": -1.7923768670322136e-17,
+     "dyM": 2.8255692949623192,
+     "gearBoundaryM": 12,
+     "depthM": -0.0012228789341310886,
+     "spreadM": 0.0002993908504400622
+    }
+   },
+   "liveries": {
+    "aeromexico": "d88734fa9efad8218574d5a184a048be044bf7c3",
+    "alaska": "d88734fa9efad8218574d5a184a048be044bf7c3",
+    "american": "d88734fa9efad8218574d5a184a048be044bf7c3",
+    "flair": "d88734fa9efad8218574d5a184a048be044bf7c3",
+    "southwest": "d88734fa9efad8218574d5a184a048be044bf7c3",
+    "united": "d88734fa9efad8218574d5a184a048be044bf7c3"
+   }
+  },
+  "b77w": {
+   "twin": "b777-300er",
+   "variants": {
+    "a4fdcaddddde75e846e01c70897a17b23bc598cf": {
+     "pitchRad": -1.7923768670322136e-17,
+     "dyM": 5.75,
+     "gearBoundaryM": 21.5,
+     "depthM": 0.008119869232178445,
+     "spreadM": 0
+    }
+   },
+   "liveries": {
+    "air-china": "a4fdcaddddde75e846e01c70897a17b23bc598cf",
+    "air-france": "a4fdcaddddde75e846e01c70897a17b23bc598cf",
+    "air-india": "a4fdcaddddde75e846e01c70897a17b23bc598cf",
+    "ana": "a4fdcaddddde75e846e01c70897a17b23bc598cf",
+    "british-airways": "a4fdcaddddde75e846e01c70897a17b23bc598cf",
+    "cathay-pacific": "a4fdcaddddde75e846e01c70897a17b23bc598cf",
+    "china-airlines": "a4fdcaddddde75e846e01c70897a17b23bc598cf",
+    "eva-air": "a4fdcaddddde75e846e01c70897a17b23bc598cf",
+    "japan-airlines": "a4fdcaddddde75e846e01c70897a17b23bc598cf",
+    "swiss": "a4fdcaddddde75e846e01c70897a17b23bc598cf",
+    "united": "a4fdcaddddde75e846e01c70897a17b23bc598cf"
+   }
+  },
+  "b772": {
+   "twin": "b777-200er",
+   "variants": {
+    "ddcddb4648ff40b4be3fd618685ed47c2b93f0e0": {
+     "pitchRad": -1.7923768670322136e-17,
+     "dyM": 5.6,
+     "gearBoundaryM": 18.833,
+     "depthM": 0.008119869232178445,
+     "spreadM": 0
+    }
+   },
+   "liveries": {
+    "united": "ddcddb4648ff40b4be3fd618685ed47c2b93f0e0"
+   }
+  },
+  "b77f": {
+   "twin": "b777f",
+   "variants": {
+    "ee56b97beded42c9f6d5bf41e94c6c7b45652bbf": {
+     "pitchRad": -1.7923768670322136e-17,
+     "dyM": 5.700000000000001,
+     "gearBoundaryM": 18.833,
+     "depthM": 0.008119869232177557,
+     "spreadM": 0
+    }
+   },
+   "liveries": {
+    "china-airlines-cargo": "ee56b97beded42c9f6d5bf41e94c6c7b45652bbf"
+   }
+  },
+  "b737": {
+   "twin": "b737-700",
+   "variants": {
+    "daa5d354d51ef510d592b6ddcede8fd0de1e75a0": {
+     "pitchRad": -1.7923768670322136e-17,
+     "dyM": 2.657461357566608,
+     "gearBoundaryM": 10.5015,
+     "depthM": -0.05425260092713158,
+     "spreadM": 0.005749637096135185
+    }
+   },
+   "liveries": {
+    "southwest": "daa5d354d51ef510d592b6ddcede8fd0de1e75a0",
+    "united": "daa5d354d51ef510d592b6ddcede8fd0de1e75a0"
+   }
+  },
+  "b738": {
+   "twin": "b737-800",
+   "variants": {
+    "37dac231b54ab1f3a38f7d2be08ffab1279a541f": {
+     "pitchRad": -1.7923768670322136e-17,
+     "dyM": 2.6575782627934887,
+     "gearBoundaryM": 12,
+     "depthM": -0.05447818175546271,
+     "spreadM": 0.00029360083530072245
+    }
+   },
+   "liveries": {
+    "alaska": "37dac231b54ab1f3a38f7d2be08ffab1279a541f",
+    "american": "37dac231b54ab1f3a38f7d2be08ffab1279a541f",
+    "delta": "37dac231b54ab1f3a38f7d2be08ffab1279a541f",
+    "southwest": "37dac231b54ab1f3a38f7d2be08ffab1279a541f"
+   }
+  },
+  "b738-current": {
+   "twin": "b737-800",
+   "variants": {
+    "53a83d4cf967da130f0184ce730333c3df811a66": {
+     "pitchRad": -1.7923768670322136e-17,
+     "dyM": 2.6575786124673773,
+     "gearBoundaryM": 12,
+     "depthM": -0.05447841498748218,
+     "spreadM": 0.00023594576197583095
+    }
+   },
+   "liveries": {
+    "american-aircal": "53a83d4cf967da130f0184ce730333c3df811a66",
+    "flair": "53a83d4cf967da130f0184ce730333c3df811a66",
+    "united": "53a83d4cf967da130f0184ce730333c3df811a66",
+    "united-star-alliance": "53a83d4cf967da130f0184ce730333c3df811a66"
+   }
+  },
+  "b739": {
+   "twin": "b737-900er",
+   "variants": {
+    "a8709fff3e8c2a467e59ba5a0c42b467b1740375": {
+     "pitchRad": -1.7923768670322136e-17,
+     "dyM": 2.657585879884322,
+     "gearBoundaryM": 12.7875,
+     "depthM": -0.054498233780647,
+     "spreadM": 0.0001484411928789342
+    }
+   },
+   "liveries": {
+    "alaska": "a8709fff3e8c2a467e59ba5a0c42b467b1740375",
+    "delta": "a8709fff3e8c2a467e59ba5a0c42b467b1740375",
+    "united": "a8709fff3e8c2a467e59ba5a0c42b467b1740375"
+   }
+  },
+  "b39m": {
+   "twin": "b737-9",
+   "variants": {
+    "f2a7d60f3a7c3fdf8fe04da8fbd9aa872985ddf6": {
+     "pitchRad": -1.7923768670322136e-17,
+     "dyM": 2.8255849854755937,
+     "gearBoundaryM": 12.7875,
+     "depthM": -0.0012242746099335733,
+     "spreadM": 0.00029447059669296394
+    }
+   },
+   "liveries": {
+    "aeromexico": "f2a7d60f3a7c3fdf8fe04da8fbd9aa872985ddf6",
+    "alaska": "f2a7d60f3a7c3fdf8fe04da8fbd9aa872985ddf6",
+    "copa": "f2a7d60f3a7c3fdf8fe04da8fbd9aa872985ddf6",
+    "united": "f2a7d60f3a7c3fdf8fe04da8fbd9aa872985ddf6"
+   }
+  },
+  "b788": {
+   "twin": "b787-8",
+   "variants": {
+    "fcc737d39ff3cf39f89136a0ca80e0179264ecad": {
+     "pitchRad": 0.0005235987755982806,
+     "dyM": 3.8847898796130362,
+     "gearBoundaryM": 16.876,
+     "depthM": -0.016033830040724784,
+     "spreadM": 0.004773185772216859
+    }
+   },
+   "liveries": {
+    "zipair": "fcc737d39ff3cf39f89136a0ca80e0179264ecad"
+   }
+  },
+  "b789-current": {
+   "twin": "b787-9",
+   "variants": {
+    "77202cc56f70a48690e482d65ed5ffd676c9a087": {
+     "pitchRad": 0.0005235987755982806,
+     "dyM": 3.984129851993068,
+     "gearBoundaryM": 18.4,
+     "depthM": -0.016956322347822628,
+     "spreadM": 0.003248678924363979
+    },
+    "79b3215abe3cfcc24dfc131d6a31b5731ea91acb": {
+     "pitchRad": 0.0005235987755982806,
+     "dyM": 3.984129851993068,
+     "gearBoundaryM": 18.4,
+     "depthM": -0.016956322347822628,
+     "spreadM": 0.003248678924363979
+    },
+    "3f15c8cba3403d38fe6469a879452e65417e1e01": {
+     "pitchRad": 0.0005235987755982806,
+     "dyM": 3.984129851993068,
+     "gearBoundaryM": 18.4,
+     "depthM": -0.016956322347822628,
+     "spreadM": 0.003248678924363979
+    },
+    "a89d4fd67c9362939d8e9854e5f5c2907ae7b6c1": {
+     "pitchRad": 0.0005235987755982806,
+     "dyM": 3.984129851993068,
+     "gearBoundaryM": 18.4,
+     "depthM": -0.016956322347822628,
+     "spreadM": 0.003248678924363979
+    }
+   },
+   "liveries": {
+    "air-new-zealand": "77202cc56f70a48690e482d65ed5ffd676c9a087",
+    "air-premia": "79b3215abe3cfcc24dfc131d6a31b5731ea91acb",
+    "eva-air": "79b3215abe3cfcc24dfc131d6a31b5731ea91acb",
+    "qantas": "79b3215abe3cfcc24dfc131d6a31b5731ea91acb",
+    "japan-airlines": "3f15c8cba3403d38fe6469a879452e65417e1e01",
+    "united": "3f15c8cba3403d38fe6469a879452e65417e1e01",
+    "virgin-atlantic": "a89d4fd67c9362939d8e9854e5f5c2907ae7b6c1"
+   }
+  },
+  "b78x": {
+   "twin": "b787-10",
+   "variants": {
+    "446480e91622c824ce8dcc702bfa011e17ea3c3f": {
+     "pitchRad": 0.0005235987755982806,
+     "dyM": 3.9348667949153278,
+     "gearBoundaryM": 19.924,
+     "depthM": -0.015925119276241517,
+     "spreadM": 0.003339253228137995
+    },
+    "310aa67e5332b3570125351d22f3466e0551caa4": {
+     "pitchRad": 0.0005235987755982806,
+     "dyM": 3.9348667949153278,
+     "gearBoundaryM": 19.924,
+     "depthM": -0.015925119276241517,
+     "spreadM": 0.003339253228137995
+    }
+   },
+   "liveries": {
+    "klm": "446480e91622c824ce8dcc702bfa011e17ea3c3f",
+    "korean-air": "310aa67e5332b3570125351d22f3466e0551caa4"
+   }
+  },
+  "b752": {
+   "twin": "b757-200",
+   "variants": {
+    "b548f1ff3bec3a48643bc2ec6439ec2f4a22513a": {
+     "pitchRad": -1.7923768670322136e-17,
+     "dyM": 3.277639989852905,
+     "gearBoundaryM": 15.025,
+     "depthM": 0.034600009918213104,
+     "spreadM": 0
+    }
+   },
+   "liveries": {
+    "delta": "b548f1ff3bec3a48643bc2ec6439ec2f4a22513a",
+    "united": "b548f1ff3bec3a48643bc2ec6439ec2f4a22513a"
+   }
+  },
+  "b753": {
+   "twin": "b757-300",
+   "variants": {
+    "9683eca48fdc7d537ee7aa64938e26c36430204d": {
+     "pitchRad": -1.7923768670322136e-17,
+     "dyM": 3.277639989852905,
+     "gearBoundaryM": 17.055,
+     "depthM": 0.034600009918213104,
+     "spreadM": 4.440892098500626e-16
+    }
+   },
+   "liveries": {
+    "united": "9683eca48fdc7d537ee7aa64938e26c36430204d"
+   }
+  },
+  "a332": {
+   "twin": "a330-200",
+   "variants": {
+    "5ea9c275bf33f82d0fae0c06dfe7ef20645f9475": {
+     "pitchRad": -1.7923768670322136e-17,
+     "dyM": 5.087494926452637,
+     "gearBoundaryM": 17.7575,
+     "depthM": 0.2352698898315433,
+     "spreadM": 0
+    }
+   },
+   "liveries": {
+    "hawaiian": "5ea9c275bf33f82d0fae0c06dfe7ef20645f9475"
+   }
+  },
+  "a332-ge": {
+   "twin": "a330-200",
+   "variants": {
+    "7f3b3b824e97c8d6a1072eb4b0a9aa713f94a0bb": {
+     "pitchRad": -1.7923768670322136e-17,
+     "dyM": 5.087494926452637,
+     "gearBoundaryM": 17.7575,
+     "depthM": 0.2352698898315433,
+     "spreadM": 0
+    }
+   },
+   "liveries": {
+    "aer-lingus": "7f3b3b824e97c8d6a1072eb4b0a9aa713f94a0bb"
+   }
+  },
+  "a333": {
+   "twin": "a330-300",
+   "variants": {
+    "e6d15ac5abc42dd8123e84817dbed4e71b980b27": {
+     "pitchRad": -1.7923768670322136e-17,
+     "dyM": 5.087494926452637,
+     "gearBoundaryM": 19.3575,
+     "depthM": 0.2352698898315433,
+     "spreadM": 0.0006569667366447263
+    }
+   },
+   "liveries": {
+    "fiji-airways": "e6d15ac5abc42dd8123e84817dbed4e71b980b27"
+   }
+  },
+  "b744f": {
+   "twin": "b747-400f",
+   "variants": {
+    "dae37ac52c0095e1b6224434ba728c3b5c8a0821": {
+     "pitchRad": -0.0024434609527920793,
+     "dyM": 5.212062159898547,
+     "gearBoundaryM": 19.775,
+     "depthM": 0.3164670002503982,
+     "spreadM": 0.054385045104466734
+    }
+   },
+   "liveries": {
+    "airzeta": "dae37ac52c0095e1b6224434ba728c3b5c8a0821"
+   }
+  },
+  "b748f": {
+   "twin": "b747-8f",
+   "variants": {
+    "763cd1bba35627586c01e01df2df3bb93e59144a": {
+     "pitchRad": -0.001221730476396049,
+     "dyM": 5.212628864988041,
+     "gearBoundaryM": 21.807,
+     "depthM": 0.2782449910825848,
+     "spreadM": 0.06379064182822614
+    }
+   },
+   "liveries": {
+    "korean-air-cargo": "763cd1bba35627586c01e01df2df3bb93e59144a"
+   }
+  },
+  "b762f": {
+   "twin": "b767-200f",
+   "variants": {
+    "d43ce1c9e1e9c3ca0339330ee47aae2924d17e02": {
+     "pitchRad": -1.7923768670322136e-17,
+     "dyM": 6.58313008069992,
+     "gearBoundaryM": 14.3785,
+     "depthM": -0.0066800451278687945,
+     "spreadM": 0
+    }
+   },
+   "liveries": {
+    "abx-air": "d43ce1c9e1e9c3ca0339330ee47aae2924d17e02"
+   }
+  },
+  "a320": {
+   "twin": "a320ceo",
+   "variants": {
+    "1e0b28f01859bf35ab9478b18c09e08a4541ea4c": {
+     "pitchRad": -1.7923768670322136e-17,
+     "dyM": 4.072644939422608,
+     "gearBoundaryM": 11.375,
+     "depthM": 0.03283010482788029,
+     "spreadM": 0
+    }
+   },
+   "liveries": {
+    "american": "1e0b28f01859bf35ab9478b18c09e08a4541ea4c",
+    "united": "1e0b28f01859bf35ab9478b18c09e08a4541ea4c",
+    "united-friend-ship": "1e0b28f01859bf35ab9478b18c09e08a4541ea4c"
+   }
+  },
+  "a321": {
+   "twin": "a321ceo",
+   "variants": {
+    "f95b115e04ca42f257e389996b46f6c053ef91a7": {
+     "pitchRad": -1.7923768670322136e-17,
+     "dyM": 4.0835999751091006,
+     "gearBoundaryM": 13.51,
+     "depthM": 0.0009999132156366386,
+     "spreadM": 8.881784197001252e-16
+    },
+    "c66705e19372502fa7b900cfc224545e95fd3113": {
+     "pitchRad": -1.7923768670322136e-17,
+     "dyM": 4.0835999751091006,
+     "gearBoundaryM": 13.51,
+     "depthM": 0.0009999132156366386,
+     "spreadM": 8.881784197001252e-16
+    },
+    "570ddb21ae5abd15539e7e496e3b12b256135ce8": {
+     "pitchRad": -1.7923768670322136e-17,
+     "dyM": 4.0835999751091006,
+     "gearBoundaryM": 13.51,
+     "depthM": 0.0009999132156366386,
+     "spreadM": 8.881784197001252e-16
+    }
+   },
+   "liveries": {
+    "air-canada": "f95b115e04ca42f257e389996b46f6c053ef91a7",
+    "american": "f95b115e04ca42f257e389996b46f6c053ef91a7",
+    "delta": "c66705e19372502fa7b900cfc224545e95fd3113",
+    "jetblue": "570ddb21ae5abd15539e7e496e3b12b256135ce8"
+   }
+  },
+  "a20n": {
+   "twin": "a320neo",
+   "variants": {
+    "1fe3a030e8ee4b384806590f1b4ca90a789789bd": {
+     "pitchRad": -1.7923768670322136e-17,
+     "dyM": 4.072644939422608,
+     "gearBoundaryM": 11.375,
+     "depthM": 0.03283010482788029,
+     "spreadM": 0
+    }
+   },
+   "liveries": {
+    "avianca": "1fe3a030e8ee4b384806590f1b4ca90a789789bd"
+   }
+  },
+  "a21n": {
+   "twin": "a321neo",
+   "variants": {
+    "b0a2f3077f4af8cdd2c6dc25d33b555d18b951db": {
+     "pitchRad": -1.7923768670322136e-17,
+     "dyM": 4.0835999751091006,
+     "gearBoundaryM": 13.51,
+     "depthM": 0.0009999132156366386,
+     "spreadM": 8.881784197001252e-16
+    },
+    "a8ce3fae451e85e1c6e5bb57432d2ac73dda0efe": {
+     "pitchRad": -1.7923768670322136e-17,
+     "dyM": 4.0835999751091006,
+     "gearBoundaryM": 13.51,
+     "depthM": 0.0009999132156366386,
+     "spreadM": 8.881784197001252e-16
+    }
+   },
+   "liveries": {
+    "american": "b0a2f3077f4af8cdd2c6dc25d33b555d18b951db",
+    "delta": "a8ce3fae451e85e1c6e5bb57432d2ac73dda0efe",
+    "hawaiian": "a8ce3fae451e85e1c6e5bb57432d2ac73dda0efe",
+    "jetblue": "a8ce3fae451e85e1c6e5bb57432d2ac73dda0efe",
+    "united": "a8ce3fae451e85e1c6e5bb57432d2ac73dda0efe"
+   }
+  },
+  "a359": {
+   "twin": "a350-900",
+   "variants": {
+    "fafe73b7c8dba9be070481f3fa88bd60195056eb": {
+     "pitchRad": -1.7923768670322136e-17,
+     "dyM": 4.114528356393619,
+     "gearBoundaryM": 18.962500000000002,
+     "depthM": -0.004624570907001413,
+     "spreadM": 0.0003378360366603772
+    }
+   },
+   "liveries": {
+    "asiana": "fafe73b7c8dba9be070481f3fa88bd60195056eb",
+    "french-bee": "fafe73b7c8dba9be070481f3fa88bd60195056eb",
+    "lufthansa": "fafe73b7c8dba9be070481f3fa88bd60195056eb",
+    "singapore-airlines": "fafe73b7c8dba9be070481f3fa88bd60195056eb",
+    "starlux": "fafe73b7c8dba9be070481f3fa88bd60195056eb",
+    "turkish-airlines": "fafe73b7c8dba9be070481f3fa88bd60195056eb",
+    "vietnam-airlines": "fafe73b7c8dba9be070481f3fa88bd60195056eb"
+   }
+  },
+  "a35k": {
+   "twin": "a350-1000",
+   "variants": {
+    "fa501fc81f10efacaa63bb8154b701506dd783dc": {
+     "pitchRad": -1.7923768670322136e-17,
+     "dyM": 4.1145360278609635,
+     "gearBoundaryM": 20.872,
+     "depthM": -0.004647633323182632,
+     "spreadM": 0.00030545947454907463
+    }
+   },
+   "liveries": {
+    "philippine-airlines": "fa501fc81f10efacaa63bb8154b701506dd783dc",
+    "philippine-airlines-85-years": "fa501fc81f10efacaa63bb8154b701506dd783dc"
+   }
+  },
+  "a221": {
+   "twin": "a220-100",
+   "variants": {
+    "903d360dee83cf48f7e3d98acfc44f557bfc6160": {
+     "pitchRad": -0.001221730476396049,
+     "dyM": 5.760497787308298,
+     "gearBoundaryM": 9.95,
+     "depthM": -0.016572370634816203,
+     "spreadM": 0.0038177893967787924
+    }
+   },
+   "liveries": {
+    "delta": "903d360dee83cf48f7e3d98acfc44f557bfc6160"
+   }
+  },
+  "a223": {
+   "twin": "a220-300",
+   "variants": {
+    "a8011699300466634f889d12165d00663b0130f6": {
+     "pitchRad": 0.00226892802759261,
+     "dyM": 5.739168868399031,
+     "gearBoundaryM": 11.017,
+     "depthM": -0.057843361615521616,
+     "spreadM": 0.0077621652898134386
+    },
+    "4e5d8fbd009578509b048dca4638726733ce62e2": {
+     "pitchRad": 0.00226892802759261,
+     "dyM": 5.739168868399031,
+     "gearBoundaryM": 11.017,
+     "depthM": -0.057843361615521616,
+     "spreadM": 0.0077621652898134386
+    }
+   },
+   "liveries": {
+    "air-canada": "a8011699300466634f889d12165d00663b0130f6",
+    "breeze": "4e5d8fbd009578509b048dca4638726733ce62e2",
+    "delta": "4e5d8fbd009578509b048dca4638726733ce62e2"
+   }
+  },
+  "a319": {
+   "twin": "a319ceo",
+   "variants": {
+    "50ab3f1309e9807638d51c516cdd0c826405244f": {
+     "pitchRad": -1.7923768670322136e-17,
+     "dyM": 4.084942268605967,
+     "gearBoundaryM": 10.575,
+     "depthM": 0.003684500209368835,
+     "spreadM": 0.023830110066856314
+    },
+    "5381e25ad35473dbc34d518d11358a89d62499bf": {
+     "pitchRad": -1.7923768670322136e-17,
+     "dyM": 4.084942268605967,
+     "gearBoundaryM": 10.575,
+     "depthM": 0.003684500209368835,
+     "spreadM": 0.023830110066856314
+    }
+   },
+   "liveries": {
+    "delta": "50ab3f1309e9807638d51c516cdd0c826405244f",
+    "united": "5381e25ad35473dbc34d518d11358a89d62499bf"
+   }
+  },
+  "a339": {
+   "twin": "a330-900",
+   "variants": {
+    "673e2e1053c2b2127377258a3f3f62ec4ac7ede1": {
+     "pitchRad": -1.7923768670322136e-17,
+     "dyM": 5.087494926452637,
+     "gearBoundaryM": 19.3575,
+     "depthM": 0.2352698898315433,
+     "spreadM": 0.0006569667366447263
+    }
+   },
+   "liveries": {
+    "tap-portugal": "673e2e1053c2b2127377258a3f3f62ec4ac7ede1"
+   }
+  },
+  "a388": {
+   "twin": "a380-800",
+   "variants": {
+    "770252fa3f5936e30d5334e65f4fad4b0b707cd0": {
+     "pitchRad": -1.7923768670322136e-17,
+     "dyM": 0.259255623893047,
+     "gearBoundaryM": 19.275,
+     "depthM": 0.06291872453070368,
+     "spreadM": 0.0067385717474581774
+    }
+   },
+   "liveries": {
+    "british-airways": "770252fa3f5936e30d5334e65f4fad4b0b707cd0",
+    "emirates": "770252fa3f5936e30d5334e65f4fad4b0b707cd0"
+   }
+  },
+  "b763f": {
+   "twin": "b767-300er",
+   "variants": {
+    "cdd2efca4865e4385d834be917e09c771d2d04c6": {
+     "pitchRad": -1.7923768670322136e-17,
+     "dyM": 6.593130080699921,
+     "gearBoundaryM": 15.915000000000001,
+     "depthM": -0.0066800451278687945,
+     "spreadM": 0
+    }
+   },
+   "liveries": {
+    "abx-air": "cdd2efca4865e4385d834be917e09c771d2d04c6",
+    "amazon-air": "cdd2efca4865e4385d834be917e09c771d2d04c6",
+    "fedex": "cdd2efca4865e4385d834be917e09c771d2d04c6"
+   }
+  },
+  "crj200": {
+   "twin": "crj200",
+   "variants": {
+    "7546bd2417f6bd41310f52ace2a0e13213444cae": {
+     "pitchRad": 0.002792526803190909,
+     "dyM": 1.3875778257861455,
+     "gearBoundaryM": 7.85,
+     "depthM": -0.031198600923532105,
+     "spreadM": 0.0362968558719976
+    }
+   },
+   "liveries": {
+    "united": "7546bd2417f6bd41310f52ace2a0e13213444cae"
+   }
+  },
+  "crj900": {
+   "twin": "crj900",
+   "variants": {
+    "8b7582dce39991b43800b75beaf25dedbe342429": {
+     "pitchRad": -1.7923768670322136e-17,
+     "dyM": 3.592833477258682,
+     "gearBoundaryM": 10.793,
+     "depthM": -0.00389504671096752,
+     "spreadM": 0
+    }
+   },
+   "liveries": {
+    "air-canada-express": "8b7582dce39991b43800b75beaf25dedbe342429"
+   }
+  },
+  "e295": {
+   "twin": "e195-e2",
+   "variants": {
+    "f43953556581d58212b3b0d95fc4fb9cbfb21c54": {
+     "pitchRad": -0.001221730476396049,
+     "dyM": 0.037721658727332796,
+     "gearBoundaryM": 12.405000000000001,
+     "depthM": 0.03932749849742878,
+     "spreadM": 0.004580990810661323
+    }
+   },
+   "liveries": {
+    "porter": "f43953556581d58212b3b0d95fc4fb9cbfb21c54"
+   }
+  }
+ }
+}

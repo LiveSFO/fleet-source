@@ -6,7 +6,8 @@
  * buffer shared by its liveries, and per livery a small glTF that points at it and at the livery's KTX2 textures.
  *
  *   node tools/fleet-convert.mjs [--only b38m,e75l] [--livery alaska] [--src data/fleet/src] [--out data/fleet/out]
- *                                [--tex ktx2|png|none] [--jobs 4]
+ *                                [--tex ktx2|png|none] [--jobs 4] [--fits <table> | --kit-root <checkout>]
+ *                                [--write-fits <table> [--fits-only]]
  *
  * Per variant (the liveries of an airframe whose geometry is byte-identical):
  *   1. drop what's never seen from outside (the 777 cabin interior, the spinning-fan discs, the stowed RAT);
@@ -30,11 +31,13 @@ import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { readGLB, accessor, imageBytes, meshopt, MeshoptPacker } from './fleet/gltf.mjs';
 import { decodePNG, encodePNG, resize, stats } from './fleet/image.mjs';
-import { kitTransform, kitFit, compressLeg, splitBelow, transformMesh, concat, weld, simplify, reorder, quantize, bounds, apply, capHoles } from './fleet/geometry.mjs';
+import { kitTransform, kitFit, applyKitFit, compressLeg, splitBelow, transformMesh, concat, weld, simplify, reorder, quantize, bounds, apply, capHoles } from './fleet/geometry.mjs';
 import vm from 'node:vm';
 import { matches, chainFor, motionOut, lightsOut, valueAt } from './fleet/rig.mjs';
-import { BATCH, EXCLUDE_AIRFRAMES, SKIP_LIVERY, SKIP_SELECTOR, SPECIAL, IATA_ICAO, INTERIOR_TEXTURES, HIDDEN_NODES, DETENTS, TEX, GEO, PACKAGE_INFO, ENGINE_FIX, GEAR_FIX, STRETCH_FIX, FIN_FIX, COCKPIT_PANES, DROP_FINISH, TEX_FIX, MAT_FIX } from './fleet/config.mjs';
-import { kitFor, isFreighter } from './fleet/kitkey.mjs';
+import { BATCH, EXCLUDE_AIRFRAMES, convertibleSelector, SPECIAL, IATA_ICAO, INTERIOR_TEXTURES, HIDDEN_NODES, DETENTS, TEX, GEO, PACKAGE_INFO, ENGINE_FIX, GEAR_FIX, STRETCH_FIX, FIN_FIX, COCKPIT_PANES, DROP_FINISH, TEX_FIX, MAT_FIX } from './fleet/config.mjs';
+import { kitLookup, isFreighter } from './fleet/kit-lookup.mjs';
+import { fitInputKey, fitTableJSON, readFitTable } from './fleet/fit-table.mjs';
+import { isCargoDoorBacking, isCargoDoorShell, withoutCargoDoorShells } from './fleet/cargo-doors.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const argv = process.argv.slice(2);
@@ -42,6 +45,15 @@ const opt = (k, d) => (argv.includes('--' + k) ? argv[argv.indexOf('--' + k) + 1
 const SRC = path.resolve(opt('src', path.join(ROOT, 'data/fleet/src')));
 const OUT = path.resolve(opt('out', path.join(ROOT, 'data/fleet/out')));
 const CACHE = path.resolve(opt('cache', path.join(ROOT, 'data/fleet/cache')));
+const KIT_ROOT = path.resolve(opt('kit-root', ROOT));   // used for local runs with a twin
+const FITS = opt('fits', ''), WRITE_FITS = opt('write-fits', ''), FITS_ONLY = argv.includes('--fits-only');
+for (const flag of ['fits', 'write-fits']) {
+  if (argv.includes('--' + flag) && (!opt(flag, '') || opt(flag, '').startsWith('--'))) throw new Error(`--${flag} needs a path`);
+}
+if (FITS && WRITE_FITS) throw new Error('--write-fits needs a local kit; remove --fits');
+if (FITS_ONLY && !WRITE_FITS) throw new Error('--fits-only needs --write-fits <table>');
+const savedFits = FITS ? readFitTable(FITS) : null;
+const writtenFits = WRITE_FITS ? { v: 1, airframes: {} } : null;
 const ONLY = opt('only', '') ? opt('only', '').split(',') : BATCH;
 const ONLY_LIVERY = opt('livery', '') ? new Set(opt('livery', '').split(',')) : null;
 const TEXMODE = opt('tex', 'ktx2');
@@ -61,8 +73,6 @@ const sha = b => crypto.createHash('sha256').update(b).digest('hex');
 const r4 = v => Math.round(v * 1e4) / 1e4;
 const log = (...a) => console.log(...a);
 
-for (const d of ['g', 't', 'a']) fs.mkdirSync(path.join(OUT, d), { recursive: true });
-fs.mkdirSync(path.join(CACHE, 'ktx'), { recursive: true });
 
 /** a content-hashed output file (and its precompressed twins when it compresses) → its path under /m/ */
 function put(dir, ext, buf, compress = true) {
@@ -83,16 +93,21 @@ const handoff = JSON.parse(fs.readFileSync(path.join(LIB, 'asset-handoff-manifes
 const coverage = JSON.parse(fs.readFileSync(path.join(LIB, 'sfo-build-coverage.json'), 'utf8'));
 // the kit's types (client/vendor/airliners, read only), for each airframe's twin: the crowd model a selection swaps it
 // for, found as the crowd finds it (the type's ICAO code → shared/aircraft-types.json → the kit key)
-const KIT = (() => {
-  const dir = path.join(ROOT, 'client/vendor/airliners'), ctx = vm.createContext({ console });
-  vm.runInContext(fs.readFileSync(path.join(ROOT, 'client/vendor/three/three.iife.js'), 'utf8'), ctx);
+function loadTwins() {
+  const dir = path.join(KIT_ROOT, 'client/vendor/airliners'), ctx = vm.createContext({ console });
+  vm.runInContext(fs.readFileSync(path.join(KIT_ROOT, 'client/vendor/three/three.iife.js'), 'utf8'), ctx);
   const files = fs.readdirSync(dir).filter(f => /^1\d_.*\.js$/.test(f)).sort();
   vm.runInContext(files.map(f => fs.readFileSync(path.join(dir, f), 'utf8')).join('\n;') + '\n;this.AL_TYPES = AL_TYPES;', ctx);
-  return ctx.AL_TYPES;
-})();
-// (tools/fleet/kitkey.mjs: as the registry resolves the type for the client; a freighter airframe's twin is the kit's
-// freighter model of its type where it has one: the 777F's is b777f, whose body sits 8 cm higher than the 777-200LR's)
-const TWIN = {}; for (const c of coverage.combinations) { const a = c.asset, k = a && kitFor(c.canonicalType, isFreighter(a.aircraft)); if (k && !TWIN[a.aircraft]) TWIN[a.aircraft] = k; }
+  // A freighter uses the kit's cargo model where it has one. The 777F's body sits 8 cm above the -200LR's.
+  const kitFor = kitLookup(JSON.parse(fs.readFileSync(path.join(KIT_ROOT, 'shared/aircraft-types.json'), 'utf8')).types);
+  const keys = {};
+  for (const c of coverage.combinations) {
+    const a = c.asset, key = a && kitFor(c.canonicalType, isFreighter(a.aircraft));
+    if (key && !keys[a.aircraft]) keys[a.aircraft] = key;
+  }
+  return { kit: ctx.AL_TYPES, keys };
+}
+const twins = savedFits ? null : loadTwins();
 const libPkg = (() => { try { return JSON.parse(fs.readFileSync(path.join(SRC, 'sync.json'), 'utf8')); } catch { return {}; } })();
 
 /** the licence of a source package, from the library's evidence string */
@@ -298,9 +313,28 @@ async function convertVariant(af, liveries, MO, report) {
   // ---- into the kit frame: fitted to its kit twin where it has one (levelled at the twin's height, each gear leg
   // compressed onto the ground: geometry.mjs kitFit, D-149), else levelled on its own gear (kitTransform)
   const entries = parts.flatMap((p, pi) => p.prims.map((q, qi) => ({ pi, qi, pos: q.mesh.pos, idx: q.mesh.idx, gear: p.internal || p.mi.some(i => motions[i].control === 'gear') })));
+  const inputKey = (savedFits || writtenFits) ? fitInputKey(entries) : null;
+  const saved = savedFits?.airframes[af];
+  const twinKey = savedFits ? saved?.twin : twins.keys[af] || null;
+  const twinT = twins && twinKey && twins.kit.get(twinKey);
+  const gear = entries.map(e => e.gear);
+  let fit = null;
+  if (savedFits) {
+    if (!saved || !Object.hasOwn(saved.variants, inputKey)) {
+      throw new Error(`${ref.asset.selector}: no matching geometry in ${FITS}; regenerate the fleet fit table for this source`);
+    }
+    const record = saved.variants[inputKey];
+    if (record) fit = applyKitFit(entries, gear, record);
+  } else if (twinT?.fus && twinT.gear) {
+    fit = kitFit(entries, gear, twinT);
+  }
+  if (writtenFits) {
+    const row = writtenFits.airframes[af] ??= { twin: twinKey, variants: {}, liveries: {} };
+    row.variants[inputKey] = fit?.record ?? null;
+    for (const L of liveries) row.liveries[L.livery] = inputKey;
+  }
+  if (FITS_ONLY) return;
   const entryOf = new Map(entries.map((e, k) => [`${e.pi}:${e.qi}`, k]));
-  const twinKey = TWIN[af] || null, twinT = twinKey && KIT.get(twinKey);
-  const fit = twinT && twinT.fus && twinT.gear ? kitFit(entries, entries.map(e => e.gear), twinT) : null;
   const { P, pitchDeg, floatM, contacts } = fit ? { P: fit.P, pitchDeg: fit.pitchDeg, floatM: fit.dyM, contacts: fit.contacts } : kitTransform(entries.map(e => e.pos));
   const legOf = new Map(); if (fit) for (const leg of fit.legs) for (const k of leg.parts) legOf.set(k, leg);
   // a leg that has to shorten (the library's stand on unloaded struts, fully extended as in flight) keeps its length in
@@ -321,7 +355,7 @@ async function convertVariant(af, liveries, MO, report) {
   }
   if (fit) for (const leg of fit.legs) if (leg.d > 0.01) wowOf.set(leg, motionsX.push({ control: 'wow', type: 'translate', property: 'livesfo/wow', axis: [P.R[3], P.R[4], P.R[5]], factor: +leg.d.toFixed(4), offset: 0, targets: [] }) - 1);
   if (fit) log(`  fitted to ${twinKey}: pitched ${fit.pitchDeg.toFixed(2)}°, raised ${fit.dyM.toFixed(2)} m (body ${fit.depthM === null ? '?' : (fit.depthM >= 0 ? '+' : '') + fit.depthM.toFixed(2)} m deeper than the kit's, spread ${fit.spreadM.toFixed(3)} m); legs ${fit.legs.map(l => `${l.name} ${l.d >= 0 ? 'compressed' : 'extended'} ${Math.abs(l.d).toFixed(2)} m`).join(', ') || 'none'}`);
-  if (fit && process.env.FIT_DEBUG) { fs.mkdirSync(process.env.FIT_DEBUG, { recursive: true }); fs.writeFileSync(path.join(process.env.FIT_DEBUG, `${af}--${String(ref.asset.selector || "").replace(/[^a-z0-9-]+/gi, "_")}.json`), JSON.stringify({ af, twin: twinKey, pitchDeg: fit.pitchDeg, dyM: fit.dyM, depthM: fit.depthM, spreadM: fit.spreadM, legs: fit.legs.map(l => ({ name: l.name, d: l.d, cut: l.cut, R: l.R, parts: l.parts.size, axles: l.axles, tiltDeg: l.tiltDeg })), kit: { yc: twinT.fus.yc, w: twinT.fus.w, h: twinT.fus.h, L: twinT.L, nose: twinT.gear.nose.z, main: twinT.gear.main.z }, ...fit.debug })); }
+  if (fit?.debug && process.env.FIT_DEBUG) { fs.mkdirSync(process.env.FIT_DEBUG, { recursive: true }); fs.writeFileSync(path.join(process.env.FIT_DEBUG, `${af}--${String(ref.asset.selector || "").replace(/[^a-z0-9-]+/gi, "_")}.json`), JSON.stringify({ af, twin: twinKey, pitchDeg: fit.pitchDeg, dyM: fit.dyM, depthM: fit.depthM, spreadM: fit.spreadM, legs: fit.legs.map(l => ({ name: l.name, d: l.d, cut: l.cut, R: l.R, parts: l.parts.size, axles: l.axles, tiltDeg: l.tiltDeg })), kit: { yc: twinT.fus.yc, w: twinT.fus.w, h: twinT.fus.h, L: twinT.L, nose: twinT.gear.nose.z, main: twinT.gear.main.z }, ...fit.debug })); }
   // ---- merge: by motion group, then by what each livery draws there
   const matIds = liveries.map(() => new Map());   // per livery: material key → id
   const keyOf = (li, k) => { const L = liveries[li], mk = matKey(L, k), M = matIds[li]; if (!M.has(mk)) M.set(mk, { id: M.size, k, mk }); return M.get(mk).id; };
@@ -458,10 +492,17 @@ async function convertVariant(af, liveries, MO, report) {
   }
   for (const q of uvq.values()) { const top = (1 << GEO.uvBits) - 1; q.bits = GEO.uvBits; q.scale = [q.range[0] / top, q.range[1] / top]; }
 
+  // Apply the same filter as the cached-model loader after simplification, so the shared wing mesh retains its tessellation.
+  const doorShells = merged.map(mesh => liveries.every((L, i) => {
+    const m = L.json.materials[mesh.mats[i].k], image = texOf(L.json, m.pbrMetallicRoughness?.baseColorTexture);
+    return isCargoDoorShell(`${af}-${L.livery}`, { name: m.name, alpha: m.alphaMode || 'OPAQUE' }, L.json.images?.[image]?.name);
+  }));
   const packOne = meshes => {
     const pk = new MeshoptPacker(MO.MeshoptEncoder), accessors = [], prims = [];
     meshes.forEach((mesh0, i) => {
-      const m = merged[i], mesh = reorder(MO.MeshoptEncoder, mesh0);
+      const m = merged[i];
+      const idx = doorShells[i] ? withoutCargoDoorShells({ pos: mesh0.pos, posStride: 3, index: mesh0.idx }, [0, 0, 0, 1]) : mesh0.idx;
+      const mesh = reorder(MO.MeshoptEncoder, idx === mesh0.idx ? mesh0 : { ...mesh0, idx });
       if (!mesh.idx.length) { prims.push(null); return; }
       const uq = m.mesh.uv ? uvq.get(m.slot) : null;
       const q = quantize(MO.MeshoptEncoder, mesh, grid, uq, GEO.normalBits);
@@ -481,7 +522,8 @@ async function convertVariant(af, liveries, MO, report) {
   for (const [name, meshes] of Object.entries(lods)) packs[name] = packOne(meshes);
 
   // ---- per livery: textures, materials, the glTF
-  const variantOut = { af, geometry: packs.lod0.bin, tris, srcTris: tris0 + droppedTris, droppedTris, meshes: merged.length, dims, lods: {},
+  const packedTris = packs.lod0.prims.reduce((s, p) => s + (p?.tris ?? 0), 0);
+  const variantOut = { af, geometry: packs.lod0.bin, tris: packedTris, srcTris: tris0 + droppedTris, droppedTris, meshes: merged.length, dims, lods: {},
     fit: fit ? { twin: twinKey, pitchDeg: r4(fit.pitchDeg), dyM: r4(fit.dyM), depthM: fit.depthM === null ? null : r4(fit.depthM), spreadM: r4(fit.spreadM), legs: fit.legs.map(l => ({ name: l.name, d: r4(l.d), cut: r4(l.cut) })) } : null };
   for (const [name, pk] of Object.entries(packs)) variantOut.lods[name] = { bin: pk.bin.rel, wire: pk.bin.wire, tris: pk.prims.reduce((s, p) => s + (p ? p.tris : 0), 0) };
   const motionList = [], motionIdx = new Map();
@@ -500,7 +542,15 @@ async function convertVariant(af, liveries, MO, report) {
 
   for (let li = 0; li < liveries.length; li++) {
     if (EMIT && !EMIT.has(liveries[li].livery)) continue;
-    const L = liveries[li], lj = L.json;
+    const L = liveries[li], lj = L.json, key = `${af}-${L.livery}`;
+    const backing = new Set();
+    for (const [i, mesh] of merged.entries()) {
+      const material = lj.materials[mesh.mats[li].k], pbr = material.pbrMetallicRoughness || {};
+      if (isCargoDoorBacking(key, {
+        name: material.name, alpha: material.alphaMode || 'OPAQUE',
+        map: pbr.baseColorTexture?.index ?? -1, color: pbr.baseColorFactor || [1, 1, 1, 1]
+      })) backing.add(i);
+    }
     // the images this livery's kept materials use
     const used = new Map();   // image index → { paint, area (m² of surface), uv (share of the image those surfaces use) }
     for (const m of merged) {
@@ -591,7 +641,7 @@ async function convertVariant(af, liveries, MO, report) {
     const buildGltf = (lodName) => {
       const pk = packs[lodName], nodes = [], meshes = [];
       merged.forEach((m, i) => {
-        const pr = pk.prims[i]; if (!pr) return;
+        const pr = pk.prims[i]; if (!pr || backing.has(i)) return;
         const mesh = { primitives: [{ attributes: pr.attributes, indices: pr.indices, material: materialFor(m) }] };
         const node = { mesh: meshes.push(mesh) - 1, translation: grid.off, scale: [grid.step, grid.step, grid.step] };
         const ex = {}; if (m.mi.length) ex.m = m.mi.map(motionRef); if (m.internal) ex.internal = 1;
@@ -619,18 +669,19 @@ async function convertVariant(af, liveries, MO, report) {
     const lite = put('a', '.gltf', Buffer.from(JSON.stringify(buildGltf('lod1'))));
     const texWire = [...tex.values()].reduce((s, t) => s + (t.file ? t.file.bytes : 0), 0);
     const texGpu = [...tex.values()].reduce((s, t) => s + (t.flat || !t.file ? 0 : gpuBytes(t.w, t.h, t.codec, t.alpha)), 0);
-    const geoGpu = packs.lod0.prims.reduce((s, p) => s + (p ? p.gpu : 0), 0);
-    const key = `${af}-${L.livery}`;
+    const drawn = packs.lod0.prims.filter((p, i) => p && !backing.has(i));
+    const geoGpu = drawn.reduce((s, p) => s + p.gpu, 0);
+    const drawnTris = drawn.reduce((s, p) => s + p.tris, 0);
     report.assets[key] = {
       gltf: file.rel, lite: lite.rel, selector: L.asset.selector, airframe: af, livery: L.livery, label: rig.label,
-      wire: file.wire + packs.lod0.bin.wire + texWire, gpu: geoGpu + texGpu, geoGpu, texGpu, tris, draws: merged.length, dims,
+      wire: file.wire + packs.lod0.bin.wire + texWire, gpu: geoGpu + texGpu, geoGpu, texGpu, tris: drawnTris, draws: drawn.length, dims,
       textures: [...tex.values()].map(t => (t.flat ? { name: t.name, flat: t.flat } : { name: t.name, w: t.w, h: t.h, codec: t.codec, psnr: t.psnr, alpha: t.alpha, paint: !!t.paint, busy: r4(t.busy), bytes: t.file ? t.file.bytes : 0 })),
       special: SPECIAL.has(L.asset.selector), credits: creditsFor(L.asset).id
     };
-    log(`  ${key}: ${(report.assets[key].wire / 1e6).toFixed(2)} MB wire, ${(report.assets[key].gpu / 1e6).toFixed(1)} MB GPU (${(geoGpu / 1e6).toFixed(1)} geometry), ${tris} tris, ${merged.length} draws`);
+    log(`  ${key}: ${(report.assets[key].wire / 1e6).toFixed(2)} MB wire, ${(report.assets[key].gpu / 1e6).toFixed(1)} MB GPU (${(geoGpu / 1e6).toFixed(1)} geometry), ${drawnTris} tris, ${drawn.length} draws`);
   }
   report.variants.push(variantOut);
-  log(`  variant ${liveries.map(l => l.livery).join(', ')}: ${tris0 + droppedTris} → ${tris} tris (${droppedTris} dropped), ${merged.length} meshes, geometry ${(packs.lod0.bin.wire / 1e3).toFixed(0)} KB br, levelled ${pitchDeg.toFixed(2)}° (${(floatM * 100).toFixed(0)} cm)`);
+  log(`  variant ${liveries.map(l => l.livery).join(', ')}: ${tris0 + droppedTris} → ${packedTris} tris (${droppedTris + tris - packedTris} dropped), ${merged.length} meshes, geometry ${(packs.lod0.bin.wire / 1e3).toFixed(0)} KB br, levelled ${pitchDeg.toFixed(2)}° (${(floatM * 100).toFixed(0)} cm)`);
 }
 
 /* ---------------- credits ---------------- */
@@ -651,20 +702,31 @@ function creditsFor(asset) {
 
 /* ---------------- main ---------------- */
 const t0 = Date.now();
-const MO = await meshopt();
-log(`fleet-convert: ${LIB}\n  meshoptimizer ${MO.version}, textures: ${TEXMODE}${TEXMODE === 'ktx2' ? ` (${basisu() || 'basisu missing'})` : ''}`);
-const report = { v: 1, generated: new Date().toISOString(), base: '/m/', library: { zip: libPkg.zip || null, sha256: libPkg.sha256 || null, updated: handoff.updatedAtUTC }, tools: { meshoptimizer: MO.version }, types: {}, regs: {}, assets: {}, variants: [], credits: {} };
+const MO = FITS_ONLY ? null : await meshopt();
+if (FITS_ONLY) log(`fleet-convert: recording fits from ${LIB}`);
+else {
+  for (const d of ['g', 't', 'a']) fs.mkdirSync(path.join(OUT, d), { recursive: true });
+  fs.mkdirSync(path.join(CACHE, 'ktx'), { recursive: true });
+  log(`fleet-convert: ${LIB}\n  meshoptimizer ${MO.version}, textures: ${TEXMODE}${TEXMODE === 'ktx2' ? ` (${basisu() || 'basisu missing'})` : ''}`);
+}
+const report = FITS_ONLY ? null : { v: 1, generated: new Date().toISOString(), base: '/m/', library: { zip: libPkg.zip || null, sha256: libPkg.sha256 || null, updated: handoff.updatedAtUTC }, tools: { meshoptimizer: MO.version }, types: {}, regs: {}, assets: {}, variants: [], credits: {} };
 const prevPath = path.join(ROOT, 'shared/fleet.json'), prevReport = path.join(OUT, 'report.json');
-const prev = fs.existsSync(prevReport) ? JSON.parse(fs.readFileSync(prevReport, 'utf8')) : null;
+const prev = !FITS_ONLY && fs.existsSync(prevReport) ? JSON.parse(fs.readFileSync(prevReport, 'utf8')) : null;
 for (const af of ONLY) {
   if (EXCLUDE_AIRFRAMES.has(af)) { log(`${af}: excluded (licence)`); continue; }
-  const assets = handoff.assets.filter(a => a.selector.split('/')[0] === af && !SKIP_SELECTOR.has(a.selector) && !SKIP_LIVERY.some(r => r.test(a.selector.split('/')[1])) && (!ONLY_LIVERY || ONLY_LIVERY.has(a.selector.split('/')[1])));
+  const assets = handoff.assets.filter(a => a.selector.split('/')[0] === af && convertibleSelector(a.selector) && (!ONLY_LIVERY || ONLY_LIVERY.has(a.selector.split('/')[1])));
   if (!assets.length) { log(`${af}: nothing to convert`); continue; }
   log(`${af}: ${assets.length} liveries`);
   const loaded = assets.map(loadLivery);
   const byGeo = new Map(); for (const L of loaded) { const s = geoSignature(L); if (!byGeo.has(s)) byGeo.set(s, []); byGeo.get(s).push(L); }
   for (const group of byGeo.values()) await convertVariant(af, group, MO, report);
 }
+if (writtenFits) {
+  fs.mkdirSync(path.dirname(WRITE_FITS), { recursive: true });
+  fs.writeFileSync(WRITE_FITS, fitTableJSON(writtenFits));
+  log(`fit table: ${WRITE_FITS} (${Object.keys(writtenFits.airframes).length} airframes)`);
+}
+if (FITS_ONLY) process.exit(0);
 // keep what an earlier run converted for airframes not in this run (an --only run adds to the index)
 if (prev) for (const [k, v] of Object.entries(prev.assets || {})) if (!report.assets[k] && !ONLY.includes(v.airframe)) report.assets[k] = v;
 if (prev) for (const v of prev.variants || []) if (!ONLY.includes(v.af)) report.variants.push(v);
