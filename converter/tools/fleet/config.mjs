@@ -168,8 +168,20 @@ export const MAT_FIX = { 'b763/delta': { '_Gray_Gl_surface': [0.9301, 0.9387, 0.
  * it to the crowd). `lift` scales the image's near-white greys (saturation at most `sat`, value from `lo` to `hi`) by
  * to / from, so the fuselage is the box's white throughout; the title, the stripes, the belly's greys and the panel
  * lines are left.
+ * `repair` names a function of decal-paint.mjs run on the image instead (F-29, LS-226: the 2010 Dalí decal under the
+ * Delta 757-200's cockpit, which every Delta 757 wore; main, 23 Nov: "Remove the Dalí decal from Delta's 757 paint on a
+ * copy of the paint, as F-25's repair did").
  */
-export const TEX_FIX = { 'e75l/alaska': { image: 'authored-color-0', lift: { lo: 200, hi: 244, from: 228, to: 250, sat: 14 } } };
+export const TEX_FIX = {
+  'e75l/alaska': { image: 'authored-color-0', lift: { lo: 200, hi: 244, from: 228, to: 250, sat: 14 } },
+  'b752/delta': { image: 'DAL4', repair: 'repairDelta757Decal' }
+};
+
+// F-25. Breeze still needs the original atlas for the fin; Air Canada has a separate fin atlas.
+export const WING_ATLAS_FIX = {
+  'a223/breeze': { image: 'authored-color-1', maxSize: 1024 },
+  'a223/air-canada': { image: 'body-color-1' }
+};
 
 /**
  * Cockpit windows the library left open (15 Nov, the user: "the windshield is transparent and leaking the details through

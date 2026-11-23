@@ -7,15 +7,17 @@ under the GNU General Public License, and so are livesfo's conversions of them. 
 corresponding source.
 
 It covers the converted files livesfo serves under `/m/`, as listed in its index generated
-2026-11-16T08:00:02.525Z: 135 liveries of 37 airframes. [SERVED.json](SERVED.json) names every served file
+2026-11-16T08:00:02.525Z: 151 liveries of 37 airframes. [SERVED.json](SERVED.json) names every served file
 with its SHA-256. Its `production` record covers the deployed /m/ inventory, including
 compressed copies, photo-traced crowd texture paths and older files retained at their existing URLs. The
 `indexed` list is what the current fleet and bake indexes name, including compressed copies. The
-`uploaded` list identifies the files added by this deployment. The `archived` list identifies the
-hashes re-used from earlier SERVED.json records.
+`uploaded` list identifies the files uploaded since the previous source release. The `archived` list names
+older files still served at their existing URLs, under the earlier release whose SERVED.json records each with
+that hash; that release holds the source of the converted ones (this one, for those SERVED.json's `earlier`
+lists).
 
-**Where the files are.** This git tree holds everything but the paint maps (200 MB of PNG), the baked liveries' images (58 MB) and the redrawn paint of livesfo's liveries on the library's airframes (76 MB). The release
-[`index-2026-11-21`](../../releases/tag/index-2026-11-21) holds the whole of it as one zip, paint maps included.
+**Where the files are.** This git tree holds everything but the paint maps (200 MB of PNG), the baked liveries' images (63 MB) and the redrawn paint of livesfo's liveries on the library's airframes (107 MB). The release
+[`index-2026-11-23`](../../releases/tag/index-2026-11-23) holds the whole of it as one zip, paint maps included.
 
 ## How the served files are made
 
@@ -63,14 +65,18 @@ hashes re-used from earlier SERVED.json records.
    projected onto the fuselage and fin textures of livesfo's own aircraft models (which aren't part of this source),
    so the site's crowd wears the paint its detailed models show. `bakes/` holds the image each was made from, the
    preferred form for changing it. The served textures are KTX2 (ETC1S, basisu 2.50: `-mipmap -y_flip
-   -comp_level 2 -q 255`): the image as it is (L), and its 2× and 4× box averages (M, S).
+   -comp_level 2 -q 255`): the image as it is (L), and its 2× and 4× box averages (M, S). SERVED.json's
+   `earlier` also lists earlier bakes still served at their URLs, though the index now names a later bake
+   (b757-200|DAL@LS-152): their images are in `bakes/<by>/`.
 5. **livesfo's liveries on the library's airframes**, when listed in SERVED.json under `reverse`: an airline
    the library has the aircraft type but no paint for gets a detailed model in the
    livery livesfo's other aircraft wear (a baked library livery from another of the airline's types, or a livery
    traced from photos): one of the library's liveries of that type (the template) with its paint images redrawn, the
    fuselage and fin from that livery, the rest the template's. `reverse/` holds the redrawn images (PNG); each entry
-   names its template and what it was drawn from. Those drawn from photos credit them (CC BY 4.0; the credits are part
-   of the terms).
+   names its template and what it was drawn from. Those drawn from photos credit them (SERVED.json gives each photo's
+   licence; CC BY's terms ask for the credit). SERVED.json's `earlier` lists earlier builds of these liveries that are still served at
+   their URLs, though the index now names a later build (a223-jbu-rb@LS-222): their
+   redrawn images are in `reverse/<by>/`.
 
 ## Rebuilding
 
@@ -109,8 +115,8 @@ hashes re-used from earlier SERVED.json records.
 - The library's paint maps, records and scripts, as adaptations of those models and the means of building them: the
   same terms.
 - livesfo's liveries written onto the library's airframes (`reverse/`): the same terms as the airframe they're on. Those
-  drawn from photos (b763f-ups-rb, a359-sas-rb, a21n-fft-rb, a20n-fft-rb, a320-fft-rb, a321-fft-rb, a20n-voi-rb, a21n-voi-rb, a320-voi-rb, a339-ity-rb, a35k-qtr-rb, b77w-ces-rb, b77w-csn-rb, a339-dal-rb, a223-jbu-rb, b789-current-ely-rb, b77w-aal-rb, b788-aal-rb, a359-aic-rb, b789-current-aal-rb, a333-dal-rb) adapt photos published under CC BY 4.0,
-  which allows that with credit: each photo, its author and licence are in SERVED.json.
+  drawn from photos (b763f-ups-rb, a359-sas-rb, a21n-fft-rb, a20n-fft-rb, a320-fft-rb, a321-fft-rb, a20n-voi-rb, a21n-voi-rb, a320-voi-rb, a339-ity-rb, a35k-qtr-rb, b77w-ces-rb, b77w-csn-rb, a339-dal-rb, a223-jbu-rb, b789-current-ely-rb, b77w-aal-rb, b788-aal-rb, a359-aic-rb, b789-current-aal-rb, b772-aal-rb, b738-scx-rb, b739-scx-rb, a320-aay-rb, a319-aay-rb, a21n-nks-rb, a20n-nks-rb, b738-vxp-rb) adapt photos whose licences
+  (CC BY 2.0, CC BY 4.0, CC0, public domain) allow that, CC BY with credit: each photo, its author and licence are in SERVED.json.
 - livesfo's converter: GPL-2.0-or-later ([converter/LICENSE](converter/LICENSE)). Version 3's text is in
   [COPYING.GPL-3.0](COPYING.GPL-3.0), for the parts that allow later versions.
 - The logos' sources (`preparation/brand-art/`): each record names its Wikimedia Commons page and licence; most are

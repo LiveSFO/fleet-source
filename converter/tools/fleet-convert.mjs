@@ -34,10 +34,12 @@ import { decodePNG, encodePNG, resize, stats } from './fleet/image.mjs';
 import { kitTransform, kitFit, applyKitFit, compressLeg, splitBelow, transformMesh, concat, weld, simplify, reorder, quantize, bounds, apply, capHoles } from './fleet/geometry.mjs';
 import vm from 'node:vm';
 import { matches, chainFor, motionOut, lightsOut, valueAt } from './fleet/rig.mjs';
-import { BATCH, EXCLUDE_AIRFRAMES, convertibleSelector, SPECIAL, IATA_ICAO, INTERIOR_TEXTURES, HIDDEN_NODES, DETENTS, TEX, GEO, PACKAGE_INFO, ENGINE_FIX, GEAR_FIX, STRETCH_FIX, FIN_FIX, COCKPIT_PANES, DROP_FINISH, TEX_FIX, MAT_FIX } from './fleet/config.mjs';
+import { BATCH, EXCLUDE_AIRFRAMES, convertibleSelector, SPECIAL, IATA_ICAO, INTERIOR_TEXTURES, HIDDEN_NODES, DETENTS, TEX, GEO, PACKAGE_INFO, ENGINE_FIX, GEAR_FIX, STRETCH_FIX, FIN_FIX, COCKPIT_PANES, DROP_FINISH, TEX_FIX, MAT_FIX, WING_ATLAS_FIX } from './fleet/config.mjs';
 import { kitLookup, isFreighter } from './fleet/kit-lookup.mjs';
 import { fitInputKey, fitTableJSON, readFitTable } from './fleet/fit-table.mjs';
 import { isCargoDoorBacking, isCargoDoorShell, withoutCargoDoorShells } from './fleet/cargo-doors.mjs';
+import { repairA220WingPaint } from './fleet/wing-paint.mjs';
+import * as DECAL_PAINT from './fleet/decal-paint.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const argv = process.argv.slice(2);
@@ -147,27 +149,73 @@ function loadLivery(asset) {
     if (!n) throw new Error(`${asset.selector}: MAT_FIX matched no material`);
   }
   // an image's paint corrected (config.mjs TEX_FIX): the corrected PNG appended to the buffer, the image pointed at it
-  let binOut = bin;
+  let binOut = bin, wingPaintImage = -1;
   const tf = TEX_FIX[asset.selector];
   if (tf) {
     const i = (json.images || []).findIndex(x => x.name === tf.image);
     if (i < 0) throw new Error(`${asset.selector}: TEX_FIX image ${tf.image} not found`);
-    const png = decodePNG(imageBytes(json, bin, i)), ch = png.data.length / (png.w * png.h), L = tf.lift, k = L.to / L.from;
-    let n = 0;
-    for (let q = 0; q < png.w * png.h; q++) {
-      const o = q * ch, r = png.data[o], g = png.data[o + 1], b = png.data[o + 2], v = (r + g + b) / 3;
-      if (Math.max(r, g, b) - Math.min(r, g, b) > L.sat || v < L.lo || v > L.hi) continue;
-      png.data[o] = Math.min(255, Math.round(r * k)); png.data[o + 1] = Math.min(255, Math.round(g * k)); png.data[o + 2] = Math.min(255, Math.round(b * k)); n++;
+    const png = decodePNG(imageBytes(json, bin, i)), ch = png.data.length / (png.w * png.h);
+    let n = 0, how = '';
+    if (tf.lift) {
+      const L = tf.lift, k = L.to / L.from;
+      for (let q = 0; q < png.w * png.h; q++) {
+        const o = q * ch, r = png.data[o], g = png.data[o + 1], b = png.data[o + 2], v = (r + g + b) / 3;
+        if (Math.max(r, g, b) - Math.min(r, g, b) > L.sat || v < L.lo || v > L.hi) continue;
+        png.data[o] = Math.min(255, Math.round(r * k)); png.data[o + 1] = Math.min(255, Math.round(g * k)); png.data[o + 2] = Math.min(255, Math.round(b * k)); n++;
+      }
+      how = 'lifted';
+    }
+    if (tf.repair) {   // (a named repair, decal-paint.mjs: F-29's decal)
+      const fn = DECAL_PAINT[tf.repair];
+      if (typeof fn !== 'function') throw new Error(`${asset.selector}: TEX_FIX repair ${tf.repair} not in decal-paint.mjs`);
+      n = fn(png); how = tf.repair + ':';
+      if (!n) throw new Error(`${asset.selector}: TEX_FIX repair ${tf.repair} changed nothing`);
     }
     const enc = encodePNG(png);
     json.bufferViews.push({ buffer: 0, byteOffset: bin.length, byteLength: enc.length });
     json.images[i] = { ...json.images[i], bufferView: json.bufferViews.length - 1, mimeType: 'image/png' };
     binOut = Buffer.concat([bin, enc]);
-    log(`  ${asset.selector}: ${tf.image} corrected (lifted ${n} texels, ${(100 * n / (png.w * png.h)).toFixed(1)} %)`);
+    // (the corrected image, the GPL source's preferred form: the bundle carries it, as the A220 wings' below)
+    if (tf.repair && !FITS_ONLY) { const dir = path.join(CACHE, 'repair-source'); fs.mkdirSync(dir, { recursive: true }); fs.writeFileSync(path.join(dir, `${asset.selector.replace('/', '-')}-${tf.image}.png`), enc); }
+    log(`  ${asset.selector}: ${tf.image} corrected (${how} ${n} texels, ${(100 * n / (png.w * png.h)).toFixed(1)} %)`);
+  }
+  const wingAtlas = WING_ATLAS_FIX[asset.selector];
+  if (wingAtlas) {
+    const i = json.images.findIndex(im => im.name === wingAtlas.image);
+    if (i < 0) throw new Error(`${asset.selector}: wing atlas ${wingAtlas.image} not found`);
+    const png = decodePNG(imageBytes(json, binOut, i));
+    repairA220WingPaint(png);
+    const enc = encodePNG(png);
+    // The vertical stabilizer shares these UVs. Give the wing and its moving parts their own copy of the atlas.
+    wingPaintImage = json.images.length;
+    const mats = new Map();
+    for (const node of json.nodes) {
+      if (node.mesh === undefined || !/^(wings$|flap|spoiler)/.test(node.name)) continue;
+      for (const primitive of json.meshes[node.mesh].primitives) {
+        const m = json.materials[primitive.material], pbr = m.pbrMetallicRoughness, tex = json.textures[pbr?.baseColorTexture?.index];
+        if (tex?.source !== i) continue;
+        if (!mats.has(primitive.material)) {
+          mats.set(primitive.material, json.materials.length);
+          const index = json.textures.push({ ...tex, source: wingPaintImage }) - 1;
+          json.materials.push({ ...m, name: m.name + ' plain wing', pbrMetallicRoughness: { ...pbr, baseColorTexture: { ...pbr.baseColorTexture, index } } });
+        }
+        primitive.material = mats.get(primitive.material);
+      }
+    }
+    if (!mats.size) throw new Error(`${asset.selector}: no wing parts use ${wingAtlas.image}`);
+    const bufferView = json.bufferViews.push({ buffer: 0, byteOffset: binOut.length, byteLength: enc.length }) - 1;
+    json.images.push({ ...json.images[i], name: wingAtlas.image + '-plain-wing', bufferView, mimeType: 'image/png' });
+    binOut = Buffer.concat([binOut, enc]);
+    if (!FITS_ONLY) {
+      const dir = path.join(CACHE, 'repair-source');
+      fs.mkdirSync(dir, { recursive: true });
+      fs.writeFileSync(path.join(dir, `${asset.selector.replace('/', '-')}-plain-wing.png`), enc);
+    }
+    log(`  ${asset.selector}: ${wingAtlas.image} corrected on the wings (${mats.size} materials)`);
   }
   const rig = JSON.parse(fs.readFileSync(path.join(LIB, asset.rig), 'utf8'));
   const imgHash = (json.images || []).map((_, i) => sha(imageBytes(json, binOut, i)).slice(0, 20));
-  return { asset, json, bin: binOut, rig, imgHash, livery: asset.selector.split('/')[1] };
+  return { asset, json, bin: binOut, rig, imgHash, wingPaintImage, livery: asset.selector.split('/')[1] };
 }
 /** the geometry's identity, materials aside: liveries with equal signatures share one geometry buffer */
 function geoSignature(L) {
@@ -570,7 +618,8 @@ async function convertVariant(af, liveries, MO, report) {
       const s = imageStats(lj, L.bin, i, L.imgHash[i]);
       if (s.flat) { tex.set(i, { flat: s.color, name: lj.images[i].name }); continue; }
       const codec = r.mask || (!r.paint && s.busy >= TEX.busyEtc1s) ? 'etc1s' : 'auto';   // (auto: budgeted as UASTC, decided when encoded)
-      const cap = r.mask ? TEX.maskCap : r.paint ? TEX.paintCap : TEX.otherCap;
+      const cap = (i === L.wingPaintImage && WING_ATLAS_FIX[L.asset.selector]?.maxSize) ||
+        (r.mask ? TEX.maskCap : r.paint ? TEX.paintCap : TEX.otherCap);
       let w = Math.min(cap, pot(s.w)), h = Math.min(cap, pot(s.h));
       if (s.w / s.h !== w / h) { const ar = s.w / s.h; if (ar > 1) h = Math.max(4, pot(w / ar)); else w = Math.max(4, pot(h * ar)); }
       tex.set(i, { src: [lj, L.bin, i], w, h, codec, alpha: s.alpha, paint: r.paint, mask: !!r.mask, busy: s.busy, name: lj.images[i].name, hash: L.imgHash[i], area: r.area, uv: Math.min(1, r.uv) });
