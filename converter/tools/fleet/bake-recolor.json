@@ -1,0 +1,10 @@
+{
+  "about": "Liveries whose palette is swapped as they are baked (tools/fleet/recolor.mjs; LS-252). A pair here keeps its own paint, its titles, doors, windows and registration, its colours replaced: each pixel read as a blend of two of `from` (white and black always among them) and drawn as the same blend of `to`. The flat colours the kit keeps (cowl, belly, winglet) are swapped the same way.",
+  "pairs": {
+    "b737-700|SWA": {
+      "from": ["#0000ff", "#ff0000", "#ffff00"],
+      "to": ["#304cb2", "#d5152e", "#ffbf27"],
+      "why": "F-35 (LS-251, 25 Nov): the library's b737-southwest paints the Heart livery in pure RGB; the targets are the medians of the same colours on its 737-800's bake (b738-southwest): Bold Blue, Warm Red, Sunrise Yellow"
+    }
+  }
+}

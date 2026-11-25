@@ -13,11 +13,10 @@ compressed copies, photo-traced crowd texture paths and older files retained at 
 `indexed` list is what the current fleet and bake indexes name, including compressed copies. The
 `uploaded` list identifies the files uploaded since the previous source release. The `archived` list names
 older files still served at their existing URLs, under the earlier release whose SERVED.json records each with
-that hash; that release holds the source of the converted ones (this one, for those SERVED.json's `earlier`
-lists).
+that hash; that release holds the source of the converted ones.
 
-**Where the files are.** This git tree holds everything but the paint maps (200 MB of PNG), the baked liveries' images (63 MB) and the redrawn paint of livesfo's liveries on the library's airframes (107 MB). The release
-[`index-2026-11-23`](../../releases/tag/index-2026-11-23) holds the whole of it as one zip, paint maps included.
+**Where the files are.** This git tree holds everything but the paint maps (200 MB of PNG), the baked liveries' images (63 MB) and the redrawn paint of livesfo's liveries on the library's airframes (105 MB). The release
+[`index-2026-11-25`](../../releases/tag/index-2026-11-25) holds the whole of it as one zip, paint maps included.
 
 ## How the served files are made
 
@@ -61,22 +60,27 @@ lists).
 3. **livesfo's converter** (`converter/`, GPL-2.0-or-later) includes `tools/fleet-convert.mjs` and the local
    modules it imports. It turns each library export into meshopt-compressed geometry, KTX2 textures and a glTF
    with the rig and lights in `extras.livesfo`. `converter/fits.json` holds the recorded fit values.
+   Beside it, `tools/fleet/recolor.mjs` and `tools/fleet/bake-recolor.json`: the palette swap livesfo's bake tool
+   applies to the liveries named there (below, 4).
 4. **The baked liveries**, when listed in SERVED.json, are library liveries
    projected onto the fuselage and fin textures of livesfo's own aircraft models (which aren't part of this source),
    so the site's crowd wears the paint its detailed models show. `bakes/` holds the image each was made from, the
    preferred form for changing it. The served textures are KTX2 (ETC1S, basisu 2.50: `-mipmap -y_flip
-   -comp_level 2 -q 255`): the image as it is (L), and its 2× and 4× box averages (M, S). SERVED.json's
-   `earlier` also lists earlier bakes still served at their URLs, though the index now names a later bake
-   (b757-200|DAL@LS-152): their images are in `bakes/<by>/`.
+   -comp_level 2 -q 255`): the image as it is (L), and its 2× and 4× box averages (M, S). A bake with
+   `recolor` had its palette swapped as it was baked: each pixel drawn as the same blend of the `to` colours as it
+   was of the `from` colours (white and black kept). Its image in `bakes/` is as baked, after the swap. The
+   swap is `converter/tools/fleet/recolor.mjs`, with the pairs in `converter/tools/fleet/bake-recolor.json`. The
+   bake tool applies it to each part's image at every size, before the L image is saved:
+   `recolorImage(image, paletteSwap(pair.from, pair.to))`, the image RGBA (`converter/tools/fleet/image.mjs` decodes
+   and encodes PNG). The same call redoes it on the paint the bake was projected from: the library's paint maps
+   here, or an upstream livery image `UPSTREAM-LINKS.json` pins.
 5. **livesfo's liveries on the library's airframes**, when listed in SERVED.json under `reverse`: an airline
    the library has the aircraft type but no paint for gets a detailed model in the
    livery livesfo's other aircraft wear (a baked library livery from another of the airline's types, or a livery
    traced from photos): one of the library's liveries of that type (the template) with its paint images redrawn, the
    fuselage and fin from that livery, the rest the template's. `reverse/` holds the redrawn images (PNG); each entry
    names its template and what it was drawn from. Those drawn from photos credit them (SERVED.json gives each photo's
-   licence; CC BY's terms ask for the credit). SERVED.json's `earlier` lists earlier builds of these liveries that are still served at
-   their URLs, though the index now names a later build (a223-jbu-rb@LS-222): their
-   redrawn images are in `reverse/<by>/`.
+   licence; CC BY's terms ask for the credit).
 
 ## Rebuilding
 

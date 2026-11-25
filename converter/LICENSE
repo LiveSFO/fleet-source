@@ -1,4 +1,5 @@
 livesfo's fleet converter (tools/fleet-convert.mjs and the modules it imports)
+and its bake's recolour step (tools/fleet/recolor.mjs, with tools/fleet/bake-recolor.json)
 Copyright (C) 2026 livesfo
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public

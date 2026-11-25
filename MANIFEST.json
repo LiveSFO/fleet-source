@@ -1,6 +1,6 @@
 {
- "files": 1328,
- "bytes": 387992824,
+ "files": 1325,
+ "bytes": 385431176,
  "entries": [
   {
    "path": "COPYING",
@@ -14,23 +14,18 @@
   },
   {
    "path": "README.md",
-   "bytes": 11258,
-   "sha256": "51a8734e78a97f32b19154e8e807b373963d3454aca6cdd337356d8ae35640be"
+   "bytes": 11707,
+   "sha256": "7d0a85157f65c5b6b8ea8acd75166741b3b215cd6b1f9f1a47b0639a0331be44"
   },
   {
    "path": "SERVED.json",
-   "bytes": 741541,
-   "sha256": "e56c0b626ce1ef0e73444eca3d5f1b1bf031eb1b45e76351b23798ac3aa16c16"
+   "bytes": 726509,
+   "sha256": "76d1fd47c9f42d08bb54e795ea12fb73b185901b048e53f03118d1734a32abcf"
   },
   {
    "path": "UPSTREAM-LINKS.json",
    "bytes": 1609317,
    "sha256": "5649222db3e9769b328b11b2dbe728d400d7ab22cbb9288fcdbf4206ecb40c18"
-  },
-  {
-   "path": "bakes/LS-152/b757-200@DAL-L-body.png",
-   "bytes": 301095,
-   "sha256": "65e7f4fff6b4842f167e59df55c9e271d003729295b6442efdc51cb6b95728c4"
   },
   {
    "path": "bakes/a220-100@DAL-L-body.png",
@@ -474,13 +469,13 @@
   },
   {
    "path": "bakes/b737-700@SWA-L-body.png",
-   "bytes": 262779,
-   "sha256": "f4e5c2404107d86e3cc17bf1f08d4c50f3d3d499915df4e3669efb36b0841b87"
+   "bytes": 212344,
+   "sha256": "7171f69eecdfbf40e854f4be0277fadddb990144f1d1c5fbcb7563341775de7e"
   },
   {
    "path": "bakes/b737-700@SWA-L-fin.png",
-   "bytes": 100538,
-   "sha256": "cebe5b21c3a5ac4a8d23dbf511595b9750cc358b0b3ef236532c17058a8a7013"
+   "bytes": 78062,
+   "sha256": "df7bf1035aa2fe0ed5bab421c42e292b67d660e163942caffeae68c1018a9d66"
   },
   {
    "path": "bakes/b737-700@UAL-L-body.png",
@@ -1379,8 +1374,8 @@
   },
   {
    "path": "converter/LICENSE",
-   "bytes": 732,
-   "sha256": "1ac631d4f1e94fc51e461f15904b1c72066f8ce16ac405b06ecb6ee11e979d0c"
+   "bytes": 823,
+   "sha256": "f31e25ef8211282af0f54dfd0149e9f8dd6e295a6c6d69fa8fd21fce78bcf26e"
   },
   {
    "path": "converter/fits.json",
@@ -1396,6 +1391,11 @@
    "path": "converter/tools/fleet-convert.mjs",
    "bytes": 64005,
    "sha256": "0d5bf6152f8930b4c75f53891e52db2e3e032d3cdd8ffb0e1fe7877f29924e3f"
+  },
+  {
+   "path": "converter/tools/fleet/bake-recolor.json",
+   "bytes": 771,
+   "sha256": "d3c8a0867e66b7fd3cb441dba47b0f1c7f557afc1e3a264b5bd600ceb40fae7d"
   },
   {
    "path": "converter/tools/fleet/cargo-doors.mjs",
@@ -1434,8 +1434,13 @@
   },
   {
    "path": "converter/tools/fleet/kit-lookup.mjs",
-   "bytes": 1665,
-   "sha256": "219b95ce059eb13b3e30b84cac9cf4f57544a6490892964539fc1ebbbfeb74fe"
+   "bytes": 1722,
+   "sha256": "3cfac869d625c1f445a0d032f481c0ced2a7d4a6eeddd8981303b986b03e6719"
+  },
+  {
+   "path": "converter/tools/fleet/recolor.mjs",
+   "bytes": 3468,
+   "sha256": "07394d2a78977643858e05408abc73baf6f6b13f3ff01537fbb535e5faedd246"
   },
   {
    "path": "converter/tools/fleet/rig.mjs",
@@ -4771,26 +4776,6 @@
    "path": "library/sfo-aircraft-library/viewer/airliner-runtime.js",
    "bytes": 8489,
    "sha256": "a536300a8228a311258d802e4225d45b06bc932ebbdcea3c514a75b26ca9ded2"
-  },
-  {
-   "path": "reverse/LS-222/a223-jbu-rb-0.png",
-   "bytes": 1623103,
-   "sha256": "87b3015b6f0c238ed4f314a80d6ea2abedcc547b47edaa5ef10ae5e2e7c39974"
-  },
-  {
-   "path": "reverse/LS-222/a223-jbu-rb-1.png",
-   "bytes": 124851,
-   "sha256": "ccca1b6156f6f6795e884a242af412eb70b60d5744bedf7c59da2bc5b432fa12"
-  },
-  {
-   "path": "reverse/LS-222/a223-jbu-rb-2.png",
-   "bytes": 123583,
-   "sha256": "e2f779ac3ee15265529645feb17d9249bee3cbc1ea82e16f9f57b93a5eb6a744"
-  },
-  {
-   "path": "reverse/LS-222/a223-jbu-rb-3.png",
-   "bytes": 305909,
-   "sha256": "7763eceb4cfe36a110b67f9eff6b4b70844fd6f9229985684eafd820a0e976fa"
   },
   {
    "path": "reverse/a20n-fft-rb-0.png",
